@@ -5,46 +5,42 @@
 
   // Platforms planned but not yet loaded. Loaded data files override entries with the same id.
   var CATALOG = [
-    { id: 'gmt800', name: 'GMT800', title: 'Silverado, Sierra, Tahoe, Yukon', years: '1999–2007', make: 'Chevrolet / GMC' },
-    { id: 'f150-2004-2014', name: 'F-150', title: 'Ford F-150 11th and 12th gen', years: '2004–2014', make: 'Ford' },
-    { id: 'ram1500-2009-2018', name: 'Ram 1500', title: 'Ram 1500 4th gen (DS)', years: '2009–2018', make: 'Ram' },
-    { id: 'gmt900-2007-2014', name: 'GMT900', title: 'Silverado, Sierra, Tahoe, Yukon, Escalade', years: '2007–2014', make: 'Chevrolet / GMC / Cadillac' },
-    { id: 'tacoma-2005-2023', name: 'Tacoma', title: 'Toyota Tacoma, 2nd and 3rd gen', years: '2005–2023', make: 'Toyota' },
-    { id: 'wrangler-jk-jl', name: 'Wrangler', title: 'Jeep Wrangler JK and JL', years: '2007–present', make: 'Jeep' },
-    { id: 'mustang-s197-s550', name: 'Mustang', title: 'Ford Mustang S197 and S550', years: '2005–2023', make: 'Ford' },
-    { id: 'camaro-2010-2015', name: 'Camaro', title: 'Chevrolet Camaro 5th gen', years: '2010–2015', make: 'Chevrolet' },
-    { id: 'civic-2006-2021', name: 'Civic', title: 'Honda Civic 8th, 9th and 10th gen', years: '2006–2021', make: 'Honda' },
-    { id: 'wrx-2015-2021', name: 'WRX', title: 'Subaru WRX (VA), with STI notes', years: '2015–2021', make: 'Subaru' },
     { id: 'miata', name: 'Miata', title: 'Mazda MX-5 Miata', years: 'Multiple gens', make: 'Mazda' },
     { id: 'bmw-3', name: '3 Series', title: 'BMW 3 Series', years: 'Multiple gens', make: 'BMW' }
   ];
 
   var CONF = {
-    'verified': ['Verified', 'b-verified', 'Source page opened and states it'],
-    'verified-secondary': ['Verified', 'b-verified', 'Verified on a secondary page (wiki, blog or retailer)'],
-    'forum': ['Forum-reported', 'b-forum', "An owner's claim in a thread that was opened and read"],
-    'video': ['Video-reported', 'b-video', 'Video title, channel, date and description confirmed; video not watched'],
-    'unconfirmed': ['Unconfirmed', 'b-unconfirmed', 'Search extract only, or the page would not load'],
-    'unknown': ['Unknown', 'b-unknown', 'No usable source found']
+    'verified': ['Verified', 'c-ok', 'Source page opened and states it'],
+    'verified-secondary': ['Verified', 'c-ok', 'Verified on a secondary page (wiki, blog or retailer)'],
+    'forum': ['Forum-reported', 'c-forum', "An owner's claim in a thread that was opened and read"],
+    'video': ['Video-reported', 'c-video', 'Video title, channel, date and description confirmed; video not watched'],
+    'unconfirmed': ['Unconfirmed', 'c-warn', 'Search extract only, or the page would not load'],
+    'unknown': ['Unknown', 'c-dim', 'No usable source found']
   };
-  var TABS = [['overview', 'Overview'], ['wheels', 'Wheels & tires'], ['parts', 'Parts & deals'], ['problems', 'Problems'], ['guides', 'DIY & swaps'], ['tips', 'Owner tips']];
+  // Sections of a platform. Ids are kept from the old tab routes so links still work.
+  var SECTIONS = [
+    ['parts', 'Parts'], ['problems', 'Problems and fixes'], ['guides', 'DIY and swap guides'],
+    ['wheels', 'Wheels and tires'], ['overview', 'Specs and years'], ['tips', 'Owner tips']
+  ];
+  var SNAME = {}; SECTIONS.forEach(function (s) { SNAME[s[0]] = s[1]; });
   var KEY = 'forge.builds.v2', OLDKEY = 'forge.build.v1';
   var app = document.getElementById('app');
-  var state = { q: '', gq: '', cat: 'all', stance: null, mineOnly: false };
+  var state = { q: '', gq: '', pq: '', sort: 'price-asc', stance: null, mineOnly: false };
 
   // ---------- utils ----------
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function money(n) { return '$' + Number(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
-  function badge(c, extraTitle) {
+  function badge(c) {
     if (!c) return '';
     var list = Array.isArray(c) ? c : [c], seen = {}, out = '';
-    list.forEach(function (k) { var d = CONF[k] || CONF.unknown; if (seen[d[0]]) return; seen[d[0]] = 1; out += '<span class="b ' + d[1] + '" title="' + esc(d[2] + (k === 'verified-secondary' ? '' : '')) + '">' + d[0] + (k === 'verified-secondary' ? ' · 2nd' : '') + '</span>'; });
+    list.forEach(function (k) { var d = CONF[k] || CONF.unknown; if (seen[d[0]]) return; seen[d[0]] = 1; out += '<span class="cf ' + d[1] + '" title="' + esc(d[2]) + '">' + d[0] + (k === 'verified-secondary' ? ' (2nd)' : '') + '</span>'; });
     return out;
   }
-  function badges(o) { return '<span class="badges">' + badge(o.conf) + (o.disputed ? '<span class="b b-disputed" title="Sources or owners disagree">Disputed</span>' : '') + '</span>'; }
+  function badges(o) { return '<span class="cfs">' + badge(o.conf) + (o.disputed ? '<span class="flag-disputed" title="Sources or owners disagree">Disputed</span>' : '') + '</span>'; }
+  function links(list) { return (list || []).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>'; }).join(' · '); }
   function srcs(list, note) {
     if ((!list || !list.length) && !note) return '';
-    return '<div class="src">' + (note ? esc(note) + (list && list.length ? ' · ' : '') : '') + (list || []).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>'; }).join(' · ') + '</div>';
+    return '<div class="src">' + (note ? esc(note) + (list && list.length ? ' · ' : '') : '') + links(list) + '</div>';
   }
   function table(t, opts) {
     opts = opts || {};
@@ -54,37 +50,49 @@
       h += '<tr' + (dis.indexOf(i) > -1 ? ' class="disputed"' : '') + '>' + r.map(function (c, j) {
         var isConf = (Array.isArray(c) ? c.length && c.every(function (k) { return CONF[k]; }) : CONF[c]) && t.columns[j] && /confidence/i.test(t.columns[j]);
         var cell = isConf ? badge(c) : esc(c);
-        if (j === 0 && dis.indexOf(i) > -1) cell += ' <span class="b b-disputed">Disputed</span>';
+        if (j === 0 && dis.indexOf(i) > -1) cell += ' <span class="flag-disputed">Disputed</span>';
         if (j === 0 && t.rowSrc && t.rowSrc[i]) cell += ' <a class="small" href="' + esc(t.rowSrc[i]) + '" target="_blank" rel="noopener">source</a>';
         return '<td' + (opts.numCol === j ? ' class="num"' : '') + '>' + cell + '</td>';
       }).join('') + '</tr>';
     });
     h += '</tbody></table></div>';
     if (t.note) h += '<p class="tbl-note">' + esc(t.note) + '</p>';
-    if (t.conf || t.src) h += '<div class="src">' + badge(t.conf) + ' ' + (t.src || []).map(function (s) { return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>'; }).join(' · ') + '</div>';
+    if (t.conf || t.src) h += '<div class="src">' + badge(t.conf) + ' ' + links(t.src) + '</div>';
     return h;
   }
   function toast(msg) { var t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(function () { t.classList.remove('show'); }, 1800); }
-  var CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>';
+  var CHEV = '<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+  var SEARCH_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>';
+  function row(href, title, sub, right, cls) {
+    return '<a class="row' + (cls ? ' ' + cls : '') + '" href="' + href + '"><span class="row-main"><span class="row-t">' + title + '</span>' + (sub ? '<span class="row-s">' + sub + '</span>' : '') + '</span>' + (right ? '<span class="row-r">' + right + '</span>' : '') + CHEV + '</a>';
+  }
+  function crumb(pid, p, items) {
+    return '<nav class="crumb" aria-label="Breadcrumb"><a href="#/p/' + pid + '">' + esc(p.name) + '</a>' + items.map(function (it) { return '<span>/</span>' + (it[1] ? '<a href="' + it[1] + '">' + esc(it[0]) + '</a>' : '<b>' + esc(it[0]) + '</b>'); }).join('') + '</nav>';
+  }
+  function fold(title, body, open, meta) {
+    return '<details class="fold"' + (open ? ' open' : '') + '><summary><span>' + esc(title) + (meta ? ' <span class="dim small">' + esc(meta) + '</span>' : '') + '</span>' + CHEV + '</summary><div class="fold-b">' + body + '</div></details>';
+  }
 
-  // ---------- build sheet storage ----------
-  // One build per platform: { current: platformId, builds: { platformId: { photo, items } } }
+  // ---------- storage: builds + garage ----------
+  // { current: platformId, garage: [platformId], builds: { platformId: { photo, items } } }
   function loadStore() {
     var st = null;
     try { st = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { }
     if (!st || !st.builds) {
-      st = { current: Object.keys(P)[0] || '', builds: {} };
-      try { var old = JSON.parse(localStorage.getItem(OLDKEY) || 'null'); if (old && old.items) { var op = old.platform || st.current; st.builds[op] = { photo: old.photo || '', items: old.items }; st.current = op; } } catch (e) { }
+      st = { current: '', builds: {} };
+      try { var old = JSON.parse(localStorage.getItem(OLDKEY) || 'null'); if (old && old.items) { var op = old.platform || Object.keys(P)[0]; st.builds[op] = { photo: old.photo || '', items: old.items }; st.current = op; } } catch (e) { }
     }
-    if (!P[st.current]) st.current = Object.keys(P)[0] || '';
+    if (!st.garage) st.garage = Object.keys(st.builds).filter(function (k) { return P[k] && st.builds[k].items && st.builds[k].items.length; });
+    st.garage = st.garage.filter(function (k) { return P[k]; });
+    if (!P[st.current]) st.current = st.garage[0] || '';
     return st;
   }
   var store = loadStore();
   function buildFor(pid) { if (!store.builds[pid]) store.builds[pid] = { photo: '', items: [] }; return store.builds[pid]; }
-  var build = buildFor(store.current);
-  function useBuild(pid) { if (!P[pid]) return; store.current = pid; build = buildFor(pid); }
+  var build = buildFor(store.current || '_none');
+  function useBuild(pid) { if (!P[pid]) return; store.current = pid; build = buildFor(pid); if (store.garage.indexOf(pid) < 0) store.garage.push(pid); }
   function saveBuild() { try { localStorage.setItem(KEY, JSON.stringify(store)); return true; } catch (e) { toast('Could not save (storage full). Try a smaller photo.'); return false; } }
-  function updateCount() { var n = build.items.reduce(function (a, i) { return a + (i.qty || 1); }, 0); document.getElementById('buildCount').textContent = n; }
+  function updateCount() { var n = P[store.current] ? build.items.reduce(function (a, i) { return a + (i.qty || 1); }, 0) : 0; Array.prototype.forEach.call(document.querySelectorAll('[data-count]'), function (e) { e.textContent = n ? n : ''; }); }
 
   // ---------- parts helpers ----------
   function partById(p, id) { for (var i = 0; i < p.parts.length; i++) if (p.parts[i].id === id) return p.parts[i]; return null; }
@@ -107,56 +115,46 @@
     build.items.push({ id: partId, platform: pid, name: part.name, brand: part.brand, pn: part.part_number, price: lp ? lp.price : null, seller: lp ? lp.seller : '', url: lp ? lp.url : '', verified: lp ? lp.verified : false, unit: lp ? lp.unit || '' : '', qty: 1, added: new Date().toISOString().slice(0, 10) });
     saveBuild(); updateCount(); toast('Added to build sheet'); return 'added';
   }
-  function fitSummary(f) {
-    var bits = [];
-    if (f.years) bits.push('<b>Years</b> ' + esc(f.years));
-    if (f.models && f.models.length) bits.push('<b>Models</b> ' + esc(f.models.join(', ')));
-    if (f.drive && f.drive.length) bits.push('<b>Drive</b> ' + esc(f.drive.join(', ')));
-    if (f.cab) bits.push('<b>Cab</b> ' + esc(f.cab));
-    if (f.engines) bits.push('<b>Engine</b> ' + esc(f.engines.join(', ')));
-    if (f.position) bits.push('<b>Position</b> ' + esc(f.position));
-    if (f.trans) bits.push('<b>Trans</b> ' + esc(f.trans));
-    if (f.steering) bits.push('<b>Steering</b> ' + esc(f.steering));
-    if (f.min_wheel) bits.push('<b>Min wheel</b> ' + esc(f.min_wheel));
-    if (f.notes) bits.push(esc(f.notes));
-    return bits.join(' · ');
+  function addBtn(pid, id, big) {
+    var a = inBuild(id, pid);
+    return '<button class="btn ' + (big ? '' : 'btn-sm ') + (a ? 'added' : 'btn-primary') + '" data-add="' + esc(id) + '" data-pid="' + esc(pid) + '">' + (a ? 'In build' : 'Add to build') + '</button>';
   }
-  function fitBadge(f) {
-    if (f.hunter_fit === true) return '<span class="b b-fit" title="' + esc(f.hunter_note || 'Listed as fitting the saved truck') + '">Fits my truck</span>';
-    if (f.hunter_fit === false) return '<span class="b b-unknown">Not my cab/year</span>';
-    if (typeof f.hunter_fit === 'string') return '<span class="b b-unknown" title="' + esc(f.hunter_fit) + '">' + esc(f.hunter_fit.length > 22 ? 'Check fit' : f.hunter_fit) + '</span>';
+  function fitRows(f) {
+    var r = [];
+    if (f.years) r.push(['Years', f.years]);
+    if (f.models && f.models.length) r.push(['Models', f.models.join(', ')]);
+    if (f.drive && f.drive.length) r.push(['Drive', f.drive.join(', ')]);
+    if (f.cab) r.push(['Cab', f.cab]);
+    if (f.engines) r.push(['Engine', f.engines.join(', ')]);
+    if (f.position) r.push(['Position', f.position]);
+    if (f.trans) r.push(['Trans', f.trans]);
+    if (f.steering) r.push(['Steering', f.steering]);
+    if (f.min_wheel) r.push(['Min wheel', f.min_wheel]);
+    if (f.notes) r.push(['Notes', f.notes]);
+    return r;
+  }
+  function fitLabel(f) {
+    if (f.hunter_fit === true) return '<span class="fit-yes" title="' + esc(f.hunter_note || 'Listed as fitting the saved truck') + '">Fits my truck</span>';
+    if (f.hunter_fit === false) return '<span class="fit-no">Not my cab/year</span>';
+    if (typeof f.hunter_fit === 'string') return '<span class="fit-no" title="' + esc(f.hunter_fit) + '">' + esc(f.hunter_fit.length > 22 ? 'Check fit' : f.hunter_fit) + '</span>';
     return '';
   }
-  function partCard(pid, part, featured) {
-    var lp = listedPrice(part), added = inBuild(part.id, pid);
-    var offers = part.offers.slice().sort(function (a, b) { return (a.price == null) - (b.price == null) || a.price - b.price; });
-    var h = '<article class="card part' + (featured ? ' feature' : '') + '" id="part-' + esc(part.id) + '">';
-    if (featured) h += '<div class="flag">' + esc(featured) + '</div>';
-    h += '<div class="part-top"><div><div class="brand">' + esc(part.brand) + (part.part_number ? ' · ' + esc(part.part_number) : '') + '</div><div class="name">' + esc(part.name) + '</div></div>';
-    h += '<div class="price-big">' + (lp ? money(lp.price) + (lp.unit && lp.unit !== 'listing' ? '<small>per ' + esc(lp.unit) + '</small>' : '') + '<small>' + (lp.verified ? 'best verified' : 'unverified price') + '</small>' : '<small>no verified price</small>') + '</div></div>';
-    var fs = fitSummary(part.fitment || {});
-    h += '<div class="fitline">' + '<span class="badges">' + fitBadge(part.fitment || {}) + '<span class="b b-unknown">' + esc(part.category) + '</span></span>' + (fs ? '<div style="margin-top:4px">' + fs + '</div>' : '') + '</div>';
-    if (part.fitment && part.fitment.hunter_note) h += '<div class="part-note">' + esc(part.fitment.hunter_note) + '</div>';
-    if (part.notes) h += '<div class="part-note">' + esc(part.notes) + '</div>';
-    h += '<div class="offers">';
-    offers.forEach(function (o) {
-      var best = isBest(part, o);
-      h += '<div class="offer' + (best ? ' best' : '') + '"><span class="s"><a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.seller) + '</a></span><span class="p">' + (o.price != null ? money(o.price) : 'n/a') + '</span>' +
-        '<span class="meta">' + (best ? '<span class="b b-best">Best</span>' : '') + '<span class="b ' + (o.status === 'verified' ? 'b-verified' : 'b-unverified') + '">' + (o.status === 'verified' ? 'Verified' : 'Unverified') + '</span>checked ' + esc(o.checked) + (o.price_unit && o.price_unit !== 'listing' ? ' · per ' + esc(o.price_unit) : '') + (o.shipping_note ? ' · ship: ' + esc(o.shipping_note) : '') + (o.source_note ? ' · ' + esc(o.source_note) : '') + '</span></div>';
-    });
-    h += '</div><div class="part-actions"><span class="small dim">' + (part.source === 'master-guide' ? 'From master guide' : 'From deals check') + '</span><button class="btn btn-sm ' + (added ? 'added' : 'btn-primary') + '" data-add="' + esc(part.id) + '" data-pid="' + esc(pid) + '">' + (added ? 'In build ✓' : '+ Add to build') + '</button></div>';
-    return h + '</article>';
+  function priceCell(part) {
+    var lp = listedPrice(part);
+    if (!lp) return '<span class="price na">No price</span>';
+    return '<span class="price">' + money(lp.price) + '</span>' + (lp.unit && lp.unit !== 'listing' ? '<span class="price-u">each</span>' : '') + (lp.verified ? '' : '<span class="price-u c-warn">unverified</span>');
+  }
+  function partRow(pid, part, flag) {
+    var f = part.fitment || {};
+    var sub = '<span class="mono">' + esc(part.brand) + (part.part_number ? ' ' + esc(part.part_number) : '') + '</span>' + (fitLabel(f) ? ' · ' + fitLabel(f) : '') + (flag ? ' · <span class="accent">' + esc(flag) + '</span>' : '') + (inBuild(part.id, pid) ? ' · <span class="accent">In build</span>' : '');
+    return row('#/p/' + pid + '/parts/' + encodeURIComponent(part.id), esc(part.name), sub, priceCell(part), 'part-row');
   }
   function miniParts(pid, p, ids) {
     if (!ids || !ids.length) return '';
-    return '<div class="mini-parts">' + ids.map(function (id) {
-      var part = partById(p, id); if (!part) return '';
-      var lp = listedPrice(part);
-      return '<span class="mini"><a href="#/p/' + pid + '/parts/' + esc(id) + '">' + esc(part.brand + ' ' + (part.part_number || '')) + '</a><span class="mp">' + (lp ? money(lp.price) : 'n/a') + '</span><button title="Add to build" data-add="' + esc(id) + '" data-pid="' + esc(pid) + '">' + (inBuild(id, pid) ? '✓' : '+') + '</button></span>';
-    }).join('') + '</div>';
+    return '<div class="rows">' + ids.map(function (id) { var part = partById(p, id); return part ? partRow(pid, part) : ''; }).join('') + '</div>';
   }
 
-  // ---------- home ----------
+  // ---------- garage (home) ----------
   var ADVICE = {
     wheels: 'Start with bolt pattern, center bore and offset for your platform, then match tire size to your stance (stock, leveled, lifted or lowered). Forge platform pages list owner-reported combos with confidence labels.',
     suspension: 'Decide the stance first. Leveling and lifts change tire clearance and alignment; drops often need drop shocks, a C-notch past about 3 inches rear, and minimum wheel sizes.',
@@ -165,51 +163,68 @@
     maintenance: 'Look up the common problems list for your platform first. Many known failures have a cheap documented fix.',
     interior: 'Seat and dash swaps across years often need harness changes. Check connector differences before buying.'
   };
-  function renderHome() {
-    var loaded = Object.keys(P).map(function (k) { return P[k]; });
-    var ids = {}; loaded.forEach(function (p) { ids[p.id] = 1; });
-    var list = loaded.map(function (p) { return { id: p.id, name: p.name, title: p.title, years: p.years, make: p.make, live: true }; })
-      .concat(CATALOG.filter(function (c) { return !ids[c.id]; }));
-    var h = '<div class="wrap"><section class="hero"><div class="eyebrow">Pick your platform</div><h1>Build it right <em>the first time.</em></h1><p class="lede">' + loaded.length + ' trucks and cars, from the GMT800 to the WRX. Popular parts with checked prices, wheel and tire fitment by stance, common failures and their fixes, and step-by-step DIY and swap guides. Every fact links to its source.</p>' +
-      '<label class="search" style="margin-top:16px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="gq" type="search" placeholder="Search all ' + loaded.length + ' platforms: part numbers, codes, sizes…" value="' + esc(state.gq || '') + '" autocomplete="off"></label><div id="gres"></div></section>';
-    var soon = list.filter(function (c) { return !c.live; });
-    h += '<section><div class="sec-head"><h2>Platforms</h2><span class="small dim">' + loaded.length + ' platforms</span></div><div class="plats">';
-    list.forEach(function (c) {
-      if (c.live) h += '<a class="plat live" href="#/p/' + esc(c.id) + '/overview"><div class="code">' + esc(c.make || '') + '</div><div class="nm">' + esc(c.name) + '</div><div class="yr">' + esc(c.title) + '</div><div class="yr mono">' + esc(c.years) + '</div></a>';
-    });
-    h += '</div>' + (soon.length ? '<p class="small dim" style="margin-top:12px">More platforms coming: ' + esc(soon.map(function (c) { return c.title; }).join(', ')) + '.</p>' : '') + '</section>';
-    h += '<section><div class="grid g2"><div class="card"><h2>Your vehicle</h2><p class="muted small" style="margin-top:0">Add a photo to your build sheet. It stays on this device.</p>' + photoBox() + '<div class="soon-btns">' + soonButtons() + '</div></div>';
-    h += '<div class="card"><h2>Quick advice</h2><div class="row"><div><label class="l" for="advMod">What are you planning?</label><select id="advMod"><option value="wheels">Wheels and tires</option><option value="suspension">Lift, level or lower</option><option value="engine">Engine swap or power</option><option value="exterior">Exterior and front-end swaps</option><option value="maintenance">Fix a known problem</option><option value="interior">Interior</option></select></div></div><div class="advice-out notice" id="advOut"></div></div></div></section>';
-    h += '<section class="steps-how"><h2>How it works</h2><div class="grid g3"><div class="card"><h3>Pick your platform</h3><p class="muted small">Years, engines, axles and what changed year to year.</p></div><div class="card"><h3>Check fitment and fixes</h3><p class="muted small">Stance tables, common failures, torque specs and swap notes, each with a confidence label.</p></div><div class="card"><h3>Build your list</h3><p class="muted small">Add parts with the best checked price and watch the running total.</p></div></div></section>';
-    h += '<section><h2>Where to buy</h2><div class="grid g3">' + storeCard('RockAuto', 'Huge catalog, low prices. Shipping is added per warehouse at checkout.', 'https://www.rockauto.com') + storeCard('Summit Racing', 'Major performance retailer.', 'https://www.summitracing.com') + storeCard('AmericanTrucks', 'Truck-focused; many listings ship free.', 'https://www.americantrucks.com') + storeCard('eBay Motors', 'Used and rare parts. Compatibility tables can be wrong.', 'https://www.ebay.com/b/eBay-Motors/6000') + storeCard('Amazon', 'Prefer "ships from and sold by Amazon" or the brand store.', 'https://www.amazon.com') + storeCard('JEGS', 'Performance retailer, 60+ years in business.', 'https://www.jegs.com') + '</div></section></div>';
+  function vehicleList(hrefFn) {
+    var groups = {}, order = [];
+    Object.keys(P).forEach(function (k) { var m = P[k].make; if (!groups[m]) { groups[m] = []; order.push(m); } groups[m].push(P[k]); });
+    order.sort();
+    return order.map(function (m) {
+      return '<div class="grp"><div class="grp-h">' + esc(m) + '</div><div class="rows">' + groups[m].map(function (p) {
+        return row(hrefFn(p.id), esc(p.name) + ' <span class="yrs">' + esc(p.years) + '</span>', esc(p.title), store.garage.indexOf(p.id) > -1 ? '<span class="dim small">In garage</span>' : '');
+      }).join('') + '</div></div>';
+    }).join('') + '<p class="small dim">Coming later: ' + esc(CATALOG.filter(function (c) { return !P[c.id]; }).map(function (c) { return c.title; }).join(', ')) + '.</p>';
+  }
+  function renderPicker() {
+    var h = '<div class="wrap narrow"><header class="page-h"><h1>Choose your vehicle</h1><p class="lede">Pick it once. Parts, fixes, guides and your build sheet will follow it, and Forge remembers it on this device.</p></header>';
+    h += vehicleList(function (id) { return '#/pick/' + id; });
+    app.innerHTML = h + '</div>';
+  }
+  function renderGarage() {
+    if (!store.garage.length) return renderPicker();
+    var cur = P[store.current] ? store.current : store.garage[0];
+    var p = P[cur];
+    var h = '<div class="wrap narrow"><header class="page-h"><h1>My garage</h1></header>';
+    h += '<label class="search">' + SEARCH_ICON + '<input id="gq" type="search" placeholder="Search all platforms: part numbers, codes, sizes" value="' + esc(state.gq || '') + '" autocomplete="off" aria-label="Search all platforms"></label><div id="gres"></div>';
+    h += '<div id="gbody">';
+    h += '<div class="veh-current"><div class="eyebrow">Current vehicle</div><div class="veh-name">' + esc(p.name) + ' <span class="yrs">' + esc(p.years) + '</span></div><div class="muted">' + esc(p.title) + '</div>' + (p.myVehicle ? '<div class="mine"><b>' + esc(p.myVehicle.label) + ':</b> ' + esc(p.myVehicle.text) + '</div>' : '') + '<a class="btn btn-primary" href="#/p/' + cur + '">Open ' + esc(p.name) + '</a></div>';
+    h += sectionMenu(cur, p);
+    var others = store.garage.filter(function (k) { return k !== cur; });
+    h += '<h2 class="h2">Saved vehicles</h2><div class="rows">' + store.garage.map(function (k) {
+      var n = buildFor(k).items.length;
+      return '<div class="row row-split"><a class="row-main" href="#/pick/' + k + '"><span class="row-t">' + esc(P[k].name) + ' <span class="yrs">' + esc(P[k].years) + '</span>' + (k === cur ? ' <span class="accent small">Current</span>' : '') + '</span><span class="row-s">' + esc(P[k].title) + (n ? ' · ' + n + ' parts in build' : '') + '</span></a><button class="link-btn" data-unpark="' + k + '">Remove</button></div>';
+    }).join('') + '<a class="row row-add" href="#/garage/add"><span class="row-main"><span class="row-t">Add a vehicle</span></span>' + CHEV + '</a></div>';
+    h += '<h2 class="h2">More</h2>';
+    h += fold('Planning advice', '<label class="l" for="advMod">What are you planning?</label><select id="advMod"><option value="wheels">Wheels and tires</option><option value="suspension">Lift, level or lower</option><option value="engine">Engine swap or power</option><option value="exterior">Exterior and front-end swaps</option><option value="maintenance">Fix a known problem</option><option value="interior">Interior</option></select><p class="advice" id="advOut"></p>');
+    h += fold('Where to buy', '<div class="rows">' + [['RockAuto', 'Huge catalog, low prices. Shipping is added per warehouse at checkout.', 'https://www.rockauto.com'], ['Summit Racing', 'Major performance retailer.', 'https://www.summitracing.com'], ['AmericanTrucks', 'Truck-focused; many listings ship free.', 'https://www.americantrucks.com'], ['eBay Motors', 'Used and rare parts. Compatibility tables can be wrong.', 'https://www.ebay.com/b/eBay-Motors/6000'], ['Amazon', 'Prefer "ships from and sold by Amazon" or the brand store.', 'https://www.amazon.com'], ['JEGS', 'Performance retailer, 60+ years in business.', 'https://www.jegs.com']].map(function (s) { return '<a class="row" href="' + s[2] + '" target="_blank" rel="noopener"><span class="row-main"><span class="row-t">' + s[0] + '</span><span class="row-s">' + s[1] + '</span></span></a>'; }).join('') + '</div>');
+    h += fold('How Forge labels facts', '<p class="small">Every fact links to its source and carries a label: ' + badge('verified') + ', ' + badge('forum') + ', ' + badge('video') + ', ' + badge('unconfirmed') + ' or ' + badge('unknown') + '. Conflicting sources are marked <span class="flag-disputed">Disputed</span> and shown side by side.</p>');
+    h += '</div></div>';
     app.innerHTML = h;
     var sel = document.getElementById('advMod'), out = document.getElementById('advOut');
     function adv() { out.textContent = ADVICE[sel.value]; }
     sel.addEventListener('change', adv); adv();
-    bindPhoto();
-    var gq = document.getElementById('gq'), gres = document.getElementById('gres');
-    function gdraw() { state.gq = gq.value; gres.innerHTML = renderGlobalSearch(gq.value); }
+    var gq = document.getElementById('gq'), gres = document.getElementById('gres'), gbody = document.getElementById('gbody');
+    function gdraw() { state.gq = gq.value; gres.innerHTML = renderGlobalSearch(gq.value); gbody.style.display = gq.value.trim() ? 'none' : ''; }
     gq.addEventListener('input', gdraw); if (gq.value) gdraw();
   }
   function renderGlobalSearch(q) {
     var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
     if (!terms.length) return '';
-    var names = {}; TABS.forEach(function (t) { names[t[0]] = t[1]; });
     var total = 0, h = '';
     Object.keys(P).forEach(function (pid) {
       var p = P[pid];
       var hits = searchIndex(pid, p).filter(function (it) { return terms.every(function (t) { return it.hay.indexOf(t) > -1; }); });
       if (!hits.length) return;
       total += hits.length;
-      h += '<div class="ggroup"><div class="sec-head" style="margin-top:14px"><h3 style="margin:0">' + esc(p.name) + ' <span class="small dim" style="font-weight:500">' + esc(p.years) + '</span></h3><a class="small" href="#/p/' + pid + '/overview" data-gq="' + esc(q) + '">' + hits.length + ' result' + (hits.length > 1 ? 's' : '') + ' →</a></div><div class="grid">' +
-        hits.slice(0, 3).map(function (it) { return '<a class="card hit" href="#/p/' + pid + '/' + it.tab + (it.anchor ? '/' + encodeURIComponent(it.anchor) : '') + '"><div class="sect">' + esc(names[it.tab]) + '</div><h3 style="margin:4px 0">' + hl(it.title, terms) + '</h3><div class="small muted">' + hl(snippet(it.text, terms), terms) + '</div></a>'; }).join('') + '</div></div>';
+      h += '<div class="ggroup"><div class="grp-h grp-split"><span>' + esc(p.name) + ' <span class="yrs">' + esc(p.years) + '</span></span><a href="#/p/' + pid + '/search" data-gq="' + esc(q) + '">All ' + hits.length + '</a></div><div class="rows">' +
+        hits.slice(0, 3).map(function (it) { return hitRow(pid, it, terms); }).join('') + '</div></div>';
     });
-    if (!total) return '<div class="card empty" style="margin-top:12px">Nothing matched across platforms. Try a part number, a code like P0332, or a size like 285/55R20.</div>';
-    return '<p class="small dim" style="margin-top:10px">' + total + ' results across platforms. Open a platform to see all of them.</p>' + h;
+    if (!total) return '<p class="empty">Nothing matched across platforms. Try a part number, a code like P0332, or a size like 285/55R20.</p>';
+    return '<p class="small dim">' + total + ' results across platforms.</p>' + h;
   }
-  function storeCard(n, d, u) { return '<a class="card hit" href="' + u + '" target="_blank" rel="noopener"><h3>' + esc(n) + '</h3><p class="muted small" style="margin:0">' + esc(d) + '</p></a>'; }
-  function photoBox() { return '<label class="photo" id="photoBox"><input type="file" accept="image/*" id="photoIn">' + (build.photo ? '<img src="' + build.photo + '" alt="Your vehicle">' : '<span>Tap to add a photo<br><span class="small dim">JPG or PNG</span></span>') + '</label>' + (build.photo ? '<button class="btn btn-sm" id="photoClear" style="margin-top:8px">Remove photo</button>' : ''); }
-  function soonButtons() { return '<button class="btn" disabled>Identify a part from a photo <span class="b">Coming soon</span></button><button class="btn" disabled>Generate AI preview <span class="b">Coming soon</span></button>'; }
+  function hitHref(pid, it) { return '#/p/' + pid + '/' + it.tab + (it.anchor ? '/' + encodeURIComponent(it.anchor) : ''); }
+  function hitRow(pid, it, terms) {
+    return '<a class="row hit" href="' + hitHref(pid, it) + '"><span class="row-main"><span class="eyebrow">' + esc(SNAME[it.tab]) + '</span><span class="row-t">' + hl(it.title, terms) + '</span><span class="row-s">' + hl(snippet(it.text, terms), terms) + '</span></span>' + CHEV + '</a>';
+  }
+  function photoBox() { return '<label class="photo" id="photoBox"><input type="file" accept="image/*" id="photoIn">' + (build.photo ? '<img src="' + build.photo + '" alt="Your vehicle">' : '<span>Add a photo of your vehicle<br><span class="small dim">JPG or PNG, stays on this device</span></span>') + '</label>' + (build.photo ? '<button class="link-btn" id="photoClear">Remove photo</button>' : ''); }
   function bindPhoto() {
     var inp = document.getElementById('photoIn'); if (!inp) return;
     inp.addEventListener('change', function () {
@@ -234,86 +249,193 @@
     if (clr) clr.addEventListener('click', function (e) { e.preventDefault(); build.photo = ''; saveBuild(); route(); });
   }
 
-  // ---------- platform ----------
+  // ---------- platform screens ----------
+  function counts(p) {
+    var cats = p.partCategories.filter(function (c) { return p.parts.some(function (x) { return x.category === c; }); });
+    var diy = p.guides.filter(function (g) { return g.type === 'diy'; }).length;
+    var bp = '';
+    (p.wheels.specs.rows || []).forEach(function (r) { if (!bp && /bolt/i.test(r[0])) bp = r[1]; });
+    return {
+      parts: p.parts.length + ' parts in ' + cats.length + ' categories',
+      problems: p.problems.length + ' known problems, search by symptom',
+      guides: diy + ' DIY, ' + (p.guides.length - diy) + ' swaps, with torque specs',
+      wheels: (bp ? 'Bolt pattern ' + bp + ' · ' : '') + p.wheels.stances.length + ' stances',
+      overview: 'Engines, axles, year changes' + (p.conflicts.length ? ', ' + p.conflicts.length + ' corrections' : ''),
+      tips: p.tips.length + ' tips' + ((p.videos || []).length ? ', ' + p.videos.length + ' videos' : '')
+    };
+  }
+  function sectionMenu(pid, p) {
+    var c = counts(p);
+    return '<div class="rows menu">' + SECTIONS.map(function (s) { return row('#/p/' + pid + '/' + s[0], s[1], esc(c[s[0]])); }).join('') + '</div>';
+  }
+  function safetyBlock(p, home) {
+    var a = p.safetyAlerts || [];
+    if (!a.length) return '';
+    var items = a.map(function (x) { return '<details><summary><span><b>Safety</b> ' + esc(x.title) + '</span>' + CHEV + '</summary><div class="safety-b">' + esc(x.text) + ' ' + badges(x) + srcs(x.src) + '</div></details>'; }).join('');
+    if (home || a.length === 1) return '<div class="safety" role="alert">' + items + '</div>';
+    return '<div class="safety" role="alert"><details class="safety-all"><summary><span><b>Safety</b> ' + a.length + ' notices for the ' + esc(p.name) + ': ' + esc(a.map(function (x) { return x.title.split(/[:(]/)[0].trim(); }).join('; ')) + '</span>' + CHEV + '</summary><div class="safety-list">' + items + '</div></details></div>';
+  }
+  function platformHome(pid, p) {
+    var b = buildFor(pid), tot = 0; b.items.forEach(function (i) { if (i.price != null) tot += i.price * (i.qty || 1); });
+    var h = '<header class="page-h"><div class="eyebrow">' + esc(p.make) + ' · ' + esc(p.years) + '</div><h1>' + esc(p.name) + '</h1><p class="sub">' + esc(p.title) + '</p><p class="lede">' + esc(p.tagline) + '</p>' + (p.myVehicle ? '<div class="mine"><b>' + esc(p.myVehicle.label) + ':</b> ' + esc(p.myVehicle.text) + '</div>' : '') + '</header>';
+    h += safetyBlock(p, true);
+    h += '<label class="search">' + SEARCH_ICON + '<input id="q" type="search" placeholder="Search ' + esc(p.name) + ': parts, codes, sizes, torque" value="' + esc(state.q) + '" autocomplete="off" aria-label="Search this platform"></label>';
+    h += '<div id="pres"></div><div id="pmenu">' + sectionMenu(pid, p);
+    h += '<div class="rows menu" style="margin-top:12px">' + row('#/build', 'Build sheet', b.items.length ? b.items.length + ' parts · ' + money(tot) + ' listed' : 'No parts yet') + '</div>';
+    h += '<p class="small dim meta-line">Data compiled ' + esc(p.compiled) + '. Prices checked ' + esc(p.pricesChecked) + '.</p></div>';
+    return h;
+  }
   function factList(items) {
-    return '<div class="facts">' + items.map(function (f) { return '<div class="fact"><div class="lbl">' + esc(f.label) + '</div><div>' + esc(f.text) + ' ' + badges(f) + srcs(f.src) + '</div></div>'; }).join('') + '</div>';
+    return '<dl class="facts">' + items.map(function (f) { return '<dt>' + esc(f.label) + '</dt><dd>' + esc(f.text) + ' ' + badges(f) + srcs(f.src) + '</dd>'; }).join('') + '</dl>';
+  }
+  function secHead(pid, p, title, extra) {
+    return crumb(pid, p, [[title]]) + '<header class="page-h sm"><h1>' + esc(title) + '</h1>' + (extra || '') + '</header>' + safetyBlock(p, false);
   }
   function tabOverview(pid, p) {
-    var o = p.overview, h = '';
-    h += '<section><div class="notice"><div class="legend"><span class="small">Confidence:</span>' + badge('verified') + badge('forum') + badge('video') + badge('unconfirmed') + '<span class="b b-disputed">Disputed</span></div><div class="small" style="margin-top:6px">Data compiled ' + esc(p.compiled) + '. Prices checked ' + esc(p.pricesChecked) + '.</div></div></section>';
-    h += '<section><h2>Read first: corrections and conflicts</h2>' + p.conflicts.map(function (c) { return '<div class="card conflict' + (c.disputed ? '' : ' plain') + '" style="margin-bottom:8px"><h3>' + esc(c.topic) + ' ' + badges(c) + '</h3><div class="small">' + esc(c.text) + '</div>' + srcs(c.src) + '</div>'; }).join('') + '</section>';
-    h += '<section><h2>Models and years</h2>' + factList(o.facts) + '</section>';
-    h += '<section><h2>Year-by-year changes</h2><ul class="tl">' + o.yearChanges.map(function (y) { return '<li><span class="yr">' + esc(y.year) + '</span>' + esc(y.text) + ' ' + badges(y) + srcs(y.src) + '</li>'; }).join('') + '</ul></section>';
-    h += '<section><h2>Engines (factory ratings)</h2>' + table(o.engines) + '</section>';
-    h += '<section><h2>Transmissions</h2>' + factList(o.transmissions) + '</section>';
-    h += '<section><h2>Factory axles</h2>' + table(o.axles) + '<div style="margin-top:10px">' + factList(o.axleNotes) + '</div></section>';
-    (o.extraTables || []).forEach(function (t) { h += '<section><h2>' + esc(t.title) + '</h2>' + table(t.table) + '</section>'; });
-    if (o.mpg) h += '<section><h2>Real-world MPG (owners)</h2>' + table(o.mpg) + '</section>';
-    if (p.unknowns) h += '<section><h2>Still unknown</h2><div class="card"><ul class="small muted" style="margin:0;padding-left:18px">' + p.unknowns.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('') + '</ul></div></section>';
+    var o = p.overview, h = secHead(pid, p, SNAME.overview);
+    h += '<h2 class="h2">Models and years</h2>' + factList(o.facts);
+    if (p.conflicts.length) h += fold('Read first: corrections and conflicts', p.conflicts.map(function (c) { return '<div class="item"><div class="item-t">' + esc(c.topic) + ' ' + badges(c) + '</div><div>' + esc(c.text) + '</div>' + srcs(c.src) + '</div>'; }).join(''), false, p.conflicts.length + '');
+    h += fold('Year-by-year changes', '<ul class="tl">' + o.yearChanges.map(function (y) { return '<li><span class="yr">' + esc(y.year) + '</span><span>' + esc(y.text) + ' ' + badges(y) + srcs(y.src) + '</span></li>'; }).join('') + '</ul>', false, o.yearChanges.length + '');
+    h += fold('Engines (factory ratings)', table(o.engines));
+    h += fold('Transmissions', factList(o.transmissions));
+    h += fold('Factory axles', table(o.axles) + factList(o.axleNotes));
+    (o.extraTables || []).forEach(function (t) { h += fold(t.title, table(t.table)); });
+    if (o.mpg) h += fold('Real-world MPG (owners)', table(o.mpg));
+    if (p.unknowns) h += fold('Still unknown', '<ul class="plain">' + p.unknowns.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('') + '</ul>', false, p.unknowns.length + '');
     return h;
   }
   function tabWheels(pid, p) {
-    var w = p.wheels, h = '';
-    h += '<section><h2>Base specs</h2>' + table(w.specs) + '</section>';
-    h += '<section><h2>Stock sizes</h2>' + table(w.stock) + '</section>';
+    var w = p.wheels, h = secHead(pid, p, SNAME.wheels);
+    h += '<h2 class="h2">Base specs</h2>' + table(w.specs);
+    h += '<h2 class="h2">Stock sizes</h2>' + table(w.stock);
     var st = w.stances; var cur = state.stance && st.some(function (s) { return s.id === state.stance; }) ? state.stance : st[0].id;
-    h += '<section><h2>Fitment by stance</h2><div class="seg" role="tablist">' + st.map(function (s) { return '<button data-stance="' + s.id + '" class="' + (s.id === cur ? 'on' : '') + '">' + esc(s.title) + '</button>'; }).join('') + '</div>';
+    h += '<h2 class="h2">Fitment by stance</h2><div class="seg" role="tablist">' + st.map(function (s) { return '<button role="tab" data-stance="' + s.id + '" class="' + (s.id === cur ? 'on' : '') + '">' + esc(s.title) + '</button>'; }).join('') + '</div>';
     st.forEach(function (s) {
-      h += '<div class="stance' + (s.id === cur ? '' : ' hide') + '" data-stance-panel="' + s.id + '"><div class="card" style="margin-bottom:10px"><h3>' + esc(s.title) + ' <span class="muted" style="font-weight:500">· ' + esc(s.subtitle) + '</span> ' + badges(s) + '</h3><div class="small muted">' + esc(s.note || '') + '</div>' + srcs(s.src) + srcs(s.noteSrc) + '</div>';
+      h += '<div class="stance' + (s.id === cur ? '' : ' hide') + '" data-stance-panel="' + s.id + '"><p class="stance-sub"><b>' + esc(s.title) + '</b> · ' + esc(s.subtitle) + ' ' + badges(s) + '</p>' + (s.note ? '<p class="small muted">' + esc(s.note) + '</p>' : '') + srcs(s.src) + srcs(s.noteSrc);
       if (s.rows.length) {
         var low = s.rows[0].drop !== undefined;
-        h += '<div class="tbl-wrap"><table><thead><tr>' + (low ? '<th>' + esc(s.colDrop || 'Drop') + '</th><th>' + esc(s.colVehicle || 'Truck') + '</th>' : '') + '<th>Wheel</th><th>Tire</th><th>Result</th><th>Confidence</th></tr></thead><tbody>';
+        h += '<div class="tbl-wrap stack"><table><thead><tr>' + (low ? '<th>' + esc(s.colDrop || 'Drop') + '</th><th>' + esc(s.colVehicle || 'Truck') + '</th>' : '') + '<th>Wheel</th><th>Tire</th><th>Result</th><th>Confidence</th></tr></thead><tbody>';
         s.rows.forEach(function (r) {
           var sl = r.src || s.src || [];
-          h += '<tr' + (r.disputed ? ' class="disputed"' : '') + '>' + (low ? '<td class="num">' + esc(r.drop) + '</td><td>' + esc(r.truck || '') + '</td>' : '') + '<td class="num">' + esc(r.wheel) + '</td><td class="num">' + esc(r.tire) + '</td><td>' + esc(r.fit) + (sl.length ? ' <a class="small" href="' + esc(sl[0].url) + '" target="_blank" rel="noopener">source</a>' : '') + '</td><td>' + badges(r) + '</td></tr>';
+          h += '<tr' + (r.disputed ? ' class="disputed"' : '') + '>' + (low ? '<td class="num" data-l="' + esc(s.colDrop || 'Drop') + '">' + esc(r.drop) + '</td><td data-l="' + esc(s.colVehicle || 'Truck') + '">' + esc(r.truck || '') + '</td>' : '') + '<td class="num" data-l="Wheel">' + esc(r.wheel) + '</td><td class="num" data-l="Tire">' + esc(r.tire) + '</td><td data-l="Result"><span>' + esc(r.fit) + (sl.length ? ' <a class="small" href="' + esc(sl[0].url) + '" target="_blank" rel="noopener">source</a>' : '') + '</span></td><td data-l="Label">' + badges(r) + '</td></tr>';
         });
         h += '</tbody></table></div>';
       }
       h += '</div>';
     });
-    h += '</section>';
-    (p.featuredParts || []).filter(function (f) { return f.tab === 'wheels'; }).forEach(function (f) { var fp = partById(p, f.id); if (fp) h += '<section><h2>' + esc(f.heading || 'Featured') + '</h2>' + partCard(pid, fp, f.label) + '</section>'; });
-    if (w.extraFacts && w.extraFacts.items && w.extraFacts.items.length) h += '<section><h2>' + esc(w.extraFacts.title) + '</h2>' + factList(w.extraFacts.items) + '</section>';
-    h += '<section><h2>TPMS</h2>' + factList(w.tpms) + '</section>';
+    var feat = (p.featuredParts || []).filter(function (f) { return f.tab === 'wheels'; });
+    feat.forEach(function (f) { var fp = partById(p, f.id); if (fp) h += '<h2 class="h2">' + esc(f.heading || 'Featured') + '</h2><div class="rows">' + partRow(pid, fp, f.label) + '</div>'; });
+    if (w.extraFacts && w.extraFacts.items && w.extraFacts.items.length) h += fold(w.extraFacts.title, factList(w.extraFacts.items));
+    h += fold('TPMS', factList(w.tpms));
     return h;
   }
-  function tabParts(pid, p, focus) {
-    var cats = p.partCategories.filter(function (c) { return p.parts.some(function (x) { return x.category === c; }); });
-    var h = '<section><div class="sec-head"><h2>Popular parts and deals</h2><span class="small dim">' + p.parts.length + ' parts</span></div>';
-    h += '<p class="small muted" style="margin-top:0">Best = lowest verified listed price. Shipping excluded unless the seller says free. RockAuto adds shipping at checkout. Prices checked ' + esc(p.pricesChecked) + ' and they change.</p>';
-    h += '<div class="cat-chips"><button class="chip' + (state.cat === 'all' ? ' on' : '') + '" data-cat="all">All</button>' + (p.myVehicle && p.parts.some(function (x) { return x.fitment && x.fitment.hunter_fit === true; }) ? '<button class="chip' + (state.mineOnly ? ' on' : '') + '" data-mine="1">Fits my truck</button>' : '') + cats.map(function (c) { return '<button class="chip' + (state.cat === c ? ' on' : '') + '" data-cat="' + esc(c) + '">' + esc(c) + '</button>'; }).join('') + '</div>';
-    var feat = {}; (p.featuredParts || []).forEach(function (f) { feat[f.id] = f.label; });
-    var shown = cats.filter(function (c) { return state.cat === 'all' || state.cat === c; });
-    shown.forEach(function (c) {
-      var items = p.parts.filter(function (x) { return x.category === c && (!state.mineOnly || (x.fitment && x.fitment.hunter_fit === true)); });
-      if (!items.length) return;
-      h += '<h3 class="h-sub">' + esc(c) + ' · ' + items.length + '</h3><div class="grid g3">' + items.map(function (x) { return partCard(pid, x, feat[x.id] || (focus === x.id ? 'Linked part' : '')); }).join('') + '</div>';
+  function partCats(p) { return p.partCategories.filter(function (c) { return p.parts.some(function (x) { return x.category === c; }); }); }
+  function sortParts(list) {
+    var pr = function (x) { var l = listedPrice(x); return l ? l.price : null; };
+    return list.slice().sort(function (a, b) {
+      if (state.sort === 'name') return a.name.localeCompare(b.name);
+      var A = pr(a), B = pr(b);
+      if (A == null || B == null) return (A == null) - (B == null);
+      return state.sort === 'price-desc' ? B - A : A - B;
     });
-    h += '</section>';
-    if (p.sellers && p.sellers.length) h += '<section><h2>Seller notes</h2><div class="grid g2">' + p.sellers.map(function (s) { return '<div class="card"><h3>' + esc(s.name) + '</h3><div class="small muted">' + esc(s.notes) + '</div><div class="small" style="margin-top:6px"><span class="dim">Returns:</span> ' + esc(s.returns) + '</div><div class="small"><span class="dim">Affiliate:</span> ' + esc(s.affiliate) + '</div></div>'; }).join('') + '</div></section>';
+  }
+  function hasMine(p) { return !!(p.myVehicle && p.parts.some(function (x) { return x.fitment && x.fitment.hunter_fit === true; })); }
+  function tabParts(pid, p, focus) {
+    if (focus && partById(p, focus)) return partDetail(pid, p, partById(p, focus));
+    var cats = partCats(p);
+    var ci = focus && /^cat-\d+$/.test(focus) ? +focus.slice(4) : (focus === 'all' ? -1 : null);
+    if (ci === null) {
+      var h = secHead(pid, p, 'Parts', '<p class="lede">' + p.parts.length + ' parts with checked prices. Prices checked ' + esc(p.pricesChecked) + '.</p>');
+      var feat = (p.featuredParts || []).filter(function (f) { return f.tab !== 'wheels' && partById(p, f.id); });
+      if (feat.length) h += '<h2 class="h2">Featured</h2><div class="rows">' + feat.map(function (f) { return partRow(pid, partById(p, f.id), f.label); }).join('') + '</div>';
+      h += '<h2 class="h2">Categories</h2><div class="rows">' + cats.map(function (c, i) {
+        var items = p.parts.filter(function (x) { return x.category === c; });
+        var lows = items.map(function (x) { var l = listedPrice(x); return l ? l.price : null; }).filter(function (v) { return v != null; });
+        return row('#/p/' + pid + '/parts/cat-' + i, esc(c), items.length + ' part' + (items.length > 1 ? 's' : ''), lows.length ? '<span class="dim small">from</span> <span class="price">' + money(Math.min.apply(null, lows)) + '</span>' : '');
+      }).join('') + row('#/p/' + pid + '/parts/all', 'All parts', p.parts.length + ' parts') + '</div>';
+      if (p.sellers && p.sellers.length) h += fold('Seller notes', p.sellers.map(function (s) { return '<div class="item"><div class="item-t">' + esc(s.name) + '</div><div class="small">' + esc(s.notes) + '</div><div class="small dim">Returns: ' + esc(s.returns) + ' · Affiliate: ' + esc(s.affiliate) + '</div></div>'; }).join(''));
+      return h;
+    }
+    var title = ci === -1 ? 'All parts' : cats[ci];
+    var items = p.parts.filter(function (x) { return (ci === -1 || x.category === title) && (!state.mineOnly || (x.fitment && x.fitment.hunter_fit === true)); });
+    var h2 = crumb(pid, p, [['Parts', '#/p/' + pid + '/parts'], [title]]) + '<header class="page-h sm"><h1>' + esc(title) + '</h1></header>' + safetyBlock(p, false);
+    h2 += '<div class="toolbar"><label class="sel"><span>Sort</span><select id="sortSel"><option value="price-asc"' + (state.sort === 'price-asc' ? ' selected' : '') + '>Price: low to high</option><option value="price-desc"' + (state.sort === 'price-desc' ? ' selected' : '') + '>Price: high to low</option><option value="name"' + (state.sort === 'name' ? ' selected' : '') + '>Name</option></select></label>' + (hasMine(p) ? '<button class="chip' + (state.mineOnly ? ' on' : '') + '" data-mine="1" aria-pressed="' + state.mineOnly + '">Fits my truck</button>' : '') + '<span class="dim small count">' + items.length + ' shown</span></div>';
+    if (ci === -1 && state.sort === 'name') h2 += '<div class="rows">' + sortParts(items).map(function (x) { return partRow(pid, x); }).join('') + '</div>';
+    else if (ci === -1) cats.forEach(function (c) { var it = items.filter(function (x) { return x.category === c; }); if (it.length) h2 += '<div class="grp-h">' + esc(c) + '</div><div class="rows">' + sortParts(it).map(function (x) { return partRow(pid, x); }).join('') + '</div>'; });
+    else h2 += items.length ? '<div class="rows">' + sortParts(items).map(function (x) { return partRow(pid, x); }).join('') + '</div>' : '<p class="empty">No parts match. Turn off the filter to see all.</p>';
+    h2 += '<p class="small dim">Price shown is the lowest verified listed price on ' + esc(p.pricesChecked) + '. Shipping excluded unless the seller says free.</p>';
+    return h2;
+  }
+  function partDetail(pid, p, part) {
+    var ci = partCats(p).indexOf(part.category);
+    var lp = listedPrice(part), f = part.fitment || {};
+    var used = p.problems.filter(function (x) { return (x.parts || []).indexOf(part.id) > -1; }).map(function (x) { return ['problems', x.id, x.title]; })
+      .concat(p.guides.filter(function (g) { return (g.parts || []).indexOf(part.id) > -1; }).map(function (g) { return ['guides', g.id, g.title]; }));
+    var feat = (p.featuredParts || []).filter(function (x) { return x.id === part.id; })[0];
+    var h = crumb(pid, p, [['Parts', '#/p/' + pid + '/parts'], [part.category, '#/p/' + pid + '/parts/cat-' + ci]]);
+    h += '<article class="detail" id="part-' + esc(part.id) + '"><div class="eyebrow mono">' + esc(part.brand) + (part.part_number ? ' · ' + esc(part.part_number) : '') + '</div><h1 class="d-title">' + esc(part.name) + '</h1>' + (feat ? '<p class="accent small">' + esc(feat.label) + '</p>' : '');
+    h += '<div class="buybar"><div><div class="price-big">' + (lp ? money(lp.price) : 'n/a') + (lp && lp.unit && lp.unit !== 'listing' ? ' <small>per ' + esc(lp.unit) + '</small>' : '') + '</div><div class="small dim">' + (lp ? (lp.verified ? 'Best verified price' : 'Unverified price') + ' at ' + esc(lp.seller) : 'No verified price') + '</div></div>' + addBtn(pid, part.id, true) + '</div>';
+    h += safetyBlock(p, false);
+    h += '<h2 class="h2">Where to buy</h2><div class="offers">' + part.offers.slice().sort(function (a, b) { return (a.price == null) - (b.price == null) || a.price - b.price; }).map(function (o) {
+      var best = isBest(part, o);
+      return '<div class="offer' + (best ? ' best' : '') + '"><div class="offer-top"><a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.seller) + '</a><span class="price">' + (o.price != null ? money(o.price) : 'n/a') + '</span></div><div class="small dim">' + (best ? '<span class="accent">Best price</span> · ' : '') + '<span class="' + (o.status === 'verified' ? 'c-ok' : 'c-warn') + '">' + (o.status === 'verified' ? 'Verified' : 'Unverified') + '</span> · checked ' + esc(o.checked) + (o.price_unit && o.price_unit !== 'listing' ? ' · per ' + esc(o.price_unit) : '') + (o.shipping_note ? ' · ship: ' + esc(o.shipping_note) : '') + (o.source_note ? ' · ' + esc(o.source_note) : '') + '</div></div>';
+    }).join('') + '</div>';
+    var fr = fitRows(f);
+    h += '<h2 class="h2">Fitment</h2>' + (fitLabel(f) ? '<p>' + fitLabel(f) + (f.hunter_note ? ' <span class="small muted">' + esc(f.hunter_note) + '</span>' : '') + '</p>' : '') + (fr.length ? '<dl class="facts">' + fr.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' : '<p class="small dim">No fitment details listed. Check with the seller.</p>');
+    if (part.notes) h += '<h2 class="h2">Notes</h2><p>' + esc(part.notes) + '</p>';
+    if (used.length) h += '<h2 class="h2">Used in</h2><div class="rows">' + used.map(function (u) { return row('#/p/' + pid + '/' + u[0] + '/' + encodeURIComponent(u[1]), esc(u[2]), u[0] === 'problems' ? 'Problem' : 'Guide'); }).join('') + '</div>';
+    h += '<p class="small dim">' + esc(part.category) + ' · ' + (part.source === 'master-guide' ? 'From master guide' : 'From deals check') + '</p></article>';
     return h;
   }
-  function tabProblems(pid, p) {
-    return '<section><h2>Common problems</h2>' + p.problems.map(function (x) {
-      return '<details class="acc" id="prob-' + esc(x.id) + '"><summary><div><h3 style="margin:0">' + esc(x.title) + '</h3><div class="small muted">' + esc(x.symptoms) + '</div><div style="margin-top:6px">' + badges(x) + (x.years ? ' <span class="small dim">' + esc(x.years) + '</span>' : '') + '</div></div>' + CHEV + '</summary><div class="body"><dl class="kv"><dt>Symptom</dt><dd>' + esc(x.symptoms) + '</dd>' + (x.cause ? '<dt>Cause</dt><dd>' + esc(x.cause) + '</dd>' : '') + '<dt>Fix</dt><dd>' + esc(x.fix) + '</dd></dl>' + (x.confNote ? '<div class="small dim" style="margin-top:8px">' + esc(x.confNote) + '</div>' : '') + (x.parts && x.parts.length ? '<div class="h-sub">Parts</div>' + miniParts(pid, p, x.parts) : '') + (x.guide ? '<p class="small"><a href="#/p/' + pid + '/guides/' + esc(x.guide) + '">Open the step-by-step guide</a></p>' : '') + srcs(x.src) + '</div></details>';
-    }).join('') + '</section>';
+  function tabProblems(pid, p, focus) {
+    var x = focus && p.problems.filter(function (y) { return y.id === focus; })[0];
+    if (x) {
+      var h = crumb(pid, p, [['Problems', '#/p/' + pid + '/problems']]) + '<article class="detail" id="prob-' + esc(x.id) + '"><h1 class="d-title">' + esc(x.title) + '</h1><p>' + badges(x) + (x.years ? ' <span class="small dim">' + esc(x.years) + '</span>' : '') + '</p>' + safetyBlock(p, false);
+      h += '<dl class="kv"><dt>Symptom</dt><dd>' + esc(x.symptoms) + '</dd>' + (x.cause ? '<dt>Cause</dt><dd>' + esc(x.cause) + '</dd>' : '') + '<dt>Fix</dt><dd>' + esc(x.fix) + '</dd></dl>';
+      if (x.confNote) h += '<p class="small dim">' + esc(x.confNote) + '</p>';
+      if (x.guide) { var g = p.guides.filter(function (y) { return y.id === x.guide; })[0]; h += '<div class="rows">' + row('#/p/' + pid + '/guides/' + encodeURIComponent(x.guide), 'Step-by-step guide', g ? esc(g.title) : '') + '</div>'; }
+      if (x.parts && x.parts.length) h += '<h2 class="h2">Parts for this fix</h2>' + miniParts(pid, p, x.parts);
+      h += '<h2 class="h2">Sources</h2>' + srcs(x.src);
+      return h + '</article>';
+    }
+    var h2 = secHead(pid, p, SNAME.problems);
+    h2 += '<label class="search">' + SEARCH_ICON + '<input id="pq" type="search" placeholder="Describe the symptom: misfire, clunk, leak, code" value="' + esc(state.pq) + '" autocomplete="off" aria-label="Search problems by symptom"></label><div id="plist"></div>';
+    return h2;
   }
-  function guideBlock(pid, p, g, open) {
-    var h = '<details class="acc" id="guide-' + esc(g.id) + '"' + (open ? ' open' : '') + '><summary><div><h3 style="margin:0">' + esc(g.title) + '</h3>' + (g.summary ? '<div class="small muted">' + esc(g.summary) + '</div>' : '') + '<div style="margin-top:6px">' + badges(g) + ' <span class="small dim">' + (g.steps.length ? g.steps.length + ' steps' : '') + (g.torque ? (g.steps.length ? ' · ' : '') + 'torque table' : '') + '</span></div></div>' + CHEV + '</summary><div class="body">';
-    if (g.steps.length) h += '<ol class="steps">' + g.steps.map(function (s) { return '<li>' + esc(s.text) + ((s.conf && s.conf !== g.conf) || s.disputed ? ' ' + badges({ conf: s.conf && s.conf !== g.conf ? s.conf : null, disputed: s.disputed }) : '') + '</li>'; }).join('') + '</ol>';
-    if (g.torque) h += '<div class="h-sub">Torque specs</div>' + table(g.torque, { numCol: 1 });
-    if (g.parts && g.parts.length) h += '<div class="h-sub">Parts for this job</div>' + miniParts(pid, p, g.parts);
-    h += '<div class="h-sub">Sources</div>' + srcs(g.src);
-    return h + '</div></details>';
+  function problemRows(pid, p) {
+    var terms = state.pq.toLowerCase().split(/\s+/).filter(Boolean);
+    var list = p.problems.filter(function (x) { var hay = (x.title + ' ' + x.symptoms + ' ' + (x.cause || '') + ' ' + (x.years || '')).toLowerCase(); return terms.every(function (t) { return hay.indexOf(t) > -1; }); });
+    if (!list.length) return '<p class="empty">No problem matches that. Try fewer words, or search the whole platform from its home screen.</p>';
+    return '<p class="small dim">' + list.length + ' of ' + p.problems.length + '</p><div class="rows">' + list.map(function (x) {
+      return row('#/p/' + pid + '/problems/' + encodeURIComponent(x.id), hl(x.title, terms), '<span class="clamp">' + hl(x.symptoms, terms) + '</span>' + (x.years ? '<span class="dim"> · ' + esc(x.years) + '</span>' : '') + (x.disputed ? ' <span class="flag-disputed">Disputed</span>' : ''), '');
+    }).join('') + '</div>';
   }
   function tabGuides(pid, p, focus) {
-    var diy = p.guides.filter(function (g) { return g.type === 'diy'; }), sw = p.guides.filter(function (g) { return g.type === 'swap'; });
-    return '<section><h2>DIY guides</h2>' + diy.map(function (g) { return guideBlock(pid, p, g, focus === g.id); }).join('') + '</section><section><h2>Swap guides</h2>' + sw.map(function (g) { return guideBlock(pid, p, g, focus === g.id); }).join('') + '</section>';
+    var g = focus && p.guides.filter(function (y) { return y.id === focus; })[0];
+    if (g) {
+      var h = crumb(pid, p, [['Guides', '#/p/' + pid + '/guides']]) + '<article class="detail" id="guide-' + esc(g.id) + '"><div class="eyebrow">' + (g.type === 'swap' ? 'Swap guide' : 'DIY guide') + '</div><h1 class="d-title">' + esc(g.title) + '</h1>' + (g.summary ? '<p class="lede">' + esc(g.summary) + '</p>' : '') + '<p>' + badges(g) + '</p>' + safetyBlock(p, false);
+      if (g.steps.length) h += '<h2 class="h2">Steps</h2><ol class="steps">' + g.steps.map(function (s) { return '<li><span>' + esc(s.text) + ((s.conf && s.conf !== g.conf) || s.disputed ? ' ' + badges({ conf: s.conf && s.conf !== g.conf ? s.conf : null, disputed: s.disputed }) : '') + '</span></li>'; }).join('') + '</ol>';
+      if (g.torque) h += '<h2 class="h2">Torque specs</h2>' + table(g.torque, { numCol: 1 });
+      if (g.parts && g.parts.length) h += '<h2 class="h2">Parts for this job</h2>' + miniParts(pid, p, g.parts);
+      h += '<h2 class="h2">Sources</h2>' + srcs(g.src);
+      return h + '</article>';
+    }
+    var h2 = secHead(pid, p, SNAME.guides);
+    [['diy', 'DIY'], ['swap', 'Swaps']].forEach(function (t) {
+      var list = p.guides.filter(function (y) { return y.type === t[0]; });
+      if (!list.length) return;
+      h2 += '<h2 class="h2">' + t[1] + '</h2><div class="rows">' + list.map(function (y) {
+        var meta = [y.steps.length ? y.steps.length + ' steps' : '', y.torque ? 'torque table' : '', y.parts && y.parts.length ? y.parts.length + ' parts' : ''].filter(Boolean).join(' · ');
+        return row('#/p/' + pid + '/guides/' + encodeURIComponent(y.id), esc(y.title), (meta ? esc(meta) : '') + (y.disputed ? ' <span class="flag-disputed">Disputed</span>' : ''), '');
+      }).join('') + '</div>';
+    });
+    return h2;
   }
   function tabTips(pid, p) {
-    var h = '<section><h2>Owner tips</h2><div class="grid g2">' + p.tips.map(function (t) { return '<div class="card tip"><span class="dot"></span><div><div>' + esc(t.text) + '</div><div style="margin-top:6px">' + badges(t) + '</div>' + srcs(t.src) + '</div></div>'; }).join('') + '</div></section>';
-    if (p.dyno) h += '<section><h2>Owner dyno results</h2>' + table(p.dyno) + '</section>';
-    if (p.videos) h += '<section><h2>Videos</h2><p class="small muted" style="margin-top:0">Title, channel and date confirmed. Videos were not watched, so only the description is used.</p><div class="grid g2">' + p.videos.map(function (v) { return '<a class="card vid" href="' + esc(v.url) + '" target="_blank" rel="noopener"><div class="t">' + esc(v.title) + '</div><div class="small muted">' + esc(v.channel) + (v.date ? ' · ' + esc(v.date) : '') + '</div><div class="small" style="margin-top:6px">' + esc(v.note) + '</div><div style="margin-top:6px">' + badge('video') + '</div></a>'; }).join('') + '</div></section>';
+    var h = secHead(pid, p, SNAME.tips);
+    h += '<ul class="tips">' + p.tips.map(function (t) { return '<li><div>' + esc(t.text) + '</div><div class="tip-m">' + badges(t) + srcs(t.src) + '</div></li>'; }).join('') + '</ul>';
+    if (p.dyno) h += fold('Owner dyno results', table(p.dyno));
+    if (p.videos) h += fold('Videos', '<p class="small muted">Title, channel and date confirmed. Videos were not watched, so only the description is used.</p><div class="rows">' + p.videos.map(function (v) { return '<a class="row" href="' + esc(v.url) + '" target="_blank" rel="noopener"><span class="row-main"><span class="row-t">' + esc(v.title) + '</span><span class="row-s">' + esc(v.channel) + (v.date ? ' · ' + esc(v.date) : '') + '</span><span class="row-s">' + esc(v.note) + '</span><span>' + badge('video') + '</span></span></a>'; }).join('') + '</div>', false, p.videos.length + '');
     return h;
   }
 
@@ -346,48 +468,38 @@
   function snippet(text, terms) {
     var lo = text.toLowerCase(), i = -1;
     for (var k = 0; k < terms.length && i < 0; k++) i = lo.indexOf(terms[k]);
-    if (text.length <= 220 || i < 0) return text.length > 220 ? text.slice(0, 220) + '…' : text;
-    var st = Math.max(0, i - 80); return (st ? '…' : '') + text.slice(st, st + 220) + '…';
+    if (text.length <= 160 || i < 0) return text.length > 160 ? text.slice(0, 160) + '…' : text;
+    var st = Math.max(0, i - 60); return (st ? '…' : '') + text.slice(st, st + 160) + '…';
   }
   function renderSearch(pid, p) {
     var terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
     var hits = searchIndex(pid, p).filter(function (it) { return terms.every(function (t) { return it.hay.indexOf(t) > -1; }); });
-    var names = {}; TABS.forEach(function (t) { names[t[0]] = t[1]; });
-    var h = '<section><div class="sec-head"><h2>Results for “' + esc(state.q) + '”</h2><span class="small dim">' + hits.length + ' found</span></div>';
-    if (!hits.length) return h + '<div class="card empty">Nothing matched. Try a part number, a code like P0332, a size like 285/55R20, or a word like "knock".</div></section>';
-    h += '<div class="grid">' + hits.slice(0, 80).map(function (it) {
-      return '<a class="card hit" href="#/p/' + pid + '/' + it.tab + (it.anchor ? '/' + encodeURIComponent(it.anchor) : '') + '" data-clearq="1"><div class="sect">' + esc(names[it.tab]) + '</div><h3 style="margin:4px 0">' + hl(it.title, terms) + '</h3><div class="small muted">' + hl(snippet(it.text, terms), terms) + '</div>' + (it.conf ? '<div style="margin-top:6px">' + badges(it.conf) + '</div>' : '') + '</a>';
-    }).join('') + '</div>';
-    if (hits.length > 80) h += '<p class="small dim">Showing the first 80. Add another word to narrow it down.</p>';
-    return h + '</section>';
+    var h = '<p class="small dim">' + hits.length + ' results in ' + esc(p.name) + '</p>';
+    if (!hits.length) return h + '<p class="empty">Nothing matched. Try a part number, a code like P0332, a size like 285/55R20, or a word like "knock".</p>';
+    var by = {}; hits.forEach(function (it) { (by[it.tab] = by[it.tab] || []).push(it); });
+    SECTIONS.forEach(function (s) { if (by[s[0]]) h += '<div class="grp-h">' + s[1] + ' · ' + by[s[0]].length + '</div><div class="rows">' + by[s[0]].slice(0, 30).map(function (it) { return hitRow(pid, it, terms); }).join('') + '</div>'; });
+    return h;
   }
 
   // ---------- platform shell ----------
   function renderPlatform(pid, tab, focus) {
     var p = P[pid];
-    if (!p) { var c = CATALOG.filter(function (x) { return x.id === pid; })[0]; app.innerHTML = '<div class="wrap"><section class="hero"><div class="eyebrow">Coming soon</div><h1>' + esc(c ? c.title : pid) + '</h1><p class="lede">This platform has no data file loaded yet.</p><p><a class="btn" href="#/">Back to platforms</a></p></section></div>'; return; }
-    if (!TABS.some(function (t) { return t[0] === tab; })) tab = 'overview';
-    var h = '<div class="wrap phead"><div class="eyebrow">' + esc(p.make) + ' · ' + esc(p.years) + '</div><h1>' + esc(p.name) + ' <span class="muted" style="font-weight:500">' + esc(p.title) + '</span></h1><p class="lede small">' + esc(p.tagline) + '</p>' + (p.myVehicle ? '<div class="mine"><b>' + esc(p.myVehicle.label) + ':</b> ' + esc(p.myVehicle.text) + '</div>' : '') +
-      ((p.safetyAlerts || []).length ? '<div class="safety-wrap" role="alert">' + p.safetyAlerts.map(function (x) { return '<details class="safety"' + (tab === 'overview' ? ' open' : '') + '><summary class="safety-h">⚠ Safety: ' + esc(x.title) + ' ' + badges(x) + '</summary><div class="small" style="margin-top:4px">' + esc(x.text) + '</div>' + srcs(x.src) + '</details>'; }).join('') + (tab === 'overview' ? '' : '<div class="small dim" style="margin-top:4px">Tap a safety item to read it. Full text is open on Overview.</div>') + '</div>' : '') +
-      '<label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="q" type="search" placeholder="Search ' + esc(p.name) + ': parts, codes, sizes, torque…" value="' + esc(state.q) + '" autocomplete="off"></label></div>';
-    h += '<div class="tabs-bar"><div class="wrap"><nav class="tabs" id="tabs">' + TABS.map(function (t) { return '<a class="tab' + (t[0] === tab && !state.q ? ' on' : '') + '" href="#/p/' + pid + '/' + t[0] + '" data-clearq="1">' + t[1] + '</a>'; }).join('') + '</nav></div></div>';
-    h += '<div class="wrap" id="pbody"></div>';
-    app.innerHTML = h;
-    var body = document.getElementById('pbody');
-    function draw() {
-      if (state.q.trim()) body.innerHTML = renderSearch(pid, p);
-      else body.innerHTML = ({ overview: tabOverview, wheels: tabWheels, parts: tabParts, problems: tabProblems, guides: tabGuides, tips: tabTips })[tab](pid, p, focus);
-      Array.prototype.forEach.call(document.querySelectorAll('#tabs .tab'), function (a) { a.classList.toggle('on', !state.q.trim() && a.getAttribute('href').split('/').pop() === tab); });
+    if (!p) { app.innerHTML = '<div class="wrap narrow"><header class="page-h"><h1>Not available yet</h1><p class="lede">This platform has no data file loaded yet.</p><p><a class="btn" href="#/">Back to garage</a></p></header></div>'; return; }
+    if (tab === 'search') { state.q = state.q || ''; tab = ''; }
+    var fn = { overview: tabOverview, wheels: tabWheels, parts: tabParts, problems: tabProblems, guides: tabGuides, tips: tabTips }[tab];
+    app.innerHTML = '<div class="wrap narrow" id="pbody">' + (fn ? fn(pid, p, focus) : platformHome(pid, p)) + '</div>';
+    if (!fn) {
+      var q = document.getElementById('q'), pres = document.getElementById('pres'), menu = document.getElementById('pmenu');
+      var draw = function () { state.q = q.value; var on = !!q.value.trim(); pres.innerHTML = on ? renderSearch(pid, p) : ''; menu.style.display = on ? 'none' : ''; };
+      q.addEventListener('input', draw); if (state.q) draw();
     }
-    draw();
-    var q = document.getElementById('q');
-    q.addEventListener('input', function () { state.q = q.value; draw(); });
-    var on = document.querySelector('#tabs .tab.on'); if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest', inline: 'center' });
-    if (focus) {
-      if (tab === 'wheels') { state.stance = focus; draw(); setStance(focus); }
-      var el = document.getElementById((tab === 'parts' ? 'part-' : tab === 'problems' ? 'prob-' : tab === 'guides' ? 'guide-' : '') + focus);
-      if (el) { if (el.tagName === 'DETAILS') el.open = true; setTimeout(function () { el.scrollIntoView({ block: 'start' }); window.scrollBy(0, -120); }, 30); }
-    } else window.scrollTo(0, 0);
+    if (tab === 'problems' && !focus) {
+      var pq = document.getElementById('pq'), pl = document.getElementById('plist');
+      var pd = function () { state.pq = pq.value; pl.innerHTML = problemRows(pid, p); };
+      pq.addEventListener('input', pd); pd();
+    }
+    var ss = document.getElementById('sortSel'); if (ss) ss.addEventListener('change', function () { state.sort = ss.value; rerender(); });
+    if (tab === 'wheels' && focus) setStance(focus);
   }
   function setStance(id) {
     state.stance = id;
@@ -398,71 +510,92 @@
   // ---------- build sheet ----------
   function renderBuild() {
     var ids = Object.keys(P);
-    useBuild(P[store.current] ? store.current : ids[0]);
+    if (!P[store.current]) { app.innerHTML = '<div class="wrap narrow"><header class="page-h"><h1>Build sheet</h1><p class="lede">Choose a vehicle first. Each vehicle keeps its own build.</p></header><a class="btn btn-primary" href="#/garage/add">Choose your vehicle</a></div>'; return; }
     var p = P[store.current];
     var total = 0, unverified = 0, unpriced = 0;
     build.items.forEach(function (i) { if (i.price == null) unpriced++; else { total += i.price * (i.qty || 1); if (!i.verified) unverified++; } });
-    var h = '<div class="wrap"><section class="phead"><div class="eyebrow">Build sheet</div><h1>My ' + esc(p ? p.name : '') + ' build</h1><p class="lede small">Each platform keeps its own build, saved on this device. Totals use listed prices from the checked date; shipping and tax not included.</p></section><div class="build-grid">';
-    h += '<div><div class="card"><label class="l" for="bPlat">Platform</label><select id="bPlat">' + ids.map(function (k) { return '<option value="' + esc(k) + '"' + (k === store.current ? ' selected' : '') + '>' + esc(P[k].name + ' · ' + P[k].years + ' (' + buildFor(k).items.length + ' parts)') + '</option>'; }).join('') + CATALOG.filter(function (c) { return !P[c.id]; }).map(function (c) { return '<option disabled>' + esc(c.title + ' (coming soon)') + '</option>'; }).join('') + '</select>';
-    h += '<div style="margin-top:14px">' + photoBox() + '</div><div class="soon-btns">' + soonButtons() + '</div></div></div>';
-    h += '<div class="card"><div class="sec-head"><h2 style="margin:0">Parts</h2>' + (p ? '<a class="btn btn-sm" href="#/p/' + esc(store.current) + '/parts">+ Browse parts</a>' : '') + '</div>';
-    if (!build.items.length) h += '<div class="empty">No parts yet. Open ' + (p ? esc(p.name) : 'a platform') + ' and tap <b>Add to build</b> on any part card.</div>';
-    build.items.forEach(function (i, n) {
-      h += '<div class="line-item"><div><div class="nm">' + esc(i.name) + '</div><div class="meta"><span class="mono">' + esc(i.brand + (i.pn ? ' · ' + i.pn : '')) + '</span>' + (i.price != null ? (i.verified ? '<span class="b b-verified">Verified</span>' : '<span class="b b-unverified">Unverified</span>') : '<span class="b b-unknown">No price</span>') + (i.seller ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.seller) + '</a>' : '') + (i.unit && i.unit !== 'listing' ? '<span>per ' + esc(i.unit) + '</span>' : '') + '</div></div>' +
-        '<div class="pr">' + (i.price != null ? money(i.price * (i.qty || 1)) : 'n/a') + '</div><div class="meta"><span class="qty"><button data-q="' + n + '" data-d="-1" aria-label="Less">−</button><span>' + (i.qty || 1) + '</span><button data-q="' + n + '" data-d="1" aria-label="More">+</button></span></div><div style="text-align:right"><button class="btn btn-sm" data-rm="' + n + '">Remove</button></div></div>';
-    });
+    var h = '<div class="wrap narrow"><header class="page-h"><div class="eyebrow">Build sheet</div><h1>My ' + esc(p.name) + ' build</h1></header>';
+    h += '<label class="sel block"><span>Vehicle</span><select id="bPlat">' + ids.map(function (k) { return '<option value="' + esc(k) + '"' + (k === store.current ? ' selected' : '') + '>' + esc(P[k].name + ' · ' + P[k].years + ' (' + buildFor(k).items.length + ' parts)') + '</option>'; }).join('') + '</select></label>';
     h += '<div class="total"><span>Total listed</span><span class="amt">' + money(total) + '</span></div>';
-    h += '<div class="small dim">' + build.items.length + ' parts' + (unverified ? ' · ' + unverified + ' with unverified prices' : '') + (unpriced ? ' · ' + unpriced + ' without a price' : '') + '</div>';
-    if (build.items.length) h += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-sm" id="bCopy">Copy list</button><button class="btn btn-sm" id="bClear">Clear build</button></div>';
-    h += '<p class="notice" style="margin-top:14px"><b>Verify before buying.</b> Prices change. Confirm fitment for your cab, bed, drive and year with the seller.</p></div></div></div>';
+    h += '<div class="small dim">' + build.items.length + ' parts' + (unverified ? ' · ' + unverified + ' with unverified prices' : '') + (unpriced ? ' · ' + unpriced + ' without a price' : '') + ' · shipping and tax not included</div>';
+    if (!build.items.length) h += '<p class="empty">No parts yet. Open <a href="#/p/' + esc(store.current) + '/parts">' + esc(p.name) + ' parts</a> and tap Add to build.</p>';
+    h += '<div class="rows lines">';
+    build.items.forEach(function (i, n) {
+      h += '<div class="line-item"><div class="li-main"><a class="nm" href="#/p/' + esc(store.current) + '/parts/' + encodeURIComponent(i.id) + '">' + esc(i.name) + '</a><div class="small dim"><span class="mono">' + esc(i.brand + (i.pn ? ' ' + i.pn : '')) + '</span> · ' + (i.price != null ? (i.verified ? '<span class="c-ok">Verified</span>' : '<span class="c-warn">Unverified</span>') : 'No price') + (i.seller ? ' · <a href="' + esc(i.url) + '" target="_blank" rel="noopener">' + esc(i.seller) + '</a>' : '') + (i.unit && i.unit !== 'listing' ? ' · per ' + esc(i.unit) : '') + '</div></div>' +
+        '<div class="li-side"><div class="price">' + (i.price != null ? money(i.price * (i.qty || 1)) : 'n/a') + '</div><div class="li-ctl"><span class="qty"><button data-q="' + n + '" data-d="-1" aria-label="Less">−</button><span>' + (i.qty || 1) + '</span><button data-q="' + n + '" data-d="1" aria-label="More">+</button></span><button class="link-btn" data-rm="' + n + '">Remove</button></div></div></div>';
+    });
+    h += '</div>';
+    h += '<div class="btn-row"><a class="btn" href="#/p/' + esc(store.current) + '/parts">Browse parts</a>' + (build.items.length ? '<button class="btn" id="bCopy">Copy list</button><button class="btn" id="bClear">Clear build</button>' : '') + '</div>';
+    h += '<p class="note"><b>Verify before buying.</b> Prices change. Confirm fitment for your cab, bed, drive and year with the seller.</p>';
+    h += '<h2 class="h2">Vehicle photo</h2>' + photoBox();
+    h += '<p class="small dim">Planned: identify a part from a photo, and a preview of parts on your vehicle.</p></div>';
     app.innerHTML = h;
     bindPhoto();
     document.getElementById('bPlat').addEventListener('change', function (e) { useBuild(e.target.value); saveBuild(); updateCount(); renderBuild(); });
     var cp = document.getElementById('bCopy');
     if (cp) cp.addEventListener('click', function () {
-      var txt = 'Forge build: ' + (p ? p.name : '') + '\n' + build.items.map(function (i) { return '- ' + i.brand + ' ' + (i.pn || '') + ' ' + i.name + ' x' + (i.qty || 1) + ': ' + (i.price != null ? money(i.price * (i.qty || 1)) : 'n/a') + ' (' + i.seller + ')'; }).join('\n') + '\nTotal listed: ' + money(total);
+      var txt = 'Forge build: ' + p.name + '\n' + build.items.map(function (i) { return '- ' + i.brand + ' ' + (i.pn || '') + ' ' + i.name + ' x' + (i.qty || 1) + ': ' + (i.price != null ? money(i.price * (i.qty || 1)) : 'n/a') + ' (' + i.seller + ')'; }).join('\n') + '\nTotal listed: ' + money(total);
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function () { toast('Copied'); }, function () { toast('Copy not available here'); }); else toast('Copy not available here');
     });
     var cl = document.getElementById('bClear');
     if (cl) cl.addEventListener('click', function () { if (confirm('Remove all parts from this build?')) { build.items = []; saveBuild(); updateCount(); renderBuild(); } });
   }
 
+  // ---------- chrome: top bar + bottom tabs ----------
+  function updateChrome(parts) {
+    var cur = P[store.current] ? store.current : '';
+    var veh = document.getElementById('vehBtn');
+    veh.innerHTML = cur ? '<span class="veh-l">Vehicle</span><span class="veh-v">' + esc(P[cur].name) + ' <span class="yrs">' + esc(P[cur].years) + '</span></span>' : '<span class="veh-v">Choose vehicle</span>';
+    veh.setAttribute('href', cur ? '#/garage/add' : '#/garage/add');
+    var active = 'garage';
+    if (parts[0] === 'build') active = 'build';
+    else if (parts[0] === 'p') active = { parts: 'parts', problems: 'fix', guides: 'guides' }[parts[2]] || 'garage';
+    Array.prototype.forEach.call(document.querySelectorAll('[data-tab]'), function (a) {
+      var t = a.getAttribute('data-tab');
+      var href = t === 'garage' ? (cur && parts[0] === 'p' && !parts[2] ? '#/' : (cur && parts[0] !== 'p' ? '#/' : (cur ? '#/p/' + cur : '#/'))) : t === 'build' ? '#/build' : (cur ? '#/p/' + cur + '/' + { parts: 'parts', fix: 'problems', guides: 'guides' }[t] : '#/garage/add');
+      if (t === 'garage') href = '#/';
+      a.setAttribute('href', href);
+      a.classList.toggle('on', t === active);
+      if (t === active) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+  }
+
   // ---------- events + router ----------
   document.addEventListener('click', function (e) {
-    var t = e.target.closest ? e.target.closest('[data-add],[data-cat],[data-mine],[data-stance],[data-q],[data-rm],[data-clearq],[data-gq]') : null;
+    var t = e.target.closest ? e.target.closest('[data-add],[data-mine],[data-stance],[data-q],[data-rm],[data-gq],[data-unpark]') : null;
     if (!t) return;
     if (t.hasAttribute('data-add')) {
       e.preventDefault(); e.stopPropagation();
-      var r = addToBuild(t.getAttribute('data-pid'), t.getAttribute('data-add'));
-      var id = t.getAttribute('data-add');
-      var apid = t.getAttribute('data-pid');
-      Array.prototype.forEach.call(document.querySelectorAll('[data-add="' + id + '"]'), function (b) {
-        if (b.classList.contains('btn')) { b.className = 'btn btn-sm ' + (inBuild(id, apid) ? 'added' : 'btn-primary'); b.textContent = inBuild(id, apid) ? 'In build ✓' : '+ Add to build'; }
-        else b.textContent = inBuild(id, apid) ? '✓' : '+';
-      });
-      return r;
+      var id = t.getAttribute('data-add'), apid = t.getAttribute('data-pid');
+      addToBuild(apid, id);
+      Array.prototype.forEach.call(document.querySelectorAll('[data-add="' + id + '"]'), function (b) { var a = inBuild(id, apid); b.className = 'btn ' + (b.classList.contains('btn-sm') ? 'btn-sm ' : '') + (a ? 'added' : 'btn-primary'); b.textContent = a ? 'In build' : 'Add to build'; });
+      return;
     }
-    if (t.hasAttribute('data-cat')) { state.cat = t.getAttribute('data-cat'); rerender(); return; }
     if (t.hasAttribute('data-mine')) { state.mineOnly = !state.mineOnly; rerender(); return; }
     if (t.hasAttribute('data-stance')) { setStance(t.getAttribute('data-stance')); return; }
     if (t.hasAttribute('data-q')) { var it = build.items[+t.getAttribute('data-q')]; it.qty = Math.max(1, (it.qty || 1) + (+t.getAttribute('data-d'))); saveBuild(); updateCount(); renderBuild(); return; }
     if (t.hasAttribute('data-rm')) { build.items.splice(+t.getAttribute('data-rm'), 1); saveBuild(); updateCount(); renderBuild(); return; }
-    if (t.hasAttribute('data-clearq')) { state.q = ''; }
+    if (t.hasAttribute('data-unpark')) {
+      var k = t.getAttribute('data-unpark'); store.garage = store.garage.filter(function (x) { return x !== k; });
+      if (store.current === k) { store.current = store.garage[0] || ''; build = buildFor(store.current || '_none'); }
+      saveBuild(); updateCount(); route(); return;
+    }
     if (t.hasAttribute('data-gq')) { state.q = t.getAttribute('data-gq'); }
   });
-  var lastY = 0;
-  function rerender() { lastY = window.scrollY; route(true); window.scrollTo(0, lastY); }
-  function route(keepScroll) {
+  function rerender() { var y = window.scrollY; route(true); window.scrollTo(0, y); }
+  var lastHash = null;
+  function route(keep) {
     var parts = (location.hash.replace(/^#\/?/, '') || '').split('/').map(decodeURIComponent);
-    Array.prototype.forEach.call(document.querySelectorAll('[data-nav]'), function (a) { a.classList.toggle('on', (parts[0] || 'home') === a.getAttribute('data-nav') || (!parts[0] && a.getAttribute('data-nav') === 'home')); });
-    if (parts[0] === 'p' && parts[1]) {
-      if (P[parts[1]] && store.current !== parts[1]) { useBuild(parts[1]); saveBuild(); updateCount(); }
-      renderPlatform(parts[1], parts[2] || 'overview', keepScroll === true ? null : parts[3]);
-      if (keepScroll !== true && !parts[3]) window.scrollTo(0, 0);
-      return;
-    }
-    if (parts[0] === 'build') { renderBuild(); if (keepScroll !== true) window.scrollTo(0, 0); return; }
-    renderHome(); if (keepScroll !== true) window.scrollTo(0, 0);
+    if (parts[0] === 'pick' && P[parts[1]]) { useBuild(parts[1]); saveBuild(); updateCount(); location.replace('#/p/' + parts[1]); return; }
+    if (parts[0] === 'p' && P[parts[1]] && store.current !== parts[1]) { useBuild(parts[1]); saveBuild(); updateCount(); }
+    if (location.hash !== lastHash && keep !== true) { if (!(parts[0] === 'p' && parts[2] === 'problems' && !parts[3] && (lastHash || '').indexOf('/problems/') > -1)) state.pq = ''; var samePid = (lastHash || '').split('/')[2] === parts[1]; if (parts[2] !== 'search' && !(parts[0] === 'p' && !parts[2] && samePid)) state.q = ''; }
+    lastHash = location.hash;
+    updateChrome(parts);
+    if (parts[0] === 'p' && parts[1]) renderPlatform(parts[1], parts[2] || '', parts[3]);
+    else if (parts[0] === 'build') renderBuild();
+    else if (parts[0] === 'garage' && parts[1] === 'add') renderPicker();
+    else renderGarage();
+    if (keep !== true) window.scrollTo(0, 0);
   }
   window.addEventListener('hashchange', function () { route(); });
   updateCount();
