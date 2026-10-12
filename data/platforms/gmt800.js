@@ -4033,7 +4033,24 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "hunter_fit": "Only if 4WD"
+    "hunter_fit": "Only if 4WD",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,torsion+bar+key,14350"
+     }
+    ]
    },
    "offers": [
     {
@@ -4085,7 +4102,29 @@ window.FORGE_PLATFORMS.gmt800 = {
     "models": [
      "Silverado 1500"
     ],
-    "position": "Rear"
+    "position": "Rear",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,leaf+spring+shackle,7484"
+     }
+    ]
    },
    "offers": [
     {
@@ -4121,7 +4160,21 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4148,7 +4201,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4183,7 +4252,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Rear"
+    "position": "Rear",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4218,7 +4303,25 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4253,7 +4356,25 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Rear"
+    "position": "Rear",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4288,7 +4409,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,shock+/+strut,7556"
+     }
+    ]
    },
    "offers": [
     {
@@ -4323,7 +4460,24 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front lower"
+    "position": "Front lower",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,ball+joint,10070"
+     }
+    ]
    },
    "offers": [
     {
@@ -4358,7 +4512,25 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front lower"
+    "position": "Front lower",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,ball+joint,10070"
+     }
+    ]
    },
    "offers": [
     {
@@ -4393,7 +4565,24 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "position": "Front lower"
+    "position": "Front lower",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,ball+joint,10070"
+     }
+    ]
    },
    "offers": [
     {
@@ -4438,7 +4627,24 @@ window.FORGE_PLATFORMS.gmt800 = {
      "2WD",
      "4WD"
     ],
-    "position": "Front upper"
+    "position": "Front upper",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,ball+joint,10070"
+     }
+    ]
    },
    "offers": [
     {
@@ -4480,7 +4686,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "ES3493T",
    "fitment": {
     "position": "Front outer",
-    "steering": "Gear (non-rack)"
+    "steering": "Gear (non-rack)",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,steering,tie+rod+end,7428"
+     }
+    ]
    },
    "offers": [
     {
@@ -4513,7 +4736,26 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "ES3488",
    "fitment": {
     "position": "Front inner",
-    "steering": "Gear"
+    "steering": "Gear",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,steering,tie+rod+end,7428"
+     }
+    ]
    },
    "offers": [
     {
@@ -4544,7 +4786,32 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Idler arm, heavy duty (w/o bracket)",
    "brand": "MOOG",
    "part_number": "K6534HD",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,steering,idler+arm,7328"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -4584,7 +4851,32 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Pitman arm, heavy duty",
    "brand": "MOOG",
    "part_number": "K6536HD",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,steering,pitman+arm,7368"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -4624,7 +4916,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "MOOG",
    "part_number": "K700539",
    "fitment": {
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,suspension,sway+bar+link,7580"
+     }
+    ]
    },
    "offers": [
     {
@@ -4659,7 +4975,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "cab": "Standard cab, 78.7\" bed"
+    "cab": "Standard cab, 78.7\" bed",
+    "years": "1999-2002",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+line,1820"
+     }
+    ]
    },
    "offers": [
     {
@@ -4717,7 +5043,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "cab": "Standard cab, 78.7\" bed"
+    "cab": "Standard cab, 78.7\" bed",
+    "years": "1999-2002",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+line,1820"
+     }
+    ]
    },
    "offers": [
     {
@@ -4761,7 +5097,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "cab": "Standard cab, 78.7\" bed"
+    "cab": "Standard cab, 78.7\" bed",
+    "years": "1999-2002",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+line,1820"
+     }
+    ]
    },
    "offers": [
     {
@@ -4809,7 +5155,29 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Power Stop",
    "part_number": "Z36785",
    "fitment": {
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+pad,1684"
+     }
+    ]
    },
    "offers": [
     {
@@ -4841,7 +5209,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Akebono",
    "part_number": "ACT785",
    "fitment": {
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2004",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+pad,1684"
+     }
+    ]
    },
    "offers": [
     {
@@ -4873,7 +5265,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Wagner",
    "part_number": "ZD792A",
    "fitment": {
-    "position": "Rear (disc)"
+    "position": "Rear (disc)",
+    "years": "1999-2002",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,brake+pad,1684"
+     }
+    ]
    },
    "offers": [
     {
@@ -4905,7 +5314,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Raybestos",
    "part_number": "56825R",
    "fitment": {
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,rotor,1896"
+     }
+    ]
    },
    "offers": [
     {
@@ -4937,7 +5370,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "ACDelco",
    "part_number": "18A925A",
    "fitment": {
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,rotor,1896"
+     }
+    ]
    },
    "offers": [
     {
@@ -4972,7 +5429,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636"
+     }
+    ]
    },
    "offers": [
     {
@@ -5023,7 +5496,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636"
+     }
+    ]
    },
    "offers": [
     {
@@ -5068,7 +5557,25 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "2WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636"
+     }
+    ]
    },
    "offers": [
     {
@@ -5112,7 +5619,24 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636"
+     }
+    ]
    },
    "offers": [
     {
@@ -5157,7 +5681,26 @@ window.FORGE_PLATFORMS.gmt800 = {
     "drive": [
      "4WD"
     ],
-    "position": "Front"
+    "position": "Front",
+    "years": "1999-2006 + 2007 Classic",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636"
+     }
+    ]
    },
    "offers": [
     {
@@ -5198,7 +5741,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Delphi",
    "part_number": "FG0271",
    "fitment": {
-    "notes": "Module code TCU"
+    "notes": "Module code TCU",
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,fuel+%26+air,fuel+pump+%26+housing+assembly,10147"
+     }
+    ]
    },
    "offers": [
     {
@@ -5254,7 +5821,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Delphi",
    "part_number": "FG0407",
    "fitment": {
-    "notes": "RPO EVA, module code TCF"
+    "notes": "RPO EVA, module code TCF",
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,fuel+%26+air,fuel+pump+%26+housing+assembly,10147"
+     }
+    ]
    },
    "offers": [
     {
@@ -5302,7 +5893,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Bosch",
    "part_number": "67305",
    "fitment": {
-    "notes": "w/ EVAP"
+    "notes": "w/ EVAP",
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,fuel+%26+air,fuel+pump+%26+housing+assembly,10147"
+     }
+    ]
    },
    "offers": [
     {
@@ -5345,7 +5960,28 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "MU1614",
    "fitment": {
     "cab": "119\"/143.5\"/133\"/157.5\" WB per listing",
-    "notes": "w/o EVA, TCU"
+    "notes": "w/o EVA, TCU",
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,fuel+%26+air,fuel+pump+%26+housing+assembly,10147"
+     }
+    ]
    },
    "offers": [
     {
@@ -5392,7 +6028,32 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Fuel filter",
    "brand": "WIX",
    "part_number": "33481",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,fuel+%26+air,fuel+filter,6200"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5435,6 +6096,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "engines": [
      "4.8",
      "5.3"
+    ],
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,engine,intake+manifold+gasket,5424"
+     }
     ]
    },
    "offers": [
@@ -5486,6 +6164,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "engines": [
      "4.8",
      "5.3"
+    ],
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,engine,intake+manifold+gasket,5424"
+     }
     ]
    },
    "offers": [
@@ -5526,7 +6221,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Valve cover gasket set w/ grommets",
    "brand": "Fel-Pro",
    "part_number": "VS50504R1",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,engine,valve+cover+gasket,10710"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5556,7 +6268,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Spark plug, double platinum (each, need 8)",
    "brand": "ACDelco",
    "part_number": "41-962",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,ignition,spark+plug,7212"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5602,7 +6331,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Spark plug, Iridium IX (each)",
    "brand": "NGK",
    "part_number": "7397",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,ignition,spark+plug,7212"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5633,7 +6379,30 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "ACDelco",
    "part_number": "9748HH",
    "fitment": {
-    "notes": "Check coil stamp; 99-early coils = square Melco"
+    "notes": "Check coil stamp; 99-early coils = square Melco",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,ignition,spark+plug+wire,7224"
+     }
+    ]
    },
    "offers": [
     {
@@ -5673,7 +6442,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Spark plug wire set (coil 12558693, 10.5\" lead)",
    "brand": "NGK",
    "part_number": "51033",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,ignition,spark+plug+wire,7224"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5712,7 +6505,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Ignition coil, square type (each)",
    "brand": "Delphi",
    "part_number": "GN10298",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,ignition,ignition+coil,7060"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5746,6 +6556,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "engines": [
      "4.8",
      "5.3"
+    ],
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,cooling+system,water+pump,2208"
+     }
     ]
    },
    "offers": [
@@ -5793,7 +6620,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Water pump w/ gasket set (Gold)",
    "brand": "ACDelco",
    "part_number": "252-845",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,cooling+system,water+pump,2208"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5832,7 +6683,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Water pump",
    "brand": "Aisin",
    "part_number": "WPGM605V",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,cooling+system,water+pump,2208"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5871,7 +6746,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Thermostat w/ integrated housing (186F)",
    "brand": "Gates",
    "part_number": "33910",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2003",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,cooling+system,thermostat,2200"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5902,7 +6801,28 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Gates",
    "part_number": "K060923",
    "fitment": {
-    "notes": "Check alternator amperage"
+    "notes": "Check alternator amperage",
+    "years": "1999-2004",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,belt+drive,belt,8900"
+     }
+    ]
    },
    "offers": [
     {
@@ -5933,7 +6853,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Serpentine belt tensioner",
    "brand": "Gates",
    "part_number": "38158",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,belt+drive,belt+tensioner,11659"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5963,7 +6907,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Oil filter",
    "brand": "ACDelco",
    "part_number": "PF46E",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,engine,oil+filter,5340"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -5993,7 +6961,28 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Exhaust manifold gasket set",
    "brand": "Fel-Pro",
    "part_number": "MS92467",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD"
+    ],
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,exhaust+%26+emission,exhaust+manifold+gasket,5400"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -6024,7 +7013,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "ACDelco",
    "part_number": "TF289",
    "fitment": {
-    "trans": "4L60E shallow pan"
+    "trans": "4L60E shallow pan",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,transmission-automatic,filter,8600"
+     }
+    ]
    },
    "offers": [
     {
@@ -6083,6 +7096,21 @@ window.FORGE_PLATFORMS.gmt800 = {
     "models": [
      "Silverado",
      "Sierra"
+    ],
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "Speed Engineering product page",
+      "url": "https://speed-engineering.com/products/silverado-sierra-polyurethane-motor-mounts-1999-2006"
+     }
     ]
    },
    "offers": [
@@ -6112,7 +7140,31 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "OE-style motor mount (front, L/R)",
    "brand": "Anchor",
    "part_number": "2909",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,engine,motor+mount,5552"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -6157,7 +7209,17 @@ window.FORGE_PLATFORMS.gmt800 = {
      "4WD"
     ],
     "cab": "Standard cab short bed 119\" WB",
-    "hunter_fit": true
+    "hunter_fit": true,
+    "bed": "Short bed (std cab, 119 in WB)",
+    "fit_src": [
+     {
+      "fields": [
+       "bed"
+      ],
+      "label": "Flowmaster 17392 page",
+      "url": "https://www.flowmastermufflers.com/products/exhaust/exhaust_systems/cat-back/parts/17392"
+     }
+    ]
    },
    "offers": [
     {
@@ -6215,7 +7277,19 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "17395",
    "fitment": {
     "cab": "Extended cab short bed",
-    "hunter_fit": false
+    "hunter_fit": false,
+    "years": "1999-2006 + 2007 Classic",
+    "bed": "Short bed (ext cab, 143.5 in WB)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "bed"
+      ],
+      "label": "Flowmaster 17395 listing",
+      "url": "https://shop.redline360.com/products/flowmaster-exhaust-chevy-silverado-gmc-sierra-1500-4-8l-5-3l-99-07-classic-body-only-2-50-catback"
+     }
+    ]
    },
    "offers": [
     {
@@ -6256,7 +7330,19 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "717990",
    "fitment": {
     "cab": "Crew 5.5' / Extra cab 6.5' only",
-    "hunter_fit": false
+    "hunter_fit": false,
+    "years": "1999-2006 + 2007 Classic",
+    "bed": "Crew cab short box or extended cab 6.5 ft bed",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "bed"
+      ],
+      "label": "Flowmaster 717990 listing",
+      "url": "https://fpautoparts.com/-Performance-99-06-Silverado-Sierra-1500-w-4-3-4-8-5-3L-Flowmaster-Flow-FX-Cat-Back-Exhaust-FLO-717990"
+     }
+    ]
    },
    "offers": [
     {
@@ -6288,7 +7374,17 @@ window.FORGE_PLATFORMS.gmt800 = {
    "fitment": {
     "years": "1999-2002",
     "cab": "Ext cab SB per I-sheet",
-    "hunter_fit": false
+    "hunter_fit": false,
+    "bed": "Short bed",
+    "fit_src": [
+     {
+      "fields": [
+       "bed"
+      ],
+      "label": "MagnaFlow 15754 (I-sheet per existing cab note)",
+      "url": "https://www.magnaflow.com/products/15754-magnaflow-street-series-cat-back-performance-exhaust-system-15754"
+     }
+    ]
    },
    "offers": [
     {
@@ -6319,7 +7415,24 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "14824",
    "fitment": {
     "cab": "Ext cab SB 143.5\"",
-    "hunter_fit": false
+    "hunter_fit": false,
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "bed": "Short bed",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "bed"
+      ],
+      "label": "Borla 14824 page",
+      "url": "https://www.borla.com/products/chevrolet-silverado-1500-cat-back-exhaust-system-14824"
+     }
+    ]
    },
    "offers": [
     {
@@ -6349,7 +7462,22 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Speed Engineering",
    "part_number": "(no PN listed)",
    "fitment": {
-    "years": "1999-2013"
+    "years": "1999-2013",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "Speed Engineering product page",
+      "url": "https://speed-engineering.com/products/speed-engineering-shorty-headers-truck-suv-1999-2013"
+     }
+    ]
    },
    "offers": [
     {
@@ -6379,7 +7507,22 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Speed Engineering",
    "part_number": "(no PN listed)",
    "fitment": {
-    "years": "1999-2006"
+    "years": "1999-2006",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "Speed Engineering product page",
+      "url": "https://speed-engineering.com/products/speed-engineering-silverado-sierra-1-7-8-longtube-headers-1999-2006"
+     }
+    ]
    },
    "offers": [
     {
@@ -6426,7 +7569,17 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "(no PN listed)",
    "fitment": {
     "cab": "Single/regular cab",
-    "hunter_fit": true
+    "hunter_fit": true,
+    "years": "1999-2019",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "Speed Engineering exhaust collection",
+      "url": "https://speed-engineering.com/collections/1999-2013-silverado-sierra-suv-headers-exhaust"
+     }
+    ]
    },
    "offers": [
     {
@@ -6460,6 +7613,21 @@ window.FORGE_PLATFORMS.gmt800 = {
     "engines": [
      "4.8",
      "5.3"
+    ],
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (Reg, Ext and Crew cab listed)",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "K&N 77-3021KP application list",
+      "url": "https://www.accesspeed.com/k-n-77-3021kp-performance-air-intake-system-1999-2004-gm-silverado-sierra-4-8-5-3.html"
+     }
     ]
    },
    "offers": [
@@ -6720,7 +7888,22 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Depo",
    "part_number": "3321182PXAS",
    "fitment": {
-    "years": "2000 per RockAuto (99-02 body)"
+    "years": "2000 per RockAuto (99-02 body)",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,body+%26+lamp+assembly,headlamp+assembly,10762"
+     }
+    ]
    },
    "offers": [
     {
@@ -6836,7 +8019,17 @@ window.FORGE_PLATFORMS.gmt800 = {
    "part_number": "CC16-99R",
    "fitment": {
     "cab": "Standard cab",
-    "hunter_fit": true
+    "hunter_fit": true,
+    "years": "1999-2007",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "C2C product page",
+      "url": "https://www.c2cfabrication.com/products/1999-2007-chevy-silverado-1500-truck-standard-cab-2dr-cab-corner-rh"
+     }
+    ]
    },
    "offers": [
     {
@@ -6875,7 +8068,17 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Key Parts",
    "part_number": "0856-113L",
    "fitment": {
-    "cab": "Regular cab"
+    "cab": "Regular cab",
+    "years": "1999-2006",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "Raybuck product page",
+      "url": "https://raybuck.com/product/1999-06-silveradosierra-cab-corner-2-doorregular-cab-driver-side/"
+     }
+    ]
    },
    "offers": [
     {
@@ -6923,7 +8126,28 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Keystone",
    "part_number": "RRP1401",
    "fitment": {
-    "cab": "Standard cab"
+    "cab": "Standard cab",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,body+%26+lamp+assembly,rocker+panel,1092"
+     }
+    ]
    },
    "offers": [
     {
@@ -6955,7 +8179,28 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Keystone",
    "part_number": "RRP1400",
    "fitment": {
-    "cab": "Standard cab"
+    "cab": "Standard cab",
+    "years": "1999-2006 + 2007 Classic",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,body+%26+lamp+assembly,rocker+panel,1092"
+     }
+    ]
    },
    "offers": [
     {
@@ -7040,7 +8285,32 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Alternator 105A (reman)",
    "brand": "Remy",
    "part_number": "21798",
-   "fitment": {},
+   "fitment": {
+    "years": "2000-2004",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "engines": [
+     "4.3",
+     "4.8",
+     "5.3",
+     "6.0"
+    ],
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab",
+       "engines"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,electrical,alternator+/+generator,2412"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -7070,7 +8340,25 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "Starter (reman, equal-length bolts)",
    "brand": "Remy",
    "part_number": "26400",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2002",
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "drive",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,electrical,starter+motor,4152"
+     }
+    ]
+   },
    "offers": [
     {
      "seller": "RockAuto",
@@ -7101,7 +8389,19 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Bosch",
    "part_number": "13026",
    "fitment": {
-    "notes": "US-built"
+    "notes": "US-built",
+    "years": "1999-2002",
+    "cab": "All (RockAuto lists no cab restriction)",
+    "fit_src": [
+     {
+      "fields": [
+       "years",
+       "cab"
+      ],
+      "label": "RockAuto catalog (1999-2007 Classic Silverado 1500 pages checked)",
+      "url": "https://www.rockauto.com/en/catalog/chevrolet,1999,silverado+1500,4.8l+v8,1353675,exhaust+%26+emission,oxygen+(o2)+sensor,5132"
+     }
+    ]
    },
    "offers": [
     {
@@ -7297,7 +8597,18 @@ window.FORGE_PLATFORMS.gmt800 = {
    "name": "3\" single exhaust",
    "brand": "Speed Engineering",
    "part_number": "",
-   "fitment": {},
+   "fitment": {
+    "years": "1999-2006",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "Speed Engineering exhaust collection",
+      "url": "https://speed-engineering.com/collections/1999-2013-silverado-sierra-suv-headers-exhaust"
+     }
+    ]
+   },
    "offers": [
     {
      "shipping_note": "Not stated",
@@ -7319,7 +8630,17 @@ window.FORGE_PLATFORMS.gmt800 = {
    "brand": "Speed Engineering",
    "part_number": "",
    "fitment": {
-    "cab": "Crew and extended cab"
+    "cab": "Crew and extended cab",
+    "years": "1999-2006",
+    "fit_src": [
+     {
+      "fields": [
+       "years"
+      ],
+      "label": "Speed Engineering exhaust collection",
+      "url": "https://speed-engineering.com/collections/1999-2013-silverado-sierra-suv-headers-exhaust"
+     }
+    ]
    },
    "offers": [
     {
@@ -7369,6 +8690,21 @@ window.FORGE_PLATFORMS.gmt800 = {
      "1500HD",
      "2500",
      "SS"
+    ],
+    "drive": [
+     "2WD",
+     "4WD"
+    ],
+    "cab": "All",
+    "fit_src": [
+     {
+      "fields": [
+       "drive",
+       "cab"
+      ],
+      "label": "K&N 57-3023-1 application list",
+      "url": "https://www.accesspeed.com/k-n-57-3023-1-performance-air-intake-system-1999-2007-gm-truck-suv-4-8-5-3-6-0.html"
+     }
     ]
    },
    "offers": [

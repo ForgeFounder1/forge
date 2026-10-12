@@ -91,7 +91,7 @@ Torque tables use columns `["Fastener", "Spec"]` (or `["Fastener", "<variant A>"
   "name": "Rear 2\" drop shackle kit (level stance)",
   "brand": "Belltech",
   "part_number": "6400",
-  "fitment": { "years": "...", "models": ["..."], "drive": ["2WD","4WD"], "cab": "...", "engines": ["..."], "position": "...", "trans": "...", "steering": "...", "min_wheel": "...", "notes": "...", "hunter_fit": true, "hunter_note": "..." },
+  "fitment": { "years": "...", "models": ["..."], "drive": ["2WD","4WD"], "cab": "...", "bed": "...", "engines": ["..."], "position": "...", "trans": "...", "steering": "...", "min_wheel": "...", "notes": "...", "hunter_fit": true, "hunter_note": "..." },
   "offers": [
     { "seller": "Belltech (manufacturer)", "price": 77.0, "price_unit": "listing|each", "shipping_note": "...", "url": "https://...", "checked": "2026-10-10", "status": "verified|unverified", "source_note": "..." }
   ],
@@ -101,6 +101,9 @@ Torque tables use columns `["Fastener", "Spec"]` (or `["Fastener", "<variant A>"
   "tips": [ { "text": "...", "source_url": "https://...", "source_name": "Forum: thread title", "confidence": "forum", "date_checked": "2026-10-11" } ]
 }
 ```
+- `bed` (optional) is the bed length the listing names, e.g. "Short bed (std cab, 119 in WB)". The app reads short/long from words like short, SB, 6.5, 5.8, 119, 143.5 / long, LB, 8 ft, 133, 157.5.
+- `fit_src` (optional, set by the build from `scripts/<platform>/h_fitment.js`): `[{ "fields": ["years", ...], "label", "url" }]`, the page that confirmed fields that were filled in. Fills never overwrite existing fields.
+- "Fits my vehicle": a saved selector vehicle (year, model, cab, bed, drive, engine) is compared with `years`, `drive`, `cab`, `bed`, `models` and `engines`. A field that rules the part out gives "Doesn't fit"; a missing year, or a missing drive/cab/bed in a category where other parts list it, gives "Check fitment".
 - All `fitment` keys are optional. `hunter_fit` may be `true`, `false`, or a short string like `"Only if 4WD"`.
 - `best_offer` is the lowest **verified** listed price, or `null` when there is none. The app highlights the offer whose seller, url and price match it. When it is `null`, the build sheet uses the lowest priced offer and marks it Unverified.
 - `tips` is optional (`Tip[]`) and renders as "Owner tips" on the part detail page. Parts without it are unchanged.

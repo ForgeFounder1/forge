@@ -1235,6 +1235,22 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "label": "YouTube",
      "url": "https://www.youtube.com/watch?v=mGshg8C2wLc"
     }
+   ],
+   "tips": [
+    {
+     "text": "Under LSC K0D, dealers in cold-climate states inspect 2011-2017 Tacoma frames and apply corrosion-resistant compound or plugs free; that step is required to keep CSP ZKA frame replacement coverage, which runs 12 years from first use. A 2015-2017 truck can still be inside that window in 2026.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169416-9999.pdf",
+     "source_name": "NHTSA: Toyota LSC K0D Frame Corrosion Resistant Compound remedy notice",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners prefer oily coatings like Fluid Film or Woolwax over POR15 or paint because they wick into the sandwiched frame seams where salt water collects. Apply in warm weather so it creeps, and wear a respirator when spraying.",
+     "source_url": "https://www.tacomaworld.com/threads/some-questions-about-different-types-of-frame-rust-prevention-gen-2-5-frame-warranty.781133/",
+     "source_name": "Tacoma World: Some questions about different types of frame rust prevention & Gen 2.5 frame warranty",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1250,6 +1266,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     {
      "label": "NHTSA 14V-604",
      "url": "https://static.nhtsa.gov/odi/rcl/2014/RCORRD-14V604-9403.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Recall E02 still applies if your truck already got 4-leaf springs under harsh-ride bulletin TSB-0359-10. Make the dealer install the 04005-34404 springs the recall specifies for those trucks, not the standard 04005-34304; one owner's 34304s went flat into negative arch within weeks.",
+     "source_url": "https://www.tacomaworld.com/threads/leaf-spring-tsb-vs-recall.581476/",
+     "source_name": "Tacoma World: Leaf spring TSB vs recall",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Dealers vary on doing the leaf spring recall with an add-a-leaf installed; one did it without hesitation once told up front. Ask for your old springs back so you can move the add-a-leaf over afterward.",
+     "source_url": "https://www.tacomaworld.com/threads/rear-leaf-spring-recall-question-please-2009-lifted.681406/",
+     "source_name": "Tacoma World: Rear Leaf Spring Recall Question Please (2009 Lifted)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
     }
    ]
   },
@@ -1279,7 +1312,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "url": "https://www.youtube.com/watch?v=GGEHggztiVU"
     }
    ],
-   "confNote": "Forum-reported only; Unconfirmed as a pattern."
+   "confNote": "Forum-reported only; Unconfirmed as a pattern.",
+   "tips": [
+    {
+     "text": "2.7 OEM numbers: tensioner pulley 16603-0P030 (possibly 16603-75010 later), block idler 16603-31040 (was 31030), A/C idler 88440-25070; Gates are 36173, 36174 and 36614. On 2005-07 trucks aftermarket bottom idlers can rub, and Gates says to use hardware kit 91051 with its spacers.",
+     "source_url": "https://www.tacomaworld.com/threads/2trfe-idler-pulleys-and-tensioner-part-numbers.667372/",
+     "source_name": "Tacoma World: 2TRFE Idler Pulleys and Tensioner Part Numbers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the belt walks or misaligns with good tension, the tensioner arm bushing may be worn, not just a pulley. One owner replaced the full Gates tensioner, all 3 idlers and a Gatorback belt in 2.5 hours by moving the A/C compressor (4 bolts) to reach the tensioner's 5 bolts.",
+     "source_url": "https://www.tacomaworld.com/threads/idler-pulley-replacement-how-to.267263/",
+     "source_name": "Tacoma World: Idler Pulley Replacement. How to:",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "driveshaft-clunk",
@@ -1294,6 +1343,22 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     {
      "label": "T-SB-0016-13 Rev2",
      "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10061331-2273.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "No 2nd gen came with a slip yoke grease fitting, so the clunk fix means pulling the rear shaft apart and greasing the splines; one owner did it every 10k miles before a shop drilled in a fitting for $50. Mark every piece so it goes back in the same phase.",
+     "source_url": "https://www.tacomaworld.com/threads/2nd-gen-tacoma-slip-yoke-grease-fitting.263428/",
+     "source_name": "Tacoma World: 2nd Gen Tacoma Slip Yoke Grease Fitting",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 1st gen with the same style rear slip yoke, the splines had almost no grease even with zerks greased every oil change. Cleaning it out and coating the splines with Ford XG-8 PTFE lubricant ended the stop-and-go thuds; the owner plans to repeat it periodically.",
+     "source_url": "https://www.tacomaworld.com/threads/slip-yoke-binding-corrected-thank-you-timmy.634445/",
+     "source_name": "Tacoma World: Slip Yoke Binding - Corrected - Thank you Timmy",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1316,7 +1381,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "url": "https://static.nhtsa.gov/odi/rcl/2017/RCRIT-17V285-0775.pdf"
     }
    ],
-   "guide": "g3-chassis"
+   "guide": "g3-chassis",
+   "tips": [
+    {
+     "text": "Recall H0G (2016-17): if the carrier joint is dry, only retorque the original carrier nuts to 18 ft-lb and replace nothing. If it leaks, fit a new gasket and 10 new nuts at 28 ft-lb, and if under 2.0 L of oil drains out the carrier itself is replaced.",
+     "source_url": "https://static.nhtsa.gov/odi/rcl/2017/RCRIT-17V285-0775.pdf",
+     "source_name": "NHTSA: Toyota Safety Recall H0G technical instructions, rear differential carrier gasket",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "shift-quality",
@@ -1339,6 +1413,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "label": "TacomaWorld OTT thread",
      "url": "https://www.tacomaworld.com/threads/overland-torque-tune-ott-by-overland-tailor.759590/"
     }
+   ],
+   "tips": [
+    {
+     "text": "T-SB-0077-16 reflashes 2016-17 3.5 automatics for delayed P-to-D engagement, harsh 1-2, slow upshifts on cruise and highway gear hunting. It is covered by the Federal Emission Warranty, 8 years/80,000 miles, so ask the dealer to check your calibration.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10132910-9999.pdf",
+     "source_name": "NHTSA: Toyota T-SB-0077-16, ECM Calibration: Shift Feeling Enhancements",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1355,6 +1438,37 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "label": "T-SB-0071-19",
      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10162793-9999.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "T-SB-0124-20 fixes 30-10 mph decel vibration with revised rear leaf springs on automatic trucks only, and not if the truck has any lift or leveling kit. On a 4WD, the test is to remove the rear driveshaft and drive in 4WD High; if the vibration stays, it is not the rear driveline.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10227899-9999.pdf",
+     "source_name": "NHTSA: Toyota T-SB-0124-20, Driveline Vibration Under Deceleration Between 30-10 mph",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2019 owner removed about 95% of the decel vibration with a Tom Woods one-piece rear driveshaft, and argues the two-piece shaft is the root cause. Others got the bulletin springs from the dealer, with mixed results.",
+     "source_url": "https://www.tacomaworld.com/threads/poll-30-10-mph-vibration-automatic-trucks-stock-height.748639/page-5",
+     "source_name": "Tacoma World: Poll, 30-10 MPH Vibration, Automatic Trucks, Stock Height",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "After new axle shafts did not last, one owner fixed about 95% of his vibration with road-force balancing, new rear drums (the biggest change) and Bilstein 5100 rear shocks replacing the worn stock shocks at under 30k miles.",
+     "source_url": "https://www.tacomaworld.com/threads/oh-no-tsb-0171-16-driveline-vibration.463992/page-43",
+     "source_name": "Tacoma World: oh no....TSB-0171-16 Driveline vibration",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Toyota's T-SB-0071-19 driveline fix is void on lifted or leveled trucks. If a G3 4WD automatic has the decel vibration, get the bulletin done before leveling.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10162793-9999.pdf",
+     "source_name": "T-SB-0071-19",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1370,6 +1484,22 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     {
      "label": "T-SB-0023-19",
      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10162253-9999.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "T-SB-0023-19 covers 2017-19 trucks with the BD20 rear axle that shudder or click while braking: measure the axle drum flange in three places, and if it reads 107.946-108.000 mm the axle is replaced. Ask for the measurement before accepting drum turning as the fix.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10162253-9999.pdf",
+     "source_name": "NHTSA: Toyota T-SB-0023-19, Rear Vibration or Noise While Braking",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Several 2016-18 owners had braking vibration at a few thousand miles from rear drums that were too tight or out of round from the factory. Dealers fixed it under warranty by adjusting or replacing the drums; one needed a second visit for clicking afterward.",
+     "source_url": "https://www.tacomaworld.com/threads/rear-drums-causing-vibration-now-clicking-after-fix.569789/",
+     "source_name": "Tacoma World: Rear drums causing vibration - now clicking after fix",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1390,6 +1520,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     {
      "label": "T-SB-0045-23",
      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241402-9999.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "T-SB-0045-23 covers a rear whine around 50 mph on 2019-23 Double Cabs, caused by diff vibration carried into the body; the fix is a pad and frame dynamic damper, not a new diff. It is covered only within the 3 year/36,000 mile basic warranty.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10241402-9999.pdf",
+     "source_name": "NHTSA: Toyota T-SB-0045-23, Whine Noise from Rear of Vehicle",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Check the rear diff level first: pull the fill plug and feel for oil with a fingertip. One owner's was 3/4 quart low from the factory.",
+     "source_url": "https://www.tacomaworld.com/threads/rear-diff-whistle-slight-howl.795429/",
+     "source_name": "Tacoma World: Rear diff whistle/slight howl.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Two owners said a rear diff oil change (one used Red Line 75W-85 at 30k) made the whine go away. Another had the whole diff replaced under warranty for metal in the oil and the new one still whined.",
+     "source_url": "https://www.tacomaworld.com/threads/confirmation-on-rear-diff-whine.858207/",
+     "source_name": "Tacoma World: Confirmation on Rear Diff Whine",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
     }
    ]
   },
@@ -1415,7 +1569,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10234314-9999.pdf"
     }
    ],
-   "disputed": true
+   "disputed": true,
+   "tips": [
+    {
+     "text": "A clatter behind the normal injector tick, loudest at the rear passenger side behind the camshaft, is the vacuum pump covered by T-SB-0115-22 (new pump 29300-31050). Trucks with crawl control have no vacuum pump, which is why many owners say the noise is normal.",
+     "source_url": "https://www.tacomaworld.com/threads/engine-ticking-knocking.794152/",
+     "source_name": "Tacoma World: Engine ticking/knocking",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "One owner's pump knocked only after pressing the brakes and never on a cold start without touching them; the dealer replicated it by driving a few miles, then braking at idle. Bring videos, and note the bulletin repair is covered only within 3 years/36k miles.",
+     "source_url": "https://www.tacomaworld.com/threads/vacuum-pump-noise-tsb.793633/",
+     "source_name": "Tacoma World: Vacuum Pump Noise TSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The bulletin's test: tee a vacuum gauge into the pump-to-booster hose and pinch the booster side with coolant at 14-140 F; it applies only if the pump makes at least 25.6 inHg. Check for vacuum leaks before the pump is condemned.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2022/MC-10230385-9999.pdf",
+     "source_name": "NHTSA: Toyota bulletin, Knocking Noise From Vacuum Pump at Idle",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "ifs-clunk",
@@ -1434,6 +1611,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     {
      "label": "YouTube",
      "url": "https://www.youtube.com/watch?v=tkuVHIzQXt0"
+    }
+   ],
+   "tips": [
+    {
+     "text": "A shop owner on the thread says they see LCA cam bolts come loose after lifts and alignments, so he goes past 130 ft-lb or retorques them after a couple of weeks. Check those bolts first when a front clunk shows up after suspension work.",
+     "source_url": "https://www.tacomaworld.com/threads/torque-lcas-at-ride-height-or-on-the-stand.855058/",
+     "source_name": "Tacoma World: Torque LCAs at ride height or on the stand?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   }
@@ -1491,7 +1677,24 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Toyota hubs are 106.1 mm and most aftermarket wheels are 108 mm, so they need rings or a lug-centric balance. Owners argue whether rings matter, since the lugs do the centering on a lug-centric wheel.",
+     "source_url": "https://www.tacomaworld.com/threads/hub-centric-rings-and-lugs-for-new-aftermarket-wheels.682901/",
+     "source_name": "Tacoma World: Hub Centric Rings and Lugs for New Aftermarket Wheels",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A 2015 owner reused his stock alloy lug nuts on 17x7 4Runner TRD Pro wheels and moved the TPMS sensors over with no issues. Budget a fifth sensor if you want the spare monitored.",
+     "source_url": "https://www.tacomaworld.com/threads/using-stock-lug-nuts-with-trd-pro-wheels.567504/",
+     "source_name": "Tacoma World: Using stock lug nuts with TRD Pro wheels?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "1gr",
@@ -1803,7 +2006,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      11
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Owners torque the filter housing to 18 ft-lb and its drain plug to 10 ft-lb. If loosening the 3/8 in drive plug spins the housing, give it one sharp hit on the end of the ratchet; a threaded MotivX drain tool replaces the push-in plastic adapter.",
+     "source_url": "https://www.tacomaworld.com/threads/how-to-use-the-oil-filter-drain-on-a-3rd-gen.799092/",
+     "source_name": "Tacoma World: How to Use the Oil Filter Drain on a 3rd Gen",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Drain the pan first, then thread the plastic drain adapter (with a hose) fully into the housing; a small trickle means it is not seated. Pull the side clip back rather than removing it.",
+     "source_url": "https://www.tacomaworld.com/threads/oil-filter-removal-3rd-gen-toyota.655716/",
+     "source_name": "Tacoma World: oil filter removal 3rd gen toyota",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "g2-chassis",
@@ -1961,6 +2180,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "parts": [
     "lev-rc-743",
     "lift-rc-74530"
+   ],
+   "tips": [
+    {
+     "text": "A 2011 PreRunner rode bouncy and stiff after new lower arms, and owners pointed to bolts torqued at full droop binding the bushings. Torque LCA pivot bolts with the truck on the ground at ride height.",
+     "source_url": "https://www.tacomaworld.com/threads/harsh-ride-after-new-lca-install.713742/",
+     "source_name": "Tacoma World: Harsh ride after new LCA install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2090,6 +2318,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "lev-rc-743",
     "lift-rc-74530",
     "lift-rc-75820"
+   ],
+   "tips": [
+    {
+     "text": "After a 6112 install, torque the LCA frame bolts and the lower shock bolt with the truck on the ground, not at droop, so the rubber bushings are not twisted. The 2023 owner got the rear LCA bolts to 139 ft-lb, and a popular video's 103 ft-lb figure is lower than the 135 ft-lb most threads quote.",
+     "source_url": "https://www.tacomaworld.com/threads/torque-lcas-at-ride-height-or-on-the-stand.855058/",
+     "source_name": "Tacoma World: Torque LCAs at ride height or on the stand?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
    ]
   },
   {
@@ -2122,6 +2360,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "gear-nitro-g3",
     "gear-488-g2",
     "locker-arb-rd111"
+   ],
+   "tips": [
+    {
+     "text": "Gears alone do not change the speedometer on these trucks because speed is read from the ABS wheel sensors; only tire size does. A tune's gear and tire fields will not fix it either; use a standalone calibrator module.",
+     "source_url": "https://www.tacomaworld.com/threads/speedometer-calibration-after-regear.691705/",
+     "source_name": "Tacoma World: Speedometer calibration after regear",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2158,6 +2405,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "parts": [
     "sc-magnuson-tvs1900",
     "sc-magnuson-mp90"
+   ],
+   "tips": [
+    {
+     "text": "Before supercharging a high-mileage 3.5, owners say to do compression and leak-down tests and want leak-down under 25%.",
+     "source_url": "https://www.tacomaworld.com/threads/magnuson-supercharger-upgrades-and-limitations.710536/",
+     "source_name": "Tacoma World: Magnuson Supercharger Upgrades and Limitations",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2184,7 +2440,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Fenders do not change from 2005-2015, so the swap is hood with scoop insert and latch support, headlights, lower headlight brackets, bumper, flares, grilles, fillers and reinforcement bar with inner and outer brackets. Painted parts are the bumper and flares, hood and scoop, headlight fillers and grille surround.",
+     "source_url": "https://www.tacomaworld.com/threads/05-11-tacoma-front-end-conversion-complete-list.597308/",
+     "source_name": "Tacoma World: 05-11 Tacoma Front End Conversion Complete List",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The old bumper mounts work, but you need the 2012-15 bumper reinforcement 52131-04010 with its new inner and outer brackets, which are riveted on; nuts and bolts worked fine for one owner. The flares need clips 75392-35200.",
+     "source_url": "https://www.tacomaworld.com/threads/how-to-convert-05-11-tacoma-to-12-15-tacoma.772450/",
+     "source_name": "Tacoma World: How to Convert 05-11' Tacoma to 12-15' Tacoma",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-brakes",
@@ -2231,7 +2503,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      }
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "The 14WA swap requires 17 in wheels (stock TRD Sport 17s needed a 1 in spacer), 4Runner backing plates 47781-60140 and 47782-60140, and the 338 mm rotors; pads are the same as the Tacoma calipers. One build measured about 8% shorter 40 mph stops, and gusseted spindles may need the backing plates trimmed.",
+     "source_url": "https://www.tacomaworld.com/threads/completed-5th-gen-4runner-bbk-upgrade-for-2nd-gen-tacomas.504234/",
+     "source_name": "Tacoma World: COMPLETED 5th Gen 4Runner BBK upgrade for 2nd Gen Tacomas",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On the G2 4Runner brake swap, stock lines work on an unlifted truck; lifted trucks may want +2\" lines.",
+     "source_url": "https://www.tacomaworld.com/threads/completed-5th-gen-4runner-bbk-upgrade-for-2nd-gen-tacomas.504234/",
+     "source_name": "TacomaWorld 4Runner BBK",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-reardisc",
@@ -2262,6 +2550,15 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "parts": [
     "brake-sos-xr",
     "brake-sos-pbkta"
+   ],
+   "tips": [
+    {
+     "text": "A cheaper route than the full SOS kit is its hardware-only kit plus RockAuto calipers, brackets, rotors and lines, plus four Toyota parking brake parts (47613-60020 x2, 47612-60020, 47611-60020).",
+     "source_url": "https://www.tacomaworld.com/threads/rear-disc-conversion-information.536765/",
+     "source_name": "Tacoma World: Rear Disc Conversion Information",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2288,7 +2585,24 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "A 2006 got a 2003 Silverado 5.3 and 4L60E; the LSX Innovations adjustable mounts were about 1.5 in too short, so he kept their plates and welded up 3/8 in steel mounts, and the GM trans mount fit the stock Toyota crossmember. He reports only about 30 hp over the stock 4.0, so do it for durability or potential, not instant power.",
+     "source_url": "https://www.tacomaworld.com/threads/munkeywrenchs-2nd-gen-ls-swap.661391/",
+     "source_name": "Tacoma World: MunkeyWrench's 2nd Gen LS swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "DIY swappers put parts at roughly $3,000-7,000 (one was $4,000 in), while shop quotes in the thread ranged from $10,000 to $25,000. Plan for a full GM drivetrain, wiring, ECU and tune.",
+     "source_url": "https://www.tacomaworld.com/threads/thinking-about-an-ls-swap.604316/",
+     "source_name": "Tacoma World: Thinking about an LS swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "swap-diesel",
@@ -2330,61 +2644,57 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "parts": []
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Manual 3rd gens need their own calibrations; one owner ran OVTune, KDMax, Coyoza and OTT and preferred OTT on his 2020 TRD Pro 6MT.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "TacomaWorld OTT thread",
-     "url": "https://www.tacomaworld.com/threads/overland-torque-tune-ott-by-overland-tailor.759590/"
-    }
-   ]
+   "text": "To check the 3rd gen auto, add a quart of WS through the 24 mm fill plug (29 ft-lb), jump OBD pins 4 and 13, start it, shift P-S-P, then N-D for 6 seconds until D shows for 2 seconds. When D comes back (about 8 minutes) pull the 5 mm overflow plug until it trickles and refit with crush washer 35178-30010 at 15 ft-lb; stop if D starts blinking.",
+   "source_url": "https://www.tacomaworld.com/threads/3rd-gen-automatic-transmission-fluid-level-check-diy.547455/",
+   "source_name": "Tacoma World: 3rd Gen Automatic Transmission Fluid Level Check DIY",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Toyota's T-SB-0071-19 driveline fix is void on lifted/leveled trucks, a real cost of leveling a G3 4WD auto.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "T-SB-0071-19",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10162793-9999.pdf"
-    }
-   ]
+   "text": "If only a trickle comes out when you pull the overflow plug, the transmission is more than a quart low; add another quart and redo the check once the exhaust cools. That owner's normally shifting 2018 was about 1/3 quart low.",
+   "source_url": "https://www.tacomaworld.com/threads/3rd-gen-automatic-transmission-fluid-level-check-diy.547455/",
+   "source_name": "Tacoma World: 3rd Gen Automatic Transmission Fluid Level Check DIY",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Rough Country advises a carrier-bearing drop on 3\" lifted trucks with a two-piece driveshaft.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Rough Country 74530",
-     "url": "https://www.roughcountry.com/product/configurable/toyota-suspension-lift-kit-745c"
-    }
-   ]
+   "text": "The stock rear diff breather is one-way, so a hot axle dunked in water pulls water in past the seals; after a crossing halfway up the tire, change the rear diff oil. The front diff, transmission and transfer case breathers already run up into the engine bay with two-way valves.",
+   "source_url": "https://www.tacomaworld.com/threads/breather-locations-on-2nd-gens.435663/",
+   "source_name": "Tacoma World: Breather locations on 2nd gens",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "On the G2 4Runner brake swap, stock lines work on an unlifted truck; lifted trucks may want +2\" lines.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "TacomaWorld 4Runner BBK",
-     "url": "https://www.tacomaworld.com/threads/completed-5th-gen-4runner-bbk-upgrade-for-2nd-gen-tacomas.504234/"
-    }
-   ]
+   "text": "The factory rear breather sits about 18 in off the ground, so owners extend it with a two-way fitting to the bed cubby (it has a drain hole) or behind the driver taillight. Some warn the taillight pocket has an open wiring hole and prefer the cubby.",
+   "source_url": "https://www.tacomaworld.com/threads/rear-differential-breather-relocation.704979/",
+   "source_name": "Tacoma World: REAR DIFFERENTIAL BREATHER RELOCATION",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "Magnuson on a G3: budget a 600 ft-lb+ impact for the crank bolt; an Injen intake wasn't compatible for one owner.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "TacomaWorld Magnuson mega thread",
-     "url": "https://www.tacomaworld.com/threads/magnuson-supercharger-mega-thread-for-2016-tacoma-unboxing-install-diy-dyno-video.693562/"
-    }
-   ]
+   "text": "On the 2.7, replace the failure-prone coolant bypass hose with metal pipe 16268-75130 and gasket 16258-75021. A near-identical pipe with a center mounting bracket is the wrong part.",
+   "source_url": "https://www.tacomaworld.com/threads/part-number-coolant-bypass-pipe-2006-2-7l.605819/",
+   "source_name": "Tacoma World: Part number ,coolant bypass pipe,2006 2.7L?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Real-world MPG: Fuelly blocked automated access. Search extracts gave 17.47 mpg (2012 overall) and 18.10 mpg (2019, 403 trucks).",
-   "conf": "unconfirmed",
-   "src": []
+   "text": "If a 2.7 slowly loses coolant with no puddle, look for dry pink crust at the bypass pipe near the dipstick and at the small upward nipple at the firewall end that feeds the throttle body hose; that nipple tends to crack. Move the hoses gently while checking.",
+   "source_url": "https://www.tacomaworld.com/threads/coolant-magically-vanishing-2-7l-2tr-fe.798482/",
+   "source_name": "Tacoma World: Coolant magically vanishing 2.7L 2tr-fe",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "Owners who keep salt-state frames clean wash and dry the frame, spray inside the boxed rails, and reapply every fall; one uses 2-3 quarts through an applicator gun plus cans for doors and tailgate. Keep it off brakes, exhaust, belts and soft rubber.",
+   "source_url": "https://www.tacomaworld.com/threads/using-fluid-film.760731/",
+   "source_name": "Tacoma World: Using Fluid Film",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -2627,7 +2937,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.roughcountry.com/product/toyota-leveling-lift-kit-743",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners say strut-top spacers on worn stock struts make the ride worse, and a shop-installed 3 in RC spacer kit on a 2nd gen was called extremely stiff a year later. Check the shocks' mileage before blaming the spacer, and plan real struts if you want ride quality.",
+     "source_url": "https://www.tacomaworld.com/threads/2nd-gen-tacoma-4x2-w-3-rough-country-lift.853642/",
+     "source_name": "Tacoma World: 2nd gen Tacoma 4x2 w/ 3\" Rough Country Lift",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-74530",
@@ -2666,7 +2985,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.roughcountry.com/product/configurable/toyota-suspension-lift-kit-745c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 3 in spacer-and-block kit on stock struts and springs gave a 2008 PreRunner a very harsh ride; owners say that is normal for spacer lifts, not a wrong kit. RC lists it as 4WD because it includes front diff drop spacers, which a PreRunner simply leaves out.",
+     "source_url": "https://www.tacomaworld.com/threads/installed-3-lift-but-ride-became-stiff-due-to-wrong-kit.842823/",
+     "source_name": "Tacoma World: Installed 3\" lift but ride became stiff due to wrong kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rough Country advises a carrier bearing drop on 3 in lifted trucks with a two-piece driveshaft; order the spacer with the kit.",
+     "source_url": "https://www.roughcountry.com/product/configurable/toyota-suspension-lift-kit-745c",
+     "source_name": "Rough Country 74530",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-75820",
@@ -2705,7 +3040,17 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.roughcountry.com/product/configurable/toyota-suspension-lift-kit-75820c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2019 on the RC 6 in kit with -38 offset wheels had steering wheel jerk over bumps even after alignment. Owners said it needs far more caster from upgraded UCAs, while RC and the dealer told the owner UCAs were only needed on the 3 in kit.",
+     "source_url": "https://www.tacomaworld.com/threads/3rd-gen-6-lift-issue.814834/",
+     "source_name": "Tacoma World: 3rd gen 6\" lift issue!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "lift-rc-747",
@@ -2783,7 +3128,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.1sourceoffroad.com/shop/p/47-309975-24-186728-bilstein-6112-strut-and-coil-spring-suspension-kit-with-rear-5100-series-shock-absorbers-for-2005-2023-toyota-tacoma-6-lug-2as77",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 3rd gen the 6/5 clip setting gave about 2 in of front lift; one owner found 4/5 only gave 1.5 in and moved back up. For driver-side lean, others run even clips plus a 1/4 in driver spacer, and if a bumper or winch is coming, order the 650 lb spring before install.",
+     "source_url": "https://www.tacomaworld.com/threads/6112-what-clip-setting-on-3rd-gen-for-2.558154/",
+     "source_name": "Tacoma World: 6112 - What clip setting on 3rd gen for 2\"?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rental parts-store spring compressors were too fat to let the 6112 body slide through once the spring was compressed, so the owner had to install with a poor seat on the spring. Buy the coilovers pre-assembled or use a compressor made for coilovers.",
+     "source_url": "https://www.tacomaworld.com/threads/3rd-gen-bilstein-6112-5160-review.456173/",
+     "source_name": "Tacoma World: 3rd Gen Bilstein 6112/5160 review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "susp-ome-1203k",
@@ -2822,7 +3183,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://store.arbusa.com/bp-51-2-suspension-kit-for-tacoma-2005-23-front-2in-0-330lb-rear-0in-0lb-1203k/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "ARB's BP-51 preload chart for the Tacoma is 10 mm with no accessories, 15 mm with an ARB bumper and 20 mm with bumper and winch. ARB says preload is only for constant added weight; cranking it for ride height makes the ride harsher and cuts front travel.",
+     "source_url": "https://arbusa.com/news/how-to-adjust-bp-51-preload",
+     "source_name": "ARB USA: How to Adjust BP-51 Preload",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 2017 install the printed steps for the rear lower shock carrier extensions were wrong: finger-tighten the shock at the top first, mock up the lower extension on the stock mount, push the lower eye in, then tighten everything.",
+     "source_url": "https://www.tacomaworld.com/threads/ome-bp-51-review-on-3rd-gen.485741/",
+     "source_name": "Tacoma World: OME BP-51 Review on 3rd Gen",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The front coilovers ship at the 20 mm setting; with no front weight one owner's truck topped out constantly. Dropping to 5 mm still gave about 2 in of front lift (a friend at 10 mm kept about 3 in), and BajaKits UCAs kept caster in spec even though OME does not require them.",
+     "source_url": "https://www.tacomaworld.com/threads/ome-bp-51-install-report-and-height-adjustment.476085/",
+     "source_name": "Tacoma World: OME BP-51 Install Report and Height Adjustment",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "susp-ome-1205k",
@@ -2861,7 +3245,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://store.arbusa.com/bp-51-2-suspension-kit-for-tacoma-2005-23-front-2in-0-330lb-rear-2in-660lb-1205k/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "ARB's BP-51 preload chart for the Tacoma is 10 mm with no accessories, 15 mm with an ARB bumper and 20 mm with bumper and winch. ARB says preload is only for constant added weight; cranking it for ride height makes the ride harsher and cuts front travel.",
+     "source_url": "https://arbusa.com/news/how-to-adjust-bp-51-preload",
+     "source_name": "ARB USA: How to Adjust BP-51 Preload",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 2017 install the printed steps for the rear lower shock carrier extensions were wrong: finger-tighten the shock at the top first, mock up the lower extension on the stock mount, push the lower eye in, then tighten everything.",
+     "source_url": "https://www.tacomaworld.com/threads/ome-bp-51-review-on-3rd-gen.485741/",
+     "source_name": "Tacoma World: OME BP-51 Review on 3rd Gen",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The front coilovers ship at the 20 mm setting; with no front weight one owner's truck topped out constantly. Dropping to 5 mm still gave about 2 in of front lift (a friend at 10 mm kept about 3 in), and BajaKits UCAs kept caster in spec even though OME does not require them.",
+     "source_url": "https://www.tacomaworld.com/threads/ome-bp-51-install-report-and-height-adjustment.476085/",
+     "source_name": "Tacoma World: OME BP-51 Install Report and Height Adjustment",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "susp-toytec-boss",
@@ -2900,7 +3307,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://toyteclifts.com/toytec-boss-2-5-series-performance-suspension-system-2-3-lift-kit-for-2005-2023-tacoma",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Boss 2.5 front uses a 700 lb spring versus 600 lb on Kings, and owners warn it rides stiff without a bumper or winch up front, more so if you preload it for lift. One shop on the thread bills 7 hours at $150/hr for a comparable coilover kit, including setting ride height.",
+     "source_url": "https://www.tacomaworld.com/threads/toytec-boss-2-0-vs-2-5.753912/",
+     "source_name": "Tacoma World: Toytec Boss 2.0 vs 2.5",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-djm-3-3",
@@ -2941,7 +3357,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://djmsuspension.com/product/2005-2014-toyota-tacoma-3-inch-front-3-inch-rear-complete-lowering-kit-shocks-included-2/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Running a 4 in rear block on a 5-lug 2nd gen without a frame C-notch means constant bottoming. Owners grind off the 4 rivets holding the factory bump stop for about another 1/2 in, and the welder who did one notch charged half the labor because the stops were already removed.",
+     "source_url": "https://www.tacomaworld.com/threads/djm-3-4-install-qs.861316/",
+     "source_name": "Tacoma World: DJM 3/4 install Qs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After a DJM 3/4 drop, front binding at full lock turned out to be the stock 14 in wheels catching their balance weights, and the rear sat on the bump stops until they were cut down. The owner also found the DJM shocks bouncy and planned low-profile stops plus a notch.",
+     "source_url": "https://www.tacomaworld.com/threads/djm-lowering-kit-issues.733382/",
+     "source_name": "Tacoma World: DJM Lowering kit issues",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-djm-rk2806-3",
@@ -2982,7 +3414,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.lowriders.ca/i-23901095-rk2806-3-djm-suspension-3-inch-rear-lowering-kit-2005-2014-tacoma-2wd.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Running a 4 in rear block on a 5-lug 2nd gen without a frame C-notch means constant bottoming. Owners grind off the 4 rivets holding the factory bump stop for about another 1/2 in, and the welder who did one notch charged half the labor because the stops were already removed.",
+     "source_url": "https://www.tacomaworld.com/threads/djm-3-4-install-qs.861316/",
+     "source_name": "Tacoma World: DJM 3/4 install Qs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-djm-2806-34",
@@ -3023,7 +3464,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.beefcakeracing.com/djm-suspension-complete-lowering-kit-w-shocks-3-front-4-rear-2005-2014-tacoma-djm2806-3-4/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Running a 4 in rear block on a 5-lug 2nd gen without a frame C-notch means constant bottoming. Owners grind off the 4 rivets holding the factory bump stop for about another 1/2 in, and the welder who did one notch charged half the labor because the stops were already removed.",
+     "source_url": "https://www.tacomaworld.com/threads/djm-3-4-install-qs.861316/",
+     "source_name": "Tacoma World: DJM 3/4 install Qs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After a DJM 3/4 drop, front binding at full lock turned out to be the stock 14 in wheels catching their balance weights, and the rear sat on the bump stops until they were cut down. The owner also found the DJM shocks bouncy and planned low-profile stops plus a notch.",
+     "source_url": "https://www.tacomaworld.com/threads/djm-lowering-kit-issues.733382/",
+     "source_name": "Tacoma World: DJM Lowering kit issues",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-tr-2037",
@@ -3113,7 +3570,17 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.magnaflow.com/products/19293-magnaflow-2016-2023-toyota-tacoma-3-5l-street-series-cat-back-performance-exhaust-system-19293",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Several 3rd gen owners pulled the MagnaFlow Street cat-back within a week for in-cab drone, one saying you could not hold a conversation around town; MBRP owners reported drone at 1,500-3,000 rpm and 65 mph in 6th. One owner who also had a 2nd gen MagnaFlow liked it there.",
+     "source_url": "https://www.tacomaworld.com/threads/exhaust-choice-magnaflow-vs-mbrp.536017/",
+     "source_name": "Tacoma World: Exhaust choice? Magnaflow vs. MBRP",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "exh-magnaflow-19585",
@@ -3195,7 +3662,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.borla.com/products/toyota-tacoma-cat-back-exhaust-system-140680",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2016 TRD Sport owner swapped to the Borla S-Type after four weeks of MagnaFlow drone on every downshift (and weld spatter on the muffler). He reported the Borla deeper outside, better built and without the cabin drone.",
+     "source_url": "https://www.tacomaworld.com/threads/sound-clip-borla-s-type-cat-back-exhaust-system-for-2016-2017-tacoma.470166/",
+     "source_name": "Tacoma World: *SOUND CLIP* Borla S-Type cat-back exhaust system for 2016-2017 Tacoma",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-63-9039",
@@ -3236,7 +3712,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.extremeterrain.com/k-n-series-63-aircharger-cold-airtake-1619-35l-tacoma.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2016 3.5 owner got lean codes on both banks, confirmed on the dealer's Techstream even at idle, until he refit the stock airbox; K&N would not take a return and told him to reinstall and call tech support. Another owner reported months on an aFe intake with no codes.",
+     "source_url": "https://www.tacomaworld.com/threads/k-n-63-series-causes-lean-condition-and-cel.461783/",
+     "source_name": "Tacoma World: K&N 63 series causes lean condition and CEL",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-63-9025",
@@ -3277,7 +3762,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.snakeriverperformance.com/k-n-63-9025-performance-air-intake-system-for-2005-2014-toyota-tacoma-4-0l-oiled/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "For a 2005-2011 4.0, the 57-9025 keeps the stock airbox while the 63-9025 replaces it with a tube to the throttle body; neither heat shield fully seals, so both pull hot engine-bay air. Owners say expect more intake sound, not measurable power or mpg.",
+     "source_url": "https://www.tacomaworld.com/threads/k-n-performance-intake.727512/",
+     "source_name": "Tacoma World: K&N Performance Intake",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-63-9037",
@@ -3360,7 +3854,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://aytuning.com/products/2016-2022-3-5l-tacoma-overland-torque-tune",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a stock 2021 TRD Sport, the Medium and Spicy throttle maps were jerky from a stop and spun the tires; Lite/Mild felt close to stock pedal with the smoother, higher-rpm shifting and no highway gear hunting. Start mild, because the tuner can step the throttle map down later.",
+     "source_url": "https://www.tacomaworld.com/threads/ott-tune-review-lite-vs-mild-vs-medium-vs-spicy.827767/",
+     "source_name": "Tacoma World: OTT Tune Review: Lite vs Mild vs Medium vs Spicy",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners who started on Medium/Spicy found it took constant effort to drive smoothly and had the tuner reflash them to Mild/Medium, which several call the best all-round setting. If Drive still shifts in a way you dislike, use S4 to hold gears.",
+     "source_url": "https://www.tacomaworld.com/threads/ott-tune-flavors-set-up-experience.829755/",
+     "source_name": "Tacoma World: OTT tune flavors + set up + experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Manual 3rd gens need their own calibration. One 2020 TRD Pro 6MT owner tried OVTune, KDMax, Coyoza and OTT and preferred OTT, so confirm the tuner has a manual-transmission file before buying.",
+     "source_url": "https://www.tacomaworld.com/threads/overland-torque-tune-ott-by-overland-tailor.759590/",
+     "source_name": "TacomaWorld OTT thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-yotawerx",
@@ -3438,7 +3955,30 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://tunedyota.com/toyota-tacoma-ott-tune",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a stock 2021 TRD Sport, the Medium and Spicy throttle maps were jerky from a stop and spun the tires; Lite/Mild felt close to stock pedal with the smoother, higher-rpm shifting and no highway gear hunting. Start mild, because the tuner can step the throttle map down later.",
+     "source_url": "https://www.tacomaworld.com/threads/ott-tune-review-lite-vs-mild-vs-medium-vs-spicy.827767/",
+     "source_name": "Tacoma World: OTT Tune Review: Lite vs Mild vs Medium vs Spicy",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners who started on Medium/Spicy found it took constant effort to drive smoothly and had the tuner reflash them to Mild/Medium, which several call the best all-round setting. If Drive still shifts in a way you dislike, use S4 to hold gears.",
+     "source_url": "https://www.tacomaworld.com/threads/ott-tune-flavors-set-up-experience.829755/",
+     "source_name": "Tacoma World: OTT tune flavors + set up + experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Manual 3rd gens need their own calibration. One 2020 TRD Pro 6MT owner tried OVTune, KDMax, Coyoza and OTT and preferred OTT, so confirm the tuner has a manual-transmission file before buying.",
+     "source_url": "https://www.tacomaworld.com/threads/overland-torque-tune-ott-by-overland-tailor.759590/",
+     "source_name": "TacomaWorld OTT thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sc-magnuson-tvs1900",
@@ -3479,7 +4019,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://magnusonsuperchargers.com/products/01-19-35-005-bl",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a high-mileage 2GR-FKS (the asker was past 170k), run a static and running compression test plus a leak-down test before boosting; owners want leak-down under 25%. A smaller pulley later also needs intake and exhaust flow, possibly fuel pump, injectors and colder plugs, and a tune.",
+     "source_url": "https://www.tacomaworld.com/threads/magnuson-supercharger-upgrades-and-limitations.710536/",
+     "source_name": "Tacoma World: Magnuson Supercharger Upgrades and Limitations",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Magnuson on a G3: budget a 600 ft-lb or stronger impact for the crank bolt, and check your intake: an Injen intake was not compatible for one owner.",
+     "source_url": "https://www.tacomaworld.com/threads/magnuson-supercharger-mega-thread-for-2016-tacoma-unboxing-install-diy-dyno-video.693562/",
+     "source_name": "TacomaWorld Magnuson mega thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sc-magnuson-mp90",
@@ -3520,7 +4076,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://magnusonsuperchargers.com/products/01-90-40-007-bl",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a 2012+ 4.0 ECU already has an N/A tune or the TSB update flashed, the Bully Dog, TRD supercharger or HPTuners supercharger calibration cannot be loaded on it. One 2015 manual owner needed a VIN-matched replacement ECU, so check this before buying the kit used.",
+     "source_url": "https://www.tacomaworld.com/threads/need-help-magnuson-supercharger-calibration-and-tuning.749251/",
+     "source_name": "Tacoma World: Need help Magnuson supercharger calibration and tuning !!!!!!!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The supercharger belt on a 2nd gen 4.0 Magnuson is Dayco 21-2973, which can be hard to find. Owners use the Bando 5PK1790 (about $17) as a direct replacement, so keep a spare on long trips.",
+     "source_url": "https://www.tacomaworld.com/threads/magnuson-supercharger-drive-belt-2nd-gen-needed.838296/",
+     "source_name": "Tacoma World: Magnuson Supercharger drive belt 2nd gen needed",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gear-nitro-g3",
@@ -3559,7 +4131,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://unit1203.com/products/nitro-gear-axle-16-23-tacoma-8-75-gear-package-kit",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On the 3rd gen Toyota 8 in rear with a Nitro set, the installer targets 14-17 in-lb pinion bearing preload on new bearings and 0.006-0.009 in backlash, set with the third member's spanner nuts. Loctite and torque the ring gear and carrier cap bolts, follow the gear maker's break-in, then change the oil.",
+     "source_url": "https://www.youtube.com/watch?v=vegkZZfcFWo",
+     "source_name": "YouTube: Nitro Gear 4.88 Install on 3rd gen Tacoma (Victory 4x4)",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A TRD Off-Road leaked at the pinion seal a week after a 4.88 regear and again after the seal was replaced. Owners blamed setup tolerances, so make sure the shop uses the gear maker's specs, and check the diff breather while you are under there.",
+     "source_url": "https://www.tacomaworld.com/threads/issues-with-regear-install-4-88.546169/",
+     "source_name": "Tacoma World: Issues with regear install 4.88",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gear-488-g2",
@@ -3637,7 +4225,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.extremeterrain.com/arb-tacoma-toyota-8-inch-ifs-air-locker-differential-for-391-up-gear-ratio-rd111.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The RD111 is for 3.91 and numerically higher gears and fits the same 8 in front clamshell in every 4x4 since 2005 (2016+ adds an oil temperature sensor). One DIYer upgraded the bulkhead O-rings to -006 (McMaster 8297T116) and the seal housing quad rings to -136 (6540K237), and warns some ARB manual steps for the newest bulkhead are best not followed.",
+     "source_url": "https://www.tacomaworld.com/threads/front-arb-air-locker-diy-install-thread.692979/",
+     "source_name": "Tacoma World: Front ARB Air Locker DIY & Install Thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Install the compressor before the truck goes to the gear shop and leave the air line coiled and capped at the frame, so the shop can connect it and leak-test the locker. ARB line is about 5 mm push-to-connect, so carry a union or two for trail repairs.",
+     "source_url": "https://www.tacomaworld.com/threads/arb-locker-arb-compressor.666716/",
+     "source_name": "Tacoma World: ARB Locker + ARB Compressor",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "brake-sos-xr",
@@ -3678,7 +4282,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://sosperformance.com/products/rear-disc-conversion-fits-x-runner-2005-2015",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A past owner of the SOS rear disc kit said it worked, but parts he broke on the trail were expensive to replace and he would not buy it again. Before converting, owners suggest cleaning the drums and putting anti-seize where the shoes touch the backing plate.",
+     "source_url": "https://www.tacomaworld.com/threads/3rd-gen-drum-brake-nonsense.817830/",
+     "source_name": "Tacoma World: 3rd Gen Drum Brake Nonsense",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "brake-sos-pbkta",
@@ -3717,7 +4330,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://sosperformance.com/products/rear-disc-conversion-backing-plate-kit-2005-2023-tacoma-6-lug",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The SOS hardware kit (backing plates and e-brake cables) was about $340 in 2018, and the calipers, brackets, rotors and lines came to about $300 at RockAuto. From the dealer you also need 47613-60020 (x2), 47612-60020 and 47611-60020 for the parking brake struts and actuators.",
+     "source_url": "https://www.tacomaworld.com/threads/rear-disc-conversion-information.536765/",
+     "source_name": "Tacoma World: Rear Disc Conversion Information",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-morimoto-lf2-530",
@@ -3756,7 +4378,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.morimotohid.com/16-23-Tacoma-xb-evo-headlights",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "3rd gens came with three headlight types (halogen, halogen with LED DRL, full LED), which is why owners disagree about extra harnesses. A TRD Sport with factory LED DRLs should plug straight in without the adapters; if DRLs work but turn signals hyperflash, a look-alike connector is plugged into the wrong socket.",
+     "source_url": "https://www.tacomaworld.com/threads/morimoto-xb-headlights-wiring-kerfuffle.833952/",
+     "source_name": "Tacoma World: Morimoto XB headlights wiring kerfuffle",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the XB DRLs come on at 4 am with the truck off, the fuse tap is on the EFI fuse, which gets power when the ECU runs its after-shutdown tests. Move the tap to a fuse that is only live with the key on.",
+     "source_url": "https://www.tacomaworld.com/threads/help-with-morimoto-xb-led-headlights.722440/",
+     "source_name": "Tacoma World: Help with Morimoto XB LED headlights",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-morimoto-lf2-530y",
@@ -3795,7 +4433,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.quadratec.com/p/morimoto/xb-evo-hybrid-headlights-toyota-tacoma-lf2-530y",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "3rd gens came with three headlight types (halogen, halogen with LED DRL, full LED), which is why owners disagree about extra harnesses. A TRD Sport with factory LED DRLs should plug straight in without the adapters; if DRLs work but turn signals hyperflash, a look-alike connector is plugged into the wrong socket.",
+     "source_url": "https://www.tacomaworld.com/threads/morimoto-xb-headlights-wiring-kerfuffle.833952/",
+     "source_name": "Tacoma World: Morimoto XB headlights wiring kerfuffle",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the XB DRLs come on at 4 am with the truck off, the fuse tap is on the EFI fuse, which gets power when the ECU runs its after-shutdown tests. Move the tap to a fuse that is only live with the key on.",
+     "source_url": "https://www.tacomaworld.com/threads/help-with-morimoto-xb-led-headlights.722440/",
+     "source_name": "Tacoma World: Help with Morimoto XB LED headlights",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-morimoto-lf529",
@@ -3990,7 +4644,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://www.offroadelements.com/c4-fabrication-overland-front-bumper-tacoma-2016-2023/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "C4's steps: trim the fender flare flush with the fender edge (mark it with masking tape) and paint the exposed fender black, then move the power steering cooler back on the supplied brackets. The third PS line bolt in the passenger wheel well is removed and not reused, and extra 1/2 in x 1 1/2 in bolts go into the frame crossmember corners.",
+     "source_url": "https://www.tacomaworld.com/threads/c4-fab-16-overland-series-front-bumper-installation-instructions.445309/",
+     "source_name": "Tacoma World: C4 FAB '16+ Overland Series front bumper installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-cbi-adventure",
@@ -4029,7 +4692,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://cbioffroadfab.com/product/toyota-moab-2-0-adventure-series-bumper-2005-2015/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Moab 2.0 comes with pre-drilled 1/2 in holes on 12 in centers that took a 28 in light bar with bottom-mount feet. The lower mount sandwiches between the sway bar and the frame, so soak the sway bar and tow loop bolts first; one installer snapped a coupler and found the tow loop bolts nearly seized.",
+     "source_url": "https://www.tacomaworld.com/threads/cbi-moab-2-0-front-bumper-question.626978/",
+     "source_name": "Tacoma World: CBI Moab 2.0 front bumper question?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-cbi-baja",
@@ -4068,7 +4740,16 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://rebeloffroad.com/cbi-toyota-tacoma-moab-2-0-baja-front-bumper-2005-2015/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Moab 2.0 comes with pre-drilled 1/2 in holes on 12 in centers that took a 28 in light bar with bottom-mount feet. The lower mount sandwiches between the sway bar and the frame, so soak the sway bar and tow loop bolts first; one installer snapped a coupler and found the tow loop bolts nearly seized.",
+     "source_url": "https://www.tacomaworld.com/threads/cbi-moab-2-0-front-bumper-question.626978/",
+     "source_name": "Tacoma World: CBI Moab 2.0 front bumper question?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "grille-trd-pro",
@@ -4107,7 +4788,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://theyotagarage.com/trd-pro-grille-genuine-oem-2016-2023-toyota-tacoma",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 2018+ truck with TSS, use the 2018 Pro grille PT228-35180 with the radar garnish 53141-35060. A 2016-17 grille (PT228-35170) also works because its lower radar section is a removable insert; one owner moved the radar with no errors and no recalibration.",
+     "source_url": "https://www.tacomaworld.com/threads/2018-trd-pro-grille-w-tss-p-radar-info-diy.530769/",
+     "source_name": "Tacoma World: 2018 TRD PRO Grille w/ TSS-P Radar Info/DIY",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Clean Sensor errors after a Pro grille swap usually come from snow, ice or water getting between the garnish and the radar. Keep the garnish tight and the harness secured (a longer harness is sold for the Pro grille); shimming the top screw with washers made one owner's errors worse.",
+     "source_url": "https://www.tacomaworld.com/threads/tss-garnish-adjustment-for-pro-grill.699721/",
+     "source_name": "Tacoma World: TSS garnish adjustment for pro grill",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tonneau-bak-mx4-g3",
@@ -4146,7 +4843,24 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "url": "https://yotaxpedition.com/products/bakflip-mx4-tonneau-cover-tacoma-2016-2023",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Do not overtighten the two clamps that hold the cover to the rails; one owner cracked the panel. Enlarging the bed's drain holes to 3/4 in with a step bit gave a tight fit for the drain tubes and kept the bed dry.",
+     "source_url": "https://www.tacomaworld.com/threads/bakflip-tonneau-covers-drill-drain-holes.439683/page-2",
+     "source_name": "Tacoma World: BAKFlip tonneau covers: Drill drain holes?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners agree every MX4 leaks some at the front and tailgate corners, but water dripping at the panel seams is not universal; reinstalling fixed it for some. One owner with heavy seam leaks got BAK to replace the top but not the rails.",
+     "source_url": "https://www.tacomaworld.com/threads/bakflip-mx4-leaking-at-the-seams-normal.733809/",
+     "source_name": "Tacoma World: Bakflip MX4 leaking at the seams normal?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "int-wt-floorliner-g3",

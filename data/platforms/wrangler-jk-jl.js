@@ -1638,7 +1638,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://www.youtube.com/watch?v=8KW01QtMm_M"
     }
    ],
-   "guide": "jl-steering"
+   "guide": "jl-steering",
+   "tips": [
+    {
+     "text": "After the V41 damper recall, check that the new damper is not upside down: the sticker arrow labeled front should be on the bottom pointing at the front bumper. Dealer instructions say an upside-down damper will not work properly and can be damaged.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/steering-damper-recall-and-death-wobble.36187/",
+     "source_name": "JLwranglerforums.com: Steering damper recall and death wobble",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "TSB 02-003-19 replaces the front track bar (68394087AA LHD) for wander on JLs built Oct 15, 2017 to Jan 22, 2019, but it says not to use it for a sustained shake or shimmy, which falls under V41. Have the sway bar link torque checked at the same visit.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/new-tsb-jl-2018-2019-vehicle-wanders-requires-constant-small-steering-corrections-new-track-bar.33643/",
+     "source_name": "JLwranglerforums.com: New TSB JL 2018 2019: Vehicle wanders requires constant small steering corrections - New Track Bar",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jl-trackbar",
@@ -1655,7 +1671,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://static.nhtsa.gov/odi/rcl/2018/RCAK-18V675-4983.pdf"
     }
    ],
-   "guide": "jl-steering"
+   "guide": "jl-steering",
+   "tips": [
+    {
+     "text": "Read the 3-digit frame build date on the driver side outer frame rail: below 126 or above 156 needs nothing. In range, the dealer cleans both front track bar bracket welds, writes the last 3 VIN digits on the bracket, and photographs the inboard and outboard welds with the wheel turned full left.",
+     "source_url": "https://static.nhtsa.gov/odi/rcl/2018/RCRIT-18V675-4839.pdf",
+     "source_name": "NHTSA: Safety Recall UA5 / NHTSA 18V-675 Track Bar Weld",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "An early JLUR owner whose welds had porosity and slag said the dealer re-welds looked as bad as the robot welds, and FCA agreed to a replacement after reviewing photos. Photograph the welds yourself before and after any repair.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/track-bar-frame-weld-issue-recall-updated-with-official-ua5-recall-notice-w-repair-procedure.16255/page-9",
+     "source_name": "JLwranglerforums.com: Track bar frame weld issue recall! [Updated with official UA5 recall notice w/ repair procedure]",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jk-wobble",
@@ -1689,7 +1721,37 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://www.autosafety.org/wp-content/uploads/import/Eshoo%20Waxman%20QA.pdf"
     }
    ],
-   "guide": "jk-front"
+   "guide": "jk-front",
+   "tips": [
+    {
+     "text": "To find slop, have a helper turn the wheel back and forth with the engine off while you watch both track bar ends; you should see almost no movement. Then jack the axle onto stands and lever a shovel under each tire, watching where the C meets the knuckle near the upper ball joint.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/death-wobble-track-bar-350847/page2/",
+     "source_name": "JK-Forum: Death Wobble and Track Bar",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the track bar holes are wallowed out, owners fit the Northridge 9/16 in bolt upgrade kit and weld in 1/2 in washers checked to slide fully onto the bolt. Replace original ball joints too, since a friend's wobble only stopped after both fixes.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/death-wobble-ball-joints-steering-stabilizer-348773/",
+     "source_name": "JK-Forum: Death Wobble, ball joints, steering stabilizer",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Track bar bolts take 125 ft-lb. A 2.5 in lift drops JK caster from about 4.2 to the 3.4 to 3.5 degree range, so if torque is right and steering is still loose, add AEV brackets, a one-piece bracket, or adjustable lower arms.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/2-5-rough-country-jku-minimal-problems-349455/",
+     "source_name": "JK-Forum: 2.5 rough country on jku, minimal problems",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A pry bar test can miss ball joints that are worn enough to lose preload without flopping; in this case two shops passed them and the wobble only stopped after Spicer ball joints went in (about a 6 hour shop job). Rebalance or swap in a friend's wheels and check caster before that teardown.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/how-to-beat-death-wobble-an-algorithm-to-diagnose-the-issue.62313/",
+     "source_name": "JLwranglerforums.com: How to Beat Death Wobble! (An Algorithm to Diagnose The Issue)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jk-airbag",
@@ -1709,6 +1771,22 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "label": "NHTSA recalls API (2016)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2016"
     }
+   ],
+   "tips": [
+    {
+     "text": "An intermittent airbag light and chime on a JK is usually the clockspring; the writer paid a dealer $550 once and did the second one himself in about an hour for about $200 in parts. Disconnect the battery negative and wait for the airbag capacitor to drain, and use a 90 degree dental pick to release the three airbag clips.",
+     "source_url": "https://www.jk-forum.com/forums/jk-write-ups-39/clockspring-replacement-273201/",
+     "source_name": "JK-Forum: Clockspring Replacement",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Order 5156106AD; it superseded 5156106AC. One 2009 owner received 68193280AB instead and found it identical side by side at the dealer.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/clockspring-325563/",
+     "source_name": "JK-Forum: Clockspring",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1725,6 +1803,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "label": "NHTSA recalls API (2007)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2007"
     }
+   ],
+   "tips": [
+    {
+     "text": "The 2007 stall fix was Safety Recall G25, a TIPM reflash, not a hardware replacement. Check whether G25 was ever done on a 2007 before chasing stall or no-start parts.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/safety-recall-g25-reprogram-tipm-12258/",
+     "source_name": "JK-Forum: Safety Recall G25(reprogram TIPM)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1740,6 +1827,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     {
      "label": "JK-Forum 3.8 oil burners",
      "url": "https://www.jk-forum.com/forums/stock-jk-tech-12/2007-3-8-oil-burners-271292/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "A former ASE master tech lists the usual 3.8 improvements: a fresh PCV valve, moving up to a thicker oil, and checking for leaking intake manifold gaskets. One owner burning a quart every 1,200 to 1,500 miles still showed 184 to 187 psi compression on all cylinders, so a good compression test does not rule out consumption.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/2010-jk-burning-oil-my-thoughts-after-some-testing-314592/",
+     "source_name": "JK-Forum: 2010 JK Burning Oil, my thoughts after some testing.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners went from 5W-20 to 5W-30, 10W-30, and some 10W-40 in warm climates. One who did change his PCV said it was not the fix, so check the level at every fill-up, as one owner was found 3 quarts low.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/2007-3-8-oil-burners-271292/",
+     "source_name": "JK-Forum: 2007 3.8 oil burners",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
     }
    ]
   },
@@ -1759,6 +1863,22 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     {
      "label": "FCA D-14-12",
      "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10069161-0335.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "The X56 extended warranty covers the left cylinder head on 2012 to 2013 JK 3.6 engines built on or before July 25, 2012, only when P0300, P0302, P0304 or P0306 is set. The dealer runs a leak-down test before replacing the head.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10062952-0335.pdf",
+     "source_name": "NHTSA: Chrysler TSB 09-002-14 MIL Illumination P0300, P0302, P0304 or P0306 (X56 Warranty Extension)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Loud top-end ticking with no codes is not X56; owners point to worn rocker arm bearings and say pull the valve gear to check. X56 needs one of the misfire codes plus 25 percent or more leak-down.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/2012-cylinder-head-warranty-356036/",
+     "source_name": "JK-Forum: 2012 cylinder head warranty",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1785,7 +1905,38 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     }
    ],
    "confNote": "Moderator summary: \"known issue affecting thousands of 2012+ JKs.\"",
-   "guide": "jk-36"
+   "guide": "jk-36",
+   "tips": [
+    {
+     "text": "Buy the latest Mopar housing for a 2014 to 2016 JK (68596317AB): it drops the figure 8 seals for two separate seals with a web between the ports. While it is apart, replace the short heater hose under the manifold, the oil temp and pressure sensors, the PCV valve and the plugs.",
+     "source_url": "https://www.wranglerforum.com/threads/changing-oil-filter-housing-what-else-do-i-need-to-do.2467358/",
+     "source_name": "Jeep Wrangler Forum: Changing Oil filter housing , what else do I need to do?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The blue Fel-Pro ES73012 seals do not fit the Dorman 926-876 or OEM housings after 2013; owners use OEM 68191356AA black seals or Fel-Pro ES73248. One owner's Dorman seals failed after 10,000 miles, while another reports 2 years with no leaks, so owners disagree on Dorman.",
+     "source_url": "https://www.wranglerforum.com/threads/which-seals-did-you-use-with-the-dorman-oil-filter-housing-926-876.2465798/",
+     "source_name": "Jeep Wrangler Forum: Which seals did you use with the Dorman Oil Filter Housing (926-876)?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A tech who did 50+ of these says the leak is the seals after the plastic housing warps, and he coats every seal with a thin layer of Ultra Black RTV. He also warns that shops overtighten the filter cap.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/is-this-real-mopar-releases-an-all-aluminum-oil-cooler-housing.162111/page-2",
+     "source_name": "JLwranglerforums.com: Is this real?  Mopar releases an all aluminum oil cooler housing?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 2012-18 JK, an oil leak \"on the bellhousing\" may be the oil cooler housing, not the rear main seal. Check the housing before quoting a rear main.",
+     "source_url": "https://www.wranglerforum.com/threads/2014-2018-jk-oil-cooler-housing-mega-thread.698297/",
+     "source_name": "wranglerforum oil cooler mega thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jk-recalls",
@@ -1833,6 +1984,29 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "label": "NHTSA recalls API (2021)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2021"
     }
+   ],
+   "tips": [
+    {
+     "text": "Recall 19A (NHTSA 23V-116) covers about 69,200 manual JL and JT trucks whose pressure plate can overheat and fracture. Warning signs before failure are clutch smell, slipping and cluster messages.",
+     "source_url": "https://static.nhtsa.gov/odi/rcl/2023/RCRIT-23V116-7715.pdf",
+     "source_name": "NHTSA: Safety Recall 19A / NHTSA 23V-116 Manual Transmission Clutch",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2021 manual JL on 35s went into limp mode on the trail in 4L after the 19A software. A dealer told a re-geared owner to set tire and gear back to stock with JScan before the flash and restore them afterward.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/jl-clutch-recall-results-in-limp-mode.151819/",
+     "source_name": "JLwranglerforums.com: JL clutch recall results in limp mode",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After any clutch work, run the PCM Clutch Replacement EEPROM Reset (in JScan under adaptation, vehicle maintenance); without it the Jeep is held to 30 mph with \"Service Transmission\" and no codes. The message can also appear after a battery disconnect.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/evic-displays-service-transmission-service-procedure-for-jl-jt-with-manual-transmission.128371/",
+     "source_name": "JLwranglerforums.com: EVIC Displays: SERVICE TRANSMISSION - Service Procedure for JL/JT with Manual Transmission",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1853,6 +2027,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "label": "NHTSA recalls API (2024)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2024"
     }
+   ],
+   "tips": [
+    {
+     "text": "The 68C recall visit runs a diagnostic and software updates first, and the battery is the only part physically replaced if it fails. Plan to leave the Jeep all day and ask for a loaner, as the dealer offered one.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/safety-recall-68c-25v-741-fix-available-for-high-voltage-battery-in-4xe-phev.161162/",
+     "source_name": "JLwranglerforums.com: Safety recall  68C / 25V-741 - fix available for High Voltage Battery in 4xe (PHEV)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1872,6 +2055,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     {
      "label": "NHTSA recalls API (2023)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2023"
+    }
+   ],
+   "tips": [
+    {
+     "text": "The 3.0 EcoDiesel uses the Bosch CP4. Owners keep the tank above 1/4, change the fuel filter on schedule, add a lubricity additive, and pull over right away if the water-in-fuel light comes on.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/cp4-fuel-pump.59449/",
+     "source_name": "JLwranglerforums.com: CP4 Fuel Pump",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1960,7 +2152,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      0
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "JK studs are 1/2-20 and JL studs are 14x1.5, so JK lug nuts will not go on a JL. If you move JK aftermarket wheels to a JL, the big factory JL nuts may not fit the wheel holes; use thinner 14x1.5 spline nuts.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/jl-vs-jk-lug-nut-specs.21369/",
+     "source_name": "JLwranglerforums.com: JL vs JK lug nut specs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "1.5 in hub-centric spacers on JK/JL factory wheels are the cheap path to 35s; use hub-centric, not lug-centric, spacers.",
+     "source_url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-676c",
+     "source_name": "Rough Country 67700 (JL 2.5\")",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jk-front",
@@ -2058,6 +2266,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    },
    "parts": [
     "steer-synergy-8069"
+   ],
+   "tips": [
+    {
+     "text": "After any JK lift, loosen every control arm and track bar bolt with the Jeep on the ground, rock it side to side and front to back, then torque the lowers, track bars and rear uppers to 125 ft-lb and the front uppers to 75 ft-lb.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/noises-after-installing-rough-country-2-5-spacer-lift-289067/",
+     "source_name": "JK-Forum: Noises after installing Rough Country 2.5\" spacer lift",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2242,6 +2459,22 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "parts": [
     "gear-yukon-ygk068",
     "locker-arb-rd116"
+   ],
+   "tips": [
+    {
+     "text": "Extend the axle, transfer case and auto trans breathers with 1/4 in fuel hose, clamps and tees for under $30 in about an hour, leaving slack above the rear diff for droop. Skip the 6-speed manual breather, which runs up by the shifter boot.",
+     "source_url": "https://www.jk-forum.com/forums/jk-write-ups-39/how-diy-jk-wrangler-breather-hose-extensions-%2430-327415/",
+     "source_name": "JK-Forum: HOW-TO: DIY JK Wrangler Breather Hose Extensions for $30",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2018 JK 2-door with only a 2 in lift developed a coast shudder and clunk under 30 mph that turned out to be the rear driveshaft Rzeppa joint. Owners say 2-door shafts are finicky after any lift and replace them with 1310 u-joint shafts.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/jk-2-door-rear-end-driveline-issue-357418/",
+     "source_name": "JK-Forum: JK 2-door rear end or driveline issue",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2327,7 +2560,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      8
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "When replacing the 3.6 oil filter housing, owners use low-strength purple Loctite on the low-torque housing bolts, since high-strength thread locker can pull threads on removal. Do the spark plugs and any leaking valve covers while the intake is off.",
+     "source_url": "https://www.wranglerforum.com/threads/changing-oil-filter-housing-what-else-do-i-need-to-do.2467358/",
+     "source_name": "Jeep Wrangler Forum: Changing Oil filter housing , what else do I need to do?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jk-38",
@@ -2394,7 +2636,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "A ticking on cold start on a 3.8 JK is often a cracked driver-side exhaust manifold; remove two bolts and a nut to slide off the heat shield and the crack is visible on top.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/jk-makes-tinging-noise-when-i-first-start-up-279840/",
+     "source_name": "JK-Forum: JK makes tinging noise when i first start up",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Manifold bolt heads can snap on the 3.8; use new M8x1.25x30 manifold-to-head bolts, Mopar 06507938AA, rather than reusing the old ones.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/exhaust-manifold-hardwear-230887/",
+     "source_name": "JK-Forum: exhaust manifold hardwear?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jl-steering",
@@ -2542,7 +2800,30 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      0
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "TSB 08-074-20 for JL wander replaces the steering gear and requires new steering gear frame bolts and a new I-shaft pinch bolt. Lifted Jeeps still within factory alignment specs qualify, but early JLs built before Jan 22, 2019 also need the latest track bar.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10184767-9999.pdf",
+     "source_name": "NHTSA: Chrysler TSB 08-074-20 REV. D",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A clink over speed bumps on a JL was loose sway link nuts at 60 ft-lb spec. Replace link nuts once removed or use blue Loctite, because reused nuts tend to back off.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/loose-sway-bar-end-links-after-road-trip.131429/",
+     "source_name": "JLwranglerforums.com: Loose sway bar end links after road trip",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A low-speed front clunk that goes away with the sway bar disconnected was a loose driver-side quick-disconnect pin on TeraFlex links. Check the disconnect pins before paying for a front end inspection.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/solved-clunk-in-front-end-when-sway-bar-connected.101732/",
+     "source_name": "JLwranglerforums.com: Solved: Clunk in front end when sway bar connected",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "jl-engine",
@@ -2601,6 +2882,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "gear-yukon-ygk068",
     "gear-yukon-jl-nonrubi",
     "tune-flashcal-jl"
+   ],
+   "tips": [
+    {
+     "text": "On the JL 3.6, owners suggest replacing the oil filter housing with the new-design Mopar part when the plugs are due, since the job is 80 percent the same. Do not overtighten the filter cap, which can crack the housing.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/plastic-oil-filter-oil-cooler-housing.173404/",
+     "source_name": "JLwranglerforums.com: plastic oil-filter/oil-cooler housing",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2637,6 +2927,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "torque": null,
    "parts": [
     "swap-dragtek-hemi"
+   ],
+   "tips": [
+    {
+     "text": "Moving a V8 into a JK puts about 430 lb more on the front axle, and AEV says stock springs drop about 1 in. Plan new front springs with the swap.",
+     "source_url": "https://www.aev-conversions.com/wp-content/uploads/2011/12/AEV30231AD-Hemi-Builder-2012-plus-1-1.pdf",
+     "source_name": "AEV: Hemi Builder installation instructions, 2012+ JK",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2671,6 +2970,22 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "parts": [
     "swap-novak-ls",
     "swap-ww-lt"
+   ],
+   "tips": [
+    {
+     "text": "An LC9 5.3 JK swap ran 210 F on the highway on a 50 F day with the stock radiator; RPM Extreme says the stock 3.8 radiator is \"just\" enough for a 5.3 and recommends an aluminum radiator on every swap. The Jeep gauge also lags well behind the GM ECU temperature.",
+     "source_url": "https://www.jkowners.com/threads/ls-gurus-please-help-trouble-shoot-wiring.258762/",
+     "source_name": "JKOwners Forum: LS Gurus, please help trouble shoot wiring",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Experienced builders say a first-time JK LS swap takes 1 to 1.5 months, and one took 4 months waiting on parts and kit support. Bag and label every bolt you remove.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/ls-swap-318619/",
+     "source_name": "JK-Forum: LS Swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2697,6 +3012,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "torque": null,
    "parts": [
     "swap-ats-8hp"
+   ],
+   "tips": [
+    {
+     "text": "A JK owner who swapped an 8-speed behind a V8 moved the transfer case back about 3 in and needed new driveshafts, since stock shafts cannot be reliably shortened. He was warned not to tune ZF transmission settings in HP Tuners without real knowledge.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/8-speed-behind-3-6-a-356436/",
+     "source_name": "JK-Forum: 8 Speed behind a 3.6",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2751,122 +3075,61 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "locker-arb-jl-m186",
     "tune-flashcal-jk",
     "tune-flashcal-jl"
+   ],
+   "tips": [
+    {
+     "text": "After a regear, take it easy for 500 miles with varied speeds and no full throttle or shock loads, then change the gear oil. Shops have owners drive about 15 miles, let the diffs cool fully, and repeat.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/break-period-after-regear-138395/",
+     "source_name": "JK-Forum: Break-in Period after Regear????",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 4 in lifted automatic JK the front driveshaft boot gets torn by the transmission pan at high articulation, and a 3 in lift hit at full droop. Owners also tore the rear boot on the factory EVAP skid.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/can-2012-driveshaft-boot-get-torn-2-5-3-lift-208618/",
+     "source_name": "JK-Forum: Can a 2012 Driveshaft boot get torn with the 2.5-3\" lift?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rubicon JL fenders hold more tire than Sport/Sahara fenders; owners swap in Rubicon flares to stop rubbing.",
+     "source_url": "https://claytonoffroad.com/blogs/news/lift-height-and-tire-size-combinations",
+     "source_name": "Clayton Off Road lift/tire chart",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Check death-wobble parts in order: track bar, ball joints, tie rod and drag link, steering box. Hitting the 125 ft-lb track bar torque on JK matters.",
-   "conf": [
-    "video",
-    "verified-secondary"
-   ],
-   "src": [
-    {
-     "label": "Salty Gears: Death Wobble FIXED (video)",
-     "url": "https://www.youtube.com/watch?v=CaEjxA9mD5o"
-    },
-    {
-     "label": "IronRockOffRoad: fix death wobble (video)",
-     "url": "https://www.youtube.com/watch?v=RXwDgok4bOU"
-    },
-    {
-     "label": "2012 JK FSM (jdmfsm mirror)",
-     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/index.html"
-    }
-   ]
+   "text": "After deep water or wet mud, pull the diff fill plug and look at the oil on your finger; if it is milky at all, change it. One owner changes both diffs and the transfer case yearly anyway.",
+   "source_url": "https://www.jk-forum.com/forums/jk-talk-26/change-fluids-after-wheeling-19043/",
+   "source_name": "JK-Forum: Change fluids after wheeling?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "JK 2012–18, 3.5\" lifts and up: expect an exhaust crossover change to clear the front driveshaft. On automatics, the oversize front shaft can hit the pan.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Rough Country 69430 (JK 3.5\")",
-     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-694c"
-    }
-   ]
+   "text": "Keep a 50 to 250 ft-lb torque wrench and recheck the track bar bolts (125 ft-lb) after any lift or trail day; owners say these Jeeps do not tolerate bolts that are only \"tight\". One friend's Jeep only stopped wobbling at about 165 ft-lb because the holes had ovaled, and welded washers were the real fix.",
+   "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/death-wobble-happened-me-tonight-349337/",
+   "source_name": "JK-Forum: Death Wobble happened to me tonight",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "JL 3.5\" and up: budget for a front CV driveshaft.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Rough Country 66830 (JLU 3.5\")",
-     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-668c"
-    }
-   ]
+   "text": "On any 3.6, watch for coolant loss and oil in the engine valley or down the bell housing, the signs of a leaking oil filter housing. One owner found the cause was the seals between the cooler and the block.",
+   "source_url": "https://www.jlwranglerforums.com/forum/threads/plastic-oil-filter-oil-cooler-housing.173404/",
+   "source_name": "JLwranglerforums.com: plastic oil-filter/oil-cooler housing",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Rubicon JL fenders hold more tire than Sport/Sahara fenders; owners swap in Rubicon flares to stop rubbing.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "Clayton Off Road lift/tire chart",
-     "url": "https://claytonoffroad.com/blogs/news/lift-height-and-tire-size-combinations"
-    },
-    {
-     "label": "JLwranglerforums 37s backspacing",
-     "url": "https://www.jlwranglerforums.com/forum/threads/non-rubicon-w-37s-and-2-5-3-inch-lift-what-is-your-backspacing.118662/"
-    }
-   ]
-  },
-  {
-   "text": "JL Rubicon spacer lifts with 37s live or die on bump stops and rear liners: TeraFlex specifies 2.5\"/3\" bump stops; Wayalife heat-formed the liners.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "TeraFlex JL Rubicon 2.5\" spacer",
-     "url": "https://teraflex.com/jl-4dr-rubicon-2-5-performance-spacer-lift-kit-shock-extensions.html"
-    },
-    {
-     "label": "Wayalife 37s flex test",
-     "url": "https://www.wayalife.com/threads/flex-test-will-37s-clear-a-jl-rubicon-running-2-5-of-lift-without-rubbing.52509/"
-    }
-   ]
-  },
-  {
-   "text": "2012–18 JK oil leak \"on the bellhousing\" may be the oil cooler housing, not the rear main seal.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "wranglerforum oil cooler mega thread",
-     "url": "https://www.wranglerforum.com/threads/2014-2018-jk-oil-cooler-housing-mega-thread.698297/"
-    }
-   ]
-  },
-  {
-   "text": "Spacers vs new wheels: 1.5\" spacers on JK/JL factory wheels are the cheap path to 35s. Use hub-centric spacers.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "Rough Country 67700 (JL 2.5\")",
-     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-676c"
-    },
-    {
-     "label": "JKOwners 35s on 2.5\"",
-     "url": "https://www.jkowners.com/threads/35-tires-wont-work-even-with-a-2-5-lift.177434/"
-    }
-   ]
-  },
-  {
-   "text": "2.0T vs 3.6: owners debate the 2.0T's narrow powerband versus the Pentastar's flat torque curve.",
-   "conf": "forum",
-   "disputed": true,
-   "src": [
-    {
-     "label": "JLwranglerforums Mishimoto dyno",
-     "url": "https://www.jlwranglerforums.com/forum/threads/mishimotos-2-0l-turbo-jl-wrangler-first-ever-dyno-runs-vs-3-6l-pentastar.14270/"
-    }
-   ]
+   "text": "EcoDiesel owners avoid running the tank below 1/4 and run a lubricity additive (Hot Shot's EDT or Diesel Kleen are named) because air and low-lubricity ULSD are what kill the CP4 pump.",
+   "source_url": "https://www.jlwranglerforums.com/forum/threads/cp4-fuel-pump.59449/",
+   "source_name": "JLwranglerforums.com: CP4 Fuel Pump",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -3024,7 +3287,37 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-676c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a JL the front brake line has a middle bracket on the control arm that leaves the line too short at full droop with the 2.5 in spacers; the installer bent it open and removed it so the line has slack. Be careful not to cut or kink the soft line while doing it.",
+     "source_url": "https://www.youtube.com/watch?v=54iBUR32Fmo",
+     "source_name": "YouTube (ExtremeTerrain): Jeep Wrangler JL Rough Country 2.5 in. Spacer Suspension Lift Kit w/ N3 Shocks Review & Install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "In the rear, cut the locating nipple off the factory spring isolator with side cutters so it sits flush on the spacer, and torque the upper rear shock bolts to 81 ft-lb before refitting the trim piece.",
+     "source_url": "https://www.youtube.com/watch?v=54iBUR32Fmo",
+     "source_name": "YouTube (ExtremeTerrain): Jeep Wrangler JL Rough Country 2.5 in. Spacer Suspension Lift Kit w/ N3 Shocks Review & Install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Open the kit and test-fit the supplied rear sway link bolts before you take the Jeep apart: one owner got bolts too big for the M12 link holes and had to run to a hardware store mid-install.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/heads-up-2-5-rough-country-lift-spacer-kit.55500/",
+     "source_name": "JLwranglerforums.com: Heads up 2.5\" rough country lift spacer kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The kit puts bent sway links in the front and straight links in the rear, the opposite of the factory layout. Owners confirm the instructions are right and the straight rear links work fine.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/rough-countrys-2-5-lift-the-instructions-seem-wrong-you-agree.12479/",
+     "source_name": "JLwranglerforums.com: Rough Country's 2.5\" lift...The Instructions Seem wrong, you agree?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-69430",
@@ -3063,7 +3356,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-694c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2016 JKU owner got a steering wobble over bumps above 40 mph after the RC 3.5 in kit. Replies say loosen every control arm and track bar bolt and retorque only with the Jeep on its wheels at ride height, and note that fixed lower arms leave caster non-adjustable at the alignment rack.",
+     "source_url": "https://www.wranglerforum.com/threads/jk-3-5-lift-rough-country-wobble.1649665/",
+     "source_name": "Jeep Wrangler Forum: JK 3.5 lift Rough Country wobble",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "JK 2012-18 with 3.5 in of lift or more: expect to change the exhaust crossover to clear the front driveshaft. On automatics the larger front shaft can hit the transmission pan.",
+     "source_url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-694c",
+     "source_name": "Rough Country 69430 (JK 3.5\")",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-66830",
@@ -3102,7 +3411,30 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-668c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a JL shakes on the highway after the RC 3.5 in lift and 35s, recheck the torque on every suspension bolt first; one member has seen the RC sway links arrive or work loose because of how they are built. Owners then point to low caster, not a missing steering stabilizer, for floaty steering.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/rough-country-lift-and-shaking.77991/",
+     "source_name": "JLwranglerforums.com: Rough country lift and shaking",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners warn that 3.5 in of lift on a JL drives poorly without geometry correction: caster drops too low and the axles shift (driver side in front, passenger side in rear) unless the kit includes drop brackets or longer arms and adjustable track bars. Budget for that up front rather than springs and shocks alone.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/deciding-on-a-2-5-or-3-5-inch-rc-lift-kit-or-am-i.132641/",
+     "source_name": "JLwranglerforums.com: Deciding on a 2.5 or 3.5 inch RC Lift Kit. Or am I?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "JL with 3.5 in of lift or more: budget for a front CV driveshaft.",
+     "source_url": "https://www.roughcountry.com/product/configurable/jeep-suspension-lift-kit-668c",
+     "source_name": "Rough Country 66830 (JLU 3.5\")",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-tf-4-jk",
@@ -3141,7 +3473,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.quadratec.com/products/16194_040X_PG.htm",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners who bought only the 4 in springs were told to add an adjustable front track bar and rear track bar bracket, longer sway links, brake line extensions, and caster correction (adjustable arms or AEV/RC brackets) before driving it; expect another $100 to $200 at minimum.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/4-inch-teraflex-lift-263485/",
+     "source_name": "JK-Forum: 4 Inch TeraFlex Lift",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-tf-25-jlr",
@@ -3180,7 +3521,37 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://teraflex.com/jl-4dr-rubicon-2-5-performance-spacer-lift-kit-shock-extensions.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Fit the rear bump stop extensions last, or you will have to pull them back off to get a torque wrench on the rear upper control arm bolts. Have hex sockets for the long bump stop bolts, 18, 21 and 24 mm sockets, and a long torque wrench for the JL front lower arms at 190 ft-lb (thread is a TeraFlex ST2 coil kit that shares this hardware).",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/installing-a-teraflex-2-5-in-sport-st2-lift-w-falcon-sp2-3-1-shocks.49001/",
+     "source_name": "JLwranglerforums.com: Installing a Teraflex 2.5 in Sport ST2 lift W/Falcon SP2 3.1 shocks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 4xe owner who added this kit with adjustable lower arms and track bar took about 7 hours. The longer rear sway links hit the inner balance weights on stock Rubicon wheels, so he flipped the link mounts for clearance.",
+     "source_url": "https://www.northridge4x4.com/part/2-5in-lifts/1365210-teraflex-2-5in-performance-spacer-lift-kit/reviews",
+     "source_name": "Northridge4x4: All Reviews About Teraflex 2.5in Performance Spacer Lift Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "TeraFlex spacers can be stacked, and front and rear JL spacers interchange between 2-door and 4-door. One owner whose front sat low added a 1/2 in front spacer from TeraFlex to get level.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/what-is-the-difference-between-the-2-door-and-4-door-version-of-terraflex-2-5-spacer-lift-w-shock-extension.61130/",
+     "source_name": "JLwranglerforums.com: What is the difference between the 2-door and 4-door version of Terraflex 2.5 Spacer lift w/ Shock extension",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "JL Rubicon spacer lifts with 37s depend on bump stops and rear liners: TeraFlex specifies 2.5 in front and 3 in rear bump stops, and one owner heat-formed the rear liners for clearance.",
+     "source_url": "https://teraflex.com/jl-4dr-rubicon-2-5-performance-spacer-lift-kit-shock-extensions.html",
+     "source_name": "TeraFlex JL Rubicon 2.5\" spacer",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "steer-synergy-8069",
@@ -3219,7 +3590,30 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.synergymfg.com/synergy-jeep-jk-jku-front-track-bar-and-sector-shaft-brace.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On 2012 and later JKs that keep the stock track bar, the 9/16 in bolt will not pass through the track bar bushing, so use the M14-2.0 bolt in the kit. Support the steering box as you pull the last box bolt, and use blue Loctite on the box bolts.",
+     "source_url": "https://www.synergymfg.com/pdf/PPM-8069-V4_INST.pdf",
+     "source_name": "Synergy Manufacturing: PPM 8069 JK front trackbar brace / sector shaft brace installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Torque the 4 steering box bolts to 70 ft-lb, the 7/16 in brace bolts to 50 ft-lb, the track bar bolt to 125 ft-lb and the pitman arm nut to 150 ft-lb. Put anti-seize on the sector shaft threads before installing the brace.",
+     "source_url": "https://www.synergymfg.com/pdf/PPM-8069-V4_INST.pdf",
+     "source_name": "Synergy Manufacturing: PPM 8069 JK front trackbar brace / sector shaft brace installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "An owner on 37s said the track bar brace cured a steering clunk from worn frame mount holes, but the front sway bar slightly rubbed the brace even after re-centering the axle. Check sway bar clearance after install.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/synergy-jeep-jk-front-track-bar-sector-shaft-brace-kit-290974/",
+     "source_name": "JK-Forum: Synergy Jeep JK Front Track Bar & Sector Shaft Brace Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "wheel-method-mr305",
@@ -3338,7 +3732,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://extrabrake.com/tire/246620-",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners running load range E 35s on Wranglers land between 26 and 30 psi on the street after chalk testing, well below the sidewall max. One runs 28 psi on the road and airs down to 18 psi for beach and trail.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/25-psi-on-35-bfg-ko2s-load-range-e.155831/",
+     "source_name": "JLwranglerforums.com: 25 psi on 35\" BFG KO2s  load range E",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 35x12.50 KO2 measured 34.25 in but read about 10 percent fast at that setting; the owner had to enter 33.5 in for the speedo to match GPS. Calibrate by GPS or a chalk-mark rollout rather than the sidewall size.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/adjusting-tire-size-flashpaq-337263/",
+     "source_name": "JK-Forum: Adjusting tire size with flashpaq",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gear-yukon-ygk068",
@@ -3377,7 +3787,24 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.yukongear.com/products/ygk068",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "One owner who put Yukon gears in a JL says they developed a noise at 55 to 60 mph starting around 7,000 to 10,000 miles, which Yukon tech support called common, and he would buy Dana Spicer next time. Another member reports thousands of trouble-free miles on Yukons after careful heat-cycle break-in.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/gears-yukon-or-dana.131064/page-2",
+     "source_name": "JLwranglerforums.com: Gears - Yukon or Dana.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A faint decel whine at 20 to 30 mph after a JL regear will not go away on its own; members say it is usually a .002 to .005 in pinion shim error and the installer should recheck backlash and pattern. Ask for the lash numbers and pattern photos.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/do-yukon-gears-quiet-down-post-break-in.120508/",
+     "source_name": "JLwranglerforums.com: Do yukon gears quiet down post break in?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gear-yukon-jl-nonrubi",
@@ -3416,7 +3843,24 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://eastcoastgearsupply.com/i-23994490-yukon-complete-gear-and-kit-package-for-jl-jeep-non-rubicon-d35-m200-rear-d30-m186-front-4-88-gear-ratio.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "One owner who put Yukon gears in a JL says they developed a noise at 55 to 60 mph starting around 7,000 to 10,000 miles, which Yukon tech support called common, and he would buy Dana Spicer next time. Another member reports thousands of trouble-free miles on Yukons after careful heat-cycle break-in.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/gears-yukon-or-dana.131064/page-2",
+     "source_name": "JLwranglerforums.com: Gears - Yukon or Dana.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A faint decel whine at 20 to 30 mph after a JL regear will not go away on its own; members say it is usually a .002 to .005 in pinion shim error and the installer should recheck backlash and pattern. Ask for the lash numbers and pattern photos.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/do-yukon-gears-quiet-down-post-break-in.120508/",
+     "source_name": "JLwranglerforums.com: Do yukon gears quiet down post break in?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "locker-arb-rd116",
@@ -3456,7 +3900,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://store.arbusa.com/air-locker-differential-dana-44-30-spl-3-92-uprd116/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Each Air Locker comes with its own solenoid, but you need the ARB compressor manifold kit to mount the solenoids, and the manifold has holes for exactly two. If your compressor already runs a sway bar disconnect solenoid, plan where the third solenoid will go.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/arb-max-connects.108201/",
+     "source_name": "JLwranglerforums.com: ARB max connects?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "locker-arb-jl-m186",
@@ -3495,7 +3948,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.polyperformance.com/arb-jeep-wrangler-jl-sport-front-air-locker-m186-dana-30-27-spl-3-73-up",
     "status": "unverified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Each Air Locker comes with its own solenoid, but you need the ARB compressor manifold kit to mount the solenoids, and the manifold has holes for exactly two. If your compressor already runs a sway bar disconnect solenoid, plan where the third solenoid will go.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/arb-max-connects.108201/",
+     "source_name": "JLwranglerforums.com: ARB max connects?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "ds-tomwoods-jk",
@@ -3534,7 +3996,24 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://4xshaft.com/products/jk-front-1350-drive-shaft",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A Tom Woods JK shaft has five grease points: three u-joint zerks, the slip joint, and a hidden fitting for the double cardan centering ball that usually needs the shaft dropped and a needle injector. A squeak from the double cardan was that dry centering ball (thread covers the 1310 shaft with the same double cardan layout).",
+     "source_url": "https://www.jk-forum.com/forums/jk-write-ups-39/greasing-tom-woods-driveshafts-205345/",
+     "source_name": "JK-Forum: Greasing Tom Woods Driveshafts",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Get a thin-wall 1-5/16 in socket and RTV for the yoke splines before you start; one owner did it in about 2 hours and knocked the yokes off with a rubber mallet. Owners disagree on caster: some run 6 degrees for steering return, others say it puts too much angle on the shaft and causes vibration.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/tom-woods-front-drive-shaft-install-170539/",
+     "source_name": "JK-Forum: Tom Woods Front Drive Shaft Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "ds-adams-jl",
@@ -3573,7 +4052,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.adamsdriveshaftoffroad.com/products/adams-driveshaft-jl-rubicon-front-1350-cv-driveshaft-oem-flange-style-extreme-duty-series",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Adams 1350 Extreme Duty front shaft has non-greaseable u-joints, but the slip yoke and the half CV at the transfer case need regular grease, more often if you run full-time 4WD. Plan skid plate access to those zerks.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/front-driveshaft-on-metal-cloak-3-5-lift.81079/page-2",
+     "source_name": "JLwranglerforums.com: Front Driveshaft on Metal Cloak 3.5\" Lift",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 392 owner with Adams 1350 shafts and 6.2 degrees of caster had highway vibration that grew past 70 mph. Replies say with a double cardan at the transfer case the pinion must point straight at the shaft, so high caster fights pinion angle; get the shaft balance checked too.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/aftermarket-driveshaft-mega-thread%E2%80%A6buyer-beware.88097/",
+     "source_name": "JLwranglerforums.com: Aftermarket Driveshaft Mega Thread…Buyer Beware",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-sb-xrc-jk",
@@ -3622,7 +4117,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.smittybilt.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners like the build quality but it is heavy; with a winch one JK sagged about 1 in up front. Plan on coil spacers or heavier front springs if you add a winch.",
+     "source_url": "https://www.jk-forum.com/forums/jk-talk-26/smittybilt-xrc-gen-ii-front-bumper-315589/page9/",
+     "source_name": "JK-Forum: Smittybilt XRC Gen II Front Bumper",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-sb-xrc-jl",
@@ -3661,7 +4165,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.extremeterrain.com/smittybilt-jeep-wrangler-xrc-front-bumper-77806.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Factory halogen fogs and harness drop into the JL XRC Gen2 (77807), but owners coming off the factory steel bumper could not reuse the LED fogs; one used Inspired Engineering Black Cube pods with a plug-in adapter for the OE harness. Owners swapping from the plastic bumper reused LED fogs fine.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/smittybilt-xrc-gen2-front-bumper.19943/",
+     "source_name": "JLwranglerforums.com: Smittybilt XRC Gen2 Front Bumper",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Get a second person to lift it onto the frame; owners call the install easy but the bumper heavy.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/smittybilt-xrc-gen2-front-bumper.19943/page-3",
+     "source_name": "JLwranglerforums.com: Smittybilt XRC Gen2 Front Bumper",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-rr-spartan",
@@ -3701,7 +4221,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://ruggedridge.com/p/rugged-ridge-spartan-front-bumper/rgr-11548-41/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Rugged Ridge overrider bolts on with the same bolts that hold the bumper shell to the frame. Install it before the shell goes on: one owner adding it later could not fit a T45 Torx socket behind the bar (thread covers the RR Venator, which uses the same overrider mounting).",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/installed-rugged-ridge-venator-bumper.84763/page-2",
+     "source_name": "JLwranglerforums.com: Installed Rugged Ridge Venator Bumper",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "fender-bushwacker-jk",
@@ -3740,7 +4269,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.quadratec.com/products/12506_4442_07.htm",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Trim the inner liners by installing them untrimmed, tracing the body edge with a grease pen, then cutting once with tin shears. Owners who cut freehand went too short and the liner flaps; install on a warm day because the adhesive grabs much better.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/bushwacker-flat-fender-installation-tip-tricks-221681/",
+     "source_name": "JK-Forum: Bushwacker Flat Fender Installation Tip or Tricks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "fender-rr-maxterrain",
@@ -3779,7 +4317,31 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://ruggedridge.com/p/rugged-ridge-max-terrain-fender-flares/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Disconnect both the primary and secondary batteries before install because the flares have integrated LED lights. The OE inner liners are trimmed and reused with the supplied trim foam set 1/4 in from the edge.",
+     "source_url": "https://www.quadratec.com/sites/default/files/installation_instructions/MaxTerrain.pdf",
+     "source_name": "Rugged Ridge: Max Terain Flares, JL installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "One member said a trail buddy's Max-Terrain flares faded and cracked in the sun within 3 weeks; the buyer replied he would switch to MetalCloak if that happened.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/are-37s-silly-to-consider-with-just-the-max-terrain-flares.56941/",
+     "source_name": "JLwranglerforums.com: Are 37's silly to consider with just the max terrain flares?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "Owners who reused the trimmed OE liners thought it looked messy and planned aftermarket inner fender liners; one had trouble lining up the passenger bracket and another had a mangled light plug on the driver side.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/max-terrain-fender-flare-set-f-r-18-20-jl-jlu.49228/page-6",
+     "source_name": "JLwranglerforums.com: Max Terrain Fender Flare Set, F & R; 18-20 JL/JLU",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-jws-jk",
@@ -3818,7 +4380,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.quadratec.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After install the headlights must be aimed on a level surface against a wall using tape lines. On ECE versions a separate red lead must be connected, so confirm which version you bought before wiring.",
+     "source_url": "https://www.jwspeaker.com/wp-content/uploads/Model-8700-EVO-J2-Instruction-sheet.pdf",
+     "source_name": "J.W. Speaker: Model 8700 EVO J2 instruction sheet",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-jws-jl",
@@ -3858,7 +4429,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.quadratec.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2021 JLU owner found the JL mount kit cans only adjust vertically and could not find any horizontal adjustment, and the kit arrived loose with no instructions; download the JW Speaker instructions before starting.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/jw-speaker-headlights.150752/",
+     "source_name": "JLwranglerforums.com: JW Speaker Headlights",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-mf-19386",
@@ -3899,7 +4479,23 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.extremeterrain.com/magnaflow-rock-crawler-catback-exhaust-2018-36l-jl.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A JLUR owner got heavy cabin drone from about 2,100 to 3,000 rpm, right at cruise. His fix was to have a shop weld the stock resonator back in ahead of the MagnaFlow muffler (about $200), which he says removed the drone.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/the-magic-rock-crawler-exhaust-option.21217/",
+     "source_name": "JLwranglerforums.com: THE Magic Rock Crawler Exhaust Option",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "An early buyer on a JL found the 4-door extension pipe about 2 to 3 in too long and could not hang the tailpipe; check fit before final tightening and be ready to cut it.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/magnaflow-rock-crawler-arrived-today.13700/",
+     "source_name": "JLwranglerforums.com: Magnaflow Rock Crawler Arrived Today",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-mf-19592",
@@ -3940,7 +4536,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.magnaflow.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "It does not fit the 3.6 eTorque even though MagnaFlow support told one buyer it would: the muffler hits the 48V battery coolant lines and the resonator hits the battery skid. The product page Q&A confirms no eTorque fit.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/magnaflow-overland-series-cat-back-performance-exhaust-system-fits-3-6-etorque.101243/",
+     "source_name": "JLwranglerforums.com: MagnaFlow Overland Series Cat-Back Performance Exhaust System Fits 3.6 eTorque",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-afe-75-76217",
@@ -3981,17 +4586,34 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.extremeterrain.com/afe-momentum-gt-pro-guard-7-cold-airtake-black-2018-36l-jl.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Use a jeweler's screwdriver to release the intake air temp sensor clip; one owner broke it. You must loosen the breather tube to pull the filter, and the dry filter is easier to clean than the oiled one if you see dust.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/afe-momentum-gt-cold-air-intake-youtube-review.15395/",
+     "source_name": "JLwranglerforums.com: aFe Momentum GT Cold Air Intake YouTube Review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Several JL owners got a recurring check engine light after this install, and the replacement valve aFe sent one owner did not fix it. Mopar CAI instructions call for disconnecting all negative battery cables during install, which one owner credits for no lights.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/check-engine-code-after-afe-momentum-cold-air-intake-install.53800/",
+     "source_name": "JLwranglerforums.com: Check Engine code after afe momentum cold air intake install.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
-   "id": "intake-kn-63-1561",
+   "id": "intake-kn-63-1566",
    "platform": "Wrangler JK/JL",
    "category": "Exhaust & Intake",
    "name": "63 Series AirCharger kit",
    "brand": "K&N",
-   "part_number": "63-1561",
+   "part_number": "63-1566",
    "fitment": {
-    "years": "JK 3.6 (per search; not re-checked)",
+    "years": "2012-2018",
     "models": [
      "Wrangler JK"
     ],
@@ -4001,28 +4623,37 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "3.6"
     ],
     "position": "",
-    "notes": ""
+    "notes": "Fitment re-checked 2026-10-11: K&N lists 63-1566 for Jeep Wrangler V6-3.6L (knfilters.com/63-1566-performance-air-intake-system); Quadratec lists 2012-2018 JK 2-door and Unlimited, 3.6L. The previously listed 63-1561 is K&N's Ram 1500/2500/3500 5.7 Hemi kit and does not fit."
    },
    "offers": [
     {
-     "seller": "JM Autosports",
+     "seller": "Quadratec",
      "price": 367.99,
      "price_unit": "listing",
      "shipping_note": "",
-     "url": "https://jmautosports.com/products/kn-63-series-aircharger-kit-63-1561",
+     "url": "https://www.quadratec.com/p/kn/63-series-aircharger-performance-intake-system-Jeep-wrangler-jk-36l-63-1566",
      "checked": "2026-10-11",
-     "status": "unverified",
-     "source_note": "Price verified; fitment Unconfirmed"
+     "status": "verified",
+     "source_note": "Price and 2012-2018 JK 3.6 fitment on page 2026-10-11"
     }
    ],
    "notes": "",
    "best_offer": {
-    "seller": "JM Autosports",
+    "seller": "Quadratec",
     "price": 367.99,
-    "url": "https://jmautosports.com/products/kn-63-series-aircharger-kit-63-1561",
-    "status": "unverified"
+    "url": "https://www.quadratec.com/p/kn/63-series-aircharger-performance-intake-system-Jeep-wrangler-jk-36l-63-1566",
+    "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "3.6 JK owners report no felt power gain and at most about 0.4 mpg from K&N filtration; the real benefit is not buying paper filters. If you wheel, clean it often, since a dirty oiled filter can restrict more than a dirty paper one.",
+     "source_url": "https://www.jk-forum.com/forums/stock-jk-tech-12/using-k-n-air-filter-3-6-engine-294927/",
+     "source_name": "JK-Forum: Using a K&N air filter with the 3.6 engine",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-flashcal-jk",
@@ -4061,7 +4692,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.justforjeeps.com/jk-flashcal.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Newer Flashcal updates no longer let a JK lower the TPMS warning pressure; the only option is the separately downloaded TPMS Offroad function, which shuts TPMS off entirely. The wording is backwards: you enable TPMS Offroad to disable the warnings.",
+     "source_url": "https://www.jk-forum.com/forums/modified-jk-tech-2/superchips-flashcal-tire-pressure-326142/",
+     "source_name": "JK-Forum: Superchips Flashcal...Tire pressure.?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-flashcal-jl",
@@ -4100,7 +4740,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.offroadwarehouse.com/product/superchips-flashcal-for-2018-2024-jeep-wrangler-jl-3571-jl",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a JL 6-speed, one shop found a Superchips calibrator tire change put the Jeep in limp mode with a \"Service Transmission\" message and 9 TCM codes. Manual JL owners should have JScan or a dealer option ready before changing tire settings.",
+     "source_url": "https://www.jlwranglerforums.com/forum/threads/evic-displays-service-transmission-service-procedure-for-jl-jt-with-manual-transmission.128371/",
+     "source_name": "JLwranglerforums.com: EVIC Displays: SERVICE TRANSMISSION - Service Procedure for JL/JT with Manual Transmission",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-novak-ls",
@@ -4139,7 +4788,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://www.novak-adapt.com/catalog/turnkey-powertrains/jk-v8-swap-kit.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2010 JKRU owner using the Novak LS kit with an NSG370 had a miswired MAF connector, no dash temp reading, throttle and ABS lights, and a lagging tach from the emulator, and got little help from Novak. Both MoTech and RPM Extreme helped him on the forum, and he ended by saying he would not recommend the Novak kit.",
+     "source_url": "https://www.jkowners.com/threads/ls-gurus-please-help-trouble-shoot-wiring.258762/",
+     "source_name": "JKOwners Forum: LS Gurus, please help trouble shoot wiring",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-ats-8hp",
@@ -4256,7 +4914,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "url": "https://dragtekperformance.com/07-18-jkjku-conversion-parts",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Any JK Hemi swap needs a rear-sump oil pan and pickup, and the torque-to-yield main cap bolt must always be replaced with a new one. A 6.4 Hemi must run premium only; AEV suggests running a tank of premium before starting the swap (AEV Hemi builder instructions, same engine prep as any JK Hemi kit).",
+     "source_url": "https://www.aev-conversions.com/wp-content/uploads/2011/12/AEV30231AD-Hemi-Builder-2012-plus-1-1.pdf",
+     "source_name": "AEV: Hemi Builder installation instructions, 2012+ JK",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ]
 };

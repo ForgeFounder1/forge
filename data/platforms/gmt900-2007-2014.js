@@ -1573,7 +1573,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://www.silveradosierra.com/attachments/tsb-10-06-01-008m-engine-oil-consumption-engine-oil-consumption-on-aluminum-block-pdf.721698/"
     }
    ],
-   "guide": "gen4-engine"
+   "guide": "gen4-engine",
+   "tips": [
+    {
+     "text": "A catch can will not stop consumption but shows where the oil goes: on one owner's 2013 5.3 the can caught almost exactly the 1/4 qt the engine used between changes. In winter expect to drain 6-7 oz of oil and water every 500 miles; in summer 2-3 oz every 2,000 miles or so.",
+     "source_url": "https://web.archive.org/web/2024/https://www.gm-trucks.com/forums/topic/190439-catch-can-afm-dissble/",
+     "source_name": "GM-Trucks.com: Catch can & AFM dissble?? (archived)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GM's updated left valve covers (12570427 for 2007-08 trucks, 12642655 for 2009-11) are year-specific because the PCV orifice differs; fitting the wrong year's cover can set a check engine light.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10069035-5448.pdf",
+     "source_name": "GM bulletin 10-06-01-008J: Engine Oil Consumption on AFM engines",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "afm-lifter",
@@ -1594,7 +1610,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    ],
    "disputed": true,
    "confNote": "Owners disagree on whether a tune-only disable is enough. In the thread the original poster blamed cylinder 3; another member pointed out cylinder 3 is not an AFM cylinder (factory AFM cylinders are 1-4-6-7).",
-   "guide": "afm-delete"
+   "guide": "afm-delete",
+   "tips": [
+    {
+     "text": "An early collapsed AFM lifter can knock only when the oil cap is off or near the driver valve cover, with oil pressure staying steady (40 psi idle on one LMG). Catch it early and lifters alone may do; left for months, it spins and eats the cam lobe.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/my-5-3-afm-rebuild-experience-84428/",
+     "source_name": "ChevroletForum: my 5.3 AFM rebuild experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A P0521 or low oil pressure reading that comes back days after a new sender is often the clogged VLOM filter screen under the oil pressure sender (GM PIP4786). Clean it, and if you replace lifters while keeping AFM, replace the VLOM and that filter too.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/my-5-3-afm-rebuild-experience-84428/",
+     "source_name": "ChevroletForum: my 5.3 AFM rebuild experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "dash",
@@ -1618,6 +1650,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "label": "DashSkin (vendor)",
      "url": "https://dashskin.com/pages/07-14-tahoe-suburban-yukon-cracked-dash-fix"
     }
+   ],
+   "tips": [
+    {
+     "text": "Replacing a cracked dash on an 08 Silverado cost about $450 for the pad plus $300 because the brittle flat panel next to the windshield broke coming out. Glued caps install in about 10 minutes at a third of the cost, but must be replaced if the dash ever comes apart; owners split on whether caps look acceptable.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/replace-cap-or-cover-gmt900-dash.112227/",
+     "source_name": "TahoeYukonForum: Replace, cap or cover GMT900 dash...?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
    ]
   },
   {
@@ -1634,6 +1676,29 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "label": "GM PIP5087",
      "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10112740-9999.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "GM PIP5087 (2007-2013 selectable 4WD trucks and SUVs): for Service 4WD with C0379, or a flashing 4WD light on manual cases, look for white corrosion on the front axle actuator terminals on both the actuator and harness side. If either is corroded, replace the actuator and the harness extension.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10063152-2273.pdf",
+     "source_name": "GM PIP5087: Service 4 Wheel Drive Message Front Axle Will Not Engage",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The front actuator is a 15 mm, four-bolt skid plate job: release the connector tab with a pick, spin the actuator out, put pipe sealant on the threads, run it in until it bottoms and snug it slightly with an adjustable wrench.",
+     "source_url": "https://www.youtube.com/watch?v=CfrnMH-WX50",
+     "source_name": "YouTube (TRQ): Replacing the front four-wheel drive actuator on a Chevy Silverado",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Test the transfer case encoder motor before buying a module: mark the gear position, then feed fused 12 V to the A/B terminals (orange and tan). The motor should turn one way, then the other when you swap polarity. On a 2013 that read like a bad module, the motor did not turn and a new encoder motor fixed it.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/2013-silverado-service-4wd-system-106307/",
+     "source_name": "ChevroletForum: 2013 Silverado - Service 4WD system",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1649,6 +1714,15 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     {
      "label": "GM 14520A",
      "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10090361-2280.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "GM's fractured leaf spring program (bulletin 14520A) replaces both rear springs (23401108 or 23418311), not just the broken side. Some 2WD crew and extended cabs also need shim kit 23469809; GM warns a wrongly oriented shim upsets the rear axle driveline angle.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10090361-2280.pdf",
+     "source_name": "GM Special Coverage 14520A: Fractured Leaf Springs",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1675,7 +1749,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10247765-9999.pdf"
     }
    ],
-   "confNote": "Sender failures around 100k (chevytrucks.org) are Unconfirmed as a pattern. No GMT900 sender-replacement bulletin found."
+   "confNote": "Sender failures around 100k (chevytrucks.org) are Unconfirmed as a pattern. No GMT900 sender-replacement bulletin found.",
+   "tips": [
+    {
+     "text": "For a P0463 gauge-on-empty that a new pump module did not fix, check the harness above the front driveshaft. On an owner's 2008 Tahoe it had rubbed until the fuel level wire was cut in half.",
+     "source_url": "https://web.archive.org/web/2024/https://www.gm-trucks.com/forums/topic/159565-fuel-gauge-not-working-even-after-replacing-sender-2008-tahoe/",
+     "source_name": "GM-Trucks.com: Fuel gauge not working ... Even after replacing sender - 2008 Tahoe (archived)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To reach the pump and sender without dropping the tank, one member suggests removing only the driver-side bed bolts, loosening the passenger side, and jacking and propping the bed; you need about 18 in of clearance to pull the module. This trick comes from GMT400 owners.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/fuel-gauge-moves-startup-but-never-moves-while-use-121984/",
+     "source_name": "ChevroletForum: Fuel gauge moves on startup but never moves while in use",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hvac",
@@ -1695,7 +1785,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://gm.saturn.team/Chevrolet/Silverado___4WD/2007/87/7/6320/49905"
     }
    ],
-   "confNote": "Procedure verified (factory); failure pattern forum-reported. No GMT900 actuator failure bulletin found."
+   "confNote": "Procedure verified (factory); failure pattern forum-reported. No GMT900 actuator failure bulletin found.",
+   "tips": [
+    {
+     "text": "On 2007-2014 Tahoe, Yukon XL and Suburban, both blend door actuators are GM 1572971 (Dorman 604-106): the left one sits low under the kick panel, the right one up top. Tools are a trim tool plus 5.5, 7 and 10 mm; disconnect the battery first and the HVAC recalibrates on reconnect.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/how-to-replace-the-passenger-right-side-blend-door-actuator-2007-2014-tahoe-yukon-xl-suburban.113662/",
+     "source_name": "TahoeYukonForum: How to replace the passenger/right side blend door actuator 2007-2014",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "6l80",
@@ -1719,6 +1818,15 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "label": "PIP3497B",
      "url": "https://static.oemdtc.com/NHTSA-PDFs/SB-10063469-2273.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "A 6L tech says converter clutch, 4-5-6 clutch and 3-5-R clutch are the weak points, and shudder is almost always the converter; watch TCC slip in live data. On a 2009 5.3 at 222k the light-throttle shudder at 35 mph turned into total failure within days ($6,200 rebuild or $6,800 reman with billet converter).",
+     "source_url": "https://www.silveradosierra.com/threads/2009-6l80-high-mileage-3rd-4th-gear-shudder.758648/",
+     "source_name": "SilveradoSierra: 2009 6l80, High Mileage 3rd/4th gear Shudder",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1736,7 +1844,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://dieselpowerproducts.com/blogs/blogs/2007-5-2010-lmm-duramax-buyer-s-guide-specs-problems-upgrades"
     }
    ],
-   "confNote": "Vendor/shop page; no GM bulletin opened."
+   "confNote": "Vendor/shop page; no GM bulletin opened.",
+   "tips": [
+    {
+     "text": "LMM owners warn never to run an oiled intake filter on the Duramax: the turbo pulls oil onto the MAF and causes drivability trouble. Run a dry filter.",
+     "source_url": "https://www.duramaxforum.com/threads/lmm-egr-dpf-guidance.442106/",
+     "source_name": "DuramaxForum: LMM EGR & DPF guidance",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lml-cp4",
@@ -1757,7 +1874,17 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     }
    ],
    "confNote": "Bosch service center page; no GM bulletin opened.",
-   "guide": "swap-cp3"
+   "guide": "swap-cp3",
+   "tips": [
+    {
+     "text": "A member who called pump rebuilders says every failed CP4 they examined showed water, so keep the factory Delco filter and use an additive labeled demulsifier, not one that emulsifies water through the pump. Owners disagree on lift pumps: rebuilders saw no proof they extend CP4 life, others value the added water separator.",
+     "source_url": "https://www.duramaxforum.com/threads/lift-pump-for-cp4-longevity.1008659/",
+     "source_name": "DuramaxForum: lift pump for CP4 longevity",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "other",
@@ -1830,6 +1957,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    },
    "parts": [
     "tpms-schrader"
+   ],
+   "tips": [
+    {
+     "text": "Lowered on 22s: 285/40R22 is the common safe size. One member says 285/45 clears at +30 offset and up, but others with +30 to +31 wheels report rubbing, so check before buying 285/45.",
+     "source_url": "https://www.gmfullsize.com/threads/whats-the-best-size-tire-for-22s-with-the-4-6-drop-on-08-silverado-reg-cab.221324/",
+     "source_name": "GMFullsize: best tire size for 22s with the 4/6 drop",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
    ]
   },
   {
@@ -2112,6 +2249,22 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    },
    "parts": [
     "eng-mm-afm-delete"
+   ],
+   "tips": [
+    {
+     "text": "Before ordering a delete kit, confirm whether your engine has VVT (most 2009-2010 and later trucks do). VVT engines use a single-bolt cam with phaser, so deleting VVT means a three-bolt cam and matching gear; one rebuilder says plan three days and never reuse head gaskets or head bolts.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/my-5-3-afm-rebuild-experience-84428/",
+     "source_name": "ChevroletForum: my 5.3 AFM rebuild experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A shop that disabled AFM by tune as a precaution saw many of those trucks return with collapsed lifters, so a tune is not lifter insurance; it often did cure oil consumption. When lifters are replaced, replace all 16, not just the failed ones.",
+     "source_url": "https://chevroletforum.com/forum/2007-2013-gmt900-109/my-5-3-afm-rebuild-experience-84428/",
+     "source_name": "ChevroletForum: my 5.3 AFM rebuild experience",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2426,7 +2579,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Brake & Front End on GMT900 brake jobs: remove guide pin bolts with hand tools only, holding the pin with an open-end wrench that must not touch the caliper (that misalignment causes pulsation). Fit new abutment clips each pad job and drive over 8 mph afterward so ABS initializes in your hands, not on the first customer stop.",
+     "source_url": "https://www.brakeandfrontend.com/gm-gmt900-brake-job/",
+     "source_name": "Brake & Front End: 2007-2013 GM Full-Sized Truck (GMT900) Brake Job",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "leveling",
@@ -2459,6 +2621,15 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    "torque": null,
    "parts": [
     "lev-rc-1305"
+   ],
+   "tips": [
+    {
+     "text": "Rough Country's 07-15 GM 1500 2.5 in kit instructions: support the knuckle on a jack stand so it cannot swing out far enough to pull the axle shaft from the differential, install the kit's 10 mm bolts head-down and torque them to 30-35 ft-lb without over-tightening, and re-torque everything after 500 miles.",
+     "source_url": "https://lib.americantrucks.com/files/S102073-manu.pdf",
+     "source_name": "Rough Country: 07-15 GM 1500 Pickup, Avalanche, Yukon, Tahoe, Suburban Front 2.5in Kit instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2488,7 +2659,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "For an L92 into a 4L60E truck, keep the truck's own E38 because it is matched to the T42 TCM; the L92's ECM cannot run a 4L60E. A custom tune loads the 6.2 data into the existing file. One owner swapped into a 2011 5.3 regular cab on the stock computer.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2008-rcsb-silverado-cammed-4-8-l92-6-2-swap-553092/",
+     "source_name": "PerformanceTrucks.net: 2008 RCSB Silverado - Cammed 4.8 to L92 6.2 Swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-6l80",
@@ -2518,7 +2698,30 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Early 2008-09 and 2010-13 6L80s have different valve bodies and TCM hardware, and their TCM operating systems are not interchangeable. One builder found a 2013 OS (24265260) on a 2011 unit ran near-perfect with an early-2008 E38 (OS 12617631); do not run Service Fast Learn right away, let it learn over 100-500 miles.",
+     "source_url": "https://forum.hptuners.com/showthread.php?119155-6L80-Transmission-Swap-Guide-for-Early-2008-Chevy-Trucks-%28-Working-W-I-P-%29",
+     "source_name": "HP Tuners forum: 6L80 Transmission Swap Guide for Early 2008 Chevy Trucks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Grab the 6L80 fuel line bracket from the donor (it differs from the 4L60E part) along with the full trans harness, and expect about 12-13 qt of Dexron VI. The builder also warns the BCM must match the ECM VIN or nothing communicates.",
+     "source_url": "https://forum.hptuners.com/showthread.php?119155-6L80-Transmission-Swap-Guide-for-Early-2008-Chevy-Trucks-%28-Working-W-I-P-%29",
+     "source_name": "HP Tuners forum: 6L80 Transmission Swap Guide for Early 2008 Chevy Trucks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 4WD 2007, the 6L80's 32-spline output needs a new transfer case input shaft (the 4L60E is 27-spline). One builder measured the 6L80 within about 1/2 in of the 4WD 4L60E length, so the driveshafts may carry over with a modified mount.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/07-nnbs-crew-cab-6l80-swap-541729/",
+     "source_name": "PerformanceTrucks.net: 07 NNBS Crew Cab 6l80 swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-cam",
@@ -2550,6 +2753,15 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    "torque": null,
    "parts": [
     "eng-mm-afm-delete"
+   ],
+   "tips": [
+    {
+     "text": "On a stock converter, owners say stay at 212/218 duration (TSP or BTR, 112-114 LSA). One tuner measured a 216/220 on a 5.3 losing 24 lb-ft from 2,000-3,000 rpm versus stock; it wants a 2,600-2,800 stall. Replace the flimsy stock pushrods and measure length with a checker.",
+     "source_url": "https://www.silveradosierra.com/threads/cam-swap.702758/",
+     "source_name": "SilveradoSierra: Cam swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2607,7 +2819,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Moving a GMT800 8.6 in carrier and gears into an 07 axle works, but reuse the donor's bearings and races, and measure pinion depth and backlash before you pull it so the setup can be matched and does not whine. The 07 axle shafts are thicker than the GMT800 ones.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/10-bolt-8-6-gmt800-vs-gmt900-need-swap-carriers-521817/",
+     "source_name": "PerformanceTrucks.net: 10 bolt 8.6 gmt800 vs gmt900 need to swap carriers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-cp3",
@@ -2644,6 +2865,15 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "swap-ss-cp3-carb",
     "swap-ss-cp3-comp",
     "swap-ss-cp3-comp-tune"
+   ],
+   "tips": [
+    {
+     "text": "Fleece's LML CP3 kit instructions strongly recommend a new fuel pressure regulator (GM 12611872) in the driver-side rail with every conversion, require the fuel lines to be cleaned first, and warn the kit may not clear the EGR cooler. Block adapter bolts torque to 20 ft-lb.",
+     "source_url": "https://www.thoroughbreddiesel.com/assets/1/pdf/fleece-fpe-lml-cp3-ff-np-install.pdf",
+     "source_name": "Fleece Performance: 2011-2016 LML CP3 Conversion Kit installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2714,73 +2944,36 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Fuel smell with long-tube headers: owners add a high-flow cat (Magnaflow or Vibrant) after the Y-pipe to kill the raw-fuel smell.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "PT.net 4.8 to L92 swap",
-     "url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2008-rcsb-silverado-cammed-4-8-l92-6-2-swap-553092/"
-    }
-   ]
+   "text": "To check 6L80 fluid level, the fluid must be 86-122 F: shift through each gear for 3 seconds, idle in Park at 500-800 rpm for at least a minute, then pull the check plug with the engine running. A steady stream means drain to a drip; no flow means add until it drips.",
+   "source_url": "https://www.youtube.com/watch?v=HT8CKFp3KuY",
+   "source_name": "YouTube (ACDelco TechConnect): 6 Speed Transmission Fluid Level Checking",
+   "confidence": "video",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "AFM risk: owners say the system is sensitive to oil quality and change intervals. Updated 2010+ VLOM/lifters. Tune-off vs full delete is debated.",
-   "conf": "forum",
-   "disputed": true,
-   "src": [
-    {
-     "label": "tahoeyukonforum AFM failure",
-     "url": "https://www.tahoeyukonforum.com/threads/2013-afm-failure-delete-kit-advice.134059/"
-    }
-   ]
+   "text": "Dex-Cool is fine if maintained; one '13 owner changes it about every 5 years regardless of mileage. Do not mix it with green coolant (owners say mixed coolant turns to sludge), and vacuum-fill to avoid air pockets. Some owners still prefer to switch to a nitrite-free ELC.",
+   "source_url": "https://www.silveradosierra.com/threads/2010-5-3-coolant-flush-issues.745241/",
+   "source_name": "SilveradoSierra: 2010 5.3 coolant flush issues",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "Throttle-body spacers were dismissed as a waste of money by owners in the dyno thread.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "silveradosierra 2009 build dynos",
-     "url": "https://www.silveradosierra.com/threads/my-2009-1500-5-3-build-w-dynos-per-mod.11763/"
-    }
-   ]
+   "text": "On Z55/AutoRide SUVs, a compressor that runs nonstop with load in the back, or for 6 seconds at every start, points to leaking rear air shocks. One 2007 Tahoe LTZ owner at 86k found a finger-sized hole in a bladder; after new shocks the compressor ran 2-3 seconds and stopped.",
+   "source_url": "https://chevroletforum.com/forum/tahoe-suburban-25/replacing-autoride-rear-suspension-tips-61916/",
+   "source_name": "ChevroletForum: Replacing Autoride Rear Suspension - Tips",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "E85 vs gasoline power: GM rates more power on E85; owners in the dyno thread dispute it.",
-   "conf": "forum",
-   "disputed": true,
-   "src": [
-    {
-     "label": "silveradosierra 2009 build dynos",
-     "url": "https://www.silveradosierra.com/threads/my-2009-1500-5-3-build-w-dynos-per-mod.11763/"
-    }
-   ]
-  },
-  {
-   "text": "Lowered on 22s: one member says 285/45 won't rub at +30 offset and up; others with +30–31 wheels report rubbing. 285/40R22 is the common \"safe\" advice.",
-   "conf": "forum",
-   "disputed": true,
-   "src": [
-    {
-     "label": "gmfullsize 22s on 4/6",
-     "url": "https://www.gmfullsize.com/threads/whats-the-best-size-tire-for-22s-with-the-4-6-drop-on-08-silverado-reg-cab.221324/"
-    },
-    {
-     "label": "silveradosierra 3/5",
-     "url": "https://www.silveradosierra.com/threads/dropping-my-nnbs-3-5.677706/"
-    }
-   ]
-  },
-  {
-   "text": "Video: \"Never Buy a Silverado With This Engine!\" (The 2-Minute Mechanic). Title/channel only; content not reviewed.",
-   "conf": "video",
-   "src": [
-    {
-     "label": "YouTube",
-     "url": "https://www.youtube.com/watch?v=KYFgo2ih71c"
-    }
-   ]
+   "text": "Duramax owners stress adding fuel additive every tank, not every few tanks, to replace the lubricity lost in ultra-low-sulfur diesel; buying from high-traffic stations also helps. Check the label for demulsifier.",
+   "source_url": "https://www.duramaxforum.com/threads/lift-pump-for-cp4-longevity.1008659/",
+   "source_name": "DuramaxForum: lift pump for CP4 longevity",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -2909,7 +3102,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.roughcountry.com/product/configurable/gm-leveling-lift-kit-1305-10",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2.5 in Rough Country level on a 2007.5 crew cab rode noticeably stiffer because the stock upper control arms now sit close to the droop stops. Owners' fixes: pull the 1/2 in upper spacer (about 2 in of level), or add aftermarket upper arms; either means taking the front end apart again.",
+     "source_url": "https://www.silveradosierra.com/threads/installed-2-5-rough-country-level-kit-truck-rides-bad.698750/",
+     "source_name": "SilveradoSierra: Installed 2.5\" Rough Country Level kit, truck rides bad",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-257",
@@ -2951,7 +3153,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.roughcountry.com/product/configurable/gm-combo-lift-kit-257",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The 1.25 in body lift portion took one person about 6 hours with hand tools, not the claimed 1-3. Drill the two tow hook bolt holes slightly larger than 1/2 in so the lower bumper can be angled right, and leave the bumper bolts snug but movable until it lines up.",
+     "source_url": "https://www.silveradosierra.com/threads/rough-country-1-25-body-lift-install.45313/",
+     "source_name": "SilveradoSierra: Rough Country 1.25\" Body Lift Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc-23630",
@@ -2994,7 +3205,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.roughcountry.com/product/configurable/gm-suspension-lift-kit-236",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "For a 60-65 mph vibration after a 6 in lift (this owner ran a MaxTrac kit on a 2013 2WD), check that at least 1.5 in of driveshaft sits inside the transmission yoke at rest, then re-torque every lift bolt; a loose fastener caused one owner's vibration.",
+     "source_url": "https://www.silveradosierra.com/threads/getting-vibration-after-lift-kit-installed.61026/",
+     "source_name": "SilveradoSierra: getting vibration after lift kit installed",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-belltech-641",
@@ -3079,7 +3299,37 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.belltechsuspension.com/bel-647sp.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After a flip kit, tighten the rear shackle bolts with the truck's weight on the springs, not on jack stands: loosen them, bounce on the bed, then torque to about 40 ft-lb. An owner whose rear sat 1 in high and rode badly fixed both this way.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To reach the top rear shackle bolt during a flip kit, loosen the rear four bed-to-frame bolts and jack the bed up slightly. One 4/7 owner swung the axle over the leafs one side at a time and never removed the driveshaft.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A stock 2009 extended cab measured 9.5 in axle to frame; a 6 in rear drop with the kit's 1.25 in bump stop leaves about 2.25 in. A lighter 4/7 owner ran no notch and no bump stops and bottomed about six times in 60,000 miles.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GMT900 lowering FAQ: anything over a 7 in rear drop needs a C-notch, any rear drop of 4 in or more needs new shocks, and camber problems can start at a 4 in front drop, so order SPC bushings or cams (cams install without pressing). The author also warns Belltech drop spindles are taller than stock and can cause camber trouble.",
+     "source_url": "https://forum.customgm.com/threads/gmt900-nnbs-lowering-faq.113/",
+     "source_name": "CustomGM: GMT900 NNBS Lowering FAQ",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-mcg-34020",
@@ -3159,7 +3409,37 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://suspensionsuperstore.com/2007-2013-chevrolet-silverado-1500-standard-cab-2-4-deluxe-drop-kit-mcgaughys-34020",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After a flip kit, tighten the rear shackle bolts with the truck's weight on the springs, not on jack stands: loosen them, bounce on the bed, then torque to about 40 ft-lb. An owner whose rear sat 1 in high and rode badly fixed both this way.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To reach the top rear shackle bolt during a flip kit, loosen the rear four bed-to-frame bolts and jack the bed up slightly. One 4/7 owner swung the axle over the leafs one side at a time and never removed the driveshaft.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A stock 2009 extended cab measured 9.5 in axle to frame; a 6 in rear drop with the kit's 1.25 in bump stop leaves about 2.25 in. A lighter 4/7 owner ran no notch and no bump stops and bottomed about six times in 60,000 miles.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GMT900 lowering FAQ: anything over a 7 in rear drop needs a C-notch, any rear drop of 4 in or more needs new shocks, and camber problems can start at a 4 in front drop, so order SPC bushings or cams (cams install without pressing). The author also warns Belltech drop spindles are taller than stock and can cause camber trouble.",
+     "source_url": "https://forum.customgm.com/threads/gmt900-nnbs-lowering-faq.113/",
+     "source_name": "CustomGM: GMT900 NNBS Lowering FAQ",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-mcg-34026",
@@ -3199,7 +3479,37 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://suspensionsuperstore.com/2007-2013-chevrolet-silverado-1500-standard-cab-2-4-deluxe-drop-kit-mcgaughys-34020",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After a flip kit, tighten the rear shackle bolts with the truck's weight on the springs, not on jack stands: loosen them, bounce on the bed, then torque to about 40 ft-lb. An owner whose rear sat 1 in high and rode badly fixed both this way.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To reach the top rear shackle bolt during a flip kit, loosen the rear four bed-to-frame bolts and jack the bed up slightly. One 4/7 owner swung the axle over the leafs one side at a time and never removed the driveshaft.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GMT900 lowering FAQ: anything over a 7 in rear drop needs a C-notch, any rear drop of 4 in or more needs new shocks, and camber problems can start at a 4 in front drop, so order SPC bushings or cams (cams install without pressing). The author also warns Belltech drop spindles are taller than stock and can cause camber trouble.",
+     "source_url": "https://forum.customgm.com/threads/gmt900-nnbs-lowering-faq.113/",
+     "source_name": "CustomGM: GMT900 NNBS Lowering FAQ",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On the McGaughy's 3/5-4/6 kit with adjustable struts, the one larger ring raises the front 3/4 in versus 1/2 in for the others; an owner whose front sat 3/4 in too low needed 3 small rings plus the large one for a true 3 in drop. Regular cabs carry more rake, so expect the rear to sit higher than the numbers suggest.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-mcg-34036",
@@ -3239,7 +3549,37 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://suspensionsuperstore.com/2007-2013-chevrolet-silverado-1500-standard-cab-2-4-deluxe-drop-kit-mcgaughys-34020",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After a flip kit, tighten the rear shackle bolts with the truck's weight on the springs, not on jack stands: loosen them, bounce on the bed, then torque to about 40 ft-lb. An owner whose rear sat 1 in high and rode badly fixed both this way.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To reach the top rear shackle bolt during a flip kit, loosen the rear four bed-to-frame bolts and jack the bed up slightly. One 4/7 owner swung the axle over the leafs one side at a time and never removed the driveshaft.",
+     "source_url": "https://www.performancetrucks.net/forums/new-members-101/few-questions-chevy-silverado-1500-lt-4-6-lowering-kit-c-notch-538422/",
+     "source_name": "PerformanceTrucks.net: Few questions..Chevy Silverado 1500 LT 4/6 Lowering Kit. C Notch?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GMT900 lowering FAQ: anything over a 7 in rear drop needs a C-notch, any rear drop of 4 in or more needs new shocks, and camber problems can start at a 4 in front drop, so order SPC bushings or cams (cams install without pressing). The author also warns Belltech drop spindles are taller than stock and can cause camber trouble.",
+     "source_url": "https://forum.customgm.com/threads/gmt900-nnbs-lowering-faq.113/",
+     "source_name": "CustomGM: GMT900 NNBS Lowering FAQ",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On the McGaughy's 3/5-4/6 kit with adjustable struts, the one larger ring raises the front 3/4 in versus 1/2 in for the others; an owner whose front sat 3/4 in too low needed 3 small rings plus the large one for a true 3 in drop. Regular cabs carry more rake, so expect the rear to sit higher than the numbers suggest.",
+     "source_url": "https://www.gmfullsize.com/threads/help-mcgaughys-3-5-drop-nnbs-rcsb.278054/",
+     "source_name": "GMFullsize: Help! Mcgaughys 3/5 drop NNBS RCSB",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "suv-strutmasters-gc2rb",
@@ -3282,7 +3622,24 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.strutmasters.com/products/2007-2014-gmc-yukon-2wd-4wd-rear-air-suspension-conversion-kit-gc2rb",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After swapping rear shocks or doing a coil conversion on a Z55 Tahoe or Yukon, a Service Suspension, StabiliTrak or ABS light is usually the electrical plug on top of the frame rail next to the upper shock bolt, which the socket easily knocks loose. Reach up and press the halves together.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/air-ride-conversion-kits.136949/",
+     "source_name": "TahoeYukonForum: Air Ride Conversion Kits",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If you delete AutoRide, one owner warns the AutoRide rear coil springs are weaker because the air shocks carry part of the load, so fit OEM non-AutoRide rear springs. Owners disagree on converting at all: one who went back to Z55 says the factory ride is far better.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/air-ride-conversion-kits.136949/",
+     "source_name": "TahoeYukonForum: Air Ride Conversion Kits",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "suv-arnott-c2835",
@@ -3317,7 +3674,24 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After swapping rear shocks or doing a coil conversion on a Z55 Tahoe or Yukon, a Service Suspension, StabiliTrak or ABS light is usually the electrical plug on top of the frame rail next to the upper shock bolt, which the socket easily knocks loose. Reach up and press the halves together.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/air-ride-conversion-kits.136949/",
+     "source_name": "TahoeYukonForum: Air Ride Conversion Kits",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If you delete AutoRide, one owner warns the AutoRide rear coil springs are weaker because the air shocks carry part of the load, so fit OEM non-AutoRide rear springs. Owners disagree on converting at all: one who went back to Z55 says the factory ride is far better.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/air-ride-conversion-kits.136949/",
+     "source_name": "TahoeYukonForum: Air Ride Conversion Kits",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "exh-flowmaster-817680",
@@ -3483,7 +3857,17 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/borla-cat-back-exhaust-dual-rear-exit-0913-53.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 5.3 owner with the full Borla S-Type system hears the volume drop in V4 but no real drone or cabin resonance. Another owner who welded the GM-branded Borla muffler (19131347) into stock pipe got bad drone at 1,800-2,200 rpm and went back to stock.",
+     "source_url": "https://www.silveradosierra.com/threads/borla-exhaust-no-v4-drone.52905/",
+     "source_name": "SilveradoSierra: Borla exhaust, no V4 drone?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "hdr-sw-0713",
@@ -3525,7 +3909,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/stainless-works-1-7-8-headers-w-catted-y-pipe-factory-connect-0713-53l.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Kooks long-tube installs on 2011 6.2 4WD trucks: soak the Y-pipe-to-manifold studs with penetrant or plan to cut the Y-pipe, pull the front wheels and fender liners for access, and use new GM manifold bolts (they come with threadlocker). Route the starter cable forward away from the right header.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/2011-6-2l-4wd-kooks-header-install-533634/",
+     "source_name": "PerformanceTrucks.net: 2011 6.2L 4wd Kooks Header Install????",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To get the factory one-piece Y-pipe out, support the transmission and unbolt one side of the trans crossmember. Owners add plug wire heat sleeves because wires end up close to the primaries, and even with high-flow cats you will need the rear O2 codes turned off in the tune.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2011-silverado-kooks-headers-544508/",
+     "source_name": "PerformanceTrucks.net: 2011 Silverado kooks headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-kooks-2853h220",
@@ -3569,7 +3969,30 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://ocdperformance.com/i-30531168-kooks-1-3-4in-header-and-catted-connection-kit-2007-2008-gm-1500-series-4-8l-5-3l-6-2853h220.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Kooks long-tube installs on 2011 6.2 4WD trucks: soak the Y-pipe-to-manifold studs with penetrant or plan to cut the Y-pipe, pull the front wheels and fender liners for access, and use new GM manifold bolts (they come with threadlocker). Route the starter cable forward away from the right header.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/2011-6-2l-4wd-kooks-header-install-533634/",
+     "source_name": "PerformanceTrucks.net: 2011 6.2L 4wd Kooks Header Install????",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To get the factory one-piece Y-pipe out, support the transmission and unbolt one side of the trans crossmember. Owners add plug wire heat sleeves because wires end up close to the primaries, and even with high-flow cats you will need the rear O2 codes turned off in the tune.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2011-silverado-kooks-headers-544508/",
+     "source_name": "PerformanceTrucks.net: 2011 Silverado kooks headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Fuel smell with long-tube headers: owners add a high-flow cat (Magnaflow or Vibrant) after the Y-pipe to kill the raw-fuel smell.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2008-rcsb-silverado-cammed-4-8-l92-6-2-swap-553092/",
+     "source_name": "PerformanceTrucks.net: 4.8 to L92 swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-kooks-2853h430",
@@ -3613,7 +4036,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://performancetruckproducts.com/kooks-headers-1-7-8-header-and-green-connection-kit-2007-2008-gm-1500-series-4-8l-5-3l-6-0l/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Kooks long-tube installs on 2011 6.2 4WD trucks: soak the Y-pipe-to-manifold studs with penetrant or plan to cut the Y-pipe, pull the front wheels and fender liners for access, and use new GM manifold bolts (they come with threadlocker). Route the starter cable forward away from the right header.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/2011-6-2l-4wd-kooks-header-install-533634/",
+     "source_name": "PerformanceTrucks.net: 2011 6.2L 4wd Kooks Header Install????",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To get the factory one-piece Y-pipe out, support the transmission and unbolt one side of the trans crossmember. Owners add plug wire heat sleeves because wires end up close to the primaries, and even with high-flow cats you will need the rear O2 codes turned off in the tune.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/2011-silverado-kooks-headers-544508/",
+     "source_name": "PerformanceTrucks.net: 2011 Silverado kooks headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-57-3058",
@@ -3655,7 +4094,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/kn-series-57-fipk-cai-0708-53.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a 2007 5.3 runs rough or throws codes after a K&N intake, owners list the usual causes: filter oil on the MAF, the MAF installed backwards (orientation matters), or the tube slipping off the throttle body. Move the original MAF over; one owner's trouble was a new aftermarket MAF.",
+     "source_url": "https://www.silveradosierra.com/threads/k-n-intake-problems.693465/",
+     "source_name": "SilveradoSierra: K&N intake Problems",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-57-3070",
@@ -3697,7 +4145,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/k-n-series-57-fipk-cold-airtake-0913-53l-sil.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a 2007 5.3 runs rough or throws codes after a K&N intake, owners list the usual causes: filter oil on the MAF, the MAF installed backwards (orientation matters), or the tube slipping off the throttle body. Move the original MAF over; one owner's trouble was a new aftermarket MAF.",
+     "source_url": "https://www.silveradosierra.com/threads/k-n-intake-problems.693465/",
+     "source_name": "SilveradoSierra: K&N intake Problems",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-diablo-8200",
@@ -3739,7 +4196,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/diablosporttune-i3-tuner-0713-53l-silverado-1500.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Only the inTune i3 Platinum 8245 accepts custom tunes; the base 8200 runs canned tunes only. A tuner also warns that tools sold on Amazon or eBay below set price may not come from authorized dealers and may lack warranty.",
+     "source_url": "https://www.silveradosierra.com/threads/diablosport-i3-tcm-adjustments.675458/",
+     "source_name": "SilveradoSierra: Diablosport i3 TCM adjustments",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The canned Firm Shift setting can bang hard at WOT on the 6L80. One owner dialed WOT shift pressure back to about -8% to soften it; a custom tune fixes it fully. The i3 cannot turn off the TPMS light because that lives in the BCM.",
+     "source_url": "https://www.silveradosierra.com/threads/diablosport-i3-tcm-adjustments.675458/",
+     "source_name": "SilveradoSierra: Diablosport i3 TCM adjustments",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-diablo-8245",
@@ -3781,7 +4254,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.americantrucks.com/diablosport-53silverado1500-intune-i3-platinum-tuner-8245.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Only the inTune i3 Platinum 8245 accepts custom tunes; the base 8200 runs canned tunes only. A tuner also warns that tools sold on Amazon or eBay below set price may not come from authorized dealers and may lack warranty.",
+     "source_url": "https://www.silveradosierra.com/threads/diablosport-i3-tcm-adjustments.675458/",
+     "source_name": "SilveradoSierra: Diablosport i3 TCM adjustments",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The canned Firm Shift setting can bang hard at WOT on the 6L80. One owner dialed WOT shift pressure back to about -8% to soften it; a custom tune fixes it fully. The i3 cannot turn off the TPMS light because that lives in the BCM.",
+     "source_url": "https://www.silveradosierra.com/threads/diablosport-i3-tcm-adjustments.675458/",
+     "source_name": "SilveradoSierra: Diablosport i3 TCM adjustments",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-superchips-4845",
@@ -3873,7 +4362,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.scorchedperformance.com/hp-tuners-mpvi3-wpro-feature-set",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If you want to learn HP Tuners on a Gen IV truck, owners say start on the stock engine first: Gen IV uses a virtual VE table, and a big-overlap cam like the BTR Truck Norris is hard for a novice to make drivable. Milder cams such as the Summit 8728R1 or CamMotion Titan Truck 1 are easier to learn on.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/cam-swap-2012-silverado-5-3-6l80e-560793/",
+     "source_name": "PerformanceTrucks.net: Cam swap on 2012 silverado with 5.3 and 6l80e",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "eng-mm-afm-delete",
@@ -4231,7 +4729,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.bumperonly.com/collections/ranch-hand-2007-2013-chevy-silverado-1500-front-bumpers",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Summit bolts to the frame with the factory tow hooks reinstalled, but the hooks end up recessed and harder to reach. One owner says the roughly 180 lb front bumper dropped his 2 in leveled 2013 about 1/4-3/8 in, and the leftover fender liner tucks between the end cap and top plate.",
+     "source_url": "https://www.silveradosierra.com/threads/ranch-hands.137186/",
+     "source_name": "SilveradoSierra: Ranch Hands",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bumper-fabfours-vengeance",
@@ -4311,7 +4818,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://realtruck.com/p/bakflip-mx4-tonneau-cover/bak-448100/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "BAK: if the rails lean, have one person roll the rail upward while another slowly snugs the clamps; tightening fast or past 10 ft-lb (1/2 in wrench) tips the rails down. A correctly seated clamp gives an audible click, and trucks with a drop-in bedliner do not need the bulkhead seal.",
+     "source_url": "https://dsiauto.blob.core.windows.net/webdocuments/BAK_BAKFlip_Chevy_GM_318S0154_9.24.2024.pdf",
+     "source_name": "BAK Industries: Chevy/GM BAKFlip installation sheet (318S0154)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "int-wt-443711",
@@ -4391,7 +4907,16 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.tpms.com/Chevrolet-Silverado-OEM-Schrader-TPMS-25920615-p/s0153-chevrolet-silverado.htm",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "2010 owner's manual relearn: ignition ON engine off, hold the fob LOCK and UNLOCK about 5 seconds until the horn chirps twice, then trigger LF, RF, RR, LR with a relearn tool (one chirp each, two at the end). One owner says the deflate-a-tire method does not work on GM trucks built from January 2011, so plan on a tool or a shop ($19.99 at one).",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-900-trucks-general-discussion-188/aftermarket-tpms-sensor-learn-514478/",
+     "source_name": "PerformanceTrucks.net: aftermarket TPMS sensor learn?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-ss-cp3-carb",
@@ -4433,7 +4958,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://www.xtremediesel.com/ss-diesel-lml-cp3-carb-cp4-to-cp3-conversion-kit-with-pump",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "S&S says the no-tune LML CP3 kit uses a custom metering unit matched to the CP4 flow curve, while the tune-required kit uses an LBZ-style metering unit that needs a pump-curve change. Do not mix kit and calibration, and only the 50-state kit (CARB EO D-756-4) is street legal; the others are competition parts.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the CP4 has already failed, S&S says the contaminated fuel system must be cleaned or replaced before the CP3 goes in, or leftover debris will damage the new pump. A lift pump is not required since the CP3 has its own gear pump, but it gives you a measurable supply pressure.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-ss-cp3-comp",
@@ -4475,7 +5016,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://ssdiesel.com/product/lml-cp3-conversions/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "S&S says the no-tune LML CP3 kit uses a custom metering unit matched to the CP4 flow curve, while the tune-required kit uses an LBZ-style metering unit that needs a pump-curve change. Do not mix kit and calibration, and only the 50-state kit (CARB EO D-756-4) is street legal; the others are competition parts.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the CP4 has already failed, S&S says the contaminated fuel system must be cleaned or replaced before the CP3 goes in, or leftover debris will damage the new pump. A lift pump is not required since the CP3 has its own gear pump, but it gives you a measurable supply pressure.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-ss-cp3-comp-tune",
@@ -4517,7 +5074,23 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "url": "https://ssdiesel.com/product/lml-cp3-conversions/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "S&S says the no-tune LML CP3 kit uses a custom metering unit matched to the CP4 flow curve, while the tune-required kit uses an LBZ-style metering unit that needs a pump-curve change. Do not mix kit and calibration, and only the 50-state kit (CARB EO D-756-4) is street legal; the others are competition parts.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the CP4 has already failed, S&S says the contaminated fuel system must be cleaned or replaced before the CP3 goes in, or leftover debris will damage the new pump. A lift pump is not required since the CP3 has its own gear pump, but it gives you a measurable supply pressure.",
+     "source_url": "https://ssdiesel.com/is-an-lml-duramax-cp3-conversion-worth-it/",
+     "source_name": "S&S Diesel: Is an LML Duramax CP3 Conversion Worth It?",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-speartech-harness",

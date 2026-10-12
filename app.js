@@ -105,7 +105,7 @@
   function saveVehicle(pid, v) { if (!P[pid]) return; if (store.garage.indexOf(pid) < 0) store.garage.push(pid); store.veh[pid] = v || {}; useBuild(pid); saveBuild(); updateCount(); }
   function isSaved(pid) { return store.garage.indexOf(pid) > -1; }
   function vehLabel(pid) { var v = store.veh[pid] || {}; return v.year ? [v.year, v.model, v.engineShort].filter(Boolean).join(' ') : ''; }
-  function vehDetail(pid) { var v = store.veh[pid] || {}; return [v.cab, v.drive, v.engine].filter(Boolean).join(' · '); }
+  function vehDetail(pid) { var v = store.veh[pid] || {}; return [v.cab, v.bed, v.drive, v.engine].filter(Boolean).join(' · '); }
   function saveBuild() { try { localStorage.setItem(KEY, JSON.stringify(store)); return true; } catch (e) { toast('Could not save (storage full). Try a smaller photo.'); return false; } }
   function updateCount() { var n = P[store.current] ? build.items.reduce(function (a, i) { return a + (i.qty || 1); }, 0) : 0; Array.prototype.forEach.call(document.querySelectorAll('[data-count]'), function (e) { e.textContent = n ? n : ''; }); }
 
@@ -140,6 +140,7 @@
     if (f.models && f.models.length) r.push(['Models', f.models.join(', ')]);
     if (f.drive && f.drive.length) r.push(['Drive', f.drive.join(', ')]);
     if (f.cab) r.push(['Cab', f.cab]);
+    if (f.bed) r.push(['Bed', f.bed]);
     if (f.engines) r.push(['Engine', f.engines.join(', ')]);
     if (f.position) r.push(['Position', f.position]);
     if (f.trans) r.push(['Trans', f.trans]);
@@ -194,7 +195,7 @@
   function selEngines(r, year, cab) { return r.engines.filter(function (e) { return year >= e.years[0] && year <= e.years[1] && (!e.cabs || !cab || e.cabs.indexOf(cab) > -1); }); }
   // path: [make, year, model, cab, drive, engine]; '-' marks a skipped step.
   function selState(path) {
-    var st = { make: path[0], year: path[1] ? +path[1] : null, model: path[2], cab: path[3], drive: path[4], engine: path[5] };
+    var st = { make: path[0], year: path[1] ? +path[1] : null, model: path[2], cab: path[3], bed: path[4], drive: path[5], engine: path[6] };
     var rows = SEL, steps = [];
     function step(key, title, opts, fmt) { steps.push({ key: key, title: title, opts: opts, fmt: fmt }); }
     step('make', 'Make', uniq(SEL.map(function (r) { return r.make; })).sort());
@@ -212,35 +213,39 @@
     step('cab', 'Cab', cabs);
     if (cabs.length && (!st.cab || st.cab === '-')) return { st: st, steps: steps, at: 3, row: r };
     if (!cabs.length) st.cab = '';
+    var beds = (r.beds && r.beds[st.cab]) || [];
+    step('bed', 'Bed length', beds);
+    if (beds.length > 1 && (!st.bed || st.bed === '-')) return { st: st, steps: steps, at: 4, row: r };
+    st.bed = beds.length === 1 ? beds[0] : (beds.indexOf(st.bed) > -1 ? st.bed : '');
     var drives = r.drives || [];
     step('drive', 'Drive', drives);
-    if (drives.length > 1 && (!st.drive || st.drive === '-')) return { st: st, steps: steps, at: 4, row: r };
+    if (drives.length > 1 && (!st.drive || st.drive === '-')) return { st: st, steps: steps, at: 5, row: r };
     if (drives.length === 1) st.drive = drives[0]; else if (!drives.length) st.drive = '';
     var eng = selEngines(r, st.year, st.cab);
     step('engine', 'Engine', eng.map(function (e) { return e.label; }));
-    if (eng.length > 1 && (!st.engine || st.engine === '-')) return { st: st, steps: steps, at: 5, row: r };
+    if (eng.length > 1 && (!st.engine || st.engine === '-')) return { st: st, steps: steps, at: 6, row: r };
     var e = eng.length === 1 ? eng[0] : eng.filter(function (x) { return x.label === st.engine; })[0];
     st.engine = e ? e.label : ''; st.engineShort = e ? e.short : '';
-    return { st: st, steps: steps, at: 6, row: r };
+    return { st: st, steps: steps, at: 7, row: r };
   }
   function selHref(path) { return '#/garage/add' + (path.length ? '/' + path.map(function (x) { return encodeURIComponent(x == null || x === '' ? '-' : x); }).join('/') : ''); }
   function renderPicker(path) {
     path = (path || []).filter(function (x) { return x !== ''; });
     var S = selState(path), st = S.st;
-    var chosen = [st.make, st.year, st.model, st.cab, st.drive, st.engine];
+    var chosen = [st.make, st.year, st.model, st.cab, st.bed, st.drive, st.engine];
     var h = '<div class="wrap narrow"><header class="page-h"><h1>Choose your vehicle</h1><p class="lede">Pick make, year, model and engine. Only vehicles Forge has data for are listed.</p></header>';
     // breadcrumb of chosen steps (each links back to that step)
-    var bc = []; for (var i = 0; i < Math.min(S.at, 6); i++) { var v = chosen[i]; if (v && v !== '-') bc.push('<a href="' + selHref(path.slice(0, i)) + '">' + esc(String(v)) + '</a>'); }
+    var bc = []; for (var i = 0; i < Math.min(S.at, 7); i++) { var v = chosen[i]; if (v && v !== '-') bc.push('<a href="' + selHref(path.slice(0, i)) + '">' + esc(String(v)) + '</a>'); }
     h += '<nav class="crumb sel-crumb" aria-label="Your choices"><a href="#/garage/add">Start over</a>' + (bc.length ? ' › ' + bc.join(' › ') : '') + '</nav>';
-    if (S.at < 6) {
+    if (S.at < 7) {
       var s = S.steps[S.at];
       var pre = path.slice(0, S.at); while (pre.length < S.at) pre.push('-');
       h += '<h2 class="h2">' + esc(s.title) + '</h2><div class="rows sel-list' + (s.key === 'year' ? ' sel-years' : '') + '">' + s.opts.map(function (o) { return row(selHref(pre.concat([o])), esc(String(o)), ''); }).join('') + '</div>';
     } else {
       var r = S.row, p = P[r.pid];
-      var v = { year: st.year, make: st.make, model: st.model, cab: st.cab || '', drive: st.drive || '', engine: st.engine || '', engineShort: st.engineShort || '' };
+      var v = { year: st.year, make: st.make, model: st.model, cab: st.cab || '', bed: st.bed || '', drive: st.drive || '', engine: st.engine || '', engineShort: st.engineShort || '' };
       state.pendingVeh = { pid: r.pid, v: v };
-      h += '<div class="veh-current"><div class="eyebrow">Your vehicle</div><div class="veh-name">' + esc([v.year, v.make, v.model].join(' ')) + '</div><div class="muted">' + esc([v.cab, v.drive, v.engine].filter(Boolean).join(' · ')) + '</div>';
+      h += '<div class="veh-current"><div class="eyebrow">Your vehicle</div><div class="veh-name">' + esc([v.year, v.make, v.model].join(' ')) + '</div><div class="muted">' + esc([v.cab, v.bed, v.drive, v.engine].filter(Boolean).join(' · ')) + '</div>';
       h += '<p class="small">Forge platform: <b>' + esc(p.name) + '</b> ' + esc(p.years) + ' · ' + esc(p.title) + '</p>';
       h += '<div class="btn-row"><button class="btn btn-primary" data-savesel="1">Save to My Garage</button><a class="btn" href="#/p/' + r.pid + '">Browse without saving</a></div></div>';
     }
@@ -263,7 +268,9 @@
     if (/classic/i.test(t)) out.push([2007, 2007]);
     return out;
   }
-  function catUses(p, cat, key) { return p.parts.some(function (x) { return x.category === cat && x.fitment && x.fitment[key]; }); }
+  // Categories where drive, cab or bed usually change the part. Elsewhere a missing value is not a reason to check.
+  var NEED = { drive: /suspension|steering|brake|drivetrain|axle|lift|exhaust|wheel|tire/i, cab: /suspension|exhaust|rust|bed|tonneau|liner|rocker|step/i, bed: /exhaust|bed|tonneau|liner/i };
+  function catUses(p, cat, key) { return NEED[key].test(cat || '') && p.parts.some(function (x) { return x.category === cat && x.fitment && x.fitment[key]; }); }
   // returns { r: 'fits' | 'no' | 'check' | '', why: [] }
   function fitFor(pid, part) {
     var v = store.veh[pid]; if (!isSaved(pid) || !v || !v.year) return { r: '', why: [] };
@@ -280,6 +287,12 @@
         var c = String(f.cab);
         if (/\ball\b/i.test(c)) { } else if (CABKEY[k] && CABKEY[k].test(c)) { } else if (Object.keys(CABKEY).some(function (o) { return CABKEY[o].test(c); })) no.push('cab: ' + c); else chk.push('cab: ' + c);
       } else if (catUses(p, part.category, 'cab')) chk.push('cab not listed');
+    }
+    if (v.bed) {
+      var bt = [f.bed, f.cab].filter(Boolean).join(' '), mine = /long|8 ft/i.test(v.bed) ? 'long' : 'short';
+      var sayS = /short|\bSB\b|6\.5|5\.8|5 ft 7|6 ft 4|78\.7|119|143\.5/i.test(bt), sayL = /long|\bLB\b|(?<![\d.])8 ?(ft|')|133|157\.5/i.test(bt);
+      if (f.bed && /\ball\b/i.test(f.bed)) { } else if (sayS || sayL) { if ((mine === 'short' && !sayS) || (mine === 'long' && !sayL)) no.push('bed: ' + bt); }
+      else if (catUses(p, part.category, 'bed')) chk.push('bed length not listed');
     }
     if (v.model && f.models && f.models.length) {
       var m = f.models.join(' '), hd = /HD|2500|3500/.test(v.model), mHd = /HD|2500|3500/.test(m), m15 = /1500/.test(m);
@@ -506,7 +519,7 @@
     var fr = fitRows(f);
     var fx = fitFor(pid, part);
     if (fx.r) h += '<h2 class="h2">Your vehicle</h2><p>' + fitBadge(pid, part) + ' <span class="small muted">' + esc(vehLabel(pid)) + (fx.why.length ? ' · ' + esc(fx.why.join('; ')) : ' · year, drive, cab and engine match the listing') + '</span></p>' + (fx.r === 'check' ? '<p class="small dim">The listing does not say enough to confirm. Check with the seller before buying.</p>' : '');
-    h += '<h2 class="h2">Fitment</h2>' + (fitLabel(f) ? '<p>' + fitLabel(f) + (f.hunter_note ? ' <span class="small muted">' + esc(f.hunter_note) + '</span>' : '') + '</p>' : '') + (fr.length ? '<dl class="facts">' + fr.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' : '<p class="small dim">No fitment details listed. Check with the seller.</p>');
+    h += '<h2 class="h2">Fitment</h2>' + (fitLabel(f) ? '<p>' + fitLabel(f) + (f.hunter_note ? ' <span class="small muted">' + esc(f.hunter_note) + '</span>' : '') + '</p>' : '') + (fr.length ? '<dl class="facts">' + fr.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' : '<p class="small dim">No fitment details listed. Check with the seller.</p>') + (f.fit_src ? '<p class="small dim">' + f.fit_src.map(function (x) { return esc(x.fields.join(', ')) + ' from <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.label) + '</a>'; }).join('; ') + '</p>' : '');
     if (part.notes) h += '<h2 class="h2">Notes</h2><p>' + esc(part.notes) + '</p>';
     h += tipBlock('Owner tips', part.tips);
     if (used.length) h += '<h2 class="h2">Used in</h2><div class="rows">' + used.map(function (u) { return row('#/p/' + pid + '/' + u[0] + '/' + encodeURIComponent(u[1]), esc(u[2]), u[0] === 'problems' ? 'Problem' : 'Guide'); }).join('') + '</div>';
@@ -582,7 +595,7 @@
     p.wheels.stances.forEach(function (s) { s.rows.forEach(function (r) { add('wheels', s.id, s.title + ': ' + r.wheel + ' with ' + r.tire, (r.drop ? r.drop + ' ' + (r.truck || '') + ' · ' : '') + r.fit, r); }); });
     ((p.wheels.extraFacts || {}).items || []).forEach(function (f) { add('wheels', '', p.wheels.extraFacts.title + ': ' + f.label, f.text, f); });
     p.wheels.tpms.forEach(function (f) { add('wheels', '', 'TPMS: ' + f.label, f.text, f); });
-    p.parts.forEach(function (x) { var lp = listedPrice(x); add('parts', x.id, x.brand + ' ' + (x.part_number || '') + ' · ' + x.name, x.category + ' · ' + (lp ? money(lp.price) + ' at ' + lp.seller : 'no verified price') + ' · ' + JSON.stringify(x.fitment || {}).replace(/[{}"\[\]]/g, ' ') + ' ' + (x.notes || '') + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), null); });
+    p.parts.forEach(function (x) { var lp = listedPrice(x); add('parts', x.id, x.brand + ' ' + (x.part_number || '') + ' · ' + x.name, x.category + ' · ' + (lp ? money(lp.price) + ' at ' + lp.seller : 'no verified price') + ' · ' + JSON.stringify(x.fitment || {}, function (k, v) { return k === 'fit_src' ? undefined : v; }).replace(/[{}"\[\]]/g, ' ') + ' ' + (x.notes || '') + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), null); });
     p.problems.forEach(function (x) { add('problems', x.id, x.title, x.symptoms + ' · ' + x.cause + ' · ' + x.fix + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), x); });
     p.guides.forEach(function (g) { add('guides', g.id, (g.type === 'swap' ? 'Swap: ' : 'DIY: ') + g.title, g.summary + ' ' + g.steps.map(function (s) { return s.text; }).join(' ') + ' ' + (g.torque ? g.torque.rows.map(function (r) { return r.join(' '); }).join(' ') : ''), g); });
     p.tips.forEach(function (t) { add('tips', '', 'Tip', t.text, { conf: t.confidence || t.conf }); });

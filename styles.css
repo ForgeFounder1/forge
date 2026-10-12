@@ -263,3 +263,4 @@ footer b{color:var(--muted)}
 .sel-years .row svg{display:none}
 .save-row{margin:4px 0 14px}
 .saved-note{color:var(--muted);margin:0 0 12px}
+.row-main{min-width:0;overflow-wrap:anywhere}
