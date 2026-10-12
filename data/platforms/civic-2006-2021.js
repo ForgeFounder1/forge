@@ -1496,6 +1496,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "NHTSA recalls API (2015)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=honda&model=civic&modelYear=2015"
     }
+   ],
+   "tips": [
+    {
+     "text": "Recall 15V-574 is a free CVT software update for 2014-15 Civic CVTs; high hydraulic pressure in some modes plus soft drive pulley shafts can break the shaft, causing loss of drive or front wheel lockup. Check your VIN at recalls.honda.com; the dealer takes a 30 second transmission snapshot before reflashing.",
+     "source_url": "https://static.nhtsa.gov/odi/rcl/2015/RCRIT-15V574-6637.pdf",
+     "source_name": "Honda Safety Recall 15V-574: CVT Input Shaft Pulley (2014-15 Civic, 2015 Fit)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1695,6 +1704,22 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     {
      "label": "fk8.wiki Well Known Issues",
      "url": "https://fk8.wiki/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Recall 20V-314 replaces the fuel pump motor on 2018-19 Civic hatchbacks (except Type R) because the impeller can swell and seize, causing a no-start or a stall while driving. After the repair the tech cycles the key two or three times to pressurize the line and checks for leaks; if you smell fuel afterward, go back.",
+     "source_url": "https://static.oemdtc.com/Recall/20V314/RCRIT-20V314-3474.pdf",
+     "source_name": "Honda Safety Recall 20V-314: 2018-19 Civic Hatchback Fuel Pump Motor",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A Honda tech says the pump job takes about 30 to 45 minutes in the bay and the rear seat comes out, so clear the back seat and trunk before you drop the car off. If you have symptoms, tell the dealer you do not feel safe driving it so they special-order parts sooner.",
+     "source_url": "https://www.civicx.com/forum/threads/2018-20-civic-fuel-pump-safety-recall-updates.87050/",
+     "source_name": "CivicX.com: 2018-20 Civic Fuel Pump Safety Recall Updates ?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -2057,7 +2082,8 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      4
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": []
   },
   {
    "id": "engine-service",
@@ -2335,6 +2361,22 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "torque": null,
    "parts": [
     "mount-im-k24z7"
+   ],
+   "tips": [
+    {
+     "text": "For a K20Z3 head on a K24Z7, the head must be welded at the rear oil drain and decked or it leaks, and you use a K24Z7 head gasket with K24Z7-specific studs (K20 studs are too short). Keep the 9th gen valve cover, upper chain guide and exhaust pulse plate, shave the intake VTC bolt, and the engine has to come out.",
+     "source_url": "https://www.9thgencivic.com/threads/2015-fb6-k24z7-k20z3-head-swap-pics-parts-list-%F0%9F%91%80.226040/",
+     "source_name": "9thGenCivic.com: 2015 fb6 k24z7/k20z3 Head Swap Pics/Parts List",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Use an 8th gen VTEC solenoid with the 9th gen spool valve and pressure sensor moved over, and plug the balance shaft oil hole if you fit a Type-S oil pump with the PRL swap kit. Any 8th gen header needs modifying; the builder spent about $2,250 in parts with the head and header.",
+     "source_url": "https://www.9thgencivic.com/threads/2015-fb6-k24z7-k20z3-head-swap-pics-parts-list-%F0%9F%91%80.226040/",
+     "source_name": "9thGenCivic.com: 2015 fb6 k24z7/k20z3 Head Swap Pics/Parts List",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2391,6 +2433,20 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
  ],
  "tipsTitle": "Vehicle health tips",
  "tips": [
+  {
+   "text": "When a 10th gen clutch is replaced, have the flywheel resurfaced (or replaced if past its service limit); a slipping clutch leaves heat spots that shorten the new one.",
+   "source_url": "https://www.civicx.com/forum/threads/upgrade-flywheel-or-stay-stock.28977/page-2",
+   "source_name": "CivicX.com: Upgrade flywheel or stay stock?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "Check your VIN at recalls.honda.com before buying or road-tripping a 2018-19 Civic hatchback; an unrepaired fuel pump recall can turn on the check engine light and fail an emissions test.",
+   "source_url": "https://static.nhtsa.gov/odi/rcl/2020/RCONL-20V314-2621.pdf",
+   "source_name": "Honda owner notice: Recall 20V-314 fuel pump module, 2018-19 Civic Hatchback",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
+  },
   {
    "text": "On a 1.5T used mostly for short cold trips, check the dipstick between changes for a rising level or fuel smell; the TSB update only speeds warm-up and does not stop dilution, so owners shorten oil intervals.",
    "source_url": "https://www.civicx.com/forum/threads/update-to-the-civic-oil-dilution-fix.32977/",
@@ -2809,7 +2865,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An owner who did a front bar after a rear one says you must drop the subframe and he felt only a slight change up front, while the rear bar made the car rotate noticeably faster. Do the rear bar first if you only want one.",
+     "source_url": "https://www.civicx.com/forum/threads/front-sway-bar-upgrade.72784/",
+     "source_name": "CivicX.com: Front Sway Bar Upgrade!!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "camber-whiteline-fk8",
@@ -2848,7 +2913,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An Si owner fitting the Whiteline offset mounts with stiffer springs could not get the strut back into the knuckle because of the stiffer poly and changed geometry, and went back to stock mounts. Plan to pull the axle from the hub for clearance before you start.",
+     "source_url": "https://www.civicx.com/forum/threads/fk8-oem-springs-on-an-si.109036/",
+     "source_name": "CivicX.com: FK8 OEM springs on an Si",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "whiteline-grip",
@@ -3006,7 +3080,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A press is needed for much of the poly kit; unbolt the rear knuckle and rear lower arm and work at a bench. The old aluminum knuckle sleeves come out after cutting two slits, the new rear lower arm sleeves are very tight, and the forward rear lower arm bushing is not in the kit.",
+     "source_url": "https://www.8thcivic.com/threads/energy-suspension-prothane-kit.369201/",
+     "source_name": "8thCivic.com: Energy Suspension Prothane Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners say the front compliance bushing is the one that matters up front, and the job is a real chore that may be worth paying a shop for. Expect a firmer feel over bumps once it is in.",
+     "source_url": "https://www.8thcivic.com/threads/energy-suspension-prothane-kit.369201/",
+     "source_name": "8thCivic.com: Energy Suspension Prothane Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "rack-spoon",
@@ -3086,6 +3176,13 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    },
    "source": "master-guide",
    "tips": [
+    {
+     "text": "If logs show no IAT drop after the intercooler, check the sensor mapping before blaming the core: one owner found FlashPro was showing IAT1 and IAT2 swapped. Unplug the post-intercooler sensor with the engine running and see which gauge drops out.",
+     "source_url": "https://www.civicx.com/forum/threads/prl-intercooler-installed.21240/",
+     "source_name": "CivicX.com: PRL intercooler installed",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
     {
      "text": "If the end-tank studs will not line up with the frame, you forgot to move the rubber mounts from the bottom of the stock intercooler end tanks to the PRL core. Check inside the core for styrofoam from shipping, and check that the hot-side pipe is not rubbing the horn.",
      "source_url": "https://www.civicx.com/forum/threads/my-prl-intercooler-install-review.20961/",
@@ -3178,7 +3275,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On the first hard pull after a PRL intercooler and charge pipe install, an owner blew the coupler where the post-turbo silicone meets the PRL pipe because the clamp was barely tightened. Tighten clamps with a socket, keep them square to the hose, and rotate the silicone so it is not under tension before the bumper goes back on.",
+     "source_url": "https://www.civicx.com/forum/threads/charge-pipes.67696/",
+     "source_name": "CivicX.com: Charge pipes",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "inlet-prl-15t",
@@ -3217,7 +3323,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The far-left inlet bolt is hard to reach and strips easily in aluminum; run all bolts in loosely first, and start each by turning backward while pressing lightly until it drops into the thread. Do not drive with a missing inlet or bypass valve bolt; one owner matched a dropped BPV bolt at a parts store.",
+     "source_url": "https://www.civicx.com/forum/threads/prl-turbo-inlet-pipe.82549/",
+     "source_name": "CivicX.com: Prl turbo inlet pipe",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "turbo-prl-4847",
@@ -3256,7 +3371,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The PRL turbo reuses the OEM oil and coolant lines, so keep yours when you pull the old turbo. One Si owner hit 27 psi on a base tune and 93 octane with full boost around 4,000 rpm, and expects the factory high-pressure fuel pump near redline to be the limit.",
+     "source_url": "https://www.civicx.com/forum/threads/preliminary-review-prl-4847rs-1-5t-turbo-upgrade-vs-rv6-r365-red-bb.109648/",
+     "source_name": "CivicX.com: Preliminary Review: PRL 4847RS 1.5T Turbo Upgrade",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "cai-prl-cobra",
@@ -3295,7 +3419,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The lower airbox bolts are the worst part; owners remove the lower metal under-shield for access instead of the bumper. One installer found the rotomolded piece would not sit right until he also removed the bracket the factory intake resonator mounts to, a step he did not see in the guide.",
+     "source_url": "https://www.civicx.com/forum/threads/prl-motorsports-1-5t-cold-air-intake-development-pre-order.9555/page-11",
+     "source_name": "CivicX.com: PRL Motorsports 1.5T Cold Air Intake Development / Pre-Order",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "cai-prl-cobra-pkg",
@@ -3412,7 +3545,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Mishimoto has you cut the loose side ducting pieces near the top to make room for the bigger core, move the rubber grommets from the bottom of the stock intercooler onto the car brackets, and fit O-rings in the hot and cold side adapters before bolting them up.",
+     "source_url": "https://www.mishimoto.com/mwdownloads/download/link/id/755",
+     "source_name": "Mishimoto: 2016+ Honda Civic 1.5T/Si performance intercooler installation guide",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "ic-prl-fk8",
@@ -3568,7 +3710,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On the FK8 the whole job is from the top: remove the five 10 mm bolts on the stock pipe, then the two 14 mm compressor-housing bolts (a swivel extension helps, and unplugging the harness frees one). Reuse the stock black metal gasket in its original orientation and transfer the rubber bushing to the PRL pipe.",
+     "source_url": "https://www.jdmyard.com/assets/brochures/PRL-HCR-INT-TIP-STK.pdf",
+     "source_name": "PRL Motorsports: 2017+ Civic Type R turbo inlet pipe installation instructions (PRL-HCR-INT-TIP)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Start all five bracket bolts loosely and tighten them together so the titanium pipe seats without strain, and push the silicone adapter on until it hits the internal stop. If the car throws a code or runs badly on first start, shut it off and check for a leak.",
+     "source_url": "https://www.jdmyard.com/assets/brochures/PRL-HCR-INT-TIP-STK.pdf",
+     "source_name": "PRL Motorsports: 2017+ Civic Type R turbo inlet pipe installation instructions (PRL-HCR-INT-TIP)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "turbo-honda-fk8",
@@ -3811,7 +3969,17 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners report Clutch Masters and Spec kits on the 1.5T with chatter, gear lockout at high rpm and load, and 20,000 to 30,000 mile life, and one says the FX100 will not hold a KTuner-level tune. If you want a stock feel with a tune, many point to ACT or a Type R clutch retrofit instead.",
+     "source_url": "https://www.civicx.com/forum/threads/clutch-chatter.55839/",
+     "source_name": "CivicX.com: Clutch Chatter",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "flywheel-cm-al-15t",
@@ -3850,7 +4018,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An owner who dailies a Clutch Masters FX350 with the aluminum flywheel says it is hard to drive in traffic and to pick something stock-feeling if the car never sees a track. If you reuse a flywheel instead, have it resurfaced, especially after a slipping clutch.",
+     "source_url": "https://www.civicx.com/forum/threads/upgrade-flywheel-or-stay-stock.28977/page-2",
+     "source_name": "CivicX.com: Upgrade flywheel or stay stock?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "clutch-cc-stage2",
@@ -3889,7 +4066,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 2018 Si with three track days, the Stage 2 with the 20 lb flywheel showed no chatter in normal use with the CDV removed, on a tuned car making about 270 lb-ft; the owner was told it holds about 300 lb-ft. The pedal is about 30 percent stiffer, fine to daily unless you sit in heavy traffic.",
+     "source_url": "https://www.civicx.com/forum/threads/testing-competition-clutch-stage-2-with-20-lb-single-mass-flywheel.44529/",
+     "source_name": "CivicX.com: Testing Competition Clutch Stage 2 with 20 lb Single Mass Flywheel",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "One owner skipped a lightweight flywheel because he heard it can trigger a misfire check engine light on the stock calibration; if you want to keep the option to go back to the stock ECU, check this before buying the kit.",
+     "source_url": "https://www.civicx.com/forum/threads/clutch-chatter.55839/",
+     "source_name": "CivicX.com: Clutch Chatter",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "clutch-exedy-08957",
@@ -3928,7 +4121,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A shop took 6 to 8 hours on a lift with the subframe dropped to fit the Exedy Stage 2 with Exedy single-mass flywheel. The owner found the pedal lighter than his old FX350 and no chatter, though it is an unsprung 3-puck disc.",
+     "source_url": "https://www.civicx.com/forum/threads/exedy-clutch-torque-ratings-not-great.41243/page-5",
+     "source_name": "CivicX.com: EXEDY CLUTCH Torque ratings not great.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "clutch-exedy-08951p4",
@@ -4318,7 +4520,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hondata.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a stock 2009 Si the Hondata base map gained only about 3 to 4 whp, but it removed rev hang and smoothed the VTEC dip. The tuner moved VTEC from 4,300 to 4,500 rpm, which reduced the dip further; stay on the MAF calibration until you add an intake.",
+     "source_url": "https://www.8thcivic.com/threads/results-2009-stock-si-with-flashpro-w-dynos.207473/",
+     "source_name": "8thCivic.com: Results: 2009 Stock Si with Flashpro (w/ dyno's)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-flashpro-si-17",

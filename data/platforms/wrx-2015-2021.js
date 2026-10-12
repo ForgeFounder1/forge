@@ -1064,6 +1064,15 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      "label": "comeanddriveit.com ringland article (guide gave no URL)",
      "url": "https://comeanddriveit.com/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Service Program WQW-58 covers some 2015 WRXs built January 17 to September 26, 2014: pre-ignition under high load can cause rough idle, engine noise, eroded plugs and engine damage, and the fix is an ECM reflash. Have a dealer run a coverage inquiry on the VIN, especially on a used early car.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10120961-9999.pdf",
+     "source_name": "Subaru Service Program WQW-58: ECM reprogramming (2015 WRX, 2014-15 Forester 2.0 DIT)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1087,6 +1096,22 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      "label": "Subaru 2019 STI press release",
      "url": "https://media.subaru.com/pressrelease/1374/"
     }
+   ],
+   "tips": [
+    {
+     "text": "A cracked EJ257 ringland can hide behind mild signs: an uneven, stumbling cold start, rough idle, occasional morning white smoke and steady puffs of smoke from the open oil cap at idle. One 2008 STI showed 60 psi and 90 percent leakdown on #4 against about 140 psi and 6 to 8 percent elsewhere.",
+     "source_url": "https://www.iwsti.com/threads/possible-ringland-issue-failed-compression-test-4-low.175528/",
+     "source_name": "IW STi Forum: Possible Ringland Issue - Failed Compression Test #4 Low",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners and tuners say get a compression and leakdown test (about $200 at a dealer) before going Stage 2, and while still under warranty; a shop refused to fit this owner's downpipe after seeing the blow-by. After an engine replacement, make sure the old oil cooler is not reused, since it holds metal.",
+     "source_url": "https://www.iwsti.com/threads/possible-ringland-issue-failed-compression-test-4-low.175528/",
+     "source_name": "IW STi Forum: Possible Ringland Issue - Failed Compression Test #4 Low",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1101,7 +1126,17 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "forum",
     "unconfirmed"
    ],
-   "src": []
+   "src": [],
+   "tips": [
+    {
+     "text": "Killer B says the EJ25 oil pickup part number has not changed since 2006, and owners still treat a stronger pickup (and pan baffle) as a while-you-are-in-there item at a 60,000 mile service on VA STIs. Others think the failure is rarer on newer cars, and warn not to use so much pan sealant that it clogs the pickup.",
+     "source_url": "https://www.iwsti.com/threads/oil-pickup-tube-upgrade-2015-stis.326955/",
+     "source_name": "IW STi Forum: Oil Pickup Tube Upgrade 2015+ STIs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "cvt",
@@ -1124,6 +1159,22 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      "label": "Subaru TSB 16-107-17R",
      "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187317-0001.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "On 2015-16 WRX CVTs, a slipping feel or inconsistent shifting under moderate throttle before warm-up is addressed by TCM reflash 16-98-16, followed by clearing and relearning AT learning data. Ask the dealer for it if your car was built before VIN G*825251.",
+     "source_url": "https://subaru.oemdtc.com/346/tcm-reprogramming-file-availability-to-address-inconsistent-shifting-slipping-concerns-when-cold-2015-2016-subaru-wrx/",
+     "source_name": "Subaru TSB 16-98-16: TCM reprogramming, inconsistent shifting/slipping when cold (2015-2016 WRX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The 2015 WRX CVT is covered by Subaru's extension to 10 years or 100,000 miles from the warranty start date. If you paid for a CVT repair earlier, Subaru offered reimbursement through cvtclaim.subaru.com.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10187319-0001.pdf",
+     "source_name": "Subaru of America: CVT Warranty Extension announcement (includes 2015 WRX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1142,6 +1193,22 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     {
      "label": "Subaru SIB 03-82-18R",
      "url": "https://static.oemdtc.com/TSB/MC-10179416-0001.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Subaru changed the 2015-17 WRX release bearing (new part 30502AA160, in production from VIN H9824973) to cure a chirp after a cold start that fades within 2 to 3 minutes. When the clutch is done, inspect the fork pivot, pivot ball and operating rod for wear and grease them with Nichimoly N-130 or Subaru 000041000.",
+     "source_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10237271-0001.pdf",
+     "source_name": "Subaru Service Bulletin: Clutch Release Bearing Design Change (2015-2017 WRX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Subaru says resting your foot on the clutch pedal for long periods overheats the release bearing grease and can seize the bearing, so keep your foot off the pedal at lights. Use grease sparingly on the input shaft splines to avoid contaminating the disc.",
+     "source_url": "https://static.oemdtc.com/TSB/MC-10179416-0001.pdf",
+     "source_name": "Subaru Service Information Bulletin: Clutch Release (Throw-Out) Bearing Design Change (2015-2017 WRX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1164,6 +1231,22 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     {
      "label": "Subaru TSB 03-79-18R",
      "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150946-9999.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "From VIN J*806877 (mid-2018) the WRX flywheel (12342AA170, yellow paint mark), cover and disc went from 230 to 240 mm facings. Older cars can switch only as a full set, and Subaru says never resurface the flywheel.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150946-9999.pdf",
+     "source_name": "Subaru TSB 03-79-18R: Updating clutch system parts (2015-2018 WRX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If a fresh clutch slips in 2nd and 3rd under boost, owners say bleed the whole hydraulic system first; one 2015 fix was just that. A friend's 2017 slipped almost immediately because it was driven hard before break-in and the disc glazed.",
+     "source_url": "https://www.clubwrx.net/threads/2015-wrx-new-clutch-slipping-when-accelerating.134615938/",
+     "source_name": "ClubWRX: 2015 WRX New Clutch Slipping When Accelerating",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1210,7 +1293,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "forum",
     "unconfirmed"
    ],
-   "src": []
+   "src": [],
+   "tips": [
+    {
+     "text": "For a creak from the clutch pedal on a 2015 WRX, TSB 12-190-15 traces it to two metal layers in the pedal bracket moving; the fix is a new pedal assembly with its 9 fasteners torqued to 17 ft-lb in sequence and new clevis pins.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2015/SB-10093628-2280.pdf",
+     "source_name": "Subaru TSB 12-190-15: Elimination of Creaking Sound from Clutch Pedal Assembly",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ],
  "guides": [
@@ -1428,7 +1520,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "1A Auto torques the 2015-18 WRX drain plug to 31 ft-lb, and fills, runs the engine a few seconds and rechecks the dipstick. The filter is reached from above, so you can lower the car after draining.",
+     "source_url": "https://www.1aauto.com/how-to-perform-oil-change-2015-18-subaru-wrx/video/49302",
+     "source_name": "1A Auto (video): How to Perform Oil Change 2015-18 Subaru WRX",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "plugs",
@@ -1459,7 +1560,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "On the boxer coil connectors, do not push the release lever, which gets brittle and snaps; ease the retainer up with a right-angle pick and slide the plug off. A double-swivel plug socket, or a short extension swapped for a longer one partway, clears the frame rails.",
+     "source_url": "https://www.iwsti.com/threads/how-to-spark-plugs.266247/",
+     "source_name": "IW STi Forum: How-To Spark Plugs (EJ257 STI)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coilovers",
@@ -1515,6 +1625,15 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "parts": [
     "coil-bc-br",
     "cobb-rlca"
+   ],
+   "tips": [
+    {
+     "text": "Front on a 2015+ WRX: unbolt the brake line (12 mm) and unclip the ABS wire, pull the two 19 mm lower bolts, then the 12 mm top-hat nuts while holding the strut so it does not drop. Measure ride height hub center to fender arch on the ground, stay inside the coilover maker's min and max, and check clearance before driving.",
+     "source_url": "https://images.rallysportdirect.com/image/upload/v1597069942/rsd_instructions/Coilover_Install_Instructions_v3.0.pdf",
+     "source_name": "FactionFab: F-Spec / FR-Spec / FL-Spec coilover installation instructions v3.0",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1558,6 +1677,15 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "torque": null,
    "parts": [
     "cobb-ap3"
+   ],
+   "tips": [
+    {
+     "text": "DAM starting near 0.69 at every engine start on a 2015+ WRX is normal; COBB says that is the factory reset value and it learns back up as you drive. Some 2015+ intakes have no filter stop, and a filter pushed on too far makes the car run rich, so check it before chasing a tune issue.",
+     "source_url": "https://www.cobbtuning.com/subaru-knock-monitoring-and-dit-knock-logic-changes/",
+     "source_name": "COBB Tuning: Subaru Knock Monitoring and DIT DAM Strategy Changes",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1614,6 +1742,29 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "cobb-s2-sf",
     "cobb-s1-ff",
     "grimm-fmic"
+   ],
+   "tips": [
+    {
+     "text": "COBB says an axle-back or cat-back does not need a map change on the WRX; the J-pipe (downpipe) is the exhaust part that does. Watch boost, AF Learning 1 (within about plus or minus 8 percent), DAM, fine knock learning and intake temperature on any stage.",
+     "source_url": "https://www.cobbtuning.com/subaru-knock-monitoring-and-dit-knock-logic-changes/",
+     "source_name": "COBB Tuning: Subaru Knock Monitoring and DIT DAM Strategy Changes",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On the stock FA20DIT block, keep a tune at or below about 300 lb-ft at the wheels.",
+     "source_url": "https://jmautomn.com/mod-guides/2015-wrx-fa20-mod-guide/",
+     "source_name": "JM Automotive FA20 mod guide",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "When asking for a map or advice, list the parts you have, not a \"stage\": COBB and forum stage names do not match.",
+     "source_url": "https://cobbtuning.atlassian.net/wiki/spaces/PRS/pages/1154154583",
+     "source_name": "COBB map notes",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1684,81 +1835,28 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Check the dipstick every fill-up; 5W-30 synthetic at 3–5k mi is the community norm for FA20DIT rod-bearing protection.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "diag.net FA20 #3 rod bearing thread (guide gave no URL)",
-     "url": "https://diag.net/"
-    },
-    {
-     "label": "HP Academy FA20 oiling thread (guide gave no URL)",
-     "url": "https://www.hpacademy.com/"
-    }
-   ]
+   "text": "Keep your foot off the clutch pedal at lights and in traffic; Subaru says long periods of pedal pressure overheat the release bearing grease on 2015-17 WRXs and can seize the bearing.",
+   "source_url": "https://static.oemdtc.com/TSB/MC-10179416-0001.pdf",
+   "source_name": "Subaru Service Information Bulletin: Clutch Release (Throw-Out) Bearing Design Change (2015-2017 WRX)",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Keep tuned wheel torque at about 300 lb-ft or less on the stock block.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "JM Automotive FA20 mod guide",
-     "url": "https://jmautomn.com/mod-guides/2015-wrx-fa20-mod-guide/"
-    }
-   ]
+   "text": "Before adding power, and before the powertrain warranty ends, pay for a compression and leakdown test; owners note a cracked ringland can run for months with only a rough idle and smoke from the oil cap.",
+   "source_url": "https://www.iwsti.com/threads/possible-ringland-issue-failed-compression-test-4-low.175528/",
+   "source_name": "IW STi Forum: Possible Ringland Issue - Failed Compression Test #4 Low",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "The stock TMIC heat-soaks; an intercooler is the best Stage 2 part.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "JM Automotive FA20 mod guide",
-     "url": "https://jmautomn.com/mod-guides/2015-wrx-fa20-mod-guide/"
-    }
-   ]
-  },
-  {
-   "text": "Order clutch kits by VIN: 230 mm before J*806877, 240 mm after. Never mix a 230 mm clutch with a 240 mm flywheel.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "Subaru TSB 03-79-18R",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10150946-9999.pdf"
-    }
-   ]
-  },
-  {
-   "text": "Keep the Accessport to un-marry before dealer visits.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "RallySport Direct",
-     "url": "https://www.rallysportdirect.com/"
-    }
-   ]
-  },
-  {
-   "text": "Say which parts you have, not which \"stage\": COBB and forum stage names don't match.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "COBB map notes",
-     "url": "https://cobbtuning.atlassian.net/wiki/spaces/PRS/pages/1154154583"
-    }
-   ]
-  },
-  {
-   "text": "Catch cans are common on both engines.",
-   "conf": "forum",
-   "src": []
+   "text": "If you run an Accessport, keep DAM, feedback knock, fine knock learning, AF Learning 1 and intake temperature on screen; switch to a lower-octane or LWG map and change fuel stations if knock keeps showing at full throttle.",
+   "source_url": "https://www.cobbtuning.com/subaru-knock-monitoring-and-dit-knock-logic-changes/",
+   "source_name": "COBB Tuning: Subaru Knock Monitoring and DIT DAM Strategy Changes",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -1913,7 +2011,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 2015+ WRX, a DAM dip below 1.0 is expected because the DIT knock logic is more reactive, and how long it takes to climb back says nothing about how bad the event was. Worry when DAM is down and feedback knock is beyond about -2.5 degrees at full boost and wide open throttle.",
+     "source_url": "https://www.cobbtuning.com/subaru-knock-monitoring-and-dit-knock-logic-changes/",
+     "source_name": "COBB Tuning: Subaru Knock Monitoring and DIT DAM Strategy Changes",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If knock shows up on an off-the-shelf map, COBB suggests dropping to the map for the next lower octane or an LWG (lower boost) version, and filling at top tier stations. Check for worn MAF or front O2 sensors and boost leaks next.",
+     "source_url": "https://www.cobbtuning.com/subaru-knock-monitoring-and-dit-knock-logic-changes/",
+     "source_name": "COBB Tuning: Subaru Knock Monitoring and DIT DAM Strategy Changes",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "cobb-s2-sf",
@@ -2108,7 +2222,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Slide the filter only 1 in onto the intake tube (mark it if there is no stopper); the filter has an integrated velocity stack and the MAF reads wrong if it goes further. You have to pull the passenger radiator fan (two 10 mm bolts) for access, so remember to reconnect its harness.",
+     "source_url": "https://manuzoid.com/manuals/p14Be-GrimmSpeed%20StealthBox%20Intake%20-%2015-21%20Subaru%20WRX%20Installation%20guide",
+     "source_name": "GrimmSpeed: Installing the 2015+ WRX StealthBox Intake (install guide)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GrimmSpeed says the intake needs a tune and that off-the-shelf maps not written for this intake are not approved, so line up a protune before you install it. Expect 45 to 60 minutes.",
+     "source_url": "https://manuzoid.com/manuals/p14Be-GrimmSpeed%20StealthBox%20Intake%20-%2015-21%20Subaru%20WRX%20Installation%20guide",
+     "source_name": "GrimmSpeed: Installing the 2015+ WRX StealthBox Intake (install guide)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "mst-cai",
@@ -2186,7 +2316,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The stock top-mount intercooler heat-soaks; an intercooler is the most useful Stage 2 part to buy.",
+     "source_url": "https://jmautomn.com/mod-guides/2015-wrx-fa20-mod-guide/",
+     "source_name": "JM Automotive FA20 mod guide",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "grimm-tmic",
@@ -2342,7 +2481,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Budget about 2 hours: you unplug both O2 sensors (22 mm), pull the water pump brackets and swap the two lower subframe bolts for the supplied 15 mm ones. Torque the four turbo-to-downpipe nuts to 28 to 32 ft-lb, then fully tighten the three brackets.",
+     "source_url": "https://www.carmodsaustralia.com.au/assets/brochures/MMDP-WRX-15C.pdf",
+     "source_name": "Mishimoto: 2015 Subaru WRX/STI downpipe parts list and installation guide",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "invidia-dp",
@@ -2455,7 +2603,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Reuse the factory flange bolts and springs and make sure the bolt shoulder passes through the new flange hole; leave everything loose until the whole system is hung. Line each band clamp edge up with the joint, torque the clamps to about 45 lb-ft working front to rear, and recheck after 30 to 60 miles.",
+     "source_url": "https://mbrpexhauststore.com/product_images/uploaded_images/instructions/S4803.pdf",
+     "source_name": "MBRP: S4803 cat-back installation instructions, 2015+ WRX/STI",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "remark-r1",
@@ -2615,7 +2772,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Set preload before install: spring seat snug with no compression, then wind it up until there is a 4 mm gap (about one wrench thickness) to the lock collar, and only snug the collars. On a 2015+ WRX the FR-Spec front ranges about 12.875 to 15.75 in hub center to fender (stock is 15.75 in), and it needs an alignment after every height change.",
+     "source_url": "https://images.rallysportdirect.com/image/upload/v1597069942/rsd_instructions/Coilover_Install_Instructions_v3.0.pdf",
+     "source_name": "FactionFab: F-Spec / FR-Spec / FL-Spec coilover installation instructions v3.0",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Front camber bolt goes in the top hole of the lower mount, with both bolts entering from the rear; on FR-Spec the top-hat slots sit parallel to the firewall. FactionFab torques: top hat nuts 14.5 ft-lb, lower mount nuts 129 ft-lb, brake line bracket 23.6 ft-lb, camber plate bolts 16.2 ft-lb.",
+     "source_url": "https://images.rallysportdirect.com/image/upload/v1597069942/rsd_instructions/Coilover_Install_Instructions_v3.0.pdf",
+     "source_name": "FactionFab: F-Spec / FR-Spec / FL-Spec coilover installation instructions v3.0",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coil-hr-rss",
@@ -2854,7 +3027,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Pro-Kit springs in the Pro-Plus drop a 2015+ WRX about 0.8 in (front wheel center to fender 14.6 to 13.8 in) on the OE dampers and bump stops. Eibach notes the rear needs its 5.67660K camber kit to bring rear camber back to factory spec, so budget for it with the alignment.",
+     "source_url": "https://eibach.com/product-releases/pro-kit-2015-subaru-wrx",
+     "source_name": "Eibach: New Product Release, Pro-Kit 2015+ Subaru WRX (7727.140)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Eibach's front bar reuses the OE end links, brackets and hardware: note which way the OE bar sat and fit the new one the same way, slide the end links in first to hold it, and grease the supplied bushings. Plan about 1 hour on a hoist.",
+     "source_url": "https://eibach.com/storage/instructions/D3285.pdf",
+     "source_name": "Eibach: Anti-Roll-Kit 7727.310 front bar installation instructions, 2015 WRX (D3285)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "perrin-26-front",
@@ -2974,7 +3163,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Torque the links with the suspension loaded, on ramps or with a jack under the control arm, so the bushings are not preloaded; use Kartboy spacers or washers to get the links as close to vertical as possible. Hold the old ball stud with a 5 mm Allen key, and on rusty cars expect to need a cutoff wheel.",
+     "source_url": "https://www.blingstrom.com/diy-project/2021/4/12/kartboy-front-endlink-install-aluminum-means-lightweight-right",
+     "source_name": "Blingstrom: Kartboy front endlink install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "cobb-rlca",
@@ -3014,7 +3212,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Install the subframe bolt first, then the shock bolt, and leave both loose; set the camber cam bolt to the middle of its range with the curved washer edges toward the arm. COBB says tow or drive straight to an alignment, since the car is not safe on the street until it is aligned.",
+     "source_url": "https://cobbtuning.atlassian.net/wiki/spaces/PRS/pages/2638413825/VA+WRX,+WRX+STI+Rear+Lower+Control+Arms",
+     "source_name": "COBB Tuning: VA WRX, WRX STI Rear Lower Control Arms install instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Unbolting the rear sway bar (two 12 mm bolts) or at least loosening it makes refitting the arms much easier, and on cars with auto-levelling headlights unhook the ride height sensor from the arm first.",
+     "source_url": "https://cobbtuning.atlassian.net/wiki/spaces/PRS/pages/2638413825/VA+WRX,+WRX+STI+Rear+Lower+Control+Arms",
+     "source_name": "COBB Tuning: VA WRX, WRX STI Rear Lower Control Arms install instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "whiteline-driveline",
@@ -3093,7 +3307,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Unclip the rear O2 sensor wire from the transmission crossmember before lowering the jack, or you can damage the sensor. Fit the mount with the arrows on the feet toward the front and the logo facing rearward, and torque the four mount-to-transmission bolts to 26 ft-lb.",
+     "source_url": "https://files.cdn-files-a.com/uploads/4756979/normal_6233142af1926.pdf",
+     "source_name": "PERRIN Performance: Transmission Mount for WRX/STI installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Expect more NVH everywhere, especially at high load in 1st and 2nd, and some whine under load in 1st to 3rd is normal. Clunks or clicks on the test drive mean recheck every bolt; use a small pry bar rather than forcing crossmember bolts to line up.",
+     "source_url": "https://files.cdn-files-a.com/uploads/4756979/normal_6233142af1926.pdf",
+     "source_name": "PERRIN Performance: Transmission Mount for WRX/STI installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sti-shifter",
@@ -3132,7 +3362,23 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The factory short-throw for the 15+ WRX is C1010VA000; the STI one (C1010FG600) does not fit. It shortens throw in the linkage and keeps stock lever height, so some owners add an aftermarket handle on top of it for a shorter throw.",
+     "source_url": "https://www.iwsti.com/threads/short-throw-shifter-difference.288869/",
+     "source_name": "IW STi Forum: Short Throw Shifter Difference",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners who tried both say the factory short throw is only a subtle change and still feels loose; aftermarket shifter bushings and a shift stop (for side play on the 1-2 shift) do more for feel. The 15+ 6MT WRX shifter assembly is more involved to swap than earlier cars.",
+     "source_url": "https://www.clubwrx.net/threads/2015-16-wrx-factory-short-throw-shifter-vs-aftermarket.134538066/",
+     "source_name": "ClubWRX: 2015-16 WRX Factory Short Throw Shifter vs. Aftermarket?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "clutch-exedy-s1",
@@ -3249,7 +3495,16 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "url": "https://www.rallysportdirect.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "When bleeding after a braided clutch line swap on a VA, keep the shared reservoir topped right up; one owner kept pulling air because the clutch feed sits near the top of the reservoir internally. The intercooler has to come off for access, and if the first quarter of pedal travel still feels dead, adjust the pedal (the 10 mm lock nut is easier with the gas pedal removed).",
+     "source_url": "https://www.iwsti.com/threads/steel-braided-clutch-line-install-tips.301114/",
+     "source_name": "IW STi Forum: Steel braided clutch line Install tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "olm-yspec",
