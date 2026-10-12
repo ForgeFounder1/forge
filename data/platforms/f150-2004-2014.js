@@ -1679,7 +1679,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    ],
    "guide": "plugs-3v",
    "disputed": true,
-   "confNote": "Older bulletin 06-5-9 (per aa1car) and the 2006 WSM excerpt say remove warm; TSB 08-7-6 (newer) says room temperature."
+   "confNote": "Older bulletin 06-5-9 (per aa1car) and the 2006 WSM excerpt say remove warm; TSB 08-7-6 (newer) says room temperature.",
+   "tips": [
+    {
+     "text": "TSB 08-7-6 warns that too much Carb Tune-Up Cleaner, or repeating the soak with too much fluid, can hydro-lock the engine, so keep to 1/2-3/4 tsp per well. The engine build date that decides whether the TSB applies is on the left-hand cam cover sticker.",
+     "source_url": "https://www.fordservicecontent.com/Ford_Content/pubs/content/~WT/~MUS~LEN/3637/tsb08-07-06.htm",
+     "source_name": "Ford TSB 08-7-6: Spark plug removal instructions, 4.6L/5.4L/6.8L 3V",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On an 07 5.4, a senior member notes some trucks may already have the updated heads and non-breaking plugs. He says to check that the plugs have been changed, and brown coil boots are a sign they are due.",
+     "source_url": "https://www.f150forum.com/f4/cam-phaser-preventative-measures-551106/",
+     "source_name": "F150Forum: Cam phaser preventative measures?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "vct-phaser-knock",
@@ -1746,7 +1762,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
      "url": "https://dev-www.motor.com/wp-content/uploads/O-the-Troubles-Ive-Seen-Nov-2013.pdf"
     }
    ],
-   "guide": "torque-54-3v"
+   "guide": "torque-54-3v",
+   "tips": [
+    {
+     "text": "A clean oil pan does not mean the timing job can wait. A member says no debris means you can hold off for now, but a guide could still break in 10k miles; dropping the pan on a 4x4 is about 2-3 hours. Another blames blown tensioners for starting the chain whip that breaks guides and jams the oil pump.",
+     "source_url": "https://www.f150forum.com/f4/cam-phaser-preventative-measures-551106/",
+     "source_name": "F150Forum: Cam phaser preventative measures?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "From a 283k-mile 04 thread: \"If it starts in on the passenger-side 'dry start rattle', do the tensioners ASAP.\"",
+     "source_url": "https://www.f150forum.com/f4/anyone-have-any-insane-high-mileage-advice-2004-2008-5-4-3v-f150-404589/",
+     "source_name": "F150Forum: Anyone have any INSANE high mileage advice for the 2004-2008 5.4 3v f150?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "manifold-studs",
@@ -1765,7 +1797,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
      "url": "https://www.f150forum.com/f4/broken-front-exhaust-manifold-studs-324038/"
     }
    ],
-   "guide": "manifold-studs"
+   "guide": "manifold-studs",
+   "tips": [
+    {
+     "text": "5.4 manifold studs: remove the starter and the passenger motor mount, jack the engine, and pull the upper intake for room; one owner says \"It shaved 4 hours off my time.\" A Dremel right-angle attachment fits in the tight spots.",
+     "source_url": "https://www.f150forum.com/f4/broken-front-exhaust-manifold-studs-324038/",
+     "source_name": "F150Forum: Broken front exhaust manifold studs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "iwe-grind",
@@ -1784,7 +1825,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
      "url": "https://static.nhtsa.gov/odi/tsbs/2016/SB-10092370-5448.pdf"
     }
    ],
-   "guide": "iwe-test"
+   "guide": "iwe-test",
+   "tips": [
+    {
+     "text": "Check the cheap parts first: on a 2013 Platinum, owners pointed at the check valve before the IWE, and the fix turned out to be the IWE solenoid 7L1Z-9H465-B. The frame-side rubber-to-plastic connector can also leak only in turns, so test with the wheel turned.",
+     "source_url": "https://www.f150forum.com/f38/iwe-noise-troubleshooting-405844/",
+     "source_name": "F150Forum: IWE Noise Troubleshooting",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "iwe-grind-1314",
@@ -1820,6 +1870,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     {
      "label": "TSB 13-8-1",
      "url": "http://www.fordservicecontent.com/Ford_Content/pubs/content/~WT/~MUS~LEN/3569/tsb13-08-01.htm"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Catch cans do not keep the intercooler dry. A 2011 EB owner with twin UPR cans still found oily water blown out of a loose lower intercooler coupler, and was catching 15-16 oz per 300-350 miles, rising to 18 oz in 240 miles in a Michigan November. Owners argue over drilling a weep hole: some call it a \"dumb bandaid fix\" and suggest a petcock drain or rerouted can lines instead.",
+     "source_url": "https://www.f150ecoboost.net/threads/catch-cans-afe-bladerunner-and-intercooler-moisture.8006/",
+     "source_name": "F150Ecoboost.net: Catch cans, aFe Bladerunner and intercooler moisture",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
     }
    ]
   },
@@ -1994,7 +2054,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     }
    ],
    "disputed": true,
-   "confNote": "Owners disagree: several report no rust at 50k–161k miles in the South and Midwest; others say 09–14 trucks rust \"just as bad\" as 04–08 and just aren't old enough yet."
+   "confNote": "Owners disagree: several report no rust at 50k–161k miles in the South and Midwest; others say 09–14 trucks rust \"just as bad\" as 04–08 and just aren't old enough yet.",
+   "tips": [
+    {
+     "text": "Owners trace 09-14 cab-corner rot to water getting past the third brake light seal and pooling inside. Fixes: a bead of silicone or the wider updated Ford seal. One owner had both rockers replaced under Ford's 5-year paint and corrosion coverage.",
+     "source_url": "https://www.f150forum.com/f38/cab-corner-rust-394887/index2/",
+     "source_name": "F150Forum: Cab corner rust (page 2)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Two owners (2013 and 2014) were refused corrosion warranty because the bubbling was not perforated yet; one perforated a month after coverage ended. Get bubbling on record with the dealer early.",
+     "source_url": "https://www.f150forum.com/f38/2014-f150-cab-corner-rocker-rust-456719/",
+     "source_name": "F150Forum: 2014 F150 Cab Corner and Rocker Rust",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ],
  "guides": [
@@ -2452,7 +2528,24 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
      1
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "TSB 14-0180 (2011-13 3.5 EB built on or before 6/15/2013): if the plug from a misfiring cylinder shows carbon tracking, replace all six plugs (CYFS-12-YT3) and all six coil boots (BL3Z-12A402-A) with XG-3-A dielectric grease.",
+     "source_url": "https://static.oemdtc.com/TSB/14-0180.pdf",
+     "source_name": "Ford TSB 14-0180: 3.5L GTDI engine ignition misfire",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners disagree on 3.5 EB plug gap. One member who checked the online workshop manual says the latest spec is 0.031 in for all 2011-14, while owner manuals listed 0.033-0.037 (2011-12) and later 0.030-0.033. Tuned owners run 0.028 in.",
+     "source_url": "https://www.f150forum.com/f70/3-5l-ecoboost-new-misfire-fix-tsb-jan-2014-a-249576/index6/",
+     "source_name": "F150Forum: 3.5L Ecoboost New Misfire Fix TSB Jan 2014 (page 6)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "torque-54-3v",
@@ -2565,6 +2658,15 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    },
    "parts": [
     "oem-vct-solenoid"
+   ],
+   "tips": [
+    {
+     "text": "The 5.4 3V timing tip guide budgets 8-10 hours with tools and says not to buy Dorman phasers. It lists the Ford kit 3R2Z-6A257-DA, two 8L3Z-6M280-B solenoids and a Melling high-performance oil pump, plus a rented power-steering pulley puller and a 3-jaw balancer puller.",
+     "source_url": "https://www.f150forum.com/f4/tip-guide-5-4-3v-timing-system-cam-phasers-installation-294718/",
+     "source_name": "F150Forum: [TIP GUIDE] [5.4 3v] Timing System/Cam Phasers Installation",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2837,6 +2939,15 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    },
    "parts": [
     "hdr-jba-1676s"
+   ],
+   "tips": [
+    {
+     "text": "5.4 manifold studs: remove the starter and the passenger motor mount, jack the engine, and pull the upper intake for room; one owner says \"It shaved 4 hours off my time.\" A Dremel right-angle attachment fits in the tight spots.",
+     "source_url": "https://www.f150forum.com/f4/broken-front-exhaust-manifold-studs-324038/",
+     "source_name": "F150Forum: Broken front exhaust manifold studs",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2876,6 +2987,15 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    "parts": [
     "lev-rc570",
     "lev-rc568"
+   ],
+   "tips": [
+    {
+     "text": "Rough Country says to re-torque every fastener after 500 miles on its 09-13 leveling kit, and again at routine service.",
+     "source_url": "https://sadlerpowertrain.com/content/pdf/roughcountry/92568000.pdf",
+     "source_name": "Rough Country: 2009-13 Ford F150 2\" suspension kit instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2959,6 +3079,15 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    "torque": null,
    "parts": [
     "swap-mim-6r80-harness"
+   ],
+   "tips": [
+    {
+     "text": "In a 2004-08 thread, owners agree the mechanical side is the easy half and the electronics are the hard part. One points to US Shift's Quick 6 controller for 4R75 trucks as a standalone way to run a 6R80.",
+     "source_url": "https://www.f150forum.com/f4/6r80-transmission-retro-fit-203212/",
+     "source_name": "F150Forum: 6r80 transmission retro fit???",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -3002,100 +3131,93 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    "parts": []
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Tuned 3.5 EB MPG: one owner says stock about 15 mpg; 87 LET tune 17–19; 91 LET tune 19–23 on summer gas. Another (80% city) lost about 1 mpg on a 93 tune (16.3–16.8 stock to 15–15.5). Another: \"Unleashed 87 perf or 91 perf. No change. Still averaging 13.6 with 285 BFG KO.\" One notes tunes that lock the torque converter early gain MPG but drive worse on hills.",
-   "conf": "forum",
-   "disputed": true,
-   "src": [
-    {
-     "label": "f150ecoboost tuned MPG",
-     "url": "https://www.f150ecoboost.net/threads/tuned-guys-and-mpgs.8752/"
-    }
-   ]
+   "text": "5.4 3V owners insist on Motorcraft oil filters: \"Motorcraft filters only, please.\" Their reason is the anti-drainback valve, since the phasers need oil pressure right at startup.",
+   "source_url": "https://www.f150forum.com/f4/anyone-have-any-insane-high-mileage-advice-2004-2008-5-4-3v-f150-404589/",
+   "source_name": "F150Forum: Anyone have any INSANE high mileage advice for the 2004-2008 5.4 3v f150?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Cold 6R80 and MPG: \"I will get 4-5mpg lower while the trans is cold.\" A reply says a tuner can change the trans temperature thresholds.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150ecoboost tuned MPG",
-     "url": "https://www.f150ecoboost.net/threads/tuned-guys-and-mpgs.8752/"
-    }
-   ]
+   "text": "Fit a real oil-pressure gauge on a high-mile 5.4 3V. One owner: \"factory guage is nothing more than a idiot light with a needle\", and these engines are weak in the oil pump department.",
+   "source_url": "https://www.f150forum.com/f4/anyone-have-any-insane-high-mileage-advice-2004-2008-5-4-3v-f150-404589/",
+   "source_name": "F150Forum: Anyone have any INSANE high mileage advice for the 2004-2008 5.4 3v f150?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Common EB bolt-ons owners list: Wagner intercooler, catch cans, 170° thermostat, aFe charge pipe, Unleashed/5 Star/LET tunes, and a \"no cac hole\" note (the drilled-CAC trick, which Tomorrow's Technician warns \"can create a leak in the system\"; that warning is a search extract, Unconfirmed).",
-   "conf": [
-    "forum",
-    "unconfirmed"
-   ],
-   "src": [
-    {
-     "label": "f150ecoboost tuned MPG",
-     "url": "https://www.f150ecoboost.net/threads/tuned-guys-and-mpgs.8752/"
-    }
-   ]
+   "text": "Owners disagree on 5.4 3V oil. One says Motorcraft 5W-20 blend every 5k miles; another runs 5W-30 every 3-5k and credits it with quieting the phaser tick. Ford specifies 5W-20.",
+   "source_url": "https://www.f150forum.com/f4/oil-maintenance-2006-v8-5-4l-ff-132470/",
+   "source_name": "F150Forum: Oil maintenance on 2006 v8 5.4L FF",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "5.4 manifold studs: remove the starter and the passenger motor mount, jack the engine, and pull the upper intake for room. \"It shaved 4 hours off my time.\" A Dremel right-angle attachment fits in tight spots. FordTechMakuloco is mentioned by posters for manifold studs.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150forum broken manifold studs",
-     "url": "https://www.f150forum.com/f4/broken-front-exhaust-manifold-studs-324038/"
-    }
-   ]
+   "text": "Short trips in cold weather are hard on the 3V. The phasers run on oil through small passages, and short cold trips never give the PCV time to clear the moisture. One member's only preventive timing work before noises or codes is new VCT solenoids.",
+   "source_url": "https://www.f150forum.com/f4/cam-phaser-preventative-measures-551106/",
+   "source_name": "F150Forum: Cam phaser preventative measures?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "HDPP oddities: larger rear bearings and a stronger rim. \"Not a full floating rear like a F250.\" 7-lug wheels and spacers are scarce.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150forum 7-lug wheels",
-     "url": "https://www.f150forum.com/f38/7-lug-wheels-whats-whole-story-484189/"
-    }
-   ]
+   "text": "6R80: a pan drop only takes about 7 qt of the 13.1 qt total, because the converter has no drain. On the dipstick, \"A\" is the cold range and \"B\" is full hot.",
+   "source_url": "https://www.ford-trucks.com/forums/1332372-ford-6r80-6-speed-transmission-fluid-and-filter-change.html",
+   "source_name": "Ford-Trucks.com: Ford 6R80 6 Speed Transmission Fluid and Filter Change",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "9.75 rear bearings: genuine Ford outer bearings and seals cost $134.59 a pair at a dealer versus about $54 aftermarket (owner, 2021).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150forum rear end size",
-     "url": "https://www.f150forum.com/f38/2013-f-150-rear-end-size-504945/"
-    }
-   ]
+   "text": "Ford's online schedule shows transmission and transfer-case service at 150,000 miles for a 2009 4.6 3V with the 6R80 under normal use. Owners who tow did drain-and-fills at 30k and 60k, and several distrust flushes.",
+   "source_url": "https://www.f150forum.com/f38/maintenance-question-103553/",
+   "source_name": "F150Forum: maintenance question (6R80)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "High-mile 4.6 2V: 230k miles, about 1 qt per 5k between changes. The owner had a #1 plug blow out and a coolant crossover failure.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150online 4.6 to Coyote swap",
-     "url": "https://www.f150online.com/forums/2004-2008-f-150/523666-04-08-f150-4-6-triton-5-0-coyote-swap.html"
-    }
-   ]
+   "text": "Rear diff fluid that is black at 25k is not automatically a problem: an owner notes that on a limited-slip axle it is the friction modifier that darkens it. Add friction modifier when refilling an LS axle.",
+   "source_url": "https://www.f150forum.com/f38/maintenance-question-103553/",
+   "source_name": "F150Forum: maintenance question (6R80)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "EB is the most sensitive to wind and cold (owners agree): \"My eco will easily out do my buddy with the 5.0 in ideal conditions. Otherwise his 5.0 trumps my eco.\"",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "f150forum 5.4 vs 5.0 vs EB",
-     "url": "https://www.f150forum.com/f38/my-5-4-vs-2014-5-0-vs-2014-ecoboost-test-drive-280242/"
-    }
-   ]
+   "text": "3.5 EB with a catch can: empty it much more often in winter. One 2011 owner went from weekly to every 3 days in a Michigan November (18 oz in 240 miles).",
+   "source_url": "https://www.f150ecoboost.net/threads/catch-cans-afe-bladerunner-and-intercooler-moisture.8006/",
+   "source_name": "F150Ecoboost.net: Catch cans, aFe Bladerunner and intercooler moisture",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "5.4 3V intakes: a tuner says 20+ hp is possible \"with just the tuner\" on 87, and warns some 5.4 3V intakes lose power because of the MAF position.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "ford-trucks.com dyno thread",
-     "url": "https://www.ford-trucks.com/forums/651261-dyno-results-f150-cai-catback-tuner.html"
-    }
-   ]
+   "text": "5.0 at high mileage: for a 2013 at 325,000 km in Quebec, owners advise raising only the hot number (5W-30), not 10W-30, to keep cold-start flow for the cam phasers. A high-mileage formula is optional.",
+   "source_url": "https://www.f150forum.com/f38/high-mileage-f150-5-0-oil-choice-505140/",
+   "source_name": "F150Forum: High Mileage F150 5.0 Oil Choice",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "5.0 oil consumption check: a 2011 owner losing about 2 qt per 3-4k miles was told to pull the PCV hose at the driver-side valve-cover nipple; another owner found that hose \"coated with oil\". For scale, a 2011 5.0 at 126,500 miles uses about 1/2 qt per 1,000 miles on 5W-30.",
+   "source_url": "https://www.f150forum.com/f38/2011-5-0-oil-consumption-fix-517372/",
+   "source_name": "F150Forum: 2011 5.0 oil consumption fix?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "09-14 rocker rust-proofing: peel the factory tape off the inner-rocker holes, rinse the rockers, fog them with Fluid Film (owners like the Pro gun with the 360 wand), then re-tape the holes. Leave the drain holes open. One owner did both sides in about an hour.",
+   "source_url": "https://www.f150forum.com/f38/whats-best-way-coat-rockers-fender-wells-fluid-film-455885/",
+   "source_name": "F150Forum: What's the best way to coat rockers/fender wells with fluid film?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "Re-tape with ZIP, 3M flashing or Gorilla tape after flushing and filming the rockers. One owner checked months later and found the tape still in place and plenty of film still coating the inside.",
+   "source_url": "https://www.f150forum.com/f38/cab-corner-rust-394887/index2/",
+   "source_name": "F150Forum: Cab corner rust (page 2)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -3328,7 +3450,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.roughcountry.com/product/ford-leveling-lift-kit-570",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The 04-08 spacer bolt pattern looks symmetrical but owners say \"it only actually fit in 1 specific way\". If the strut sits crooked or the lower mount will not line up, the spacer is clocked wrong: pull it and refit, do not pry it in.",
+     "source_url": "https://www.f150forum.com/f4/leveling-kit-install-help-167497/index2/",
+     "source_name": "F150Forum: Leveling kit install HELP! (page 2, 2004 FX4)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On 4WD trucks, Rough Country says to keep vacuum on the IWE and confirm at least 15.5 mm (0.61 in) of CV shaft thread sticks out through the hub bearing before the axle nut goes on. Then release vacuum and check that the hub and CV turn together.",
+     "source_url": "https://www.tdotperformance.ca/media/instructions/roughcountry-921570s00.pdf",
+     "source_name": "Rough Country: 2004-08 Ford F150 2.5\" suspension kit instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lev-rc568",
@@ -3370,7 +3508,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.roughcountry.com/product/configurable/ford-leveling-lift-kit-568c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The kit tool list calls for a 29 mm socket, but one installer says \"29mm Socket - Should be 30mm for the lower strut NUT side\". He could only get the longer strut back in after loosening the CV axle at the knuckle, which the instructions leave out. Rough Country told him they would fix both.",
+     "source_url": "https://www.f150forum.com/f2/rough-country-2-inch-leveling-kit-instructions-info-370918/",
+     "source_name": "F150Forum: Rough Country 2 Inch Leveling Kit Instructions *Info*",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On 09-13 the spacers are side-specific: A goes driver side and B passenger side, RC logo facing out on both, and 30 lb-ft for the spacer nuts and tower nuts. On 2011-13 trucks, unplug the EPAS connectors by the front diff before starting. RC warns that skipping this \"may result in damage to the EPAS module\".",
+     "source_url": "https://sadlerpowertrain.com/content/pdf/roughcountry/92568000.pdf",
+     "source_name": "Rough Country: 2009-13 Ford F150 2\" suspension kit instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc57530",
@@ -3411,7 +3565,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.roughcountry.com/product/configurable/ford-suspension-lift-kit-558c",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "This 6\" kit keeps the factory struts with front spacers. An owner who bought it for $1,220 shipped (2014) was pointed toward extended Bilstein or Fox struts to replace the spacers. Another member had hardware missing from both lifts he ordered: Fabtech cam bolts, which he had to rebuy for $200, and an RCX bag that was overnighted. Inventory the bags first.",
+     "source_url": "https://www.f150online.com/forums/suspension/495928-rough-country-6-installed-long-review.html",
+     "source_name": "F150online: Rough Country 6\" Installed! (a long review)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc54720",
@@ -3493,7 +3656,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.belltech.com/products/lowering-kit-w-o-shocks-981/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "One installer saw the flip-kit U-bolts bow outward at the 100 lb-ft spec. Thread advice: set them perpendicular to the axle and snug each one, then go 25, 50, 75 and 100 lb-ft in a cross pattern. Belltech sent new U-bolts and plates; he stopped at about 85-90 lb-ft when the plate started to bend again.",
+     "source_url": "https://www.f150forum.com/f66/just-installed-my-belltech-2-4-lowering-kit-456348/",
+     "source_name": "F150Forum: Just installed my Belltech 2/4 lowering kit and.....",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-belltech-979",
@@ -3781,7 +3953,31 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.shocksurplus.com/products/bilstein-5100-monotube-gas-shocks-set-2009-2013-ford-f150-4wd",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners list the four ring grooves as 0, 3/4, 1 1/2 and 2 1/4 in. They disagree on what each one gives: one says 1.5 in of spacer works out to about 2 in of lift (level for most), and several on the top groove ended up slightly nose-high.",
+     "source_url": "https://www.f150forum.com/f38/bilstein-5100-4x4-top-setting-questions-221871/",
+     "source_name": "F150Forum: Bilstein 5100 4x4 Top Setting Questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "Bilstein: the circlip must sit fully in its groove (you should be able to spin it by hand), and the spring-seat adapter goes on tapered end up only. \"Improper installation will cause permanent damage to the shock.\"",
+     "source_url": "https://bilstein.blob.core.windows.net/images/Media/E-WM05-0000008.pdf",
+     "source_name": "Bilstein: B6 4600 / B8 5100 mounting instruction (F150)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The DIY thread uses two pairs of strut-type spring compressors (not coil-spring compressors) plus a 6 mm hex to hold the rod, and re-checks every nut after 75-100 miles. The author chose the 1.5 in groove and kept about 3/4 in of rake.",
+     "source_url": "https://www.f150forum.com/f76/definitive-bilstein-5100-diy-install-thread-202907/",
+     "source_name": "F150Forum: The Definitive Bilstein 5100 DIY Install Thread",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-flowmaster-17418",
@@ -3864,7 +4060,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.borla.com/products/ford-f-150-cat-back-exhaust-system-140417",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2014 5.0 SuperCrew owner on this exact part number: \"You don't need to move your spare. Be ready, It's LOUD.\" Borla's S-Type adds a resonator to the same layout, so a too-loud ATAK can take a resonator.",
+     "source_url": "https://www.f150forum.com/f38/borla-atak-140417-a-281582/",
+     "source_name": "F150Forum: Borla ATAK 140417",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-jba-1676s",
@@ -3915,7 +4120,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://eliteracefab.com/products/jba-04-10-ford-f-series-5-4l-3v-1-5-8in-primary-raw-409ss-cat4ward-header",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Check the flanges with a straightedge before fitting. One 5.4 3V owner found two driver-side ports that \"isn't machined to sit flush\" after install; a senior member suggests having a machine shop mill them flat.",
+     "source_url": "https://www.f150forum.com/f4/jba-shortys-5-4-3v-machined-surface-quality-control-488383/",
+     "source_name": "F150Forum: JBA Shortys 5.4 3v machined surface quality control?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If the header hangs up above the starter when going in from below, pull the motor-mount bolt and rock the engine over with a big pry bar. One installer says it \"greatly increased clearence\".",
+     "source_url": "https://www.f150forum.com/f6/jba-headers-install-231923/",
+     "source_name": "F150Forum: JBA Headers install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-57-2556",
@@ -3956,7 +4177,31 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://apocalypseperformance.com/k-n-04-ford-f150-v8-5-4l-performance-intake-kit-57-2556/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Avoid this intake on a Roush-supercharged 5.4. On a 2008 Foose it set the check-engine light and ran badly within minutes, and was fine again with the stock intake back on. The owner notes the K&N tube is 3 in throughout, while stock goes from 3 in at the throttle body to 4 in at the MAF.",
+     "source_url": "https://www.f150forum.com/f4/cai-issues-111211/",
+     "source_name": "F150Forum: CAI Issues",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners disagree on lean running with a K&N on a stock 5.4. An 04 FX4 owner worried about it after another forum flagged 04-08 trucks; an 07 owner says his K&N \"never had any lean issues\" and suggests pairing it with a custom tune.",
+     "source_url": "https://www.f150forum.com/f4/5-4-lean-issues-aftermarket-cai-k-n-99653/",
+     "source_name": "F150Forum: 5.4 \"Lean Issues\" With aftermarket CAI (K&N)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A tuner warns some 5.4 3V intakes lose power because of where they put the MAF, and says 20+ hp is possible on 87 with just a tune. Tune first; check dyno results for the specific intake.",
+     "source_url": "https://www.ford-trucks.com/forums/651261-dyno-results-f150-cai-catback-tuner.html",
+     "source_name": "Ford-Trucks.com: Dyno results F150 CAI, catback, tuner",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-sct-7015-50",
@@ -3997,7 +4242,37 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.americantrucks.com/sct-sf4-x4-power-flash-tuner-1114-50.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "SCT says to return the truck to stock before any dealer visit or device update; it \"prevents the X4 from becoming locked if the dealer updates the PCM\". The stock file stays on the handheld until you return to stock.",
+     "source_url": "https://guides.americanmuscle.com/407064-manu.pdf",
+     "source_name": "SCT: X4 7015 user manual",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 4.6 owner had a flash finish suspiciously fast with the cooling fan still running. The truck would not start and the X4 could not return to stock, so SCT had to copy the stock file off remotely and build a recovery tune. Owners say to pull the fan fuse during flashes and save the stock file to a PC first.",
+     "source_url": "https://www.f150forum.com/f38/my-experience-bad-flash-no-start-my-sct-x4-346243/",
+     "source_name": "F150Forum: My experience with a bad flash and no start from my sct x4",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The X4 is married to one VIN while a tune is loaded, so you cannot tune a second truck until the first is returned to stock. Owners in a 2011 5.0 thread say a used unit that is still married is useless to a new buyer.",
+     "source_url": "https://www.f150forum.com/f38/sct-x4-two-2011-f150-5-0s-375525/",
+     "source_name": "F150Forum: SCT X4 for Two 2011 F150 5.0s",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After loading a tune you do not need to reload it to relearn: use the X4 \"Clear KAM\" function, or disconnect the battery for 15 minutes (2014 5.0 owner thread).",
+     "source_url": "https://www.f150forum.com/f38/sct-4-tuner-questions-432019/",
+     "source_name": "F150Forum: SCT 4 - Tuner Questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-sct-7015-9708",
@@ -4036,7 +4311,37 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.americantrucks.com/sct-sf4-x4-f150-tuner-9714.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "SCT says to return the truck to stock before any dealer visit or device update; it \"prevents the X4 from becoming locked if the dealer updates the PCM\". The stock file stays on the handheld until you return to stock.",
+     "source_url": "https://guides.americanmuscle.com/407064-manu.pdf",
+     "source_name": "SCT: X4 7015 user manual",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 4.6 owner had a flash finish suspiciously fast with the cooling fan still running. The truck would not start and the X4 could not return to stock, so SCT had to copy the stock file off remotely and build a recovery tune. Owners say to pull the fan fuse during flashes and save the stock file to a PC first.",
+     "source_url": "https://www.f150forum.com/f38/my-experience-bad-flash-no-start-my-sct-x4-346243/",
+     "source_name": "F150Forum: My experience with a bad flash and no start from my sct x4",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The X4 is married to one VIN while a tune is loaded, so you cannot tune a second truck until the first is returned to stock. Owners in a 2011 5.0 thread say a used unit that is still married is useless to a new buyer.",
+     "source_url": "https://www.f150forum.com/f38/sct-x4-two-2011-f150-5-0s-375525/",
+     "source_name": "F150Forum: SCT X4 for Two 2011 F150 5.0s",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After loading a tune you do not need to reload it to relearn: use the X4 \"Clear KAM\" function, or disconnect the battery for 15 minutes (2014 5.0 owner thread).",
+     "source_url": "https://www.f150forum.com/f38/sct-4-tuner-questions-432019/",
+     "source_name": "F150Forum: SCT 4 - Tuner Questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-unleashed-t537119",
@@ -4077,7 +4382,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.americantrucks.com/unleashed-tuning-sf4-x4-power-flash-tuner-w-custom-tunes-0408-54l.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Same lesson for any custom 3V tune: 5 Star told a 4.6 owner they keep low-end timing conservative because the engine \"is prone to detonation on the lower end\". Ask the tuner to revise the file rather than adding timing through the handheld's user options.",
+     "source_url": "https://www.f150forum.com/f38/my-experience-bad-flash-no-start-my-sct-x4-346243/",
+     "source_name": "F150Forum: My experience with a bad flash and no start from my sct x4",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-5star-rtd",
@@ -4118,7 +4432,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.beefcakeracing.com/5star-0408f15054-rtd/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "5 Star told a 4.6 owner the engine \"is prone to detonation on the lower end so they don't add as much\" low-rpm timing. The owner's problems began after he added timing through the X4 user-adjustable options; 5 Star then built him a revised 93 file instead.",
+     "source_url": "https://www.f150forum.com/f38/my-experience-bad-flash-no-start-my-sct-x4-346243/",
+     "source_name": "F150Forum: My experience with a bad flash and no start from my sct x4",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-spyder-hl",
@@ -4157,7 +4480,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.eudmautosports.com/products/spyder-ford-f150-09-14-projector-headlights-halogen-model-led-halo-led-blk-pro-yd-ff15009-hl-bk",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Seal the lamps before install. One owner ran all-purpose silicone, let it cure 24 hours, and reports \"ZERO moisture problems\" after nearly two years. Another who skipped it got moisture in one lamp and says to do it up front.",
+     "source_url": "https://www.f150forum.com/f4/spyder-headlights-249945/",
+     "source_name": "F150Forum: Spyder Headlights",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The LED-halo version still uses a halogen H11 projector that one reviewer calls \"okay, but not of high quality\". He suggests a Retrofit Source replacement projector for HID output.",
+     "source_url": "https://www.f150forum.com/f38/install-review-sypder-halo-projector-headlights-377104/",
+     "source_name": "F150Forum: Install & Review: Sypder Halo Projector Headlights",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "light-anzo-111298",
@@ -4284,7 +4623,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://truckbedcentral.com/products/ranch-hand-summit-front-bumper-for-2009-2014-ford-f-150-fsf09hbl1",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2011 5.0 4x4 owner measured no drop at the wheel-well center after fitting a Summit. Ranch Hand quoted a 2014 owner about 180 lb added to the front end.",
+     "source_url": "https://www.f150forum.com/f38/ranch-hand-front-replacement-bumper-325009/",
+     "source_name": "F150Forum: Ranch Hand front replacement bumper??",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A reply in a 2014 owner's thread passes on that the heavier Ranch Hand front bumper is not a good idea on a 4x2, only on a 4x4. That is secondhand, so call Ranch Hand before fitting one to a 2WD.",
+     "source_url": "https://www.f150forum.com/f7/summit-ranch-hand-bumper-replacement-466525/",
+     "source_name": "F150Forum: Summit Ranch Hand Bumper Replacement",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "grille-raptor-0408",
@@ -4401,7 +4756,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
     "url": "https://www.stage3motorsports.com/278601-04-08-f150-8ft-bed-truxedo-truxport-tonneau.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On the TruXport, tension adjusts at the tailgate end, not at the front crossmember like the Lo Pro, and you may need a thin-wall socket to reach the nut. A Lo Pro owner whose cover kept detaching in crosswinds fixed it by reversing the hook-side Velcro strip. Truck year is not stated; the cover design is the same.",
+     "source_url": "https://www.f150forum.com/f2/how-tighten-truxedo-tonneau-cover-574713/",
+     "source_name": "F150Forum: How to tighten a Truxedo tonneau cover",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "int-wt-441793",
@@ -4671,7 +5035,16 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 2013 Platinum that ground only in right turns, a new Dorman 600-400 hose assembly did not fix it but the IWE solenoid 7L1Z-9H465-B (about $14) did. Another member says the rubber-to-plastic connector on the frame by each wheel can hold vacuum straight ahead and leak in turns.",
+     "source_url": "https://www.f150forum.com/f38/iwe-noise-troubleshooting-405844/",
+     "source_name": "F150Forum: IWE Noise Troubleshooting",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "oem-vct-solenoid",
@@ -4707,7 +5080,23 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Buy new solenoid-to-cover seals with the solenoids. One owner says \"There is no way to get that thing out without destroying it.\" The current solenoid has a check valve on the oil inlet and is the only version sold, but he reports it still does not fully cure hot-idle clatter.",
+     "source_url": "https://www.f150forum.com/f4/5w-30-oil-5-4-3v-good-idea-130457/index24/",
+     "source_name": "F150Forum: 5w-30 oil in the 5.4 3v a good idea? (page 24)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Each VCT housing has a screen under a set screw (about 9/16-18 and 5/16-24, held with green threadlocker), and owners say it comes out easily for cleaning. Housing gaskets: 3L3Z-6C286-EA and 3L3Z-6C285-AA.",
+     "source_url": "https://www.f150forum.com/f4/vct-housing-can-you-remove-screen-clean-481785/",
+     "source_name": "F150Forum: VCT housing - can you remove the screen to clean?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "oem-eb-chain",
