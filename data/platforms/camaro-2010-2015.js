@@ -1517,7 +1517,30 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "url": "https://www.nhtsa.gov/"
     }
    ],
-   "guide": "chain"
+   "guide": "chain",
+   "tips": [
+    {
+     "text": "If two or more cam correlation codes (P0008, P0009, P0016 to P0019) return after a proper chain job, GM says check whether the crankshaft reluctor ring has moved; on some engines you can see it with a borescope through the crank sensor hole. If it moved, the crankshaft must be replaced.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10137734-9999.pdf",
+     "source_name": "GM PIP3423N: DTC P0016 P0017 P0018 P0019 P0008 P0009 (3.6 LLT/LFX)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The extended 3.6 timing chain warranty (TSB 11340) does not list the Camaro, so dealers cannot claim it; the realistic route is a goodwill repair at warranty rates. A dealer tech noted the cars with regular changes and the correct oil rarely need chains; quotes ran about $1,100 to $1,200.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=424523",
+     "source_name": "Camaro5.com: 2010 Camaro 3.6L Timing Chain Inquiry",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Change the 3.6 oil earlier than the oil life monitor says; GM chain-stretch guidance and owners both tie stretch to long oil intervals.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2012/MC-10113848-9999.pdf",
+     "source_name": "GM 12-06-01-009",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "heater-gurgle",
@@ -1532,6 +1555,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     {
      "label": "GM PIC5984B",
      "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10113944-9999.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "For a dash hiss or gurgle with weak idle heat, pull the heater core inlet hose and check the inlet screen for debris; clean or replace it, flush the cooling system, and backflush the core if it was full. GM says do not replace the heater core for noise, since that job means removing the windshield.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10113944-9999.pdf",
+     "source_name": "GM PIC5984B: Hiss or Gurgle Noise From Dash, Reduced Heater Performance (2010-2015 Camaro)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1548,6 +1580,22 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     {
      "label": "GM PIP4735C",
      "url": "https://static.nhtsa.gov/odi/tsbs/2012/SB-10045062-6854.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "The O-ring that seals the hose is part of the block fitting, so replace the whole fitting (GM 22912546, about $29). You need a 34 mm socket on a 12 in extension fed in from the front wheel side, expect to lose about a gallon of coolant, and push or gently tap the hose in until the spring clip snaps behind the flange.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=488429",
+     "source_name": "Camaro5.com: Coolant Leak at Fitting on Engine Block",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The fitting is aluminum and can gall the block threads on removal, so do it with the engine stone cold. After refilling, cycle the engine on and off a few times to purge air; the radiator can look full while the engine is nearly empty and overheat quickly.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=488429",
+     "source_name": "Camaro5.com: Coolant Leak at Fitting on Engine Block",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1581,6 +1629,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "label": "GM PIP5097A",
      "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10114562-9999.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "GM's fix for the ZL1 cold-turn moan is three full drain and refills with Dexron LS 75W-90 (88862624), driving 5 locked circles each way and 4 figure eights at 5 to 10 mph between each fill, with a warm-up drive first. Normal service is every 45,000 miles, or 15,000 miles for severe use.",
+     "source_url": "https://static.oemdtc.com/TSB/MC-10114562-9999.pdf",
+     "source_name": "GM PIP5097A: ZL1 Rear Differential Moan Noise On Turns (2012-2015 Camaro ZL1)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1599,6 +1656,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     {
      "label": "GM SC 13313",
      "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10092909-0335.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Owners replace the spring isolator with a solid one from Lingenfelter or Jannetty Racing and warn that cheap eBay and Amazon units are junk. One owner says the rattle only wears a cosmetic groove in the input shaft; another says the shavings can harm the engine, so get it fixed promptly.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=620459",
+     "source_name": "Camaro5.com: 2012 ZL1 Supercharger Rattle",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
     }
    ]
   },
@@ -1648,6 +1715,22 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "label": "YouTube",
      "url": "https://www.youtube.com/watch?v=2aQG6ckX_iA"
     }
+   ],
+   "tips": [
+    {
+     "text": "Trailing arms alone barely helped one owner; replace the trailing arm outer bushings and the rear cradle bushings first, which usually cures hop, then toe rods. Apex and BMR both say save the diff bushings for last, because harder diff bushings bring a lot more noise and vibration.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=440887",
+     "source_name": "Camaro5.com: Looking to stop wheel hop",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Wheel hop fix order: cradle bushings plus trailing arms with outer bushings first; do diff bushings last because they add the most noise and vibration.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=316648",
+     "source_name": "Camaro5 thread 316648",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1686,6 +1769,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "label": "Camaro5 thread 557526",
      "url": "https://www.camaro5.com/forums/showthread.php?t=557526"
     }
+   ],
+   "tips": [
+    {
+     "text": "A 2010 SS owner cooked four sets of CVs at VIR. Owners say keep rear ride height no lower than about 26 in (rim lip to fender) on 20s or 25.5 in on 19s, roughly 1 to 1.25 in under stock, because steeper axle angles overheat the grease; Z/28 shafts use a different boot and high-temp grease.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=557526",
+     "source_name": "Camaro5.com: Axle/CV Failures on Road Course",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1706,6 +1798,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "label": "Z28.com",
      "url": "https://www.z28.com/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Water pooling by the trunk battery is usually a disconnected sunroof drain hose, the third brake light wiring loom pinched into the trunk seal, or a poorly resealed spoiler. Fold the rear seat down and have someone hose the car while you watch from inside; this owner's leak was the spoiler after a repaint.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=525331",
+     "source_name": "Camaro5.com: Water in trunk under battery!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1721,6 +1822,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     {
      "label": "GM PI1200B Z/28",
      "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10138689-9999.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "GM says slow-stop grind or growl from the Z/28 carbon-ceramic brakes is normal, and \"green\" fade (a longer pedal after hard street stops) lasts until the brakes have seen track temperatures. Use only the Z/28 burnishing procedure, the street one first and then the track one on a real track; the ZL1/1LE procedure can damage them.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10114401-9999.pdf",
+     "source_name": "GM PIC5981A: Normal Characteristic, Brake Noise During Slow Stops (2014-2015 Camaro Z/28)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1839,7 +1949,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Check the lug nut color before torquing: silver nuts take 140 lb-ft, blue nuts 110 lb-ft. It is the most common torque mistake on these cars.",
+     "source_url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf",
+     "source_name": "2012 Camaro owner's manual",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "brakes",
@@ -1933,7 +2052,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      6
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "On the base front brakes the 18 mm caliper bracket bolts are torque-to-yield and the 14 mm guide pin bolts are one-time use, so have new ones before you start. Torque the bracket bolts to 44 ft-lb plus 90 degrees and the guide pin bolts to 20 ft-lb, and grease the hub face to stop the rotor rusting on.",
+     "source_url": "https://www.1aauto.com/how-to-replace-front-brake-pads-and-rotors-v6-3-6l-2010-14-chevy-camaro/video/46384",
+     "source_name": "1A Auto (video): How to Replace Front Brake Pads and Rotors V6 3.6L 2010-14 Chevy Camaro",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Running 18s over SS Brembos: shave the pad \"roller skates\", choose a deep-barrel wheel, and test-fit a rear wheel first.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=6249",
+     "source_name": "Camaro5 thread 6249",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "front-susp",
@@ -2035,6 +2170,22 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "spring-eibach-38144",
     "spring-bmr-sp025",
     "spring-bmr-sp077"
+   ],
+   "tips": [
+    {
+     "text": "If the upper strut nut spins, hold the shaft with a 7 mm Allen key and locking pliers while turning a 24 mm wrench. Torque the two lower strut bolts to 59 ft-lb plus 180 degrees, and tighten the top nut to 52 ft-lb with the car on the ground.",
+     "source_url": "https://www.1aauto.com/how-to-replace-front-strut-and-spring-assembly-2010-12-chevy-camaro/video/44595",
+     "source_name": "1A Auto (video): How to Replace Front Strut and Spring Assembly 2010-12 Chevy Camaro",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To pop the ball joint without a pickle fork, back the nut out flush with the stud end and strike it. Tighten the ball joint nut to 30 ft-lb plus 90 degrees, and torque the frame-end bolt to 37 ft-lb plus 120 degrees only with a jack raising the suspension to ride height.",
+     "source_url": "https://www.1aauto.com/how-to-replace-front-lower-forward-control-arm-2010-13-chevy-camaro/video/45369",
+     "source_name": "1A Auto (video): How to Replace Front Lower Forward Control Arm 2010-13 Chevy Camaro",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2151,6 +2302,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    },
    "parts": [
     "bmr-cb010"
+   ],
+   "tips": [
+    {
+     "text": "Jack under the lower control arm to simulate ride height before torquing the lower shock bolt (59 ft-lb plus 120 degrees) and the control arm-to-knuckle bolt (30 ft-lb plus 120 degrees). The four upper mount bolts take 43 ft-lb and do not need the suspension loaded.",
+     "source_url": "https://www.1aauto.com/how-to-replace-rear-strut-assembly-2010-15-chevy-camaro/video/48917",
+     "source_name": "1A Auto (video): How to Replace Rear Strut Assembly 2010-15 Chevy Camaro",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2266,7 +2426,30 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "The fill and drain plugs take a bare 3/8 in ratchet drive with no socket. The diff holds only about 0.95 qt of gear oil plus 3 oz of limited-slip additive, and both plugs go back at 24 ft-lb; check level by feeling for fluid at the bottom of the fill hole.",
+     "source_url": "https://www.1aauto.com/how-to-check-differential-2010-15-chevy-camaro/video/47317",
+     "source_name": "1A Auto (video): How to Check Differential 2010-15 Chevy Camaro",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "GM later raised the friction modifier to 3 oz per fill. If your gear oil label says it already contains the limited-slip additive (Royal Purple Max Gear, for example), owners add nothing extra.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=442986",
+     "source_name": "Camaro5.com: Help with Differential Fluid?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Z/28: change the diff fluid every 6 track hours, and use only the PF64 oil filter on the dry-sump LS7.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10138689-9999.pdf",
+     "source_name": "GM PI1200B Z/28",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "atf",
@@ -2522,7 +2705,17 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      8
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Forum members have found no confirmed Z/28 dropped valve on Camaro5, but owners point to LS7 guide wear in Corvettes and say the risk rises with time above 6,500 rpm and with aggressive cams. Those who plan to rev or cam the car send the heads out for upgraded guides (about $1,000 per head).",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=603177",
+     "source_name": "Camaro5.com: Z28 valve guides LS7 issue?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "chain",
@@ -2606,6 +2799,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "parts": [
     "afm-269",
     "afm-ams"
+   ],
+   "tips": [
+    {
+     "text": "Decide on VVT before you buy a kit: most L99-to-LS3 conversion kits delete VVT as well as AFM.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=609560",
+     "source_name": "Camaro5.com: AFM delete and Keeping VVT on L99",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2636,7 +2838,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "ZL1, CTS-V and C6 Z06 (non-carbon) six-piston calipers bolt on with ZL1 or CTS-V rotors; you need longer ZL1 brake lines and new bracket bolts, since the originals are torque-to-yield. CTS-V calipers were often cheaper than ZL1 units, about $700 a pair new on eBay, for roughly $1,500 to $1,600 total.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=543214",
+     "source_name": "Camaro5.com: 6 piston front brakes upgrade for SS",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-sc",
@@ -2666,6 +2877,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "sc-magnuson",
     "sc-procharger",
     "sc-edelbrock"
+   ],
+   "tips": [
+    {
+     "text": "Read the whole supercharger manual once or twice before you touch the car and have every tool first; a shop owner says half-finished DIY installs cost more labor to fix. Put the front wheels on ramps for comfort, and use a concrete mixing tub as a coolant catch basin.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=66154",
+     "source_name": "Camaro5.com: TVS2300 install tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2719,104 +2939,47 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "truetrac-912a686",
     "dss-610204",
     "dss-610222"
+   ],
+   "tips": [
+    {
+     "text": "The Chevrolet Performance 3.91 kit reuses the original shims only as a start; replace them if needed to hit GM pinion depth and bearing preload, and fill with the supplied limited-slip additive. The speedometer reads wrong until the dealer loads the new calibration with the kit authorization code.",
+     "source_url": "https://cdn.revolutionparts.io/b0a0b93e061c59a634fb0e1a49af89e6/images/custom/instructions/Chevrolet/Upgrades/391-gear-kit-camaro-19301504-19329768.pdf",
+     "source_name": "Chevrolet Performance: 3.91 axle performance gear kit instructions, Camaro (19301504/19329768)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Torques from the GM gear kit sheet: diff cover bolts 41 ft-lb, drain and fill plugs 24 ft-lb, driveshaft to transmission 72 ft-lb and driveshaft to differential 85 ft-lb.",
+     "source_url": "https://cdn.revolutionparts.io/b0a0b93e061c59a634fb0e1a49af89e6/images/custom/instructions/Chevrolet/Upgrades/391-gear-kit-camaro-19301504-19329768.pdf",
+     "source_name": "Chevrolet Performance: 3.91 axle performance gear kit instructions, Camaro (19301504/19329768)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Check the lug-nut color (silver = 140 lb-ft, blue = 110 lb-ft). It's the most common torque mistake on these cars.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "2012 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
-    }
-   ]
+   "text": "The V6 oil pan is aluminum, so torque the drain plug to only 18 ft-lb; a stripped pan can let the plug vibrate out. The cartridge filter cap also takes 18 ft-lb with a new O-ring, and to reset oil life turn the key to run and press the gas pedal to the floor three times.",
+   "source_url": "https://www.1aauto.com/how-to-change-engine-oil-2010-15-chevy-camaro/video/44626",
+   "source_name": "1A Auto (video): How to Change Engine Oil 2010-15 Chevy Camaro",
+   "confidence": "video",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Change the 3.6 oil early. GM's chain-stretch guidance and owner consensus both point to long oil-life-monitor intervals as the cause.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "GM 12-06-01-009",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2012/MC-10113848-9999.pdf"
-    }
-   ]
+   "text": "On the V6 Aisin AY6 manual, crack the fill plug before the drain plug. Both are 24 mm and take 27 ft-lb, and it holds about 1.9 qt; some fine shavings on the magnetic plug are normal, chunks are not.",
+   "source_url": "https://www.1aauto.com/how-to-check-manual-transmission-fluid-2010-15-chevy-camaro/video/46914",
+   "source_name": "1A Auto (video): How to Check Manual Transmission Fluid 2010-15 Chevy Camaro",
+   "confidence": "video",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "ZL1 diff moan: do the triple drain-and-fill before you replace parts.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "GM PIP5097A",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2015/MC-10114562-9999.pdf"
-    }
-   ]
-  },
-  {
-   "text": "Heater gurgle: the inlet screen, not the core.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "GM PIC5984B",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10113944-9999.pdf"
-    }
-   ]
-  },
-  {
-   "text": "Fixing wheel hop: cradle bushings plus trailing arms with outer bushings first. Diff bushings last because they add NVH.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "Camaro5 thread 316648",
-     "url": "https://www.camaro5.com/forums/showthread.php?t=316648"
-    },
-    {
-     "label": "Camaro5 thread 440887",
-     "url": "https://www.camaro5.com/forums/showthread.php?t=440887"
-    }
-   ]
-  },
-  {
-   "text": "Running 18s over SS Brembos: shave the pad \"roller skates\", choose a deep barrel, and test-fit the rear first.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "Camaro5 thread 6249",
-     "url": "https://www.camaro5.com/forums/showthread.php?t=6249"
-    },
-    {
-     "label": "Camaro5 thread 195407",
-     "url": "https://www.camaro5.com/forums/showthread.php?t=195407"
-    },
-    {
-     "label": "Camaro5 thread 327081",
-     "url": "https://www.camaro5.com/forums/showthread.php?t=327081"
-    }
-   ]
-  },
-  {
-   "text": "ZL1 replicas (20x10 ET23 / 20x11 ET43) are the best-documented no-mod upgrade for SS cars.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Project 6GR 5th/6th gen wheels",
-     "url": "https://project6gr.com/5th-6th-gen-camaro-wheels/"
-    }
-   ]
-  },
-  {
-   "text": "Z/28 owners: change diff fluid every 6 track hours, and use only the PF64 filter on the dry-sump LS7.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "GM PI1200B Z/28",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10138689-9999.pdf"
-    }
-   ]
+   "text": "GM lists ZL1 diff fluid changes at 45,000 miles normally or every 15,000 miles for severe use, with Dexron LS 75W-90 that already contains the modifier.",
+   "source_url": "https://static.oemdtc.com/TSB/MC-10114562-9999.pdf",
+   "source_name": "GM PIP5097A: ZL1 Rear Differential Moan Noise On Turns (2012-2015 Camaro ZL1)",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -3061,7 +3224,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.eibach.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Mark the upper strut perch against the lower perch before taking the front strut apart and reassemble in the same orientation, or it can make noise. Retorque every rear bushing pivot with the full weight of the car on the suspension to avoid bushing preload and uneven drop.",
+     "source_url": "https://smhttp-ssl-39784.nexcesscdn.net/media/product_pdf/38144.140.pdf",
+     "source_name": "Eibach: Pro-Kit 38144.140 installation instructions, 2010+ Camaro SS",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "spring-bmr-sp025",
@@ -3100,7 +3272,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.phastekperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a convertible the 1.4 in springs left the rear struts sitting on the bump stops, and cutting the stops dropped the rear another inch. BMR and the seller agreed convertibles are likely too heavy for the 1.4 in kit and refunded it; BMR lists it as V8 coupe only.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=138322",
+     "source_name": "Camaro5.com: BMR 1.4\" drop springs, sway bars, pro bushing kit, trailing arms, toe rods install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The front springs go back on without a compressor; index the spring into both seats and torque the upper strut nut to 52 ft-lb. Then reset the front bushings at ride height on the alignment rack: radius rod bolt 32 ft-lb, lower control arm bolt 39 ft-lb.",
+     "source_url": "https://www.phastekperformance.com/content/inst/BMR_SP052_Inst.pdf",
+     "source_name": "BMR Suspension: Lowering springs for 2010-present Camaro installation instructions (SP019-SP025, SP052-SP054)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "spring-bmr-sp077",
@@ -3178,7 +3366,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.pedders.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The 2011 and later Camaros have a white ring on the upper strut cushion that the XA top will not fit; it lifts out to expose the black cushion the coilover does fit. Measure rim-to-fender height at all four corners before you start so you can set the drop; this owner raised his 5/8 in front after scraping.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=196208",
+     "source_name": "Camaro5.com: Pedders XA Coilovers Installation & Review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coil-bc-br",
@@ -3251,7 +3448,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    ],
    "notes": "Wheel hop fix order: cradle bushings first.",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "When replacing the rear cradle bushings, keep and reuse the four black caps under each big bushing; the BMR instructions do not mention them and helpers almost threw them out. The instruction photo of the installed cradle (Image 10) is shown upside down.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=138322",
+     "source_name": "Camaro5.com: BMR 1.4\" drop springs, sway bars, pro bushing kit, trailing arms, toe rods install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-borla-140356",
@@ -3285,7 +3491,24 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The ATAK does not need a tune; the popping on decel with the clutch in is normal and just louder now. Owners say staying in 6th while coasting to a light, or coasting with the clutch in, cuts most of it.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=110680",
+     "source_name": "Camaro5.com: Borla ATAK require a tune?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "An L99 owner with the ATAK had a constant 1,200 to 1,800 rpm drone that an AFM disabler did not fix. Replies split: some say tuning out AFM ended it, others fixed it with a resonated X-pipe or J-pipes instead.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=478665",
+     "source_name": "Camaro5.com: Eliminating drone with MAGNAFLOW resonated X-PIPE",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "exh-borla-140532",
@@ -3324,7 +3547,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.phastekperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Several owners with the ATAK, including with long tubes, say drone is mild and they can talk at highway speed; one with Kooks and AFM tuned out had less drone than with a plain muffler delete. Expect worse mileage because it encourages revving.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=110039",
+     "source_name": "Camaro5.com: How Bad Is Borla ATAK Catback Drone?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-rotofab",
@@ -3402,7 +3634,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.kooksheaders.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Mark each O2 sensor position before removal, install the supplied O2 extensions on the front sensors, and anti-seize all sensor threads. Loosely hang the connection pipes and tighten from the rear forward, and check clearance around the starter cable and reroute it with zip ties if needed.",
+     "source_url": "https://www.catalograck.com/ImgVD/KKH/KIT-LS3-T_KIT-GEN5Z28GM_10-15_Chevrolet_Camaro_V8_Instructions.pdf",
+     "source_name": "Kooks: 2010-2015 Camaro SS/ZL1/Z28 header installation instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-arh",
@@ -3441,7 +3682,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.phastekperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Without the car 2 ft off the ground, pull the single 11 mm steering shaft bolt and push the shaft up for clearance; one installer later traced a steering grind to that bolt left loose. Slide the high-flow cats on with the O2 bungs pointing inward and level (9 to 11 o'clock) so the sensor never hangs below the cat.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=286742",
+     "source_name": "Camaro5.com: Installed ARH headers. What I've learned...",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "ARH told one owner 20 ft-lb on the header bolts with a recheck after 100 to 200 miles. A passenger header rubbed the starter heat shield until he bent it back, and two headless bolts threaded into the head make a hands-free way to hang the header and gasket.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=286742",
+     "source_name": "Camaro5.com: Installed ARH headers. What I've learned...",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-texas",
@@ -3480,7 +3737,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.beefcakeracing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A one-day jack stand install of Texas Speed 1-7/8 in headers did not require dropping the driveshaft. Soak the O2 sensors and manifold bolts the night before, unplug the O2 connectors at the back of the heads (pull the blue or green lock first) before jacking the car up, and torque header bolts to 18 ft-lb.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=516684",
+     "source_name": "Camaro5.com: DIY: Long Tube Header Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A ZL1 owner had to grind the dipstick tube mounting arm because the thicker header flange stopped the holes lining up, and had to pull the passenger ground strap to seat the flange. Tell your tuner to delete the rear O2s or expect a check engine light.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=516684",
+     "source_name": "Camaro5.com: DIY: Long Tube Header Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-trifecta",
@@ -3519,7 +3792,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.trifectaperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a flash fails partway and the car shows Service StabiliTrak and will not start, load another tune file; this owner's second flash worked. Owners say the tune leaves a flash counter imprint, so do not count on the transparency option hiding it from a dealer.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=428806",
+     "source_name": "Camaro5.com: Trifecta Tune Review for LFX//November 2015",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sc-magnuson",
@@ -3558,7 +3840,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.lethalperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Pull the radiator for drill access to the balancer, break the balancer bolt with a 6-point 24 mm socket plus heat and a long cheater pipe (impacts often fail), and never install the new bolt with an impact: 37 ft-lb plus 140 degrees. Automatics need a flywheel holding tool (J-42386-A) with the starter removed.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=66154",
+     "source_name": "Camaro5.com: TVS2300 install tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Hook the rear hoses to the blower on the bench before setting it on the engine; the firewall heater hoses were the hardest part for one installer. Owners run one-step-colder plugs (NGK TR6 gapped about 0.034 in) with boost, and some needed the copper shim to clear the oil pressure sensor clip.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=66154",
+     "source_name": "Camaro5.com: TVS2300 install tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sc-procharger",
@@ -3597,7 +3895,17 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.autoaddictusa.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 1LE owner making 11.8 psi on an 8.125 in crank and 3.4 in blower pulley suspected belt slip and sandblasted the blower pulley rather than overtighten and kill the bearings. Another owner says the green Gates belts are only stronger, not grippier, and lost boost with one; he runs a Continental Poly-V belt.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=577144",
+     "source_name": "Camaro5.com: procharger belt and pulley",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "sc-edelbrock",
@@ -3695,7 +4003,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.269motorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An LS3-style conversion kit removes VVT; if you want to keep VVT, do an AFM-only delete with a VVT cam (one owner ran a GPI SS-series VVT cam and loved the low-end torque). On a supercharged car owners say a pulley change is simpler than camming it, especially where emissions rules apply.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=609560",
+     "source_name": "Camaro5.com: AFM delete and Keeping VVT on L99",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "afm-ams",
@@ -3822,7 +4139,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.tbwperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Expect a Truetrac with 3.91s to clunk and whine on and off throttle, louder than stock, especially with offset or solid diff bushings. Owners quieted theirs by switching from synthetic to Lucas 85W-140 conventional gear oil.",
+     "source_url": "https://www.camaro5.com/forums/showthread.php?t=511741",
+     "source_name": "Camaro5.com: Eaton Tru-Trac Differential",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "dss-610204",
@@ -3861,7 +4187,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.phastekperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After installing, measure the front CV clearance at the transmission end; it must be 3.625 to 4.125 in or the shaft must not be run. Torque the front adapter hardware to 70 ft-lb (M12) and 57 ft-lb (M10), and install a rear subframe lockout first or the shaft can fail.",
+     "source_url": "https://driveshaftshop.com/wp-content/uploads/2026/08/2010-Camaro_G8_SS-Direct-Fit-Driveshaft-Install-2026-Edit.pdf",
+     "source_name": "Driveshaft Shop: 2010+ Camaro/G8/SS 1-piece direct fit driveshaft install sheet",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "dss-610222",
@@ -3900,7 +4235,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "url": "https://www.jsdmachineworks.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "With the stock differential, the rear adapter takes three M12 bolts at 70 ft-lb and four 7/16 in bolts at 58 ft-lb. DSS requires a rear subframe lockout with any 1-piece shaft on these cars.",
+     "source_url": "https://driveshaftshop.com/wp-content/uploads/2026/08/2010-Camaro_G8_SS-Direct-Fit-Driveshaft-Install-2026-Edit.pdf",
+     "source_name": "Driveshaft Shop: 2010+ Camaro/G8/SS 1-piece direct fit driveshaft install sheet",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ]
 };

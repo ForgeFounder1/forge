@@ -1833,7 +1833,30 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "url": "https://www.youtube.com/watch?v=kwe8Kw8paOA"
     }
    ],
-   "guide": "engine-s197"
+   "guide": "engine-s197",
+   "tips": [
+    {
+     "text": "Pull 3V plugs only with the engine at room temperature and with hand tools. Back each plug out 1/8 to 1/4 turn, fill the well just over the hex with 1/2 to 3/4 teaspoon of carb cleaner, wait at least 15 minutes, then work it back and forth; about 33 ft-lb to break loose is normal.",
+     "source_url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb08-07-06.pdf",
+     "source_name": "Ford TSB 08-7-6: Spark Plug Removal Instructions, 4.6L 3V/5.4L 3V/6.8L 3V",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The TSB covers Mustang 4.6 3V engines built before 11/30/07; the build date is on the left cam cover sticker. Coat only the ground electrode shield of new plugs with nickel anti-seize, and do not overdo the cleaner, since too much can hydro-lock the engine.",
+     "source_url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb08-07-06.pdf",
+     "source_name": "Ford TSB 08-7-6: Spark Plug Removal Instructions, 4.6L 3V/5.4L 3V/6.8L 3V",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "One owner followed the TSB with Sea Foam Deep Creep and every plug came out, so he never needed the tool he bought. Another followed it exactly and still broke one, so have the extractor on hand before you start.",
+     "source_url": "https://www.s197forum.com/threads/lisle-3v-broken-spark-plug-removal-tool.28601/",
+     "source_name": "S197Forum.com: Lisle 3V Broken Spark Plug Removal Tool",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "3v-tick",
@@ -1844,7 +1867,30 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "fix": "See TSB 06-19-8 and TSB 06-9-11. Titles and PDF links seen in search results only; content summary unconfirmed.",
    "parts": [],
    "conf": "unconfirmed",
-   "src": []
+   "src": [],
+   "tips": [
+    {
+     "text": "Ford says the 3V makes many normal noises; diagnose with oil at 160 F or hotter and note whether the noise goes away above 1,200 rpm. Compare against a Mustang with an engine built 3/30/2005 or later.",
+     "source_url": "https://stangnet.com/images/stories/docs/s197_TSBs/06-19-08.pdf",
+     "source_name": "Ford TSB 06-19-8: Ticking and/or Knocking Noise / Startup Rattle, 4.6L/5.4L 3V",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners say replace both phasers and the whole timing set together; the FRPP 3V kit cost about the same as two phasers ($260 in 2015). One owner who opened his found a broken guide between the chains, and many add the GT500 oil pump while the cover is off.",
+     "source_url": "https://www.s197forum.com/threads/should-i-change-just-one-phaser.119557/",
+     "source_name": "S197Forum.com: Should I Change Just One Phaser?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "With the timing cover off the front of the oil pan is open, so do not drop the pickup tube bolts. The new pump's pickup tube cannot go in without dropping the pan, because one bolt is up at the No. 4 main.",
+     "source_url": "https://www.s197forum.com/threads/should-i-change-just-one-phaser.119557/",
+     "source_name": "S197Forum.com: Should I Change Just One Phaser?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "water-leak",
@@ -1866,6 +1912,22 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     {
      "label": "YouTube",
      "url": "https://www.youtube.com/watch?v=dewbcpg2FLw"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Remove the cowl grille and check for standing water in the cowl channel; siphon it out through a grommet hole. Then confirm all 10 cowl panel grommets and seals are present and sealing, and that the grille sits flat against the windshield.",
+     "source_url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb08-26-07.pdf",
+     "source_name": "Ford TSB 08-26-7: Water Leak, Front Floor Area (2005-2009 Mustang)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To find the leak, tape off the trunk body vents, run the blower on high with recirculation off, and spray soapy water on the A-pillar, fender and hood hinge seams to look for bubbles. Ford says not to remove the dash or dash insulator.",
+     "source_url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb08-26-07.pdf",
+     "source_name": "Ford TSB 08-26-7: Water Leak, Front Floor Area (2005-2009 Mustang)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1891,6 +1953,29 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     {
      "label": "YouTube",
      "url": "https://www.youtube.com/watch?v=cwvd5B5vlgs"
+    }
+   ],
+   "tips": [
+    {
+     "text": "For hard cold shifts on 2011-12 MT82 cars built on or before 8/15/2011, Ford drains and refills with 2.6 L (2.7 qt) of Motorcraft Dual Clutch Transmission Fluid XT-11-QDC. Ford warns that friction modifiers and other additives can help at first but wear the synchros.",
+     "source_url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb11-11-01.pdf",
+     "source_name": "Ford TSB 11-11-1: MT82 Cold Start Shift Effort, built on or before 8/15/2011",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2015 GT owner said a McLeod braided clutch line fixed his lockout at 7,000 rpm better than any shifter part. Route the line toward the firewall, away from the headers, and make sure the lower fitting clicks twice; on one click it popped off three times while bleeding (about 300 pumps).",
+     "source_url": "https://www.mustang6g.com/forums/threads/my-experience-with-the-mt82-brackets-springs-shifters-lines-and-fluids.162059/",
+     "source_name": "Mustang6G.com: My experience with the MT82",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The Steeda shifter bracket (poly bushing) made the biggest difference for sloppiness for about $40 used; the Whiteline insert added NVH for little gain. A short-throw lever took about 5 hours on jack stands and needed the exhaust and driveshaft dropped.",
+     "source_url": "https://www.mustang6g.com/forums/threads/my-experience-with-the-mt82-brackets-springs-shifters-lines-and-fluids.162059/",
+     "source_name": "Mustang6G.com: My experience with the MT82",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1940,6 +2025,29 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "label": "NHTSA recalls API (2018)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=ford&model=mustang&modelYear=2018"
     }
+   ],
+   "tips": [
+    {
+     "text": "TSB 25-2301 covers 2018-2020 Mustang 10R80 harsh or delayed engagement and shifts, with codes including P0751 through P0772 and P2700 through P2708. Ford blames axial movement of the CDF clutch cylinder sleeve leaking hydraulic pressure, so a reflash alone may not fix it.",
+     "source_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-11021972-0001.pdf",
+     "source_name": "Ford TSB 25-2301: Harsh/Delayed Engagement and/or Harsh/Delayed Shift (10R80)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Disconnecting the battery resets the 10R80 adaptive learning; owners say it takes about 2 weeks to smooth out again. Only trans memory, fuel trims and radio presets clear, and you should let it idle a few minutes afterward to relearn trims.",
+     "source_url": "https://www.mustang6g.com/forums/threads/transmission-issue.148990/",
+     "source_name": "Mustang6G.com: Transmission issue?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "10R80 harsh shifts: ask the dealer for TSB 23-2152 or 25-2126 by number.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10236683-0001.pdf",
+     "source_name": "Ford TSB 23-2152",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1967,6 +2075,29 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "label": "mustang6g 130255",
      "url": "https://www.mustang6g.com/forums/threads/130255/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Make sure the dealer marks the dipstick and fills to the right capacity at the start of the 500 mile consumption test; one owner's first test was spoiled when they put in 9 quarts instead of 10. About 1 quart per 500 miles is treated as acceptable, so engine replacement starts above that.",
+     "source_url": "https://www.mustang6g.com/forums/threads/oil-consumption-test-and-black-sooting.136239/",
+     "source_name": "Mustang6G.com: Oil consumption test and black sooting",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2019 GT owner saw blue smoke on hot restarts and found the oil nearly empty at 11,000 miles. Another owner's blue puffs stopped after a new PCV valve and a second (driver side) catch can.",
+     "source_url": "https://www.mustang6g.com/forums/threads/2019-gt-oil-consumption.150700/",
+     "source_name": "Mustang6G.com: 2019 GT Oil Consumption",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Gen 3 Coyote: check the oil often. Owners report 5W-30 (the 2021 spec) cuts consumption.",
+     "source_url": "https://www.mustang6g.com/forums/threads/184651/",
+     "source_name": "mustang6g 184651",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1991,7 +2122,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "url": "https://www.mustangecoboost.net/threads/27361/"
     }
    ],
-   "disputed": true
+   "disputed": true,
+   "tips": [
+    {
+     "text": "Mark the cold coolant level on the degas bottle; a 2016 EcoBoost owner saw it drop about 1/8 to 3/16 in along with a rough cold start and white smoke. A cheap borescope through the plug hole found coolant weeping down the No. 4 cylinder wall, while the dealer first said it was nothing.",
+     "source_url": "https://www.mustang6g.com/forums/threads/possible-head-gasket-issue-dealer-cannot-diagnose.135626/",
+     "source_name": "Mustang6G.com: Possible head gasket issue, dealer cannot diagnose",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "bbq-tick",
@@ -2005,7 +2145,24 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "unconfirmed",
     "forum"
    ],
-   "src": []
+   "src": [],
+   "tips": [
+    {
+     "text": "Ford published that the 2011-2019 5.0 typewriter tick, often after an oil change, is a normal characteristic, so dealers will not chase it unless it is louder than a tick. Owners note some ticks started at about 1,300 miles before any oil change.",
+     "source_url": "https://www.mustang6g.com/forums/threads/per-ford-officially-the-2011-2019-f150-mustang-5-0-%E2%80%9Ctypewriter-tick%E2%80%9D-is-a-normal-characteristic.116925/",
+     "source_name": "Mustang6G.com: Per Ford (officially) the 2011-2019 F150/Mustang 5.0 Typewriter Tick is a normal characteristic",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners say the tick showed up after an oil change and tracks oil brand; several report a bottle of Liqui Moly Ceratec quieted it, though one said it was still there cold. At light throttle around 2,000 rpm the direct injectors also tick, which is normal.",
+     "source_url": "https://www.mustang6g.com/forums/threads/gen-3-tick.184877/page-2",
+     "source_name": "Mustang6G.com: Gen 3 tick",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "s550-recalls",
@@ -2090,7 +2247,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      0
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "On the S197 1/2-20 studs you want at least 10 full turns of the nut. With a 1/4 in spacer, use longer studs and open-end nuts, or E-T style shank nuts if the wheel stud holes are at least 5/8 in, which owners say all OE S197 wheels are.",
+     "source_url": "https://www.s197forum.com/threads/longer-wheel-studs-needed-or-not.132356/",
+     "source_name": "S197Forum.com: Longer Wheel Studs. Needed Or Not.",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "S550 Performance Pack Brembos: check the inner barrel and spoke profile, not just diameter. Buy S550-specific wheels or test-fit one wheel before mounting tires.",
+     "source_url": "https://www.mustang6g.com/forums/threads/129909/",
+     "source_name": "mustang6g 129909 (PP Brembo clearance)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "s197-front",
@@ -2182,6 +2355,15 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    },
    "parts": [
     "spring-eibach-35125"
+   ],
+   "tips": [
+    {
+     "text": "Much of the OE front hardware is one-time use; owners upgrade 2005-10 strut bolts and nuts to the 2011-14 fine pitch hardware. One owner reused most bolts many times without losing torque because the 05-10 manual uses plain torque, not torque plus angle; the front sway bar end links were the exception.",
+     "source_url": "https://www.s197forum.com/threads/eibach-pro-kit-lowering-springs-installation-advice.136882/",
+     "source_name": "S197Forum.com: Eibach pro-kit lowering springs installation advice",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2283,6 +2465,15 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "parts": [
     "panhard-bmr-phr006",
     "panhard-steeda-2550"
+   ],
+   "tips": [
+    {
+     "text": "A rod-end/rod-end Panhard is noisy on the street; an owner running poly/poly called it stiff and noisy enough. Choose rod ends only if the car is mostly for the track.",
+     "source_url": "https://www.s197forum.com/threads/panhard-bar-install-questions.132166/",
+     "source_name": "S197Forum.com: Panhard bar install questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2378,6 +2569,15 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    },
    "parts": [
     "tool-lisle-65600"
+   ],
+   "tips": [
+    {
+     "text": "For 3V timing jobs, borrow the cam tools from another owner (most parts stores do not have them), follow a video walkthrough, and take your time. Do the chains, guides, tensioners and both phasers together over 100k miles.",
+     "source_url": "https://www.s197forum.com/threads/should-i-change-just-one-phaser.119557/",
+     "source_name": "S197Forum.com: Should I Change Just One Phaser?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2508,7 +2708,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      3
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "After lowering an S550, loosen every rubber-bushed pivot and retorque with the car level on all four wheels, before the alignment. BMR lists the front inner radius arm and lower arm, and in the rear the camber link, toe link outer, rear lower arm and its knuckle mounts.",
+     "source_url": "https://www.mustang6g.com/forums/threads/bmr-tech-tip-clock-those-bushings-after-lowering-your-s550.44129/",
+     "source_name": "Mustang6G.com: BMR Tech Tip: Clock those bushings after lowering your S550!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If you install the Steeda IRS subframe alignment kit, support the car on the chassis, torque the 4 main subframe bolts to 129 ft-lb and the 13 mm bolts to 41 ft-lb. Get an alignment the first time, because the subframe moves.",
+     "source_url": "https://cdn.vividracing.com/file/vr/902/2021/555-4438.pdf",
+     "source_name": "Steeda: 2015 S550 Mustang Rear Subframe Alignment Kit instructions (555-4438)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lowering",
@@ -2554,6 +2770,22 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "coil-bc-br",
     "panhard-bmr-phr006",
     "panhard-steeda-2550"
+   ],
+   "tips": [
+    {
+     "text": "Owners say clock the bushings with the car at ride height on an alignment lift; skip it and an S550 rear may sit almost as high as stock after new springs.",
+     "source_url": "https://www.mustang6g.com/forums/threads/installed-fp-m-5300-w-magneride-springs-and-j-m-camber-plates-today.147311/",
+     "source_name": "Mustang6G.com: Installed FP M-5300-W magneride springs and J&M camber plates today",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Lowered S197: add an adjustable Panhard bar to re-center the axle, expect the rear bump stop bracket to touch wide wheels at full droop, and check lower control arm relocation geometry before lowering and widening the rear.",
+     "source_url": "https://www.youtube.com/watch?v=xLp-10FzDo4",
+     "source_name": "YouTube",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2587,6 +2819,15 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "torque": null,
    "parts": [
     "swap-fp-504v"
+   ],
+   "tips": [
+    {
+     "text": "One builder spent about 40 hours just on wiring by merging a 2013 engine harness with the 2007 harness and repinning the PCM plugs. Another said the hardest part was getting throwout bearing preload right; one swapper had almost 1/2 in of preload before shimming.",
+     "source_url": "https://www.s197forum.com/threads/finishing-up-a-coyote-swap.138599/",
+     "source_name": "S197Forum.com: Finishing up a coyote swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2616,6 +2857,22 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "torque": null,
    "parts": [
     "trans-steeda-tr3160"
+   ],
+   "tips": [
+    {
+     "text": "For a TR6060 in an S197 you need a GT500 crossmember, the stock GT500 shifter linkage (a Barton does not include it; MGW does) and a 26-spline clutch; shifter pins are 7R3Z-7314-A. OEM crossmembers are discontinued and scarce, so buy one when you find it.",
+     "source_url": "https://www.s197forum.com/threads/tr6060-conversion-parts-list.122630/",
+     "source_name": "S197Forum.com: TR6060 Conversion Parts List",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The TR6060 reverse light plug sits on the other side, so move the loom. The reverse lockout solenoid needs a pigtail and wiring, but you can skip it and just push harder for reverse.",
+     "source_url": "https://www.s197forum.com/threads/tr6060-conversion-parts-list.122630/",
+     "source_name": "S197Forum.com: TR6060 Conversion Parts List",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2670,99 +2927,55 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "With new pinion bearings set preload to 16 to 28 in-lb (8 to 14 in-lb with used ones), and never back the pinion nut off to reduce preload; install a new collapsible spacer instead. Set backlash to 0.008 to 0.012 in, checked at 4 spots with no more than 0.004 in variation.",
+     "source_url": "https://performanceparts.ford.com/download/instructionsheets/FORDINSTSHTM-4209-8.PDF",
+     "source_name": "Ford Performance: 8.8 in ring and pinion installation instructions (M-4209-8.8)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To read a faint contact pattern, stir a little gear oil into the marking compound and load the ring gear with a ratchet strap around the carrier while you spin the pinion. One owner tried shims from 0.010 to 0.030 in and his original 0.023 was best; setup bearings can shift the pattern, so recheck after final bearings.",
+     "source_url": "https://www.s197forum.com/threads/help-with-gear-install.129450/",
+     "source_name": "S197Forum.com: Help with Gear Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "3V spark plugs: follow TSB 08-7-6 exactly on a cold engine. Broken plugs are the norm on engines built before 11/30/07.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Ford TSB 08-7-6",
-     "url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb08-07-06.pdf"
-    }
-   ]
+   "text": "The S197 8.8 takes 75W-140; most major-brand 75W-140 already has the limited-slip additive, but Motorcraft and Amsoil do not, so add 4 oz of friction modifier. Ford lists 4.25 pints including the modifier; one owner who added modifier to an oil that already had it had problems.",
+   "source_url": "https://www.s197forum.com/threads/2005-rear-gear-oil.109468/",
+   "source_name": "S197Forum.com: 2005+ Rear Gear Oil",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Lowered S197: get an adjustable Panhard bar to re-center the axle. Expect the rear bump-stop bracket to touch wide wheels at full droop. Check lower control arm relocation geometry before lowering and widening the rear.",
-   "conf": [
-    "verified",
-    "video"
-   ],
-   "src": [
-    {
-     "label": "Apex S197/S550 fitment guides (site home; guide gave no page URL)",
-     "url": "https://apexraceparts.com/"
-    },
-    {
-     "label": "YouTube",
-     "url": "https://www.youtube.com/watch?v=xLp-10FzDo4"
-    }
-   ]
+   "text": "A 2015 GT owner said a fresh fluid change cleaned up the MT82's nibble going into gears; it is like an oil change with a hard-to-reach fill hole. Use a push-down pump instead of a squeeze bulb and it takes about an hour wheels up to wheels down.",
+   "source_url": "https://www.mustang6g.com/forums/threads/my-experience-with-the-mt82-brackets-springs-shifters-lines-and-fluids.162059/",
+   "source_name": "Mustang6G.com: My experience with the MT82",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "S550 PP Brembo: check the inner barrel and spoke profile, not just diameter. Use S550-specific wheels (SVE, Apex, Project6GR) or test-fit one wheel before mounting tires.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "Apex S197/S550 fitment guides (site home; guide gave no page URL)",
-     "url": "https://apexraceparts.com/"
-    },
-    {
-     "label": "mustang6g 129909 (PP Brembo clearance)",
-     "url": "https://www.mustang6g.com/forums/threads/129909/"
-    },
-    {
-     "label": "mustang6g 204411 (Bullitt caliper clearance)",
-     "url": "https://www.mustang6g.com/forums/threads/204411/"
-    }
-   ]
+   "text": "For track days, owners say Ford Performance recommends 5W-50 in the Coyote; another owner says the factory track spec has been 5W-30 since 2015, with 5W-20 for the street. Check your own owner manual, since 2021 and later cars list 5W-30 for all use.",
+   "source_url": "https://www.mustang6g.com/forums/threads/coyote-engine-oil-for-the-track.83251/page-5",
+   "source_name": "Mustang6G.com: Coyote engine oil for the track?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "S550 wide fronts (≥10.5 in): budget for a 20–25 mm spacer with extended studs plus camber plates.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "Apex S197/S550 fitment guides (site home; guide gave no page URL)",
-     "url": "https://apexraceparts.com/"
-    },
-    {
-     "label": "ThreePiece.us Mustang fitment blog (site home; guide gave no page URL)",
-     "url": "https://threepiece.us/"
-    }
-   ]
-  },
-  {
-   "text": "Gen 3 Coyote: check oil often. 5W-30 (the 2021 spec) is reported to cut consumption.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "mustang6g 184651",
-     "url": "https://www.mustang6g.com/forums/threads/184651/"
-    }
-   ]
-  },
-  {
-   "text": "10R80: if you have harsh shifts, ask for TSB 23-2152 or 25-2126 by number.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Ford TSB 23-2152",
-     "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10236683-0001.pdf"
-    }
-   ]
-  },
-  {
-   "text": "COBB Accessport / Stage 1 for 2015–23 EcoBoost: $665 per a search summary (page Cloudflare-blocked).",
-   "conf": "unconfirmed",
-   "src": []
+   "text": "Check the dipstick between changes on a Gen 3 Coyote; one 2019 owner was told at 11,000 miles there was hardly any oil in it a month after a top-off, with no drips under the car.",
+   "source_url": "https://www.mustang6g.com/forums/threads/2019-gt-oil-consumption.150700/",
+   "source_name": "Mustang6G.com: 2019 GT Oil Consumption",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -2973,7 +3186,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.americanmuscle.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Leave the lower control arm, upper control arm and Panhard bolts loose and tighten them only with the car on its wheels. Owners also swapped in new upper strut mounts during the job after one old mount failed later and started clunking.",
+     "source_url": "https://www.s197forum.com/threads/eibach-pro-kit-lowering-springs-installation-advice.136882/",
+     "source_name": "S197Forum.com: Eibach pro-kit lowering springs installation advice",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A cheap camber fix for the Pro-Kit drop is to rotate the upper strut mounts 180 degrees, which brings front camber back toward factory spec. One owner ran Pro-Kits for years with GT500 strut mounts, an adjustable Panhard bar and camber bolts, and both caster and camber stayed in Ford spec.",
+     "source_url": "https://www.s197forum.com/threads/eibach-pro-kit-lowering-springs-installation-advice.136882/",
+     "source_name": "S197Forum.com: Eibach pro-kit lowering springs installation advice",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "spring-eibach-35145",
@@ -3012,7 +3241,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.americanmuscle.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After the Pro-Kit, one 2016 GT had -3 degrees of rear camber on one side against -2 on the other, and the shop wrongly said it could not be fixed. Bring a list of fixes to the alignment: camber bolts up front and adjustable rear camber arms in back.",
+     "source_url": "https://www.mustang6g.com/forums/threads/gt-convertible-with-eibach-pro-kit.77410/",
+     "source_name": "Mustang6G.com: GT Convertible with Eibach Pro-Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners did the job in about 2 hours; the rear springs need a pry bar to come out. The kit includes new bump stops, so swap them rather than trimming the old ones.",
+     "source_url": "https://www.mustang6g.com/forums/threads/eibach-pro-kit-springs-install-pictures.11512/",
+     "source_name": "Mustang6G.com: Eibach Pro-Kit Springs install pictures",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "spring-steeda-8210",
@@ -3051,7 +3296,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.steeda.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners say these feel close to stock on the highway but body roll drops a lot in corners. Shop install plus alignment ran about $250 to $400.",
+     "source_url": "https://www.mustang6g.com/forums/threads/steeda-progressive-spring-review.30066/",
+     "source_name": "Mustang6G.com: Steeda Progressive Spring review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "spring-fp-m5300xa",
@@ -3090,7 +3344,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.steeda.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If the rear barely drops after Ford Performance springs, clock the bushings: loosen and retighten every rubber bushing pivot with the car at ride height. The owner fuelled up and did this and the rear came down further (thread is the MagneRide version, M-5300-W; same IRS bushings).",
+     "source_url": "https://www.mustang6g.com/forums/threads/installed-fp-m-5300-w-magneride-springs-and-j-m-camber-plates-today.147311/",
+     "source_name": "Mustang6G.com: Installed FP M-5300-W magneride springs and J&M camber plates today",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Ford says the X springs are only slightly stiffer than Performance Pack springs. An owner who paired them with Bilstein B6 dampers said the ride was about 5 to 10 percent stiffer than a stock PP and much better controlled than his old stiffer setup.",
+     "source_url": "https://www.mustang6g.com/forums/threads/ford-x-springs-bilstein-b6s-one-epic-street-suspension-review-w-pics.160152/",
+     "source_name": "Mustang6G.com: Ford X Springs + Bilstein B6s = One Epic Street Suspension",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coil-bc-br",
@@ -3129,7 +3399,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://bc.springrates.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "One owner found the front preload had not been set at the factory even though the instructions say it is; check it before you blame the kit for clunks over big bumps. Clock the bushings after install too.",
+     "source_url": "https://www.mustang6g.com/forums/threads/bc-coilovers.73536/",
+     "source_name": "Mustang6G.com: Bc coilovers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The left and right BR struts look the same but are side-specific. A 2017 GT owner installed them swapped and got a front pop-clunk on turns and about 1 degree of camber difference side to side.",
+     "source_url": "https://www.mustang6g.com/forums/threads/bc-racing-coilovers.130477/",
+     "source_name": "Mustang6G.com: BC Racing Coilovers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coil-fortune-500",
@@ -3208,7 +3494,30 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.bmrsuspension.com/product/775",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Set the adjustable rod to the factory rod length first, then torque the OE bolts to 129 ft-lb. With the car at ride height, measure both wheel positions in the wheel wells; if they are within 1/8 in, lock the jam nuts, otherwise turn the rod to shift the body, then lock the nuts with blue Loctite.",
+     "source_url": "https://sdda.semadata.org/Standard/BMR%20Suspension/PHR006.pdf",
+     "source_name": "BMR Suspension: Panhard rod installation instructions (PHR005/PHR006/PHR012/PHR013)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Poly-bushed versions go in with the grease fittings down and the 90 degree fitting on the driver side. Give each fitting 2 to 3 pumps of silicone grease and never use petroleum grease on poly.",
+     "source_url": "https://sdda.semadata.org/Standard/BMR%20Suspension/PHR006.pdf",
+     "source_name": "BMR Suspension: Panhard rod installation instructions (PHR005/PHR006/PHR012/PHR013)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The Panhard bar only locates the axle side to side, so the axle will not drop when you pull it; a ratchet strap pulls the holes into line. Do fine centering (within 1/8 in) with the car on level ground and recheck after driving, since freshly lowered springs settle.",
+     "source_url": "https://www.s197forum.com/threads/panhard-bar-install-questions.132166/",
+     "source_name": "S197Forum.com: Panhard bar install questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "panhard-steeda-2550",
@@ -3286,7 +3595,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.americanmuscle.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A first-time installer did it in 1 to 2 hours; the fit is tight but everything lines up. He reports zero drone and a quiet idle and cruise, but it is very loud under throttle.",
+     "source_url": "https://www.mustang6g.com/forums/threads/borla-atak-catback-review.38942/",
+     "source_name": "Mustang6G.com: Borla Atak Catback Review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "An owner who has run both the ATAK and the Corsa Xtreme says neither drones, but the ATAK is louder inside the car.",
+     "source_url": "https://www.mustang6g.com/forums/threads/borla-atak-vs-xtreme-drone.145491/",
+     "source_name": "Mustang6G.com: Borla Atak vs Xtreme -Drone?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-jlt-cai2",
@@ -3325,7 +3650,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.lethalperformance.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Do not install this intake and drive without the JLT tune: load the tune first, then swap the airbox. Clamps only need to be snug, and automatic cars need a 1/2 in hole drilled 1/2 in above the PCV grommet for the supplied fitting.",
+     "source_url": "https://www.americanmuscle.com/jlt-cold-air-2011gt-manu-install.html",
+     "source_name": "AmericanMuscle: JLT cold air intake installation instructions, 2011-2014 Mustang GT",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "2013 GT and Boss hoods have an open vent that can drip water on the filter; use the supplied foam plug. You can keep the sound tube, or remove it and cap the fitting and firewall hole with the supplied plugs.",
+     "source_url": "https://www.americanmuscle.com/jlt-cold-air-2011gt-manu-install.html",
+     "source_name": "AmericanMuscle: JLT cold air intake installation instructions, 2011-2014 Mustang GT",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-roush-50",
@@ -3364,7 +3705,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.roushperformance.com/",
     "status": "unverified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The Roush intake only runs on the stock tune with its inner sleeve installed; pull the sleeve without a tune and expect the wrench light. If the light stays on with the sleeve in, smoke-test the intake for a leak.",
+     "source_url": "https://www.mustang6g.com/forums/threads/roush-cai-leak.167783/",
+     "source_name": "Mustang6G.com: Roush CAI Leak",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2018 GT owner logged intake air temps 5 to 10 C over ambient driving and up to 45 C over at idle with the Roush box, worse than stock. He and another owner went back to the stock airbox with a panel filter and an aftermarket tube.",
+     "source_url": "https://www.mustang6g.com/forums/threads/advice-on-2018-roush-cai-and-custom-tuning.146492/",
+     "source_name": "Mustang6G.com: Advice on 2018 Roush CAI and custom tuning",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-5star-x4",
@@ -3442,7 +3799,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://whipplesuperchargers.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If a blown 2018 runs lean and breaks up only below half a tank, check the venturi transfer line that pulls fuel from the passenger side of the saddle tank; owners point to a missed transfer connection after a pump swap (thread is a Gen 5 Stage 2 on the same 2018 tank).",
+     "source_url": "https://www.mustang6g.com/forums/threads/fuel-issue-after-whipple-stage2-install-on-2018.142263/",
+     "source_name": "Mustang6G.com: Fuel Issue After Whipple Stage2 Install On 2018",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "sc-roush-p2",
@@ -3481,7 +3847,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.roushperformance.com/products/2018-mustang-supercharger-phase-2",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After a Roush install, a 2018 cranked but would not start, even for the dealer after the tune. The owner had pulled fuse 49 to bleed fuel pressure; the first fix to try is a new fuse 49, since it can fail during the job.",
+     "source_url": "https://www.mustang6g.com/forums/threads/2018-mustang-gt-roush-supercharger-install.200182/",
+     "source_name": "Mustang6G.com: 2018 mustang GT Roush supercharger install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "trans-steeda-tr3160",
@@ -3520,7 +3895,23 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.steeda.com/steeda-555-7321-mustang-tr3160-transmission-package",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The TR-3160 bolted to the stock crossmember and bell housing on a 2018 GT, and the reverse switch and speed sensor plugged straight in. A used GT350 driveshaft fit his stock 3.55 diff even though others warned it would not; his parts total without labor was $5,965.",
+     "source_url": "https://www.mustang6g.com/forums/threads/tremec-3160-swap-in-a-18-gt-base.187942/",
+     "source_name": "Mustang6G.com: Tremec 3160 swap in a 18 GT base",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2016 GT owner could not fit his McLeod clutch behind the TR-3160 because the input shaft is shorter and ended up using the stock GT350 clutch and flywheel. Confirm clutch fit with Steeda before you assume your current clutch carries over.",
+     "source_url": "https://www.mustang6g.com/forums/threads/any-posts-on-tr-3160-swaps.93684/",
+     "source_name": "Mustang6G.com: Any posts on TR-3160 swaps?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-fp-504v",
@@ -3559,7 +3950,30 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://performanceparts.ford.com/part/M-6017-504V",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The control pack calibration will not run on the factory returnless Mustang fuel system. Plan a return-style system with a pump that flows at least 155 L/hr at 55 psi and a vacuum-referenced regulator set to 55 psi at the rail with the engine off.",
+     "source_url": "https://performanceparts.ford.com/download/instructionsheets/FordInstShtM-6017-504V.pdf",
+     "source_name": "Ford Performance: 5.0L Controls Pack Installation Manual (M-6017-504V)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Wire both clutch switches: the bottom-of-travel switch is the starter interlock, and Ford warns the starter can crank in gear without it. Ford sells a clutch pedal (BV61-7B633-AA) with mounts for both switches.",
+     "source_url": "https://performanceparts.ford.com/download/instructionsheets/FordInstShtM-6017-504V.pdf",
+     "source_name": "Ford Performance: 5.0L Controls Pack Installation Manual (M-6017-504V)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To get the S197 gauges and speedo working, splice the car's HS CAN wires into the control pack. Owners say a Gen 1 Coyote talks to the S197 cluster but a Gen 2 does not, and one Gen 3 builder found no speed signal pins on the manual harness and ran a GPS speedo.",
+     "source_url": "https://www.s197forum.com/threads/finishing-up-a-coyote-swap.138599/",
+     "source_name": "S197Forum.com: Finishing up a coyote swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tool-lisle-65600",
@@ -3598,7 +4012,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "url": "https://www.lislecorp.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "NAPA sells the same tool as Balkamp BK 774021 if you need it the same day. Pushing the porcelain down can drop bits into the cylinder; one owner taped a bottle cap with a 1/4 in hose to a shop vac to suck the debris out.",
+     "source_url": "https://www.s197forum.com/threads/lisle-3v-broken-spark-plug-removal-tool.28601/",
+     "source_name": "S197Forum.com: Lisle 3V Broken Spark Plug Removal Tool",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ]
 };
