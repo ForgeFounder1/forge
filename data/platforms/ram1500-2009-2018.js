@@ -1442,7 +1442,37 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     }
    ],
    "confNote": "Later years: forum-reported (RamForum thread, not opened).",
-   "guide": "hemi-engine"
+   "guide": "hemi-engine",
+   "tips": [
+    {
+     "text": "For a bolt broken flush, weld a .060 in washer to the stub, then weld on a nut with a slightly larger ID and back it out; even a 110 V flux-core MIG works. Owners say this beats extractors or drilling, which risk the water jacket.",
+     "source_url": "https://www.ramforum.com/threads/best-method-for-extracting-broken-exhaust-manifold-studs.141116/",
+     "source_name": "RamForum: Best method for extracting broken exhaust manifold studs?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Before welding, disconnect the battery ground and clamp the welder ground to a bolt threaded into an adjacent manifold bolt hole.",
+     "source_url": "https://www.ramforum.com/threads/exhaust-manifold-bolt-extraction.207629/",
+     "source_name": "RamForum: Exhaust Manifold Bolt Extraction",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A shop that says the engine must come out for broken manifold bolts is wrong: owners do it through the wheel well in 2-3 hours a side (front wheel off, inner fender down), and belt-sand the warped manifold flat before refitting with new hardware. Change the plugs while you're in there.",
+     "source_url": "https://www.ramforum.com/threads/multiple-broken-exhaust-manifold-bolts.213362/",
+     "source_name": "RamForum: Multiple Broken Exhaust Manifold Bolts",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The driver-side manifold comes out in only one orientation past the dipstick tube. If you can't find it, remove the lower dipstick tube bolt and tap the tube upward with vise grips; disconnecting both collectors also lets the Y-pipe drop for room.",
+     "source_url": "https://www.ramforum.com/threads/multiple-broken-exhaust-manifold-bolts.213362/",
+     "source_name": "RamForum: Multiple Broken Exhaust Manifold Bolts",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hemi-lifter",
@@ -1461,7 +1491,31 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    ],
    "disputed": true,
    "confNote": "Owners disagree on the years and on whether MDS plays a role.",
-   "guide": "hemi-engine"
+   "guide": "hemi-engine",
+   "tips": [
+    {
+     "text": "A lifter-failure owner found the manual calls for 4,000-mile oil changes with heavy idling or low-rpm driving; his dealer had him on 7,500. If your idle hours are high, use the severe interval.",
+     "source_url": "https://www.ramforum.com/threads/5-7l-hemi-lifter-cam-protection.217199/page-2",
+     "source_name": "RamForum: 5.7L Hemi - Lifter/Cam Protection (page 2)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Common owner prevention: raise idle to 750-800 rpm with a tuner, and run a high-moly oil such as Red Line 5W-30 or add Lubegard Biotech (in a forum poll 59 of 99 said Red Line silenced their tick). Owners disagree on whether oil choice or locking out MDS changes anything; others call it a quality-control lottery.",
+     "source_url": "https://www.ramforum.com/threads/lifter-failure-preventions.194248/",
+     "source_name": "RamForum: Lifter failure preventions?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "Hemi lifter care: let the engine reach temperature and avoid long idles and short-trip-only use, which owners link to sludge. If replacing lifters, one owner prefers the newest OEM non-MDS lifter or Johnson lifters.",
+     "source_url": "https://www.ramforum.com/threads/hemi-lifter-issues.186881/",
+     "source_name": "RamForum: Hemi lifter issues",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "8hp-slow-downshift",
@@ -1492,6 +1546,15 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     {
      "label": "TSB 21-012-14 (NHTSA PDF)",
      "url": "https://static.nhtsa.gov/odi/tsbs/2014/SB-10069308-0335.pdf"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Chrysler's drive-learn: with trans temp 86-212 F, accelerate from a stop to 40-50 mph so it upshifts to 7th, lift off and coast through the 6-5 downshift down to 3rd, and repeat until each clutch shows a filling counter of at least 6 and fast-filling counter of at least 2 (8HP70).",
+     "source_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10221035-9999.pdf",
+     "source_name": "Chrysler TSB 21-012-14 Rev. B: 8 Speed Transmission Shift Adaptation, Drive Learn Procedure",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1542,6 +1605,15 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
      "label": "NHTSA 19V-757",
      "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V757-7573.PDF"
     }
+   ],
+   "tips": [
+    {
+     "text": "Set up a Mopar.com account with the VIN to see whether the EGR cooler recall has been done; one 2018 buyer confirmed his that way. If you keep the EGR cooler, watch the coolant level in the degas bottle.",
+     "source_url": "https://www.ram1500diesel.com/threads/proactive-on-the-egr-cooler-and-oil-cooler-issues-2018-model.70637/",
+     "source_name": "RAM 1500 Diesel Forum: Proactive on the EGR cooler and Oil Cooler issues?- 2018 model",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1575,7 +1647,30 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
      "url": "https://www.ramforum.com/threads/air-ride-suspension-leaks.196578/"
     }
    ],
-   "guide": "swap-air-coil"
+   "guide": "swap-air-coil",
+   "tips": [
+    {
+     "text": "Pulling the compressor fuse does not isolate a leak: the valve block keeps cycling and moving air between bags and the tank. The driver side also sinks a little more from the fuel tank and driver weight.",
+     "source_url": "https://www.ramforum.com/threads/diagnosing-air-suspension-leaks-suggestions.203072/",
+     "source_name": "RamForum: Diagnosing Air Suspension Leaks - Suggestions?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Soap-test each air bag at each ride height with the rear dust shields pulled back; a porous bag may only leak at one height because it rolls and seals at others. After replacing parts, purge and refill the system with nitrogen.",
+     "source_url": "https://www.ramforum.com/threads/diagnosing-air-suspension-leaks-suggestions.203072/",
+     "source_name": "RamForum: Diagnosing Air Suspension Leaks - Suggestions?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "To keep a leaking truck from dropping while parked, hold both ride-height dash buttons for at least 5 seconds to turn the air suspension off. One owner's leak showed only at Normal height, not Off Road 1 or 2.",
+     "source_url": "https://www.ramforum.com/threads/diagnosing-air-suspension-leaks-suggestions.203072/",
+     "source_name": "RamForum: Diagnosing Air Suspension Leaks - Suggestions?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "pentastar-head",
@@ -1633,7 +1728,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    ],
    "disputed": true,
    "confNote": "Owners disagree on whether trace coolant in the oil is fatal.",
-   "guide": "ecodiesel"
+   "guide": "ecodiesel",
+   "tips": [
+    {
+     "text": "Veteran owners say the stock oil cooler is fine for daily driving on later trucks and not worth replacing preemptively. If you tow, a larger remote cooler also needs an oil thermostat (two more lines and fittings) so the oil warms up in cold weather.",
+     "source_url": "https://www.ram1500diesel.com/threads/proactive-on-the-egr-cooler-and-oil-cooler-issues-2018-model.70637/",
+     "source_name": "RAM 1500 Diesel Forum: Proactive on the EGR cooler and Oil Cooler issues?- 2018 model",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "ecod-timing",
@@ -1680,6 +1785,22 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     {
      "label": "RamForum 2016 rust",
      "url": "https://www.ramforum.com/threads/2016-ram-1500-rust-issues.172920/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "The fuel tank strap mounting plates have no drain holes and rot from trapped salt water. Drill 1/8 in drain holes in the two driver-side strap mounts and the two passenger-side crossmember attachment points.",
+     "source_url": "https://www.ramforum.com/threads/how-to-fluid-film-your-truck.111020/",
+     "source_name": "RamForum: How to Fluid Film your truck",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rust starts under the fiberglass tape inside the front fenders, behind the bed-to-cab gasket and above the rear wheel wells where the brace is spot welded. Get a 360 degree wand into the rockers (two cavities: bottom plugs and taped holes on the back), the cab corners through the seat-belt bolt plug in the rear door jamb, and the hood corners through the hole beside the grille.",
+     "source_url": "https://www.ramforum.com/threads/how-to-fluid-film-your-truck.111020/",
+     "source_name": "RamForum: How to Fluid Film your truck",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   }
@@ -1954,7 +2075,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
      ]
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "Lowered on 22s: one owner had a tire rub through a rear brake hose, and another suggests 305/40R22 (about 31 in) to be safe. Check brake hose clearance at full lock and full bump after the drop.",
+     "source_url": "https://www.ramforumz.com/threads/2015-ram-1500-hemi-reg-cab-lowered.196692/",
+     "source_name": "RamForumz: 2015 Ram 1500 Hemi reg cab lowered",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "plugs",
@@ -2036,7 +2166,23 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
      2
     ]
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "A March-2013 owner whose truck was listed for 100k-mile (160,000 km) plugs found copper plugs installed. Ram switched to coils that support platinum plugs around mid-2013, so pull a plug or check the VIN with a dealer before trusting the long interval.",
+     "source_url": "https://www.ramforum.com/threads/5-7l-hemi-spark-plug-replacement-2013-1500.154607/",
+     "source_name": "RamForum: 5.7L Hemi Spark Plug Replacement - 2013 - 1500",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "For the rear passenger plugs, unclip the two heater hoses and the main harness from the firewall clips and tie them back. On the driver side, insert the socket and each extension separately; owners recommend a magnetic swivel plug socket such as the Gearwrench 80546.",
+     "source_url": "https://www.ramforum.com/threads/5-7l-hemi-spark-plug-replacement-2013-1500.154607/",
+     "source_name": "RamForum: 5.7L Hemi Spark Plug Replacement - 2013 - 1500",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hemi-engine",
@@ -2483,6 +2629,22 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    },
    "parts": [
     "lev-rc363"
+   ],
+   "tips": [
+    {
+     "text": "Rough Country's instructions say not to use an impact on the strut top nut when adding the preload spacer, and to support the knuckle so it does not swing out far enough to pull the CV shaft out of the front differential.",
+     "source_url": "https://www.sorjeepandtruck.com/sites/default/files/9236300.pdf",
+     "source_name": "Rough Country: 2012-18 Dodge 4WD 1500 2.5in Leveling Kit instructions (9236300B)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 2014 owner's upper ball joints popped out while the lower arm was jacked back up during a spacer-kit install, and Chrysler refused warranty under a STAR case dated 05/23/2013 because of the aftermarket kit ($1,100 quoted). Jack the lower arm slowly and inspect both upper ball joints before driving.",
+     "source_url": "https://www.ramforum.com/threads/spacer-level-kit-star-case-2014-ram.44746/",
+     "source_name": "RamForum: SPACER LEVEL KIT = STAR case 2014 Ram",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2524,7 +2686,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "The 8HP70 TCM is internal. On the SGA harness, tap the CAN bus (purple connector to the \"C star\" connector under the steering column) and power it from fuse 99 (constant in ACC/RUN/CRANK).",
+     "source_url": "https://www.ramforum.com/threads/8-speed-swap.180898/",
+     "source_name": "RamForum: 8-speed swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-64",
@@ -2576,7 +2747,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "On a 2013 the BCM has no air suspension options: disable the ASCM setting in AlfaOBD and pull fuses F5 and F50, which clears the startup alert, height settings and dash buttons. Unplug and remove all four ride-height sensors when the coils go in. 2014+ trucks need more BCM changes.",
+     "source_url": "https://www.ramforum.com/threads/how-to-delete-air-suspension-on-2013.206964/",
+     "source_name": "RamForum: How to: Delete Air Suspension on 2013",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swap-gears",
@@ -2776,76 +2956,73 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    "parts": []
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "4th gens \"are hard to dyno because you can't lock them in 3rd gear… it kept trying to downshift.\"",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForum stock rwhp",
-     "url": "https://www.ramforum.com/threads/stock-rwhp.37696/"
-    }
-   ]
+   "text": "8-speed fluid: crack the fill plug loose before draining (owners say it's often overtightened), set fluid level only with the engine running and trans temp 86-122 F, and never shut the engine off with the fill plug out or the converter drains onto the floor.",
+   "source_url": "https://www.ramforum.com/threads/zf-8-speed-transmission-fluid-change.192708/",
+   "source_name": "RamForum: ZF 8 speed transmission fluid change",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Hemi idle and oil: let it get up to temperature, and avoid long idles and short-trip-only use (sludge). One owner prefers the newest OEM non-MDS lifter or Johnson lifters.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForum Hemi lifter issues",
-     "url": "https://www.ramforum.com/threads/hemi-lifter-issues.186881/"
-    }
-   ]
+   "text": "Avoid the cheap Autotecnica CY1214647PRM aluminum 8-speed pan: an owner found it about 1/8 in too shallow, it pressed on the park mechanism and the truck would not go into park. The PPE pan (about $300) worked, has a replaceable filter and takes about 2 extra quarts.",
+   "source_url": "https://www.ramforum.com/threads/zf-8-speed-transmission-fluid-change.192708/",
+   "source_name": "RamForum: ZF 8 speed transmission fluid change",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Air suspension leak: spray soapy water starting at the left rear bag.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForum air ride leaks",
-     "url": "https://www.ramforum.com/threads/air-ride-suspension-leaks.196578/"
-    }
-   ]
+   "text": "Start an 8-speed fluid change with the trans below 86 F (ideally ambient under 90 F) or you run out of time before 122 F. Deep pans need the trans raised about 1 in off the crossmember to clear the valve body; pan bolts are T40 at 10 N·m and the 8 mm hex fill plug is 25 ft-lb.",
+   "source_url": "https://www.youtube.com/watch?v=BzcDneDpTBc",
+   "source_name": "YouTube (Blauparts): Ram 1500 Transmission Fluid Change How To, 2013+ ZF 8-Speed",
+   "confidence": "video",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Weathering-steel driveshaft: one owner says the factory driveshaft is designed to surface-rust (cor-ten). Unverified claim.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForum 2016 rust",
-     "url": "https://www.ramforum.com/threads/2016-ram-1500-rust-issues.172920/"
-    }
-   ]
+   "text": "After the first fill, with wheels off the ground and the engine idling, hold each of reverse, drive and 2nd for 5 seconds, then 2,000 rpm in neutral for 5 seconds, to purge air before the final level check.",
+   "source_url": "https://www.youtube.com/watch?v=BzcDneDpTBc",
+   "source_name": "YouTube (Blauparts): Ram 1500 Transmission Fluid Change How To, 2013+ ZF 8-Speed",
+   "confidence": "video",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "8-speed swap: the 8HP70 TCM is internal. On the SGA harness, tap the CAN bus (purple connector to the \"C star\" connector under the steering column) and power it from fuse 99 (constant in ACC/RUN/CRANK).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForum 8-speed swap",
-     "url": "https://www.ramforum.com/threads/8-speed-swap.180898/"
-    }
-   ]
+   "text": "A shop owner who does many oil changes sees fewer engine problems on trucks changed at 4-5k miles and 5-6 months than on trucks run to the 8-10k oil-life reminder, and he prefills the filter.",
+   "source_url": "https://www.ramforum.com/threads/5-7l-hemi-lifter-cam-protection.217199/page-2",
+   "source_name": "RamForum: 5.7L Hemi - Lifter/Cam Protection (page 2)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "Lowered on 22s: one owner suggests 305/40R22 (about 31 in) to be safe, and another had a tire rub through a rear brake hose. Check hose clearance.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "RamForumz 2015 reg cab lowered",
-     "url": "https://www.ramforumz.com/threads/2015-ram-1500-hemi-reg-cab-lowered.196692/"
-    }
-   ]
+   "text": "EcoDiesel oil: Chrysler's STAR case S2109000010 (Aug 2021), as posted, says 2014-2019 Gen 2 engines take 5W-40 full synthetic to MS-10902 and API CJ-4 (such as Shell Rotella T6), not the MS-12991 oil for 2020+ engines. A poster says VM Motori told an owner MS-12991, so owners disagree.",
+   "source_url": "https://www.ecodieselram.com/forum/threads/eco-diesel-engine-maintenance-and-upgrades.6595/page-2",
+   "source_name": "EcoDieselRam: Eco Diesel Engine maintenance and upgrades (page 2)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "EcoDiesel vs Hemi, same driver: 2015 EcoDiesel 4x2 3.55 averaged 26.4 mpg (best 28.6); 2016 Hemi 4x4 3.92 air suspension averaged 18 (best 21.3).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "EcoDieselRam",
-     "url": "https://www.ecodieselram.com/forum/threads/cost-per-mile-difference-in-ecodiesel-and-hemi-my-experience.1021/"
-    }
-   ]
+   "text": "EcoDiesel owners clean the DEF injector and its mount with steam on a P20EE code or every 50,000 miles, and remove the intake around 100k to clear EGR soot from the swirl valves. Never clean the intake in place; carbon chunks can hydrolock or damage the engine.",
+   "source_url": "https://www.ecodieselram.com/forum/threads/eco-diesel-engine-maintenance-and-upgrades.6595/page-2",
+   "source_name": "EcoDieselRam: Eco Diesel Engine maintenance and upgrades (page 2)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
+  },
+  {
+   "text": "Diff service on a 2014 4x4: the front takes about 1.5 qt of 75W-85 (8 mm Allen plugs; owners also use 75W-90), the rear about 2.5 qt of 75W-140 (14 mm Allen drain, pry the rubber fill cap off first). On a limited slip, add the friction modifier first so it doesn't overflow; one owner says a GL-5 synthetic doesn't need it.",
+   "source_url": "https://www.ramforum.com/threads/2014-1500-4wd-differential-service.113542/",
+   "source_name": "RamForum: 2014 1500 4WD Differential Service",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
+  },
+  {
+   "text": "In salt states, wash the underside and inside the boxed frame every April or May, let it dry a day or more, then Fluid Film it; the door bottoms take the spray-can 360 degree wand through the drain holes and the tailgate through its access panel.",
+   "source_url": "https://www.ramforum.com/threads/how-to-fluid-film-your-truck.111020/",
+   "source_name": "RamForum: How to Fluid Film your truck",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -2980,7 +3157,31 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.roughcountry.com/product/dodge-front-leveling-lift-kit-363",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Rough Country's instructions say not to use an impact on the strut top nut when adding the preload spacer, and to support the knuckle so it does not swing out far enough to pull the CV shaft out of the front differential.",
+     "source_url": "https://www.sorjeepandtruck.com/sites/default/files/9236300.pdf",
+     "source_name": "Rough Country: 2012-18 Dodge 4WD 1500 2.5in Leveling Kit instructions (9236300B)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On 2013+ trucks a spacer leveling kit lets the front over-extend, and owners report the factory upper ball joints popping out of the upper control arm; the common advice is Bilstein 5100s (no new arms needed) or aftermarket upper arms with the spacer. Owners disagree: one ran the Rough Country spacer kit 17k miles on a 2014 with no issue.",
+     "source_url": "https://www.ramforum.com/threads/rough-country-2-5-lift-kit-questions.92531/",
+     "source_name": "RamForum: Rough country 2.5 lift kit questions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "A 2014 owner's upper ball joints popped out while the lower arm was jacked back up during a spacer-kit install, and Chrysler refused warranty under a STAR case dated 05/23/2013 because of the aftermarket kit ($1,100 quoted). Jack the lower arm slowly and inspect both upper ball joints before driving.",
+     "source_url": "https://www.ramforum.com/threads/spacer-level-kit-star-case-2014-ram.44746/",
+     "source_name": "RamForum: SPACER LEVEL KIT = STAR case 2014 Ram",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "lift-rc333",
@@ -3144,7 +3345,37 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.belltech.com/products/lowering-kit-w-o-shocks-964/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Buy the Belltech 2/4 version that includes the rear track bar relocation bracket and shorter sway bar end links; an owner calls them necessary. One buyer confirmed his 964SP box did include them.",
+     "source_url": "https://www.ramforum.com/threads/2-4-belltech-lowering-kit.189359/",
+     "source_name": "RamForum: 2/4 belltech lowering kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If a Belltech 2/4 truck bottoms out, owners cut off the factory bump stop cups front and rear and fit Belltech 4923 bump stops (2.01 in tall, 2.5 in OD); one says removing the front cups also cut bump steer noticeably.",
+     "source_url": "https://www.ramforum.com/threads/belltech-2-4-with-ihc-no-cut-kit-bottoming-out.181095/",
+     "source_name": "RamForum: Belltech 2/4 with IHC No Cut Kit Bottoming Out",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "After a Belltech 2/4 on a 2018 regular cab, the gas tank shield rubbed the driveshaft and had to be bent for clearance. Check it after the drop.",
+     "source_url": "https://www.ramforum.com/threads/2-4-belltech-lowering-kit.189359/",
+     "source_name": "RamForum: 2/4 belltech lowering kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Lowered on 22s: one owner had a tire rub through a rear brake hose, and another suggests 305/40R22 (about 31 in) to be safe. Check brake hose clearance at full lock and full bump after the drop.",
+     "source_url": "https://www.ramforumz.com/threads/2015-ram-1500-hemi-reg-cab-lowered.196692/",
+     "source_name": "RamForumz: 2015 Ram 1500 Hemi reg cab lowered",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-belltech-963nd",
@@ -3185,7 +3416,30 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://suspensionsuperstore.com/2009-2018-dodge-ram-1500-quad-crew-cab-2-4-lowering-kit-w-nitro-drop-2-kit-belltech-963nd",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Buy the Belltech 2/4 version that includes the rear track bar relocation bracket and shorter sway bar end links; an owner calls them necessary. One buyer confirmed his 964SP box did include them.",
+     "source_url": "https://www.ramforum.com/threads/2-4-belltech-lowering-kit.189359/",
+     "source_name": "RamForum: 2/4 belltech lowering kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If a Belltech 2/4 truck bottoms out, owners cut off the factory bump stop cups front and rear and fit Belltech 4923 bump stops (2.01 in tall, 2.5 in OD); one says removing the front cups also cut bump steer noticeably.",
+     "source_url": "https://www.ramforum.com/threads/belltech-2-4-with-ihc-no-cut-kit-bottoming-out.181095/",
+     "source_name": "RamForum: Belltech 2/4 with IHC No Cut Kit Bottoming Out",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Lowered on 22s: one owner had a tire rub through a rear brake hose, and another suggests 305/40R22 (about 31 in) to be safe. Check brake hose clearance at full lock and full bump after the drop.",
+     "source_url": "https://www.ramforumz.com/threads/2015-ram-1500-hemi-reg-cab-lowered.196692/",
+     "source_name": "RamForumz: 2015 Ram 1500 Hemi reg cab lowered",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "low-mcgaughys-44050",
@@ -3226,7 +3480,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://suspensionsuperstore.com/2009-2018-dodge-ram-1500-2wd-all-cabs-2-4-deluxe-drop-kit-mcgaughys-44050",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Lowered on 22s: one owner had a tire rub through a rear brake hose, and another suggests 305/40R22 (about 31 in) to be safe. Check brake hose clearance at full lock and full bump after the drop.",
+     "source_url": "https://www.ramforumz.com/threads/2015-ram-1500-hemi-reg-cab-lowered.196692/",
+     "source_name": "RamForumz: 2015 Ram 1500 Hemi reg cab lowered",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-flowmaster-737860",
@@ -3267,7 +3530,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/flowmaster-ram1500-signature-series-dual-exhaust-system-black-chrome-tips-rear-exit-737860.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners call Flowmaster's chambered mufflers notorious for drone on the 5.7, especially when MDS drops to four cylinders. An MBRP owner on the same thread says chambered mufflers resonate more with MDS than perforated straight-through ones.",
+     "source_url": "https://www.ramforum.com/threads/muffler-upgrade-mds.66864/",
+     "source_name": "RamForum: Muffler Upgrade & MDS",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-magnaflow-r102404",
@@ -3308,7 +3580,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/magnaflow-mf-catback-split-rear-57l-0917-ram.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An owner with a Magnaflow-based (Mufflex 18 in) muffler says it is quiet at cruise but sounds terrible when MDS kicks in, so he turned MDS off with his DiabloSport inTune. Plan on an MDS-off tune if that sound bothers you.",
+     "source_url": "https://www.ramforum.com/threads/muffler-upgrade-mds.66864/",
+     "source_name": "RamForum: Muffler Upgrade & MDS",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "exh-borla-r101995",
@@ -3349,7 +3631,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/borla-touring-cat-back-exhaust-split-rear-exit-0917-57l.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A 2018 Hemi owner measured the Borla Touring at 85-86 dB at cold start, 60s at idle and 50s cruising (5-6 ft from the tailpipe), calling it barely different from stock. A Flowmaster Super 44 on the same pipes hit 102-103 dB cold and was choppy on the highway. Pick the Touring for quiet, not for sound.",
+     "source_url": "https://www.ramforum.com/threads/borla-touring-and-flowmaster-super-44-reviews-and-decibel-readings.147808/",
+     "source_name": "RamForum: Borla Touring and Flowmaster Super 44 Reviews and Decibel Readings",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "exh-mbrp-s5146304",
@@ -3390,7 +3681,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/mbrp-pro-series-25in-catback-split-side-57l-fact-dual-0917-ram.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An owner running an MBRP 14 in muffler says leaving the factory resonators in place is the key to keeping MDS drone under control; cruising, he can't hear it most of the time.",
+     "source_url": "https://www.ramforum.com/threads/muffler-upgrade-mds.66864/",
+     "source_name": "RamForum: Muffler Upgrade & MDS",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-bbk-4014",
@@ -3431,7 +3731,23 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://blowbyracing.com/products/bbk-09-18-dodge-ram-5-7l-hemi-shorty-tuned-length-exhaust-headers-1-3-4-titanium-ceramic",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Owners replace the supplied BBK gasket and bolts with Remflex 6022 gaskets and ARP 440-1101 header bolts, and inspect every weld before install because BBK welds are known to crack. One owner says his cracked within about a year.",
+     "source_url": "https://www.ramforum.com/threads/which-gaskets-should-i-buy-for-bbk-headers.193589/",
+     "source_name": "RamForum: Which gaskets should I buy for BBK headers?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a 4x4, shorty headers fit but are tight: one owner had to remove the starter and steering shaft and loosen the factory Y-pipe to get BBK shorties in.",
+     "source_url": "https://www.ramforum.com/threads/the-complete-shorty-header-installation-guide-diy.120804/",
+     "source_name": "RamForum: The COMPLETE Shorty Header Installation Guide - DIY",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-jba-cat4ward",
@@ -3472,7 +3788,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.gsiautogroup.com/products/jba-09-19-ram-5-7l-hemi-1-5-8in-primary-silver-ctd-cat4ward-header",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 4x4, shorty headers fit but are tight: one owner had to remove the starter and steering shaft and loosen the factory Y-pipe to get BBK shorties in.",
+     "source_url": "https://www.ramforum.com/threads/the-complete-shorty-header-installation-guide-diy.120804/",
+     "source_name": "RamForum: The COMPLETE Shorty Header Installation Guide - DIY",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "hdr-sw-ram09hcaty",
@@ -3513,7 +3838,23 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/sw-178in-headers-catted-ypipe-factconn-quadcrew-57l-0917ram.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A tune is not required with Stainless Works long tubes but owners get better results with one. The SW leads are true 3 in duals back to the factory muffler area; the stock pipes after the muffler are only 2.25 in, so plan new tailpipes.",
+     "source_url": "https://www.ramforum.com/threads/long-tube-headers.211490/",
+     "source_name": "RamForum: Long tube headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "2015 and later trucks have a locked PCM. One owner bought a remanufactured PCM, had it unlocked for HP Tuners, and kept the stock PCM in case he needs it.",
+     "source_url": "https://www.ramforum.com/threads/long-tube-headers.211490/",
+     "source_name": "RamForum: Long tube headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-diablo-8300",
@@ -3554,7 +3895,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/diablosporttune-i3-tuner-0914-57l-ram-1500.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If MDS will not stay off on a Diablo tuner, owners say: run every device update and the calibration step first, load a canned tune, then go into Modify on the last tune written. Some owners still could not turn MDS off on a canned tune and needed a custom tune.",
+     "source_url": "https://www.ramforum.com/threads/intune-i3.119557/",
+     "source_name": "RamForum: intune i3",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "tune-diablo-9300",
@@ -3595,7 +3946,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/diablosport-57ram1500-trinity-2-tuner-9300.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If MDS will not stay off on a Diablo tuner, owners say: run every device update and the calibration step first, load a canned tune, then go into Modify on the last tune written. Some owners still could not turn MDS off on a canned tune and needed a custom tune.",
+     "source_url": "https://www.ramforum.com/threads/intune-i3.119557/",
+     "source_name": "RamForum: intune i3",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "tune-sct-7215",
@@ -3675,7 +4036,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.scorchedperformance.com/hp-tuners-mpvi3-wpro-feature-set",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "2015 and later trucks have a locked PCM. One owner bought a remanufactured PCM, had it unlocked for HP Tuners, and kept the stock PCM in case he needs it.",
+     "source_url": "https://www.ramforum.com/threads/long-tube-headers.211490/",
+     "source_name": "RamForum: Long tube headers",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-diablo-pcm-2018",
@@ -3717,7 +4087,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/diablosport-ram1500-intune-i3-platinum-tuner-modified-pcm-swap-kit-pkitdr578s18-i3.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "DiabloSport's modified (unlocked) PCMs work only with DiabloSport tuners such as the inTune i3 or Trinity T2 Platinum; they are not compatible with other tuning brands. Decide on the tuner brand before you buy the PCM.",
+     "source_url": "https://www.diablosport.com/products/pcm/modified_pcm/parts/PCM-DR578S15",
+     "source_name": "DiabloSport: PCM-DR578S15 Modified PCM",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "intake-kn-57-1561",
@@ -3807,7 +4186,23 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.demonperformance.com/products/anzo-09-18-dodge-ram-1500-plank-style-projector-headlights-black-w-halo",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "The light bar has two loose wires: black is ground and green is positive. ANZO taps them into the parking-light plug, green to the white wire with brown tracer (center pin), and tests the bar before reassembly.",
+     "source_url": "https://www.youtube.com/watch?v=PxvuhbPvE0g",
+     "source_name": "YouTube (ANZO USA): 2009+ Dodge Ram headlight install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Removing the six radiator-cover clips by sliding a fork tool under the cover keeps the clips in the cover so they don't get lost; the rear headlight latch is reached through the access panel in the fender liner, and aim is set through the rear hole in the fender with a Phillips.",
+     "source_url": "https://www.youtube.com/watch?v=PxvuhbPvE0g",
+     "source_name": "YouTube (ANZO USA): 2009+ Dodge Ram headlight install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tail-spyder-5085917",
@@ -3846,7 +4241,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.jpmcarbon.com/products/spyder-dodge-ram-09-18-led-tail-lights-all-black-alt-yd-dram09v2-led-bkv2-incandescent-only-5085917",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "This version is for trucks with incandescent tails only. A 2014 Laramie owner with factory LED tails put them in anyway and got hyperflash and bulb-out errors that 6 ohm 50 W resistors did not fix (the fault-sense wire is the issue); buy the version made for factory LED trucks. Owners disagree on Spyder quality: some call them junk, one says his were plug and play.",
+     "source_url": "https://www.ramforum.com/threads/aftermarket-led-tail-light-for-non-led-factory-models-working-with-led-models.127264/",
+     "source_name": "RamForum: Aftermarket LED Tail Light for NON LED Factory models working with LED models",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "bumper-ranchhand-fsd13hbl1",
@@ -3895,7 +4300,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.ranchhand.com/front-bumper-fsd13hbl1.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Ranch Hand says to test fit before any coating or paint (it won't pay for recoating), to move the factory angle bracket over for the tow hooks, and to push the inner fender liners behind the lip of the bumper end caps. It does not fit Sport or Express.",
+     "source_url": "https://lci-support-doc.s3.amazonaws.com/ranch-hand/FSD13HBL1-INS.pdf",
+     "source_name": "Ranch Hand: 2013-18 Dodge 1500 Summit Front Bumpers FSD13HBL1 instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "grille-redrock-r156638",
@@ -3934,7 +4348,23 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.americantrucks.com/redrock-ram1500-rebel-style-upper-replacement-grille-led-drl-r156638.html",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Because this grille sits more flush, the installer removes two flaps on the radiator support and the lower flap with a clip tool, and pops out the two center tabs on the upper shroud that have no holes. Allow about 2 hours.",
+     "source_url": "https://www.youtube.com/watch?v=zlD9zGzsR7g",
+     "source_name": "YouTube (AmericanTrucks): RedRock Rebel Style Upper Replacement Grille Review & Install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "For the LEDs the installer routes the harness between the radiator and radiator support and taps the marker-bulb connector behind the headlight: red to the white wire with black stripe, black to the black wire. The headlight comes out (two 10 mm bolts plus the tab behind the fender-liner access door) to reach it.",
+     "source_url": "https://www.youtube.com/watch?v=zlD9zGzsR7g",
+     "source_name": "YouTube (AmericanTrucks): RedRock Rebel Style Upper Replacement Grille Review & Install",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "grille-am-amdeba00141",
@@ -4090,7 +4520,17 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://truckbedcentral.com/products/bakflip-mx4-hard-folding-tonneau-cover-for-09-18-ram-1500-19-24-1500-classic-57-bed-448207",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "On a 4th gen 5 ft 7 in RamBox bed the MX4 does not interfere with the RamBox lids. One owner says the hinges between panels start leaking after a couple of years; another had no leaks and says the drain tubes are easy to route and worth connecting.",
+     "source_url": "https://www.ramforumz.com/threads/bakflip-mx4-on-4th-gen-57-rambox-bed.261003/",
+     "source_name": "RamForumZ: Bakflip MX4 on 4th gen 5'7\" Rambox bed",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "seat-clazzio",
@@ -4129,7 +4569,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://fasthemis.com/products/clazzio-leather-seat-covers-ram-2013-2018-crew-cab-w-rear-split-seat",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "They fit tight enough to hurt your fingers. For the rear bench, unbolt the 4 bolts holding the seat to the cab so the seatback folds forward; the front center console/jump seat cover is the weak piece, and one owner cut the seam and tucked the excess into the channel to make it look right.",
+     "source_url": "https://www.ramforumz.com/threads/clazzio-perforated-leather-seat-cover-review.219619/",
+     "source_name": "RamForumZ: Clazzio perforated leather seat cover review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "int-wt-front-crew",
@@ -4207,7 +4656,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
     "url": "https://www.tpms.com/Ram-Schrader-OEM-Schrader-TPMS-56029398AB-p/s0398-ram.htm",
     "status": "unverified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "4th gen trucks learn new sensors automatically after a mile or two of driving, so a second wheel set with its own sensors needs no programming. The sensor changed between 2013 and 2014, so buy by model year, and be wary of \"OEM\" sets at 4 for $40 when factory sensors run over $60 each.",
+     "source_url": "https://www.ramforum.com/threads/tpms-sensors.143065/",
+     "source_name": "RamForum: TPMS sensors",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "oem-manifold-stud",
@@ -4243,7 +4701,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "For studs broken flush, owners warn against easy-outs (a snapped one means grinding it out) and suggest the Lisle 71500 drill template made for the 5.7 Hemi if you must drill. Welding a nut on is the preferred method.",
+     "source_url": "https://www.ramforum.com/threads/best-method-for-extracting-broken-exhaust-manifold-studs.141116/",
+     "source_name": "RamForum: Best method for extracting broken exhaust manifold studs?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "oem-manifold-bolt",
@@ -4279,7 +4746,16 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "For studs broken flush, owners warn against easy-outs (a snapped one means grinding it out) and suggest the Lisle 71500 drill template made for the 5.7 Hemi if you must drill. Welding a nut on is the preferred method.",
+     "source_url": "https://www.ramforum.com/threads/best-method-for-extracting-broken-exhaust-manifold-studs.141116/",
+     "source_name": "RamForum: Best method for extracting broken exhaust manifold studs?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   }
  ]
 };

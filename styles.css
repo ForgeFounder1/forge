@@ -254,3 +254,12 @@ footer b{color:var(--muted)}
   .stack td{border:0;padding:3px 12px;display:grid;grid-template-columns:72px 1fr;gap:8px;white-space:normal}
   .stack td:before{content:attr(data-l);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);padding-top:2px}
 }
+.fit-check{color:var(--warn);font-weight:600}
+.fit-x{color:var(--safety);font-weight:600}
+.fit-sum{margin:4px 0 12px}
+.sel-crumb{margin:0 0 8px;font-size:.9rem}
+.sel-years{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.sel-years .row{justify-content:center}
+.sel-years .row svg{display:none}
+.save-row{margin:4px 0 14px}
+.saved-note{color:var(--muted);margin:0 0 12px}
