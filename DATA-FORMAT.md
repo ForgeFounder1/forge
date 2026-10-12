@@ -23,6 +23,7 @@ Use the same `<id>` as the "coming soon" entry in `CATALOG` in `app.js` (e.g. `f
 | `Conf` | one of `"verified"`, `"verified-secondary"`, `"forum"`, `"video"`, `"unconfirmed"`, `"unknown"`, or an array of these for mixed items. Badges: Verified (secondary shows as Verified, with a tooltip saying it came from a secondary page), Forum-reported, Video-reported, Unconfirmed, Unknown. |
 | `Fact` | `{ "label": string, "text": string, "conf": Conf, "disputed"?: bool, "src": Source[] }` |
 | `Table` | `{ "columns": string[], "rows": string[][], "conf"?: Conf, "src"?: Source[], "note"?: string, "disputedRows"?: int[] (row indexes), "rowSrc"?: string[] (url per row) }`. A column whose header contains "Confidence" may hold a Conf key (or array of keys) and renders as badges. |
+| `Tip` | `{ "text": string, "source_url": string, "source_name": string, "confidence": "forum" \| "video" \| "verified", "date_checked": "YYYY-MM-DD", "disputed"?: bool }`. One source per tip, a page that was actually opened. Rules in `../TIPS-SPEC.md`. |
 | `Step` | `{ "text": string, "conf"?: Conf (only when different from the guide), "disputed"?: bool }` |
 
 ## Platform object
@@ -58,7 +59,8 @@ Use the same `<id>` as the "coming soon" entry in `CATALOG` in `app.js` (e.g. `f
 | `wheels.tpms` | Fact[] | |
 | `problems` | Problem[] | See below. |
 | `guides` | Guide[] | DIY and swap guides. |
-| `tips` | `{ "text", "conf", "disputed"?, "src" }[]` | Owner tips (forum or video). |
+| `tips` | `Tip[]` or legacy `{ "text", "conf", "disputed"?, "src" }[]` | Platform-wide tips. Platforms with `tipsTitle` (GMT800) hold only vehicle health and longevity tips here; part-specific tips go on the part. Both shapes render. |
+| `tipsTitle` | string? | Section name, e.g. `"Vehicle health tips"`. Omit to keep the old "Owner tips" label. |
 | `dyno` | Table? | |
 | `videos` | `{ "title", "channel", "date", "url", "note" }[]` | Always Video-reported. |
 | `unknowns` | string[] | Gaps still open. |
@@ -72,10 +74,12 @@ Use the same `<id>` as the "coming soon" entry in `CATALOG` in `app.js` (e.g. `f
 Row: `{ "wheel": string, "tire": string, "fit": string, "conf": Conf, "disputed"?: bool, "src"?: Source[], "drop"?: string, "truck"?: string }`. Include `drop` and `truck` on lowered rows (the table adds those columns when the first row has `drop`). Rows without `src` use the stance `src`.
 
 ### Problem
-`{ "id", "title", "years": string, "symptoms": string, "cause": string, "fix": string, "parts": partId[], "guide"?: guideId, "conf": Conf, "confNote"?: string, "disputed"?: bool, "src": Source[] }`
+`{ "id", "title", "years": string, "symptoms": string, "cause": string, "fix": string, "parts": partId[], "guide"?: guideId, "conf": Conf, "confNote"?: string, "disputed"?: bool, "src": Source[], "tips"?: Tip[] }`
+`tips` (optional) shows as an "Owner tips" block on the problem page.
 
 ### Guide
-`{ "id", "type": "diy" | "swap", "title", "summary", "conf", "disputed"?, "src": Source[], "steps": Step[], "torque": Table | null, "parts": partId[] }`
+`{ "id", "type": "diy" | "swap", "title", "summary", "conf", "disputed"?, "src": Source[], "steps": Step[], "torque": Table | null, "parts": partId[], "tips"?: Tip[] }`
+`tips` (optional) shows as an "Owner tips" block on the guide page.
 Torque tables use columns `["Fastener", "Spec"]` (or `["Fastener", "<variant A>", "<variant B>"]` when specs differ by model, e.g. 1500 vs 2500) with the spec text copied verbatim (e.g. `"190 N·m (140 lb-ft)"`).
 
 ### Part (same as `gmt800-deals.json` items)
@@ -93,11 +97,13 @@ Torque tables use columns `["Fastener", "Spec"]` (or `["Fastener", "<variant A>"
   ],
   "notes": "...",
   "best_offer": { "seller": "...", "price": 77.0, "url": "https://...", "status": "verified" },
-  "source": "master-guide"
+  "source": "master-guide",
+  "tips": [ { "text": "...", "source_url": "https://...", "source_name": "Forum: thread title", "confidence": "forum", "date_checked": "2026-10-11" } ]
 }
 ```
 - All `fitment` keys are optional. `hunter_fit` may be `true`, `false`, or a short string like `"Only if 4WD"`.
 - `best_offer` is the lowest **verified** listed price, or `null` when there is none. The app highlights the offer whose seller, url and price match it. When it is `null`, the build sheet uses the lowest priced offer and marks it Unverified.
+- `tips` is optional (`Tip[]`) and renders as "Owner tips" on the part detail page. Parts without it are unchanged.
 - `price_unit: "each"` means per item (the build sheet has a quantity control).
 
 ## Source classification (apply the same way on every platform)

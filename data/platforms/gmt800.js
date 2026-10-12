@@ -1451,6 +1451,15 @@ window.FORGE_PLATFORMS.gmt800 = {
      "label": "Tanin kit",
      "url": "https://taninautoelectronix.com/product/kit-7-gm-gmc-chevy-cadillac-stepper-motors-switec-juken-x27-168-10-bulbs/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Mark each needle at its left stop on tape before removing it, and test the cluster plugged in before final reassembly.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-replace-instrument-cluster-stepper-motors.42609/",
+     "source_name": "SilveradoSierra.com: How to replace instrument cluster stepper motors",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1470,6 +1479,15 @@ window.FORGE_PLATFORMS.gmt800 = {
     {
      "label": "NHTSA EA11-001",
      "url": "https://static.nhtsa.gov/odi/inv/2011/INCLA-EA11001-4484.PDF"
+    }
+   ],
+   "tips": [
+    {
+     "text": "NHTSA closed its 1999-2003 GMT800 brake line investigation (EA11-001) without a defect finding, but complaint rates in salt states pass 1.0 per thousand vehicles after 12 years. Inspect yearly.",
+     "source_url": "https://static.nhtsa.gov/odi/inv/2011/INCLA-EA11001-4484.PDF",
+     "source_name": "NHTSA EA11-001 closing resume (brake line corrosion)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1514,6 +1532,15 @@ window.FORGE_PLATFORMS.gmt800 = {
      "label": "EasyAutoDiagnostics",
      "url": "https://easyautodiagnostics.com/gm/4800-5300-6000/fuel-pump-pressure-test"
     }
+   ],
+   "tips": [
+    {
+     "text": "Skip dropping the tank: remove the driver-side bed bolts, loosen the passenger side and jack the bed up for clearance over the pump.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/fuel-pump-sending-unit-114891/",
+     "source_name": "ChevroletForum: Fuel pump and sending unit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1537,6 +1564,15 @@ window.FORGE_PLATFORMS.gmt800 = {
      "label": "NTK PartSmarts PDF",
      "url": "https://ngksparkplugs.com/wp-content/uploads/2020/06/PartsSmarts-Specialty-Sensor-KnockSensor-Corrosion.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "GM bulletin: engine washing makes knock sensor codes worse; leave the RTV dam open at the rear when reassembling.",
+     "source_url": "https://gm.saturn.team/GMC_Truck/Yukon___2WD/1999/bulletins/893793",
+     "source_name": "GM bulletin 893793 (knock sensors)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1554,6 +1590,15 @@ window.FORGE_PLATFORMS.gmt800 = {
     {
      "label": "Sonnax",
      "url": "https://www.sonnax.com/tech_resources/659-all-over-the-map-attacking-4l60-e-burnt-3-4-clutches-with-confidence"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Owners who kept a 4L60E alive past 200k recommend the Corvette servo upgrade, a stock-size Sonnax O-ring boost valve, and a big auxiliary cooler.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/how-offten-should-4l60e-fluids-changed-508548/",
+     "source_name": "PerformanceTrucks.net: How often should 4L60e fluids be changed?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1598,6 +1643,15 @@ window.FORGE_PLATFORMS.gmt800 = {
      "label": "OnAllCylinders 2015",
      "url": "https://www.onallcylinders.com/2015/11/19/saving-silverado-part-3-getting-the-hvac-system-operating-properly/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Clicking actuators: a battery disconnect or PCM swap can make the doors re-cycle and stop the clicking.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/dual-zone-climate-control-drivers-side-clicking-400432/",
+     "source_name": "PerformanceTrucks.net: Dual zone climate control drivers side clicking",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1631,6 +1685,15 @@ window.FORGE_PLATFORMS.gmt800 = {
     {
      "label": "Transfer Case Solutions",
      "url": "https://www.transfercasesolutions.com/post/np246-transfer-case-won-t-stay-in-4hi"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Several Dorman encoder motors were DOA, according to the transfer case vendor.",
+     "source_url": "https://www.transfercasesolutions.com/post/np246-transfer-case-won-t-stay-in-4hi",
+     "source_name": "Transfer Case Solutions: NP246 won't stay in 4HI",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1783,6 +1846,15 @@ window.FORGE_PLATFORMS.gmt800 = {
      "label": "AFM bulletin PDF",
      "url": "https://static.oemdtc.com/NHTSA-PDFs/SB-10062524-7690.pdf"
     }
+   ],
+   "tips": [
+    {
+     "text": "Check the PCV side first: one 4.8 owner found at least half a quart of oil inside the intake and plugged drain holes in the updated driver-side valve cover.",
+     "source_url": "https://www.gmt800.com/threads/oil-in-the-intake.8166/",
+     "source_name": "GMT800.com: Oil in the intake (2005 Sierra 4.8)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   }
  ],
@@ -1880,6 +1952,15 @@ window.FORGE_PLATFORMS.gmt800 = {
    "parts": [
     "guide-ntk-id0116",
     "gmt800-felpro-ms98016t"
+   ],
+   "tips": [
+    {
+     "text": "Do not buy Gen IV knock sensors for a Gen III. Torque them exactly; over- or under-torque changes the reading.",
+     "source_url": "https://www.gminsidenews.com/threads/knock-sensor-on-2002-silverado.112749/",
+     "source_name": "GMInsideNews: Knock sensor on 2002 Silverado",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1913,6 +1994,15 @@ window.FORGE_PLATFORMS.gmt800 = {
    "torque": null,
    "parts": [
     "suspension-belltech-6400"
+   ],
+   "tips": [
+    {
+     "text": "Some trucks need pinion shims after drop shackles, some do not; buy shackles with grease zerks.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/guys-drop-shackles-come-here-261277/",
+     "source_name": "PerformanceTrucks.net: Guys with drop shackles, come in here!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2008,6 +2098,15 @@ window.FORGE_PLATFORMS.gmt800 = {
    },
    "parts": [
     "gmt800-belltech-6512"
+   ],
+   "tips": [
+    {
+     "text": "Lowered trucks: anything over 3\" in the rear, plan on a C-notch.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/3-5-drop-silverado-495645/",
+     "source_name": "PerformanceTrucks.net: 3/5 drop Silverado",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2047,6 +2146,15 @@ window.FORGE_PLATFORMS.gmt800 = {
    "parts": [
     "gmt800-rc-7592",
     "gmt800-southern-truck-15003"
+   ],
+   "tips": [
+    {
+     "text": "For longevity stay within about 1 inch over stock on the keys and align after; cranked-up keys wear tie rods, CV axles and ball joints fast.",
+     "source_url": "https://www.silveradosierra.com/threads/cranking-up-the-torsion-keys.402394/",
+     "source_name": "SilveradoSierra.com: Cranking up the torsion keys (2003 Sierra)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2244,6 +2352,15 @@ window.FORGE_PLATFORMS.gmt800 = {
     "gmt800-raybestos-56825r",
     "gmt800-acdelco-18a925a",
     "gmt800-wagner-zd792a"
+   ],
+   "tips": [
+    {
+     "text": "Replacing hard lines with NiCopp: chamfer, lube the die, and go easy on the second flare stroke.",
+     "source_url": "https://www.gmt400.com/threads/nickle-copper-brake-tubing-making-flares.59686/",
+     "source_name": "GMT400.com: Nickel-copper brake tubing (making flares)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -3035,7 +3152,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "torque": null,
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "6-lug rear discs on a 9.5\" 14-bolt work with Savana/Express rotors.",
+     "source_url": "https://www.silveradosierra.com/threads/6-to-8-lug-conversion-with-1500hd-knuckles.643601/",
+     "source_name": "SilveradoSierra.com: 6 to 8 lug conversion with 1500HD knuckles",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "duramax",
@@ -3187,130 +3313,92 @@ window.FORGE_PLATFORMS.gmt800 = {
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Knock sensors: engine washing makes it worse; leave the RTV dam open at the rear.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "GM knock sensor bulletin",
-     "url": "https://gm.saturn.team/GMC_Truck/Yukon___2WD/1999/bulletins/893793"
-    }
-   ]
+   "text": "4L60E fluid and filter: the owner's manual interval is every 50,000 miles for severe service (towing, short trips, stop and go, hauling, oversize tires, engine mods) and 100,000 for normal service. A pan drop and filter only replaces about 1/2 to 2/3 of the fluid.",
+   "source_url": "https://www.silveradosierra.com/threads/how-to-do-a-4l60e-transmission-service.761/",
+   "source_name": "SilveradoSierra.com: How to do a 4L60E transmission service",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Don't buy Gen IV knock sensors for a Gen III. Exact torque matters because over- or under-torque changes the reading.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "GMInsideNews knock sensor",
-     "url": "https://www.gminsidenews.com/threads/knock-sensor-on-2002-silverado.112749/"
-    },
-    {
-     "label": "TMC knock sensor how-to",
-     "url": "https://www.truckmodcentral.com/threads/how-to-replace-knock-sensors-on-a-gmt800.13076/"
-    }
-   ]
+   "text": "Factory service intervals (Sierra and Silverado): automatic transfer case fluid 50,000 mi, fuel filter 30,000 mi, air filter 30,000 mi, engine coolant 150,000 mi, spark plugs 100,000 mi. 4L60-E drain and refill is about 5.0 qt.",
+   "source_url": "https://diagnostdata.com/cadillac/escalade/gmt800-2001-2006/remont/specifications/engine-performance/engine-controls-service-adjustment-specifications-60l/",
+   "source_name": "diagnostdata: GMT800 service intervals and capacities",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Some 00–02 Escalades were GMT400. Check the platform before buying \"Escalade\" parts.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "TYF Escalade interchange",
-     "url": "https://www.tahoeyukonforum.com/threads/escalade-parts-interchange-years.93926/"
-    }
-   ]
+   "text": "Heat kills the 4L60E. A transmission builder's two rules: reduce heat with an auxiliary cooler, and service the transmission. If you tow, add a trans temp gauge; 250°F means you have a problem.",
+   "source_url": "https://www.silveradosierra.com/threads/how-to-do-a-4l60e-transmission-service.761/",
+   "source_name": "SilveradoSierra.com: How to do a 4L60E transmission service",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "6-lug rear discs on a 9.5\" 14-bolt work with Savana/Express rotors (see the 8-lug swap guide).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "silveradosierra 6 to 8 lug",
-     "url": "https://www.silveradosierra.com/threads/6-to-8-lug-conversion-with-1500hd-knuckles.643601/"
-    }
-   ]
+   "text": "One owner added a Hayden 679 cooler and saw trans temps drop from about 195°F to about 160°F on the same 30-mile run (read with HP Tuners). Another bypasses the radiator cooler with a TruCool 40k and has never seen temps above 150°F.",
+   "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/4l60e-trans-fluid-flush-550476/",
+   "source_name": "PerformanceTrucks.net: 4l60e trans fluid? flush?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "HVAC actuator re-park: a battery disconnect or PCM swap can make the doors re-cycle and stop the clicking.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "PT.net HVAC clicking",
-     "url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/dual-zone-climate-control-drivers-side-clicking-400432/"
-    }
-   ]
+   "text": "Changing fluid on a high-mileage 4L60E that was never serviced: several owners report slipping after the first fresh-fluid change. One owner instead swapped a few quarts through the cooler line at every oil change starting at 145k and the trans was still fine at 218,000 miles.",
+   "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/how-offten-should-4l60e-fluids-changed-508548/",
+   "source_name": "PerformanceTrucks.net: How often should 4L60e fluids be changed?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11",
+   "disputed": true
   },
   {
-   "text": "Dyno caveat: 2nd-gear, unlocked-converter pulls read low. Owners say most cam choices are \"over cammed\" for trucks.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "PT.net TSP220 LQ9 dyno",
-     "url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/my-tsp220-bolt-lq9-setup-dyno-graph-519133/"
-    }
-   ]
+   "text": "Cooling system: these engines are prone to corrosion if Dex-Cool is not mixed with distilled water; run at least 50% Dex-Cool. Any steady coolant loss matters; a gurgling heater core at startup is a classic sign the level is low.",
+   "source_url": "https://www.automotiveforums.com/t968186-gurgling_heater_core_5_3_silverado.html",
+   "source_name": "AutomotiveForums: Gurgling heater core 5.3 Silverado (2000)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "4L60E: a 6L80 swapper had replaced his 4L60E three times. Fits the Sonnax \"notoriously common\" 3-4 burn note.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "silveradosierra 03 Sierra 6L80",
-     "url": "https://www.silveradosierra.com/threads/03-sierra-6l80-swap.336218/"
-    }
-   ]
+   "text": "Bleeding coolant (no bleed screws): fill with the cap off and the engine running, keep adding until it reaches operating temperature, rev to about 2000 rpm a few times with the heater on MAX, then cap it.",
+   "source_url": "https://www.automotiveforums.com/t968186-gurgling_heater_core_5_3_silverado.html",
+   "source_name": "AutomotiveForums: Gurgling heater core 5.3 Silverado (2000)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Transfer case: several Dorman encoder motors were DOA, per the vendor.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Transfer Case Solutions",
-     "url": "https://www.transfercasesolutions.com/post/np246-transfer-case-won-t-stay-in-4hi"
-    }
-   ]
+   "text": "NV246 (Auto 4WD) transfer case: owners use GM Auto-Trak II (the blue fluid). One found red ATF in a 2004 Suburban case that should have had Auto-Trak II. Owner-quoted interval is 30k to 50k miles.",
+   "source_url": "https://www.gmt800.com/threads/auto-trak-fluid.9014/",
+   "source_name": "GMT800.com: Auto Trak fluid",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "One LQ9 owner says 3.73s put him at 2,300 rpm at 70 mph.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "PT.net TSP220 LQ9 dyno",
-     "url": "https://www.performancetrucks.net/forums/gm-engine-exhaust-performance-21/my-tsp220-bolt-lq9-setup-dyno-graph-519133/"
-    }
-   ]
+   "text": "Brake lines in salt states: NHTSA found 1999-2003 GMT800 brake pipe failures climb with age, from under 0.1 per thousand vehicles at 7 years to over 1.0 per thousand after 12 years, from the pipe coating wearing out. Inspect the full length of the lines every year if you drive in salt.",
+   "source_url": "https://static.nhtsa.gov/odi/inv/2011/INCLA-EA11001-4484.PDF",
+   "source_name": "NHTSA EA11-001 closing resume (brake line corrosion)",
+   "confidence": "verified",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Lowered trucks: anything over 3\" rear, plan on a C-notch.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "PT.net 3/5 drop",
-     "url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/3-5-drop-silverado-495645/"
-    }
-   ]
+   "text": "Rust prevention: an owner sprays Fluid Film behind the bumpers, into the small openings in the rockers and up in the wheel wells, and pressure-washes the underside at least every spring as the owner's manual suggests. Note it can strip the factory wax off the frame.",
+   "source_url": "https://www.gmt800.com/threads/rust-belt-owners-woolwax-or-fluid-film.9275/",
+   "source_name": "GMT800.com: Rust belt owners, Woolwax or Fluid Film?",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "eBay parts compatibility tables can be wrong; buy new items from top-rated sellers. On Amazon prefer \"Ships from and sold by Amazon\" or the brand storefront.",
-   "conf": "unconfirmed",
-   "src": []
+   "text": "Oil burning on a Gen III V8: check the PCV side first. A 2005 4.8 owner chasing smoke and knock codes found at least half a quart of oil inside the intake and the drain holes in the updated driver-side valve cover (fixed PCV orifice) plugged.",
+   "source_url": "https://www.gmt800.com/threads/oil-in-the-intake.8166/",
+   "source_name": "GMT800.com: Oil in the intake (2005 Sierra 4.8)",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "A \"Ford 97-03 torsion keys\" claim (gmt800.com snippet) is unverified and odd; treat as unreliable.",
-   "conf": "unconfirmed",
-   "src": []
-  },
-  {
-   "text": "An 8L90 swap was suggested by an LS1Tech poster (opinion, not a done swap).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "LS1Tech 6L80 thread",
-     "url": "https://ls1tech.com/forums/conversions-swaps/1966688-6l80-into-2000-silverado.html"
-    }
-   ]
+   "text": "Owners who cured oil in the intake on 5.3 trucks did it with a catch can in the PCV line; drain it at oil changes.",
+   "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/2007-excessive-oil-comsumption-453088/",
+   "source_name": "PerformanceTrucks.net: 2007 excessive oil consumption",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -3593,7 +3681,30 @@ window.FORGE_PLATFORMS.gmt800 = {
     "price": 77,
     "url": "https://www.belltech.com/products/shackle-kit-2-inch-drop-6400/",
     "status": "verified"
-   }
+   },
+   "tips": [
+    {
+     "text": "Pinion angle: some trucks need pinion shims after drop shackles, some do not. The truck will squat more when loaded but keeps its load rating as long as all the springs stay.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/guys-drop-shackles-come-here-261277/",
+     "source_name": "PerformanceTrucks.net: Guys with drop shackles, come in here!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Belltech shackles use a stock-like rubber bushing that will not squeak like urethane ones. One owner reports a smoother ride than the factory shackles, with no shims and no vibration.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/guys-drop-shackles-come-here-261277/",
+     "source_name": "PerformanceTrucks.net: Guys with drop shackles, come in here!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Install takes about half an hour, but a factory hitch makes it a pain. Buy shackles with grease zerks.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/guys-drop-shackles-come-here-261277/",
+     "source_name": "PerformanceTrucks.net: Guys with drop shackles, come in here!",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-belltech-6512",
@@ -3659,7 +3770,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.belltech.com/products/shackle-hanger-kit-4-inch-drop-6512/",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Lowered trucks: anything over 3\" in the rear, plan on a C-notch.",
+     "source_url": "https://www.performancetrucks.net/forums/gm-drivetrain-suspension-22/3-5-drop-silverado-495645/",
+     "source_name": "PerformanceTrucks.net: 3/5 drop Silverado",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-belltech-2508",
@@ -3880,7 +4000,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "4WD torsion-bar trucks only. 2WD GMT800 1500 uses coil front - leveling there = spacers/spindles.",
-   "best_offer": null
+   "best_offer": null,
+   "tips": [
+    {
+     "text": "Do not crank the keys all the way up. Owners warn it drastically shortens tie rod, CV axle and ball joint life; for longevity stay within about 1 inch over stock and get an alignment.",
+     "source_url": "https://www.silveradosierra.com/threads/cranking-up-the-torsion-keys.402394/",
+     "source_name": "SilveradoSierra.com: Cranking up the torsion keys (2003 Sierra)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rent or buy a torsion bar unloading tool (Rancho names MOOG T40016). Measure the exposed adjuster bolt thread before removal and match it on install; a rusted key may need an air hammer on the back of the bar.",
+     "source_url": "https://www.gorancho.com/blogs/suspension-installation-tech-tips/how-to-install-a-rancho-r-level-it-torsion-key-system",
+     "source_name": "Rancho: LEVEL IT torsion key installation",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-southern-truck-15003",
@@ -3919,7 +4055,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,suspension,torsion+bar+key,14350",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Do not crank the keys all the way up. Owners warn it drastically shortens tie rod, CV axle and ball joint life; for longevity stay within about 1 inch over stock and get an alignment.",
+     "source_url": "https://www.silveradosierra.com/threads/cranking-up-the-torsion-keys.402394/",
+     "source_name": "SilveradoSierra.com: Cranking up the torsion keys (2003 Sierra)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Rent or buy a torsion bar unloading tool (Rancho names MOOG T40016). Measure the exposed adjuster bolt thread before removal and match it on install; a rusted key may need an air hammer on the back of the bar.",
+     "source_url": "https://www.gorancho.com/blogs/suspension-installation-tech-tips/how-to-install-a-rancho-r-level-it-torsion-key-system",
+     "source_name": "Rancho: LEVEL IT torsion key installation",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-k150383-shackle",
@@ -4263,7 +4415,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,suspension,ball+joint,10070",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Press-in lowers need a press. Owners suggest a complete lower control arm with the joint already installed (Moog) as faster and often cheaper than pressing; get an alignment after.",
+     "source_url": "https://www.gmt800.com/threads/ball-joints.17/",
+     "source_name": "GMT800.com: Ball joints",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-k6540",
@@ -4299,7 +4460,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,suspension,ball+joint,10070",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Factory uppers are riveted on and a pain to remove the first time; replacements bolt in, so later swaps are easy. One owner found the Moog Problem Solver dust boots a pain to fit.",
+     "source_url": "https://www.gmt800.com/threads/ball-joints.17/",
+     "source_name": "GMT800.com: Ball joints",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-es3493t",
@@ -4395,7 +4565,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,steering,idler+arm,7328",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Mixed reports: one owner had no issues with Moog HD idler, bracket and pitman on several GMT800 trucks; another says his Moog idler lasted only a year and switched to GM.",
+     "source_url": "https://www.duramaxforum.com/threads/front-end-work.1038651/",
+     "source_name": "DuramaxForum: Front end work (GMT800 steering parts)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "gmt800-moog-k6536hd",
@@ -4425,7 +4605,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,steering,pitman+arm,7368",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Pulling the pitman arm: one owner removed the steering box to get a puller on it; another used a fork-style pitman tool and it came off in seconds. Replace the dust boot above the arm while it is off.",
+     "source_url": "https://www.duramaxforum.com/threads/front-end-work.1038651/",
+     "source_name": "DuramaxForum: Front end work (GMT800 steering parts)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-k700539",
@@ -4492,7 +4681,30 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,brake+line,1820",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "NiCopp flares: chamfer the tube inside and out, lube the die, and do not squeeze the second stroke as hard as on steel. The soft tube deforms easily, and over-tightening a nut can ruin a good flare.",
+     "source_url": "https://www.gmt400.com/threads/nickle-copper-brake-tubing-making-flares.59686/",
+     "source_name": "GMT400.com: Nickel-copper brake tubing (making flares)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "AGS: flare the first end, bend the line using the old line as a pattern, test fit it in the factory clips, then flare the second end.",
+     "source_url": "https://www.agscompany.com/cdn/shop/files/ags_nicopp_brake-line-assembly-instructions.pdf?v=9176414389303362364",
+     "source_name": "AGS: NiCopp brake line assembly instructions",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Order the ABS block fittings with your line; an owner who replumbed about 20 GM full-size trucks used Edelmann 121045 and says they are not common. A pickup took him about 5 hours, a Tahoe 6 to 8.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/stainless-steel-hard-lines-526451/page3/",
+     "source_name": "PerformanceTrucks.net: Stainless steel hard lines (page 3)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-dorman-919102",
@@ -4527,7 +4739,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,brake+line,1820",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Order the ABS block fittings with your line; an owner who replumbed about 20 GM full-size trucks used Edelmann 121045 and says they are not common. A pickup took him about 5 hours, a Tahoe 6 to 8.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/stainless-steel-hard-lines-526451/page3/",
+     "source_name": "PerformanceTrucks.net: Stainless steel hard lines (page 3)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-ags-cnc106kit",
@@ -4562,7 +4783,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,brake+line,1820",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "NiCopp flares: chamfer the tube inside and out, lube the die, and do not squeeze the second stroke as hard as on steel. The soft tube deforms easily, and over-tightening a nut can ruin a good flare.",
+     "source_url": "https://www.gmt400.com/threads/nickle-copper-brake-tubing-making-flares.59686/",
+     "source_name": "GMT400.com: Nickel-copper brake tubing (making flares)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Order the ABS block fittings with your line; an owner who replumbed about 20 GM full-size trucks used Edelmann 121045 and says they are not common. A pickup took him about 5 hours, a Tahoe 6 to 8.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/stainless-steel-hard-lines-526451/page3/",
+     "source_name": "PerformanceTrucks.net: Stainless steel hard lines (page 3)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-powerstop-z36785",
@@ -4757,7 +4994,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Cheap hubs die early: one owner got about 13k miles from Duralast and NAPA hubs, another under 10k from budget hubs. Owners recommend OEM first, Timken or SKF second.",
+     "source_url": "https://www.silveradosierra.com/threads/aftermarket-hub-assembly.752919/",
+     "source_name": "SilveradoSierra.com: Aftermarket hub assembly",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Sealed hubs ship with minimal grease; one owner adds a few pumps (without over-packing) before installing.",
+     "source_url": "https://www.silveradosierra.com/threads/aftermarket-hub-assembly.752919/",
+     "source_name": "SilveradoSierra.com: Aftermarket hub assembly",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-515175",
@@ -4792,7 +5045,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Owner reports on Moog hubs are mixed: one says his went bad within a year and he switched to Timken. Several prefer Timken or SKF.",
+     "source_url": "https://www.silveradosierra.com/threads/which-brand-of-wheel-hub-bearings-are-good-right-now.769401/",
+     "source_name": "SilveradoSierra.com: Which brand of wheel hub bearings are good right now?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "gmt800-timken-sp450301",
@@ -4827,7 +5090,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Timken is the most recommended aftermarket hub on the forum (\"the only one I've not had one come back on\"), though one owner had a Timken fail at 70k and went back to GM OE.",
+     "source_url": "https://www.silveradosierra.com/threads/which-brand-of-wheel-hub-bearings-are-good-right-now.769401/",
+     "source_name": "SilveradoSierra.com: Which brand of wheel hub bearings are good right now?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-moog-515036",
@@ -4862,7 +5134,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Owner reports on Moog hubs are mixed: one says his went bad within a year and he switched to Timken. Several prefer Timken or SKF.",
+     "source_url": "https://www.silveradosierra.com/threads/which-brand-of-wheel-hub-bearings-are-good-right-now.769401/",
+     "source_name": "SilveradoSierra.com: Which brand of wheel hub bearings are good right now?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "gmt800-timken-sp500300",
@@ -4897,7 +5179,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,brake+%26+wheel+hub,wheel+bearing+%26+hub,1636",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Timken is the most recommended aftermarket hub on the forum (\"the only one I've not had one come back on\"), though one owner had a Timken fail at 70k and went back to GM OE.",
+     "source_url": "https://www.silveradosierra.com/threads/which-brand-of-wheel-hub-bearings-are-good-right-now.769401/",
+     "source_name": "SilveradoSierra.com: Which brand of wheel hub bearings are good right now?",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-delphi-fg0271",
@@ -4929,7 +5220,31 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,fuel+%26+air,fuel+pump+%26+housing+assembly,10147",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Skip dropping the tank: remove the driver-side bed bolts, loosen the passenger side and jack the bed up for clearance over the pump.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/fuel-pump-sending-unit-114891/",
+     "source_name": "ChevroletForum: Fuel pump and sending unit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Brand quality is disputed. One experienced owner says GM/ACDelco (MU1613 for his 2002 1500) is the only safe bet and that Bosch and Delphi \"are not what they used to be\"; a FullsizeChevy guide calls OEM Delphi the preferred brand.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/how-do-i-install-fuel-pump-116621/",
+     "source_name": "ChevroletForum: How do I install this fuel pump (2002 4.8)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    },
+    {
+     "text": "Before opening the lines, depressurize by pulling the fuel pump fuse and cranking until it stalls, and after the install turn the key to ON 3 or 4 times for 3 seconds to prime. Spec is 55 to 62 psi key-on.",
+     "source_url": "https://forum.fullsizechevy.com/t/fuel-pump-replacement-on-gmt800-trucks-step-by-step/528",
+     "source_name": "FullsizeChevy: Fuel pump replacement on GMT800 trucks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-delphi-fg0407",
@@ -4961,7 +5276,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,fuel+%26+air,fuel+pump+%26+housing+assembly,10147",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Two connectors means the module also carries the fuel tank pressure sensor (EVAP). An owner who received a one-connector pump for his 2002 4.8 was told it was the wrong part; return it rather than splicing.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/how-do-i-install-fuel-pump-116621/",
+     "source_name": "ChevroletForum: How do I install this fuel pump (2002 4.8)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Skip dropping the tank: remove the driver-side bed bolts, loosen the passenger side and jack the bed up for clearance over the pump.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/fuel-pump-sending-unit-114891/",
+     "source_name": "ChevroletForum: Fuel pump and sending unit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-bosch-67305",
@@ -4993,7 +5324,17 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,fuel+%26+air,fuel+pump+%26+housing+assembly,10147",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Brand quality is disputed: one owner says Bosch and Delphi aftermarket pumps are \"not what they used to be\" and recommends GM/ACDelco for a hard-to-reach pump.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/how-do-i-install-fuel-pump-116621/",
+     "source_name": "ChevroletForum: How do I install this fuel pump (2002 4.8)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11",
+     "disputed": true
+    }
+   ]
   },
   {
    "id": "gmt800-acdelco-mu1614",
@@ -5026,7 +5367,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,fuel+%26+air,fuel+pump+%26+housing+assembly,10147",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Owners who want to do this job once pay for GM/ACDelco; one says off-brand pumps are \"a crap shoot\".",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/how-do-i-install-fuel-pump-116621/",
+     "source_name": "ChevroletForum: How do I install this fuel pump (2002 4.8)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If you cut an access hatch in the bed instead, put dielectric grease on the pump connectors; the hatch lets more water reach them.",
+     "source_url": "https://chevroletforum.com/forum/1999-2006-gmt800-108/fuel-pump-access-hatch-mod-114427/",
+     "source_name": "ChevroletForum: Fuel pump access hatch mod",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-wix-33481",
@@ -5056,7 +5413,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,fuel+%26+air,fuel+filter,6200",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "1999-2002 trucks have an inline fuel filter near the frame rail; 2003-2006 do not. Change it with the pump.",
+     "source_url": "https://forum.fullsizechevy.com/t/fuel-pump-replacement-on-gmt800-trucks-step-by-step/528",
+     "source_name": "FullsizeChevy: Fuel pump replacement on GMT800 trucks",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-felpro-ms98016t",
@@ -5091,7 +5457,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,engine,intake+manifold+gasket,5424",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Fel-Pro: the OE plastic carrier gaskets crack from heat and ethanol. MS 98016 T uses an aluminized steel carrier with torque limiters and tabs that locate on the head bolts.",
+     "source_url": "https://www.felpro.com/technical/tecblogs/gm-trucks-intake-manifold-gasket-issues.html",
+     "source_name": "Fel-Pro: Solving GM trucks intake manifold gasket issues",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Torque the intake bolts in sequence to 44 in-lb, then 89 in-lb (inch-pounds). An 8 mm socket removes the 10 intake bolts.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/step-step-intake-gasket-swap-391825/",
+     "source_name": "PerformanceTrucks.net: Step by step intake gasket swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-gm-89060413",
@@ -5126,7 +5508,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,engine,intake+manifold+gasket,5424",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Torque the intake bolts in sequence to 44 in-lb, then 89 in-lb (inch-pounds). An 8 mm socket removes the 10 intake bolts.",
+     "source_url": "https://www.performancetrucks.net/forums/gmt-800-older-gm-general-discussion-130/step-step-intake-gasket-swap-391825/",
+     "source_name": "PerformanceTrucks.net: Step by step intake gasket swap",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-felpro-vs50504r1",
@@ -5186,7 +5577,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,ignition,spark+plug,7212",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "41-962 is a double platinum plug gapped at .043\"; the iridium 41-110 (now 41-162, GM 19417055) is gapped at .040\". Owners say all three perform the same; one pulled 41-110s after 130k miles.",
+     "source_url": "https://www.silveradosierra.com/threads/spark-plugs.745560/",
+     "source_name": "SilveradoSierra.com: Spark plugs (2001 5.3)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Counterfeit ACDelco plugs are out there: one owner says a fake set bought on Amazon melted. Buy from a known parts store; real ones come with each plug boxed and stamped.",
+     "source_url": "https://www.silveradosierra.com/threads/spark-plugs.745560/",
+     "source_name": "SilveradoSierra.com: Spark plugs (2001 5.3)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-ngk-7397",
@@ -5248,7 +5655,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,ignition,spark+plug+wire,7224",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "With aftermarket headers, wires that touch a primary tube burn. On an LS1 a dyno tech found heat sleeves only hid where the wires burned through; ceramic-boot wires (Accel) fixed it.",
+     "source_url": "https://ls1tech.com/forums/generation-iii-external-engine/1980595-keep-burning-spark-plug-wires.html",
+     "source_name": "LS1Tech: Keep burning spark plug wires",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-ngk-51033",
@@ -5278,7 +5694,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,ignition,spark+plug+wire,7224",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "With aftermarket headers, wires that touch a primary tube burn. On an LS1 a dyno tech found heat sleeves only hid where the wires burned through; ceramic-boot wires (Accel) fixed it.",
+     "source_url": "https://ls1tech.com/forums/generation-iii-external-engine/1980595-keep-burning-spark-plug-wires.html",
+     "source_name": "LS1Tech: Keep burning spark plug wires",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-delphi-gn10298",
@@ -5343,7 +5768,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,cooling+system,water+pump,2208",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Torque the water pump bolts in two passes: 15 N·m (11 lb ft), then 30 N·m (22 lb ft), on clean, oil-free gasket surfaces with new gaskets. Owners say scraping off old sealer is the hard part.",
+     "source_url": "https://www.truckmodcentral.com/threads/gmt-800-water-pump-replacement-4-8l-5-3l-and-6-0l-engines.2470/",
+     "source_name": "Truck Mod Central: GMT-800 water pump replacement",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A small weep at the water pump gasket is common on these engines; one 6.0 owner found the passenger-side gasket leaking and suggests replacing the pump rather than just the gaskets at high mileage.",
+     "source_url": "https://www.automotiveforums.com/t968186-gurgling_heater_core_5_3_silverado.html",
+     "source_name": "AutomotiveForums: Gurgling heater core 5.3 Silverado (2000)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-acdelco-252845",
@@ -5373,7 +5814,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,cooling+system,water+pump,2208",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Torque the water pump bolts in two passes: 15 N·m (11 lb ft), then 30 N·m (22 lb ft), on clean, oil-free gasket surfaces with new gaskets.",
+     "source_url": "https://www.truckmodcentral.com/threads/gmt-800-water-pump-replacement-4-8l-5-3l-and-6-0l-engines.2470/",
+     "source_name": "Truck Mod Central: GMT-800 water pump replacement",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-aisin-wpgm605v",
@@ -5403,7 +5853,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,cooling+system,water+pump,2208",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Torque the water pump bolts in two passes: 15 N·m (11 lb ft), then 30 N·m (22 lb ft), on clean, oil-free gasket surfaces with new gaskets.",
+     "source_url": "https://www.truckmodcentral.com/threads/gmt-800-water-pump-replacement-4-8l-5-3l-and-6-0l-engines.2470/",
+     "source_name": "Truck Mod Central: GMT-800 water pump replacement",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-gates-33910",
@@ -5587,7 +6046,30 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805,transmission-automatic,filter,8600",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "There are shallow and deep 4L60E filters: the shallow one fits the flat-bottom pan, the deep one the pan with a stepped section. Match the filter to your pan.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-do-a-4l60e-transmission-service.761/",
+     "source_name": "SilveradoSierra.com: How to do a 4L60E transmission service",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Pan bolts 10 ft-lb or just snug; too tight and it will leak. A builder prefers the fiber gasket from a trans shop. More than 1/8 inch of material on the magnet is a warning sign.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-do-a-4l60e-transmission-service.761/",
+     "source_name": "SilveradoSierra.com: How to do a 4L60E transmission service",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "On a deep-pan Z71 one owner got the pan off without dropping the exhaust by bending the shift linkage aside; about an hour and a half.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-do-a-4l60e-transmission-service.761/",
+     "source_name": "SilveradoSierra.com: How to do a 4L60E transmission service",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-speedeng-motor-mounts",
@@ -5713,7 +6195,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": true,
     "url": "https://www.flowmastermufflers.com/products/exhaust/exhaust_systems/cat-back/parts/17392",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Drone: an owner with a Flowmaster 50 single-in dual-out on his 2000 extended cab called the drone \"horrible\". Flowmaster's own tech suggests adding a resonator, or a FlowFX or 50 Series HD muffler for less tone and drone.",
+     "source_url": "https://www.silveradosierra.com/threads/flowmaster-drone.702336/",
+     "source_name": "SilveradoSierra.com: Flowmaster drone",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-flowmaster-17395",
@@ -5745,7 +6236,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://shop.redline360.com/products/flowmaster-exhaust-chevy-silverado-gmc-sierra-1500-4-8l-5-3l-99-07-classic-body-only-2-50-catback-american-thunder-17395",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Drone: an owner with a Flowmaster 50 single-in dual-out on his 2000 extended cab called the drone \"horrible\". Flowmaster's own tech suggests adding a resonator, or a FlowFX or 50 Series HD muffler for less tone and drone.",
+     "source_url": "https://www.silveradosierra.com/threads/flowmaster-drone.702336/",
+     "source_name": "SilveradoSierra.com: Flowmaster drone",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-flowmaster-717990",
@@ -5899,7 +6399,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://speed-engineering.com/products/speed-engineering-silverado-sierra-1-7-8-longtube-headers-1999-2006",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Long tubes delete the rear (downstream) O2 sensors and need extensions for the front ones; most owners zip-tie the rear connectors out of the way and tune them out. Expect a check engine light without a tune.",
+     "source_url": "https://www.silveradosierra.com/threads/long-tube-headers-w-02-provisions.774289/",
+     "source_name": "SilveradoSierra.com: Long tube headers w/ O2 provisions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners say Speed Engineering headers flow well for the price; buy their spark plug wires so the boots clear the primaries.",
+     "source_url": "https://www.silveradosierra.com/threads/long-tube-headers-w-02-provisions.774289/",
+     "source_name": "SilveradoSierra.com: Long tube headers w/ O2 provisions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-speedeng-true-dual-single-cab",
@@ -6300,7 +6816,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.c2cfabrication.com/collections/chevrolet-silverado-parts/products/1999-2007-chevy-silverado-1500-truck-standard-cab-2dr-cab-corner-lh",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Cab corners (GMT400 thread, same technique): pull the bed, cut below the body line, use 0.023\" ER70S-6 wire and short stitch welds to avoid warping, and pull the rear trim first; the foam sealing the cab corner is very flammable.",
+     "source_url": "https://www.gmt400.com/threads/cab-corner-tips.37522/",
+     "source_name": "GMT400.com: Cab corner tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-c2c-cc16-99r",
@@ -6331,7 +6856,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://www.c2cfabrication.com/products/1999-2007-chevy-silverado-1500-truck-standard-cab-2dr-cab-corner-rh",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Cab corners (GMT400 thread, same technique): pull the bed, cut below the body line, use 0.023\" ER70S-6 wire and short stitch welds to avoid warping, and pull the rear trim first; the foam sealing the cab corner is very flammable.",
+     "source_url": "https://www.gmt400.com/threads/cab-corner-tips.37522/",
+     "source_name": "GMT400.com: Cab corner tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-keyparts-0856-113l",
@@ -6370,7 +6904,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://raybuck.com/product/1999-06-silveradosierra-cab-corner-2-doorregular-cab-driver-side/",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Cab corners (GMT400 thread, same technique): pull the bed, cut below the body line, use 0.023\" ER70S-6 wire and short stitch welds to avoid warping, and pull the rear trim first; the foam sealing the cab corner is very flammable.",
+     "source_url": "https://www.gmt400.com/threads/cab-corner-tips.37522/",
+     "source_name": "GMT400.com: Cab corner tips",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-keystone-rrp1401",
@@ -6465,7 +7008,30 @@ window.FORGE_PLATFORMS.gmt800 = {
     "total_includes_shipping": false,
     "url": "https://taninautoelectronix.com/product/kit-7-gm-gmc-chevy-cadillac-stepper-motors-switec-juken-x27-168-10-bulbs/",
     "basis": "Lowest verified listed price; shipping not included unless shipping_note says free"
-   }
+   },
+   "tips": [
+    {
+     "text": "Before pulling needles, turn each one gently to its left stop and mark the needle tip on tape on the gauge face. A kitchen fork slid under the hub pops a needle off.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-replace-instrument-cluster-stepper-motors.42609/",
+     "source_name": "SilveradoSierra.com: How to replace instrument cluster stepper motors",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Desolder the 4 pins of each motor with desoldering wick and a little heat; never pry a motor off the board. One owner found a bulb-type solder sucker did not work well. Plan on 6 to 8 hours the first time.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-replace-instrument-cluster-stepper-motors.42609/",
+     "source_name": "SilveradoSierra.com: How to replace instrument cluster stepper motors",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Plug the cluster in and start the truck to test all gauges before final reassembly.",
+     "source_url": "https://www.silveradosierra.com/threads/how-to-replace-instrument-cluster-stepper-motors.42609/",
+     "source_name": "SilveradoSierra.com: How to replace instrument cluster stepper motors",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "gmt800-remy-21798",
@@ -6658,7 +7224,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "",
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Long tubes delete the rear (downstream) O2 sensors and need extensions for the front ones; most owners zip-tie the rear connectors out of the way and tune them out. Expect a check engine light without a tune.",
+     "source_url": "https://www.silveradosierra.com/threads/long-tube-headers-w-02-provisions.774289/",
+     "source_name": "SilveradoSierra.com: Long tube headers w/ O2 provisions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "guide-speedeng-lt-2",
@@ -6681,7 +7256,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "",
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Long tubes delete the rear (downstream) O2 sensors and need extensions for the front ones; most owners zip-tie the rear connectors out of the way and tune them out. Expect a check engine light without a tune.",
+     "source_url": "https://www.silveradosierra.com/threads/long-tube-headers-w-02-provisions.774289/",
+     "source_name": "SilveradoSierra.com: Long tube headers w/ O2 provisions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "guide-speedeng-ypipe",
@@ -6866,7 +7450,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "Fixes door sag from worn pins.",
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Most GMT800 factory pins are press-in: take the door off (3 10 mm bolts plus the harness through the cowl grommet), grind the pin heads, then push the pins out with a 9020902-01 style tool. Replacement pins bolt in.",
+     "source_url": "https://www.gmt800.com/threads/2005-tahoe-drivers-door-hinge-pins.9044/",
+     "source_name": "GMT800.com: 2005 Tahoe driver's door hinge pins",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "A 1999 Silverado owner says the Dorman kit he installed around 2010 is still holding up; another recommends Cunningham bronze bushings, since the bushings are the real wear item.",
+     "source_url": "https://www.gmt800.com/threads/2005-tahoe-drivers-door-hinge-pins.9044/",
+     "source_name": "GMT800.com: 2005 Tahoe driver's door hinge pins",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "guide-c2c-901-01c",
@@ -6911,7 +7511,23 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "That page lists no vehicle fitment; GMT800 use is per the 2015 OnAllCylinders install.",
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "After installing an actuator, let the HVAC module recalibrate: pull the HVAC fuse for at least 10 seconds, start the truck and wait 40 seconds without touching any HVAC controls (shop manual procedure quoted by an owner).",
+     "source_url": "https://www.tahoeyukonforum.com/threads/blend-door-actuator-relearn-procedure.121677/",
+     "source_name": "TahoeYukonForum: Blend door actuator relearn procedure",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The passenger-side (temperature blend) and driver-side (mode) actuators are different parts; confirm which one is clicking before ordering.",
+     "source_url": "https://www.tahoeyukonforum.com/threads/blend-door-actuator-relearn-procedure.121677/",
+     "source_name": "TahoeYukonForum: Blend door actuator relearn procedure",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "guide-gm-22807123",
@@ -6987,7 +7603,16 @@ window.FORGE_PLATFORMS.gmt800 = {
     }
    ],
    "notes": "",
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Do not buy Gen IV knock sensors for a Gen III. Torque them exactly; over- or under-torque changes the reading.",
+     "source_url": "https://www.gminsidenews.com/threads/knock-sensor-on-2002-silverado.112749/",
+     "source_name": "GMInsideNews: Knock sensor on 2002 Silverado",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "guide-gm-12572717",

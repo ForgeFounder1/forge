@@ -42,6 +42,15 @@
     if ((!list || !list.length) && !note) return '';
     return '<div class="src">' + (note ? esc(note) + (list && list.length ? ' · ' : '') : '') + links(list) + '</div>';
   }
+  // Tips: new shape {text, source_url, source_name, confidence, date_checked, disputed?} or legacy {text, conf, src, disputed?}
+  function tipList(list) {
+    return '<ul class="tips">' + (list || []).map(function (t) {
+      var src = t.source_url ? [{ label: t.source_name || 'Source', url: t.source_url }] : t.src;
+      var note = t.date_checked ? 'checked ' + t.date_checked : '';
+      return '<li><div>' + esc(t.text) + '</div><div class="tip-m">' + badges({ conf: t.confidence || t.conf, disputed: t.disputed }) + srcs(src, note) + '</div></li>';
+    }).join('') + '</ul>';
+  }
+  function tipBlock(title, list) { return list && list.length ? '<h2 class="h2">' + title + '</h2>' + tipList(list) : ''; }
   function table(t, opts) {
     opts = opts || {};
     var dis = t.disputedRows || [];
@@ -264,9 +273,10 @@
       tips: p.tips.length + ' tips' + ((p.videos || []).length ? ', ' + p.videos.length + ' videos' : '')
     };
   }
+  function tipsName(p) { return p.tipsTitle || SNAME.tips; }
   function sectionMenu(pid, p) {
     var c = counts(p);
-    return '<div class="rows menu">' + SECTIONS.map(function (s) { return row('#/p/' + pid + '/' + s[0], s[1], esc(c[s[0]])); }).join('') + '</div>';
+    return '<div class="rows menu">' + SECTIONS.map(function (s) { return row('#/p/' + pid + '/' + s[0], s[0] === 'tips' ? esc(tipsName(p)) : s[1], esc(c[s[0]])); }).join('') + '</div>';
   }
   function safetyBlock(p, home) {
     var a = p.safetyAlerts || [];
@@ -383,6 +393,7 @@
     var fr = fitRows(f);
     h += '<h2 class="h2">Fitment</h2>' + (fitLabel(f) ? '<p>' + fitLabel(f) + (f.hunter_note ? ' <span class="small muted">' + esc(f.hunter_note) + '</span>' : '') + '</p>' : '') + (fr.length ? '<dl class="facts">' + fr.map(function (r) { return '<dt>' + r[0] + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' : '<p class="small dim">No fitment details listed. Check with the seller.</p>');
     if (part.notes) h += '<h2 class="h2">Notes</h2><p>' + esc(part.notes) + '</p>';
+    h += tipBlock('Owner tips', part.tips);
     if (used.length) h += '<h2 class="h2">Used in</h2><div class="rows">' + used.map(function (u) { return row('#/p/' + pid + '/' + u[0] + '/' + encodeURIComponent(u[1]), esc(u[2]), u[0] === 'problems' ? 'Problem' : 'Guide'); }).join('') + '</div>';
     h += '<p class="small dim">' + esc(part.category) + ' · ' + (part.source === 'master-guide' ? 'From master guide' : 'From deals check') + '</p></article>';
     return h;
@@ -394,6 +405,7 @@
       h += '<dl class="kv"><dt>Symptom</dt><dd>' + esc(x.symptoms) + '</dd>' + (x.cause ? '<dt>Cause</dt><dd>' + esc(x.cause) + '</dd>' : '') + '<dt>Fix</dt><dd>' + esc(x.fix) + '</dd></dl>';
       if (x.confNote) h += '<p class="small dim">' + esc(x.confNote) + '</p>';
       if (x.guide) { var g = p.guides.filter(function (y) { return y.id === x.guide; })[0]; h += '<div class="rows">' + row('#/p/' + pid + '/guides/' + encodeURIComponent(x.guide), 'Step-by-step guide', g ? esc(g.title) : '') + '</div>'; }
+      h += tipBlock('Owner tips', x.tips);
       if (x.parts && x.parts.length) h += '<h2 class="h2">Parts for this fix</h2>' + miniParts(pid, p, x.parts);
       h += '<h2 class="h2">Sources</h2>' + srcs(x.src);
       return h + '</article>';
@@ -416,6 +428,7 @@
       var h = crumb(pid, p, [['Guides', '#/p/' + pid + '/guides']]) + '<article class="detail" id="guide-' + esc(g.id) + '"><div class="eyebrow">' + (g.type === 'swap' ? 'Swap guide' : 'DIY guide') + '</div><h1 class="d-title">' + esc(g.title) + '</h1>' + (g.summary ? '<p class="lede">' + esc(g.summary) + '</p>' : '') + '<p>' + badges(g) + '</p>' + safetyBlock(p, false);
       if (g.steps.length) h += '<h2 class="h2">Steps</h2><ol class="steps">' + g.steps.map(function (s) { return '<li><span>' + esc(s.text) + ((s.conf && s.conf !== g.conf) || s.disputed ? ' ' + badges({ conf: s.conf && s.conf !== g.conf ? s.conf : null, disputed: s.disputed }) : '') + '</span></li>'; }).join('') + '</ol>';
       if (g.torque) h += '<h2 class="h2">Torque specs</h2>' + table(g.torque, { numCol: 1 });
+      h += tipBlock('Owner tips', g.tips);
       if (g.parts && g.parts.length) h += '<h2 class="h2">Parts for this job</h2>' + miniParts(pid, p, g.parts);
       h += '<h2 class="h2">Sources</h2>' + srcs(g.src);
       return h + '</article>';
@@ -432,8 +445,9 @@
     return h2;
   }
   function tabTips(pid, p) {
-    var h = secHead(pid, p, SNAME.tips);
-    h += '<ul class="tips">' + p.tips.map(function (t) { return '<li><div>' + esc(t.text) + '</div><div class="tip-m">' + badges(t) + srcs(t.src) + '</div></li>'; }).join('') + '</ul>';
+    var h = secHead(pid, p, tipsName(p));
+    if (p.tipsTitle) h += '<p class="small muted">General maintenance and longevity. Tips about a specific part are on that part\'s page.</p>';
+    h += tipList(p.tips);
     if (p.dyno) h += fold('Owner dyno results', table(p.dyno));
     if (p.videos) h += fold('Videos', '<p class="small muted">Title, channel and date confirmed. Videos were not watched, so only the description is used.</p><div class="rows">' + p.videos.map(function (v) { return '<a class="row" href="' + esc(v.url) + '" target="_blank" rel="noopener"><span class="row-main"><span class="row-t">' + esc(v.title) + '</span><span class="row-s">' + esc(v.channel) + (v.date ? ' · ' + esc(v.date) : '') + '</span><span class="row-s">' + esc(v.note) + '</span><span>' + badge('video') + '</span></span></a>'; }).join('') + '</div>', false, p.videos.length + '');
     return h;
@@ -453,10 +467,10 @@
     p.wheels.stances.forEach(function (s) { s.rows.forEach(function (r) { add('wheels', s.id, s.title + ': ' + r.wheel + ' with ' + r.tire, (r.drop ? r.drop + ' ' + (r.truck || '') + ' · ' : '') + r.fit, r); }); });
     ((p.wheels.extraFacts || {}).items || []).forEach(function (f) { add('wheels', '', p.wheels.extraFacts.title + ': ' + f.label, f.text, f); });
     p.wheels.tpms.forEach(function (f) { add('wheels', '', 'TPMS: ' + f.label, f.text, f); });
-    p.parts.forEach(function (x) { var lp = listedPrice(x); add('parts', x.id, x.brand + ' ' + (x.part_number || '') + ' · ' + x.name, x.category + ' · ' + (lp ? money(lp.price) + ' at ' + lp.seller : 'no verified price') + ' · ' + JSON.stringify(x.fitment || {}).replace(/[{}"\[\]]/g, ' ') + ' ' + (x.notes || ''), null); });
-    p.problems.forEach(function (x) { add('problems', x.id, x.title, x.symptoms + ' · ' + x.cause + ' · ' + x.fix, x); });
+    p.parts.forEach(function (x) { var lp = listedPrice(x); add('parts', x.id, x.brand + ' ' + (x.part_number || '') + ' · ' + x.name, x.category + ' · ' + (lp ? money(lp.price) + ' at ' + lp.seller : 'no verified price') + ' · ' + JSON.stringify(x.fitment || {}).replace(/[{}"\[\]]/g, ' ') + ' ' + (x.notes || '') + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), null); });
+    p.problems.forEach(function (x) { add('problems', x.id, x.title, x.symptoms + ' · ' + x.cause + ' · ' + x.fix + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), x); });
     p.guides.forEach(function (g) { add('guides', g.id, (g.type === 'swap' ? 'Swap: ' : 'DIY: ') + g.title, g.summary + ' ' + g.steps.map(function (s) { return s.text; }).join(' ') + ' ' + (g.torque ? g.torque.rows.map(function (r) { return r.join(' '); }).join(' ') : ''), g); });
-    p.tips.forEach(function (t) { add('tips', '', 'Tip', t.text, t); });
+    p.tips.forEach(function (t) { add('tips', '', 'Tip', t.text, { conf: t.confidence || t.conf }); });
     (p.videos || []).forEach(function (v) { add('tips', '', 'Video: ' + v.title, v.channel + ' · ' + v.note, { conf: 'video' }); });
     p._idx = I; return I;
   }
@@ -477,7 +491,7 @@
     var h = '<p class="small dim">' + hits.length + ' results in ' + esc(p.name) + '</p>';
     if (!hits.length) return h + '<p class="empty">Nothing matched. Try a part number, a code like P0332, a size like 285/55R20, or a word like "knock".</p>';
     var by = {}; hits.forEach(function (it) { (by[it.tab] = by[it.tab] || []).push(it); });
-    SECTIONS.forEach(function (s) { if (by[s[0]]) h += '<div class="grp-h">' + s[1] + ' · ' + by[s[0]].length + '</div><div class="rows">' + by[s[0]].slice(0, 30).map(function (it) { return hitRow(pid, it, terms); }).join('') + '</div>'; });
+    SECTIONS.forEach(function (s) { if (by[s[0]]) h += '<div class="grp-h">' + (s[0] === 'tips' ? esc(tipsName(p)) : s[1]) + ' · ' + by[s[0]].length + '</div><div class="rows">' + by[s[0]].slice(0, 30).map(function (it) { return hitRow(pid, it, terms); }).join('') + '</div>'; });
     return h;
   }
 
