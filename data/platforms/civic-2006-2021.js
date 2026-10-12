@@ -1343,6 +1343,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "Honda bulletin 10-048 (NHTSA MC-10115157; guide gave no full path)",
      "url": "https://www.nhtsa.gov/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Honda extended the block warranty on 2006-08 and early 2009 R18 Civics (not Si or Hybrid) to 10 years from original purchase with no mileage limit; branded or salvage titles are excluded and a dealer VIN check decides eligibility. When checking for a crack, Honda has techs remove the oil/air separator cover on the back of the block and pressure test.",
+     "source_url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10115157-9999.pdf",
+     "source_name": "Honda Service Bulletin: Engine Block Coolant Leak warranty extension (2006-09 Civic)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1366,6 +1375,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "8thcivic.com",
      "url": "https://www.8thcivic.com/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Only rear toe is adjustable from the factory, and toe eats tires faster than camber, so get a printout and set toe near zero first. If camber is past about -2 degrees on a stock-height car, fit Honda's updated rear upper arms or adjustable aftermarket arms.",
+     "source_url": "https://www.8thcivic.com/threads/rear-tires-wearing-on-inner-edge.540361/",
+     "source_name": "8thCivic.com: Rear Tires Wearing on Inner Edge",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1388,6 +1406,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     {
      "label": "8thcivic.com",
      "url": "https://www.8thcivic.com/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Honda TSB 08-020 blames a faulty 3rd gear synchronizer or 3-4 shift sleeve for grinding into, popping out of or hard shifts into 3rd, worse in cold weather, and replaces the 3rd gear set. It covers all 2006-07 Si coupes and 2007 Si sedans plus early 2008 VIN ranges.",
+     "source_url": "https://8g.hondaclub.cz/files/service_bulletin/SB-08-020_Transmission%20Grinds%20When%20Shifting%20Into%203rd%20Gear.pdf",
+     "source_name": "Honda Service Bulletin 08-020: Transmission Grinds When Shifting Into 3rd Gear",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1416,7 +1443,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "fix": "Honda revised the mount part; easy DIY.",
    "parts": [],
    "conf": "forum",
-   "src": []
+   "src": [],
+   "tips": [
+    {
+     "text": "Support the engine with a block of wood on a floor jack under the pan before pulling the upper torque rod and mount. Torque the brace bolts to 36 ft-lb, mount-to-frame bolts to 47 ft-lb, the three mount bolts to 52 ft-lb and the torque rod to 47 ft-lb; if the engine threads are damaged, chase them with a tap and blow them out first.",
+     "source_url": "https://www.1aauto.com/how-to-replace-front-engine-mount-2006-11-honda-civic/video/48316",
+     "source_name": "1A Auto (video): How to Replace Front Engine Mount 2006-11 Honda Civic",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "recalls-8th",
@@ -1496,6 +1532,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "9thgencivic.com \"17x9 +35 on an FB6\"",
      "url": "https://www.9thgencivic.com/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Removing the clutch delay valve from the slave cylinder (Honda 46930-SWA-G11 if you would rather modify a spare) gives consistent engagement and stops quick-shift grinds, but rev hang is an ECU behavior that only a tune removes. The clutch shares the brake reservoir, so rinse spilled brake fluid off painted surfaces with low-pressure water.",
+     "source_url": "https://www.civicx.com/forum/threads/removing-clutch-delay-valve.16339/",
+     "source_name": "CivicX.com: Removing clutch delay valve",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1512,6 +1557,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "Honda letters (NHTSA MC-10152439, MC-10152769, MC-10158743, MC-10163173; guide gave no full path)",
      "url": "https://www.nhtsa.gov/"
     }
+   ],
+   "tips": [
+    {
+     "text": "Bulletin 18-137 is a TSB, not a recall, so a VIN lookup on Honda's recall site will not show it; ask the dealer to run a VIN inquiry. It was first offered in cold-weather states and includes an oil change, PCM update and idle relearn, so owners time it near 15 percent oil life.",
+     "source_url": "https://www.civicx.com/forum/threads/update-to-the-civic-oil-dilution-fix.32977/",
+     "source_name": "CivicX.com: Update to the Civic Oil Dilution fix",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1527,6 +1581,22 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     {
      "label": "Honda bulletin 19-091 (NHTSA MC-10163799; guide gave no full path)",
      "url": "https://www.nhtsa.gov/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Bulletin 19-091 extends the 2016-2018 Civic A/C condenser warranty to 10 years from purchase with unlimited miles for factory pinhole corrosion leaks; leaks from road debris and branded titles are excluded.",
+     "source_url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10163796-0001.pdf",
+     "source_name": "Honda Service Bulletin 19-091: Warranty Extension, A/C Condenser Leaking",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "If a dealer says an already-replaced condenser is no longer covered, owners say there is no limit on how many times the bulletin applies; several had it done three times. Try another dealer or escalate to the Honda regional office.",
+     "source_url": "https://www.civicx.com/forum/threads/a-c-condenser-warranty-question.103629/",
+     "source_name": "CivicX.com: A/C Condenser Warranty Question",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1548,6 +1618,22 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "label": "civicx.com",
      "url": "https://www.civicx.com/"
     }
+   ],
+   "tips": [
+    {
+     "text": "FK8 track limp mode comes from high coolant temp or fuel starvation; the gauge reads wrong under high lateral g, so top up fuel between sessions. Limp mode caps revs at about 4,000 to 4,500 rpm and will not clear on its own; owners reset it by disconnecting the battery for a few minutes.",
+     "source_url": "https://www.civicx.com/forum/threads/how-to-recognize-limp-mode-at-the-track-and-what-to-do-about-it.52492/",
+     "source_name": "CivicX.com: How to recognize Limp Mode at the track and what to do about it",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Owners rank the fixes as radiator first, then a vented hood with the vent over the turbo, then an oil cooler. Between sessions open the hood, run the heater on high, and do a cool-down lap when the gauge climbs.",
+     "source_url": "https://www.civicx.com/forum/threads/how-to-recognize-limp-mode-at-the-track-and-what-to-do-about-it.52492/",
+     "source_name": "CivicX.com: How to recognize Limp Mode at the track and what to do about it",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -1566,6 +1652,22 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     {
      "label": "fk8.wiki Well Known Issues",
      "url": "https://fk8.wiki/"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Before blaming synchros, take the slack out of the clutch master cylinder pushrod: loosen the 12 mm lock nut, turn the rod clockwise until it firms up (owners found 3 turns or about 1/4 in of slack), and relock it. Several FK8 and Si owners say the 1-2 and 2-3 grinds disappeared.",
+     "source_url": "https://www.civicx.com/forum/threads/clutch-pedal-adjustment-gear-grind-fix.42528/",
+     "source_name": "CivicX.com: Clutch Pedal Adjustment (gear grind fix)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "The 1st to 2nd ratio jump (3.625 to 2.115) is the hardest on the synchro, so press the clutch fully to the floor before putting any pressure on the lever. 4th gear lockouts are usually the lever going diagonally between gates, and 1st and reverse lockouts are normal.",
+     "source_url": "https://www.civicx.com/forum/threads/transmission-grinds-lockouts-causes-solutions.62471/",
+     "source_name": "CivicX.com: Transmission Grinds/Lockouts Causes & Solutions",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
     }
    ]
   },
@@ -1741,7 +1843,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     ],
     "note": "N·m / lb-ft"
    },
-   "parts": []
+   "parts": [],
+   "tips": [
+    {
+     "text": "On the 9th gen, torque the front caliper bracket bolts to 80 ft-lb (1A uses blue threadlocker), the caliper slide bolts to 25 ft-lb and the 19 mm lug nuts to 80 ft-lb in a criss-cross pattern on the ground.",
+     "source_url": "https://www.1aauto.com/how-to-replace-front-brakes-2012-2015-honda-civic/video/68536",
+     "source_name": "1A Auto (video): How to Replace Front Brakes 2012-2015 Honda Civic",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "front-susp",
@@ -2118,6 +2229,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "parts": [
     "clutch-cm-fx100-1015",
     "clutch-exedy-08957"
+   ],
+   "tips": [
+    {
+     "text": "On the R18, clean around the plug well before removing the plug, thread new plugs in by hand, and torque them to 18 ft-lb. The coil hold-down nut is 10 mm and only takes 8.7 ft-lb.",
+     "source_url": "https://www.1aauto.com/how-to-replace-spark-plugs-2005-11-honda-civic/video/45138",
+     "source_name": "1A Auto (video): How to Replace Spark Plugs 2005-11 Honda Civic",
+     "confidence": "video",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2172,6 +2292,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "parts": [
     "mount-hasport-fgk1",
     "tune-flashpro-r18"
+   ],
+   "tips": [
+    {
+     "text": "Grab from an 06-11 Si donor: header, cat, AF and secondary O2 sensors, ECU, engine and charge harness, shift cables, intake and MAF, plus radiator and heater hoses. To keep hydraulic steering the builder used a TSX pump with a custom high-pressure line, and made an adapter harness so the Si ECU works with the non-Si cabin harness.",
+     "source_url": "https://www.8thcivic.com/threads/k-series-swap-in-06-11-civic-ex-lx-parts-list.661069/",
+     "source_name": "8thCivic.com: K-series swap in 06-11 Civic EX, LX parts list",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   },
   {
@@ -2248,95 +2377,33 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "torque": null,
    "parts": [
     "tune-flashpro-swap"
+   ],
+   "tips": [
+    {
+     "text": "An Si owner first tried a K20C4 on the Si ECU and could not get VTEC and the FK8 radiator fans to work, then redid it with FK8 ECU, BCM, chassis harness, dash, ABS and booster. He says buying a whole rebuilt-title FK8 and parting it out paid for the donor in two weeks, and the hardest part was mating the rear Si chassis harness to the FK8 harness.",
+     "source_url": "https://www.civicx.com/forum/threads/type-r-swap-into-fc3-coupe-sir.111260/",
+     "source_name": "CivicX.com: Type R swap Into FC3 coupe (SiR)",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
    ]
   }
  ],
+ "tipsTitle": "Vehicle health tips",
  "tips": [
   {
-   "text": "Type R wheels are 5x120 / M14 at 94 lb-ft; every other Civic here is 5x114.3 / M12 at 80 lb-ft.",
-   "conf": "verified-secondary",
-   "src": [
-    {
-     "label": "honcivic.automotive-manuals.com G009244",
-     "url": "https://honcivic.automotive-manuals.com/"
-    }
-   ]
+   "text": "On a 1.5T used mostly for short cold trips, check the dipstick between changes for a rising level or fuel smell; the TSB update only speeds warm-up and does not stop dilution, so owners shorten oil intervals.",
+   "source_url": "https://www.civicx.com/forum/threads/update-to-the-civic-oil-dilution-fix.32977/",
+   "source_name": "CivicX.com: Update to the Civic Oil Dilution fix",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   },
   {
-   "text": "Fender rolling buys roughly 5–10 mm. Camber does more.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "8thcivic.com",
-     "url": "https://www.8thcivic.com/"
-    }
-   ]
-  },
-  {
-   "text": "9th/10th gens: the front fender-liner metal tabs are the first contact point. Heat before bending to save the paint.",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "9thgencivic.com \"17x9 +35 on an FB6\"",
-     "url": "https://www.9thgencivic.com/"
-    }
-   ]
-  },
-  {
-   "text": "Use hub-centric rings for 73.1 mm-bore wheels and 60° conical lug nuts (not ball seat).",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Apex all gens Civic fitment guide (site; guide gave no page URL)",
-     "url": "https://apexwheels.com/"
-    }
-   ]
-  },
-  {
-   "text": "Buying an 06–09 non-Si: check the block for the R18A1 crack; the extended warranty has expired.",
-   "conf": "verified",
-   "src": [
-    {
-     "label": "Honda bulletin 10-048 (NHTSA MC-10115157; guide gave no full path)",
-     "url": "https://www.nhtsa.gov/"
-    }
-   ]
-  },
-  {
-   "text": "10th 1.5T: smell the oil for fuel and watch for a rising dipstick.",
-   "conf": [
-    "verified",
-    "forum"
-   ],
-   "src": [
-    {
-     "label": "2016 Civic owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
-    }
-   ]
-  },
-  {
-   "text": "KPro is 02–05 Civic Si only, not 06–11 ($795, search synthesis).",
-   "conf": "forum",
-   "src": [
-    {
-     "label": "Hondata FlashPro",
-     "url": "https://www.hondata.com/flashpro"
-    }
-   ]
-  },
-  {
-   "text": "Hondata CANBoost: 9th-gen Si boost control (news 2025-06-25; price unconfirmed).",
-   "conf": [
-    "verified",
-    "unconfirmed"
-   ],
-   "src": [
-    {
-     "label": "Hondata FlashPro",
-     "url": "https://www.hondata.com/flashpro"
-    }
-   ]
+   "text": "On an FK8, keep the temperature gauge below 3/4 on track and ease off with a cool-down lap if it climbs; before buying cooling parts, try a cool spring track day to see whether your pace triggers it.",
+   "source_url": "https://www.civicx.com/forum/threads/how-to-recognize-limp-mode-at-the-track-and-what-to-do-about-it.52492/",
+   "source_name": "CivicX.com: How to recognize Limp Mode at the track and what to do about it",
+   "confidence": "forum",
+   "date_checked": "2026-10-11"
   }
  ],
  "dyno": {
@@ -2470,7 +2537,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://bc.springrates.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Set preload so the spring cannot move up and down or side to side at full droop; spinning in place is fine because the top bearing rotates. Owners snug the perch to the spring and then add about 5 mm, and remember lowering by spinning the whole body rather than the perch keeps preload unchanged.",
+     "source_url": "https://www.civicx.com/forum/threads/preload-question.38021/",
+     "source_name": "CivicX.com: Preload Question",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "For clunks after a BR install, check sway bar end link tightness first, then whether the OEM rubber isolators went back on both ends of the rear spring and which way the rear perch was installed.",
+     "source_url": "https://www.civicx.com/forum/threads/clunking-noise-after-bc-coilover-br-series-install.74590/",
+     "source_name": "CivicX.com: Clunking Noise After BC Coilover Br series install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "coil-bc-fk8-ds",
@@ -2582,7 +2665,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Most owners run the Pro-Kit without a rear camber kit because it is only about a 1 in drop, accepting slightly extra negative rear camber and rotating tires more often. Front caster cannot be adjusted on these cars, so do not expect an alignment shop to fix it.",
+     "source_url": "https://www.civicx.com/forum/threads/alignment-fail-eibach-pro-kit.54630/",
+     "source_name": "CivicX.com: Alignment Fail? Eibach Pro Kit",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swaybar-progress",
@@ -2622,7 +2714,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Grease the inside of the D-shaped poly bushings with the supplied packet, torque the bracket bolts and the lower control arm end link bolt to 28 ft-lb, and the end link nut to 38 to 42 ft-lb. Use a universal with a short 14 mm socket to reach the end link nut.",
+     "source_url": "https://www.progressauto.com/ecom/download/62.1018.pdf",
+     "source_name": "Progress Technology: Rear anti-sway bar installation instructions, MY16+ Civic (62.1018)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Hold the end link stud with a loose 5 mm Allen key, not a 5 mm socket, or the socket can jam against the control arm and force you to take it all apart again. Owners call it about a 30 minute job.",
+     "source_url": "https://www.civicx.com/forum/threads/review-progress-technology-20-5mm-rear-sway-bar.7104/",
+     "source_name": "CivicX.com: Review: Progress Technology 20.5mm Rear Sway Bar",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "swaybar-eibach",
@@ -2976,7 +3084,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "If the end-tank studs will not line up with the frame, you forgot to move the rubber mounts from the bottom of the stock intercooler end tanks to the PRL core. Check inside the core for styrofoam from shipping, and check that the hot-side pipe is not rubbing the horn.",
+     "source_url": "https://www.civicx.com/forum/threads/my-prl-intercooler-install-review.20961/",
+     "source_name": "CivicX.com: My PRL Intercooler Install/Review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Fit the stock or PRL adapter set that matches your charge pipes on each side, and check every coupler and adapter before the bumper goes back on, since most are unreachable afterward. PRL says the core needs no ECU recalibration; replace any broken bumper clips with OEM Honda clips.",
+     "source_url": "https://manualspro.net/28681-prl-hc10-ic-motorsports-front-mount-intercooler-installation-guide",
+     "source_name": "PRL Motorsports: PRL-HC10-IC front mount intercooler installation guide (2016-2021 Civic 1.5T)",
+     "confidence": "verified",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "ic-prl-bundle-15t",
@@ -3600,7 +3724,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.hybrid-racing.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Expect more gear rattle and noise above 2,000 rpm after the FX100 and single-mass flywheel, because the 9th gen Si comes with a dual-mass flywheel. Clutch Masters told the owner this is normal and one of their most common calls.",
+     "source_url": "https://www.9thgencivic.com/threads/clutch-noise-after-install.188010/",
+     "source_name": "9thGenCivic.com: Clutch Noise After Install",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "flywheel-cm-1215",
@@ -3874,7 +4007,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.prlmotorsports.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "An Si owner who could not stand the dash-shaking idle with Perrin inserts found the PRL mount much better: some vibration at startup and pulling away in first, mild with A/C, and settling in after about 150 miles. It needs a bit more throttle finesse to launch smoothly, and the engine bucking between shifts went away.",
+     "source_url": "https://www.civicx.com/forum/threads/prl-rear-motor-mount-rmm-review.85182/",
+     "source_name": "CivicX.com: PRL Rear Motor Mount (RMM) Review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "mount-wunderladen",
@@ -4089,7 +4231,16 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "url": "https://www.kseriesparts.com/",
     "status": "verified"
    },
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "A K24A2 swap on Hasport FGK mounts needs the 8th gen Si oil pan, because the rear mount bolts to it. The deeper Si sump also needs a modified Si oil pump or a JDM FD2 pump with its chain, guide and tensioner; the builder warns against skipping that if you track the car.",
+     "source_url": "https://www.8thcivic.com/threads/k-series-swap-in-06-11-civic-ex-lx-parts-list.661069/",
+     "source_name": "8thCivic.com: K-series swap in 06-11 Civic EX, LX parts list",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-flashpro-r18",
@@ -4201,7 +4352,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    ],
    "notes": "",
    "best_offer": null,
-   "source": "master-guide"
+   "source": "master-guide",
+   "tips": [
+    {
+     "text": "Expect every warning on the dash to light up during the roughly 4 minute upload; they clear on restart. You can store the return-to-stock calibration on the FlashPro itself (Online > Return ECU to stock at home, then put your tune in the secondary slot) so you can revert without a laptop.",
+     "source_url": "https://www.civicx.com/forum/threads/hondata-flashpro-6-psi-my-ongoing-review.21931/",
+     "source_name": "CivicX.com: Hondata...Flashpro... +6 PSI ... my ongoing review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    },
+    {
+     "text": "Knock control takes a few drive cycles to settle and give full power on 93 octane, so judge the tune after several drives, not the first one. The dual map lets Econ give a stock-type tune and Econ off give the +6 psi map.",
+     "source_url": "https://www.civicx.com/forum/threads/hondata-flashpro-6-psi-my-ongoing-review.21931/",
+     "source_name": "CivicX.com: Hondata...Flashpro... +6 PSI ... my ongoing review",
+     "confidence": "forum",
+     "date_checked": "2026-10-11"
+    }
+   ]
   },
   {
    "id": "tune-flashpro-swap",
