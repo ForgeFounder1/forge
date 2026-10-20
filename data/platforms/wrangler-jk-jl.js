@@ -93,15 +93,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2012 Wrangler Owner's Manual",
+     "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
     },
     {
-     "label": "2016 Wrangler Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2016-wrangler.pdf"
+     "label": "2016 Wrangler Owner's Manual (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
     },
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     },
     {
@@ -124,7 +124,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/index.html"
     },
     {
-     "label": "2012 Wrangler Owner's Manual",
+     "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
     },
     {
@@ -168,11 +168,11 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     },
     {
-     "label": "2022 Wrangler Owner's Manual",
+     "label": "2022 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2022-wrangler.pdf"
     }
    ]
@@ -187,7 +187,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     },
     {
@@ -206,7 +206,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2012 Wrangler Owner's Manual",
+     "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
     },
     {
@@ -214,7 +214,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://lemon-manuals.la/"
     },
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     }
    ]
@@ -310,12 +310,129 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2008 Wrangler Owner's Manual",
+     "label": "2008 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2008-wrangler.pdf"
     },
     {
      "label": "FCA 2011 Wrangler Unlimited spec sheet",
      "url": "https://www.wranglerforum.com/attachments/2011-jk-specs-pdf.4553258/"
+    }
+   ]
+  },
+  {
+   "topic": "Starter negative cable units",
+   "text": "The 2012 factory manual starter page prints 5 N·m (4.5 in-lb); the tank page prints 5 N·m (45 in-lb). Units typo: use 5 N·m.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): starter",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/starting-starter.html"
+    },
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): fuel tank",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/fuel-delivery-gas-tank-fuel.html"
+    }
+   ]
+  },
+  {
+   "topic": "Generator top retainer units",
+   "text": "Printed 54 N·m (43 ft-lb); 54 N·m is about 40 ft-lb and 43 ft-lb about 58 N·m. Which is the typo is unresolved; N·m treated as primary.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): generator",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/charging-generator.html"
+    }
+   ]
+  },
+  {
+   "topic": "Water pump bolt count",
+   "text": "Removal says 11 bolts; the install sequence numbers 1-12. Unresolved.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): water pump",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/engine-pump-water.html"
+    }
+   ]
+  },
+  {
+   "topic": "JL tire pressure",
+   "text": "Owners report 37 psi on every JL placard; cjponyparts says 35 psi. The manuals defer to the placard; use yours.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "JLwranglerforums 315/70R17 pressure thread (extract)",
+     "url": "https://www.jlwranglerforums.com/forum/threads/tire-pressure-stock-xr-315-70-17.121408/"
+    },
+    {
+     "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+     "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Paint codes reused (PY5, PYV)",
+   "text": "PY5 is Dozer on the JK and Nacho on the JL; PYV is Stinger Yellow on the JK and Hella Yella on the JL. Always pair the code with the year.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "jeepdecalstore Wrangler paint codes by year",
+     "url": "https://jeepdecalstore.com/blogs/jds-blog/jeep-wrangler-paint-codes-colors-by-year"
+    }
+   ]
+  },
+  {
+   "topic": "VIN guide year label",
+   "text": "The vPIC filing 892155fa is labelled 2017 in search results, but its header says 2016 model year.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "FCA 2016 Truck/MPV VIN Code Guide (NHTSA vPIC)",
+     "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/892155fa-870c-45df-8acb-fcbe3ad2e1a9"
+    }
+   ]
+  },
+  {
+   "topic": "Plant codes C and L",
+   "text": "W = Toledo North is verified; C (Jefferson North) and L (Toledo Supplier Park) come from a search synthesis only.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "FCA 2016 Truck/MPV VIN Code Guide (NHTSA vPIC)",
+     "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/892155fa-870c-45df-8acb-fcbe3ad2e1a9"
+    }
+   ]
+  },
+  {
+   "topic": "Maintenance table columns",
+   "text": "The fixed-interval table was mapped by script, so an entry may be off by one 10k column. Check the manual page.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+    },
+    {
+     "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+     "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Dead owner's manual links",
+   "text": "Every cdn.dealereprocess.org owner's manual link returns 403 (checked 2026-10-20). 2016 now cites the Mopar-hosted copy; other years are labelled source link dead. Brochure links on the same host still opened on 2026-10-20.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+    },
+    {
+     "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+     "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
     }
    ]
   }
@@ -395,7 +512,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2024-wrangler.pdf"
      },
      {
-      "label": "2022 Wrangler Owner's Manual",
+      "label": "2022 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2022-wrangler.pdf"
      }
     ]
@@ -560,7 +677,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2016-wrangler.pdf"
      },
      {
-      "label": "2012 Wrangler Owner's Manual",
+      "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
      }
     ]
@@ -571,7 +688,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2018 Wrangler Owner's Manual",
+      "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
      }
     ]
@@ -747,16 +864,16 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      ],
      "src": [
       {
-       "label": "2008 Wrangler Owner's Manual",
+       "label": "2008 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2008-wrangler.pdf"
       },
       {
-       "label": "2012 Wrangler Owner's Manual",
+       "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
       },
       {
-       "label": "2016 Wrangler Owner's Manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2016-wrangler.pdf"
+       "label": "2016 Wrangler Owner's Manual (Mopar)",
+       "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
       },
       {
        "label": "FCA 2011 Wrangler Unlimited spec sheet",
@@ -850,11 +967,11 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      ],
      "src": [
       {
-       "label": "2018 Wrangler Owner's Manual",
+       "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
       },
       {
-       "label": "2022 Wrangler Owner's Manual",
+       "label": "2022 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2022-wrangler.pdf"
       },
       {
@@ -955,7 +1072,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2014 Wrangler Owner's Manual",
+      "label": "2014 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2014-wrangler.pdf"
      }
     ]
@@ -972,7 +1089,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2018 Wrangler Owner's Manual",
+      "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
      }
     ]
@@ -1148,19 +1265,19 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://wheeloffset.net/"
     },
     {
-     "label": "2008 Wrangler Owner's Manual",
+     "label": "2008 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2008-wrangler.pdf"
     },
     {
-     "label": "2014 Wrangler Owner's Manual",
+     "label": "2014 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2014-wrangler.pdf"
     },
     {
-     "label": "2016 Wrangler Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2016-wrangler.pdf"
+     "label": "2016 Wrangler Owner's Manual (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
     },
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     },
     {
@@ -2101,15 +2218,15 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2012 Wrangler Owner's Manual",
+     "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
     },
     {
-     "label": "2016 Wrangler Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2016-wrangler.pdf"
+     "label": "2016 Wrangler Owner's Manual (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
     },
     {
-     "label": "2018 Wrangler Owner's Manual",
+     "label": "2018 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2018-wrangler.pdf"
     },
     {
@@ -2489,7 +2606,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/index.html"
     },
     {
-     "label": "2012 Wrangler Owner's Manual",
+     "label": "2012 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2012-wrangler.pdf"
     }
    ],
@@ -2583,7 +2700,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2007%20Wrangler%20JK%20Factory%20Service%20Manual/site/"
     },
     {
-     "label": "2008 Wrangler Owner's Manual",
+     "label": "2008 Wrangler Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/jeep/2008-wrangler.pdf"
     }
    ],
@@ -3099,6 +3216,212 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
      "date_checked": "2026-10-11"
     }
    ]
+  },
+  {
+   "id": "gf-starter",
+   "type": "diy",
+   "title": "Starter, 3.6L",
+   "summary": "Factory torques. Applies to: JK 3.6L (2012-2018), from the 2012 factory manual (mirror). JL and 3.8L unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): starter",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/starting-starter.html"
+    },
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): fuel tank",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/fuel-delivery-gas-tank-fuel.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "The negative cable is printed as 5 N·m (4.5 in-lb); the fuel tank page prints 5 N·m (45 in-lb). Units typo: use 5 N·m.",
+     "disputed": true
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Starter mounting bolts",
+      "55 N·m (41 ft-lb)"
+     ],
+     [
+      "Battery cable nut at solenoid",
+      "11 N·m (97 in-lb)"
+     ],
+     [
+      "Negative battery cable",
+      "5 N·m (about 44 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-generator",
+   "type": "diy",
+   "title": "Generator (alternator), 3.6L",
+   "summary": "Factory torques. Applies to: JK 3.6L (2012-2018), from the 2012 factory manual (mirror). JL and 3.8L unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): generator",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/charging-generator.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Top retainers are printed 54 N·m (43 ft-lb), but 54 N·m is about 40 ft-lb. Which figure is the typo is unconfirmed; treat 54 N·m as primary.",
+     "disputed": true
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Top retainers",
+      "54 N·m (printed 43 ft-lb, disputed)"
+     ],
+     [
+      "Bottom retainers",
+      "30 N·m (22 ft-lb)"
+     ],
+     [
+      "B+ terminal nut",
+      "18 N·m (13 ft-lb)"
+     ]
+    ]
+   },
+   "parts": [],
+   "disputedRows": [
+    0
+   ]
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump, 3.6L",
+   "summary": "Bolts to the timing chain case cover. Applies to: JK 3.6L (2012-2018), from the 2012 factory manual (mirror). JL and 3.8L unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): water pump",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/engine-pump-water.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disconnect the battery, drain coolant, remove the belt, idler pulley and pump bolts. Note bolt lengths; some M6 bolts go into the timing cover."
+    },
+    {
+     "text": "New gasket; hand-start the bolts. Tighten 1-12 in sequence, repeating until every bolt holds torque. Spin the pump to check the impeller does not rub."
+    },
+    {
+     "text": "Removal text says eleven bolts; the install sequence numbers 1-12. Not resolved.",
+     "disputed": true
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "M6 bolts",
+      "12 N·m (9 ft-lb)"
+     ],
+     [
+      "M8 bolts",
+      "25 N·m (18 ft-lb)"
+     ],
+     [
+      "M10 bolts",
+      "55 N·m (41 ft-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump module (in-tank)",
+   "summary": "The tank must come down. Applies to: JK 3.6L (2012-2018), from the 2012 factory manual (mirror). JL and 3.8L unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): fuel pump module",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/fuel-delivery-gas-module-fuel-pump.html"
+    },
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): fuel tank",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/fuel-delivery-gas-tank-fuel.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Lock ring: special tool 9340 with a breaker bar; turn clockwise until all 7 notches engage. No torque value is given."
+    },
+    {
+     "text": "Use a new O-ring and align the module to the orientation marks."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Tank/skid support bolts (8)",
+      "65 N·m (48 ft-lb)"
+     ],
+     [
+      "Filler hose clamp",
+      "3 N·m (30 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-blend-door",
+   "type": "diy",
+   "title": "Blend door actuator",
+   "summary": "Two screws, then calibrate. Applies to: JK 3.6L (2012-2018), from the 2012 factory manual (mirror). JL and 3.8L unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2012 JK FSM (jdmfsm mirror): blend door actuator",
+     "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/controls-actuator-blend-door.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "After installing, run actuator calibration with a scan tool."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Actuator screws (2)",
+      "2 N·m (17 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3235,7 +3558,12 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
   "Prices still unverified: Cummins R2.8 crate, turnkey Hemi swaps, Holley Flashcal pricing, Discount Tire KO2, Tom Wood's JL shaft, RC 2-door JL 3.5\" kit ($1,299.95 search), BP4WD 8HP kit-only, Wicked Wrench LT harness.",
   "Bestop tops, interior parts (seats, stereos), tail lights, grilles and cargo products: not priced.",
   "Dyno numbers for the 392, 4xe and EcoDiesel; tuned 3.6 figures.",
-  "Death wobble NHTSA PDF (autosafety.org) and the ODI PE19-012 resume: read only via search highlights. Hemi/392 kit for a non-392 JL: no kit page opened."
+  "Death wobble NHTSA PDF (autosafety.org) and the ODI PE19-012 resume: read only via search highlights. Hemi/392 kit for a non-392 JL: no kit page opened.",
+  "Gap-fill: JL payload; diesel, 392 and 4xe towing; per-size tire pressures from a factory document.",
+  "Gap-fill: JL locker and sway-bar fuses; 3.8L, diesel, 392 and 4xe maintenance schedules.",
+  "Gap-fill: EcoDiesel and 3.8L VIN engine codes; factory sales-code dictionary; paint codes for about 12 newer colors.",
+  "Gap-fill: JL and 3.8L DIY procedures; fluid volumes (transfer case, automatic, JL axles); TPMS frequency; 2007 axle ratios; Rubicon offset; 3.8L and later-JL DTC bulletins.",
+  "Gap-fill: owner's manuals for years other than 2016 and 2020 (the cdn.dealereprocess.org links return 403 as of 2026-10-20)."
  ],
  "sellers": [],
  "partCategories": [
@@ -5070,5 +5398,950 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    }
   ],
   "count": 1674
- }
+ },
+ "reference": {
+  "caveat": "From the 2016 JK and 2020 JL owner's manuals (Mopar-hosted), the 2012 JK factory manual (mirror), FCA VIN guides filed with NHTSA, FCA bulletins and recalls. Paint codes are secondary sources. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Schedules and service intervals",
+    "intro": "From the 2016 JK and 2020 JL owner manuals (gas engines). 3.8L (2007-2011), EcoDiesel, 392 and 4xe schedules were not read.",
+    "blocks": [
+     {
+      "title": "Oil and every-oil-change items",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       },
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2016 JK (OM p.676-683) and 2020 JL (OM p.312-316)",
+      "items": [
+       "Follow the oil change indicator; with severe use it can come on as early as 3,500 mi. Service within 500 mi of the message.",
+       "Never exceed 10,000 mi, 12 months or 350 engine hours. Severe duty (dust, off-road, mostly idling or low rpm): change at 4,000 mi.",
+       "Every oil change: rotate tires; inspect battery, brakes, cooling system, exhaust and door-latch grease; inspect the air cleaner after dust or off-road; check ATF if the transmission has a dipstick. JL adds a CV/U-joint inspection.",
+       "Monthly: oil, washer fluid, tire pressures, fluid levels, lights. JL: lubricate door hinges with white lithium grease twice a year."
+      ]
+     },
+     {
+      "title": "Fixed intervals",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       },
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2016 JK and 2020 JL; the research mapped the table columns by script, so a one-column (10k) offset is possible",
+      "table": {
+       "columns": [
+        "Item",
+        "JK (2016)",
+        "JL (2020)"
+       ],
+       "rows": [
+        [
+         "CV/U-joints",
+         "20k, 40k, ...",
+         "every 10k"
+        ],
+        [
+         "Front suspension / tie rods",
+         "every 20k",
+         "every 20k (adds rear suspension)"
+        ],
+        [
+         "Axle fluid inspection",
+         "20k, 60k, 100k, 140k",
+         "same"
+        ],
+        [
+         "Brake linings; adjust park brake (4-wheel disc)",
+         "every 20k",
+         "every 20k"
+        ],
+        [
+         "Transfer case fluid inspection",
+         "30k, 90k, 150k",
+         "same"
+        ],
+        [
+         "Engine air filter",
+         "every 30k",
+         "every 30k"
+        ],
+        [
+         "Cabin filter",
+         "every 20k",
+         "every 20k"
+        ],
+        [
+         "Spark plugs",
+         "3.6: 100k (mileage only)",
+         "3.6: 100k; 2.0T: 60k and 120k"
+        ],
+        [
+         "Coolant",
+         "10 yr / 150,000 mi",
+         "same, also intercooler, battery and MGU loops if equipped"
+        ],
+        [
+         "PCV valve inspect/replace",
+         "100k",
+         "100k"
+        ],
+        [
+         "Manual trans fluid, severe (tow, plow, off-road, desert, high speed above 90°F)",
+         "every 30k",
+         "every 30k"
+        ],
+        [
+         "Transfer case fluid (police, taxi, fleet, frequent towing)",
+         "60k, 120k",
+         "60k, 120k"
+        ],
+        [
+         "Axle fluid change (police, taxi, ...)",
+         "40k, 80k, 120k",
+         "same"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       },
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2016 JK (OM p.665-666) and 2020 JL (OM p.288-289); 2007-2015 JK assumed to match 2016 (unconfirmed)",
+      "table": {
+       "columns": [
+        "Lamp",
+        "JK 2016",
+        "JL 2020"
+       ],
+       "rows": [
+        [
+         "Headlamps",
+         "H13",
+         "H13 halogen; premium LED is dealer-serviced"
+        ],
+        [
+         "Front park/turn",
+         "3157NA",
+         "Sport 7442NALL; Sahara/Rubicon base: turn 7440NA, park/DRL 7443; LED on premium"
+        ],
+        [
+         "Front side marker",
+         "168",
+         "LED"
+        ],
+        [
+         "Fog",
+         "PSX24W",
+         "Base PSX24W; premium LED"
+        ],
+        [
+         "Rear stop/tail/turn",
+         "3157",
+         "Base 3157; premium LED"
+        ],
+        [
+         "Back-up",
+         "3157",
+         "Base 7440"
+        ],
+        [
+         "CHMSL",
+         "LED",
+         "LED"
+        ],
+        [
+         "License",
+         "194",
+         "LED"
+        ],
+        [
+         "Interior",
+         "auto trans indicator 658; heater controls 194; soundbar dome 912",
+         "same"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Fuses, JK (TIPM)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       }
+      ],
+      "years": "2016 JK (OM p.657-663); TIPM in the engine bay by the battery, label inside the cover",
+      "table": {
+       "columns": [
+        "Fuse",
+        "Rating and circuit"
+       ],
+       "rows": [
+        [
+         "J2",
+         "30 A transfer case module"
+        ],
+        [
+         "J4 / J5",
+         "25 A door nodes"
+        ],
+        [
+         "J6 / J7",
+         "40 A ABS pump / 30 A ABS valve"
+        ],
+        [
+         "J9",
+         "40 A PZEV / flex fuel"
+        ],
+        [
+         "J10",
+         "30 A headlamp wash / manifold tuning valve"
+        ],
+        [
+         "J11",
+         "30 A sway bar (Rubicon disconnect)"
+        ],
+        [
+         "J12",
+         "30 A rear blower / radiator fan"
+        ],
+        [
+         "J13",
+         "60 A IOD main (pull for storage over 21 days)"
+        ],
+        [
+         "J14 / J15",
+         "40 A rear defroster / 40 A front blower"
+        ],
+        [
+         "J17",
+         "40 A starter solenoid"
+        ],
+        [
+         "J18",
+         "20 A PCM / trans range"
+        ],
+        [
+         "J19",
+         "60 A radiator fan"
+        ],
+        [
+         "J20 / J21",
+         "30 A front wiper / 20 A washer"
+        ],
+        [
+         "M1",
+         "15 A CHMSL / stop feed"
+        ],
+        [
+         "M2",
+         "20 A trailer stop-lamp relay"
+        ],
+        [
+         "M3",
+         "20 A front/rear axle locker relay"
+        ],
+        [
+         "M4",
+         "2 A clockspring"
+        ],
+        [
+         "M5",
+         "25 A inverter"
+        ],
+        [
+         "M6 / M7 / M36",
+         "20 A power outlets"
+        ],
+        [
+         "M8 / M9",
+         "20 A heated seats"
+        ],
+        [
+         "M12",
+         "30 A amplifier"
+        ],
+        [
+         "M14",
+         "20 A trailer tow (export)"
+        ],
+        [
+         "M15",
+         "20 A incl. TPMS, climate, transfer case switch"
+        ],
+        [
+         "M16",
+         "10 A airbag module"
+        ],
+        [
+         "M17 / M18",
+         "15 A tail lamps"
+        ],
+        [
+         "M19 / M21",
+         "25 A ASD 1 and 2 / 20 A ASD 3"
+        ],
+        [
+         "M22 / M23",
+         "10 A horns"
+        ],
+        [
+         "M24",
+         "25 A rear wiper"
+        ],
+        [
+         "M25",
+         "20 A fuel pump"
+        ],
+        [
+         "M28 / M29 / M33",
+         "10 A PCM / powertrain"
+        ],
+        [
+         "M30",
+         "15 A front wiper motor, J1962 diagnostic feed"
+        ],
+        [
+         "M31",
+         "20 A backup lamps"
+        ],
+        [
+         "M37",
+         "10 A ABS / ESC / stop lamp switch / fuel pump relay"
+        ],
+        [
+         "M38",
+         "25 A locks"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Fuses, JL (PDC, selected)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2020 JL (OM p.290 on); PDC by the battery, label on the top cover; the full 100+ cavity table was not transcribed",
+      "items": [
+       "F02 40 A starter; F04 20 A fuel pump motor / FPCM; F23 10 A and F76 20 A ECM; F80 15 A PCM; F91 20 A horn.",
+       "Trailer tow (if equipped): F36 30 A tow module; F37 30 A 7-way; F90 20 A park lamps; F107 / F109 20 A stop/turn LT/RT; F111 20 A backup.",
+       "eTorque: F69 5 A MGU/BSG. Locker and sway-bar fuses: unknown (not found in the extracted text)."
+      ]
+     },
+     {
+      "title": "Tire pressure and TPMS",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       },
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       },
+       {
+        "label": "2012 JK FSM (jdmfsm mirror): TPMS",
+        "url": "https://www.jdmfsm.info/Auto/Other/Jeep/Jeep%20Wrangler%20JK/2012%20Wrangler%20JK%20Factory%20Service%20Manual/site/d/22-tires-and-wheels-tire-pressure-monitoring.html"
+       }
+      ],
+      "years": "Manual notes: 2016 and 2020. Relearn: 2012 JK factory manual (mirror)",
+      "items": [
+       "Neither manual prints a per-size table; use the B-pillar placard. The 33 psi in the 2020 manual is a worked example, not a spec.",
+       "About 1 psi per 12°F. Warm tires may need up to 4 psi over placard before the TPMS light goes out. Soft sand minimum: 15 psi (2016 manual).",
+       "JK relearn: the module learns a new sensor ID after about 10 minutes of continuous driving above 15 mph, once the vehicle has been parked over 20 minutes. Or program the ID with an RKE/TPM analyzer and scan tool."
+      ]
+     },
+     {
+      "title": "Owner-reported placard pressures",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "WranglerForum stock JK tire pressure thread (search extract)",
+        "url": "https://www.wranglerforum.com/threads/stock-jk-tire-pressure-for-daily-driver.1224993/page-2"
+       },
+       {
+        "label": "JLwranglerforums 315/70R17 pressure thread (extract)",
+        "url": "https://www.jlwranglerforums.com/forum/threads/tire-pressure-stock-xr-315-70-17.121408/"
+       }
+      ],
+      "years": "Years per item; check your own placard",
+      "items": [
+       "JK: 37 psi on 255/75R17 (2014-15 JK/JKU, Rubicon); 35 psi on 255/70R18 (2013-15 JKU); one owner recalls 32 psi on a 2010 JKU.",
+       "JL/JT: owners say every version reads 37 psi, including the 392's 315/70R17. cjponyparts says 35 psi for the JL (conflict)."
+      ]
+     },
+     {
+      "title": "Towing, JK (2016, 3.6L 4WD)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Wrangler (JK) Owner's Manual (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2016/Wrangler/73.pdf"
+       }
+      ],
+      "years": "2016 (OM p.558-562); manual and automatic ratings equal",
+      "table": {
+       "columns": [
+        "Model",
+        "3.21 axle",
+        "3.73 axle",
+        "4.10 axle"
+       ],
+       "rows": [
+        [
+         "2-door Sport",
+         "GCWR 6,900; 2,000 lb",
+         "GCWR 8,400; 3,500 lb",
+         "not offered"
+        ],
+        [
+         "2-door Sahara",
+         "7,000; 2,000",
+         "8,500; 3,500",
+         "not offered"
+        ],
+        [
+         "2-door Rubicon",
+         "not offered",
+         "8,600; 3,500 (auto)",
+         "8,600; 3,500"
+        ],
+        [
+         "4-door Sport",
+         "7,400; 2,000",
+         "8,900; 3,500",
+         "not offered"
+        ],
+        [
+         "4-door Sahara",
+         "7,500; 2,000",
+         "9,000; 3,500",
+         "not offered"
+        ],
+        [
+         "4-door Rubicon",
+         "not offered",
+         "9,200; 3,500 (auto)",
+         "9,200; 3,500"
+        ]
+       ],
+       "note": "Tongue weight max 200 lb at 2,000 lb, 350 lb at 3,500 lb. Frontal area 25 sq ft (2-door) or 32 sq ft (4-door)."
+      }
+     },
+     {
+      "title": "Towing, JL (2020 gas)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2020 Wrangler (JL) Owner's Manual (Mopar)",
+        "url": "https://msmownerassets.z13.web.core.windows.net/assets/publications/en-us/Jeep/2020/Wrangler/P111070_20_JL_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2020 (OM p.268-270); diesel, 392 and 4xe not in this manual (unknown)",
+      "items": [
+       "2.0L and 3.6L alike: 2-door GCWR 8,016 lb, trailer 2,000 lb (200 lb tongue); 4-door GCWR 8,117 lb, trailer 3,500 lb (350 lb tongue).",
+       "Frontal area 20 sq ft (2-door) or 30 sq ft (4-door). Trailer brakes recommended above 1,000 lb, required above 2,000 lb.",
+       "Payload: not printed in either manual; see the Tire and Loading placard on the driver B-pillar."
+      ]
+     },
+     {
+      "title": "Paint codes, JK",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "jeepdecalstore Wrangler paint codes by year",
+        "url": "https://jeepdecalstore.com/blogs/jds-blog/jeep-wrangler-paint-codes-colors-by-year"
+       },
+       {
+        "label": "Axalta Jeep + Ram colour guide 2025 (search summary)",
+        "url": "https://www.axalta.com/content/dam/AP/Axalta/Australia/Public/Documents/oem-colour-guides/Jeep%20+%20Ram%20Australia%202025.pdf"
+       }
+      ],
+      "years": "2007-2018; year ranges approximate",
+      "text": "Code is on the driver door-jamb label next to PNT (some years also have an under-hood plate). FCA reuses codes across generations (PY5, PYV), so always pair the code with the year. Baja Yellow and Sunburst Orange: code unknown.",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "PX8",
+         "Black",
+         "all"
+        ],
+        [
+         "PW7",
+         "Bright White",
+         "~2011+"
+        ],
+        [
+         "PSB",
+         "Bright Silver",
+         "most years"
+        ],
+        [
+         "PR4",
+         "Flame Red",
+         "~2007-12"
+        ],
+        [
+         "PDS",
+         "Anvil",
+         "~2013-15"
+        ],
+        [
+         "PSQ",
+         "Rhino",
+         "2016-18"
+        ],
+        [
+         "PAU",
+         "Granite Crystal",
+         "~2014+"
+        ],
+        [
+         "PSA",
+         "Winter Chill",
+         "2012"
+        ],
+        [
+         "PLB",
+         "Copperhead",
+         "2014"
+        ],
+        [
+         "PL4",
+         "Crush",
+         "~2012-13"
+        ],
+        [
+         "PVG",
+         "Mango Tango",
+         "~2010-11"
+        ],
+        [
+         "PYB",
+         "Detonator Yellow",
+         "~2008-11"
+        ],
+        [
+         "PY5",
+         "Dozer",
+         "2012-13"
+        ],
+        [
+         "PYV",
+         "Stinger Yellow",
+         "2015"
+        ],
+        [
+         "PFM",
+         "Gecko Green",
+         "2012-13"
+        ],
+        [
+         "PQB",
+         "Chief Blue",
+         "2017-18"
+        ],
+        [
+         "PJ4",
+         "Cosmos Blue",
+         "~2011"
+        ],
+        [
+         "PBJ",
+         "Hydro Blue",
+         "2014-15"
+        ],
+        [
+         "PHG",
+         "Xtreme Purple",
+         "2016-18"
+        ],
+        [
+         "PGH",
+         "Commando Green",
+         "~2013"
+        ],
+        [
+         "PFD",
+         "Sahara Tan",
+         "~2011-12"
+        ],
+        [
+         "PUA",
+         "Gobi",
+         "2017"
+        ],
+        [
+         "PTT",
+         "Dune",
+         "2013-14"
+        ],
+        [
+         "PGK",
+         "Tank",
+         "2015-16"
+        ],
+        [
+         "PJK",
+         "Hyper Green",
+         "2016-17"
+        ],
+        [
+         "PTA",
+         "Mojave Sand",
+         "2016"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Paint codes, JL",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "jeepdecalstore Wrangler paint codes by year",
+        "url": "https://jeepdecalstore.com/blogs/jds-blog/jeep-wrangler-paint-codes-colors-by-year"
+       },
+       {
+        "label": "Axalta Jeep + Ram colour guide 2025 (search summary)",
+        "url": "https://www.axalta.com/content/dam/AP/Axalta/Australia/Public/Documents/oem-colour-guides/Jeep%20+%20Ram%20Australia%202025.pdf"
+       }
+      ],
+      "years": "2018+; year ranges approximate",
+      "text": "Billet Silver, Gator, Fathom Blue, Earl, Hypergreen, Mojave Sand (JL), '41 Green, Goldilocks, Velvet Red, Purple Reign and others: code unknown, check the door label.",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "PW7",
+         "Bright White",
+         "not given"
+        ],
+        [
+         "PX8",
+         "Black",
+         "not given"
+        ],
+        [
+         "PDN",
+         "Sting Gray",
+         "~2018-23"
+        ],
+        [
+         "PAU",
+         "Granite Crystal",
+         "not given"
+        ],
+        [
+         "PRC",
+         "Firecracker Red",
+         "not given"
+        ],
+        [
+         "PYV",
+         "Hella Yella",
+         "~2019-21"
+        ],
+        [
+         "PY5",
+         "Nacho",
+         "not given"
+        ],
+        [
+         "PE4",
+         "Punk'N",
+         "~2018-20"
+        ],
+        [
+         "PFM",
+         "Gecko",
+         "2021"
+        ],
+        [
+         "PGE",
+         "Mojito",
+         "not given"
+        ],
+        [
+         "PGG",
+         "Sarge Green",
+         "not given"
+        ],
+        [
+         "PBJ",
+         "Hydro Blue",
+         "not given"
+        ],
+        [
+         "PBM",
+         "Ocean Blue",
+         "~2019-22"
+        ],
+        [
+         "PQB",
+         "Chief Blue",
+         "2021"
+        ],
+        [
+         "PPT",
+         "Bikini Pearl",
+         "~2019-20"
+        ],
+        [
+         "PHP",
+         "Tuscadero",
+         "2021-22"
+        ],
+        [
+         "PRV",
+         "Snazzberry",
+         "2021-22"
+        ],
+        [
+         "PJF",
+         "High Velocity",
+         "2022"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and sales codes",
+    "short": "VIN digits, sales codes",
+    "blocks": [
+     {
+      "title": "VIN decoding",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "FCA 2016 Truck/MPV VIN Code Guide (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/892155fa-870c-45df-8acb-fcbe3ad2e1a9"
+       },
+       {
+        "label": "FCA 2024 Truck/MPV VIN Code Guide (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/b5f541b7-8157-415d-889c-7f63628e9e66"
+       }
+      ],
+      "years": "JK from the 2016 guide, JL from the 2024 guide; other years assumed similar",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "1C4 = FCA US MPV"
+        ],
+        [
+         "4",
+         "Brake system, GVWR band and restraints; letters vary by year (2024 example: H = 5,001-6,000 lb, side bags all rows)"
+        ],
+        [
+         "5-7, JK",
+         "LHD: JWA 2-door Sport, JWB 2-door Sahara, JWC 2-door Rubicon, JWD Unlimited Sport, JWE Unlimited Sahara, JWF Unlimited Rubicon. RHD: JWG, JWH, JWJ, JWK, JWL, JWM in the same order. 2WD codes not printed"
+        ],
+        [
+         "5-7, JL",
+         "JXA 2-door Sport, JXC 2-door Rubicon, JXD 4-door Sport, JXE 4-door Sahara, JXF 4-door Rubicon, JXS Rubicon 392, JXT High Altitude; JXJ/JXK/JXL/JXM RHD or export; JXN/JXP/JXU/JXR 4xe / Sahara 4xe / High Altitude 4xe / Rubicon 4xe"
+        ],
+        [
+         "8 (engine)",
+         "JK 2016: G = 3.6L V6 (ERB, ERC, ERT); 5 = 2.8L diesel (export). JL 2024: N = 2.0T (270 hp); 6 = 2.0T PHEV (375 hp); G = 3.6L V6 (285 hp); J = 6.4L V8 (470 hp). EcoDiesel and 3.8L codes unknown"
+        ],
+        [
+         "10",
+         "Model year (2016 = G; 2024 = R)"
+        ],
+        [
+         "11 (plant)",
+         "W = Toledo North (verified); C = Jefferson North, L = Toledo Supplier Park (unconfirmed for Wrangler)"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Sales (option) codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "FCA 2016 Truck/MPV VIN Code Guide (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/892155fa-870c-45df-8acb-fcbe3ad2e1a9"
+       }
+      ],
+      "years": "All years",
+      "text": "FCA uses three-character sales codes (engines: ERB/ERC/ERT = 3.6L, ESG/ESA/ESB = 6.4L). The build sheet or window sticker for a VIN lists them all. No factory dictionary for axle, transmission or package codes was opened (unknown)."
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes and recalls",
+    "intro": "Codes named in FCA bulletins. In every bulletin below the fix is a PCM software flash, so check the calibration level before replacing parts.",
+    "blocks": [
+     {
+      "title": "Codes with FCA bulletins",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "FCA TSB 18-024-13",
+        "url": "https://static.oemdtc.com/NHTSA-PDFs/MC-10189190-9999.pdf"
+       },
+       {
+        "label": "FCA TSB 18-060-16",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10121677-9999.pdf"
+       },
+       {
+        "label": "FCA TSB 18-021-20 Rev A",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10177537-9999.pdf"
+       },
+       {
+        "label": "FCA TSB 18-022-20 Rev A",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10184756-9999.pdf"
+       },
+       {
+        "label": "FCA TSB 18-109-20",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10187705-9999.pdf"
+       }
+      ],
+      "years": "Years and engines per row",
+      "table": {
+       "columns": [
+        "TSB",
+        "Applies to",
+        "Codes",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "18-024-13 (Jun 2013)",
+         "2012-13 JK 3.6L",
+         "P0830 clutch upstop switch; P0456 EVAP small leak (2013 only)",
+         "PCM flash"
+        ],
+        [
+         "18-060-16 (Jul 2016)",
+         "2014 JK 3.6L",
+         "P0300, P0306 (auto), P0335 CKP circuit, P0456, P0830 (manual), P1239 oil temp low, P2097/P2099 fuel trim rich, U0140 lost comm with BCM",
+         "PCM flash"
+        ],
+        [
+         "18-021-20 Rev A (Jun 2020)",
+         "2019 JL 2.0T with ESS (mostly export)",
+         "P0128, P012A/P012C/P012D, P0456, P04FC, P050B, P06EF, P2C90",
+         "PCM flash"
+        ],
+        [
+         "18-022-20 Rev A (Nov 2020)",
+         "2019 JL 2.0T eTorque (North America)",
+         "P0128, P012A/P012C/P012D, P0456 (run the wiTECH small leak test first), P0507, P050B, P0607, P06EF",
+         "PCM flash"
+        ],
+        [
+         "18-109-20 (Dec 2020)",
+         "2020 JL 3.0 EcoDiesel",
+         "P0087, P015E, P01CB-P01D6, P020A-P020F, P0300-P0306, P0534, P204F, P2199, P225D, P2610, U0100, P04DB, P0524",
+         "PCM flash"
+        ]
+       ],
+       "rowSrc": [
+        "https://static.oemdtc.com/NHTSA-PDFs/MC-10189190-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2016/MC-10121677-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10177537-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10184756-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10187705-9999.pdf"
+       ]
+      }
+     },
+     {
+      "title": "Likely causes once the flash is applied",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "WranglerForum stock JK tire pressure thread (search extract)",
+        "url": "https://www.wranglerforum.com/threads/stock-jk-tire-pressure-for-daily-driver.1224993/page-2"
+       }
+      ],
+      "years": "All years; not from FCA",
+      "items": [
+       "P0456: gas cap or purge/vent valve.",
+       "P0128: thermostat.",
+       "P0335: crank sensor or wiring."
+      ]
+     },
+     {
+      "title": "Recall tied to a warning light",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA recalls API, 2014 Wrangler",
+        "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=jeep&model=wrangler&modelYear=2014"
+       }
+      ],
+      "years": "2014 built Mar 21 to Apr 22, 2014",
+      "text": "14V-632 (FCA P63): TPMS software error, sensor locations not learned, so the low-tire light stays on with correct pressures. Remedy: reprogram the TPMS module. No NHTSA recall summary for 2007-2025 names a specific DTC."
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "Maintenance schedules for 2016 JK and 2020 JL gas (Maintenance).",
+  "Bulbs, fuses, towing, tire guidance and JK TPMS relearn (Quick reference).",
+  "VIN decoding from FCA filings (VIN and sales codes).",
+  "3.6L starter, generator, water pump, fuel pump and blend door torques (Guides).",
+  "Five FCA DTC bulletins and recall 14V-632 (Trouble codes).",
+  "Transfer case and automatic fluid type: ATF+4 (volumes still unknown)."
+ ]
 };
