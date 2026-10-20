@@ -4037,6 +4037,8 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/mustang-s197-s550/index.js",
+  "indexBytes": 266945,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/ford,2010,mustang,4.6l+v8,1444301",

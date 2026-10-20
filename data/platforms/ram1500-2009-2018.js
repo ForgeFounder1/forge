@@ -278,6 +278,140 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
      "url": "https://en.wikipedia.org/wiki/Ram_pickup_(fourth_generation)"
     }
    ]
+  },
+  {
+   "topic": "5.7 spark plug interval",
+   "text": "30,000 mi in the 2010 and 2013 manuals vs 100,000 mi in the 2016 manual. Follow your model year's manual.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+     "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+    },
+    {
+     "label": "2013 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+    },
+    {
+     "label": "2016 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "5.7 water pump and thermostat torque",
+   "text": "The 2016 5.7 engine table gives 28 N·m (21 ft-lb) for both; the cooling-section table gives 24 N·m pump and 13 N·m thermostat housing. Use the cooling-section values (split by fastener).",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "SI: Engine Cooling System 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Engine%20Mechanical/Cooling%20System%20(Mechanical)/Engine%20Cooling%20System%20-%201500/"
+    }
+   ]
+  },
+  {
+   "topic": "5.7 generator bolts",
+   "text": "Engine table 55 N·m (41 ft-lb) vs charging procedure 41 N·m (30 ft-lb). Use 41 N·m; 55 N·m matches the 3.6 tensioner row, so it may be a carry-over (researcher inference).",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "SI: Charging 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Electrical/Charging%20Systems/Charging%20(Service%20Information)%201500/"
+    },
+    {
+     "label": "SI: Engine Cooling System 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Engine%20Mechanical/Cooling%20System%20(Mechanical)/Engine%20Cooling%20System%20-%201500/"
+    }
+   ]
+  },
+  {
+   "topic": "Premium projector low-beam bulb",
+   "text": "HIR2 in the 2013 manual vs \"9005Sl+\" as printed in the 2016 manual. The 2016 value is not confirmed elsewhere; check the bulb in hand.",
+   "conf": "unconfirmed",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2013 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+    },
+    {
+     "label": "2016 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Tire pressure 39 vs 44-49 psi",
+   "text": "Owner placard reports give 39 psi (P275/60R20); wheel-size lists 44-49 psi. Go by your door placard.",
+   "conf": "forum",
+   "disputed": true,
+   "src": [
+    {
+     "label": "airforums: tire operating temperatures",
+     "url": "https://www.airforums.com/threads/tire-operating-temperatures.1317549/page-2"
+    },
+    {
+     "label": "RamForumZ: what PSI are you running",
+     "url": "https://www.ramforumz.com/threads/what-psi-are-you-guys-running.140986/"
+    },
+    {
+     "label": "tirepressure.org 2014 Ram 1500 (aggregator)",
+     "url": "https://tirepressure.org/ram/1500/2014"
+    }
+   ]
+  },
+  {
+   "topic": "Fuel pump fuse 20 A vs 30 A",
+   "text": "20 A (2010 TIPM M22) vs 30 A (2016 PDC F70). Different modules and years, not a true conflict; match your own box cover.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+     "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+    },
+    {
+     "label": "2016 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Class IV hitch 10,000 vs 11,000 lb",
+   "text": "10,000 lb in the 2010 manual vs 11,000 lb trailer / 1,100 lb tongue in 2013 and 2016. A year change.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+     "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+    },
+    {
+     "label": "2013 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+    },
+    {
+     "label": "2016 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Paint code prefix",
+   "text": "The 2016 FCA sheet prints AXR / GW7 / LAU; aftermarket lists and the Jan 2017 Ram list print PXR / PW7 / PAU. Matching the last two characters is a reading of the two lists, not an FCA rule.",
+   "conf": "unconfirmed",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2016 Ram Exterior Color Availability (BodyBuilder)",
+     "url": "https://www.ramtrucks.com/BodyBuilder/service/Image?imageId=MtQrP%2FFqLY5r%2Fest8MtGjGgHzAHGUTU0WB3rWuqSY7YmQ2vEhuBWBLNuyozWEMC0%0A"
+    },
+    {
+     "label": "Jan 2017 Ram paint code list (catalograck)",
+     "url": "https://www.catalograck.com/ImgVD/UNT/UC%5FRAMCodes%5FJan17.pdf"
+    }
+   ]
   }
  ],
  "overview": {
@@ -2954,6 +3088,370 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    ],
    "torque": null,
    "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and cooling (3.6 and 5.7)",
+   "summary": "Cooling-section torque split by fastener. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Engine Cooling System 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Engine%20Mechanical/Cooling%20System%20(Mechanical)/Engine%20Cooling%20System%20-%201500/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "5.7 install order: clean the mating surfaces, then the pump, upper metal heater tube, belt tensioner, idler, lower hose, belt, resonator bracket, fan, upper hose and air intake. Evacuate air, refill and leak-check."
+    },
+    {
+     "text": "A misrouted serpentine belt can spin the water pump backward and overheat the engine; follow the underhood routing label."
+    },
+    {
+     "text": "The 2016 5.7 engine table lumps \"thermostat housing, water pump 28 N·m (21 ft-lb)\"; use the split cooling-section values below."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Water pump bolts, 5.7",
+      "24 N·m (18 ft-lb)"
+     ],
+     [
+      "Water pump bolts, 3.6",
+      "M6 12 N·m (9 ft-lb); M8 25 N·m (18 ft-lb); M10 55 N·m (41 ft-lb)"
+     ],
+     [
+      "Thermostat housing bolts, 3.6 / 5.7",
+      "12 N·m (9 ft-lb) / 13 N·m (10 ft-lb)"
+     ],
+     [
+      "Belt tensioner pulley bolt, 3.6 / 5.7",
+      "55 N·m (41 ft-lb) / 41 N·m (30 ft-lb)"
+     ],
+     [
+      "Generator mounting bracket bolts, 3.6 / 5.7",
+      "25 N·m (18 ft-lb) / 41 N·m (30 ft-lb)"
+     ],
+     [
+      "Fan drive / fan blade to viscous drive",
+      "50 N·m (37 ft-lb) / 24 N·m (18 ft-lb)"
+     ],
+     [
+      "Coolant temp sensor (3.6)",
+      "30 N·m (22 ft-lb)"
+     ],
+     [
+      "Bleed plug",
+      "6 N·m (53 in-lb)"
+     ],
+     [
+      "Block heater, 3.6 / 5.7",
+      "12 N·m (106 in-lb) / 2 N·m (17 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-alternator",
+   "type": "diy",
+   "title": "Alternator (generator), 5.7",
+   "summary": "Denso 160 A on 3.6, 4.7 and 5.7. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Charging 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Electrical/Charging%20Systems/Charging%20(Service%20Information)%201500/"
+    },
+    {
+     "label": "SI: Engine Cooling System 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Engine%20Mechanical/Cooling%20System%20(Mechanical)/Engine%20Cooling%20System%20-%201500/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disconnect the battery negative. Do not lever the belt over a pulley rim."
+    },
+    {
+     "text": "The 5.7 engine table lists \"Generator 55 N·m (41 ft-lb)\"; the charging procedure and the cooling bracket row say 41 N·m. Use 41 N·m (30 ft-lb) for the 5.7."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Mounting bolts (2)",
+      "41 N·m (30 ft-lb)"
+     ],
+     [
+      "Support-bracket bolt and nuts",
+      "41 N·m (30 ft-lb)"
+     ],
+     [
+      "B+ eyelet nut",
+      "12 N·m (8.8 ft-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-starter",
+   "type": "diy",
+   "title": "Starter (3.6, 4.7, 5.7)",
+   "summary": "Includes the 4WD support-bracket step. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Starting 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Electrical/Starter/Starting%20(Service%20Information)%201500/"
+    },
+    {
+     "label": "TSB 09-005-16 Tighten Starter Bolts (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Quick%20Lookups/Technical%20Bulletins/Technical%20Service%20Bulletins/Other%20Variant/Starter/Tighten%20Starter%20Bolts%20(09-005-16)/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disconnect the battery negative and raise the truck."
+    },
+    {
+     "text": "4WD with certain transmissions: remove the two bolts of the axle-to-transmission support bracket and pry it aside to reach the lower starter bolt."
+    },
+    {
+     "text": "Remove both bolts and slide the starter forward until the pinion nose clears, then tilt it nose-down to reach the B+ nut. Do not let the starter hang from the harness."
+    },
+    {
+     "text": "Cranking draw at operating temp: 3.6/4.7 1.2 kW, 100-200 A; 5.7 1.4 kW, 125-250 A."
+    },
+    {
+     "text": "TSB 09-005-16: 2016 DS built 3/1-3/6/2016 may have loose starter bolts and a noisy starter; torque them to spec."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Starter mounting bolt, 3.6",
+      "54 N·m (40 ft-lb)"
+     ],
+     [
+      "Starter mounting bolt/nut, 4.7/5.7",
+      "68 N·m (50 ft-lb)"
+     ],
+     [
+      "Battery cable eyelet nut at solenoid",
+      "14 N·m (10 ft-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump module (gas)",
+   "summary": "The factory procedure removes the fuel tank; there is no access panel. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Fuel Delivery, Gas (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Engine%20Mechanical/Fuel%20System%20-%201500/Fuel%20Delivery%2C%20Gas/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Relieve fuel pressure (the system holds pressure with the engine off) and disconnect the battery. Drop the tank."
+    },
+    {
+     "text": "Blow debris off the tank top. Note the indexing arrow on the module: it must go back in the same clocking or the float can hit the tank wall."
+    },
+    {
+     "text": "Lock ring: tool 9340 with a 1/2 in breaker bar, counterclockwise off; clockwise on until all seven notches engage. Always use a new rubber O-ring. Do not bend the float arm."
+    },
+    {
+     "text": "Connect the quick-connect at the rail, fill the tank, start the engine and leak-check. Fuel pressure: 58 ± 2 psi."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Fuel tank straps",
+      "41 N·m (30 ft-lb)"
+     ],
+     [
+      "Tank bolts (52-gal tank)",
+      "55 N·m (41 ft-lb)"
+     ],
+     [
+      "Fuel rail bolts",
+      "11 N·m (100 in-lb)"
+     ],
+     [
+      "O2 sensors",
+      "41 N·m (30 ft-lb)"
+     ],
+     [
+      "Coils",
+      "11 N·m (100 in-lb)"
+     ],
+     [
+      "Throttle body, 5.7 / 3.6",
+      "5.6 N·m (50 in-lb) / 7.5 N·m (65 in-lb)"
+     ],
+     [
+      "5.7 crank and cam sensors",
+      "12 N·m (105 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-blend-door",
+   "type": "diy",
+   "title": "Blend-door actuator and HVAC torque",
+   "summary": "Single-zone has one blend-door actuator; dual-zone has two. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Heating & Air Conditioning 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Heating%2C%20Ventilation%20%26%20A%2FC%20(HVAC)/HVAC%20Control%20Systems/Heating%20%26%20Air%20Conditioning%20(Service%20Information)%201500/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disable the airbags first: disconnect the battery and wait two minutes."
+    },
+    {
+     "text": "Dual-zone passenger side: the factory procedure removes the HVAC housing to the bench (the dash comes out). Unplug the harness and remove the two screws at the front of the housing."
+    },
+    {
+     "text": "The single-zone / driver-side page is missing on the host."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "All screws not listed",
+      "1.1 N·m (10 in-lb)"
+     ],
+     [
+      "HVAC housing nuts and bolts",
+      "6.8 N·m (60 in-lb)"
+     ],
+     [
+      "Blower motor screws",
+      "1.7 N·m (15 in-lb)"
+     ],
+     [
+      "Refrigerant line nuts/bolts",
+      "23 N·m (17 ft-lb)"
+     ],
+     [
+      "Compressor clutch plate bolt",
+      "19 N·m (168 in-lb)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-ball-joints",
+   "type": "diy",
+   "title": "Ball joints and 4x4 hub install",
+   "summary": "Check, replace and reassemble. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Front Suspension 1500 (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Suspension/Front%20Suspension%20%26%20Wheel%20Alignment%20-%201500/Front%2C%20Independent%20Front%20Suspension/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Lower ball joint check: support the lower arms on stands (wood block on aluminum arms), dial indicator on the knuckle, pry up on the tire. More than 0.5 mm (0.020 in) of play = replace."
+    },
+    {
+     "text": "4x4: replacing the lower ball joint alone is \"not recommended\"; replace the lower control arm. 4x2: press in the joint with press C-4212F and 8698-1/-3 adapters, then stake the flange in four evenly spaced places."
+    },
+    {
+     "text": "Upper ball joint: separate with remover 9360 and press out with C-4212F plus 9770-1/-2. A wood block between arm and frame bracket may be needed for clearance. Use extreme-pressure lube on the tool threads."
+    },
+    {
+     "text": "4x4 hub install order: dust shield, hub, rotor and caliper, wheel-speed sensor, upper ball-joint nut, tie-rod nut, then the half-shaft nut."
+    },
+    {
+     "text": "After ball-joint work, check ride height and align."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Hub bolts (4x4)",
+      "60 N·m + 80° (from the suspension guide)"
+     ],
+     [
+      "Half-shaft nut",
+      "250 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-brake-bleed",
+   "type": "diy",
+   "title": "Brake bleeding",
+   "summary": "Manual bleed order from service info. Applies to: 2016 1500 service information (Chrysler pages on a secondary host); check other years.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "SI: Base Brakes manual bleeding (lemon-manuals)",
+     "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Brakes/Mechanical%20-%20Hydraulic/Base%20Brakes%20(Service%20Information)%201500/Standard%20Procedure/Manual%20Bleeding/"
+    },
+    {
+     "label": "2013 Ram 1500 OM (Mopar)",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Fluid: Mopar or equivalent meeting SAE J1703-F and DOT 3, from a sealed container (the 2013 manual also allows DOT 4)."
+    },
+    {
+     "text": "Order: right rear, left rear, right front, left front. If calipers were overhauled, gravity-bleed all four first."
+    },
+    {
+     "text": "Pump-and-hold with a helper (close the bleeder while the pedal is held down) until the fluid runs clear. Confirm a firm pedal before moving the truck."
+    }
+   ],
+   "torque": null,
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3098,12 +3596,13 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
   }
  ],
  "unknowns": [
-  "Factory: 2009–11 and 2017 ratio charts; 5.7 phaser bolt torque for 2009–12 and 2017–18 (63 ft-lb in 2013, 72 in 2016); EcoDiesel head, bedplate and flexplate procedures; 4.7/3.7 internals and plug torque; differential and driveshaft fasteners; ring-gear sizes; front-differential identification.",
-  "Spark-plug replacement intervals (not extracted).",
-  "Problems: 3.6 rocker/lifter tick on DS trucks; 4.7 sludge; any DS-level TIPM data (no recall exists).",
-  "Wheels: offsets for 2009–12 OE wheels; 3/5 and 4/6 DS kits (none found; likely custom only); 4x4 drops; the 2009 TPMS part number and the relearn procedure; 2–3 in lift tables.",
-  "Parts: Katzkin price ($1,195–$1,895 search figures Unconfirmed); 2017–18 handheld tuners; HP Tuners credit cost; Hypertech dyno PDF; Northspec bracket price; stereo upgrades.",
-  "Swaps: no documented DS LS or Coyote build; no completed DS 4.7→5.7 write-up."
+  "Factory: towing charts for 2009-15 and 2017 (2012 brochure GCWRs only); 5.7 phaser bolt torque for 2009-12 and 2017-18 (63 ft-lb in 2013, 72 in 2016); EcoDiesel head, bedplate and flexplate procedures; 4.7/3.7 internals and plug torque; differential and driveshaft fasteners; ring-gear sizes for other engines and years; front-differential identification.",
+  "Procedures: 3.6 and 3.0 water pump procedures (page links not read); blend-door actuator for single-zone and dual-zone driver side (page missing on host); 8-speed (8HP70/845RE) fluid change interval (the 2016 manual lists only the six-speed).",
+  "Codes: VIN decode for years other than 2016 (2012 and 2018 FCA guides returned HTML, 2014 was a cover page); pre-2011 \"Dodge Ram\" position 5-7 letters; paint codes for 2009-15 and 2017-18 from an FCA page.",
+  "Problems: 3.6 rocker/lifter tick on DS trucks; 4.7 sludge; any DS-level TIPM data (no FCA document or recall found).",
+  "Wheels: offsets for 2009-12 OE wheels; 3/5 and 4/6 DS kits (none found; likely custom only); 4x4 drops; the 2009 TPMS part number; 2-3 in lift tables.",
+  "Parts: Katzkin price ($1,195-$1,895 search figures Unconfirmed); 2017-18 handheld tuners; HP Tuners credit cost; Hypertech dyno PDF; Northspec bracket price; stereo upgrades. Repair catalog parts list RockAuto only.",
+  "Swaps: no documented DS LS or Coyote build; no completed DS 4.7 to 5.7 write-up."
  ],
  "sellers": [],
  "partCategories": [
@@ -4770,6 +5269,8 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/ram1500-2009-2018/index.js",
+  "indexBytes": 362758,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/dodge,2010,ram+1500+pickup,5.7l+v8,1445018",
@@ -4899,5 +5400,891 @@ window.FORGE_PLATFORMS["ram1500-2009-2018"] = {
    }
   ],
   "count": 1899
- }
+ },
+ "reference": {
+  "caveat": "From the 2010, 2013 and 2016 owner's manuals (each covers 1500/2500/3500), the 2016 and 2018 towing charts, FCA's 2016 VIN and paint guides, and 2016 Chrysler service information on a secondary host. Values change by year; check your own manual and door label.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Schedules, plugs, intervals",
+    "intro": "Factory schedules from the 2010, 2013 and 2016 owner's manuals. Fluid capacities are under Specs and years.",
+    "blocks": [
+     {
+      "title": "2009-12 schedule (fixed 6,000 mi)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+        "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+       }
+      ],
+      "years": "2010 owner's manual pp. 564-581, standing in for 2009-12",
+      "items": [
+       "Oil: follow the oil change indicator, but never exceed 6,000 mi or 6 months; change at 6 months even if the indicator is off. More often with extended off-road use.",
+       "Every 6,000 mi: oil and filter, rotate tires, inspect the exhaust. Brake linings, CV joints and front suspension/tie rods are inspected on the 12,000-mi services. Axle fluid is inspected at 18k, 36k and 54k; change it for police, taxi, fleet, off-road, snow plowing or frequent towing.",
+       "Engine air filter: every 30,000 mi.",
+       "Spark plugs: 3.7 and 5.7 every 30,000 mi. The 4.7 has 16 plugs: top (under-coil, standard) row every 48,000 mi and side (premium) row every 96,000 mi. Ignition cables: 3.7 at 60k and 120k; 4.7 at 96k.",
+       "Auto trans fluid and filter: 60,000 mi for police, taxi, fleet or frequent towing; 120,000 mi otherwise.",
+       "Transfer case fluid: inspect at 30k; change at 60k under the same severe uses.",
+       "Coolant (HOAT): flush and replace at 102,000 mi or 60 months.",
+       "PCV: inspect and replace if needed at 90,000 mi. Accessory drive belt(s): replace at 120,000 mi."
+      ]
+     },
+     {
+      "title": "2013-18 schedule (oil change indicator)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2013 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+       },
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2013 OM pp. 704-707 and 2016 OM pp. 878-884; mileage columns were read from the chart layout, so a column misread is possible (2016 cross-checked against 2013)",
+      "items": [
+       "Oil: follow the oil change indicator. 1500: never exceed 10,000 mi, 12 months or 350 engine hours. Severe conditions can bring the message on as early as 3,500 mi. The 2016 manual adds Severe Duty: change at 4,000 mi for dusty or off-road use or mostly-idle operation.",
+       "At every oil change: rotate tires; inspect battery, brakes and park brake, cooling system and hoses, exhaust; check ATF if it has a dipstick (6-speed only).",
+       "Every 20,000 mi: front suspension and tie rods; brake linings; park brake adjustment (2016).",
+       "Every 30,000 mi: engine air filter, CV/U-joints, axle surfaces (change axle fluid for police, taxi, fleet, off-road or frequent towing). Transfer case fluid inspected at 30k, 90k and 150k (2016).",
+       "Spark plugs (mileage only): 2013 manual: 3.6 at 100,000 mi; 5.7 every 30,000 mi; 4.7 top (intake) row every 30k and side (exhaust) row at 90k. 2016 manual: one \"replace spark plugs\" line at 100,000 mi, no 30k line for the 5.7. Follow your model year's manual.",
+       "Coolant (OAT): 10 years or 150,000 mi.",
+       "Auto trans fluid and filter (2016 says six-speed only): 60,000 mi for police, taxi, fleet or frequent towing; 120,000 mi otherwise. No change interval is listed for the 8-speed.",
+       "Transfer case fluid: change at 120,000 mi (60k for severe use).",
+       "PCV valve: inspect and replace if needed at 100,000 mi."
+      ]
+     },
+     {
+      "title": "Oil consumption guideline",
+      "conf": "verified-secondary",
+      "src": [
+       {
+        "label": "Technical Service Bulletins index (lemon-manuals)",
+        "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Quick%20Lookups/Technical%20Bulletins/Technical%20Service%20Bulletins/Other%20Variant/"
+       }
+      ],
+      "years": "2012-19 gas engines, TSB 09-007-18 Rev. A",
+      "text": "FCA: 1 qt per 2,000 mi is acceptable for personal use with non-aggressive driving; towing and high rpm raise it. Check the level after at least 15 minutes of drain-back."
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+        "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+       },
+       {
+        "label": "2013 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+       },
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2010 OM pp. 549-550, 2013 OM pp. 683-684, 2016 OM pp. 858-859",
+      "text": "Interior bulbs are brass or glass-wedge base; aluminum-base bulbs are not approved.",
+      "table": {
+       "columns": [
+        "Position",
+        "2010",
+        "2013",
+        "2016"
+       ],
+       "rows": [
+        [
+         "Dual headlamp",
+         "H13",
+         "n/a",
+         "n/a"
+        ],
+        [
+         "Quad / base quad low beam",
+         "H11",
+         "H11",
+         "H11LL"
+        ],
+        [
+         "Quad / base quad high beam",
+         "9005",
+         "9005",
+         "9005LL"
+        ],
+        [
+         "Premium bi-halogen projector low beam",
+         "n/a",
+         "HIR2",
+         "\"9005Sl+\" as printed (unconfirmed)"
+        ],
+        [
+         "Premium bi-halogen projector high beam",
+         "n/a",
+         "9005",
+         "9005LL"
+        ],
+        [
+         "Front turn (base quad)",
+         "3157NA (side marker, quad)",
+         "3157NA",
+         "3157NA"
+        ],
+        [
+         "Front turn (premium headlamp)",
+         "n/a",
+         "LED (dealer)",
+         "LED (dealer)"
+        ],
+        [
+         "Side marker, dual headlamp",
+         "3157K",
+         "n/a",
+         "n/a"
+        ],
+        [
+         "Fog",
+         "9145",
+         "9145 (horizontal), 9006 (vertical)",
+         "9145 (horizontal), 9006 (vertical)"
+        ],
+        [
+         "Tail/turn/stop",
+         "3157K",
+         "base 3157K; premium LED (dealer)",
+         "not listed"
+        ],
+        [
+         "Backup",
+         "921",
+         "921; premium T20",
+         "921; premium 7440/W21W"
+        ],
+        [
+         "CHMSL",
+         "921",
+         "921",
+         "921K; LED CHMSL/cargo lamp (dealer)"
+        ],
+        [
+         "Rear cargo lamp",
+         "921",
+         "921",
+         "921"
+        ],
+        [
+         "License plate",
+         "194",
+         "194",
+         "194"
+        ],
+        [
+         "Cab roof markers",
+         "194NA",
+         "194NA",
+         "194NA"
+        ],
+        [
+         "Rear lamp bar ID / dually side markers",
+         "194",
+         "194",
+         "194"
+        ],
+        [
+         "Overhead console",
+         "TS 212-2",
+         "n/a",
+         "TS 212-9"
+        ],
+        [
+         "Dome",
+         "7679",
+         "7679",
+         "7679"
+        ]
+       ],
+       "note": "Headlamp access (2010/2013): open the hood, disconnect the battery negative, remove the four push-in fasteners and two rivets holding the upper radiator seal, remove the seal, then the two headlamp screws. Release the slide lock through the access hole in the front wheel-house splash shield."
+      }
+     },
+     {
+      "title": "Fuses, 2010 TIPM (selected)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+        "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+       }
+      ],
+      "years": "2010 OM pp. 543-548; match your own box cover label",
+      "text": "The Totally Integrated Power Module (TIPM) is under the hood. Cartridge fuses are J, mini fuses are M. For storage, pull the Ignition-Off Draw (IOD) fuse to cut battery drain.",
+      "table": {
+       "columns": [
+        "Fuse",
+        "Rating",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "J02",
+         "30 A",
+         "Trailer tow main"
+        ],
+        [
+         "J04 / J05",
+         "40 A / 30 A",
+         "ABS pump / ABS valve"
+        ],
+        [
+         "J09",
+         "30 A",
+         "Electric brake (trailer)"
+        ],
+        [
+         "J12",
+         "40 A",
+         "Starter solenoid"
+        ],
+        [
+         "J13",
+         "60 A",
+         "Radiator fan #1/#2"
+        ],
+        [
+         "J15",
+         "60 A",
+         "IOD main"
+        ],
+        [
+         "J16",
+         "40 A",
+         "Front HVAC blower motor"
+        ],
+        [
+         "M18",
+         "25 A",
+         "TCM / trans range"
+        ],
+        [
+         "M20",
+         "25 A",
+         "Front wiper"
+        ],
+        [
+         "M21",
+         "25 A",
+         "Door locks"
+        ],
+        [
+         "M22",
+         "20 A",
+         "Fuel pump"
+        ],
+        [
+         "M23 / M24",
+         "20 A / 20 A",
+         "Trailer lights / trailer tow backup"
+        ],
+        [
+         "M25",
+         "10 A",
+         "J1962 diagnostic port"
+        ],
+        [
+         "M31",
+         "20 A",
+         "Power outlet #1"
+        ],
+        [
+         "M37 / M43",
+         "10 A / 10 A",
+         "Horn #1 / Horn #2"
+        ],
+        [
+         "M50 / M51",
+         "25 A / 20 A",
+         "ASD #1, #2 / ASD #3"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Fuses, 2016 Power Distribution Center (selected)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2016 OM pp. 848-857; diesel- and HD-only rows omitted",
+      "text": "The PDC is in the engine compartment near the battery; cavity numbers are stamped on the cover. The fuel pump fuse is 20 A (M22) in 2010 and 30 A (F70) in 2016: a different module and year, not a conflict.",
+      "table": {
+       "columns": [
+        "Cavity",
+        "Rating",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "F01 / F03",
+         "80 A / 60 A",
+         "Radiator fan control module / radiator fan (if equipped)"
+        ],
+        [
+         "F05",
+         "40 A",
+         "Air suspension compressor"
+        ],
+        [
+         "F06",
+         "40 A",
+         "ABS/ESC pump"
+        ],
+        [
+         "F07",
+         "40 A",
+         "Starter solenoid"
+        ],
+        [
+         "F11",
+         "30 A",
+         "Integrated trailer brake module"
+        ],
+        [
+         "F13",
+         "40 A",
+         "Blower motor"
+        ],
+        [
+         "F22",
+         "20 A",
+         "Engine control module"
+        ],
+        [
+         "F25",
+         "30 A",
+         "Front wiper"
+        ],
+        [
+         "F28 / F29 / F30",
+         "20 / 20 / 30 A",
+         "Trailer tow backup lights / parking lights / receptacle"
+        ],
+        [
+         "F36",
+         "30 A",
+         "Rear defroster"
+        ],
+        [
+         "F42",
+         "20 A micro",
+         "Horn"
+        ],
+        [
+         "F44",
+         "10 A",
+         "Diagnostic port"
+        ],
+        [
+         "F53 / F81",
+         "20 A",
+         "Trailer tow left / right turn and stop"
+        ],
+        [
+         "F57",
+         "20 A",
+         "Transmission"
+        ],
+        [
+         "F62",
+         "10 A",
+         "A/C clutch"
+        ],
+        [
+         "F63",
+         "20 A",
+         "Ignition coils (gas)"
+        ],
+        [
+         "F64",
+         "25 A",
+         "Fuel injectors / powertrain"
+        ],
+        [
+         "F70",
+         "30 A",
+         "Fuel pump motor"
+        ],
+        [
+         "F78",
+         "10 A",
+         "ECM / electric power steering"
+        ],
+        [
+         "F93",
+         "20 A",
+         "Cigar lighter"
+        ],
+        [
+         "F94",
+         "10 A",
+         "Shifter / transfer case module"
+        ],
+        [
+         "F90/F91, F104",
+         "20 A",
+         "Power outlets"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Tire pressure",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       },
+       {
+        "label": "ram-manuals.com: tire loading and pressure",
+        "url": "https://www.ram-manuals.com/tire_loading_and_tire_pressure-2170.html"
+       }
+      ],
+      "years": "2009-18",
+      "items": [
+       "Use the placard on the driver-side B-pillar or rear edge of the driver's door. The owner's manuals print no psi table: pressure depends on the tire fitted."
+      ],
+      "caveat": "Owner reports (forum): 2014 Laramie P275/60R20 114S placard reads 39 psi cold front and rear (6,800 lb GVWR); a second owner reports 39 psi on the same size; several say dealers delivered trucks at 45-72 psi. tirepressure.org (aggregator, unconfirmed) lists 35-39 psi for 2014 trims. The 44-49 psi wheel-size figure under Wheels conflicts with these; go by your placard."
+     },
+     {
+      "title": "Tire pressure owner reports",
+      "conf": "forum",
+      "src": [
+       {
+        "label": "airforums: tire operating temperatures",
+        "url": "https://www.airforums.com/threads/tire-operating-temperatures.1317549/page-2"
+       },
+       {
+        "label": "RamForumZ: what PSI are you running",
+        "url": "https://www.ramforumz.com/threads/what-psi-are-you-guys-running.140986/"
+       },
+       {
+        "label": "tirepressure.org 2014 Ram 1500 (aggregator)",
+        "url": "https://tirepressure.org/ram/1500/2014"
+       }
+      ],
+      "years": "2014 P275/60R20",
+      "text": "39 psi cold front and rear on the door sticker of a 2014 Laramie (P275/60R20 114S); a second owner reports 39 psi on the same size."
+     },
+     {
+      "title": "TPMS behavior and sensor relearn",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       },
+       {
+        "label": "Reset procedures: tire pressure monitor (lemon-manuals)",
+        "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/General%20Information/Reset%20Procedures/Tire%20Pressure%20Monitor%20Systems/"
+       }
+      ],
+      "years": "2016 OM pp. 673-680; relearn page is a general compilation on a secondary host",
+      "items": [
+       "The warning is based on the cold placard pressure. Once on, the light goes off only after you inflate to placard; the system updates after up to 20 minutes of driving above 15 mph. After adjusting pressure, allow about 2 minutes for the light to update.",
+       "A matching full-size spare has a sensor; a non-matching or compact spare does not, so the system shows dashes and flashes the light for 75 s on each start, then stays solid.",
+       "New sensor ID: drive at least 10 minutes at a continuous speed above 15 mph; the module learns the new ID and clears the DTCs on its own. Or program the ID with an RKE/TPM analyzer and a scan tool, then drive above 15 mph until the fault clears.",
+       "The owner's manual auto-learn of sensor locations (ignition Off then On, about 15 min over 5 mph) is for the dual-rear-wheel 3500 system."
+      ]
+     },
+     {
+      "title": "Hitch limits",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Dodge Ram Truck OM (dezosmanuals.com)",
+        "url": "https://dezosmanuals.com/wp-content/uploads/2021/09/2010-Dodge-Ram-Truck-OM.pdf"
+       },
+       {
+        "label": "2013 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2013/1500/P130039_13_DSDJD2_OM_EN_USC_E10_V3.pdf"
+       },
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       },
+       {
+        "label": "2016 Ram 1500 towing chart",
+        "url": "https://www.ramtrucks.com/assets/towing_guide/pdf/2016_ram_1500_towing_charts.pdf"
+       },
+       {
+        "label": "2018 Ram 1500 towing chart",
+        "url": "https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/towing/2018%20Ram%201500.pdf"
+       }
+      ],
+      "years": "2010 vs 2013/2016 (a year change, not a conflict)",
+      "table": {
+       "columns": [
+        "Hitch",
+        "2010",
+        "2013 / 2016"
+       ],
+       "rows": [
+        [
+         "Class III bumper / heavy duty",
+         "5,000 lb",
+         "5,000 lb trailer / 500 lb tongue"
+        ],
+        [
+         "Class IV (1500)",
+         "10,000 lb",
+         "11,000 lb trailer / 1,100 lb tongue"
+        ]
+       ]
+      },
+      "items": [
+       "Weight-distributing hitch recommended above 5,000 lb (2016 and 2018 charts). Tongue weight: 10% for a conventional hitch.",
+       "Break-in: no towing for the first 500 mi; for the first 500 mi of towing, stay under 50 mph with no full-throttle starts. Use Tow/Haul mode for all towing (2016).",
+       "The hitch class limit is not the truck's rating; use the chart for your build."
+      ]
+     },
+     {
+      "title": "Towing and payload, 2016 (SAE J2807)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Ram 1500 towing chart",
+        "url": "https://www.ramtrucks.com/assets/towing_guide/pdf/2016_ram_1500_towing_charts.pdf"
+       }
+      ],
+      "years": "2016 chart only",
+      "items": [
+       "Highest rating: 10,640 lb, 5.7 / 65RFE, Regular Cab 8 ft, 4x2, 3.92: GVWR 6,600, payload 1,700, GCWR 15,950. Same truck with the 8HP70 and 3.92: 10,620 lb.",
+       "Lowest: 4,170 lb (3.6 / 845RE, Crew Cab 5'7\" 4x4, 3.21; GCWR 9,850).",
+       "Highest payload: 1,890 lb (3.6, Quad Cab 6'4\" 4x2). Lowest: 1,260 lb (EcoDiesel, Crew Cab 6'4\" 4x4).",
+       "3.6 Regular Cab 6'4\" 4x2: 3.21 = 4,990 lb vs 3.55 = 7,290 lb. Axle ratio is the biggest single factor on V6 trucks.",
+       "Quad and Crew Cabs with off-road tires (TXN), all-terrain tires (TWG) or steel wheels (WFP) are 6,800 lb GVWR; all 22 in tires (TY4) 6,200 lb GVWR; Big Horn / Lone Star EcoDiesel with 3.92 = 13,750 lb GCWR. Payload = GVWR minus base weight; payload and trailer rating are mutually exclusive."
+      ]
+     },
+     {
+      "title": "Towing and payload, 2018",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2018 Ram 1500 towing chart",
+        "url": "https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/towing/2018%20Ram%201500.pdf"
+       }
+      ],
+      "years": "2018 chart (dated 09/18/2017)",
+      "items": [
+       "Highest: 10,620 lb, 5.7 / 8HP70, Regular Cab 8 ft, 4x2, 3.92 (GCWR 15,975). Near the top: 4x4 Regular Cab 8 ft 10,430; Quad 4x2 10,340; Crew 5'7\" 4x2 10,250 (all 5.7/8HP70/3.92).",
+       "Lowest: 4,250 lb (3.6 / 3.21, Crew Cab 5'7\" 4x4).",
+       "Highest payload: 1,880 lb (3.6, Quad Cab 4x2 and Regular Cab 8 ft 4x2). Lowest: 1,270 lb (EcoDiesel, Crew Cab 6'4\" 4x4).",
+       "EcoDiesel max: 9,240 lb (Regular Cab 8 ft 4x2, 3.92, 14,750 GCWR).",
+       "The 2018 SSV (police/special service) still lists a 65RFE 5.7 (10,060 lb at 3.92).",
+       "Chart codes: ERB = 3.6, EZH = 5.7, EXF = 3.0 diesel. Model: 1 = 4x2, 6 = 4x4; body 41 = Quad 6'4\", 61 = Reg 6'4\", 62 = Reg 8', 98 = Crew 5'7\", 91 = Crew 6'4\"."
+      ],
+      "caveat": "Factory charts for 2009-15 and 2017 were not opened."
+     },
+     {
+      "title": "Paint codes, 2016",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Ram Exterior Color Availability (BodyBuilder)",
+        "url": "https://www.ramtrucks.com/BodyBuilder/service/Image?imageId=MtQrP%2FFqLY5r%2Fest8MtGjGgHzAHGUTU0WB3rWuqSY7YmQ2vEhuBWBLNuyozWEMC0%0A"
+       },
+       {
+        "label": "Jan 2017 Ram paint code list (catalograck)",
+        "url": "https://www.catalograck.com/ImgVD/UNT/UC%5FRAMCodes%5FJan17.pdf"
+       }
+      ],
+      "years": "2016 only; 2014 partial (PR4 Flame Red carry-over, PWQ Pearl White new); 2009 list unconfirmed",
+      "table": {
+       "columns": [
+        "Color",
+        "Code (as printed)",
+        "Notes"
+       ],
+       "rows": [
+        [
+         "Red Pearl",
+         "NRV",
+         "new for 2016"
+        ],
+        [
+         "Flame Red",
+         "PR4",
+         ""
+        ],
+        [
+         "Torred",
+         "ZR3",
+         "Sport \"Buzz\" model only"
+        ],
+        [
+         "Stinger Yellow",
+         "KYV",
+         "Buzz only"
+        ],
+        [
+         "Luxury Brown Pearl",
+         "GTW",
+         "new"
+        ],
+        [
+         "Black Forest Green Pearl",
+         "KGZ",
+         ""
+        ],
+        [
+         "Blue Streak Pearl",
+         "KCL",
+         ""
+        ],
+        [
+         "True Blue Pearl",
+         "KBU",
+         ""
+        ],
+        [
+         "Bright Silver Metallic",
+         "WS2",
+         "also the Laramie lower two-tone"
+        ],
+        [
+         "Granite Crystal Metallic",
+         "LAU",
+         ""
+        ],
+        [
+         "Maximum Steel Metallic",
+         "KAR",
+         ""
+        ],
+        [
+         "Brilliant Black",
+         "AXR",
+         "also the Outdoorsman/Power Wagon/Rebel lower two-tone"
+        ],
+        [
+         "Pearl White",
+         "PWQ",
+         "new"
+        ],
+        [
+         "Bright White",
+         "GW7",
+         "fleet only after 9/7/15 on several trims"
+        ],
+        [
+         "White Gold Metallic",
+         "HWL",
+         "Longhorn lower two-tone"
+        ]
+       ]
+      },
+      "caveat": "Code prefix: this FCA sheet prints AXR / GW7 / LAU, while aftermarket lists and the Jan 2017 Ram list print PXR / PW7 / PAU. Matching on the last two characters is the researcher's reading, not an FCA rule (unconfirmed)."
+     },
+     {
+      "title": "Paint codes, 2014 and 2009",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "2014 BodyBuilder paint sheet",
+        "url": "https://www.ramtrucks.com/assets/bbg/pdf/2014/docs/intro/paintinfo.pdf"
+       },
+       {
+        "label": "2009 rambodybuilder paint info (search extract)",
+        "url": "http://www.rambodybuilder.com/2009/docs/intro/paintinfo.pdf"
+       }
+      ],
+      "years": "2014 partial, 2009 search extract",
+      "text": "2014 sheet text-extracts only Flame Red PR4 (carry-over) and Pearl White PWQ (new), verified; the rest is an image. 2009: a search extract lists colors and codes in jumbled order (only Brilliant Black PXR lines up), so no pairings are given."
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and option codes",
+    "short": "VIN, sales codes",
+    "blocks": [
+     {
+      "title": "VIN by position (2016)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "FCA US 2016 Truck/MPV VIN Code Guide",
+        "url": "https://www.ramtrucks.com/assets/bbg/pdf/2016/docs/intro/vin.pdf"
+       },
+       {
+        "label": "2016 Ram 1500 OM (Mopar)",
+        "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2016/1500/P127415_16_DSDJD2_OM_EN_USC_DIGITAL.pdf"
+       }
+      ],
+      "years": "2016 only; other years share the Part 565 structure but letters may differ. 2009-11 trucks were sold as \"Dodge Ram\"; their position 5-7 letters were not checked",
+      "text": "VIN location: left front of the dash, visible through the windshield; also on the frame and underbody (2016 OM p. 6).",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning (2016)"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "WMI: 1C6 = FCA US truck; 2C6 = FCA Canada truck; 3C6 = Mexico truck (1C7/2C7/3C7 = incomplete vehicle)"
+        ],
+        [
+         "4",
+         "Brake system and GVWR band plus restraints. E.g. 6,001-7,000 lb: C (belts plus air bags), J (front side bags), R (side bags, all rows), Y (no bags)"
+        ],
+        [
+         "5-7",
+         "DS 1500: R6x = 2WD, R7x = 4WD. Reg Cab short bed A (ST) / B (SLT) / C (Sport), R = HFE; Reg Cab long bed D (ST) / E (SLT); Quad F ST, G SLT, H Sport, J Laramie, Z HFE; Crew short bed K ST, L SLT, M Sport, N Laramie, P Longhorn, X = SSV (4WD only), Y = Rebel; Crew long bed S ST, T SLT, U Sport, V Laramie, W Longhorn"
+        ],
+        [
+         "8",
+         "Engine: G = 3.6 V6 gas (ERB/ERC/ERT); T = 5.7 V8 gas (EZC/EZH); 2 = 5.7 gas/CNG; M = 3.0 V6 diesel, turbo (EXF/EXN)"
+        ],
+        [
+         "9",
+         "Check digit"
+        ],
+        [
+         "10",
+         "Model year: 2016 = G (verified); standard sequence 2009 = 9, 2010 = A, 2011 = B, 2012 = C, 2013 = D, 2014 = E, 2015 = F, 2017 = H, 2018 = J"
+        ],
+        [
+         "11",
+         "Plant: S = Warren Truck; G = Saltillo Truck; C/D/E/L/R/T/W are other FCA plants"
+        ],
+        [
+         "12-17",
+         "Plant sequence number"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Sales codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "FCA US 2016 Truck/MPV VIN Code Guide",
+        "url": "https://www.ramtrucks.com/assets/bbg/pdf/2016/docs/intro/vin.pdf"
+       },
+       {
+        "label": "2018 Ram 1500 towing chart",
+        "url": "https://www.ramtrucks.com/content/dam/fca-brands/na/ramtrucks/en_us/towing/2018%20Ram%201500.pdf"
+       }
+      ],
+      "years": "2016-18",
+      "items": [
+       "Engines: ERB 3.6, EZH 5.7 MDS VVT, EXF 3.0 diesel. Transmission and axle codes are under Specs and years.",
+       "Interior color codes (2016 color sheet): X9 Black, X8 Black/Diesel Gray, U1 Canyon Brown/Light Frost Beige, XT Black/Cattle Tan, XR Black/Radar Red.",
+       "Axles named in the 2016 5.7 4WD service tree: Front Axle 215FD, Rear Axle C235 (215 mm front, 235 mm rear for that variant; other engines and years not checked)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes and recalls",
+    "short": "Codes tied to FCA TSBs, recalls",
+    "intro": "Only codes tied to an FCA TSB or recall. Generic Hemi P0300, P0456 and P0128 lists are forum-only, so they are not listed.",
+    "blocks": [
+     {
+      "title": "Codes and likely causes",
+      "conf": "verified-secondary",
+      "src": [
+       {
+        "label": "Technical Service Bulletins index (lemon-manuals)",
+        "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Quick%20Lookups/Technical%20Bulletins/Technical%20Service%20Bulletins/Other%20Variant/"
+       },
+       {
+        "label": "Safety recalls index (lemon-manuals)",
+        "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Quick%20Lookups/Technical%20Bulletins/Safety%20Recalls/Other%20Variant/Recalls/"
+       }
+      ],
+      "years": "Years per row; Chrysler bulletin text on a secondary host, checked 2026-10-20",
+      "table": {
+       "columns": [
+        "Code(s)",
+        "Applies to",
+        "Cause / fix per FCA",
+        "Source"
+       ],
+       "rows": [
+        [
+         "P2072, P2110, P2118",
+         "2013-18 DS (bulletin covers 2013-23) with the 3.6 (ERB)",
+         "Throttle blade icing, often a no-start in the cold (the bulletin prints \"-7°C (-20°F)\"; -7°C is about 19°F). Fix: dry out the PCV valve, hose and throttle body, fit the updated make-up air hose and air cleaner lid, change the oil (1.0 hr labor)",
+         "TSB 09-023-23 (Nov 28, 2023)"
+        ],
+        [
+         "P0441, P062A",
+         "2010-18 DS (bulletin covers 2010-24) 3.6 or 5.7, only severe/dusty duty",
+         "Clogged single vapor-canister filter; also hard fueling, early nozzle shut-off and fuel flow-back. Information only: a dual-filter kit exists; not for normal-duty trucks",
+         "TSB 25-009-24 (Dec 5, 2024; supersedes 25-001-21)"
+        ],
+        [
+         "P0335, P0336",
+         "2014-18 DS 3.0 EcoDiesel built 6/13/2014-3/26/2018",
+         "Missing magnetic material on the crankshaft tone wheel; covered by the X94 warranty extension",
+         "TSB 14-007-21 Rev. A"
+        ],
+        [
+         "No DTC: low assist or heavy steering at low speed",
+         "2016 DS built 3/22-4/9/2016; recall: 2015-16 (440 trucks)",
+         "EPS gear: replace the gear assembly (TSB 19-001-16). Recall 16V-167 (FCA S19): loss of power-steering assist, EPS unit replaced",
+         "TSB 19-001-16; recall 16V-167"
+        ],
+        [
+         "No DTC: noisy or loose starter",
+         "2016 DS built 3/1-3/6/2016 (3.6, 3.0 diesel, 5.7)",
+         "Loose starter bolts; torque them to spec",
+         "TSB 09-005-16"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Related recalls with no DTC",
+      "conf": "verified-secondary",
+      "src": [
+       {
+        "label": "Safety recalls index (lemon-manuals)",
+        "url": "https://lemon-manuals.org.ua/Dodge%20and%20Ram/2016/1500%20Big%20Horn%2C%204D%20Pickup%2C%205.7L%20Eng%20VIN%20T%2C%204WD/Repair%20and%20Diagnosis/Quick%20Lookups/Technical%20Bulletins/Safety%20Recalls/Other%20Variant/Recalls/"
+       }
+      ],
+      "years": "Per item",
+      "items": [
+       "19V-757 (FCA VB1): 2014-19 Ram 1500 (and Classic) 3.0 EcoDiesel, 107,980 trucks. The EGR cooler can crack and coolant vapor can combust in the intake manifold (fire risk). EGR cooler replaced; intake manifold inspected and replaced if needed.",
+       "16V-301 (S32): 2016 Ram 1500 built 2/19-3/3/2016 (64 trucks). Front halfshafts may fracture; both are replaced.",
+       "17V-198 (T20): 2016-17 Ram 1500 (30 trucks). Differential pin retaining screw can loosen, so the differential may break or lock up."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "TPMS relearn: drive at least 10 min above 15 mph to auto-learn, or program the ID with an RKE/TPM tool and a scan tool (Quick reference).",
+  "2016 max tow 10,640 lb (previously Unconfirmed) confirmed from the 2016 chart (Quick reference).",
+  "2016 and 2018 payload ranges added.",
+  "Spark-plug replacement intervals extracted (Maintenance).",
+  "Ring-gear sizes, partly: 2016 5.7 4WD service tree names Front Axle 215FD and Rear Axle C235.",
+  "EPS faults, partly: TSB 19-001-16 and recall 16V-167 (Trouble codes).",
+  "Oil consumption guideline: 1 qt per 2,000 mi acceptable on 2012-19 gas engines (TSB 09-007-18)."
+ ]
 };

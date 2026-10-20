@@ -372,8 +372,31 @@
     function adv() { out.textContent = ADVICE[sel.value]; }
     sel.addEventListener('change', adv); adv();
     var gq = document.getElementById('gq'), gres = document.getElementById('gres'), gbody = document.getElementById('gbody');
-    function gdraw() { state.gq = gq.value; gres.innerHTML = renderGlobalSearch(gq.value); gbody.style.display = gq.value.trim() ? 'none' : ''; }
+    function gdraw() {
+      state.gq = gq.value; gbody.style.display = gq.value.trim() ? 'none' : '';
+      if (gq.value.trim() && !pidxReady()) { gres.innerHTML = '<p class="small dim">Loading the parts catalogs to search them…</p>'; loadPidx(function () { if (document.getElementById('gq') === gq) gres.innerHTML = renderGlobalSearch(gq.value); }); return; }
+      gres.innerHTML = renderGlobalSearch(gq.value);
+    }
     gq.addEventListener('input', gdraw); if (gq.value) gdraw();
+  }
+  // Catalog search index (data/parts/<id>/index.js), loaded for every platform the first time My Garage search is used.
+  var PIDX_WAIT = null;
+  function pidxReady() { return Object.keys(P).every(function (k) { return !P[k].catalog || (window.FORGE_PIDX || {})[k]; }); }
+  function loadPidx(cb) {
+    if (pidxReady()) { cb(); return; }
+    if (PIDX_WAIT) { PIDX_WAIT.push(cb); return; }
+    PIDX_WAIT = [cb];
+    var need = Object.keys(P).filter(function (k) { return P[k].catalog && !(window.FORGE_PIDX || {})[k]; }), left = need.length;
+    need.forEach(function (k) {
+      var sc = document.createElement('script'); sc.src = P[k].catalog.index; sc.async = true;
+      sc.onload = sc.onerror = function () { if (--left === 0) { var w = PIDX_WAIT; PIDX_WAIT = null; w.forEach(function (fn) { fn(); }); } };
+      document.head.appendChild(sc);
+    });
+  }
+  function catalogHits(pid, p, terms, have) {
+    var rows = (window.FORGE_PIDX || {})[pid]; if (!rows) return [];
+    if (!p._cidx) p._cidx = rows.map(function (r) { return { tab: 'parts', anchor: r[0], title: r[2] + ' ' + r[3] + ' · ' + r[1], text: r[5] + (r[4] ? ' · ' + r[4] : '') + ' · ' + (r[6] != null ? money(r[6]) + ' at RockAuto' : 'no verified price'), hay: (r[1] + ' ' + r[2] + ' ' + r[3] + ' ' + r[4] + ' ' + r[5]).toLowerCase() }; });
+    return p._cidx.filter(function (it) { return !have[it.anchor] && terms.every(function (t) { return it.hay.indexOf(t) > -1; }); });
   }
   function renderGlobalSearch(q) {
     var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -382,6 +405,8 @@
     Object.keys(P).forEach(function (pid) {
       var p = P[pid];
       var hits = searchIndex(pid, p).filter(function (it) { return terms.every(function (t) { return it.hay.indexOf(t) > -1; }); });
+      var have = {}; p.parts.forEach(function (x) { have[x.id] = 1; });
+      hits = hits.concat(catalogHits(pid, p, terms, have));
       if (!hits.length) return;
       total += hits.length;
       h += '<div class="ggroup"><div class="grp-h grp-split"><span>' + esc(p.name) + ' <span class="yrs">' + esc(p.years) + '</span></span><a href="#/p/' + pid + '/search" data-gq="' + esc(q) + '">All ' + hits.length + '</a></div><div class="rows">' +

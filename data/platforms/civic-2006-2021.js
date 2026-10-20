@@ -4632,6 +4632,8 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/civic-2006-2021/index.js",
+  "indexBytes": 29739,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/honda,2017,civic,2.0l+l4,3436819"

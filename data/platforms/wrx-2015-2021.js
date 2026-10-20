@@ -1970,8 +1970,8 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
   "Suspension",
   "Drivetrain",
   "Lighting & Aero",
-  "Engine & Wheels",
   "Engine",
+  "Wheels & Tires",
   "Fuel System",
   "Cooling",
   "Electrical",
@@ -3674,7 +3674,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
   {
    "id": "cobb-st01",
    "platform": "WRX 2015–2021",
-   "category": "Engine & Wheels",
+   "category": "Wheels & Tires",
    "name": "ST-01 wheel 18x9.5 +40 (each)",
    "brand": "COBB",
    "part_number": "ST-01",
@@ -3714,7 +3714,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
   {
    "id": "iag-shortblock",
    "platform": "WRX 2015–2021",
-   "category": "Engine & Wheels",
+   "category": "Engine",
    "name": "1000 BHP closed-deck FA20DIT short block",
    "brand": "IAG",
    "part_number": "n/s",
@@ -3752,6 +3752,8 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/wrx-2015-2021/index.js",
+  "indexBytes": 19832,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/subaru,2017,wrx,2.0l+h4+turbocharged,3435521"

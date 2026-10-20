@@ -4909,6 +4909,8 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/tacoma-2005-2023/index.js",
+  "indexBytes": 250156,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/toyota,2008,tacoma,4.0l+v6,1441488",

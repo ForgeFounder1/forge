@@ -4939,6 +4939,8 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/wrangler-jk-jl/index.js",
+  "indexBytes": 307728,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/jeep,2012,wrangler,3.6l+v6,1503367",

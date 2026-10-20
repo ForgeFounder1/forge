@@ -267,8 +267,54 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2007 F-150 Owner Guide pp. 355-360 (carmanual.org)",
+     "label": "2007 F-150 Owner Guide (carmanual.org)",
      "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Belt tensioner bolt (2011-14)",
+   "text": "WSM 414-00 lists 48 N·m (35 lb-ft) for all engines; WSM 303-05 lists 25 N·m (18 lb-ft) on the 3.5/3.7/6.2 and 47 N·m (35 lb-ft) on the 5.0. 303-05 is the belt's own, engine-specific section: use it, and treat 414-00's value as the 5.0 figure.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2014 WSM 303-05/303-06 Accessory Drive and Starting",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-f150-workshop-manual-accessory-drive-chapter-303-05-pdf.195767/"
+    },
+    {
+     "label": "2014 WSM 414-00 Charging System",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-work-shop-manual-414-00-charging-system-alternator-generator-pdf.199878/"
+    }
+   ]
+  },
+  {
+   "topic": "Brake fluid name (2014)",
+   "text": "The Owner Guide says DOT 4 LV; the WSM says DOT 3 or WSS-M6C65-A1 (the DOT 4 LV spec). Compatible; prefer DOT 4 LV.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 F-150 Owner Guide (carmanual.org)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+    },
+    {
+     "label": "2014 WSM 206-00 Brake System General Information",
+     "url": "https://www.f150ecoboost.net/attachments/brake-system-%E2%80%93-general-information-pdf.194078/"
+    }
+   ]
+  },
+  {
+   "topic": "Recall 24V-444 number",
+   "text": "Recall 24V-444 is Ford 24S37; a search summary that called it 24S36 is wrong.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Ford 24S37 recall page",
+     "url": "https://www.ford.com/support/how-tos/recall/recalls-and-faqs/24s37-f-150-2014-transmission-sudden-downshift-recall/"
+    },
+    {
+     "label": "NHTSA 24V-444 Part 573",
+     "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V444-2781.PDF"
     }
    ]
   }
@@ -3141,6 +3187,301 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
    ],
    "torque": null,
    "parts": []
+  },
+  {
+   "id": "gf-hub-bearing-12",
+   "type": "diy",
+   "title": "Front hub and wheel bearing, 2011-14 4x4",
+   "summary": "Sealed hub serviced as an assembly. Ford PDF on a secondary host. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 204-01B Front Suspension 4WD",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-f150-work-shop-manual-204-01b-front-suspension-4wd-pdf.202244/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Remove the wheel, then the caliper and rotor. The wheel-speed-sensor connector is in the engine bay on the fender apron."
+    },
+    {
+     "text": "Remove the halfshaft nut and the hub bolts; the hub and bearing are a sealed unit serviced as an assembly."
+    },
+    {
+     "text": "If reusing the original hub, fit a new hub O-ring."
+    },
+    {
+     "text": "Before fitting the axle nut, measure from the CV shaft's threaded end to the inner bearing race: minimum 15.5 mm (0.61 in). If shallower, rotate the shaft until the IWE and CV splines stop binding. Ford warns that tightening without proper protrusion damages the IWE."
+    },
+    {
+     "text": "Check for spline lash, then torque the axle nut. Refit brake parts."
+    },
+    {
+     "text": "One more 12 N·m (106 lb-in) step names no fastener in the PDF text (the IWE bolts use the same value)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Hub bolts",
+      "175 N·m (129 lb-ft)"
+     ],
+     [
+      "Axle nut",
+      "40 N·m (30 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-ball-joint-12",
+   "type": "diy",
+   "title": "Lower ball joint, 2011-14 4x4",
+   "summary": "Pressed joint, serviceable separately from the arm. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 204-01B Front Suspension 4WD",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-f150-work-shop-manual-204-01b-front-suspension-4wd-pdf.202244/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "The lower ball joint is pressed and serviceable separately from the arm (Ford tools 205-086 C-frame, 204-358 adapters). Make sure the snap ring is fully seated; do not damage the boot with the press."
+    },
+    {
+     "text": "Raptor: the joint is bonded with the kit adhesive (clean with Metal Surface Prep ZC-31-A). Keep adhesive off the boot and do not drive for at least 1 hour. If the arm shows cracks, replace the arm."
+    },
+    {
+     "text": "Do not use a pickle fork between the ball joint and knuckle (damages the seal). Do not hammer the knuckle to free the tie-rod end."
+    },
+    {
+     "text": "Torque suspension bolts at curb height: measure hub center to fender lip before you start, then jack the suspension to that height before final torque."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Lower ball-joint nut",
+      "175 N·m (129 lb-ft)"
+     ],
+     [
+      "Upper ball-joint nut",
+      "115 N·m (85 lb-ft)"
+     ],
+     [
+      "Raptor shock lower bolt (at curb height)",
+      "550 N·m (406 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-alternator-12",
+   "type": "diy",
+   "title": "Alternator (generator), 2011-14",
+   "summary": "Ratings and torque from the charging-system section. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 414-00 Charging System",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-work-shop-manual-414-00-charging-system-alternator-generator-pdf.199878/"
+    },
+    {
+     "label": "2014 WSM 303-05/303-06 Accessory Drive and Starting",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-f150-workshop-manual-accessory-drive-chapter-303-05-pdf.195767/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disconnect the battery before removing the B+ terminal."
+    },
+    {
+     "text": "Ratings (pulley ratio 2.95:1): 5.0 with AC power point or climate seats 220 A; 5.0 without 200 A; 6.2 base 155 A, optional 200 A."
+    },
+    {
+     "text": "The PCM sets the regulator set-point; a GENMON duty cycle of 3% or less sets P0625, 98% or more sets P0626."
+    },
+    {
+     "text": "Belt tensioner: 414-00 lists 48 N·m for all engines, but the belt section 303-05 is engine-specific (see the Starter and accessory belt guide). Use 303-05."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Generator bolts",
+      "48 N·m (35 lb-ft)"
+     ],
+     [
+      "B+ terminal nut",
+      "17 N·m (150 lb-in)"
+     ],
+     [
+      "Generator stud (3.5)",
+      "8 N·m (71 lb-in)"
+     ],
+     [
+      "Stud nut (3.5/3.7)",
+      "48 N·m (35 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-starter-belt-12",
+   "type": "diy",
+   "title": "Starter and accessory belt, 2011-14",
+   "summary": "Engine-specific values from WSM 303-05 and 303-06. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 303-05/303-06 Accessory Drive and Starting",
+     "url": "https://www.f150ecoboost.net/attachments/2011-2014-f150-workshop-manual-accessory-drive-chapter-303-05-pdf.195767/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Starter test values: cranking speed 140-220 rpm; max voltage drop 0.5 V hot; normal load draw 130-220 A; no-load 60-84 A; in-rush up to 800 A."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Starter bolts, 3.5 EB and 3.7",
+      "48 N·m (35 lb-ft)"
+     ],
+     [
+      "Starter bolts, 5.0 and 6.2 (also studs and ground-cable nut)",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "Solenoid B+ nut",
+      "12 N·m (106 lb-in)"
+     ],
+     [
+      "S-terminal nut",
+      "5 N·m (44 lb-in)"
+     ],
+     [
+      "Belt tensioner, 3.5/3.7",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "Belt tensioner, 5.0",
+      "47 N·m (35 lb-ft)"
+     ],
+     [
+      "6.2 tensioner and idler",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "5.0 late-build A/C belt tensioner and idler",
+      "25 N·m (18 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump-35",
+   "type": "diy",
+   "title": "Water pump, 3.5 EcoBoost (spec table)",
+   "summary": "Ford's table lists the pump, thermostat housing and crossover bolts as \"refer to procedure\", so no single number is given. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 303-01A 3.5L GTDI",
+     "url": "https://www.f150ecoboost.net/attachments/engine-3-5l-gtdi-pdf.187677/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Coolant: Motorcraft Orange (see Maintenance)."
+    },
+    {
+     "text": "5.0, 3.7, 6.2 and 11th-gen pump torques were not found on a Ford page."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Pump pulley bolts",
+      "24 N·m (18 lb-ft)"
+     ],
+     [
+      "Oil pan drain plug",
+      "27 N·m (20 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-brake-bleed-12",
+   "type": "diy",
+   "title": "Brake bleeding and fluid, 2011-14",
+   "summary": "Pressure bleeding preferred. Applies to: 2011-14, 2014 Workshop Manual (Ford PDF on a secondary host).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 WSM 206-00 Brake System General Information",
+     "url": "https://www.f150ecoboost.net/attachments/brake-system-%E2%80%93-general-information-pdf.194078/"
+    },
+    {
+     "label": "2014 F-150 Owner Guide (carmanual.org)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Fluid: Motorcraft DOT 3 (WSS-M6C62-A) or WSS-M6C65-A1; the 2014 Owner Guide calls for DOT 4 LV (PM-20). WSS-M6C65-A1 is the low-viscosity spec, so both are compatible; use DOT 4 LV if in doubt. System fill 1,420 ml (3.0 pt)."
+    },
+    {
+     "text": "Pressure bleed at 30-50 psi (207-345 kPa) at the reservoir; follow Ford's wheel order graphic; crack each bleeder 180° until clear, bubble-free fluid flows."
+    },
+    {
+     "text": "Trucks with rear integral parking-brake calipers: press and release the parking brake during the bleed."
+    },
+    {
+     "text": "If a new ABS HCU is fitted, run the HCU bleed with a scan tool."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Bleed screw",
+      "10 N·m (89 lb-in)"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3403,16 +3744,15 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
  ],
  "unknowns": [
   "Engine torque: 4.2 V6, 4.6 2V, 3.7 and 6.2 internals. The 5.4 3V table is from a third-party WSM reproduction with no year; charm.li wouldn't load to cross-check.",
-  "2004, 2005 and 2012 owner's guide PDFs on carmanual.org return an HTML page, not a manual, so those years were not read; 2004-08 data stands on the 2007 guide and 2009-14 on the 2014 guide. Some 2006/2008 axle capacities weren't captured; the 2009-10 coolant layout needs a page check.",
-  "Front-differential identification; locker RPO and axle codes (door-jamb decode table not opened).",
-  "Problems: no 2011–14 5.0 oil-consumption TSB found (NHTSA results are for 2018–20); no 2011–14 6R80 harsh-shift TSB confirmed (2011–13 PCM reflash for sudden downshifts or OSS codes and recall 24V-444 for 2014 seen only in search extracts). EPAS faults, and 04–08 heater-core and rear-main issues, are still open.",
-  "Wheels: the 12th-gen HDPP axle size; F-150-specific TPMS sensor type by year (only a Ford-wide source); 2004–05 TPMS; 2–3\" lift tables for 09–14; 09–14 4/6 drops (no kit found); 4WD lowering.",
+  "Year coverage: 2004, 2005 and 2012 owner's guide PDFs on carmanual.org return an HTML page, not a manual. 2004-08 data stands on the 2007 guide and 2009-14 on the 2014 guide. The 2004-08 and 2009-13 maintenance schedules are not on a Ford page found online. Some 2006/2008 axle capacities weren't captured; the 2009-10 coolant layout needs a page check.",
+  "Codes: 2004-08 VIN engine and axle codes from a Ford page; front-differential identification; paint codes for years other than 2014; the DTC list for recall 19V-075 (2011-13).",
+  "Problems: no 2011-14 5.0 oil-consumption TSB found; 04-08 heater core and rear main, and EPAS faults, are still open.",
+  "Procedures not found on a Ford page: fuel pump (sender) removal (WSM 310-01), blend-door actuator steps and torque (WSM 412), water pump torques for 5.0/3.7/6.2 and 11th gen (3.5 EB pump bolts are \"refer to procedure\"), and 11th-gen hub, ball-joint, starter and alternator torques (forum figures only).",
+  "Wheels: the 12th-gen HDPP axle size and 9.75 in capacity; F-150-specific TPMS sensor type by year (only a Ford-wide source); 2004-05 TPMS; 2-3\" lift tables for 09-14; 09-14 4/6 drops (no kit found); 4WD lowering.",
   "12th-gen rear U-bolt torque (\"refer to procedure\", value not extracted).",
-  "Parts: the 09–14 Raptor-style grille and Anzo 311024 tail-light prices (Cloudflare); Fab Fours bumper prices; Diablo/Hypertech prices for 04–08; BAK cjponyparts page (403). OEM repair part prices not checked.",
+  "Parts: the 09-14 Raptor-style grille and Anzo 311024 tail-light prices (Cloudflare); Fab Fours bumper prices; Diablo/Hypertech prices for 04-08; BAK cjponyparts page (403). Repair catalog parts list RockAuto only.",
   "Dyno/MPG: EcoBoost dyno figures (Edmunds/Cars.com/Hypertech wouldn't load); Fuelly aggregates; Reddit (not attempted).",
-  "Swaps: EcoBoost or 6.2 swaps, Raptor-style long travel, 9.75 axle swaps, regear costs, the 13–14 HID harness part and price, and the Juggernaut 09–10 Coyote harness (not opened). Rear disc conversion: 11th gen already has rear discs per WSM caliper specs; 12th-gen rear brake type by trim wasn't checked.",
-  "Gap-fill: the F-150 gap-fill file so far covers fluids and capacities only. Bulbs, fuses, tire pressure, alignment, paint codes, towing, VIN decoder, trouble codes and new DIY guides are not researched yet for this platform.",
-  "Gap-fill: 2014 lists one rear axle capacity (5.5 pt) for all axles; 9.75 in and HD payload capacity for 12th gen still open."
+  "Swaps: EcoBoost or 6.2 swaps, Raptor-style long travel, 9.75 axle swaps, regear costs, the 13-14 HID harness part and price, and the Juggernaut 09-10 Coyote harness (not opened). 12th-gen rear brake type by trim wasn't checked."
  ],
  "sellers": [],
  "partCategories": [
@@ -5231,6 +5571,8 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/f150-2004-2014/index.js",
+  "indexBytes": 406215,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/ford,2006,f-150,5.4l+v8,1432394",
@@ -5362,20 +5704,53 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
   "count": 2295
  },
  "reference": {
-  "caveat": "Factory data from the 2007 Owner Guide (standing in for 2004-08) and the 2014 Owner Guide (standing in for 2009-14). Values can change by year; check your own guide.",
+  "caveat": "Factory data from the 2007 Owner Guide (standing in for 2004-08), the 2014 Owner Guide and 2014 Workshop Manual sections (standing in for 2009-14), and Ford's 2014 towing guide. Values change by year; check your own guide and door label.",
   "sections": [
    {
     "id": "maintenance",
     "title": "Maintenance",
-    "short": "Fluids, capacities, filters, plugs",
-    "intro": "Fluid capacities, specs and Motorcraft filter and plug numbers from Ford owner's guides.",
+    "short": "Schedule, fluids, filters, plugs",
+    "intro": "Schedule, fluid capacities and Motorcraft filter and plug numbers from Ford owner's guides.",
     "blocks": [
+     {
+      "title": "Factory maintenance schedule (12th gen)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "2014 Owner Guide pp. 438-447; the 2009-13 schedule was not checked",
+      "items": [
+       "Oil, 3.5 EB / 3.7 / 5.0: change when the Intelligent Oil-Life Monitor shows OIL CHANGE REQUIRED. Ford: normal use 7,500-10,000 mi; severe (heavy towing or loads, mountains, off-road, long idling, extreme temps) 5,000-7,499; extreme (maximum load or towing, extreme heat or cold) 3,000-4,999. Change within 2 weeks or 500 mi of the message. Never exceed 1 year or 10,000 mi. If the monitor resets early or fails, change at 6 months / 5,000 mi.",
+       "Oil, 6.2: no oil-life monitor; fixed 7,500-mile schedule. Its spark plugs are listed at 97,500 mi to line up with those intervals.",
+       "At every oil change: rotate tires; inspect brakes, cooling system, exhaust, front axle and U-joints (grease fittings on 4x4), half-shaft boots, steering linkage, ball joints and tie-rod ends; check ATF level on dipstick units.",
+       "Every 30,000 mi: engine air filter; heated/cooled seat filter (if fitted).",
+       "Every 100,000 mi: spark plugs; inspect the accessory belt (then every other oil change).",
+       "Coolant: first change at 6 years / 100,000 mi, then every 3 years / 50,000 mi.",
+       "Every 150,000 mi: automatic transmission fluid and filter; front and rear axle fluid; transfer case fluid; replace the accessory belt.",
+       "Special operating conditions (towing, car-top carrier, long idling or commercial use): transfer case fluid every 60,000 mi, inspect and lube U-joints frequently, air filter as needed; see the guide for axle exceptions. Do these within 3,000 mi of an OIL CHANGE REQUIRED message."
+      ]
+     },
+     {
+      "title": "Maintenance schedule (11th gen)",
+      "conf": "unknown",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       }
+      ],
+      "years": "2004-08",
+      "text": "The 2007 Owner Guide points to a separate Scheduled Maintenance Guide booklet that was not found online, so 2004-08 intervals are not filled in. The guide does say the rear axle is filled for life with synthetic, and that flex-fuel trucks (VIN 8th digit V) run on E85 half the time or more need a different schedule and a tank of regular gasoline every 3,000 mi."
+     },
      {
       "title": "11th gen engine fluids, filters and plugs",
       "conf": "verified",
       "src": [
        {
-        "label": "2007 F-150 Owner Guide pp. 355-360 (carmanual.org)",
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
         "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
        }
       ],
@@ -5445,7 +5820,7 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
       "conf": "verified",
       "src": [
        {
-        "label": "2007 F-150 Owner Guide pp. 355-360 (carmanual.org)",
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
         "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
        }
       ],
@@ -5501,7 +5876,7 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
       "conf": "verified",
       "src": [
        {
-        "label": "2007 F-150 Owner Guide pp. 355-360 (carmanual.org)",
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
         "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
        }
       ],
@@ -5518,7 +5893,7 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
       "conf": "verified",
       "src": [
        {
-        "label": "2014 F-150 Owner Guide pp. 297-305 (carmanual.org)",
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
         "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
        }
       ],
@@ -5576,7 +5951,7 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
       "conf": "verified",
       "src": [
        {
-        "label": "2014 F-150 Owner Guide pp. 297-305 (carmanual.org)",
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
         "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
        }
       ],
@@ -5613,7 +5988,7 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
         ],
         [
          "Brake fluid",
-         "DOT 4 LV (PM-20)"
+         "DOT 4 LV (PM-20); the WSM also accepts DOT 3 WSS-M6C62-A or WSS-M6C65-A1, system fill 1,420 ml (3.0 pt)"
         ],
         [
          "A/C",
@@ -5624,14 +5999,633 @@ window.FORGE_PLATFORMS["f150-2004-2014"] = {
          "26.0 gal standard, 36.0 gal optional"
         ]
        ],
-       "note": "2014 lists one rear axle capacity (5.5 pt) for all axles; the 9.75 / HD payload question stays open."
+       "note": "2014 lists one rear axle capacity (5.5 pt) for all axles; the 9.75 in / HD payload question stays open."
       }
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes, 11th gen",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       }
+      ],
+      "years": "2007 Owner Guide p. 92; check your year",
+      "table": {
+       "columns": [
+        "Lamp",
+        "Bulb"
+       ],
+       "rows": [
+        [
+         "Headlamps (high/low)",
+         "H13 / 9008"
+        ],
+        [
+         "Front park/turn",
+         "3157A (amber)"
+        ],
+        [
+         "Front side marker",
+         "194"
+        ],
+        [
+         "Fog lamps",
+         "9140"
+        ],
+        [
+         "Backup (except Harley-Davidson) / (Harley)",
+         "3156 / 3155"
+        ],
+        [
+         "Rear stop/turn/side marker/tail",
+         "4057K or 3057K"
+        ],
+        [
+         "High-mount brake lamp; cargo lamps",
+         "921"
+        ],
+        [
+         "License plate",
+         "194"
+        ],
+        [
+         "Mirror turn signals, puddle lamps",
+         "dealer item"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Bulb sizes, 12th gen",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "2014 Owner Guide p. 254; check your year",
+      "table": {
+       "columns": [
+        "Lamp",
+        "Bulb"
+       ],
+       "rows": [
+        [
+         "Headlamps, halogen (high/low)",
+         "H13 / 9008"
+        ],
+        [
+         "Headlamps, HID (2013-14, if equipped)",
+         "D3S"
+        ],
+        [
+         "Front park/turn",
+         "3157NAK LCP (natural amber)"
+        ],
+        [
+         "Front side marker",
+         "168"
+        ],
+        [
+         "Fog lamps",
+         "9140"
+        ],
+        [
+         "Backup",
+         "921"
+        ],
+        [
+         "Rear stop/turn/side marker",
+         "3057K LCP"
+        ],
+        [
+         "High-mount brake lamp",
+         "912"
+        ],
+        [
+         "License plate (behind the rear bumper)",
+         "194"
+        ],
+        [
+         "Front map lamps / rear dome-courtesy",
+         "W5W / 578"
+        ]
+       ],
+       "note": "Year differences, not a conflict: high-mount lamp 921 in 2007 and 912 in 2014; backup lamp 3156 in 2007 and 921 in 2014."
+      }
+     },
+     {
+      "title": "Fuse and relay boxes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       },
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "Fuse numbering differs by year; use your own year's chart (full tables in the source)",
+      "items": [
+       "2004-08 (2007 guide pp. 270-283): passenger compartment fuse panel / power distribution box under the right-hand side of the instrument panel; remove the trim panel, then pull the cover by its PULL tab. Mini and standard fuses plus relays: fuel pump relay and injectors, PCM power, starter solenoid, high/low beams, trailer tow park, stop/turn, back-up, battery charge, electric trailer brake feed. Auxiliary relay box in the engine compartment on the left fender.",
+       "Ford: disconnect the battery before servicing high-current fuses, and refit both box covers before reconnecting.",
+       "2009-14 (2014 guide pp. 224-236): power distribution box in the engine compartment with the high-current cartridge and mini fuses and relays, e.g. relay 2 starter, relay 8 fuel pump, fuse 13 starter relay power (30 A), fuse 17 trailer brake control (30 A), fuse 27 fuel pump relay power (20 A), plus trailer-tow park, stop/turn, back-up and battery-charge circuits.",
+       "2009-14 passenger compartment fuse panel: right-hand passenger footwell behind a trim panel; press the tabs on both sides of its cover to remove it."
+      ]
+     },
+     {
+      "title": "Tire pressure",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       },
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "2004-14",
+      "items": [
+       "Ford gives no single pressure for the F-150; use the Tire Label on the B-pillar or driver-door edge, set cold before driving. The same label gives the maximum occupant-plus-cargo weight.",
+       "2007 guide: a T-type/mini spare is kept at 60 psi; a full-size or dissimilar spare at the higher of the front/rear placard pressures.",
+       "The tire maximum load is quoted at 35 psi for P-metric (2014: 35 or 36 psi by size; 36 psi for Euro-metric). That is a load reference, not a recommended setting.",
+       "Lug-nut torque: see the Wheel install guide."
+      ]
+     },
+     {
+      "title": "Payload and where the numbers live",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       },
+       {
+        "label": "Ford 2014 RV & Trailer Towing Guide p. 15 (dealer host)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/05/2014-Ford-rv-trailer-towing-guide.pdf"
+       }
+      ],
+      "years": "2004-14",
+      "text": "Payload, GVWR and front/rear GAWR are on the Safety Compliance Certification Label (driver's door pillar); the tire placard on the same pillar gives the max occupant-plus-cargo weight. Never exceed GVWR, either GAWR or GCWR. Ford printed no single payload number per F-150 trim in either guide, so none is given here."
+     },
+     {
+      "title": "Towing, 11th gen (2007 tables)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       }
+      ],
+      "years": "2007 Owner Guide pp. 225-235, automatic unless noted; other years differ",
+      "table": {
+       "columns": [
+        "Config",
+        "4.2 V6",
+        "4.6 V8",
+        "5.4 V8"
+       ],
+       "rows": [
+        [
+         "Reg Cab 4x2 126 in",
+         "manual 3.31: 2,400 / 7,200; auto 3.73: 5,600 / 10,500",
+         "3.73: 7,100 / 12,000",
+         "3.73: 8,500 / 13,500"
+        ],
+        [
+         "Reg Cab 4x2 144.5 in",
+         "n/a",
+         "3.73: 7,200 / 12,200",
+         "3.73: 9,800 / 15,000; HD 4.10: 11,000 / 16,400 (other HD row 10,400 / 15,800)"
+        ],
+        [
+         "Reg Cab 4x4 144.5 in",
+         "n/a",
+         "3.73: 6,900 / 12,200",
+         "3.73, 17 in wheels: 9,500 / 15,000 (18 in: 9,000 / 14,500); HD 4.10: 9,500 / 15,300"
+        ],
+        [
+         "SuperCab 4x4 144.5 in",
+         "n/a",
+         "3.73, 17 in: 6,700 / 12,200",
+         "3.73, 17 in: 9,300 / 15,000; HD 4.10 (163 in): 9,300 / 15,300"
+        ]
+       ],
+       "note": "Values are max trailer lb / GCWR lb. 18 in wheels cut 500 lb off the 17 in rating in the same configuration. Top 2007 figure: 5.4 Heavy Duty (4.10) regular cab 4x2 at 11,000 lb."
+      }
+     },
+     {
+      "title": "Towing, 12th gen (2014 towing guide)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Ford 2014 RV & Trailer Towing Guide p. 15 (dealer host)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/05/2014-Ford-rv-trailer-towing-guide.pdf"
+       },
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "2014 only; the 2014 Owner Guide GCWR figures match this guide",
+      "table": {
+       "columns": [
+        "Engine / axle",
+        "GCWR (lb)",
+        "Max trailer, range across cabs (lb)"
+       ],
+       "rows": [
+        [
+         "3.7 V6, 3.55 / 3.73",
+         "10,400-11,700",
+         "5,500-6,700"
+        ],
+        [
+         "5.0 V8, 3.31 / 3.55",
+         "12,900-14,900",
+         "7,500-9,800"
+        ],
+        [
+         "5.0 V8, 3.73",
+         "13,300-15,300",
+         "8,000-10,000 (15,300 needs HD Payload Pkg)"
+        ],
+        [
+         "3.5 EcoBoost, 3.15 / 3.31",
+         "14,000-15,100",
+         "8,400-9,700"
+        ],
+        [
+         "3.5 EcoBoost, 3.55",
+         "13,300-15,500",
+         "7,300-9,800"
+        ],
+        [
+         "3.5 EcoBoost, 3.73 / 4.10",
+         "16,600-17,100",
+         "11,100-11,300 (needs HD Payload or Max Trailer Tow Pkg)"
+        ],
+        [
+         "6.2 V8, 3.55",
+         "15,500-15,600",
+         "9,500-9,800"
+        ],
+        [
+         "6.2 V8, 3.73",
+         "17,000-17,100",
+         "11,000-11,300"
+        ],
+        [
+         "6.2 Raptor, 4.10",
+         "12,500 / 14,700",
+         "6,000 / 8,000"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Hitch limits (2014)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Ford 2014 RV & Trailer Towing Guide p. 15 (dealer host)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/05/2014-Ford-rv-trailer-towing-guide.pdf"
+       }
+      ],
+      "years": "2014 towing guide",
+      "items": [
+       "Maximum ratings require a weight-distributing hitch.",
+       "Bumper-only towing is limited to 5,000 lb.",
+       "Tongue weight 10-15% of trailer weight (5th-wheel king pin 15-25%).",
+       "Heavy-Duty Payload Package is option code 627."
+      ]
+     },
+     {
+      "title": "Paint codes (2014)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 WSM 100-01 Identification Codes (f150ecoboost.net)",
+        "url": "https://www.f150ecoboost.net/attachments/2009-2014-f150-work-shop-manual-section-100-1-identification-codes-pdf.208977/"
+       }
+      ],
+      "years": "2014 only; other years not verified on a Ford page (YZ Oxford White and UH/UA black recur, but palettes changed). Use the paint field on your door label",
+      "text": "Two-part code on the VC (door) label: primary, then accent/two-tone. All base coat / clear coat. Accent colors: LQ, UX.",
+      "table": {
+       "columns": [
+        "Code",
+        "Name"
+       ],
+       "rows": [
+        [
+         "D7",
+         "Sunset"
+        ],
+        [
+         "E4",
+         "Vermilion Red"
+        ],
+        [
+         "J1",
+         "Kodiak Brown"
+        ],
+        [
+         "LQ",
+         "Pale Adobe Metallic"
+        ],
+        [
+         "N1",
+         "Blue Jeans Metallic"
+        ],
+        [
+         "PQ",
+         "Race Red"
+        ],
+        [
+         "RR",
+         "Ruby Red (tri-coat)"
+        ],
+        [
+         "UG",
+         "White Platinum (tri-coat)"
+        ],
+        [
+         "UH",
+         "Tuxedo Black Metallic"
+        ],
+        [
+         "UJ",
+         "Sterling Gray Metallic"
+        ],
+        [
+         "UX",
+         "Ingot Silver Metallic"
+        ],
+        [
+         "VA",
+         "Terrain"
+        ],
+        [
+         "W6",
+         "Green Gem"
+        ],
+        [
+         "YZ",
+         "Oxford White"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and option codes",
+    "short": "VIN, axle and trans codes",
+    "blocks": [
+     {
+      "title": "VIN by position (2009-14)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 WSM 100-01 Identification Codes (f150ecoboost.net)",
+        "url": "https://www.f150ecoboost.net/attachments/2009-2014-f150-work-shop-manual-section-100-1-identification-codes-pdf.208977/"
+       }
+      ],
+      "years": "12th gen, 2014 WSM 100-01",
+      "text": "VIN tag: riveted to the dash, top upper left; also on the Vehicle Certification (VC) label.",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "1FT = Ford truck, USA (5LT = Lincoln Mark LT, Mexico)"
+        ],
+        [
+         "4",
+         "GVWR + restraints: E/M 6,001-7,000 lb; F/N 7,001-8,000 lb; P/V 8,001-8,500 lb (E/F/V add second-row side airbags)"
+        ],
+        [
+         "5-7",
+         "F1C / F1E = Regular Cab 2WD / 4WD; X1C / X1E = SuperCab 2WD / 4WD; W1C / W1E = SuperCrew 2WD / 4WD; X1R / W1R = SVT Raptor SuperCab / SuperCrew"
+        ],
+        [
+         "8",
+         "Engine: F 5.0 4V (flex), M 3.7 (flex), T 3.5 EcoBoost, 6 6.2 2V"
+        ],
+        [
+         "9",
+         "Check digit"
+        ],
+        [
+         "10",
+         "Model year: 9 = 2009, A = 2010, B = 2011, C = 2012, D = 2013, E = 2014"
+        ],
+        [
+         "11",
+         "Plant: F Dearborn, K Kansas City"
+        ],
+        [
+         "12-17",
+         "Serial"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Door (VC) label codes (2009-14)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 WSM 100-01 Identification Codes (f150ecoboost.net)",
+        "url": "https://www.f150ecoboost.net/attachments/2009-2014-f150-work-shop-manual-section-100-1-identification-codes-pdf.208977/"
+       },
+       {
+        "label": "2014 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_f-150.pdf"
+       }
+      ],
+      "years": "2014 WSM",
+      "table": {
+       "columns": [
+        "Code type",
+        "Values"
+       ],
+       "rows": [
+        [
+         "Axle",
+         "15 = 3.15 open; 27 = 3.31 open; 19 = 3.55 open; 26 = 3.73 open; H9 = 3.55 limited slip; B6 = 3.73 limited slip; L5 / L3 / L9 / L6 / L4 = 3.15 / 3.31 / 3.55 / 3.73 / 4.10 electronic locking"
+        ],
+        [
+         "Transmission",
+         "6 = 6R80"
+        ],
+        [
+         "Wheelbase",
+         "126, 133, 145, 157, 163 in"
+        ],
+        [
+         "Spring",
+         "Front base part 5310, rear 5560, as a 2+2 character code"
+        ],
+        [
+         "Also on the label",
+         "Paint, interior trim, radio, DSO, region, powertrain calibration"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2004-08 codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2007 F-150 Owner Guide (carmanual.org)",
+        "url": "https://carmanual.org/OwnersManual/ford/2007_ford_f-150.pdf"
+       }
+      ],
+      "years": "11th gen, 2007 Owner Guide p. 363",
+      "items": [
+       "Transmission code: Q = 4R75E automatic, M = M5R2 5-speed manual.",
+       "Flex-fuel trucks carry V in VIN position 8."
+      ],
+      "caveat": "A 2004-08 axle-code and full engine-code list from a Ford source was not found."
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes tied to Ford TSBs and recalls",
+    "intro": "Only codes tied to a Ford TSB, recall or workshop manual page. Generic P0171/P0174, P0300, P0420 and P0455 lists are forum-only for these trucks, so they are not listed.",
+    "blocks": [
+     {
+      "title": "Codes and likely causes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 WSM 414-00 Charging System",
+        "url": "https://www.f150ecoboost.net/attachments/2011-2014-work-shop-manual-414-00-charging-system-alternator-generator-pdf.199878/"
+       },
+       {
+        "label": "NHTSA 24V-444 Part 573",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V444-2781.PDF"
+       },
+       {
+        "label": "NHTSA 24V-444 dealer notice",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCMN-24V444-8849.pdf"
+       },
+       {
+        "label": "Ford 24S37 recall page",
+        "url": "https://www.ford.com/support/how-tos/recall/recalls-and-faqs/24s37-f-150-2014-transmission-sudden-downshift-recall/"
+       },
+       {
+        "label": "NHTSA 19V-075 Part 573",
+        "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V075-8473.PDF"
+       }
+      ],
+      "years": "Years per row; checked 2026-10-20",
+      "table": {
+       "columns": [
+        "Code(s)",
+        "Applies to",
+        "Likely cause per Ford",
+        "Confidence"
+       ],
+       "rows": [
+        [
+         "P0021, P0022, P0340, P0341 (with hot rattle and rough idle)",
+         "2004-10 5.4 3V",
+         "Oscillating cam timing; Ford fix is replacing both VCT solenoids (TSB, see Problems)",
+         "verified"
+        ],
+        [
+         "P0016",
+         "2011-14 3.5 EB built on or before 10/10/2014",
+         "Stretched primary timing chain if VCT_INT_ACT1 reads +6° or more (TSB 14-0194, see Problems)",
+         "verified"
+        ],
+        [
+         "P0304-P0306, P0430 (misfire under hard acceleration in humid weather)",
+         "2011-12 3.5 EB",
+         "Condensation in the charge-air cooler (TSB, see Problems)",
+         "verified"
+        ],
+        [
+         "P0625 / P0626",
+         "2011-14",
+         "Generator field / GENMON circuit low (duty cycle 3% or less) / high (98% or more): wiring, connector or generator",
+         "verified"
+        ],
+        [
+         "P0720, P0722, P0731, P1500, with sudden downshift to 1st",
+         "2014 6R80 (recall 24V-444 / Ford 24S37); 2011-13 6R80 (recall 19V-075 / 19S07)",
+         "Intermittent output-shaft-speed (OSS) sensor signal loss (contamination, shorts, connector corrosion or pin swaging, bad sensor output). Remedy: PCM reflash plus a dealer check for transmission repair. The DTC list for 19V-075 is not confirmed.",
+         "verified"
+        ]
+       ],
+       "rowSrc": [
+        null,
+        null,
+        null,
+        "https://www.f150ecoboost.net/attachments/2011-2014-work-shop-manual-414-00-charging-system-alternator-generator-pdf.199878/",
+        "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V444-2781.PDF"
+       ]
+      },
+      "caveat": "The recall rows were verified from search extracts of the NHTSA and Ford pages."
+     },
+     {
+      "title": "Recall 24V-444 (Ford 24S37) and 19V-075 (19S07)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA 24V-444 Part 573",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCLRPT-24V444-2781.PDF"
+       },
+       {
+        "label": "NHTSA 24V-444 dealer notice",
+        "url": "https://static.nhtsa.gov/odi/rcl/2024/RCMN-24V444-8849.pdf"
+       },
+       {
+        "label": "Ford 24S37 recall page",
+        "url": "https://www.ford.com/support/how-tos/recall/recalls-and-faqs/24s37-f-150-2014-transmission-sudden-downshift-recall/"
+       },
+       {
+        "label": "NHTSA 19V-075 Part 573",
+        "url": "https://static.nhtsa.gov/odi/rcl/2019/RCLRPT-19V075-8473.PDF"
+       }
+      ],
+      "years": "2011-14 6R80",
+      "text": "24V-444 = Ford 24S37: 552,188 2014 F-150s built 6/17/2013-12/23/2014 (Dearborn 6/17/13-8/25/14, Kansas City 7/26/13-12/23/14). OSS signal loss can cause an unintended downshift to 1st; free PCM update. 2011-13 trucks are covered separately by 19V-075 (19S07), a PCM reprogram for the same OSS downshift. A search summary calling it 24S36 is wrong.",
+      "caveat": "Verified from search extracts of the NHTSA and Ford pages."
      }
     ]
    }
   ]
  },
  "resolved": [
-  "Fluid capacities and specs for 2004-08 (2007 guide) and 2009-14 (2014 guide), including filter and plug part numbers (Maintenance)."
+  "6R80 on 2011-14: recall 24V-444 = Ford 24S37 (552,188 2014 F-150s, OSS signal loss, free PCM update); 2011-13 covered by 19V-075 (19S07). The \"2011-13 PCM reflash\" claim is now backed by a recall (Trouble codes).",
+  "2014 maintenance schedule (Maintenance).",
+  "2007 and 2014 towing and payload, HD Payload Package code 627 (Quick reference).",
+  "Bulbs, fuses, tire pressures, VIN and door-label codes, 2014 paint (Quick reference, VIN).",
+  "12th-gen alternator, starter, hub and ball-joint torques (Guides).",
+  "Fluid capacities and filter and plug numbers for 2004-08 and 2009-14 (Maintenance)."
  ]
 };

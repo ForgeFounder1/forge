@@ -9661,6 +9661,8 @@ window.FORGE_PLATFORMS["gmt800"] = {
   }
  ],
  "catalog": {
+  "index": "data/parts/gmt800/index.js",
+  "indexBytes": 467463,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/chevrolet,2000,silverado+1500,4.8l+v8,1358805",
