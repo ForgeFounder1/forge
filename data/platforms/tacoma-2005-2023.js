@@ -44,12 +44,12 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2006 Tacoma Owner's Manual",
+     "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
     },
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     },
     {
      "label": "2007 Tacoma repair manual (FSM mirror)",
@@ -64,12 +64,12 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2006 Tacoma Owner's Manual",
+     "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
     },
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     }
    ]
   },
@@ -111,11 +111,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     },
     {
-     "label": "2018 Tacoma Owner's Manual",
+     "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
     }
    ]
@@ -211,6 +211,103 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10061331-2273.pdf"
     }
    ]
+  },
+  {
+   "topic": "Recall 14V604 build dates",
+   "text": "NHTSA recall summary says built September 14, 2009 to October 11, 2010; Toyota's Dec 2014 amendment says Sept 14, 2004 to Dec 6, 2010. 2009 is probably a typo for 2004. Use the amendment and check by VIN.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "NHTSA recalls API, Tacoma (pulled for 2005/08/12/16/18/20/22)",
+     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=toyota&model=tacoma&modelYear=2022"
+    }
+   ]
+  },
+  {
+   "topic": "Tire pressure by generation",
+   "text": "P245/75R16 is 30 psi in the 2012 manual and 32 psi in 2020; 265/70R16 is 29F/32R vs 30/30. Use your door label.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+    },
+    {
+     "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "V6 spark plug interval",
+   "text": "Toyota's 2023 guide lists 2GR-FKS plugs at 60,000 mi; the 2TR-FE first appears at 120,000. Claims of 120k for the V6 conflict with the factory guide.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Toyota 2023 Tacoma Warranty & Maintenance Guide",
+     "url": "https://www.toyota.com/content/dam/toyota/brochures/pdf/2023/T-MMS-23Tacoma.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Paint names and years",
+   "text": "Code 218 is Midnight Black Metallic on ImportArchive and VehicleColor but Attitude Black Metallic on toyotatouchuppaint (2019). Several G3 year ranges differ by one year between sites.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "ImportArchive Tacoma 2016-2023 colors (search extract)",
+     "url": "https://importarchive.com/toyota/tacoma/2016-2023"
+    },
+    {
+     "label": "VehicleColor Tacoma paint codes",
+     "url": "https://vehiclecolor.com/toyota/tacoma/"
+    },
+    {
+     "label": "toyotatouchuppaint 2019 colors (extract)",
+     "url": "https://toyotatouchuppaint.net/2019.html"
+    }
+   ]
+  },
+  {
+   "topic": "VIN 3TM country",
+   "text": "The 2014 VIN filing prints U.S.A. for the Baja California plant; the 2019 filing says Mexico. Typo in the 2014 filing.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Toyota 49 CFR 565 VIN filing, 2014MY (NHTSA)",
+     "url": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/ORG8712.pdf"
+    },
+    {
+     "label": "Toyota 49 CFR 565 VIN filing, G3, June 2019 (NHTSA vPIC)",
+     "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/844f9f35-1ce1-4a31-9a15-e8c1268ee746"
+    }
+   ]
+  },
+  {
+   "topic": "Fuel pump resistance units",
+   "text": "The 2007 repair manual prints the pump resistance as \"0.2 to 3.0\" with inconsistent units between engines. Not relied on.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ]
+  },
+  {
+   "topic": "Dead owner's manual links",
+   "text": "Every cdn.dealereprocess.org owner's manual link returns Access Denied (checked 2026-10-20). 2012 and 2020 now cite dealer-hosted factory PDFs; other years are labelled source link dead. Brochure links on the same host still opened on 2026-10-20.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+    },
+    {
+     "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+    }
+   ]
   }
  ],
  "overview": {
@@ -256,11 +353,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      },
      {
-      "label": "2018 Tacoma Owner's Manual",
+      "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
      }
     ]
@@ -271,11 +368,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      },
      {
-      "label": "2018 Tacoma Owner's Manual",
+      "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
      }
     ]
@@ -361,8 +458,8 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/toyota/2008-tacoma.pdf"
      },
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      },
      {
       "label": "2007 Tacoma repair manual (FSM mirror)",
@@ -395,11 +492,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      },
      {
-      "label": "2018 Tacoma Owner's Manual",
+      "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
      }
     ]
@@ -625,23 +722,23 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "conf": "verified",
      "src": [
       {
-       "label": "2012 Tacoma Owner's Manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+       "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+       "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
       },
       {
-       "label": "2014 Tacoma Owner's Manual",
+       "label": "2014 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2014-tacoma.pdf"
       },
       {
-       "label": "2018 Tacoma Owner's Manual",
+       "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
       },
       {
-       "label": "2020 Tacoma Owner's Manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2020-tacoma.pdf"
+       "label": "2020 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+       "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
       },
       {
-       "label": "2022 Tacoma Owner's Manual",
+       "label": "2022 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2022-tacoma.pdf"
       }
      ]
@@ -659,7 +756,7 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
       "url": "https://www.carsandcollectibles.com/bolt-patterns/vehicles/toyota-tacoma.html"
      },
      {
-      "label": "2006 Tacoma Owner's Manual",
+      "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
      }
     ]
@@ -670,7 +767,7 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2006 Tacoma Owner's Manual",
+      "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
      }
     ]
@@ -692,8 +789,8 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      }
     ]
    },
@@ -782,11 +879,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
      "url": "https://www.wheel-size.com/size/toyota/tacoma/2019/"
     },
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     },
     {
-     "label": "2018 Tacoma Owner's Manual",
+     "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
     }
    ],
@@ -886,20 +983,20 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2006 Tacoma Owner's Manual",
+     "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
     },
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     },
     {
-     "label": "2018 Tacoma Owner's Manual",
+     "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
     },
     {
-     "label": "2020 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2020-tacoma.pdf"
+     "label": "2020 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
     },
     {
      "label": "wheel-size 2012 Tacoma",
@@ -1166,12 +1263,12 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
       "url": "https://www.carsandcollectibles.com/bolt-patterns/vehicles/toyota-tacoma.html"
      },
      {
-      "label": "2006 Tacoma Owner's Manual",
+      "label": "2006 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2006-tacoma.pdf"
      },
      {
-      "label": "2012 Tacoma Owner's Manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+      "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+      "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
      }
     ]
    },
@@ -1181,7 +1278,7 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2018 Tacoma Owner's Manual",
+      "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
      },
      {
@@ -1633,11 +1730,11 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2012 Tacoma Owner's Manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2012-tacoma.pdf"
+     "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+     "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
     },
     {
-     "label": "2018 Tacoma Owner's Manual",
+     "label": "2018 Tacoma Owner's Manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/toyota/2018-tacoma.pdf"
     },
     {
@@ -2642,6 +2739,258 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    ],
    "torque": null,
    "parts": []
+  },
+  {
+   "id": "gf-starter",
+   "type": "diy",
+   "title": "Starter, 1GR-FE and 2TR-FE",
+   "summary": "Factory torques. Applies to: G2 (2007 factory repair manual, mirror); G3 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "1GR: remove the exhaust manifold stay to the transmission, and the steering sliding yoke to intermediate shaft No.2, for access."
+    },
+    {
+     "text": "Test (1GR): no-load current 100 A or less at 11.5 V."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Starter to transmission housing",
+      "37 N·m (27 lb-ft)"
+     ],
+     [
+      "Terminal 30 nut",
+      "9.8 N·m (7 lb-ft)"
+     ],
+     [
+      "Lead wire to terminal C",
+      "5.9 N·m (52 lb-in)"
+     ],
+     [
+      "1GR manifold stay to transmission",
+      "40 N·m (30 lb-ft)"
+     ],
+     [
+      "1GR sliding yoke to intermediate shaft No.2",
+      "36 N·m (27 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-generator",
+   "type": "diy",
+   "title": "Generator (alternator)",
+   "summary": "Factory torques and charging test. Applies to: G2 (2007 factory repair manual, mirror); G3 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Charging test (1GR): regulating voltage 13.2-14.8 V; resting battery 12.6-12.9 V at 68°F."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "1GR generator to tensioner and head",
+      "43 N·m (32 lb-ft)"
+     ],
+     [
+      "2TR generator to chain cover and tensioner",
+      "43 N·m (32 lb-ft) each"
+     ],
+     [
+      "Terminal B",
+      "9.8 N·m"
+     ],
+     [
+      "1GR harness bracket",
+      "8.0 N·m (71 lb-in)"
+     ],
+     [
+      "1GR pulley",
+      "111 N·m (81 lb-ft)"
+     ],
+     [
+      "2TR pulley with clutch",
+      "110 N·m (81 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and fan",
+   "summary": "1GR values match the existing guide; 2TR added. Applies to: G2 (2007 factory repair manual, mirror); G3 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Refill with Super Long Life coolant."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "1GR pump, 10 mm head / 12 mm head",
+      "9.0 / 23 N·m"
+     ],
+     [
+      "1GR fan with fluid coupling to pump",
+      "21 N·m (15 lb-ft)"
+     ],
+     [
+      "2TR pump bolt A / bolt B",
+      "21 N·m (15 lb-ft) / 9 N·m (80 lb-in)"
+     ],
+     [
+      "2TR fan coupling",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "2TR belt tensioner A / B / C",
+      "21 / 40 / 43 N·m"
+     ],
+     [
+      "Radiator to body",
+      "18 N·m"
+     ],
+     [
+      "Block drain cock plug",
+      "13 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-tank",
+   "type": "diy",
+   "title": "Fuel tank and fuel system",
+   "summary": "Factory torques and pressures. Applies to: G2 (2007 factory repair manual, mirror); G3 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Fuel pressure 281-287 kPa (40.8-41.7 psi). 1GR holding pressure 147 kPa (21 psi) or more; hold time not given."
+    },
+    {
+     "text": "Injector resistance 11.6-12.4 ohm. The pump resistance figure has inconsistent units in the manual; do not rely on it."
+    },
+    {
+     "text": "Pump retainer torque is not in the spec table (unknown)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Fuel tank to body",
+      "62 N·m (46 lb-ft)"
+     ],
+     [
+      "Off-road package tank protector",
+      "20 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-brake-limits",
+   "type": "diy",
+   "title": "Brake wear limits",
+   "summary": "Factory service data. Applies to: G2 (2007 factory repair manual, mirror); G3 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2007 Tacoma repair manual, Section 3 service specs (FSM mirror)",
+     "url": "https://lemon-manuals.la/Honda/2007/Fit%20Sport%2C%20Automatic/Repair%20and%20Diagnosis/External%20Pages/Different%20car/Section%203%20%28Service%20Specifications%29/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Bleed sequence was not found (unknown). Bleeder 11 N·m."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Front rotor 2WD",
+      "25.0 mm std, 23.0 mm min"
+     ],
+     [
+      "Front rotor 4WD / PreRunner",
+      "28.0 mm std, 26.0 mm min"
+     ],
+     [
+      "Rotor runout",
+      "0.05 mm max"
+     ],
+     [
+      "Pad minimum",
+      "1.0 mm"
+     ],
+     [
+      "Rear drum",
+      "254 mm std, 256 mm max"
+     ],
+     [
+      "Shoe lining minimum",
+      "1.0 mm"
+     ],
+     [
+      "Pedal free play",
+      "1-6 mm"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -2885,7 +3234,13 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
   "Prices: Flowmaster Flow FX (G3), Katzkin seats (only option prices shown), a stereo/head unit.",
   "TPMS sensor part numbers (search extracts only).",
   "A G3 driveshaft-clunk bulletin, if any.",
-  "G2 X-Runner suspension specifics and 2.7 2WD 5-lug lift options (RC kits exclude 5-lug)."
+  "G2 X-Runner suspension specifics and 2.7 2WD 5-lug lift options (RC kits exclude 5-lug).",
+  "Gap-fill: G2 maintenance schedule (no 2005-2015 guide found); G3 2016-2022 assumed to match 2023.",
+  "Gap-fill: G3 fuse-by-fuse ratings; a G2 fuel-pump fuse; payload tables (door label only).",
+  "Gap-fill: factory paint-code list and label location; model-code suffix decoding; VIN filings for 2005-2013 and 2016-2018.",
+  "Gap-fill: fuel pump retainer torque; brake bleed sequence; blend door / air-mix servo R and R; G3 starter and generator torques.",
+  "Gap-fill: 2GR-FKS head bolts; 2005/2007 axle ratios; T-SB-0115-22 Rev2 PDF; T-EG059-05 and EG025-06 texts.",
+  "Gap-fill: owner's manuals for years other than 2012 and 2020 (the original cdn.dealereprocess.org links return Access Denied as of 2026-10-20)."
  ],
  "sellers": [],
  "partCategories": [
@@ -5040,5 +5395,735 @@ window.FORGE_PLATFORMS["tacoma-2005-2023"] = {
    }
   ],
   "count": 1430
- }
+ },
+ "reference": {
+  "caveat": "From the 2012 and 2020 owner's manuals (dealer-hosted factory PDFs), Toyota's 2023 maintenance guide, the 2007 repair manual (mirror), Toyota NHTSA VIN filings, bulletins and recalls. Paint codes are secondary sources. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Schedules and service intervals",
+    "intro": "G3 from Toyota's 2023 maintenance guide. No G2 (2005-2015) schedule was retrievable.",
+    "blocks": [
+     {
+      "title": "G3 schedule (2023 guide)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Toyota 2023 Tacoma Warranty & Maintenance Guide",
+        "url": "https://www.toyota.com/content/dam/toyota/brochures/pdf/2023/T-MMS-23Tacoma.pdf"
+       }
+      ],
+      "years": "Verified for 2023; assumed similar for 2016-2022 but unconfirmed",
+      "items": [
+       "Every 5,000 mi or 6 months: rotate tires; inspect fluids, wipers and brake linings.",
+       "Oil: 0W-20 oil and filter every 10,000 mi or 12 months. If 0W-20 was not used at the last change, change at 5,000. Reset MAINT REQD after service.",
+       "Every 30,000 mi: replace cabin and engine air filters; lubricate and re-torque the propeller shaft (4WD); full inspection (ATF cooler hoses, ball joints, brake lines, boots, coolant, exhaust, differentials, fuel lines, steering, transfer case).",
+       "Spark plugs: 2GR-FKS V6 at 60,000 mi / 72 months, again at 120k. 2TR-FE first listed at 120,000 mi.",
+       "Brake booster vacuum pump (2GR-FKS, if equipped): replace at 120,000 mi / 144 months.",
+       "Coolant (Super Long Life): first at 100,000 mi / 120 months, then every 50,000 mi / 60 months.",
+       "Dirt or dust: inspect ball joints, boots and air filter every 5k; lubricate the clutch fork; re-torque the propeller shaft bolt; transfer case oil at 30k.",
+       "Towing or heavy loads: replace front and rear differential oil, manual transmission oil and transfer case oil at the 30k-interval services.",
+       "Deep sand, mud or water: daily inspection list including ball joints, brake lines, differential oil, propeller shaft lube and chassis bolts."
+      ]
+     },
+     {
+      "title": "G2 notes (2012 manual)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+       }
+      ],
+      "years": "2012; the G2 schedule itself is unknown",
+      "items": [
+       "No 2005-2015 Scheduled Maintenance Guide was retrievable (toyota.com hosts only 2023+).",
+       "Towing needs extra maintenance per the guide. Re-tighten the hitch ball and bracket bolts after about 600 mi of towing."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+       },
+       {
+        "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+       }
+      ],
+      "years": "2012 (OM p.568) and 2020 (OM p.545-546); other years not re-checked",
+      "table": {
+       "columns": [
+        "Light",
+        "G2 2012",
+        "G3 2020"
+       ],
+       "rows": [
+        [
+         "Headlight",
+         "HB2 (9003) 60/55 W, one bulb low and high",
+         "Low H11 55 W; high H9 65 W"
+        ],
+        [
+         "Fog",
+         "H11 55 W (if equipped)",
+         "H16 19 W (normal) / H11 55 W (wide-angle)"
+        ],
+        [
+         "Front turn / park / DRL",
+         "4157NAK 27/8 W",
+         "7442NA 28/8 W; WY21W 21 W with LED park/DRL"
+        ],
+        [
+         "Front side marker",
+         "wedge 5 W (no number)",
+         "W5W"
+        ],
+        [
+         "Rear turn",
+         "3157A",
+         "7443 (tail/turn/marker)"
+        ],
+        [
+         "Stop / tail / rear marker",
+         "3157KX",
+         "7443 21/5 W"
+        ],
+        [
+         "Back-up",
+         "921 18 W",
+         "W16W 16 W"
+        ],
+        [
+         "License",
+         "168",
+         "W5W"
+        ],
+        [
+         "High-mount stop",
+         "168",
+         "168 (without cargo lamp)"
+        ],
+        [
+         "Interior",
+         "dome 5 W double-end; personal 168",
+         "W5W; vanity 7065; rear dome 8 W double-end"
+        ]
+       ],
+       "note": "Back-up 921 to W16W and plate 168 to W5W are compatible wedge bulbs, but use the number your manual lists."
+      }
+     },
+     {
+      "title": "Fuses, G2",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+       }
+      ],
+      "years": "2012 (OM p.477-482); two engine-bay layouts (Type A and B); ratings also on the lid",
+      "items": [
+       "Trailer: TOWING TAIL 30 A; TOWING BRK 30 A (brake controller); BATT CHG 30 A (trailer sub-battery); TOWING 30 A (lights). Under dash: BKUP LP 10 A (trailer back-up).",
+       "Engine bay: STOP 10 A; OBD 7.5 A; EFI 20 A; EFI NO.2 10 A; ETCS 10 A; ALT-S 7.5 A; A/F HEATER 15 A; AI VALVE 10 A; STA 7.5 A; HORN 10 A; DOME 7.5 A; ECU-B 7.5 A; RADIO NO.1 10 A / NO.2 30 A; HEAD LO/HI RH and LH 10 A each.",
+       "Large: J/B 50 A; AM1 50 A; HEATER 50 A; ABS NO.1 50 A / NO.2 30 A; AM2 30 A; A/PUMP 50 A; AC SKT 100 A; ALT 120 A or 140 A (replace with the original rating).",
+       "Under the instrument panel: IGN 15 A; GAUGE 7.5 A; TAIL 10 A; ACC 7.5 A; PWR OUTLET 15 A; DR LCK 20 A; IG1 NO.2 10 A (TPMS, rear locker); IG1 10 A; windows 20/20/20/30 A; WSH 10 A; WIP 30 A; 4WD 20 A (4WD and rear diff lock).",
+       "No fuel-pump fuse is named. EFI 20 A feeds the fuel injection system; which fuse feeds the pump is unknown without the wiring diagram."
+      ]
+     },
+     {
+      "title": "Fuses, G3",
+      "conf": "unknown",
+      "src": [
+       {
+        "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+       }
+      ],
+      "years": "2020",
+      "text": "The 2020 manual prints no fuse table; ratings are on the fuse box cover."
+     },
+     {
+      "title": "Tire pressure (cold)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+       },
+       {
+        "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+       }
+      ],
+      "years": "2012 (OM p.564-567) and 2020 (OM p.543-545); your door-jamb label rules",
+      "table": {
+       "columns": [
+        "Size",
+        "G2 2012 F / R / spare",
+        "G3 2020 F / R / spare"
+       ],
+       "rows": [
+        [
+         "P215/70R15 (2WD 5-lug)",
+         "30 / 33 / 33",
+         "not listed"
+        ],
+        [
+         "P245/75R16",
+         "30 / 30 / 30",
+         "32 / 32 / 32"
+        ],
+        [
+         "265/70R16",
+         "29 / 32 / 32",
+         "30 / 30 / 30"
+        ],
+        [
+         "P265/65R17",
+         "29 / 29 / 29",
+         "29 / 29 (spare 245/75R16 at 32)"
+        ],
+        [
+         "P265/60R18",
+         "29 / 29 / 29",
+         "29 / 29 (spare 32)"
+        ],
+        [
+         "P255/45R18 (X-Runner)",
+         "35 / 35 / 35",
+         "not listed"
+        ]
+       ],
+       "note": "G2 above 100 mph: add 3 psi (4 psi on 255/45R18). Wheel nuts 83 lb-ft (113 N·m) on every size in both manuals."
+      }
+     },
+     {
+      "title": "Towing, G2 (2012)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Tacoma Owner's Manual (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/06/2012-toyota-tacoma-owners-manual-1.pdf"
+       }
+      ],
+      "years": "2012 (OM p.228-240)",
+      "items": [
+       "Without tow package: 3,500 lb, except 2.7 Double Cab 2WD 3,400 lb and V6 Access Cab 2WD (GRN225L-CRFDKA) 3,300 lb.",
+       "V6 with tow package: 6,500 lb on most; GRN250L Double Cab long bed 4WD 6,400 lb. GCWR about 10,850-11,170 lb with the package, 7,150-8,100 lb without.",
+       "Tongue weight 9-11%. Weight-distributing hitch required above 5,000 lb. Unbraked max 1,000 lb. No fifth-wheel or gooseneck.",
+       "Break-in: no towing for the first 500 mi (new truck or new powertrain parts); next 500 mi under 50 mph, no full throttle."
+      ]
+     },
+     {
+      "title": "Towing, G3 (2020)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+       }
+      ],
+      "years": "2020 (OM p.187-189)",
+      "items": [
+       "2TR-FE: 3,500 lb.",
+       "2GR-FKS Access Cab: 6,500-6,800 lb (GRN325L 2WD 6,800; GCWR 11,230-11,310).",
+       "2GR-FKS Double Cab: 2WD 6,600-6,700 lb; 4WD 6,400 lb, except GRN310L-PRTLHA 6,000 lb (GCWR 11,040-11,300).",
+       "Model code is on the door-jamb Certification Label. Unbraked max 1,000 lb. No fifth-wheel. Payload: no table in either manual; see your Tire and Loading label."
+      ]
+     },
+     {
+      "title": "Paint codes, G2",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "ImportArchive Tacoma 2005-2015 colors",
+        "url": "https://importarchive.com/toyota/tacoma/2005-2015"
+       }
+      ],
+      "years": "2005-2015; no Toyota factory color list found",
+      "text": "Code location: door-jamb certification label, C/TR field (common Toyota practice, not confirmed in a Tacoma manual). Confirm on your truck before buying paint.",
+      "table": {
+       "columns": [
+        "Code",
+        "Name",
+        "Years"
+       ],
+       "rows": [
+        [
+         "040",
+         "Super White",
+         "05-15"
+        ],
+        [
+         "1E7",
+         "Silver Streak Mica",
+         "05-13"
+        ],
+        [
+         "1D6",
+         "Silver Sky Metallic",
+         "14-15"
+        ],
+        [
+         "1G3",
+         "Magnetic Gray Metallic",
+         "09-15"
+        ],
+        [
+         "209",
+         "Black Sand Pearl",
+         "05-10"
+        ],
+        [
+         "202",
+         "Black",
+         "11-15"
+        ],
+        [
+         "4Q2",
+         "Desert Sand Mica",
+         "05-08"
+        ],
+        [
+         "4T3",
+         "Pyrite Mica",
+         "09-15"
+        ],
+        [
+         "3L5",
+         "Radiant Red",
+         "05-08"
+        ],
+        [
+         "3P1",
+         "Impulse Red Pearl",
+         "05-08"
+        ],
+        [
+         "3R3",
+         "Barcelona Red Metallic",
+         "09-15"
+        ],
+        [
+         "4X0",
+         "Inferno (TRD Pro only)",
+         "15"
+        ],
+        [
+         "6T8",
+         "Timberland Mica",
+         "09-11"
+        ],
+        [
+         "6V4",
+         "Spruce Mica",
+         "12-14"
+        ],
+        [
+         "8P1",
+         "Speedway Blue",
+         "05-11"
+        ],
+        [
+         "8P4",
+         "Indigo Ink Pearl",
+         "05-08"
+        ],
+        [
+         "8S6",
+         "Nautical Blue Metallic",
+         "12-13"
+        ],
+        [
+         "8T5",
+         "Blue Ribbon Metallic",
+         "14-15"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Paint codes, G3",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "ImportArchive Tacoma 2016-2023 colors (search extract)",
+        "url": "https://importarchive.com/toyota/tacoma/2016-2023"
+       },
+       {
+        "label": "VehicleColor Tacoma paint codes",
+        "url": "https://vehiclecolor.com/toyota/tacoma/"
+       },
+       {
+        "label": "toyotatouchuppaint 2019 colors (extract)",
+        "url": "https://toyotatouchuppaint.net/2019.html"
+       }
+      ],
+      "years": "2016-2023; where two year ranges show, ImportArchive / VehicleColor differ by a year",
+      "table": {
+       "columns": [
+        "Code",
+        "Name",
+        "Years"
+       ],
+       "rows": [
+        [
+         "040",
+         "Super White",
+         "16-23"
+        ],
+        [
+         "089",
+         "Wind Chill Pearl",
+         "21-23"
+        ],
+        [
+         "1D6",
+         "Silver Sky Metallic",
+         "16-21"
+        ],
+        [
+         "1J9",
+         "Celestial Silver Metallic",
+         "22-23"
+        ],
+        [
+         "1H5",
+         "Cement",
+         "18-21 / 17-21"
+        ],
+        [
+         "1G3",
+         "Magnetic Gray Metallic",
+         "16-23"
+        ],
+        [
+         "202",
+         "Black",
+         "16-17, 23"
+        ],
+        [
+         "218",
+         "Midnight Black Metallic (TTP: Attitude Black Metallic)",
+         "18-22"
+        ],
+        [
+         "4V6",
+         "Quicksand",
+         "16-20"
+        ],
+        [
+         "4X0",
+         "Inferno",
+         "16-18 / 15-18"
+        ],
+        [
+         "3R3",
+         "Barcelona Red Metallic",
+         "16-23"
+        ],
+        [
+         "6V7",
+         "Army Green",
+         "21-22 / 20-22"
+        ],
+        [
+         "6X3",
+         "Lunar Rock",
+         "22-23 / 21-23"
+        ],
+        [
+         "588",
+         "Electric Lime Metallic",
+         "23 / 22-23"
+        ],
+        [
+         "8T0",
+         "Blazing Blue Pearl",
+         "16-18"
+        ],
+        [
+         "8W2",
+         "Cavalry Blue",
+         "19 / 18-19"
+        ],
+        [
+         "8T6",
+         "Voodoo Blue",
+         "20-21 / 19-21"
+        ],
+        [
+         "8W7",
+         "Blue Crush Metallic",
+         "22-23"
+        ],
+        [
+         "4W5",
+         "Solar Octane",
+         "23 (VehicleColor only)"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and model codes",
+    "short": "VIN digits, model codes",
+    "blocks": [
+     {
+      "title": "VIN decoding",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Toyota 49 CFR 565 VIN filing, 2014MY (NHTSA)",
+        "url": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/ORG8712.pdf"
+       },
+       {
+        "label": "Toyota 49 CFR 565 VIN filing, G3, June 2019 (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/844f9f35-1ce1-4a31-9a15-e8c1268ee746"
+       }
+      ],
+      "years": "From the 2014MY and June 2019 filings; 2005-2013 and 2016-2018 assumed to match the nearest filing (unconfirmed)",
+      "table": {
+       "columns": [
+        "Position",
+        "G2 (2014 filing)",
+        "G3 (2019 filing)"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "5TF = Texas (TMMTX); 3TM = Baja California (TMMBC)",
+         "Same; a later filing adds 3TY (unconfirmed, not opened)"
+        ],
+        [
+         "4 (body)",
+         "2WD: N Reg, T Access, J Double long WB, K Double super-long WB. 4WD: P, U, L, M in the same order",
+         "4WD: S Extra Cab SR5, C Double SR5 LWB, G Double Limited LWB, D Double SR5 SLWB, H Double Limited SLWB. 2WD: R, A, E, B, F in the same order"
+        ],
+        [
+         "5 (engine)",
+         "U = 1GR-FE 4.0 V6; X = 2TR-FE 2.7 I4",
+         "Z = 2GR-FKS 3.5 V6; X = 2TR-FE"
+        ],
+        [
+         "6 (restraints)",
+         "4",
+         "5 (adds knee airbags)"
+        ],
+        [
+         "7 (series)",
+         "C TRN220L/TRN225L/GRN225L; E TRN240L/TRN245L/GRN245L; F GRN250L; G TRN265L/GRN265L; H GRN270L",
+         "A GRN305L; B GRN310L; C GRN325L; D GRN330L; E TRN245L; G TRN265L"
+        ],
+        [
+         "8 / 10 / 11",
+         "N = Tacoma / model year / M Baja California, X Texas",
+         "Same"
+        ]
+       ],
+       "rowSrc": [
+        null,
+        "https://glovebox.openspec.visor.vin/cfr565/ORG17348.pdf",
+        null,
+        null,
+        null,
+        null
+       ]
+      }
+     },
+     {
+      "title": "Model codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Toyota 49 CFR 565 VIN filing, 2014MY (NHTSA)",
+        "url": "https://static.nhtsa.gov/nhtsa/downloads/MfrMail/ORG8712.pdf"
+       },
+       {
+        "label": "Toyota 49 CFR 565 VIN filing, G3, June 2019 (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/844f9f35-1ce1-4a31-9a15-e8c1268ee746"
+       },
+       {
+        "label": "2020 Tacoma Owner's Manual OM04025U (factory PDF, dealer-hosted)",
+        "url": "https://tailoredtrucks.com/wp-content/uploads/2022/04/2020-toyota-tacoma-owners-manual.pdf"
+       }
+      ],
+      "years": "All years",
+      "text": "Toyota has no GM-style RPO system and equipment packages are not VIN-coded. The model code (e.g. GRN245L-CRADKA) on the door-jamb Certification Label is the option-code equivalent: TRN = 2TR-FE, GRN = 1GR-FE (G2) or 2GR-FKS (G3). The suffix letters are not decoded in any opened source."
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes and recalls",
+    "intro": "Only codes with a Toyota bulletin or recall behind them. Diagnose before buying parts.",
+    "blocks": [
+     {
+      "title": "Codes with Toyota bulletins",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Toyota T-SB-0333-17 Rev1 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10141580-9999.pdf"
+       },
+       {
+        "label": "Toyota Special Service Campaign 20TC01 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2020/MC-10176701-9999.pdf"
+       },
+       {
+        "label": "Toyota T-SB-0094-19 Rev1 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168520-9999.pdf"
+       },
+       {
+        "label": "Toyota T-SB-0043-20 Rev1 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188922-9999.pdf"
+       },
+       {
+        "label": "Toyota T-SB-0161-13 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10132102-9999.pdf"
+       }
+      ],
+      "years": "Years per row",
+      "table": {
+       "columns": [
+        "Code",
+        "Applies to",
+        "Cause and fix",
+        "Source"
+       ],
+       "rows": [
+        [
+         "P2440 / P2442 / P2445",
+         "2012 1GR-FE Access Cab, 5AT/6MT",
+         "Air-injection pump filter damage: replace the air pump, cover, air switching valves and gaskets.",
+         "T-SB-0333-17 Rev1"
+        ],
+        [
+         "Same system",
+         "2012, about 78,900 trucks built late Aug 2011 to early Aug 2012",
+         "Campaign 20TC01: moisture degrades the filter. Free inspection; pump repaired or replaced; switching valves replaced.",
+         "20TC01 (May 2020)"
+        ],
+        [
+         "P013A00 / P013C00",
+         "2016-2019 2GR-FKS, before production-change VINs",
+         "Incomplete weld at the front exhaust pipe (leak). Replace the front pipe if leaking.",
+         "T-SB-0094-19 Rev1"
+        ],
+        [
+         "P211904 with limp mode",
+         "2016-2020 2GR-FKS, manual transmission only",
+         "ECM logic: reprogram the ECM. Covered by Federal Emission Warranty 96 mo / 80k.",
+         "T-SB-0043-20 Rev1"
+        ],
+        [
+         "P0420 and/or catalyst rattle",
+         "2010 2TR-FE",
+         "Replace the front exhaust pipe assembly.",
+         "T-SB-0161-13"
+        ],
+        [
+         "P2419 and other secondary-air codes",
+         "2005-2006",
+         "EG025-06, auxiliary emission control system (search extract only, unconfirmed).",
+         "EG025-06"
+        ]
+       ],
+       "rowSrc": [
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10141580-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2020/MC-10176701-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10168520-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188922-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2013/MC-10132102-9999.pdf",
+        "https://www.tsbsearch.com/Toyota/EG025-06"
+       ],
+       "note": "P0171/P0174/P2195/P2197 on 2005-06 (T-EG059-05: replace only the A/F sensor the code names) is unconfirmed; the bulletin page did not load."
+      }
+     },
+     {
+      "title": "Recalls that light warning lamps or cause drivability symptoms",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA recalls API, Tacoma (pulled for 2005/08/12/16/18/20/22)",
+        "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=toyota&model=tacoma&modelYear=2022"
+       }
+      ],
+      "years": "Years per row; check your VIN at nhtsa.gov/recalls",
+      "table": {
+       "columns": [
+        "Campaign",
+        "Years",
+        "Symptom",
+        "Remedy"
+       ],
+       "rows": [
+        [
+         "12V092",
+         "2005-2009, built 9/14/2004-8/29/2008",
+         "Airbag lamp (clockspring damage)",
+         "Replace spiral cable"
+        ],
+        [
+         "14V054",
+         "2012-2013",
+         "VSC, ABS and TRAC lamps (brake actuator resistance)",
+         "Skid control ECU update"
+        ],
+        [
+         "17V356 (H0H)",
+         "2016-2017 V6",
+         "Crank position sensor fault, possible stall",
+         "Improved CKP sensor"
+        ],
+        [
+         "20V012 / 20V682",
+         "2018-2019 / 2017-2020",
+         "Low-pressure fuel pump failure, rough run or stall",
+         "Replace fuel pump assembly"
+        ],
+        [
+         "18V888 (J16/J06)",
+         "2018-2019",
+         "Master cylinder seal damage, reduced braking",
+         "Replace master cylinder"
+        ],
+        [
+         "24V152 (24TB05/24TA05)",
+         "2022-2023",
+         "Rear axle shaft may separate",
+         "Inspect, tighten axle retaining nuts, repair"
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "G3 maintenance schedule (Maintenance).",
+  "Bulbs, G2 fuse ratings, OM tire tables and towing tables (Quick reference).",
+  "VIN decoding from Toyota filings (VIN and model codes).",
+  "G2 starter, generator, water pump and fuel tank torques; brake wear limits (Guides).",
+  "Toyota bulletins and recalls tied to codes (Trouble codes).",
+  "X-Runner 255/45R18 at 35 psi and 2WD 15 in at 30F/33R (Quick reference).",
+  "Taco tick related: Toyota schedules the 2GR-FKS vacuum pump at 120,000 mi (Maintenance)."
+ ]
 };
