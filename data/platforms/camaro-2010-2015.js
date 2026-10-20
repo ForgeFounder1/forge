@@ -29,23 +29,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    ],
    "src": [
     {
-     "label": "2010 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
     },
     {
-     "label": "2011 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2011-camaro.pdf"
+     "label": "2011 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2011_chevrolet_camaro.pdf"
     },
     {
-     "label": "2012 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+     "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
     },
     {
-     "label": "2014 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
     },
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -73,16 +73,16 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2011 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2011-camaro.pdf"
+     "label": "2011 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2011_chevrolet_camaro.pdf"
     },
     {
-     "label": "2012 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+     "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
     },
     {
-     "label": "2014 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
     }
    ]
   },
@@ -93,7 +93,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -112,7 +112,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -299,6 +299,139 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "url": "https://project6gr.com/5th-6th-gen-camaro-wheels/"
     }
    ]
+  },
+  {
+   "topic": "NHTSA VIN decoder errors",
+   "text": "The decoder returns trim \"Eco (1SA)\" for a 2015 LS7 Z/28 (2G1FZ1EE*F9); an LT1 engine for a 2014 ZL1 with code 7 (LT1 is 6th gen only); \"LFJ\" for code D (not a Camaro engine); and inconsistent trim names for the same series letters (FB = LT in 2010 and 2014, FT = 2SS with LS3, FH and FD blank). Rely on positions 8 and 10 only; read trim from the SPID label.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (GM-submitted patterns)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/2G1FZ1EE*F9?format=json"
+    }
+   ]
+  },
+  {
+   "topic": "Bulletin 21-NA-124 is trucks only",
+   "text": "A search summary claimed 21-NA-124 (EVAP P0442/P0455) covers the Camaro, but the bulletin lists Chevrolet/GMC trucks 2000-2021 only. It does not apply and is not cited for the Camaro.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (GM-submitted patterns)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/2G1FZ1EE*F9?format=json"
+    }
+   ]
+  },
+  {
+   "topic": "Fog bulb by year",
+   "text": "PS24W (2010) vs PSX26W (2012-13 except ZL1) vs H11 (2012 ZL1). Different bases; check the fitted bulb.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+    },
+    {
+     "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
+    },
+    {
+     "label": "2013 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2013_chevrolet_camaro.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "2014 rear lamps",
+   "text": "The facelift uses T20 / 7444LL / W21/5W; 3157K does not fit.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Fuse numbering moved",
+   "text": "Rear block: ECM/battery F13 to F10, RVC F14 to F11, fuel system module F15 to F12, convertible top F5/F6 to F4/F5 between 2010 and 2014. IP HVAC fuse F5 (2010) to F28 (2014).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+    },
+    {
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Maintenance by year",
+   "text": "2010 has no brake or clutch fluid interval and rear-axle fluid at 100k normal / 50k severe; 2014 sets brake and clutch fluid at 150k / 10 years and rear axle at 45k / 15k.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+    },
+    {
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Paint WA136X",
+   "text": "Phastek lists WA136X for both Emerald Green Met. and Lime Rock Green G7J (2015); paintref marks G7J not confirmed.",
+   "conf": "unconfirmed",
+   "disputed": true,
+   "src": [
+    {
+     "label": "Phastek Camaro paint codes (third-party)",
+     "url": "https://www.phastekperformance.com/blog/camaro-paint-codes/"
+    },
+    {
+     "label": "paintref 2015 Camaro (third-party)",
+     "url": "https://paintref.com/cgi-bin/colorcodedisplay.cgi?manuf=GM&model=Camaro&year=2015"
+    }
+   ]
+  },
+  {
+   "topic": "LLT water pump pulley bolt",
+   "text": "10 N·m in the procedure vs 12 N·m in the cooling spec table.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "GM SI 2009-13 Camaro (diagnostdata mirror): cooling-system",
+     "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/cooling-system/"
+    }
+   ]
+  },
+  {
+   "topic": "6.2 spark plug torque reconciled",
+   "text": "The 2014 SI Engine Controls table: new plug 20 N·m (15 lb-ft), refitting an existing plug 15 N·m (11 lb-ft). The LS3 engine table still lists 15 N·m without the distinction; LSA lists 20. Use 20 N·m for new plugs.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+    }
+   ]
+  },
+  {
+   "topic": "PIP4819A coverage",
+   "text": "The bulletin says Camaro SS but its RPO list includes LSA; ZL1 coverage is inferred, not stated.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "GM PIP4819A (NHTSA)",
+     "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10112844-9999.pdf"
+    }
+   ]
   }
  ],
  "overview": {
@@ -320,11 +453,11 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2010 Camaro owner's manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+      "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
      },
      {
-      "label": "2015 Camaro owner's manual",
+      "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
      }
     ]
@@ -335,15 +468,15 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2010 Camaro owner's manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+      "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
      },
      {
-      "label": "2014 Camaro owner's manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+      "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
      },
      {
-      "label": "2015 Camaro owner's manual",
+      "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
      }
     ]
@@ -509,7 +642,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2015 Camaro owner's manual",
+      "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
      },
      {
@@ -661,19 +794,19 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "conf": "verified",
      "src": [
       {
-       "label": "2010 Camaro owner's manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+       "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
       },
       {
-       "label": "2012 Camaro owner's manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+       "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
       },
       {
-       "label": "2014 Camaro owner's manual",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+       "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
       },
       {
-       "label": "2015 Camaro owner's manual",
+       "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
       },
       {
@@ -797,8 +930,8 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Camaro owner's manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+      "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
      }
     ]
    },
@@ -827,8 +960,8 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
       "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10138689-9999.pdf"
      },
      {
-      "label": "2014 Camaro owner's manual",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+      "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
      }
     ]
    }
@@ -948,23 +1081,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "url": "https://apexwheels.com/fitment-guides/chevrolet/camaro/chevrolet-5th-gen-camaro-wheel-and-tire-fitment-guide"
     },
     {
-     "label": "2010 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
     },
     {
-     "label": "2011 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2011-camaro.pdf"
+     "label": "2011 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2011_chevrolet_camaro.pdf"
     },
     {
-     "label": "2012 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+     "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
     },
     {
-     "label": "2014 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
     },
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -1900,23 +2033,23 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2010 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-camaro.pdf"
+     "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
     },
     {
-     "label": "2011 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2011-camaro.pdf"
+     "label": "2011 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2011_chevrolet_camaro.pdf"
     },
     {
-     "label": "2012 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf"
+     "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
     },
     {
-     "label": "2014 Camaro owner's manual",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2014-camaro.pdf"
+     "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
     },
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -1953,9 +2086,9 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "tips": [
     {
      "text": "Check the lug nut color before torquing: silver nuts take 140 lb-ft, blue nuts 110 lb-ft. It is the most common torque mistake on these cars.",
-     "source_url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2012-camaro.pdf",
-     "source_name": "2012 Camaro owner's manual",
-     "confidence": "verified",
+     "source_url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf",
+     "source_name": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+     "confidence": "forum",
      "date_checked": "2026-10-11"
     }
    ]
@@ -2332,7 +2465,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "url": "https://lemon-manuals.la/Chevrolet/2015/Camaro%20Z%2F28/"
     },
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -2462,7 +2595,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    ],
    "src": [
     {
-     "label": "2015 Camaro owner's manual",
+     "label": "2015 Camaro owner's manual (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2015-camaro.pdf"
     },
     {
@@ -2956,6 +3089,327 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "date_checked": "2026-10-11"
     }
    ]
+  },
+  {
+   "id": "gf-alt-starter",
+   "type": "diy",
+   "title": "Alternator and starter",
+   "summary": "The battery is in the trunk. Applies to: 2010-2015, GM SI (2009-13 and 2014 mirrors).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "GM SI 2009-13 Camaro (diagnostdata mirror): charging-system",
+     "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/charging-system/"
+    },
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): starting and charging specs",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Electrical/Starter/Battery%2C%20Starting%20System%20And%20Charging%20System/Specifications/Fastener%20Tightening%20Specifications/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Disconnect the negative cable at the trunk floor first."
+    },
+    {
+     "text": "Generator (2010-13 page): FG15 model, 150 A rated, 108 A load test. Battery 720 CCA, 80 Ah."
+    },
+    {
+     "text": "LSA belt tensioner 58 N·m; LS3/LSA tensioner bolts 30 N·m (22 lb-ft)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Generator bolt",
+      "58 N·m (43 lb-ft)"
+     ],
+     [
+      "Generator bracket bolt/nut (front)",
+      "50 N·m (37 lb-ft)"
+     ],
+     [
+      "Generator bracket fasteners (LFX, 2014 SI)",
+      "22 N·m (16 lb-ft)"
+     ],
+     [
+      "Generator stud (LS7, LSA, 2014 SI)",
+      "20 N·m (15 lb-ft)"
+     ],
+     [
+      "Generator bracket bolt (LLT)",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "Generator BAT nut",
+      "15 N·m (11 lb-ft)"
+     ],
+     [
+      "Starter mounting bolts",
+      "58 N·m (43 lb-ft)"
+     ],
+     [
+      "Starter shield bolt",
+      "5 N·m (44 lb-in)"
+     ],
+     [
+      "Battery + cable nut at starter",
+      "13 N·m (115 lb-in)"
+     ],
+     [
+      "Battery hold-down / negative at trunk floor",
+      "22 N·m (16 lb-ft) / 25 N·m (18 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and thermostat",
+   "summary": "LLT and 6.2 values. Applies to: LLT 2010-11 (2009-13 SI mirror); LSA 2012-15.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "GM SI 2009-13 Camaro (diagnostdata mirror): cooling-system",
+     "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/cooling-system/"
+    },
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "6.2 (LS3/L99/LSA): 15 N·m first pass, then 30 N·m final (already in the existing guide)."
+    },
+    {
+     "text": "LLT pulley bolts: hold with EN 46104."
+    },
+    {
+     "text": "LLT pulley bolts: 10 N·m in the procedure vs 12 N·m (106 lb-in) in the cooling spec table. Unresolved.",
+     "disputed": true
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "LLT water pump bolts",
+      "10 N·m (89 lb-in)"
+     ],
+     [
+      "LLT pulley bolts",
+      "10 N·m (procedure) / 12 N·m (spec table), disputed"
+     ],
+     [
+      "LLT inlet bolts",
+      "15 N·m (11 lb-ft)"
+     ],
+     [
+      "LLT thermostat housing / thermostat bolt",
+      "20 N·m (15 lb-ft) / 10 N·m (89 lb-in)"
+     ],
+     [
+      "LSA thermostat housing",
+      "15 N·m (11 lb-ft)"
+     ],
+     [
+      "LSA block drain plug",
+      "60 N·m (44 lb-ft)"
+     ]
+    ]
+   },
+   "parts": [],
+   "disputedRows": [
+    1
+   ]
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump module (tank must come out)",
+   "summary": "Right-side primary module. Applies to: 2014 GM SI (mirror); also on the 2011 page.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): fuel pump module",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Engine%20Performance/Fuel%20Delivery/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Remove the fuel tank. Disconnect the pump connector and feed line."
+    },
+    {
+     "text": "Lock ring off counter-clockwise with the J 45722 wrench. No lock-ring torque is given."
+    },
+    {
+     "text": "Lift the module partway and disconnect the transfer hose. Install with a new seal. The left-side level sensor is a separate procedure."
+    },
+    {
+     "text": "LLT high-pressure (DI) pump: new bolts, 15 N·m (11 lb-ft), tighten evenly."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Tank strap to underbody",
+      "30 N·m (22 lb-ft)"
+     ],
+     [
+      "Rear cradle to underbody (if lowered)",
+      "65 N·m (48 lb-ft) + 120°"
+     ],
+     [
+      "Tank heat shield",
+      "5.5 N·m (49 lb-in)"
+     ],
+     [
+      "Filler tube bracket / pipe bolts",
+      "9 N·m (80 lb-in)"
+     ],
+     [
+      "Tank hose to filler clamp",
+      "4 N·m (35 lb-in)"
+     ],
+     [
+      "EVAP canister to underbody",
+      "6 N·m (53 lb-in)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-blend-door",
+   "type": "diy",
+   "title": "Blend door (temperature valve) actuator, manual HVAC",
+   "summary": "Two screws, then relearn. Applies to: 2010-2015 manual HVAC, GM SI (mirrors).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): temperature valve actuator",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/HVAC/HVAC%20Control%20Systems/HVAC%20System%20-%20Manual/Repair%20Instructions/Temperature%20Valve%20Actuator%20Replacement/"
+    },
+    {
+     "label": "GM SI 2009-13 Camaro (diagnostdata mirror): manual-hvac",
+     "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/manual-hvac/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Remove the left front floor air duct; disconnect the connector; remove 2 screws."
+    },
+    {
+     "text": "Relearn with a scan tool (HVAC Actuators Relearn). Without one: clear codes, ignition off, pull the HVAC control module fuse 10 s or more, refit, start and wait 40 s without touching the controls."
+    },
+    {
+     "text": "B101E 4B after relearn with an electrically good actuator that does not turn: stripped gears, a common cause."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Actuator screws (2)",
+      "2.0 N·m (18 lb-in)"
+     ],
+     [
+      "HVAC case and cover screws",
+      "1.5 N·m (13 lb-in)"
+     ],
+     [
+      "HVAC module to dash",
+      "10 N·m (89 lb-in)"
+     ],
+     [
+      "Heater pipe adapter bolts",
+      "7 N·m (62 lb-in)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-chassis-2014",
+   "type": "diy",
+   "title": "Brakes and suspension, 2014 tables",
+   "summary": "The 2014 tables match the 2015 values in the existing guides; 2013 is still unconfirmed. Applies to: 2014-2015 (2014 GM SI matches 2015).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+    },
+    {
+     "label": "2014 Camaro Z/28 GM SI suspension (lemon-manuals mirror)",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20Z%2F28/Repair%20and%20Diagnosis/Suspension/"
+    },
+    {
+     "label": "GM SI 2009-13 Camaro (diagnostdata mirror): front-suspension",
+     "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/front-suspension/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Front lower ball joints are part of the lower control arms; replace the arm. Separate with J 42188, remove with J 43631. Knuckle nuts 40 N·m + 90°."
+    },
+    {
+     "text": "Z/28 has no unique values: its front and rear tables match ZL1/generic (front LCA nuts 50 N·m + 150° / 40 N·m + 90° / 50 N·m + 120°; rear lower shock nut 80 N·m + 120°; upper shock bolt 58 N·m; shock nut 45 N·m)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Front stabilizer link nuts / clamp nuts",
+      "70 N·m (52 lb-ft) / 43 N·m (32 lb-ft)"
+     ],
+     [
+      "Front hub bolts, LFX / V8",
+      "115 N·m (85 lb-ft) / 100 N·m + 28°"
+     ],
+     [
+      "Rear toe-link bolt",
+      "175 N·m (129 lb-ft)"
+     ],
+     [
+      "UCA-to-bushing-to-frame bolt",
+      "175 N·m (129 lb-ft)"
+     ],
+     [
+      "Rear stabilizer clamp bolts",
+      "58 N·m (43 lb-ft)"
+     ],
+     [
+      "Caliper / bracket bolts",
+      "40 N·m + 90°"
+     ],
+     [
+      "Brake hose fitting bolt",
+      "40 N·m (30 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3175,7 +3629,10 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
   "Z/28-specific lower control arm torque and Z/28 DSSV shock mount torque.",
   "TPMS details were not in the source guide.",
   "Video titles are only recorded for the spark-plug video; the rest are listed by job and channel.",
-  "Several vendor prices were read on pages whose full URLs the guide did not record; those links go to the store home."
+  "Several vendor prices were read on pages whose full URLs the guide did not record; those links go to the store home.",
+  "Gap-fill: fuse amp ratings (no GM manual lists them); 2013 torque tables; 2015 owner's manual (2015 bulbs, fuses and maintenance assumed as 2014).",
+  "Gap-fill: GM placard pressures for LS/LT, ZL1 and Z/28 (third-party only); HID low-beam bulb type; fuel pump lock-ring torque; per-car payload.",
+  "Gap-fill: GM gear-ratio document, MM6 5th/6th split, whether the ZL1 manual is MG9; a GM paint document."
  ],
  "sellers": [],
  "partCategories": [
@@ -4372,5 +4829,823 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    }
   ],
   "count": 686
- }
+ },
+ "reference": {
+  "caveat": "From the 2010, 2012, 2013 and 2014 owner's manuals (carmanual.org copies of GM PDFs), GM SI on mirror sites, GM bulletins, NHTSA recalls and the NHTSA VIN decoder. Paint codes and some tire pressures are third-party. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Schedules and service intervals",
+    "intro": "The schedule changed for 2013. Use the one for your model year. No 2015 manual was found; 2015 is assumed to match 2014 (unconfirmed).",
+    "blocks": [
+     {
+      "title": "2010-2012: Maintenance I / II",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2010 manual pp. 10-2 to 10-6; applies to 2010-2012",
+      "table": {
+       "columns": [
+        "Item",
+        "Interval"
+       ],
+       "rows": [
+        [
+         "Oil and filter",
+         "When the Oil Life System says so; at least once a year. Maintenance I and II alternate"
+        ],
+        [
+         "Maintenance I",
+         "Oil and filter; coolant and washer levels; tire pressure and wear; rotate tires if recommended (every 5,000-8,000 mi); leak check; air filter inspection (dusty); brake inspection (or every 12 months)"
+        ],
+        [
+         "Maintenance II",
+         "All of I, plus steering and suspension, cooling system, wipers, body lube, restraints, ATF level, rear-axle level, air filter inspection, cabin filter replacement (or every 12 months)"
+        ],
+        [
+         "First oil change after 25,000 mi",
+         "Fuel system and exhaust inspection"
+        ],
+        [
+         "First oil change after 50,000 mi",
+         "Replace air filter. Severe: change ATF (hot city traffic, hills, towing, taxi/police) and rear-axle fluid (hills, towing, high-speed or competitive driving)"
+        ],
+        [
+         "First oil change after 100,000 mi",
+         "ATF and rear-axle fluid (normal service); spark plugs"
+        ],
+        [
+         "First oil change after 150,000 mi or 5 years",
+         "DEX-COOL drain and flush; drive-belt inspection"
+        ],
+        [
+         "Once a year",
+         "Starter-switch, shift-lock, ignition-lock and park-brake checks; pressure test cooling system and cap"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "2013-2015: fixed-mileage grid",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2014 manual pp. 11-5 and 11-7; the Oil Life System still decides oil changes",
+      "table": {
+       "columns": [
+        "Item",
+        "Normal",
+        "Severe"
+       ],
+       "rows": [
+        [
+         "Rotate tires; oil level and OLS check",
+         "every 7,500 mi",
+         "every 7,500 mi"
+        ],
+        [
+         "Cabin filter",
+         "every 22,500 mi (or 2 years)",
+         "same"
+        ],
+        [
+         "Evap system inspection",
+         "45k / 90k / 135k",
+         "same"
+        ],
+        [
+         "Air filter, except ZL1 and Z/28",
+         "45k / 90k / 135k (or 4 years)",
+         "same"
+        ],
+        [
+         "Air filter, ZL1 and Z/28",
+         "every 15,000 mi",
+         "same"
+        ],
+        [
+         "Spark plugs and wires, except ZL1",
+         "97,500 mi",
+         "97,500 mi"
+        ],
+        [
+         "Spark plugs, ZL1",
+         "60,000 / 120,000 mi",
+         "same"
+        ],
+        [
+         "ATF (and filter if serviceable)",
+         "97,500 mi",
+         "every 45,000 mi"
+        ],
+        [
+         "Manual transmission fluid",
+         "not listed",
+         "every 45,000 mi"
+        ],
+        [
+         "Rear-axle fluid",
+         "every 45,000 mi",
+         "every 15,000 mi"
+        ],
+        [
+         "Coolant drain and fill",
+         "150,000 mi (or 5 years)",
+         "same"
+        ],
+        [
+         "Drive-belt inspection",
+         "150,000 mi (or 10 years)",
+         "same"
+        ],
+        [
+         "Brake fluid and clutch fluid",
+         "150,000 mi (or 10 years)",
+         "same"
+        ]
+       ],
+       "note": "2010 has no brake or clutch fluid interval and puts rear-axle fluid at 100k normal / 50k severe (see Conflicts)."
+      }
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes (exterior)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+       },
+       {
+        "label": "2012 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2012_chevrolet_camaro.pdf"
+       },
+       {
+        "label": "2013 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2013_chevrolet_camaro.pdf"
+       },
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2010 (p. 9-41), 2012-13, 2014 (p. 10-48); 2015 assumed as 2014 (unconfirmed). Interior bulbs: see dealer",
+      "table": {
+       "columns": [
+        "Lamp",
+        "2010",
+        "2012-13",
+        "2014-15 facelift"
+       ],
+       "rows": [
+        [
+         "Halogen headlamp (base)",
+         "H13",
+         "H13",
+         "Low H11LL, high H9LL"
+        ],
+        [
+         "HID low beam (RS / uplevel)",
+         "Not listed (high voltage, dealer service)",
+         "same",
+         "same"
+        ],
+        [
+         "Front park/turn",
+         "3457NAK",
+         "3457NAK",
+         "T20 (except ZL1); 3457NAK (ZL1)"
+        ],
+        [
+         "Fog",
+         "PS24W",
+         "PSX26W (except ZL1); H11 (ZL1, 2012 manual)",
+         "not listed"
+        ],
+        [
+         "DRL (uplevel)",
+         "not listed",
+         "PSX26W (2013 manual)",
+         "not listed"
+        ],
+        [
+         "Rear turn and tail",
+         "3157K",
+         "3157K",
+         "Stop T20, tail 7444LL, turn W21/5W"
+        ],
+        [
+         "License plate",
+         "W5W",
+         "W5W",
+         "W5WLL"
+        ]
+       ],
+       "note": "3157K does not fit 2014-15 rear lamps. The 2013 table drops the ZL1 H11 fog row; check the fitted bulb."
+      }
+     },
+     {
+      "title": "Fuse locations and circuits",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+       },
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2010 (pp. 9-42 to 9-47) and 2014 (pp. 10-50 to 10-55); GM lists no amp ratings, read them from the lid or fuse",
+      "items": [
+       "Underhood: engine bay, driver side. Instrument panel: driver end of the dash. Rear: right side of the trunk behind trim (remove 6 net retainers, rear sill plate and 2 trim retainers).",
+       "IP block: F1 ignition switch logic, F2 DLC, F3 airbag, F4 cluster, F5 HVAC controller (2010), F6 BCM, F8 battery, F13 display, F14 OnStar, F15/F16 BCM 3/4, F17/F18 power outlets, F19 steering-wheel control backlight, F23 trunk, F24 occupant sensing, F25/F27/F29/F30 BCM 1/8/5/7; CB7/CB26 passenger/driver seat; K10 RAP, K609 trunk relay. 2014: F28 becomes HVAC controller, F29 a spare.",
+       "Rear block 2010: F1 garage opener / rear park assist, F2 amp, F3 radio, F5/F6 convertible top, F13 ECM/battery, F14 regulated voltage control, F15 fuel system control module (fuel pump).",
+       "Rear block 2014: F1 garage opener / park assist / mirror, F2 amp, F3 radio, F4/F5 convertible top, F7 Real Time Damping, F8 active exhaust flapper, F10 ECM/battery, F11 regulated voltage control, F12 fuel system control module; R2 active exhaust relay."
+      ],
+      "table": {
+       "columns": [
+        "Underhood slot",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "J-case 41 / 44",
+         "Cooling fan high / low"
+        ],
+        [
+         "J-case 42",
+         "HVAC blower"
+        ],
+        [
+         "J-case 43",
+         "ABS pump"
+        ],
+        [
+         "J-case 6 / 12 / 22",
+         "Wiper / starter / brake vacuum pump"
+        ],
+        [
+         "J-case 25 / 26 / 27",
+         "Rear windows / front windows / rear defog"
+        ],
+        [
+         "Mini 1 / 2",
+         "A/C clutch / TCM"
+        ],
+        [
+         "Mini 3",
+         "Intercooler pump (ZL1; 2014 list only)"
+        ],
+        [
+         "Mini 5",
+         "ECM main"
+        ],
+        [
+         "Mini 7 / 8",
+         "Pre-cat / post-cat O2 sensors"
+        ],
+        [
+         "Mini 9 / 10",
+         "Injectors even / odd"
+        ],
+        [
+         "Mini 11 / 14 / 15",
+         "Fan relay / MAF and chassis control / ignition"
+        ],
+        [
+         "Mini 16 / 17 / 18",
+         "Run-crank IP / SDM ignition / run-crank body"
+        ],
+        [
+         "Mini 19 / 20",
+         "TCM ignition / ECM ignition"
+        ],
+        [
+         "Mini 31 / 32 / 33",
+         "Mirror / canister vent solenoid / BCM 6"
+        ],
+        [
+         "Mini 34 / 35 / 38 / 40",
+         "Sunroof / heated seats / washer / ABS valves"
+        ],
+        [
+         "Mini 46 / 47",
+         "HID headlamp left / right"
+        ],
+        [
+         "Mini 50 / 51 / 55 / 56 / 61",
+         "Fog / horn / high beam right / high beam left / heated mirror"
+        ],
+        [
+         "Relays",
+         "K26 powertrain, K50 run/crank, K55 rear defog, K61 starter, K69 wiper, K612/K613/K614 fans, K617 A/C clutch, K619 wiper speed, K627 HID, K632 brake vacuum pump, K641 intercooler pump (2014)"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Tire pressure (GM SI)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2015 Camaro SS GM SI Tire Fitment (lemon-manuals mirror)",
+        "url": "https://lemon-manuals.la/Chevrolet/2015/Camaro%20SS%2C%202D%20Coupe%2C%206.2L%20Eng%20VIN%20J/Repair%20and%20Diagnosis/Quick%20Lookups/Tire%20Fitment/"
+       }
+      ],
+      "years": "2015 SS (GM SI Tire Fitment); your door placard rules",
+      "table": {
+       "columns": [
+        "Fitment",
+        "Cold F / R"
+       ],
+       "rows": [
+        [
+         "245/45ZR20 front, 275/40ZR20 rear (SS, LT RS)",
+         "36 / 36 psi"
+        ],
+        [
+         "285/35ZR20 front and rear (SS 1LE, Performance Pkg.)",
+         "36 / 36 psi"
+        ]
+       ],
+       "note": "Same page: lug nut torque 110 lb-ft; rims 8J/9J (SS) and 10J/11J (1LE). 2010-11 SS at 36 psi per tirepressure.com (third-party, unconfirmed)."
+      }
+     },
+     {
+      "title": "Tire pressure (third-party)",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "tirepressure.com 2010 Camaro (third-party)",
+        "url": "https://tirepressure.com/2010-chevrolet-camaro-tire-pressure"
+       },
+       {
+        "label": "tirepressures.co 2015 Camaro (third-party)",
+        "url": "https://tirepressures.co/cars/chevrolet/camaro/2015/"
+       }
+      ],
+      "years": "Years per row; no GM SI page fetched for these trims",
+      "table": {
+       "columns": [
+        "Fitment",
+        "Cold F / R",
+        "Source"
+       ],
+       "rows": [
+        [
+         "P245/55R18 and P245/50R19 (LS/LT)",
+         "35 / 35 psi",
+         "tirepressure.com 2010; tirepressures.co 2015"
+        ],
+        [
+         "ZL1: 285/35ZR20 F, 305/35ZR20 R",
+         "32 / 32 psi",
+         "tirepressures.co 2015"
+        ],
+        [
+         "Z/28: 305/30ZR19 F and R",
+         "32 / 32 psi (street)",
+         "tirepressures.co; the 2014 manual track figure of 32 psi agrees"
+        ]
+       ],
+       "rowSrc": [
+        "https://tirepressure.com/2010-chevrolet-camaro-tire-pressure",
+        "https://tirepressures.co/cars/chevrolet/camaro/2015/",
+        "https://tirepressures.co/cars/chevrolet/camaro/2015/"
+       ]
+      }
+     },
+     {
+      "title": "Spare, sealant and track loading",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2014 manual",
+      "items": [
+       "Compact spare (if equipped): 60 psi (420 kPa).",
+       "Sealant kit: the manual cites 300 kPa (44 psi) before driving; context unclear, use placard pressure after sealing.",
+       "ZL1, 1LE and Z/28 on track: driver only, no cargo, tires at least 26 psi (180 kPa); Z/28 only 32 psi (221 kPa) (pp. 9-9 / 9-10).",
+       "Z/28 track alignment (p. 9-10): front caster 5.9 ± 0.5°, camber -1.5 ± 0.5°, total toe 0.1 ± 0.2°; rear camber -1.0 ± 0.5°, total toe 0.1 ± 0.2°, thrust 0 ± 0.2°. Track coolant may be 30/70 coolant/water and the hood-scoop water deflector can be removed (hot track days)."
+      ]
+     },
+     {
+      "title": "Towing",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2010_chevrolet_camaro.pdf"
+       },
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2010 (p. 8-53) and 2014 (p. 9-60)",
+      "items": [
+       "2010 (all) and 2014 except ZL1 and Z/28: 1,000 lb (454 kg) trailer; tongue weight 10-15% of loaded trailer. The 2014 manual adds \"even that can be too heavy\". This is an owner's manual limit, not an SAE J2807 rating.",
+       "ZL1 and Z/28: \"neither designed nor intended to tow a trailer.\"",
+       "Payload: on the door-jamb Tire and Loading label. The 340 kg and 453 kg figures in the 2014 manual are worked examples, not Camaro ratings."
+      ]
+     },
+     {
+      "title": "Paint codes",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "Phastek Camaro paint codes (third-party)",
+        "url": "https://www.phastekperformance.com/blog/camaro-paint-codes/"
+       },
+       {
+        "label": "zl1registry paint codes (third-party)",
+        "url": "https://zl1registry.com/paint-codes.php"
+       },
+       {
+        "label": "paintref 2015 Camaro (third-party)",
+        "url": "https://paintref.com/cgi-bin/colorcodedisplay.cgi?manuf=GM&model=Camaro&year=2015"
+       }
+      ],
+      "years": "2010-2015; third-party lists. Confirm with the SPID label in the trunk",
+      "table": {
+       "columns": [
+        "Years",
+        "Color",
+        "RPO",
+        "WA"
+       ],
+       "rows": [
+        [
+         "2010",
+         "Aqua Blue Met.",
+         "GBD",
+         "WA638R"
+        ],
+        [
+         "2010",
+         "Red Jewel Tintcoat",
+         "GAQ",
+         "WA301N"
+        ],
+        [
+         "2010-11",
+         "Synergy Green",
+         "GHS",
+         "WA708S"
+        ],
+        [
+         "2010-12",
+         "Cyber Gray Met.",
+         "GBV",
+         "WA637R"
+        ],
+        [
+         "2010-12",
+         "Imperial Blue Met.",
+         "GAP",
+         "WA403P"
+        ],
+        [
+         "2010-13",
+         "Victory Red",
+         "GCN",
+         "WA9260"
+        ],
+        [
+         "2010-13",
+         "Rally Yellow",
+         "GCO",
+         "WA9414"
+        ],
+        [
+         "2010-13",
+         "Inferno Orange Met.",
+         "GCR",
+         "WA502Q"
+        ],
+        [
+         "2010-15",
+         "Summit White",
+         "GAZ",
+         "WA8624"
+        ],
+        [
+         "2010-15",
+         "(Gloss) Black",
+         "GBA",
+         "WA8555"
+        ],
+        [
+         "2010-15",
+         "Silver Ice Met.",
+         "GAN",
+         "WA636R"
+        ],
+        [
+         "2012",
+         "Carbon Flash",
+         "GAR",
+         "WA501Q"
+        ],
+        [
+         "2012-15",
+         "Ashen Gray Met.",
+         "GLJ",
+         "WA810T"
+        ],
+        [
+         "2012-15",
+         "Crystal Red Tintcoat",
+         "GBE",
+         "WA505Q"
+        ],
+        [
+         "2013",
+         "Kinetic Blue",
+         "GHF",
+         "WA720S"
+        ],
+        [
+         "2013-14",
+         "Blue Ray Met.",
+         "GXH",
+         "WA122V"
+        ],
+        [
+         "2014-15",
+         "Red Hot",
+         "G7C",
+         "WA130X"
+        ],
+        [
+         "2014-15",
+         "Bright Yellow",
+         "G7D",
+         "WA131X"
+        ],
+        [
+         "2014-15",
+         "Red Rock Met.",
+         "G7P",
+         "WA138X"
+        ],
+        [
+         "2014",
+         "Deep Magenta",
+         "G7F",
+         "WA133X"
+        ],
+        [
+         "2015",
+         "Blue Velvet Met.",
+         "G1M",
+         "WA410Y"
+        ],
+        [
+         "2015",
+         "Lime Rock Green (disputed)",
+         "G7J",
+         "WA136X"
+        ]
+       ],
+       "disputedRows": [
+        21
+       ],
+       "note": "zl1registry's 2012 ZL1 list omits some colors Phastek shows; probably ZL1 availability, not a code error."
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and RPO codes",
+    "short": "VIN digits, SPID label, RPOs",
+    "blocks": [
+     {
+      "title": "SPID (RPO) label",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 Camaro owner's manual (GM PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/chevrolet/2014_chevrolet_camaro.pdf"
+       }
+      ],
+      "years": "2014 manual p. 12-1",
+      "text": "The Service Parts Identification label is in the trunk: VIN, model, paint and every factory RPO. Do not remove it. Phastek says it is under the trunk carpet liner, driver side (unconfirmed)."
+     },
+     {
+      "title": "VIN positions",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA vPIC VIN decoder API (GM-submitted patterns)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/2G1FZ1EE*F9?format=json"
+       }
+      ],
+      "years": "From NHTSA vPIC decodes of GM-submitted data; positions 8 and 10 are reliable, trim is not (see Conflicts)",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "2G1 (GM Canada, Oshawa-built Chevrolet)"
+        ],
+        [
+         "4-5 (series)",
+         "FA-FF V6 trims; FG, FH, FJ, FK, FT SS; FL, FZ ZL1 / Z/28. Trim names returned are inconsistent"
+        ],
+        [
+         "6 (body)",
+         "1 coupe, 3 convertible"
+        ],
+        [
+         "7 (restraint)",
+         "E coupe, D convertible"
+        ],
+        [
+         "8 (engine)",
+         "V = LLT 3.6 (2010-11), 3 = LFX 3.6 (2012-15), W = LS3, J = L99, P = LSA (ZL1), E = LS7 (Z/28)"
+        ],
+        [
+         "10 (year)",
+         "A 2010, B 2011, C 2012, D 2013, E 2014, F 2015"
+        ],
+        [
+         "11 (plant)",
+         "9 = Oshawa, ON"
+        ]
+       ],
+       "disputedRows": [
+        1
+       ]
+      }
+     },
+     {
+      "title": "Key RPO codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2015 Camaro SS GM SI Tire Fitment (lemon-manuals mirror)",
+        "url": "https://lemon-manuals.la/Chevrolet/2015/Camaro%20SS%2C%202D%20Coupe%2C%206.2L%20Eng%20VIN%20J/Repair%20and%20Diagnosis/Quick%20Lookups/Tire%20Fitment/"
+       },
+       {
+        "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
+        "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+       }
+      ],
+      "years": "From the GM SI as cited in the master guide",
+      "items": [
+       "Engines: LLT, LFX, LS3, L99, LSA, LS7.",
+       "Transmissions: MYC (6L80); M10 / MG9 / MM6 (TR6060 family). Whether the ZL1 manual is MG9 is unknown.",
+       "Suspension: FE4 / FE5 / FE6. Packages: 1LE, Z/28. Brakes: J56 / J57; JL9 (base)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes from GM bulletins",
+    "intro": "New GM bulletins only; Common problems already covers 12-06-01-009, PIC5984B, PIP4735C, PIP5257A, PIP5097A, SC 13313 and PI1413. Bulletin 21-NA-124 (EVAP P0442/P0455) is trucks only and does not apply to the Camaro.",
+    "blocks": [
+     {
+      "title": "Codes with GM bulletins",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "GM PIP4819A (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2013/MC-10112844-9999.pdf"
+       },
+       {
+        "label": "GM PIP3423N (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10137734-9999.pdf"
+       },
+       {
+        "label": "GM PIP5191C (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10151821-9999.pdf"
+       },
+       {
+        "label": "GM PIP5191B (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10118244-9999.pdf"
+       },
+       {
+        "label": "GM PIP4578B (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2017/MC-10126975-9999.pdf"
+       },
+       {
+        "label": "GM 09-06-04-026I (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2014/MC-10114245-9999.pdf"
+       }
+      ],
+      "years": "Years and engines per row",
+      "table": {
+       "columns": [
+        "Codes",
+        "Bulletin",
+        "Applies to",
+        "Likely cause per GM"
+       ],
+       "rows": [
+        [
+         "P0300-P0308 (misfire)",
+         "PIP4819A",
+         "2010-13 Camaro SS (RPO list includes LSA, so ZL1 coverage is inferred)",
+         "Spark plug wire loose at the coil end; replace the wire if loose"
+        ],
+        [
+         "P0016-P0019, P0008, P0009 (two or more)",
+         "PIP3423N",
+         "2010-15 3.6 LLT/LFX",
+         "First check timing chains/tensioners (12-06-01-009). If no root cause: the crank reluctor pressed on the rear of the crankshaft may have moved; check with a borescope through the CKP hole; replace the crankshaft if moved"
+        ],
+        [
+         "P05CE / P05CF, cold-start tick or oil pressure fluctuation",
+         "PIP5191B / C",
+         "2010-15 3.6 LLT/LFX",
+         "Oil pump pick-up tube to block seal compressed. Tick 3-15 s after sitting over 6 h, more common past 50,000 mi. Drop the pan and replace the seal"
+        ],
+        [
+         "P0068, P0121, P0506, P0507, P1516, P2101, P2119, P2176; idle surge / reduced power",
+         "PIP4578B",
+         "2010-18 Camaro V8",
+         "Carbon in the throttle body. Clean per SI, then do the idle-learn reset with a scan tool or the codes return"
+        ],
+        [
+         "(tool note)",
+         "09-06-04-026I",
+         "2010-15 V8; 2012-15 LFX",
+         "How dealers detect non-GM calibrations; relevant to warranty claims on tuned cars"
+        ]
+       ],
+       "rowSrc": [
+        "https://static.nhtsa.gov/odi/tsbs/2013/MC-10112844-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2017/MC-10137734-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10151821-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2017/MC-10126975-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2014/MC-10114245-9999.pdf"
+       ]
+      }
+     },
+     {
+      "title": "HVAC actuator codes (GM SI)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 Camaro GM SI (lemon-manuals mirror): temperature valve actuator",
+        "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/HVAC/HVAC%20Control%20Systems/HVAC%20System%20-%20Manual/Repair%20Instructions/Temperature%20Valve%20Actuator%20Replacement/"
+       },
+       {
+        "label": "GM SI 2009-13 Camaro (diagnostdata mirror): manual-hvac",
+        "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/manual-hvac/"
+       }
+      ],
+      "years": "Manual HVAC",
+      "text": "B0408 temperature door actuator; B0233 mode door; B0223 recirculation; B023A actuator supply voltage. B101E 4B after a relearn: commonly an actuator with stripped gears (see Blend door guide)."
+     },
+     {
+      "title": "Recalls",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA recalls API, Camaro 2010-2015",
+        "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=chevrolet&model=camaro&modelYear=2014"
+       }
+      ],
+      "years": "2010-2015",
+      "text": "The NHTSA API re-pulled 2026-10-20 returns the same 10 campaigns already in Safety; none cites a code. 14V346 (ignition key) is listed for 2010-2014, not 2015."
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "2013-14 torque tables: resolved for 2014 (matches 2015); 2013 still bracketed (Guides).",
+  "Z/28-specific LCA and shock-mount torque: none; Z/28 tables match ZL1/generic (Guides).",
+  "6.2 spark plug 15 vs 20 N·m: new 20, reused 15 (Conflicts).",
+  "Lug torque: 2015 SI tire fitment says 110 lb-ft (Quick reference).",
+  "Maintenance, bulbs, fuse map, towing, placard pressures, VIN/SPID, paint, alternator/starter/water pump/fuel pump/blend door, 4 new code bulletins, Z/28 track alignment (Reference and Guides)."
+ ]
 };
