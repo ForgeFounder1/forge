@@ -216,6 +216,59 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/chevrolet/2010-silverado.pdf"
     }
    ]
+  },
+  {
+   "topic": "2014 owner manual is a K2 truck",
+   "text": "The 2014 Silverado owner manual previously cited lists a 4.3 V6 with 3.23/4.10 axles and 7443/PS24W bulbs: it is the 2014 K2 (next-gen) 1500, not GMT900. Its citations were removed. 2014 HD lug torque needs a 2014 GMT900 HD source; 140 lb-ft agrees with the 2008 and 2012 manuals and the service manual.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2008 Silverado Owner Manual (GM)",
+     "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+    },
+    {
+     "label": "2012 Silverado Owner Manual (GM)",
+     "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "1500 lower ball joint stud nut",
+   "text": "Service manual ball-joint procedure: 50 N·m + 95°. Front suspension spec table: 50 N·m + 130° (without captured washer). They may come from different procedures or years. Prefer the procedure value (+95°) when following that procedure.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2010 SM front suspension repair instructions (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Suspension/Front%20Suspension/Front%20Suspension%20System/Repair%20Instructions/"
+    }
+   ]
+  },
+  {
+   "topic": "Back-up bulb 3047 vs 921LL",
+   "text": "3047 in the 2008 manual, 921LL in 2012. A year change, not an error; check the socket.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2008 Silverado Owner Manual (GM)",
+     "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+    },
+    {
+     "label": "2012 Silverado Owner Manual (GM)",
+     "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "TPMS learn timing",
+   "text": "The 2010 owner manual gives 2 min for the first tire and 5 min total; the service manual gives a 35 s per-sensor chirp timeout. Different limits, not contradictory.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 SM reset procedures: TPMS (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/General%20Information/Reset%20Procedures/Tire%20Pressure%20Monitor%20Systems/"
+    }
+   ]
   }
  ],
  "overview": {
@@ -617,7 +670,7 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "rows": [
       [
        "Wheel nuts",
-       "140 lb-ft (190 N·m). Same in OM08, OM12 and OM14 (1500 and HD)"
+       "140 lb-ft (190 N·m). Same in OM08 and OM12. The 2014 manual cited earlier is the K2 next-gen truck, so 2014 GMT900 HD is not confirmed"
       ],
       [
        "Oil, gas V8",
@@ -665,10 +718,6 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
       {
        "label": "2012 Silverado Owner Manual (GM)",
        "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
-      },
-      {
-       "label": "2014 Silverado Owner Manual (GM)",
-       "url": "https://assets.gm.com/manuals/chevrolet/2014_chevrolet_silverado_owners.pdf"
       }
      ],
      "disputedRows": [
@@ -875,7 +924,7 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "Lug torque",
      "140 lb-ft (OM10)",
      "140 lb-ft (OM10, same table)",
-     "140 lb-ft (190 N·m) (OM12/OM14)"
+     "140 lb-ft (190 N·m) (OM12; 2014 HD manual not read)"
     ],
     [
      "OE offset",
@@ -913,10 +962,6 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     {
      "label": "2012 Silverado Owner Manual (GM)",
      "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
-    },
-    {
-     "label": "2014 Silverado Owner Manual (GM)",
-     "url": "https://assets.gm.com/manuals/chevrolet/2014_chevrolet_silverado_owners.pdf"
     },
     {
      "label": "wheel-size 2011 Silverado 1500",
@@ -1924,17 +1969,13 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
     },
     {
-     "label": "2014 Silverado Owner Manual (GM)",
-     "url": "https://assets.gm.com/manuals/chevrolet/2014_chevrolet_silverado_owners.pdf"
-    },
-    {
      "label": "wheelinterchange 2500HD",
      "url": "https://wheelinterchange.com/chevrolet/silverado-2500hd/"
     }
    ],
    "steps": [
     {
-     "text": "Wheel nuts: 140 lb-ft (190 N·m) per OM08, OM10, OM12 and OM14 (1500 and HD). The 98 lb-ft figure on chevy-specs.com is rejected."
+     "text": "Wheel nuts: 140 lb-ft (190 N·m) per OM08, OM10 and OM12. A 2014 Silverado manual cited earlier is the K2 next-gen truck, so the 2014 GMT900 HD figure still needs its own source. The 98 lb-ft figure on chevy-specs.com is rejected."
     },
     {
      "text": "1500/SUVs are 6×139.7; HD 2007–10 is 8×165.1; HD 2011–14 is 8×180. HD wheels do not interchange across 2010/2011."
@@ -2424,9 +2465,17 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     {
      "label": "2010 SM front suspension specs (factory, secondary host)",
      "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Suspension/Front%20Suspension/Front%20Suspension%20System/Specifications/Fastener%20Tightening%20Specifications/"
+    },
+    {
+     "label": "2010 SM lower ball joint replacement (factory, secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Suspension/Front%20Suspension/Front%20Suspension%20System/Repair%20Instructions/"
     }
    ],
    "steps": [
+    {
+     "text": "Lower ball joint stud nut (no captured washer): the SM ball-joint replacement procedure says 50 N·m + 95°; the SM-FS spec table says 50 N·m + 130°. Use the procedure value (+95°). Pressing in: CH-41805 and CH-49240; crimp the lock tabs with CH-49240-3 at 250 N·m (184 lb-ft), rotate 180° and repeat.",
+     "disputed": true
+    },
     {
      "text": "1500 shock nut: SM-FS prints \"890 N.m / 59 lb ft\"; the N·m value is a typo. Use 59 lb-ft (80 N·m).",
      "disputed": true
@@ -2455,7 +2504,7 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      ],
      [
       "Lower ball joint nut, without captured washer",
-      "50 N·m + 130°"
+      "50 N·m + 95° (SM procedure, preferred); spec table 50 N·m + 130°"
      ],
      [
       "Upper ball joint nut",
@@ -2499,6 +2548,7 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
      ]
     ],
     "disputedRows": [
+     3,
      9
     ]
    },
@@ -2942,6 +2992,161 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "swap-speartech-package",
     "swap-bp-h404"
    ]
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and cooling fasteners (V8)",
+   "summary": "Pump bolts in two passes, matching the master guide. Applies to: 2010 Silverado 1500 service manual (GM pages on a secondary host).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2010 SM engine cooling repair instructions (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Engine%20Mechanical/Cooling%20System%20(Mechanical)/Engine%20Cooling%20System%20-%20Non-Hybrid/Repair%20Instructions/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Use new gaskets. Clear the 2.0 mm vent orifice in the radiator neck."
+    },
+    {
+     "text": "Fill by Vac-N-Fill or static fill."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Water pump bolts",
+      "15 N·m first pass, then 30 N·m (22 lb-ft) final"
+     ],
+     [
+      "Fan clutch to pump",
+      "56 N·m (41 lb-ft)"
+     ],
+     [
+      "Fan clutch bolts",
+      "23 N·m"
+     ],
+     [
+      "Fan shroud bolts",
+      "9 N·m (80 lb-in)"
+     ],
+     [
+      "Bleed pipe bolts",
+      "12 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-lower-ball-joint",
+   "type": "diy",
+   "title": "Lower ball joint, 1500",
+   "summary": "Press-in joint with crimped lock tabs. Applies to: 2010 Silverado 1500 service manual (GM pages on a secondary host).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2010 SM front suspension repair instructions (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Suspension/Front%20Suspension/Front%20Suspension%20System/Repair%20Instructions/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Press in with CH-41805 and CH-49240."
+    },
+    {
+     "text": "Crimp the lock tabs with CH-49240-3 at 250 N·m (184 lb-ft), then rotate 180° and repeat."
+    },
+    {
+     "text": "Stud nut: 50 N·m, then +95° per this procedure. The front suspension spec table (Front suspension guide) prints 50 N·m + 130° for a nut without captured washer. Use the figure from the procedure being followed; this procedure value is preferred."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Lock tab crimp (CH-49240-3)",
+      "250 N·m (184 lb-ft), twice"
+     ],
+     [
+      "Lower ball joint stud nut",
+      "50 N·m + 95° (spec table: 50 N·m + 130°, disputed)"
+     ]
+    ]
+   },
+   "parts": [],
+   "disputed": true
+  },
+  {
+   "id": "gf-hub-bearing",
+   "type": "diy",
+   "title": "Front hub and bearing, 1500",
+   "summary": "The new bearing comes with the wheel speed sensor installed. Applies to: 2010 Silverado 1500 service manual (GM pages on a secondary host).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2010 SM front suspension repair instructions (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/Suspension/Front%20Suspension/Front%20Suspension%20System/Repair%20Instructions/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Remove the rotor, the wheel speed sensor and, on 4WD, the axle shaft first."
+    },
+    {
+     "text": "Three hub bolts."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Hub bolts (3)",
+      "180 N·m (133 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-brake-bleed",
+   "type": "diy",
+   "title": "Brake bleeding, manual",
+   "summary": "Factory order and cautions. Applies to: 2010 Silverado 1500 service manual (GM pages on a secondary host).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2010 Silverado 1500 service manual tree (secondary host)",
+     "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Deplete the booster with the ignition off (3-5 pedal applications)."
+    },
+    {
+     "text": "If pipes were opened, bleed the master cylinder ports, front then rear."
+    },
+    {
+     "text": "Bleed wheels in order RR, LR, RF, LF. Wait 15 s between strokes."
+    },
+    {
+     "text": "Spongy pedal: pressure-bleed. If the warning lamp stays on, do not drive."
+    }
+   ],
+   "torque": null,
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3047,7 +3252,10 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
   "6L80 bulletins 4292 and 09-07-30-004 read only as NHTSA index records/summaries, not PDFs. No GMT900 actuator or fuel-sender failure bulletin found.",
   "Duramax-into-1500: no completed GMT900 build or costs. LS3/L99: hood clearance, accessory drive, and a GMT900 build thread.",
   "Prices: seat kits (Katzkin; $2,264.10 PicClick extract Unconfirmed), stereo/dash kits (Metra $19.99 / $54.99 extracts Unconfirmed), Kooks 09–13 LT headers ($3,008.74 snippet Unconfirmed), Arnott C-2835 in USD, ANZO 111546.",
-  "Autoride failure diagnosis; Escalade-specific swaps; later-year dexos oil spec."
+  "Autoride failure diagnosis; Escalade-specific swaps; later-year dexos oil spec.",
+  "Gap-fill: 2012 owner manual maintenance tables (images); 2008 and 2010-12 trailering rating tables not transcribed; payload tables; fuse amp ratings beyond the cover labels; paint code list.",
+  "Gap-fill: fuel pump lock-ring and tank strap torques (pages missing on host); starter and generator bolt torques; blend door actuator R and R; HD RPO page; GMT900 TSB/DTC crawl.",
+  "Gap-fill: the 2014 Silverado owner manual on assets.gm.com is the K2 next-gen truck, so it is no longer cited. A 2014 GMT900 Silverado HD owner manual is still needed to confirm 2014 HD lug torque (140 lb-ft agrees with 2008 and 2012)."
  ],
  "sellers": [],
  "partCategories": [
@@ -5395,5 +5603,571 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    }
   ],
   "count": 1769
- }
+ },
+ "reference": {
+  "caveat": "From the 2008 and 2012 Silverado owner manuals, the 2013 Chevrolet trailering guide and 2010 service manual pages on a secondary host. The 2014 Silverado manual on assets.gm.com is the next-gen K2 truck and is not used. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Schedules and service intervals",
+    "intro": "From the 2008 and 2012 Silverado owner manuals. Fluid capacities are under Specs and years.",
+    "blocks": [
+     {
+      "title": "2008 schedule, gas engines",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "2008 owner manual Section 6; check other years. Diesel schedule is in the separate Duramax manual (not read)",
+      "items": [
+       "Oil: follow the Engine Oil Life System. When CHANGE ENGINE OIL SOON shows, service within 600 mi. Change oil and filter at least once a year. If the system is reset by accident, service within 3,000 mi of the last change.",
+       "Maintenance I and II alternate. Use II if the message comes on 10+ months after the last service, or has not come on for a year.",
+       "Both I and II: oil and filter plus oil-life reset; chassis lube; leak check; rotate tires and check pressure; inspect brakes; top up coolant and washer fluid.",
+       "II only: air filter inspection; suspension and steering, cooling system, wiper and restraint inspection; body lube; transmission fluid level. Shield inspection on diesel or over 10,000 lb GVWR trucks.",
+       "Allison only: replace the external transmission filter at the first service.",
+       "Ball joints: 2500/3500 control-arm ball joints need lube, but only at 10°F (-12°C) or warmer. 1500 ball joints are maintenance-free. Severe commercial use: chassis lube every 3,000 mi."
+      ],
+      "table": {
+       "columns": [
+        "Additional required service",
+        "Interval"
+       ],
+       "rows": [
+        [
+         "Inspect fuel and exhaust systems",
+         "every 25,000 mi"
+        ],
+        [
+         "Engine air filter (no restriction indicator)",
+         "every 50,000 mi"
+        ],
+        [
+         "Auto trans fluid and filter, severe",
+         "every 50,000 mi"
+        ],
+        [
+         "Auto trans fluid and filter, normal",
+         "100,000 mi"
+        ],
+        [
+         "Transfer case fluid (4WD), extreme duty",
+         "every 25,000 mi"
+        ],
+        [
+         "Transfer case fluid (4WD), normal and severe",
+         "every 50,000 mi"
+        ],
+        [
+         "Inspect EVAP system",
+         "every 50,000 mi"
+        ],
+        [
+         "Spark plugs (and inspect wires)",
+         "100,000 mi"
+        ],
+        [
+         "Cooling system drain/flush/refill (DEX-COOL)",
+         "150,000 mi or 5 years"
+        ],
+        [
+         "Inspect accessory drive belt",
+         "150,000 mi"
+        ]
+       ],
+       "note": "Severe trans service applies if GVWR is over 8,600 lb, or the truck is used mainly in 90°F+ city traffic, hilly or mountainous terrain, frequent towing, or taxi/police/delivery service."
+      }
+     },
+     {
+      "title": "2012 schedule",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2012 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "2012 owner manual Section 11; its mileage tables are images that did not extract, so they are not given",
+      "items": [
+       "Same Oil Life System rules (600 mi after the message, at least yearly, 3,000 mi after an accidental reset).",
+       "Tire rotation and required services every 7,500 mi: check oil, coolant and washer fluid; tire pressure and wear; leak check; inspect air filter, brakes, steering, suspension, chassis, restraints, fuel system, exhaust and heat shields; lube body components; check starter switch, shift lock, ignition-transmission lock, parking brake and Park mechanism, and the accelerator pedal.",
+       "Footnotes that did extract: do not power-wash transfer case output seals; some items are \"or every four years\", \"or every five years\" (cooling system) or \"or every 10 years\" (belt inspection).",
+       "Extreme service: mainly off-road 4WD use, or farming, mining, forestry, DNR or snow plowing.",
+       "Dual wheels: re-check wheel nut torque at 100, 1,000 and 6,000 mi. Severe commercial use: chassis lube every 3,000 mi; underbody flush once a year."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       },
+       {
+        "label": "2012 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "2008 OM p. 5-66 and 2012 OM p. 10-48",
+      "table": {
+       "columns": [
+        "Lamp",
+        "2008",
+        "2012"
+       ],
+       "rows": [
+        [
+         "Low-beam headlamp",
+         "H11",
+         "H11"
+        ],
+        [
+         "High-beam headlamp",
+         "9005",
+         "9005"
+        ],
+        [
+         "Front turn / parking",
+         "not listed",
+         "3157A"
+        ],
+        [
+         "Daytime running lamps",
+         "4114K",
+         "not listed"
+        ],
+        [
+         "Fender marker (if equipped)",
+         "W5WLL",
+         "W5WLL"
+        ],
+        [
+         "Sidemarker / stop / tail / turn (rear)",
+         "3047",
+         "3047K"
+        ],
+        [
+         "Stop / turn / tail, chassis cab",
+         "1157",
+         "1157"
+        ],
+        [
+         "Back-up",
+         "3047 (chassis cab 1156)",
+         "921LL (chassis cab 1156)"
+        ],
+        [
+         "Cargo lamp and CHMSL",
+         "912",
+         "912LL"
+        ],
+        [
+         "License plate",
+         "168",
+         "168"
+        ]
+       ],
+       "note": "Back-up 3047 (2008) vs 921LL (2012) is a year change in GM's lists, not an error; check the socket. Fog lamp bulb is not listed in either GMT900 table (PS24W is the 2014 K2 truck). License plate lamp: reach under the rear bumper, turn the socket counterclockwise and pull it out."
+      }
+     },
+     {
+      "title": "Fuse boxes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       },
+       {
+        "label": "2012 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2012_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "2008 OM pp. 5-125 to 5-132; GM lists positions and circuits but not amp ratings, so use the ratings on the fuse-block cover",
+      "items": [
+       "Instrument panel fuse block: behind the access door on the driver-side edge of the dash. Fuses 1-26, e.g. 2 rear power outlet, 4 driver door module, 12 stoplamps/CHMSL, 15 BCM, 16 power outlets, 17 interior lamps, 22 DIC; LT DR circuit breaker for the driver window. 2012: spare fuses and a puller are in this block.",
+       "Center IP fuse block: under the dash left of the steering column. CB1 passenger window, CB2 passenger seat, CB3 driver seat, CB4 rear sliding window; body, headliner and upfitter connectors.",
+       "Underhood fuse block: driver side of the engine bay (diesel: see the Duramax manual). Relays: FAN HI, FAN LO, FAN CNTRL, HDLP LO/HID, FOG LAMP, A/C CMPRSR, STRTR, PWR/TRN, FUEL PMP, PRK LAMP, REAR DEFOG, RUN/CRANK.",
+       "Trailer battery feed: fuse 68 (Stud 1) needs a 40 A fuse added for the 7-way connector battery circuit."
+      ],
+      "table": {
+       "columns": [
+        "Underhood #",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "1 / 3",
+         "Right / left trailer stop-turn"
+        ],
+        [
+         "4, 5, 12",
+         "Engine controls / ECM, throttle / ECM battery"
+        ],
+        [
+         "6",
+         "Trailer brake controller"
+        ],
+        [
+         "10 / 15",
+         "Trailer / vehicle back-up lamps"
+        ],
+        [
+         "11 / 16",
+         "Driver / pass. low beam"
+        ],
+        [
+         "13 / 24",
+         "Injectors and coils, right / left bank"
+        ],
+        [
+         "14 / 19",
+         "TCM battery / trans controls ignition"
+        ],
+        [
+         "17",
+         "A/C compressor"
+        ],
+        [
+         "20",
+         "Fuel pump"
+        ],
+        [
+         "21",
+         "Fuel system control module"
+        ],
+        [
+         "25",
+         "Trailer park lamps"
+        ],
+        [
+         "28",
+         "Fog lamps"
+        ],
+        [
+         "29",
+         "Horn"
+        ],
+        [
+         "30 / 32",
+         "Pass. / driver high beam"
+        ],
+        [
+         "36",
+         "Windshield wiper"
+        ],
+        [
+         "47",
+         "Power take-off"
+        ],
+        [
+         "50",
+         "Rear defogger"
+        ],
+        [
+         "53",
+         "Cigarette lighter / aux outlet"
+        ],
+        [
+         "54",
+         "Auto level control compressor relay"
+        ],
+        [
+         "56",
+         "ECM secondary / fuel pump (ignition)"
+        ],
+        [
+         "57 / 60",
+         "Cooling fan 1 / 2 (J-case)"
+        ],
+        [
+         "61 / 59",
+         "ABS 1 / HD ABS (J-case)"
+        ],
+        [
+         "62",
+         "Starter (J-case)"
+        ],
+        [
+         "63 / 68",
+         "Stud 2 trailer brakes / Stud 1 trailer battery feed (optional 40 A fuse required)"
+        ],
+        [
+         "67 / 70",
+         "4WD system / blower (J-case)"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Tire pressure and TPMS relearn",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       },
+       {
+        "label": "2010 SM reset procedures: TPMS (secondary host)",
+        "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/General%20Information/Reset%20Procedures/Tire%20Pressure%20Monitor%20Systems/"
+       }
+      ],
+      "years": "Placard: 2008 OM. Relearn and torques: 2010 SM (secondary host)",
+      "items": [
+       "Pressures are on the door-jamb Tire and Loading label; the owner manual gives no table. The values under Wheels stand (no new verification).",
+       "Learn mode, ignition ON: hold fob lock and unlock together until a double chirp, or DIC TIRE LEARN then hold SET/RESET (base DIC: hold the trip stem about 5 s).",
+       "Order LF, RF, RR, LR: change pressure for 8-10 s at each, or use an activation tool. If no chirp within 35 s, key OFF and restart. A double chirp after LR means done.",
+       "The 2010 owner manual limits (2 min for the first tire, 5 min total) and the service manual 35 s per-sensor timeout are different limits, not a conflict."
+      ],
+      "table": {
+       "columns": [
+        "Fastener",
+        "Torque"
+       ],
+       "rows": [
+        [
+         "Clamp-in sensor nut",
+         "7 N·m (62 lb-in)"
+        ],
+        [
+         "Snap-in sensor Torx",
+         "10 N·m (89 lb-in)"
+        ],
+        [
+         "Spare hoist bolt",
+         "40 N·m (30 lb-ft)"
+        ],
+        [
+         "Wheel nut",
+         "190 N·m (140 lb-ft)"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Towing maximums (2013)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2013 Chevrolet Trailering Guide (GM PDF on a dealer host)",
+        "url": "https://fifthwheelst.com/documents/silverado/2013-chevrolet_silverado_towing_guide.pdf"
+       }
+      ],
+      "years": "2013 trailering guide p. 02; other years differ",
+      "text": "Silverado Hybrid 6,100; Tahoe Hybrid 6,200; Avalanche Black Diamond 8,100; Suburban 1/2-ton 8,100; Tahoe 8,500; Suburban 3/4-ton 9,600; Silverado 1500 10,700 lb. HD: up to 23,100 lb fifth-wheel, which requires a Regular Cab Duramax with a fifth-wheel hitch."
+     },
+     {
+      "title": "Silverado 1500 towing, conventional hitch (2013)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2013 Chevrolet Trailering Guide (GM PDF on a dealer host)",
+        "url": "https://fifthwheelst.com/documents/silverado/2013-chevrolet_silverado_towing_guide.pdf"
+       }
+      ],
+      "years": "2013 trailering guide p. 09, selected rows",
+      "table": {
+       "columns": [
+        "Engine / axle (GCWR lb)",
+        "Ratings across cabs and boxes (lb)"
+       ],
+       "rows": [
+        [
+         "4.3 V6 3.73 (10,000) / 3.23 (9,500)",
+         "4,900-5,400 / 4,400-4,800"
+        ],
+        [
+         "4.8 3.73 (12,000)",
+         "6,700-7,200"
+        ],
+        [
+         "4.8 3.42 (11,000)",
+         "5,500-6,000"
+        ],
+        [
+         "5.3 3.42 (15,000)",
+         "9,300-10,000"
+        ],
+        [
+         "5.3 with HD cooling 3.42 (14,000)",
+         "8,900-9,100 (Reg Cab)"
+        ],
+        [
+         "5.3 3.08 (12,200) / XFE 3.08 (12,200)",
+         "6,500-7,400 / 7,000"
+        ],
+        [
+         "5.3 3.08 (11,500)",
+         "5,800-6,600"
+        ],
+        [
+         "6.0 Hybrid 3.08 (12,000)",
+         "6,100"
+        ],
+        [
+         "6.2 with Max Trailering 3.73 (16,000)",
+         "10,400-10,700 (top = Extended Cab standard-box 2WD)"
+        ],
+        [
+         "6.2 3.42 (15,000)",
+         "9,400-9,700"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Hitch rules and HD ratings (2013)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2013 Chevrolet Trailering Guide (GM PDF on a dealer host)",
+        "url": "https://fifthwheelst.com/documents/silverado/2013-chevrolet_silverado_towing_guide.pdf"
+       }
+      ],
+      "years": "2013 trailering guide pp. 09-11",
+      "items": [
+       "Over 5,000 lb requires the Z85 (Handling/Trailering) or Z71 (Off-Road) suspension. Z82 Heavy-Duty Trailering adds the hitch platform and 7-pin connector; a 7-wire harness is standard; extra trans cooler KNP available.",
+       "Tongue weight 10-15% of the loaded trailer, up to 1,100 lb (1500), without exceeding RGAWR or GVWR.",
+       "1500 fifth-wheel/gooseneck: requires Z85 or Z71. Max 10,600 lb (6.2 Max Trailering 3.73, Extended Cab std box 2WD); 5.3 3.42 8,900-9,700 lb.",
+       "HD conventional: 6.0 4.10 (20,500 GCWR) 13,000-14,100; 6.0 3.73 (16,000) 9,000-10,200; CNG 6.0 3.73 8,900-9,300; Duramax 3.73 (24,500) 13,000; Duramax 3.73 (30,500) 16,500 lb.",
+       "HD fifth-wheel/gooseneck: 6.0 4.10 13,500-14,700; Duramax 3.73 (24,500) 14,700-17,800; Duramax 3500HD dually (30,500) 22,800 lb. Kingpin 15-25% of the trailer (1500: up to 1,500 lb). Hitch must be frame-mounted; do not use the bed for support.",
+       "Payload: no tables in the guide; it is GVWR minus curb weight on the door-jamb Tire and Loading label."
+      ]
+     },
+     {
+      "title": "Paint codes",
+      "conf": "unknown",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "All years",
+      "text": "No GM paint-code list for GMT900 was found. The code is on the Service Parts Identification label in the glove box (location verified)."
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and RPO codes",
+    "short": "Engine code, RPO codes",
+    "blocks": [
+     {
+      "title": "VIN engine code (8th digit)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2008 Silverado Owner Manual (GM)",
+        "url": "https://assets.gm.com/manuals/chevrolet/2008_chevrolet_silverado_owners.pdf"
+       }
+      ],
+      "years": "2008 owner manual",
+      "text": "VIN location: driver-side front corner of the dash. RPO and paint codes are on the Service Parts Identification label in the glove box.",
+      "table": {
+       "columns": [
+        "Code",
+        "Engine"
+       ],
+       "rows": [
+        [
+         "X",
+         "4.3 V6"
+        ],
+        [
+         "C",
+         "4.8"
+        ],
+        [
+         "0",
+         "5.3 flex, iron block"
+        ],
+        [
+         "3",
+         "5.3 flex, aluminum block"
+        ],
+        [
+         "M",
+         "5.3 aluminum, AFM"
+        ],
+        [
+         "J",
+         "5.3 iron, AFM"
+        ],
+        [
+         "K",
+         "6.0 iron"
+        ],
+        [
+         "Y",
+         "6.0 aluminum, AFM"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "RPO codes (light duty)",
+      "conf": "verified-secondary",
+      "src": [
+       {
+        "label": "2010 SM RPO Code Description, Light Duty (secondary host)",
+        "url": "https://lemon-manuals.la/Chevrolet/2010/Silverado%201500%2C%202D%20Pickup%2C%205.3%200%2C%204WD%2C%20Automatic/Repair%20and%20Diagnosis/General%20Information/RPO%20Codes/General%20Information/Introduction/RPO%20Code%20Description%20(Light%20Duty)/"
+       }
+      ],
+      "years": "2010 service manual, light duty only (HD page not read); the 2010 axle list is not 2007 availability",
+      "table": {
+       "columns": [
+        "Group",
+        "Codes"
+       ],
+       "rows": [
+        [
+         "Axle",
+         "GU4 3.08, GU5 3.23, GU6 3.42, GT4 3.73, GT5 4.10, G80 locking/limited slip"
+        ],
+        [
+         "Engine",
+         "LU3 4.3 V6, L20 4.8 flex iron, LMG 5.3 flex iron AFM, LC9 5.3 flex aluminum AFM, L9H 6.2 flex"
+        ],
+        [
+         "Transmission",
+         "M30 4L60-E, MYC 6L80, MYD 6L90"
+        ],
+        [
+         "Transfer case",
+         "NQH active 2-speed push-button"
+        ],
+        [
+         "Packages",
+         "Z71 off-road, Z85 increased capacity, Z82 HD trailer, NHT enhanced towing, NZZ skid plates"
+        ],
+        [
+         "Other",
+         "K47 high-capacity air cleaner, KC4 engine oil cooler, KG3 145 A generator, JL4 active brake control, JD9 17 in disc/disc 7,700 lb, JF3 17 in disc/drum 7,000 lb"
+        ]
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "TPMS relearn steps and sensor torques (Quick reference).",
+  "VIN engine codes and light-duty RPO codes (VIN and RPO codes).",
+  "2008 maintenance schedule (Maintenance).",
+  "2013 towing ratings, hitch and package requirements (Quick reference).",
+  "Bulbs and fuse positions for 2008 and 2012 (Quick reference)."
+ ]
 };
