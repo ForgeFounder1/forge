@@ -176,11 +176,11 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2006 Civic owner's manual",
+     "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
     },
     {
-     "label": "2009 Civic owner's manual",
+     "label": "2009 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2009-civic.pdf"
     }
    ]
@@ -192,7 +192,7 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2009 Civic owner's manual",
+     "label": "2009 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2009-civic.pdf"
     },
     {
@@ -239,6 +239,148 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "url": "https://www.civicx.com/"
     }
    ]
+  },
+  {
+   "topic": "9th-gen high-mount brake light",
+   "text": "The same 2012 and 2014 manuals list 21 W and also say the high-mount lights are LED type. Probably body-style dependent; check the car.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+    },
+    {
+     "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "2014 fog bulb",
+   "text": "The 2014 manual lists both H11 55 W and H8 35 W. Check the fitted bulb.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Towing by generation",
+   "text": "1,000 lb for 2006-11; 2012-21 \"not designed to tow\". A real change, not an error.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+    },
+    {
+     "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+    },
+    {
+     "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "\"35 psi Civic\" figure",
+   "text": "The 35 psi in the 2012 manual is the high-speed (over 118 mph) pressure for 2.4 L models, not the placard.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "vPIC quirks",
+   "text": "Greensburg is spelled GREENBURG and GREENSBURG; the FK7 shows L15BA while sedans and coupes show L15B7 (probably a real variant, not confirmed by Honda).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (Honda-submitted data)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19XFC1F3*GE?format=json"
+    }
+   ]
+  },
+  {
+   "topic": "Paint R539P and Championship White",
+   "text": "R539P is Molten Lava Pearl on importarchive/vehiclecolor but Passion Red on paintcolourchart. Championship White has no code on importarchive; vehiclecolor gives NH-0. Alabaster Silver years differ (chipfixx 2006-16, importarchive 2006-15).",
+   "conf": "unconfirmed",
+   "disputed": true,
+   "src": [
+    {
+     "label": "importarchive Civic 2016-2021 colors (third-party)",
+     "url": "https://importarchive.com/honda/civic/2016-2021"
+    },
+    {
+     "label": "vehiclecolor 2021 Civic (third-party)",
+     "url": "https://vehiclecolor.com/honda/civic/2021/"
+    },
+    {
+     "label": "paintcolourchart Civic (third-party)",
+     "url": "https://www.paintcolourchart.com/cars/030/civic.html"
+    },
+    {
+     "label": "chipfixx Civic paint codes (third-party)",
+     "url": "https://www.chipfixx.ca/pages/honda-civic-paint-codes"
+    }
+   ]
+  },
+  {
+   "topic": "10th-gen fuel tank bolts",
+   "text": "24 N·m in the procedure vs 23 N·m in the L15B7 table row.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R011424",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R011424.html"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) G010053",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/G010053.html"
+    }
+   ]
+  },
+  {
+   "topic": "9th-gen \"fuel tank locknuts 120 N·m\"",
+   "text": "What it refers to is unclear (probably the pump locknut ring).",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "tighttorque Civic 9th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-9th-gen"
+    }
+   ]
+  },
+  {
+   "topic": "TSB 16-018 date",
+   "text": "Bulletin header: February 10, 2016; the CivicX list says September 10, 2016. Use the header.",
+   "conf": "forum",
+   "src": [
+    {
+     "label": "CivicX forum: TSB 16-018 text and PDF (forum-hosted copy)",
+     "url": "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/"
+    }
+   ]
+  },
+  {
+   "topic": "Dead owner's manual links",
+   "text": "Every cdn.dealereprocess.org Civic owner's manual returns 403 (checked 2026-10-20) and the research found no replacement copies; citations are labelled source link dead.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+    }
+   ]
   }
  ],
  "overview": {
@@ -260,15 +402,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2006 Civic owner's manual",
+      "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
      },
      {
-      "label": "2012 Civic owner's manual",
+      "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
      },
      {
-      "label": "2016 Civic owner's manual",
+      "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
      }
     ]
@@ -279,11 +421,11 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2006 Civic owner's manual",
+      "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
      },
      {
-      "label": "2016 Civic owner's manual",
+      "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
      }
     ]
@@ -294,7 +436,7 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2006 Civic owner's manual",
+      "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
      },
      {
@@ -397,7 +539,7 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "url": "https://hondanews.com/"
     },
     {
-     "label": "2006 Civic owner's manual",
+     "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
     }
    ],
@@ -412,11 +554,11 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2012 Civic owner's manual",
+      "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
      },
      {
-      "label": "2016 Civic owner's manual",
+      "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
      }
     ]
@@ -572,23 +714,23 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      ],
      "src": [
       {
-       "label": "2006 Civic owner's manual",
+       "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
       },
       {
-       "label": "2009 Civic owner's manual",
+       "label": "2009 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2009-civic.pdf"
       },
       {
-       "label": "2012 Civic owner's manual",
+       "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
       },
       {
-       "label": "2014 Civic owner's manual",
+       "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
       },
       {
-       "label": "2016 Civic owner's manual",
+       "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
       },
       {
@@ -892,7 +1034,7 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "url": "https://hondanews.com/"
     },
     {
-     "label": "2016 Civic owner's manual",
+     "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
     }
    ]
@@ -2109,7 +2251,7 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "url": "https://honcivic.automotive-manuals.com/"
     },
     {
-     "label": "2016 Civic owner's manual",
+     "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
     }
    ],
@@ -2429,6 +2571,336 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
      "date_checked": "2026-10-11"
     }
    ]
+  },
+  {
+   "id": "gf-alt-starter",
+   "type": "diy",
+   "title": "Alternator and starter",
+   "summary": "By generation. Applies to: 2006-2021 by row; 8th/9th from tighttorque (secondary).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "tighttorque Civic 8th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-8th-gen"
+    },
+    {
+     "label": "tighttorque Civic 9th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-9th-gen"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) G010053",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/G010053.html"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) G009244",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/G009244.html"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R008343",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R008343.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "10th 1.5T / FK8: disconnect the battery, remove the belt, exhaust pipe A (and front floor brace; torque rod on FK8), then remove the alternator through the opening between the front subframe and the intermediate shaft. K20C2: comes out from above after removing the belt and tensioner."
+    },
+    {
+     "text": "8th gen alternator rows (24 and 22 N·m) are not labelled by engine on the source."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Alternator bolts, 8th",
+      "24 N·m (18 lb-ft) / 22 N·m (16 lb-ft) by engine"
+     ],
+     [
+      "Alternator bracket bolts, 8th (10x1.25)",
+      "44 N·m (32 lb-ft)"
+     ],
+     [
+      "Alternator bolts, 9th 1.8 / 2.4 Si",
+      "24 N·m (18 lb-ft) / 22 N·m (16 lb-ft)"
+     ],
+     [
+      "Alternator bolts, 10th 1.5T / K20C2",
+      "24 N·m (18 lb-ft) / 45 N·m (33 lb-ft)"
+     ],
+     [
+      "Alternator bolts, FK8 8 mm / 10 mm",
+      "24 N·m / 37 N·m (27 lb-ft), in sequence"
+     ],
+     [
+      "Alternator + cable nut, 10th",
+      "12 N·m (9 lb-ft)"
+     ],
+     [
+      "Starter bolts, 8th",
+      "44 N·m (32 lb-ft); flange bolt 64 N·m (47 lb-ft)"
+     ],
+     [
+      "Starter bolts, 9th 10 mm / 12 mm",
+      "45 N·m (33 lb-ft) / 64 N·m (47 lb-ft)"
+     ],
+     [
+      "Starter bolts, 10th 10 mm / 12 mm",
+      "45 N·m (33 lb-ft) / 65 N·m (48 lb-ft)"
+     ],
+     [
+      "Starter cable nut",
+      "9 N·m (80 lb-in)"
+     ],
+     [
+      "Belt auto-tensioner 8 mm / 10 mm",
+      "24 / 54-55 N·m (8th other engine: 22 N·m bolts, 56 N·m pulley; 9th idler 45 N·m)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and thermostat",
+   "summary": "10th-gen pump bolt torque is only in a figure (unknown). Applies to: 2006-2021 by row.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "tighttorque Civic 8th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-8th-gen"
+    },
+    {
+     "label": "tighttorque Civic 9th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-9th-gen"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) G010053",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/G010053.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "10th gen: clean the O-ring groove and mating surface; replace the O-ring."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Pump bolts, 8th / 9th",
+      "12 N·m (106 lb-in)"
+     ],
+     [
+      "Pulley bolts, 8th / 9th",
+      "14 N·m (10 lb-ft)"
+     ],
+     [
+      "Thermostat housing, 8th",
+      "24 N·m / 12 N·m (two engine rows)"
+     ],
+     [
+      "Thermostat housing, 9th 1.8 / 2.4",
+      "10 N·m (89 lb-in) / 12 N·m (106 lb-in)"
+     ],
+     [
+      "Thermostat housing, 10th (all)",
+      "24 N·m (18 lb-ft)"
+     ],
+     [
+      "Pump bolts, 10th",
+      "unknown (figure only)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump (fuel tank unit)",
+   "summary": "10th gen access from inside the car. Applies to: 2006-2021 by row.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R011425",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R011425.html"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R011424",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R011424.html"
+    },
+    {
+     "label": "tighttorque Civic 8th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-8th-gen"
+    },
+    {
+     "label": "tighttorque Civic 9th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-9th-gen"
+    }
+   ],
+   "steps": [
+    {
+     "text": "10th gen: turn the cam lock ring counter-clockwise with the fuel sender wrench. If the tank is at or above F (or unknown), set the parking brake, block the rear wheels and raise the front more than 345 mm (page text cuts off)."
+    },
+    {
+     "text": "Fit a new cam lock ring. Do not bend the level-sensor arm or drop the inner vent tube into the tank (it sets a DTC and must be replaced)."
+    },
+    {
+     "text": "DI high-pressure pump (L15B7, K20C1): tighten bolts alternately until the pump contacts the head; do not reuse the fuel joint pipe; no power tools. Torques only in figures."
+    },
+    {
+     "text": "9th gen \"fuel tank locknuts 120 N·m\" as printed; most likely the pump locknut ring, unconfirmed.",
+     "conf": "unconfirmed"
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "10th tank mounting bolts (left, then right)",
+      "24 N·m (18 lb-ft); table lists 23 N·m for L15B7 (disputed)"
+     ],
+     [
+      "10th strap bolts (rear, then front)",
+      "38 N·m (28 lb-ft)"
+     ],
+     [
+      "8th tank frame bolts",
+      "38 N·m (28 lb-ft)"
+     ],
+     [
+      "9th strap bolts",
+      "38 N·m (28 lb-ft)"
+     ]
+    ]
+   },
+   "parts": [],
+   "disputedRows": [
+    0
+   ]
+  },
+  {
+   "id": "gf-blend-door",
+   "type": "diy",
+   "title": "Blend door (air-mix motor)",
+   "summary": "No motor screw torque found. Applies to: 2016-21 procedure; 8th gen torques.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R003219",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R003219.html"
+    },
+    {
+     "label": "tighttorque Civic 8th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-8th-gen"
+    }
+   ],
+   "steps": [
+    {
+     "text": "10th gen: driver and passenger air-mix, mode and recirculation motors come out together. Line up the damper-lever pins with the motor before fitting."
+    },
+    {
+     "text": "\"Set climate to MAX COOL before removal\" came from a search summary, not the page text.",
+     "conf": "unconfirmed"
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "8th heater unit mounting nut",
+      "12 N·m (106 lb-in)"
+     ],
+     [
+      "8th blower-heater unit bolts (6x1.0)",
+      "10 N·m (89 lb-in)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-ball-joint-hub",
+   "type": "diy",
+   "title": "Ball joints and hubs (extra detail)",
+   "summary": "Beyond the existing suspension guide. Applies to: 2006-2021 by row.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "tighttorque Civic 8th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-8th-gen"
+    },
+    {
+     "label": "tighttorque Civic 9th gen (cites Honda SM; secondary)",
+     "url": "https://tighttorque.com/cars/honda/civic-9th-gen"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) G009244",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/G009244.html"
+    },
+    {
+     "label": "2016-21 Civic Honda service manual (honcivic mirror) R009555",
+     "url": "https://honcivic.automotive-manuals.com/techinfo/html/en/civic-fc-fk/R009555.html"
+    }
+   ],
+   "steps": [
+    {
+     "text": "8th LX automatic: 3-stage sequence nut C, nut D, bolt E, all 59 N·m."
+    },
+    {
+     "text": "10th rear knuckle and hub: new bolts and nuts; torque bushed joints with weight on the suspension. Hub bolt torque only in the figure (unknown)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "8th lower ball joint to lower arm (12x1.25)",
+      "59 N·m (44 lb-ft)"
+     ],
+     [
+      "8th lower ball-joint castle nut",
+      "69 N·m, max 78 N·m"
+     ],
+     [
+      "8th rear hub bearing bolts (disc and drum)",
+      "64 N·m (47 lb-ft)"
+     ],
+     [
+      "8th tie-rod end nut",
+      "54 N·m (40 lb-ft)"
+     ],
+     [
+      "9th lower ball joint nuts and bolt",
+      "59 N·m; castle nut 59 and 69 N·m (two rows)"
+     ],
+     [
+      "10th lower arm nuts to ball joint (new, in sequence)",
+      "64 N·m (47 lb-ft)"
+     ],
+     [
+      "FK8 housing-bracket TORX bolt to knuckle (new)",
+      "83 N·m (61 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -2545,7 +3017,11 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
   "BC Racing BR price for 06–11 and 12–15 Civic.",
   "YouTube coverage is thin: only K-swap and one 8th-gen coilover video confirmed.",
   "TPMS and non-R brake clearance were not covered in the source guide.",
-  "Most vendor links go to the store home because the guide recorded domains, not product URLs."
+  "Most vendor links go to the store home because the guide recorded domains, not product URLs.",
+  "Gap-fill: FK8 placard tire pressure and oil capacity from a Honda document; 2012-15 Si placard pressure.",
+  "Gap-fill: torques printed only in figures (10th-gen water pump, rear hub bolts, DI pump bolts); 9th-gen torque on a factory mirror; 8th-gen strut-top nuts.",
+  "Gap-fill: Si wheel offset; FK8 clutch TSB number; A13-021 and P0128 bulletins only as summaries; Si and Type R owner manuals.",
+  "Gap-fill: live owner's manual links (every cdn.dealereprocess.org Civic manual returns 403 as of 2026-10-20; no replacement copies found)."
  ],
  "sellers": [],
  "partCategories": [
@@ -4722,5 +5198,1064 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
    }
   ],
   "count": 177
- }
+ },
+ "reference": {
+  "caveat": "From the 2006, 2009, 2012, 2014, 2016, 2019 and 2021 owner's manuals (their links are now dead; read from copies saved earlier), the 2016-21 Honda service manual on a mirror, tighttorque (secondary), the NHTSA VIN decoder and Honda bulletins. Paint codes are third-party. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Maintenance Minder codes",
+    "intro": "Every 2006-2021 Civic uses the oil-life Maintenance Minder (codes, no fixed mileages). Si and Type R manuals were not available; they are assumed to use the same codes (unconfirmed).",
+    "blocks": [
+     {
+      "title": "Maintenance Minder codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "2006-2021 (2006 OM p. 187; 2016 OM p. 482)",
+      "table": {
+       "columns": [
+        "Code",
+        "Item",
+        "Years"
+       ],
+       "rows": [
+        [
+         "A",
+         "Replace engine oil",
+         "all"
+        ],
+        [
+         "B",
+         "Oil and filter, plus inspection: brakes, parking brake adjustment (2006), tie rods/steering box/boots, suspension, driveshaft boots, brake hoses/lines (ABS, VSA from 2012), fluid levels, exhaust, fuel lines",
+         "all"
+        ],
+        [
+         "1",
+         "Rotate tires",
+         "all"
+        ],
+        [
+         "2",
+         "Air cleaner element, cabin filter, inspect drive belt",
+         "all"
+        ],
+        [
+         "3",
+         "Transmission fluid (MT, AT or CVT)",
+         "all"
+        ],
+        [
+         "4",
+         "Spark plugs plus valve-clearance inspection",
+         "all"
+        ],
+        [
+         "5",
+         "Engine coolant",
+         "all"
+        ],
+        [
+         "7",
+         "Brake fluid",
+         "2016+ (fixed 3-year note before)"
+        ],
+        [
+         "0 / 9",
+         "Canada only: 0 = oil and filter, 9 = the B inspection list",
+         "2016+ Canada"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Fixed rules beside the Minder",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "Years per item",
+      "items": [
+       "No oil call within 12 months of a reset: change oil yearly anyway.",
+       "Brake fluid every 3 years regardless (2006-2015); from 2016 it is sub-item 7 with the same 3-year fallback.",
+       "Inspect idle speed every 160,000 mi (2006-2015 manuals).",
+       "Adjust valves during A, B, 1, 2 or 3 services only if noisy (2006-2021).",
+       "Dusty: air element every 15,000 mi. Urban soot: cabin filter every 15,000 mi.",
+       "Mountain driving at very low speed: transmission fluid every 25,000 mi (2014, 2016, 2019, 2021 manuals; not 2006).",
+       "No timing-belt item appears in any Minder table."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulbs (wattage and type; Honda gives no trade numbers)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2009 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2009-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2014 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2014-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2019 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2019-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "8th 2006-11, 9th 2012-15, 10th 2016-21",
+      "table": {
+       "columns": [
+        "Lamp",
+        "8th gen",
+        "9th gen",
+        "10th gen"
+       ],
+       "rows": [
+        [
+         "High beam",
+         "60 W HB3",
+         "60 W HB3",
+         "60 W HB3 (halogen) or LED"
+        ],
+        [
+         "Low beam",
+         "51 W HB4",
+         "51 W HB4",
+         "55 W H11 (halogen) or LED"
+        ],
+        [
+         "Fog",
+         "55 W H11 (2009, if equipped)",
+         "55 W H11 (2012); 2014 lists both H11 55 W and H8 35 W (disputed)",
+         "35 W H8; LED on some 2021 trims"
+        ],
+        [
+         "Front turn / park / side marker",
+         "21/5 W",
+         "28/8 W",
+         "Front turn 21 W amber; side marker 3 W"
+        ],
+        [
+         "Rear turn",
+         "21 W",
+         "21 W amber",
+         "21 W amber"
+        ],
+        [
+         "Stop / tail",
+         "21/5 W",
+         "21/5 W; rear side markers LED (2014)",
+         "Brake 21 W; tail and rear side marker LED (assembly)"
+        ],
+        [
+         "Back-up",
+         "21 W",
+         "21 W",
+         "16 W"
+        ],
+        [
+         "High-mount brake",
+         "21 W",
+         "21 W and \"LED type\" both printed (disputed)",
+         "21 W"
+        ],
+        [
+         "License plate",
+         "5 W",
+         "5 W",
+         "not captured"
+        ],
+        [
+         "Trunk",
+         "5 W",
+         "not listed",
+         "not listed"
+        ]
+       ],
+       "disputedRows": [
+        2,
+        6
+       ]
+      }
+     },
+     {
+      "title": "Fuses (Honda prints ratings)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "2006 (pp. 235-236), 2012, 2016, 2021; the box lid label rules. Interior box under the dash, driver side; engine box near the battery (push the tabs)",
+      "table": {
+       "columns": [
+        "Circuit",
+        "8th gen (2006)",
+        "9th gen (2012)",
+        "10th gen (2016 / 2021)"
+       ],
+       "rows": [
+        [
+         "Fuel pump",
+         "Interior #2, 15 A",
+         "15 A",
+         "15 A"
+        ],
+        [
+         "Alternator (ACG)",
+         "Interior #3, 10 A",
+         "15 A",
+         "10 A"
+        ],
+        [
+         "ABS / VSA",
+         "Underhood ABS 30 A (x2); interior #4 ABS unit 7.5 A",
+         "Motor 30 A, FSR 30 A; ABS/VSA 7.5 A",
+         "Motor 40 A, FSR 40 A; VSA/ABS 10 A"
+        ],
+        [
+         "EPS",
+         "70 A",
+         "70 A",
+         "70 A"
+        ],
+        [
+         "Horn",
+         "Underhood #12 Stop and Horn 15 A",
+         "10 A",
+         "10 A"
+        ],
+        [
+         "A/C clutch",
+         "MG Clutch 7.5 A",
+         "not listed",
+         "A/C compressor 10 A"
+        ],
+        [
+         "Throttle (DBW)",
+         "15 A",
+         "15 A",
+         "not listed"
+        ],
+        [
+         "Starter",
+         "not listed",
+         "ST MG 7.5 A",
+         "Starter motor 30 A (smart entry)"
+        ],
+        [
+         "Cooling fan",
+         "not listed",
+         "not listed",
+         "30 A (2.0) / 50 A (1.5T); fan 5 A"
+        ],
+        [
+         "FI",
+         "not listed",
+         "FI sub 15 A",
+         "FI ECU 10 A; FI main 15 A; LAF 5 A; injector 15 A (1.5T)"
+        ],
+        [
+         "Main / battery",
+         "80 A option main",
+         "IG main 50 A; main 2 60 A",
+         "Battery 125 A; IG main 30 A"
+        ],
+        [
+         "Power sockets",
+         "Rear ACC socket 15 A; ACC 15 A",
+         "Accessory socket",
+         "Accessory 10 A; front socket 20 A (2021)"
+        ],
+        [
+         "Wiper",
+         "Interior #38, 30 A",
+         "30 A",
+         "not listed"
+        ],
+        [
+         "Headlights",
+         "Low L/R 10 A (#17/#16); high L/R 10 A (#13/#12); low main 20 A (#21); high main 20 A (#18); DRL 7.5 A (#37)",
+         "Low L/R 10 A",
+         "High L 10 A"
+        ]
+       ],
+       "note": "10th-gen underhood layout changes by engine (2.0 vs 1.5T) and smart entry; use the lid label."
+      }
+     },
+     {
+      "title": "Tire pressure (cold)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2019 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2019-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "Years per row; door placard rules",
+      "table": {
+       "columns": [
+        "Car",
+        "Tire",
+        "F / R psi"
+       ],
+       "rows": [
+        [
+         "2006-11 DX / Canadian DX-G",
+         "P195/65R15 89H",
+         "30 / 30"
+        ],
+        [
+         "2006-11 LX, EX",
+         "P205/55R16 89H",
+         "32 / 32"
+        ],
+        [
+         "2012-15 15 in",
+         "P195/65R15 89H",
+         "30 / 30"
+        ],
+        [
+         "2012-15 16 in",
+         "P205/55R16 89H",
+         "32 / 32"
+        ],
+        [
+         "2012-15 Si 17 in",
+         "P215/45R17 87V or 215/45ZR17 91W",
+         "Unknown (35 psi in the 2012 manual is the high-speed pressure, not placard)"
+        ],
+        [
+         "2016-21 2.0, 16 in",
+         "215/55R16 93H",
+         "32 / 32"
+        ],
+        [
+         "2016-21 1.5T, 17 in",
+         "215/50R17 91H",
+         "32 / 32"
+        ],
+        [
+         "2016-21 18 in (incl. 10th Si, per the 2019 Sport footnote)",
+         "235/40R18",
+         "33 / 32"
+        ],
+        [
+         "Compact spare",
+         "T125/80D16 or T125/70R17",
+         "60"
+        ],
+        [
+         "FK8 Type R",
+         "245/30ZR20",
+         "Unknown"
+        ]
+       ],
+       "note": "Rims: 2016 2.0 16x7J; 1.5T 17x7J; 18 in 18x8J. Offset not in the manuals. The 2006-11 rows come from the 2006 manual."
+      }
+     },
+     {
+      "title": "Towing",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2006 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2006-civic.pdf"
+       },
+       {
+        "label": "2009 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2009-civic.pdf"
+       },
+       {
+        "label": "2012 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2012-civic.pdf"
+       },
+       {
+        "label": "2016 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2016-civic.pdf"
+       },
+       {
+        "label": "2021 Civic owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/honda/2021-civic.pdf"
+       }
+      ],
+      "years": "Years per item",
+      "items": [
+       "2006-11: max trailer 1,000 lb (450 kg); tongue about 10%; load 60% front / 40% rear; no towing for the first 600 mi.",
+       "2012-21: \"Your vehicle is not designed to tow a trailer. Attempting to do so can void your warranties.\" (2016 p. 395, 2021 p. 421).",
+       "GVWR / GAWR: 2006 DX/LX 3,671 lb (F 1,940 / R 1,731); 2006 EX 3,737 lb (F 1,973 / R 1,764); 2012 Si sedan 3,924 lb (F 2,116 / R 1,830); 2016 1.5T sedan 3,902 lb (F 2,105 / R 1,808)."
+      ]
+     },
+     {
+      "title": "Paint codes, 8th gen",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "importarchive Civic 2006-2011 colors (third-party)",
+        "url": "https://importarchive.com/honda/civic/2006-2011"
+       },
+       {
+        "label": "chipfixx Civic paint codes (third-party)",
+        "url": "https://www.chipfixx.ca/pages/honda-civic-paint-codes"
+       }
+      ],
+      "years": "2006-2011, US market; code on the driver door-jamb label",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "NH578",
+         "Taffeta White",
+         "06-11"
+        ],
+        [
+         "NH700M",
+         "Alabaster Silver",
+         "06-11"
+        ],
+        [
+         "NH701M",
+         "Galaxy Gray",
+         "06-08"
+        ],
+        [
+         "NH737M",
+         "Polished Metal",
+         "09-11"
+        ],
+        [
+         "B92P",
+         "Nighthawk Black",
+         "06-08"
+        ],
+        [
+         "NH731P",
+         "Crystal Black Pearl",
+         "09-11"
+        ],
+        [
+         "YR528M",
+         "Shoreline Mist",
+         "06"
+        ],
+        [
+         "YR566M",
+         "Borrego Beige",
+         "07-08"
+        ],
+        [
+         "YR578M",
+         "Urban Titanium",
+         "09-11"
+        ],
+        [
+         "R513",
+         "Rallye Red",
+         "not given"
+        ],
+        [
+         "R525P",
+         "Tango Red",
+         "not given"
+        ],
+        [
+         "B537M",
+         "Atomic Blue",
+         "not given"
+        ],
+        [
+         "B536P",
+         "Royal Blue",
+         "not given"
+        ],
+        [
+         "YR577P",
+         "Redline Orange (Si)",
+         "not given"
+        ],
+        [
+         "YR557P",
+         "Habanero Red (Si)",
+         "06-08"
+        ],
+        [
+         "B529P",
+         "Fiji Blue (Si)",
+         "06-08"
+        ],
+        [
+         "B561P",
+         "Dyno Blue (Si)",
+         "09-11"
+        ],
+        [
+         "NH756P",
+         "Spectrum White (Hybrid)",
+         "09-11"
+        ],
+        [
+         "BG51M",
+         "Opal Silver Blue (Hybrid)",
+         "not given"
+        ],
+        [
+         "NH684P",
+         "Magnetic Pearl (Hybrid)",
+         "not given"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Paint codes, 9th gen",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "importarchive Civic 2012-2015 colors (third-party)",
+        "url": "https://importarchive.com/honda/civic/2012-2015"
+       }
+      ],
+      "years": "2012-2015, US market",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "NH578",
+         "Taffeta White",
+         "not given"
+        ],
+        [
+         "NH788P",
+         "White Orchid (sedan)",
+         "13-15"
+        ],
+        [
+         "NH700M",
+         "Alabaster Silver",
+         "not given"
+        ],
+        [
+         "NH737M",
+         "Polished Metal",
+         "12-13"
+        ],
+        [
+         "NH797M",
+         "Modern Steel",
+         "14-15"
+        ],
+        [
+         "NH731P",
+         "Crystal Black",
+         "not given"
+        ],
+        [
+         "YR578M",
+         "Urban Titanium",
+         "not given"
+        ],
+        [
+         "YR600M",
+         "Kona Coffee",
+         "13-14"
+        ],
+        [
+         "R513",
+         "Rallye Red",
+         "not given"
+        ],
+        [
+         "R543P",
+         "Crimson",
+         "not given"
+        ],
+        [
+         "R547P",
+         "Crimson II",
+         "12"
+        ],
+        [
+         "NH787M",
+         "Cool Mist",
+         "12"
+        ],
+        [
+         "B561P",
+         "Dyno Blue",
+         "not given"
+        ],
+        [
+         "B586P",
+         "Dyno Blue II",
+         "12"
+        ],
+        [
+         "YR589P",
+         "Sunburst Orange (Si)",
+         "12-13"
+        ],
+        [
+         "YR612P",
+         "Orange Fire (Si)",
+         "14-15"
+        ],
+        [
+         "G534M",
+         "Green Opal (Hybrid)",
+         "not given"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Paint codes, 10th gen",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "importarchive Civic 2016-2021 colors (third-party)",
+        "url": "https://importarchive.com/honda/civic/2016-2021"
+       },
+       {
+        "label": "vehiclecolor 2021 Civic (third-party)",
+        "url": "https://vehiclecolor.com/honda/civic/2021/"
+       },
+       {
+        "label": "paintcolourchart Civic (third-party)",
+        "url": "https://www.paintcolourchart.com/cars/030/civic.html"
+       }
+      ],
+      "years": "2016-2021, US market",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "NH578",
+         "Taffeta White",
+         "16-18"
+        ],
+        [
+         "NH788P",
+         "White Orchid",
+         "16-18/19"
+        ],
+        [
+         "NH883P",
+         "Platinum White",
+         "19-21"
+        ],
+        [
+         "NH830M",
+         "Lunar Silver",
+         "not given"
+        ],
+        [
+         "NH797M",
+         "Modern Steel",
+         "not given"
+        ],
+        [
+         "NH731P",
+         "Crystal Black",
+         "not given"
+        ],
+        [
+         "NH877P",
+         "Sonic Gray (hatch, Type R)",
+         "not given"
+        ],
+        [
+         "NH737M",
+         "Polished Metal (hatch, Type R)",
+         "not given"
+        ],
+        [
+         "R513",
+         "Rallye Red",
+         "not given"
+        ],
+        [
+         "R539P",
+         "Molten Lava (paintcolourchart: Passion Red)",
+         "19-21 sedan"
+        ],
+        [
+         "R560P",
+         "Burgundy Night",
+         "16-18"
+        ],
+        [
+         "B593M",
+         "Aegean Blue",
+         "not given"
+        ],
+        [
+         "B607M",
+         "Cosmic Blue",
+         "not given"
+        ],
+        [
+         "GY30P",
+         "Energy Green (coupe)",
+         "16-18"
+        ],
+        [
+         "Y78P",
+         "Tonic Yellow (coupe/Si)",
+         "19"
+        ],
+        [
+         "no code / NH-0",
+         "Championship White (Type R; vehiclecolor gives NH-0)",
+         "not given"
+        ],
+        [
+         "B637P",
+         "Boost Blue (Type R)",
+         "not given"
+        ],
+        [
+         "Y82",
+         "Phoenix Yellow (2021 Type R Limited Edition)",
+         "21"
+        ]
+       ],
+       "disputedRows": [
+        9,
+        15
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and model codes",
+    "short": "VIN digits",
+    "blocks": [
+     {
+      "title": "VIN decoding",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA vPIC VIN decoder API (Honda-submitted data)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19XFC1F3*GE?format=json"
+       }
+      ],
+      "years": "From NHTSA vPIC decodes of Honda-submitted data; Honda has no RPO sticker, trim and options are in positions 4-8",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "2HG Canada, 19X US, SHH UK"
+        ],
+        [
+         "4-5",
+         "Chassis code: FA, FG, FB, FC, FK"
+        ],
+        [
+         "8",
+         "Model-specific; differs between gens"
+        ],
+        [
+         "10",
+         "Model year (6 = 2006 ... H = 2017, L = 2020)"
+        ],
+        [
+         "11",
+         "Plant: H Alliston, E Greensburg, U Swindon"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Sample decodes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA vPIC VIN decoder API (Honda-submitted data)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/19XFC1F3*GE?format=json"
+       }
+      ],
+      "years": "Per row",
+      "table": {
+       "columns": [
+        "VIN pattern",
+        "Decodes to",
+        "Plant"
+       ],
+       "rows": [
+        [
+         "2HG FA16 5 ... 6H",
+         "2006 LX sedan, R18A1, auto",
+         "Alliston, ON"
+        ],
+        [
+         "2HG FG21 5 ... 7H",
+         "2007 Si coupe, K20Z3, manual",
+         "Alliston"
+        ],
+        [
+         "2HG FA55 5 ... 8H",
+         "2008 Si sedan, K20Z3",
+         "Alliston"
+        ],
+        [
+         "19X FB2F 5 ... DE",
+         "2013 LX sedan, R18Z1, auto",
+         "Greensburg, IN"
+        ],
+        [
+         "2HG FG4A 5 ... EH",
+         "2014 Si coupe, K24Z7, manual",
+         "Alliston"
+        ],
+        [
+         "19X FC2F 5 ... GE",
+         "2016 LX sedan, K20C2, CVT",
+         "Greensburg (vPIC: GREENBURG)"
+        ],
+        [
+         "19X FC1F 3 ... GE",
+         "2016 EX-T sedan, L15B7, CVT",
+         "Greensburg"
+        ],
+        [
+         "2HG FC3A 5 ... HH",
+         "2017 Si coupe, L15B7, manual",
+         "Alliston"
+        ],
+        [
+         "SHH FK7H 6 ... HU",
+         "2017 EX hatch, L15BA, CVT",
+         "Swindon, UK"
+        ],
+        [
+         "SHH FK8G 7 ... HU",
+         "2017 Civic Type R, K20C1",
+         "Swindon"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes from Honda bulletins",
+    "intro": "New items only; Common problems already covers 10-048, 08-001, 08-020, 18-137 and 19-091. 22-002 (Fit only) and 20-100 (Pilot only) do not apply to the Civic.",
+    "blocks": [
+     {
+      "title": "Codes with Honda documents",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Honda iN Request for Parts, P0420 1.5T (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2024/MC-11010549-0001.pdf"
+       },
+       {
+        "label": "CivicX forum: TSB 16-018 text and PDF (forum-hosted copy)",
+        "url": "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/"
+       }
+      ],
+      "years": "Years per row; labels per row",
+      "table": {
+       "columns": [
+        "Code",
+        "Document",
+        "Applies to",
+        "Cause / fix",
+        "Label"
+       ],
+       "rows": [
+        [
+         "P0326 knock sensor",
+         "TSB 16-018 (Feb 10, 2016)",
+         "2016 EX, LX non-turbo (K20C2)",
+         "PCM misreads the sensor: update PGM-FI software; do not replace the sensor",
+         "Forum-reported (forum-hosted bulletin copy)"
+        ],
+        [
+         "P0420 only (1.5T)",
+         "Honda iN Request for Parts (2024)",
+         "2021 Civic 1.5L",
+         "Engineering investigation, not a repair. Excludes cars with P030x, P0171/P0172, P0299 or replaced cat, O2/LAF, injectors or turbo",
+         "Verified"
+        ],
+        [
+         "U0038 / U0101: will not leave Park or start",
+         "TSB 17-012",
+         "2016-17",
+         "Title only seen",
+         "Forum-reported"
+        ],
+        [
+         "U3000-49 EPB / brake indicator",
+         "TSB 17-007 and recall 16-090 (16V725)",
+         "2016-17",
+         "EPB / VSA software (recall)",
+         "Forum-reported list; recall verified"
+        ],
+        [
+         "P2646 / P2647 / P2651 / P2652",
+         "A13-021",
+         "2012 Civic (and 2002-05 Si)",
+         "Replace the rocker-arm oil-pressure switch",
+         "Unconfirmed (summaries only)"
+        ],
+        [
+         "P0128",
+         "Honda service news (2013-09-12)",
+         "2012 Civic",
+         "Thermostat jiggle valve sticks open: replace thermostat",
+         "Unconfirmed (summary)"
+        ],
+        [
+         "(symptom) CVT grinding on hot restart",
+         "TSB 17-003",
+         "2016-17 CVT",
+         "Title only",
+         "Forum-reported"
+        ],
+        [
+         "(symptom) 1.5T rpm surge at 45-70 mph",
+         "TSB 16-028",
+         "2016 1.5T",
+         "Title only",
+         "Forum-reported"
+        ]
+       ],
+       "rowSrc": [
+        "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/",
+        "https://static.nhtsa.gov/odi/tsbs/2024/MC-11010549-0001.pdf",
+        "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/",
+        "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/",
+        null,
+        null,
+        "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/",
+        "https://www.civicx.com/forum/threads/new-tsb-16-018-mil-comes-on-with-dtc-p0326.1897/"
+       ],
+       "note": "Recalls were not re-pulled; the Safety and Problems lists come from the NHTSA API on 2026-10-11."
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "Maintenance Minder codes and fixed rules (Maintenance).",
+  "Bulbs, fuses, tire pressures, towing (Quick reference).",
+  "10th Si 18 in placard: 33 F / 32 R psi via the 2019 Sport footnote (inferred for the Si).",
+  "10th-gen 18 in rim width: 18x8J (offset still unknown).",
+  "1.5T oil with filter 3.7 qt (3.5 L) and K20C2 4.4 qt (4.2 L) from the 2019 manual; FK8 still unknown.",
+  "Alternator, starter, water pump, fuel pump, blend door and extra ball-joint torques (Guides)."
+ ]
 };

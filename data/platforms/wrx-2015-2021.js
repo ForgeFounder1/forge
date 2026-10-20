@@ -82,7 +82,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2021 WRX/STI owner's manual",
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
     },
     {
@@ -194,6 +194,125 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "text": "CVT bulletins name TR580 and TR690 for other models; the VA WRX CVT is TR690 in the service-manual index (forum source). No chain-slip bulletin opened lists the VA WRX.",
    "conf": "forum",
    "src": []
+  },
+  {
+   "topic": "K1X paint name",
+   "text": "Crystal White Silica in the 2015 Impreza/WRX table vs Crystal White Pearl in the 2015 BRZ and 2021 tables. Same code and PPG number: a naming error in the bulletin.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Subaru paint coding bulletin 13-97-14, 2015 MY (NHTSA copy on oemdtc)",
+     "url": "https://subaru.oemdtc.com/90/subaru-paint-codes-2015-subaru/"
+    },
+    {
+     "label": "Subaru paint coding bulletin 13-103-20, 2021 MY (NHTSA copy on oemdtc)",
+     "url": "https://subaru.oemdtc.com/2969/2021-my-paint-coding-information-subaru"
+    }
+   ]
+  },
+  {
+   "topic": "2015-17 headlights",
+   "text": "The 2016 manual index lists HID headlights but its bulb chart shows only halogen and LED. D3S is unconfirmed.",
+   "conf": "verified-secondary",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2016 WRX/STI owner's manual (text copy on carmanualsonline mirror)",
+     "url": "https://www.carmanualsonline.info/subaru-wrx-2016-owners-manual/"
+    }
+   ]
+  },
+  {
+   "topic": "2015-17 fog bulb",
+   "text": "H16 19 W vs H11 55 W depending on steering-responsive fogs (STI Limited, inferred).",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2016 WRX/STI owner's manual (text copy on carmanualsonline mirror)",
+     "url": "https://www.carmanualsonline.info/subaru-wrx-2016-owners-manual/"
+    }
+   ]
+  },
+  {
+   "topic": "Fuse 12 (TCU)",
+   "text": "10 A on the STI vs 20 A on the WRX. A real difference; do not swap.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+    },
+    {
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Campaign number WUK-96",
+   "text": "A search summary said WQG-55; the NHTSA document is WUK-96. The P2096 link is unconfirmed (go-parts).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Subaru campaign WUK-96 (NHTSA)",
+     "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169855-0001.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "11-199-20R \"CVY\"",
+   "text": "Typo for CVT in the bulletin.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Subaru TSB 11-199-20R (NHTSA)",
+     "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188164-0001.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "vPIC trim strings",
+   "text": "STI patterns decode as \"WRX mid/high\", the STI series is blank, and Subaru typos pass through (\"Spolier\", \"Kelyless\").",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (Subaru-submitted data)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF1VA1A6*F8?format=json"
+    }
+   ]
+  },
+  {
+   "topic": "Castle nut torques",
+   "text": "Ball-joint castle nut 39 N·m (front arm) vs tie-rod castle nut 27 N·m. Different joints, not a conflict.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror): suspension",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/Suspension/"
+    }
+   ]
+  },
+  {
+   "topic": "Maintenance schedule years",
+   "text": "Only the 2020 booklet was read; applying it to 2015-2019 and 2021 is an assumption.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "Subaru 2020 MY Warranty and Maintenance Booklet",
+     "url": "https://techinfo.subaru.com/stis/doc/warrantyBooklet/2020_war_and_maint__020720.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Dead owner's manual links",
+   "text": "The 2018 and 2021 cdn.dealereprocess.org manuals return 403 (checked 2026-10-20); no replacement copies found. The 2016 manual is cited from a text mirror.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2016 WRX/STI owner's manual (text copy on carmanualsonline mirror)",
+     "url": "https://www.carmanualsonline.info/subaru-wrx-2016-owners-manual/"
+    }
+   ]
   }
  ],
  "overview": {
@@ -215,11 +334,11 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2018 WRX/STI owner's manual",
+      "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
      },
      {
-      "label": "2021 WRX/STI owner's manual",
+      "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
      }
     ]
@@ -256,7 +375,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2021 WRX/STI owner's manual",
+      "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
      }
     ]
@@ -315,7 +434,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      "url": "https://subarumedia.iconicweb.com/mediasite/specs/3._2020_WRX_STI_Specs.pdf"
     },
     {
-     "label": "2021 WRX/STI owner's manual",
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
     }
    ],
@@ -528,11 +647,11 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      ],
      "src": [
       {
-       "label": "2018 WRX/STI owner's manual",
+       "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
       },
       {
-       "label": "2021 WRX/STI owner's manual",
+       "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
       },
       {
@@ -682,11 +801,11 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    ],
    "src": [
     {
-     "label": "2018 WRX/STI owner's manual",
+     "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
     },
     {
-     "label": "2021 WRX/STI owner's manual",
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
     },
     {
@@ -726,11 +845,11 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2018 WRX/STI owner's manual",
+     "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
     },
     {
-     "label": "2021 WRX/STI owner's manual",
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
     }
    ]
@@ -1256,13 +1375,17 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "years": "2015–21",
    "symptoms": "Varies",
    "cause": "Varies",
-   "fix": "16V-162: 2015–16 WRX (built 2015-04-10 to 2015-10-21) turbo air-intake duct can crack, causing a stall. 17V-625: 2015 WRX/STI with trunk subwoofer, cargo can damage wiring. 21V-587 (WRG-21): 2018–19 WRX (built 2018-04-20 to 2018-11-01; 10,606 units) fuel pump impeller can deform, causing a stall or no-start. 22V-522: 2015–2021 WRX back-up light switch corrosion. Check your VIN.",
+   "fix": "15V-366: 2016 WRX with EyeSight built 2015-03-23, if the brake-light switch fails, pre-collision braking may not work; the driver-assist system is reprogrammed. 16V-162: 2015–16 WRX (built 2015-04-10 to 2015-10-21) turbo air-intake duct can crack, causing a stall. 17V-625: 2015 WRX/STI with trunk subwoofer, cargo can damage wiring. 21V-587 (WRG-21): 2018–19 WRX (built 2018-04-20 to 2018-11-01; 10,606 units) fuel pump impeller can deform, causing a stall or no-start. 22V-522: 2015–2021 WRX back-up light switch corrosion. Check your VIN.",
    "parts": [],
    "conf": "verified",
    "src": [
     {
      "label": "NHTSA recalls API (2015)",
      "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=subaru&model=wrx&modelYear=2015"
+    },
+    {
+     "label": "NHTSA recalls API (2016)",
+     "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=subaru&model=wrx&modelYear=2016"
     },
     {
      "label": "NHTSA recalls API (2018)",
@@ -1318,7 +1441,7 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
      "url": "https://lemon-manuals.org.ua/Subaru/2020/"
     },
     {
-     "label": "2021 WRX/STI owner's manual",
+     "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
     }
    ],
@@ -1833,6 +1956,329 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    "parts": [
     "iag-shortblock"
    ]
+  },
+  {
+   "id": "gf-alternator",
+   "type": "diy",
+   "title": "Alternator and starter",
+   "summary": "Remove the brake vacuum pump and collector cover for alternator access. Applies to: 2015-2021 WRX FA20DIT, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section electrical, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Tighten the bracket and generator bolts in sequence."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Alternator bracket to engine",
+      "36 N·m (26.6 lb-ft)"
+     ],
+     [
+      "Generator to bracket",
+      "25 N·m (18.4 lb-ft)"
+     ],
+     [
+      "B+ terminal",
+      "15.5 N·m (11.4 lb-ft)"
+     ],
+     [
+      "Collector-cover bracket",
+      "6.4 N·m (4.7 lb-ft)"
+     ],
+     [
+      "Starter upper bolt (with cable stay)",
+      "50 N·m (36.9 lb-ft)"
+     ],
+     [
+      "Starter cable stay / bracket",
+      "14 N·m (10.3 lb-ft)"
+     ],
+     [
+      "Starter terminal nut",
+      "11 N·m (8.1 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and thermostat",
+   "summary": "The front exhaust pipe comes off for access. Applies to: 2015-2021 WRX FA20DIT, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section cooling and engine, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "New gaskets. Align the thermostat cover cut-out with the rib."
+    },
+    {
+     "text": "Pulley holder: ST 18355AA000 + 18334AA030."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Pump to oil pan upper",
+      "6.4 N·m (4.7 lb-ft)"
+     ],
+     [
+      "Pulley",
+      "14 N·m (10.3 lb-ft)"
+     ],
+     [
+      "Thermostat cover",
+      "6.4 N·m (4.7 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump (in-tank) and DI pump",
+   "summary": "Access through the rear-seat service hole. Applies to: 2015-2021 WRX FA20DIT, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section fuel injection, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Pump nuts in sequence with a new gasket; do not bend the level-sensor arm."
+    },
+    {
+     "text": "DI pump: TORX PLUS 40IP bolts, new O-rings, oil the lifter."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "In-tank pump assembly nuts",
+      "4.4 N·m (3.2 lb-ft)"
+     ],
+     [
+      "High-pressure pump bolts",
+      "21 N·m (15.5 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-blend-door",
+   "type": "diy",
+   "title": "Blend door (air-mix actuator, driver side)",
+   "summary": "Actuator screw torque not given. Applies to: 2015-2021 WRX FA20DIT, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section HVAC, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Read the airbag cautions first; the knee airbag comes out for access."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Knee-airbag module on reinstall",
+      "7.5 N·m (5.5 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-brakes-hubs",
+   "type": "diy",
+   "title": "Brakes, hubs and front ball joint",
+   "summary": "Use new hub bolts and axle nuts. Applies to: 2015-2021 WRX FA20DIT, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section brakes, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    },
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section suspension, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Front axle nut: brake pedal pressed, do not load the axle first; stake it."
+    },
+    {
+     "text": "Ball joint taper: no grease. Castle nut to 39 N·m, then up to 60° more to line up a new cotter pin. (The tie-rod castle nut is 27 N·m; different joint.)"
+    },
+    {
+     "text": "Rear 2-pot: the manual has \"Except STI\" and \"STI\" pages; which non-STI cars use it is not stated. Rear 1-pot support bolt torque is only in a figure (unknown)."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "STI Brembo 6-pot caliper to housing (2018+)",
+      "120 N·m (88.5 lb-ft)"
+     ],
+     [
+      "6-pot pad clip bolt",
+      "30 N·m (22.1 lb-ft)"
+     ],
+     [
+      "Rear 1-pot caliper body / hose bracket",
+      "27 N·m (19.9 lb-ft) / 33 N·m (24.3 lb-ft)"
+     ],
+     [
+      "Rear opposed 2-pot caliper to housing",
+      "73 N·m (53.8 lb-ft)"
+     ],
+     [
+      "Front hub-unit bolts (new) / back plate",
+      "95 N·m (70.1 lb-ft) / 18 N·m"
+     ],
+     [
+      "Front axle nut (new)",
+      "220 N·m (162.3 lb-ft)"
+     ],
+     [
+      "Rear hub-unit bolts (new)",
+      "85 N·m (62.7 lb-ft)"
+     ],
+     [
+      "Rear axle nut (new)",
+      "190 N·m (140.1 lb-ft)"
+     ],
+     [
+      "ABS sensor bolt",
+      "7.5 N·m"
+     ],
+     [
+      "Ball joint to axle housing",
+      "50 N·m (36.9 lb-ft)"
+     ],
+     [
+      "Ball-joint castle nut to front arm",
+      "39 N·m (28.8 lb-ft) + up to 60°"
+     ],
+     [
+      "Stabilizer bushing clamp (arrow forward)",
+      "25 N·m (18.4 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-front-susp-align",
+   "type": "diy",
+   "title": "Front suspension torque and factory alignment",
+   "summary": "Settles the front crossmember and lower-arm torques and alignment. Applies to: 2015-2021 WRX and STI, 2020 Subaru service manual (mirror). STI EJ257 pages not opened.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "2020 WRX Subaru service manual (lemon mirror; section suspension, exact page not given)",
+     "url": "https://lemon-manuals.org.ua/Subaru/2020/WRX%20Premium%2C%20Standard%20Trans/Repair%20and%20Diagnosis/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "From figure FS-10294 (same for EPS and hydraulic PS). Fasteners starred in the figure are treated as replace-on-removal (inferred)."
+    },
+    {
+     "text": "Tighten bushing joints at curb height."
+    },
+    {
+     "text": "Only front toe, rear toe and front camber are adjustable; aim inside the inspection value."
+    },
+    {
+     "text": "Alignment (WRX 17 in / WRX 18 in / STI): front arch height 375 / 370 / 370 mm (+12 / -24); front camber -0°45' (±0°30'); caster 6°30' / 6°33' / 6°33'; front toe 0 ± 3 mm; steering angle in/out 37.5/32.9°, 36.4/32.0°, 36.3/32.0°; rear arch 367 / 361 / 362 mm; rear camber -1°30' / -1°40' / -1°40' (±0°45'); rear toe IN 3 ± 3 mm; thrust 0°00' ± 30'."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Spec"
+    ],
+    "rows": [
+     [
+      "Front crossmember to body flange bolts (T5)",
+      "95 N·m (70.1 lb-ft)"
+     ],
+     [
+      "Front support brace bolt (T6)",
+      "100 N·m (73.8 lb-ft)"
+     ],
+     [
+      "Front arm rear plate vertical bolt (T7)",
+      "140 N·m (103.3 lb-ft)"
+     ],
+     [
+      "Front arm rear plate to body (T8)",
+      "150 N·m (110.6 lb-ft)"
+     ],
+     [
+      "Arm front-bushing nut, crossmember-support bolts, stabilizer link/clamp nuts (T4)",
+      "60 N·m (44.3 lb-ft)"
+     ],
+     [
+      "Ball joint to axle housing (T3)",
+      "50 N·m (36.9 lb-ft)"
+     ],
+     [
+      "Ball-joint castle nut (T2)",
+      "39 N·m (28.8 lb-ft)"
+     ],
+     [
+      "Stabilizer bushing clamp (T1)",
+      "25 N·m (18.4 lb-ft)"
+     ],
+     [
+      "Strut to knuckle adjusting bolt (T9)",
+      "155 N·m (114.3 lb-ft)"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -1960,7 +2406,13 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
   "Root cause of FA20DIT rod-bearing failures: no Subaru bulletin; community theories only.",
   "Prices for COBB downpipe and standalone flex kit, and Killer B/EJ pickup prices (STI).",
   "TPMS not covered in the source guide.",
-  "RallySport Direct prices came from its catalog feed; links go to the store home."
+  "RallySport Direct prices came from its catalog feed; links go to the store home.",
+  "Gap-fill: maintenance booklets for years other than 2020 (2020 schedule assumed for all years).",
+  "Gap-fill: payload / GVWR (door label only); 2015-17 tire pressures and fuses from a Subaru document for those years.",
+  "Gap-fill: exact WRX colour availability by year (2016-20 paint bulletins not opened).",
+  "Gap-fill: EJ257 (STI) alternator, starter, water pump and fuel pump torques; rear lateral-link and rear 1-pot support-bolt torques (figure only); air-mix actuator screw torque.",
+  "Gap-fill: FA20DIT rod-bearing root cause (no Subaru document).",
+  "Gap-fill: live 2018 and 2021 owner's manual links (cdn.dealereprocess.org returns 403 as of 2026-10-20)."
  ],
  "sellers": [],
  "partCategories": [
@@ -3834,5 +4286,880 @@ window.FORGE_PLATFORMS["wrx-2015-2021"] = {
    }
   ],
   "count": 124
- }
+ },
+ "reference": {
+  "caveat": "From Subaru's 2020 Warranty and Maintenance Booklet, the 2016 owner's manual (mirror text), the 2018 and 2021 owner's manuals (links now dead; read from copies saved earlier), the 2020 service manual on a mirror, Subaru bulletins on NHTSA and the NHTSA VIN decoder. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Normal and severe schedule",
+    "intro": "From the 2020 Warranty and Maintenance Booklet only. Other years' booklets were not opened; the same schedule is assumed for 2015-2021 (inferred, unconfirmed).",
+    "blocks": [
+     {
+      "title": "Schedule (normal conditions)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Subaru 2020 MY Warranty and Maintenance Booklet",
+        "url": "https://techinfo.subaru.com/stis/doc/warrantyBooklet/2020_war_and_maint__020720.pdf"
+       }
+      ],
+      "years": "2020 booklet pp. 28-29 (table read from the page image); assumed for all 2015-2021 years",
+      "table": {
+       "columns": [
+        "Item",
+        "Interval (miles x1,000 / months, whichever first)"
+       ],
+       "rows": [
+        [
+         "Engine oil + filter",
+         "Every 6k / 6 mo; severe use 3k / 3 mo"
+        ],
+        [
+         "Spark plugs",
+         "60k and 120k (60 mo)"
+        ],
+        [
+         "Drive belts",
+         "Inspect at 30 / 60 / 90 / 120"
+        ],
+        [
+         "Timing belt (STI EJ257)",
+         "Replace at 90k / 90 mo"
+        ],
+        [
+         "Fuel filter",
+         "Replace at 72k (not required for emissions warranty)"
+        ],
+        [
+         "Air cleaner",
+         "Replace at 30 / 60 / 90 / 120"
+        ],
+        [
+         "Coolant",
+         "First at 11 yr / 137,500 mi, then every 6 yr / 75,000 mi; add Subaru Cooling System Conditioner"
+        ],
+        [
+         "Clutch operation",
+         "Inspect every 12k"
+        ],
+        [
+         "Manual gear oil",
+         "Inspect at 30 / 60 / 90 / 120; severe: replace every 15k / 15 mo"
+        ],
+        [
+         "CVT fluid",
+         "Inspect at 36 / 66 / 102 / 126 (read from image); severe: replace every 24,855 mi (40,000 km)"
+        ],
+        [
+         "Front / rear diff oil",
+         "Inspect at 30 / 60 / 90 / 120; severe: replace every 15k"
+        ],
+        [
+         "Brake / clutch fluid",
+         "Replace at 30 / 60 / 90 / 120; humid or mountain areas every 15k / 15 mo"
+        ],
+        [
+         "Brakes, lines, boots, steering, suspension",
+         "Inspect every 12k (6k severe)"
+        ],
+        [
+         "Wheel bearings",
+         "Inspect at 60 / 120"
+        ],
+        [
+         "Tire rotation",
+         "Every 6k"
+        ],
+        [
+         "Cabin filter",
+         "Replace every 12k"
+        ]
+       ],
+       "note": "Severe: short trips, rough or muddy roads, dust, extreme cold, road salt, coastal areas, repeated towing. The 3k severe oil interval broadly agrees with forum advice for tuned cars (3-5k)."
+      }
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 WRX/STI owner's manual (text copy on carmanualsonline mirror)",
+        "url": "https://www.carmanualsonline.info/subaru-wrx-2016-owners-manual/"
+       },
+       {
+        "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+       },
+       {
+        "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+       }
+      ],
+      "years": "2015-17 from the 2016 manual (mirror text, p. 12-17); 2018-21 from the 2018 and 2021 manuals",
+      "table": {
+       "columns": [
+        "Position",
+        "2015-17",
+        "2018-21"
+       ],
+       "rows": [
+        [
+         "High beam",
+         "HB3 60 W (all cars)",
+         "HB3 60 W (non-LED cars); LED low and high on LED cars (dealer item)"
+        ],
+        [
+         "Low beam",
+         "H11 55 W halogen; LED on LED-headlight cars",
+         "H11 55 W / LED"
+        ],
+        [
+         "Parking",
+         "W5W 5 W (non-LED)",
+         "W5W 5 W (non-LED)"
+        ],
+        [
+         "Front fog",
+         "H16 19 W; H11 55 W with steering-responsive fogs",
+         "H16 19 W (non-LED fogs)"
+        ],
+        [
+         "Front / rear turn",
+         "WY21W 21 W",
+         "same"
+        ],
+        [
+         "Side markers",
+         "W5W 5 W",
+         "W5W 5 W"
+        ],
+        [
+         "Backup",
+         "W16W 16 W",
+         "W16W 16 W"
+        ],
+        [
+         "License / trunk",
+         "W5W 5 W",
+         "W5W 5 W"
+        ],
+        [
+         "Map / dome",
+         "8 W (no number)",
+         "8 W"
+        ],
+        [
+         "Stop/tail, high-mount, mirror turns",
+         "LED",
+         "LED"
+        ]
+       ],
+       "disputedRows": [
+        3
+       ],
+       "note": "The 2016 manual index lists \"HID headlights\" but the bulb chart shows only halogen and LED; D3S is unconfirmed."
+      }
+     },
+     {
+      "title": "Fuses, passenger compartment",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+       },
+       {
+        "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+       }
+      ],
+      "years": "2018 and 2021 (p. 12-10 to 12-13, identical); 2015-17 not opened (inferred similar). Driver kick panel, behind the cover",
+      "table": {
+       "columns": [
+        "#",
+        "A",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "1",
+         "20",
+         "R.FOG TRAIL"
+        ],
+        [
+         "2",
+         "7.5",
+         "METER IG"
+        ],
+        [
+         "3",
+         "15",
+         "DOOR LOCK"
+        ],
+        [
+         "4",
+         "10",
+         "IG2"
+        ],
+        [
+         "6",
+         "7.5",
+         "MIR"
+        ],
+        [
+         "7",
+         "15",
+         "UNIT+B"
+        ],
+        [
+         "8",
+         "7.5",
+         "STOP"
+        ],
+        [
+         "9",
+         "7.5",
+         "WIPER DEICE"
+        ],
+        [
+         "10",
+         "7.5",
+         "D-OP+B"
+        ],
+        [
+         "11",
+         "7.5",
+         "TURN IG"
+        ],
+        [
+         "12",
+         "15",
+         "UNIT IG1"
+        ],
+        [
+         "13",
+         "20",
+         "12 V PLUG"
+        ],
+        [
+         "14",
+         "10",
+         "TAIL CLEARANCE"
+        ],
+        [
+         "15",
+         "10",
+         "BKUP+B"
+        ],
+        [
+         "16",
+         "7.5",
+         "ILM"
+        ],
+        [
+         "17",
+         "15",
+         "SEAT HTR"
+        ],
+        [
+         "18",
+         "10",
+         "LAMP IG"
+        ],
+        [
+         "20",
+         "10",
+         "CIGAR"
+        ],
+        [
+         "21",
+         "10",
+         "START"
+        ],
+        [
+         "22",
+         "7.5",
+         "A/C IG"
+        ],
+        [
+         "24",
+         "10",
+         "AUDIO NAVI"
+        ],
+        [
+         "25",
+         "15",
+         "SRS AIR BAG"
+        ],
+        [
+         "26",
+         "7.5",
+         "IG1"
+        ],
+        [
+         "27 / 28",
+         "15",
+         "BLOWER"
+        ],
+        [
+         "29",
+         "15",
+         "F.FOG"
+        ],
+        [
+         "31",
+         "7.5",
+         "ACC"
+        ],
+        [
+         "32",
+         "7.5",
+         "STR LOCK"
+        ],
+        [
+         "33",
+         "7.5",
+         "UNIT IG2"
+        ]
+       ],
+       "note": "Empty: 5, 19, 23, 30."
+      }
+     },
+     {
+      "title": "Fuses, engine compartment",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+       },
+       {
+        "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+       }
+      ],
+      "years": "2018 and 2021",
+      "table": {
+       "columns": [
+        "#",
+        "A",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "1",
+         "30",
+         "ABS SOL"
+        ],
+        [
+         "2 / 3",
+         "25 / 25",
+         "MAIN FAN / SUB FAN"
+        ],
+        [
+         "5",
+         "25",
+         "AUDIO AMP"
+        ],
+        [
+         "6 / 7",
+         "30 / 15",
+         "H/L LO / H/L HI"
+        ],
+        [
+         "8",
+         "20",
+         "BACK UP"
+        ],
+        [
+         "9",
+         "15",
+         "HORN"
+        ],
+        [
+         "10",
+         "25",
+         "R.DEF"
+        ],
+        [
+         "11",
+         "15",
+         "FUEL PUMP"
+        ],
+        [
+         "12",
+         "STI 10 / WRX 20",
+         "Transmission control unit"
+        ],
+        [
+         "13",
+         "7.5",
+         "EGI+B"
+        ],
+        [
+         "14 / 15",
+         "15 / 15",
+         "HAZARD / LIGHTING"
+        ],
+        [
+         "16",
+         "7.5",
+         "ALT-S"
+        ],
+        [
+         "18",
+         "20",
+         "INJ"
+        ],
+        [
+         "19 / 20",
+         "15 / 15",
+         "H/L LO RH / LH"
+        ],
+        [
+         "21",
+         "10",
+         "AIR CUT (STI only)"
+        ],
+        [
+         "22",
+         "7.5",
+         "Telematics (STI table only)"
+        ]
+       ],
+       "note": "Slots 4 and 17 empty; main fuse ratings not printed. Fuse 12 differs by model: do not swap."
+      }
+     },
+     {
+      "title": "Tire pressure (cold)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+       },
+       {
+        "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+       }
+      ],
+      "years": "2018 and 2021 (p. 12-8); 2015-17 not opened in a Subaru document (the master guide value 33/32 agrees)",
+      "table": {
+       "columns": [
+        "Fitment",
+        "Tire",
+        "Wheel",
+        "F / R"
+       ],
+       "rows": [
+        [
+         "WRX 17 in",
+         "235/45R17 94W",
+         "17x8J",
+         "33 / 32 psi (230 / 220 kPa)"
+        ],
+        [
+         "WRX / STI 18 in",
+         "245/40R18 97W",
+         "18x8.5J",
+         "33 / 32 psi"
+        ],
+        [
+         "STI 19 in (2018+)",
+         "245/35R19 89W",
+         "19x8.5J",
+         "33 / 32 psi"
+        ],
+        [
+         "Temporary spare (US/Canada)",
+         "T145/70D17 or T135/70D18",
+         "not given",
+         "60 psi (420 kPa)"
+        ],
+        [
+         "Spare (Mexico)",
+         "205/50R17 / 205/45R18",
+         "not given",
+         "33 / 38 psi"
+        ]
+       ],
+       "note": "Wheel nuts 89 lb-ft (120 N·m). Setting pressure in a warm garage: add 1 psi per 10°F difference to outside (2021)."
+      }
+     },
+     {
+      "title": "Towing and payload",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2018 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2018-wrx.pdf"
+       },
+       {
+        "label": "2021 WRX/STI owner's manual (source link dead, checked 2026-10-20; read from a copy saved earlier)",
+        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/subaru/2021-wrx.pdf"
+       }
+      ],
+      "years": "2018 and 2021",
+      "text": "\"Your vehicle is neither designed nor intended to be used for trailer towing.\" Towing damage is not covered. GVWR, GAWR and load capacity are only on the door-pillar label (unknown here)."
+     },
+     {
+      "title": "Paint codes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Subaru paint coding bulletin 13-97-14, 2015 MY (NHTSA copy on oemdtc)",
+        "url": "https://subaru.oemdtc.com/90/subaru-paint-codes-2015-subaru/"
+       },
+       {
+        "label": "Subaru paint coding bulletin 13-103-20, 2021 MY (NHTSA copy on oemdtc)",
+        "url": "https://subaru.oemdtc.com/2969/2021-my-paint-coding-information-subaru"
+       }
+      ],
+      "years": "2015 and 2021 bulletins; the tables group Impreza, Impreza Sport, WRX and WRX STI, so a listed code is not proof of WRX availability. Code is on the VIN plate",
+      "table": {
+       "columns": [
+        "Code",
+        "Name",
+        "2015 table",
+        "2021 table",
+        "PPG"
+       ],
+       "rows": [
+        [
+         "K1X",
+         "Crystal White Silica (2015) / Crystal White Pearl (2021)",
+         "yes (new)",
+         "yes",
+         "937760"
+        ],
+        [
+         "K7X",
+         "WR Blue Pearl (new formula 2015)",
+         "yes",
+         "yes",
+         "937764"
+        ],
+        [
+         "D4S",
+         "Crystal Black Silica",
+         "yes",
+         "yes",
+         "924868"
+        ],
+        [
+         "G1U",
+         "Ice Silver Metallic",
+         "yes",
+         "yes",
+         "930642"
+        ],
+        [
+         "61K",
+         "Dark Gray Metallic",
+         "yes",
+         "no",
+         "914602"
+        ],
+        [
+         "H2Q",
+         "Venetian Red Pearl",
+         "yes",
+         "no",
+         "932844"
+        ],
+        [
+         "H3Q",
+         "Deep Sea Blue Pearl",
+         "yes",
+         "no",
+         "932845"
+        ],
+        [
+         "37J",
+         "Satin White Pearl",
+         "yes",
+         "no",
+         "907371"
+        ],
+        [
+         "C7P",
+         "Lightning Red",
+         "yes",
+         "no",
+         "917270"
+        ],
+        [
+         "J8U / H5Q",
+         "Quartz Blue Pearl / Jasmine Green (likely Impreza-only)",
+         "yes",
+         "no",
+         "935050 / 932847"
+        ],
+        [
+         "K3X",
+         "Lapis Blue Pearl",
+         "no",
+         "yes",
+         "937762"
+        ],
+        [
+         "M7Y",
+         "Pure Red",
+         "no",
+         "yes",
+         "941103"
+        ],
+        [
+         "P8Y",
+         "Magnetite Gray Metallic",
+         "no",
+         "yes",
+         "947999"
+        ],
+        [
+         "M2Y",
+         "Dark Blue Pearl",
+         "no",
+         "yes",
+         "941102"
+        ],
+        [
+         "PAF",
+         "Cool-Gray Khaki",
+         "no",
+         "yes",
+         "945185"
+        ],
+        [
+         "TAQ / NAA",
+         "Ocean Blue Pearl / Lithium Red (likely Impreza-only)",
+         "no",
+         "yes",
+         "977199 / 946125"
+        ]
+       ],
+       "disputedRows": [
+        0
+       ],
+       "note": "Per-year WRX availability is Unconfirmed (2016-20 bulletins not opened); a search summary lists E8H Galaxy Blue (2015) and P9Y Heritage Blue (2018), unconfirmed."
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN codes",
+    "short": "VIN digits",
+    "blocks": [
+     {
+      "title": "VIN decoding",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA vPIC VIN decoder API (Subaru-submitted data)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF1VA1A6*F8?format=json"
+       },
+       {
+        "label": "Subaru TSB 11-191-19 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163563-0001.pdf"
+       },
+       {
+        "label": "Subaru TSB 11-199-20R (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188164-0001.pdf"
+       }
+      ],
+      "years": "From NHTSA vPIC decodes of Subaru data; transmission digit confirmed by bulletin VIN breaks",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "JF1 (Subaru, Ota/Gunma, Japan; all VA cars)"
+        ],
+        [
+         "4-6",
+         "VA1 = WRX 2.0 FA20DIT; VA2 = STI 2.5 EJ257. Read 4-6 together (VA1L even decodes as STI with the 2.0 code)"
+        ],
+        [
+         "5",
+         "Trim/option package"
+        ],
+        [
+         "10",
+         "Model year (F = 2015 ... M = 2021)"
+        ],
+        [
+         "11",
+         "9 = 6MT, 8 = CVT"
+        ]
+       ],
+       "note": "Bulletin VIN breaks: TCM fix at G*825251 (2016), clutch change at J*806877 (2018)."
+      }
+     },
+     {
+      "title": "Sample decodes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA vPIC VIN decoder API (Subaru-submitted data)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/JF1VA1A6*F8?format=json"
+       }
+      ],
+      "years": "Partial patterns (vPIC returns error 6, expected); typos are Subaru's",
+      "table": {
+       "columns": [
+        "VIN pattern",
+        "vPIC year / trim",
+        "Engine / trans"
+       ],
+       "rows": [
+        [
+         "JF1VA1A6*F8",
+         "2015 WRX \"(w/o Lip-Spolier)\"",
+         "2.0 DIT / CVT"
+        ],
+        [
+         "JF1VA1B6*F8",
+         "2015 WRX \"+Kelyless Access\"",
+         "2.0 / CVT"
+        ],
+        [
+         "JF1VA1J6*H8",
+         "2017 WRX Limited+MR",
+         "2.0 / CVT"
+        ],
+        [
+         "JF1VA1E6*J8",
+         "2018 WRX mid+L+RE+BSD+M/R",
+         "2.0 / CVT"
+        ],
+        [
+         "JF1VA1C6*M8",
+         "2021 WRX Premium+L+KA+M/R",
+         "2.0 / CVT"
+        ],
+        [
+         "JF1VA2L6*F9",
+         "2015 STI",
+         "2.5 / manual"
+        ],
+        [
+         "JF1VA2E6*J9",
+         "2018 STI (\"WRX mid+L+RE+BSD+M/R\")",
+         "2.5 / manual"
+        ],
+        [
+         "JF1VA2M6*K9",
+         "2019 STI (\"WRX high+...+NAVI(H/K)\")",
+         "2.5 / manual"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes, bulletins, recalls",
+    "intro": "New items only; Common problems already covers WQW-58, 16-98-16, 16-107-17R, 03-82-18R and 03-79-18R. No Subaru bulletin addresses FA20DIT rod bearings.",
+    "blocks": [
+     {
+      "title": "Codes with Subaru bulletins",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Subaru TSB 11-161-16 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10120966-9999.pdf"
+       },
+       {
+        "label": "Subaru TSB 11-191-19 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163563-0001.pdf"
+       },
+       {
+        "label": "Subaru TSB 11-199-20R (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188164-0001.pdf"
+       },
+       {
+        "label": "Subaru campaign WUK-96 (NHTSA)",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169855-0001.pdf"
+       }
+      ],
+      "years": "Years and VIN breaks per row",
+      "table": {
+       "columns": [
+        "Code / symptom",
+        "Bulletin",
+        "Applies to",
+        "Fix per Subaru"
+       ],
+       "rows": [
+        [
+         "P0300 + rough idle after warm restart",
+         "11-161-16 (2016-02-29)",
+         "2015 WRX",
+         "ECM reflash 22765AG235 (MT) / AG245 (CVT), same files as WQW-58. Production fix from F*818365"
+        ],
+        [
+         "P2610 engine-off timer",
+         "11-191-19 (2019-07-30)",
+         "2015-19 WRX",
+         "Electrostatic surge upsets the ECM timer: replace the ECM. Fixed from K9820661 (MT) / K8820856 (CVT)"
+        ],
+        [
+         "(no code) hard start / unstable idle at +10°F or below or high altitude; lean A/F learning",
+         "11-199-20R (2020-02-11, rev. 2021-02-04)",
+         "2015-20 WRX",
+         "ECM reflash (e.g. 22765AR961, 2015 FED 6MT). Fixed from L9830186 (6MT) / L8806372 (CVT). Diagnose any code that returns"
+        ],
+        [
+         "Exhaust leak at the head flange (P2096 link unconfirmed)",
+         "WUK-96 campaign (2019-12-05)",
+         "2016-18 WRX built 2015-05-09 to 2017-10-04",
+         "Re-torque six front-pipe nuts to 45.5 N·m (33.5 lb-ft), twice, in sequence; replace the pipe if a nut turns, is missing or leaks"
+        ]
+       ],
+       "rowSrc": [
+        "https://static.nhtsa.gov/odi/tsbs/2016/MC-10120966-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10163563-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2021/MC-10188164-0001.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169855-0001.pdf"
+       ]
+      }
+     },
+     {
+      "title": "Recall 15V-366 (EyeSight)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA recalls API, 2016 WRX",
+        "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=subaru&model=wrx&modelYear=2016"
+       }
+      ],
+      "years": "2016 WRX with EyeSight built 2015-03-23",
+      "text": "If the brake-light switch fails, pre-collision braking may not work. Remedy: reprogram the driver-assist system. Re-pulled 2026-10-20: the WRX API returns 15V366, 16V162, 17V625, 21V587 and 22V522; \"WRX STI\" returns none (STI is filed under WRX)."
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "Front lower-arm and crossmember torque (Guides).",
+  "Factory alignment (Guides).",
+  "Maintenance schedule including STI timing belt at 90k / 90 mo (Maintenance).",
+  "Recall 15V-366 added (Trouble codes and Problems).",
+  "VIN transmission digit verified by bulletin VIN breaks (VIN codes)."
+ ]
 };

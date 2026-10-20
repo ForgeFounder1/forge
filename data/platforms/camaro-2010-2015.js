@@ -3179,8 +3179,8 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
      "url": "https://diagnostdata.com/chevrolet/camaro/v-2009-2013/remont/cooling-system/"
     },
     {
-     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
-     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables (exact page not given)",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/"
     }
    ],
    "steps": [
@@ -3353,8 +3353,8 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
    "conf": "verified-secondary",
    "src": [
     {
-     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
-     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+     "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables (exact page not given)",
+     "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/"
     },
     {
      "label": "2014 Camaro Z/28 GM SI suspension (lemon-manuals mirror)",
@@ -5512,8 +5512,8 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
         "url": "https://lemon-manuals.la/Chevrolet/2015/Camaro%20SS%2C%202D%20Coupe%2C%206.2L%20Eng%20VIN%20J/Repair%20and%20Diagnosis/Quick%20Lookups/Tire%20Fitment/"
        },
        {
-        "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables",
-        "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/Suspension/"
+        "label": "2014 Camaro GM SI (lemon-manuals mirror): suspension and brake tables (exact page not given)",
+        "url": "https://lemon-manuals.la/Chevrolet/2014/Camaro%20ZL1%2C%202D%20Convertible%2C%20Automatic%20Trans/Repair%20and%20Diagnosis/"
        }
       ],
       "years": "From the GM SI as cited in the master guide",
