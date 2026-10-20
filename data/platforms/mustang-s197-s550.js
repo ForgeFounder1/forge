@@ -27,19 +27,19 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2006 Mustang Owner's Guide",
+     "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
     },
     {
-     "label": "2014 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+     "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
     },
     {
-     "label": "2016 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+     "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
     },
     {
-     "label": "2022 Mustang Owner's Guide",
+     "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
     },
     {
@@ -55,7 +55,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2006 Mustang Owner's Guide",
+     "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
     },
     {
@@ -74,16 +74,16 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "disputed": true,
    "src": [
     {
-     "label": "2006 Mustang Owner's Guide",
+     "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
     },
     {
-     "label": "2011 Mustang Owner's Guide",
+     "label": "2011 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2011-mustang.pdf"
     },
     {
-     "label": "2014 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+     "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
     },
     {
      "label": "Ford workshop manual copy 2009–14 (diagnostdata)",
@@ -235,6 +235,154 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "url": "https://static.nhtsa.gov/odi/tsbs/2019/MC-10169811-0001.pdf"
     }
    ]
+  },
+  {
+   "topic": "TPMS start year",
+   "text": "ThreePiece (master guide) says TPMS was standard from 2008, but the 2007 Owner's Guide (p. 144) already has a full TPMS chapter stating the vehicle is equipped. 2005-06 guides not checked.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "2007 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2007_ford_mustang.pdf"
+    },
+    {
+     "label": "ThreePiece (master guide TPMS claim)",
+     "url": "https://www.threepiece.us/"
+    }
+   ]
+  },
+  {
+   "topic": "NHTSA VIN decoder GT500 errors",
+   "text": "The NHTSA decoder returns 5.4L / 650 hp for the 2013 GT500 code Z; the 2013-14 GT500 is a 5.8L. It also lists 460 hp for the 2020 GT500 code J; published output is 760 hp. Treat both as NHTSA data-entry errors.",
+   "conf": "verified",
+   "disputed": true,
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (partial VINs)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1ZVBP8JZ5D?format=json"
+    },
+    {
+     "label": "Ford workshop manual 100-01 Identification Codes, 2020 Mustang (forum-hosted PDF)",
+     "url": "https://www.mustang6g.com/forums/attachments/vin-codes-pdf.474760/"
+    }
+   ]
+  },
+  {
+   "topic": "Engine code H: S197 vs S550",
+   "text": "VIN 8th digit H is the 4.6L V8 on the 2005-10 S197 but the 2.3L EcoBoost on the 2015+ S550. Same code, different engines: read it with the first three characters (1ZV vs 1FA) or the year.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "NHTSA vPIC VIN decoder API (partial VINs)",
+     "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1ZVBP8JZ5D?format=json"
+    },
+    {
+     "label": "Ford 2016 Part 565 VIN filing (NHTSA vPIC)",
+     "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/c7e812c4-d5eb-4c22-b6ec-5f3231b7febb"
+    },
+    {
+     "label": "Ford workshop manual 100-01 Identification Codes, 2020 Mustang (forum-hosted PDF)",
+     "url": "https://www.mustang6g.com/forums/attachments/vin-codes-pdf.474760/"
+    }
+   ]
+  },
+  {
+   "topic": "Tow break-in distance",
+   "text": "No towing for the first 500 mi (2010 guide) vs 1,000 mi (2016 guide).",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+    },
+    {
+     "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "S550 20 in tire pressure",
+   "text": "32 vs 35 psi for 265/35R20 between aggregators. Use the placard.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "faultpedia Mustang tire pressure (aggregator)",
+     "url": "https://faultpedia.com/vehicle/ford/mustang/tire-pressure/"
+    }
+   ]
+  },
+  {
+   "topic": "Paint code P1 and reused codes",
+   "text": "Steeda lists P1 for both Legend Lime and Windveil Blue with overlapping years; one is likely wrong. Grabber Blue is CI and later AE; Dark Highland Green is PX and later B5.",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "Steeda 2005-2014 Mustang colors",
+     "url": "https://www.steeda.com/2005-2014-mustang-colors"
+    },
+    {
+     "label": "Steeda S550 Mustang colors",
+     "url": "https://www.steeda.com/s550-mustang-colors"
+    }
+   ]
+  },
+  {
+   "topic": "A/C torque unit typos",
+   "text": "The workshop copy prints \"25 Nm (18 lb-in)\" and \"15 Nm (133 lb-ft)\". Use the N·m values.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): automatic HVAC",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/"
+    }
+   ]
+  },
+  {
+   "topic": "3.7L starter page attribution",
+   "text": "The 3.7L starter values are inferred from page order (unlabeled scheme).",
+   "conf": "unconfirmed",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): starter",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/starter/"
+    }
+   ]
+  },
+  {
+   "topic": "Halogen headlamps not listed",
+   "text": "The 2014 and 2016 guides list only HID headlamps, but halogen cars exist; the halogen bulb type is not stated.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+    },
+    {
+     "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+    }
+   ]
+  },
+  {
+   "topic": "Dead owner's guide links",
+   "text": "Every cdn.dealereprocess.org owner's guide link returns 403 (checked 2026-10-20). 2007, 2010, 2014 and 2016 now cite carmanual.org copies of the Ford PDFs; 2006, 2011, 2018, 2020 and 2022 are labelled source link dead. Brochure links on the same host still opened.",
+   "conf": "verified",
+   "src": [
+    {
+     "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+    },
+    {
+     "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+    },
+    {
+     "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+    }
+   ]
   }
  ],
  "overview": {
@@ -254,7 +402,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     ],
     "src": [
      {
-      "label": "2006 Mustang Owner's Guide",
+      "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
      },
      {
@@ -275,8 +423,8 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2014 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+      "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
      }
     ]
    },
@@ -286,27 +434,27 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2006 Mustang Owner's Guide",
+      "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
      },
      {
-      "label": "2011 Mustang Owner's Guide",
+      "label": "2011 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2011-mustang.pdf"
      },
      {
-      "label": "2014 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+      "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
      },
      {
-      "label": "2016 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+      "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
      },
      {
-      "label": "2018 Mustang Owner's Guide",
+      "label": "2018 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2018-mustang.pdf"
      },
      {
-      "label": "2020 Mustang Owner's Guide",
+      "label": "2020 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2020-mustang.pdf"
      }
     ]
@@ -540,12 +688,12 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2011 Mustang Owner's Guide",
+      "label": "2011 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2011-mustang.pdf"
      },
      {
-      "label": "2014 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+      "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
      }
     ]
    },
@@ -555,15 +703,15 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     "conf": "verified",
     "src": [
      {
-      "label": "2016 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+      "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
      },
      {
-      "label": "2018 Mustang Owner's Guide",
+      "label": "2018 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2018-mustang.pdf"
      },
      {
-      "label": "2022 Mustang Owner's Guide",
+      "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
      }
     ]
@@ -728,20 +876,20 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "conf": "verified",
      "src": [
       {
-       "label": "2006 Mustang Owner's Guide",
+       "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
       },
       {
-       "label": "2010 Mustang Owner's Guide",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2010-mustang.pdf"
+       "label": "2010 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
       },
       {
-       "label": "2011 Mustang Owner's Guide",
+       "label": "2011 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2011-mustang.pdf"
       },
       {
-       "label": "2014 Mustang Owner's Guide",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+       "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
       }
      ],
      "disputedRows": [
@@ -827,19 +975,19 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "conf": "verified",
      "src": [
       {
-       "label": "2016 Mustang Owner's Guide",
-       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+       "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+       "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
       },
       {
-       "label": "2018 Mustang Owner's Guide",
+       "label": "2018 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2018-mustang.pdf"
       },
       {
-       "label": "2020 Mustang Owner's Guide",
+       "label": "2020 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2020-mustang.pdf"
       },
       {
-       "label": "2022 Mustang Owner's Guide",
+       "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
        "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
       }
      ]
@@ -860,7 +1008,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    },
    {
     "year": "2005–2008",
-    "text": "4.6L 3V engines built before 11/30/07 are covered by the broken-spark-plug TSB 08-7-6. TPMS standard from 2008 per ThreePiece (not confirmed in a factory document).",
+    "text": "4.6L 3V engines built before 11/30/07 are covered by the broken-spark-plug TSB 08-7-6. TPMS standard from 2008 per ThreePiece, but the 2007 Owner's Guide already has a full TPMS chapter (disputed; see Conflicts).",
     "conf": [
      "verified",
      "unconfirmed"
@@ -873,6 +1021,10 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      {
       "label": "ThreePiece.us Mustang fitment blog (site home; guide gave no page URL)",
       "url": "https://threepiece.us/"
+     },
+     {
+      "label": "2007 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2007_ford_mustang.pdf"
      }
     ]
    },
@@ -919,8 +1071,8 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/ford/2015-mustang.pdf"
      },
      {
-      "label": "2016 Mustang Owner's Guide",
-      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+      "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+      "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
      }
     ]
    },
@@ -945,7 +1097,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/ford/2018-mustang.pdf"
      },
      {
-      "label": "2018 Mustang Owner's Guide",
+      "label": "2018 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2018-mustang.pdf"
      }
     ]
@@ -964,7 +1116,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
       "url": "https://cdn.dealereprocess.org/cdn/brochures/ford/2020-mustang.pdf"
      },
      {
-      "label": "2022 Mustang Owner's Guide",
+      "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
       "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
      }
     ]
@@ -1064,7 +1216,7 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
     ],
     [
      "TPMS",
-     "Standard from 2008 per ThreePiece (not factory-confirmed). Valve-stem-to-sensor screw 1.5 N·m (13 lb-in) (DD0914)",
+     "Disputed: ThreePiece says standard from 2008, but the 2007 Owner's Guide (p. 144) already describes TPMS; 2005-06 not checked. Valve-stem-to-sensor screw 1.5 N·m (13 lb-in) (DD0914)",
      "Frequency not confirmed from a factory source (315 MHz common for Ford of this era: Unconfirmed)"
     ]
    ],
@@ -1078,19 +1230,19 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "url": "https://wheeloffset.net/"
     },
     {
-     "label": "2006 Mustang Owner's Guide",
+     "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
     },
     {
-     "label": "2014 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+     "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
     },
     {
-     "label": "2016 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+     "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
     },
     {
-     "label": "2022 Mustang Owner's Guide",
+     "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
     },
     {
@@ -2198,19 +2350,19 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    "conf": "verified",
    "src": [
     {
-     "label": "2006 Mustang Owner's Guide",
+     "label": "2006 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2006-mustang.pdf"
     },
     {
-     "label": "2014 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2014-mustang.pdf"
+     "label": "2014 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
     },
     {
-     "label": "2016 Mustang Owner's Guide",
-     "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2016-mustang.pdf"
+     "label": "2016 Mustang Owner's Guide (Ford PDF, carmanual.org copy)",
+     "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
     },
     {
-     "label": "2022 Mustang Owner's Guide",
+     "label": "2022 Mustang Owner's Guide (source link dead, checked 2026-10-20)",
      "url": "https://cdn.dealereprocess.org/cdn/servicemanuals/ford/2022-mustang.pdf"
     },
     {
@@ -2944,6 +3096,317 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
      "date_checked": "2026-10-11"
     }
    ]
+  },
+  {
+   "id": "gf-brakes",
+   "type": "diy",
+   "title": "Brake calipers and fittings",
+   "summary": "Front anchor 115 N·m matches the existing brake guide. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): brakes",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/mechanical-hydraulic/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Use new guide-pin and anchor-plate bolts and new copper washers on the flow bolt."
+    },
+    {
+     "text": "Rear guide pins in order: RH top then bottom; LH bottom then top."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Front single-piston guide-pin bolts (new)",
+      "34 N·m (25 lb-ft)"
+     ],
+     [
+      "Front anchor-plate bolts (new)",
+      "115 N·m (85 lb-ft)"
+     ],
+     [
+      "Front 4-piston (Brembo) caliper-to-knuckle bolts (new)",
+      "115 N·m (85 lb-ft)"
+     ],
+     [
+      "Flow (banjo) bolt",
+      "55 N·m (41 lb-ft)"
+     ],
+     [
+      "Front splash shield / tube fitting / hose bracket",
+      "20 / 17 / 20 N·m"
+     ],
+     [
+      "Rear guide pins",
+      "33 N·m (24 lb-ft)"
+     ],
+     [
+      "Rear anchor-plate bolts (new)",
+      "103 N·m (76 lb-ft)"
+     ],
+     [
+      "Rear anti-moan bracket / support bracket / hose bracket",
+      "35 / 68 / 14 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-starter",
+   "type": "diy",
+   "title": "Starter",
+   "summary": "Factory torques. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): starter",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/starter/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "The 3.7L values come from an unlabeled scheme ahead of the 5.0/5.4 schemes, so the engine assignment is inferred (unconfirmed). Numbers are as printed.",
+     "conf": "unconfirmed"
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "3.7L stud bolts (2), upper then lower",
+      "48 N·m (35 lb-ft)"
+     ],
+     [
+      "5.0L / 5.4L bolts (3), upper then lower 2",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "Solenoid B+ nut",
+      "12 N·m (106 lb-in)"
+     ],
+     [
+      "S-terminal nut",
+      "5 N·m (44 lb-in)"
+     ],
+     [
+      "Transmission cooler bracket nut",
+      "12 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-generator",
+   "type": "diy",
+   "title": "Generator (alternator)",
+   "summary": "3.7, 5.0 and 5.4 GT500. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): charging",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/charging-system/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "5.4L GT500: the sway bar must be lowered."
+    },
+    {
+     "text": "3.7L manual: overrunning clutch pulley uses a 17 mm hex and a 55 lb-ft torque stick on an impact for 3-4 s; fit a new cap."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Mounting bolts and stud nuts (all)",
+      "48 N·m (35 lb-ft)"
+     ],
+     [
+      "B+ nut",
+      "17 N·m (150 lb-in)"
+     ],
+     [
+      "5.0L upper stud into block",
+      "8 N·m"
+     ],
+     [
+      "5.4L bracket nuts (new)",
+      "70 N·m (52 lb-ft)"
+     ],
+     [
+      "5.4L power steering bracket nut",
+      "25 N·m"
+     ],
+     [
+      "Battery terminals",
+      "7 N·m (62 lb-in)"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-water-pump",
+   "type": "diy",
+   "title": "Water pump and thermostat",
+   "summary": "Torque-angle bolts. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): cooling",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/cooling-system-mechanical/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "3.7L: 7 bolts, new gasket and O-ring, tighten in sequence."
+    },
+    {
+     "text": "5.0L (and Boss 302): 4 bolts; pulley bolts criss-cross. New O-ring on the heater outlet tube with a new pump. Cover the A/C belt with plastic."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "3.7L pump bolts",
+      "10 N·m (89 lb-in), then +45°"
+     ],
+     [
+      "3.7L pulley bolts",
+      "24 N·m (18 lb-ft)"
+     ],
+     [
+      "5.0L pump bolts",
+      "20 N·m (177 lb-in), then +60°"
+     ],
+     [
+      "5.0L pulley bolts",
+      "25 N·m (18 lb-ft)"
+     ],
+     [
+      "5.0L heater outlet tube bolt",
+      "10 N·m"
+     ],
+     [
+      "5.4L GT500 intercooler pump nuts",
+      "25 N·m"
+     ],
+     [
+      "3.7L thermostat housing bolts (4)",
+      "8 N·m, then +45°, in sequence"
+     ],
+     [
+      "5.0L thermostat housing nuts",
+      "25 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-fuel-pump",
+   "type": "diy",
+   "title": "Fuel pump module",
+   "summary": "Access from under the rear seat cushion. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): fuel system",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/fuel-system/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Relieve fuel pressure; disconnect the battery. Siphon about 1/8 tank (about 2 gal from full) through the capless filler adapter."
+    },
+    {
+     "text": "Lock ring: Fuel Tank Sender Unit Socket, tighten until it meets the stop tabs (no torque given). New O-ring, oiled with clean engine oil."
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "Tank strap bolts (if lowered)",
+      "52 N·m (38 lb-ft)"
+     ],
+     [
+      "Filler-pipe clamp / filler bracket",
+      "6 / 25 N·m"
+     ],
+     [
+      "Lateral stiffener nut / new bolts",
+      "115 / 62 N·m"
+     ],
+     [
+      "Fuel filter bracket bolt",
+      "5 N·m"
+     ]
+    ]
+   },
+   "parts": []
+  },
+  {
+   "id": "gf-hvac-actuators",
+   "type": "diy",
+   "title": "HVAC mode actuators and A/C compressor",
+   "summary": "Screws only; no blend actuator procedure found. Applies to: 2010-2014 S197, Ford workshop manual copy (transcription errors possible). S550 unknown.",
+   "conf": "verified-secondary",
+   "src": [
+    {
+     "label": "Ford workshop manual copy 2009-14 (diagnostdata): automatic HVAC",
+     "url": "https://diagnostdata.com/ford/mustang/v-facelift-2009-2014/remont/"
+    }
+   ],
+   "steps": [
+    {
+     "text": "Air-inlet (3 screws), floor and panel/defrost actuators: no torque printed."
+    },
+    {
+     "text": "The copy prints \"25 Nm (18 lb-in)\" and \"15 Nm (133 lb-ft)\": unit typos. Use the N·m values.",
+     "disputed": true
+    }
+   ],
+   "torque": {
+    "columns": [
+     "Fastener",
+     "Torque"
+    ],
+    "rows": [
+     [
+      "A/C compressor stud-bolts",
+      "25 N·m"
+     ],
+     [
+      "A/C clutch hub bolt",
+      "20 N·m"
+     ]
+    ]
+   },
+   "parts": []
   }
  ],
  "tipsTitle": "Vehicle health tips",
@@ -3137,7 +3600,12 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
   "GT350/GT500 wheel specs, the GT500 hp figure from a brochure, and the minimum wheel size (snippet only).",
   "Unopened TSBs: 06-19-8, 06-9-11, 08-26-7, 11-3-18, and SSM 52334 (\"BBQ tick\").",
   "Prices not verified: COBB Accessport, Gen 1 Coyote control pack, TR-6060 swap, LMR water leak kit, Apex and SVE wheels, staggered tires (Pilot Sport 4S 275/305), headers, gear kits, Brembo or GT350 brake swap kits.",
-  "Several vendor prices were verified on product pages whose full URLs the guide did not record; those links go to the store home."
+  "Several vendor prices were verified on product pages whose full URLs the guide did not record; those links go to the store home.",
+  "Gap-fill: 2005-09 maintenance schedule; GT500/GT350 supplements (oil interval, towing, tires); 2017-23 owner's guide bulbs, fuses and towing.",
+  "Gap-fill: halogen headlamp bulb for 2013+; per-size factory tire pressures; TPMS frequency.",
+  "Gap-fill: S197 restraint codes; full 2005-09 body codes; axle option codes; a Ford paint document.",
+  "Gap-fill: all S550 DIY torque; S197 2005-09 starter, alternator and water pump; temperature-blend actuator; TSB 11-3-18 and SSM 52334.",
+  "Gap-fill: owner's guides for 2006, 2011, 2018, 2020 and 2022 (cdn.dealereprocess.org returns 403 as of 2026-10-20; citations labelled source link dead)."
  ],
  "sellers": [],
  "partCategories": [
@@ -4168,5 +4636,1388 @@ window.FORGE_PLATFORMS["mustang-s197-s550"] = {
    }
   ],
   "count": 1519
- }
+ },
+ "reference": {
+  "caveat": "From the 2010, 2014 and 2016 owner's guides (carmanual.org copies of Ford PDFs), Ford's 2016 VIN filing and 2020 workshop page, the NHTSA VIN decoder, a 2009-14 workshop manual copy, Ford bulletins and recalls. Paint codes and placard pressures are secondary or owner sources. Values change by year; check your own manual and labels.",
+  "sections": [
+   {
+    "id": "maintenance",
+    "title": "Maintenance",
+    "short": "Oil life and service intervals",
+    "intro": "From the 2010, 2014 and 2016 owner's guides. The 2005-09 schedule and the GT500/GT350 supplements were not found.",
+    "blocks": [
+     {
+      "title": "Oil change interval",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       },
+       {
+        "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2010, 2014 and 2016 only",
+      "table": {
+       "columns": [
+        "",
+        "S197 2010",
+        "S197 2014 (3.7/5.0)",
+        "S550 2016"
+       ],
+       "rows": [
+        [
+         "System",
+         "Oil-life display; 100% = 7,500 mi or 6 months",
+         "Intelligent Oil-Life Monitor",
+         "Intelligent Oil-Life Monitor"
+        ],
+        [
+         "Normal",
+         "not listed",
+         "7,500-10,000 mi",
+         "7,000-10,000 mi"
+        ],
+        [
+         "Severe",
+         "not listed",
+         "5,000-7,499 mi",
+         "5,000-7,000 mi"
+        ],
+        [
+         "Extreme",
+         "not listed",
+         "3,000-4,999 mi",
+         "3,000-5,000 mi"
+        ],
+        [
+         "Hard cap",
+         "not listed",
+         "1 year / 10,000 mi",
+         "1 year / 10,000 mi"
+        ]
+       ],
+       "note": "The GT500 has no oil-life monitor; its supplement was not opened."
+      }
+     },
+     {
+      "title": "Every oil change and other items",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2014 (OM p.444-445) and 2016 (OM p.348-351), which agree",
+      "items": [
+       "Every oil change: rotate tires and multi-point inspection (automatic fluid, brakes, cooling system, exhaust, half-shaft boots, rear axle and U-joints, steering and suspension, wheels).",
+       "Cabin air filter 20,000 mi; engine air filter 30,000 mi; spark plugs 100,000 mi (inspect drive belts then every other oil change).",
+       "Coolant: first at 6 yr / 100,000 mi, then every 3 yr / 50,000 mi. 150,000 mi: automatic fluid and filter, manual transmission fluid, drive belts if not already replaced.",
+       "Items may be done within 3,000 mi of an oil change but never past the stated distance.",
+       "Towing or car-top carrier: manual trans fluid and plugs every 60,000 mi; inspect the axle often. Extended idling: air filter inspection every 15,000 mi, plugs every 60,000 mi.",
+       "Dusty roads (2016): oil every 5,000 mi or 6 months; rotate and inspect wheels every 5,000; inspect air filter every 15,000; manual trans fluid every 50,000. Change axle fluid any time the axle is submerged."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "quickref",
+    "title": "Quick reference",
+    "short": "Bulbs, fuses, tires, towing, paint",
+    "blocks": [
+     {
+      "title": "Bulb sizes",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       },
+       {
+        "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2010 (OM p.65), 2014, 2016 (OM p.228); 2017-23 not checked",
+      "table": {
+       "columns": [
+        "Function",
+        "2010 S197",
+        "2014 S197",
+        "2016 S550"
+       ],
+       "rows": [
+        [
+         "Headlamp",
+         "H13 halogen; D3S HID (dealer)",
+         "D3S HID only listed",
+         "D3S HID only listed (dealer)"
+        ],
+        [
+         "Front park/turn",
+         "3457 or 3457K (halogen cars); 3457AK amber (HID cars)",
+         "7444NA amber",
+         "7444NA amber"
+        ],
+        [
+         "Side marker",
+         "194",
+         "194",
+         "WY5W amber"
+        ],
+        [
+         "Fog",
+         "9145 (GT) or H11 (Pony)",
+         "LED (GT) / H11 (V6)",
+         "LED or H11"
+        ],
+        [
+         "Tail/brake/turn",
+         "LED",
+         "LED",
+         "LED (dealer)"
+        ],
+        [
+         "High-mount stop",
+         "LED, not replaceable",
+         "LED",
+         "LED"
+        ],
+        [
+         "Back-up",
+         "912",
+         "LED",
+         "3156 or 3157"
+        ],
+        [
+         "License",
+         "C5WL",
+         "C5WL",
+         "LED (dealer)"
+        ],
+        [
+         "Dome/map",
+         "not listed",
+         "168",
+         "W5W"
+        ],
+        [
+         "Glove box/cargo",
+         "not listed",
+         "not listed",
+         "W5W"
+        ]
+       ],
+       "note": "The 2014 and 2016 guides list only HID headlamps, but halogen cars exist; the halogen bulb for 2013+ is unknown."
+      }
+     },
+     {
+      "title": "Fuses, 2010 S197 (engine bay box)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       }
+      ],
+      "years": "2010 (OM p.219-221); other years not transcribed, positions can change",
+      "table": {
+       "columns": [
+        "#",
+        "Amps",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "1",
+         "80 A",
+         "Passenger compartment fuse panel"
+        ],
+        [
+         "4",
+         "30 A",
+         "Blower relay"
+        ],
+        [
+         "5",
+         "20 A",
+         "Power point (body)"
+        ],
+        [
+         "6",
+         "40 A",
+         "Rear defroster"
+        ],
+        [
+         "7",
+         "40 A",
+         "Cooling fan relay"
+        ],
+        [
+         "8",
+         "40 A",
+         "ABS pump"
+        ],
+        [
+         "9",
+         "30 A",
+         "Wipers"
+        ],
+        [
+         "10",
+         "30 A",
+         "ABS valve"
+        ],
+        [
+         "13",
+         "15 A",
+         "Fuel pump relay"
+        ],
+        [
+         "14",
+         "15 A",
+         "Fuel pump relay #2 (Shelby)"
+        ],
+        [
+         "15",
+         "10 A",
+         "Intercooler pump relay (Shelby)"
+        ],
+        [
+         "16",
+         "20 A",
+         "Heated seats"
+        ],
+        [
+         "17",
+         "10 A",
+         "Alternator sense"
+        ],
+        [
+         "18",
+         "20 A",
+         "Auxiliary body module"
+        ],
+        [
+         "19",
+         "30 A",
+         "Starter relay"
+        ],
+        [
+         "20",
+         "30 A",
+         "Rear amp (Shaker 1000)"
+        ],
+        [
+         "21",
+         "30 A",
+         "Powertrain relay"
+        ],
+        [
+         "22",
+         "20 A",
+         "Power point (instrument panel)"
+        ],
+        [
+         "23",
+         "10 A",
+         "PCM keep-alive"
+        ],
+        [
+         "25",
+         "10 A",
+         "A/C compressor relay"
+        ],
+        [
+         "26 / 27",
+         "20 A",
+         "HID headlamp relays, left / right"
+        ],
+        [
+         "29 / 34",
+         "30 A",
+         "Window motors, passenger / driver"
+        ],
+        [
+         "31 / 32",
+         "30 A",
+         "Power seats, passenger / driver"
+        ],
+        [
+         "33",
+         "30 A",
+         "Front amp (Shaker 500)"
+        ],
+        [
+         "35",
+         "40 A",
+         "Convertible top"
+        ],
+        [
+         "36",
+         "diode",
+         "Fuel diode"
+        ],
+        [
+         "39",
+         "5 A",
+         "Rear defroster coil"
+        ],
+        [
+         "40",
+         "15 A",
+         "PCM VPWR4 (ignition coil)"
+        ],
+        [
+         "45",
+         "5 A",
+         "PCM run/start"
+        ],
+        [
+         "46",
+         "5 A",
+         "PCM VPWR3"
+        ],
+        [
+         "47",
+         "15 A",
+         "PCM VPWR1"
+        ],
+        [
+         "48",
+         "15 A",
+         "PCM VPWR5 (transmission)"
+        ],
+        [
+         "49",
+         "15 A",
+         "PCM VPWR2 (emissions)"
+        ]
+       ],
+       "note": "Relays: 41 fuel pump, 42 intercooler pump, 43 A/C, 44 fuel pump #2, 50/55 fan high/low, 51 blower, 52 starter, 53 rear defroster, 54 wiper. Passenger panel: 24 = 20 A horn; 39 = 20 A radio/navigation."
+      }
+     },
+     {
+      "title": "Fuses, 2016 S550 (power distribution box)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2016; other years not transcribed",
+      "table": {
+       "columns": [
+        "#",
+        "Amps",
+        "Circuit"
+       ],
+       "rows": [
+        [
+         "5",
+         "50 A",
+         "ABS pump"
+        ],
+        [
+         "6 / 7 / 8",
+         "50 / 60 / 50 A",
+         "Body control module"
+        ],
+        [
+         "9",
+         "40 A",
+         "Rear defroster"
+        ],
+        [
+         "10",
+         "40 A",
+         "Blower"
+        ],
+        [
+         "11",
+         "30 A",
+         "Left front window"
+        ],
+        [
+         "12 / 13",
+         "30 A",
+         "Driver / passenger seat"
+        ],
+        [
+         "14",
+         "30 A",
+         "Climate seat module"
+        ],
+        [
+         "15, 17",
+         "20 A",
+         "Convertible top"
+        ],
+        [
+         "19",
+         "20 A",
+         "Steering column lock relay"
+        ],
+        [
+         "20",
+         "10 A",
+         "Brake on-off switch"
+        ],
+        [
+         "21",
+         "20 A",
+         "Horn"
+        ],
+        [
+         "22",
+         "10 A",
+         "PCM relay"
+        ],
+        [
+         "23",
+         "10 A",
+         "A/C clutch"
+        ],
+        [
+         "24",
+         "30 A",
+         "Voltage quality module"
+        ],
+        [
+         "26",
+         "25 A",
+         "Wiper motor"
+        ],
+        [
+         "28",
+         "30 A",
+         "ABS valve"
+        ],
+        [
+         "29 / 55 / 31",
+         "30 / 25 / 40 A",
+         "Electric fan 1 / 2 / 3"
+        ],
+        [
+         "30",
+         "30 A",
+         "Starter solenoid"
+        ],
+        [
+         "33 / 35",
+         "20 A",
+         "HID headlamps, left / right"
+        ],
+        [
+         "34",
+         "15 A",
+         "Exhaust valves (active exhaust)"
+        ],
+        [
+         "36",
+         "10 A",
+         "Alternator sense"
+        ],
+        [
+         "38 / 40 / 42 / 44",
+         "20 / 20 / 15 / 15 A",
+         "Vehicle power 1-4"
+        ],
+        [
+         "41",
+         "15 A",
+         "Fuel injectors"
+        ],
+        [
+         "46",
+         "20 A",
+         "Differential pump"
+        ],
+        [
+         "48 / 49",
+         "30 A",
+         "Fuel pump #2 / fuel pump"
+        ],
+        [
+         "53",
+         "20 A",
+         "Cigar lighter"
+        ],
+        [
+         "54",
+         "20 A",
+         "Auxiliary power point"
+        ],
+        [
+         "60",
+         "5 A",
+         "PCM"
+        ],
+        [
+         "62",
+         "5 A",
+         "ABS run/start"
+        ],
+        [
+         "64",
+         "5 A",
+         "EPAS (electric steering)"
+        ],
+        [
+         "66",
+         "5 A",
+         "Blind spot (BLIS)"
+        ],
+        [
+         "68",
+         "10 A",
+         "Headlamp leveling"
+        ],
+        [
+         "70",
+         "10 A",
+         "Heated mirrors"
+        ],
+        [
+         "72",
+         "5 A",
+         "Rain sensor"
+        ],
+        [
+         "74",
+         "5 A",
+         "MAF sensor"
+        ]
+       ],
+       "note": "Relays: 50 column lock, 52 horn, 57 A/C, 59 exhaust valves, 69 power point, 76 defroster, 77/89/91 fans, 78/79 HID, 80 wiper, 81 starter, 82 PCM, 90 differential pump, 92 blower, 93 fuel pump #2."
+      }
+     },
+     {
+      "title": "Tire pressure (manual guidance)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2010 and 2016",
+      "items": [
+       "No owner's guide prints a per-size table; use the door-jamb placard.",
+       "2016: above 100 mph, raise pressures by the amount on the high-speed label if fitted (no number in the manual).",
+       "2010: pressure rises about 2-4 psi from cold when driving and drops about 3 psi per 30°F fall.",
+       "TPMS: valve-stem sensors (2010, 2016). Frequency not printed (unknown)."
+      ]
+     },
+     {
+      "title": "Placard pressures (owner reports)",
+      "conf": "forum",
+      "src": [
+       {
+        "label": "TheMustangSource S197 tire pressure thread",
+        "url": "https://themustangsource.com/forums/f637/tire-pressure-non-stock-size-05-10-s197-544051/"
+       },
+       {
+        "label": "Mustang6G PP 19 in tire pressure thread",
+        "url": "https://www.mustang6g.com/forums/threads/performance-package-19-tire-pressure.83511/"
+       },
+       {
+        "label": "AllFordMustangs S550 GT PP tire pressure thread",
+        "url": "https://www.allfordmustangs.com/threads/s550-gt-performance-package-tire-pressure.910794/"
+       },
+       {
+        "label": "faultpedia Mustang tire pressure (aggregator)",
+        "url": "https://faultpedia.com/vehicle/ford/mustang/tire-pressure/"
+       }
+      ],
+      "years": "Years per row; your door placard rules",
+      "table": {
+       "columns": [
+        "Car",
+        "Pressure",
+        "Label"
+       ],
+       "rows": [
+        [
+         "2005-14 S197 GT and V6",
+         "32 psi",
+         "Forum-reported"
+        ],
+        [
+         "2007 GT500",
+         "35 psi",
+         "Unconfirmed (second-hand)"
+        ],
+        [
+         "S550 2015-23 on 17-19 in (EcoBoost, V6, GT, GT PP 19 in)",
+         "32 psi",
+         "Forum-reported"
+        ],
+        [
+         "S550 265/35R20 option",
+         "32 vs 35 psi",
+         "Unconfirmed, conflicting"
+        ],
+        [
+         "GT350/GT350R",
+         "32 psi",
+         "Unconfirmed (one aggregator)"
+        ]
+       ],
+       "rowSrc": [
+        "https://themustangsource.com/forums/f637/tire-pressure-non-stock-size-05-10-s197-544051/",
+        "https://themustangsource.com/forums/f637/tire-pressure-non-stock-size-05-10-s197-544051/",
+        "https://www.mustang6g.com/forums/threads/performance-package-19-tire-pressure.83511/",
+        "https://faultpedia.com/vehicle/ford/mustang/tire-pressure/",
+        "https://faultpedia.com/vehicle/ford/mustang/tire-pressure/"
+       ],
+       "note": "Owners report dealers delivering cars at 40-42 psi (shipping pressure); reset to the placard."
+      }
+     },
+     {
+      "title": "Towing",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "2010 and 2016; 2017-23 and S550 GT350/GT500 unknown; payload not covered",
+      "items": [
+       "2010 S197: up to 1,000 lb trailer, 100 lb max tongue load; no towing in the first 500 mi. The Shelby GT500 is not rated to tow.",
+       "2016 S550 (OM p.179): 1,000 lb for 2.3L, 3.7L and 5.0L; trailer frontal area max 20 sq ft; reduce GCW 2% per 1,000 ft above 1,000 ft; no towing in the first 1,000 mi; do not connect trailer hydraulic brakes to the car."
+      ]
+     },
+     {
+      "title": "Paint codes, S197",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "Steeda 2005-2014 Mustang colors",
+        "url": "https://www.steeda.com/2005-2014-mustang-colors"
+       }
+      ],
+      "years": "2005-2014; code is on the door-jamb label (EXT PNT). No Ford paint document was opened",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "D3",
+         "Torch Red",
+         "05-10"
+        ],
+        [
+         "D6",
+         "Screaming Yellow",
+         "05-06"
+        ],
+        [
+         "G2",
+         "Redfire",
+         "05-07"
+        ],
+        [
+         "HP",
+         "Performance White",
+         "05-14"
+        ],
+        [
+         "P1",
+         "Legend Lime (disputed)",
+         "05-06"
+        ],
+        [
+         "P1",
+         "Windveil Blue (disputed)",
+         "06-08"
+        ],
+        [
+         "SN",
+         "Sonic Blue",
+         "05"
+        ],
+        [
+         "TK",
+         "Mineral Grey",
+         "05"
+        ],
+        [
+         "TL",
+         "Satin Silver",
+         "05-07"
+        ],
+        [
+         "UA",
+         "Black",
+         "05-14"
+        ],
+        [
+         "T8",
+         "Tungsten Gray",
+         "06-07"
+        ],
+        [
+         "G9",
+         "Vista Blue",
+         "06-09"
+        ],
+        [
+         "G5",
+         "Alloy",
+         "07-09"
+        ],
+        [
+         "U3",
+         "Grabber Orange",
+         "07-08"
+        ],
+        [
+         "ZY",
+         "Vapor",
+         "08-09"
+        ],
+        [
+         "JV",
+         "Dark Candy Apple Red",
+         "08-09"
+        ],
+        [
+         "PX",
+         "Dark Highland Green",
+         "08-09, Bullitt"
+        ],
+        [
+         "YN",
+         "Silver",
+         "08"
+        ],
+        [
+         "UI",
+         "Brilliant Silver",
+         "09-10"
+        ],
+        [
+         "CI",
+         "Grabber Blue",
+         "10-14"
+        ],
+        [
+         "GQ",
+         "Sunset Gold",
+         "10"
+        ],
+        [
+         "L6",
+         "Kona Blue",
+         "10-12"
+        ],
+        [
+         "U6",
+         "Red Candy",
+         "10-14"
+        ],
+        [
+         "UJ",
+         "Sterling Gray",
+         "10-14"
+        ],
+        [
+         "PQ",
+         "Race Red",
+         "10-14"
+        ],
+        [
+         "NQ",
+         "Yellow Blaze",
+         "11-12"
+        ],
+        [
+         "UX",
+         "Ingot Silver",
+         "11"
+        ],
+        [
+         "CY",
+         "Competition Orange",
+         "12"
+        ],
+        [
+         "UZ",
+         "Red Lava",
+         "13"
+        ],
+        [
+         "HD",
+         "Gotta Have It Green",
+         "13-14"
+        ],
+        [
+         "B1",
+         "School Bus Yellow",
+         "13, Boss 302"
+        ],
+        [
+         "J4",
+         "Deep Impact Blue",
+         "13-14"
+        ]
+       ],
+       "disputedRows": [
+        4,
+        5
+       ]
+      }
+     },
+     {
+      "title": "Paint codes, S550",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "Steeda S550 Mustang colors",
+        "url": "https://www.steeda.com/s550-mustang-colors"
+       }
+      ],
+      "years": "2015-2023; codes are reused (Grabber Blue CI then AE; Dark Highland Green PX then B5)",
+      "table": {
+       "columns": [
+        "Code",
+        "Color",
+        "Years"
+       ],
+       "rows": [
+        [
+         "UA",
+         "Black",
+         "15"
+        ],
+        [
+         "G1",
+         "Shadow Black",
+         "16-23"
+        ],
+        [
+         "YZ",
+         "Oxford White",
+         "15-23"
+        ],
+        [
+         "PQ",
+         "Race Red",
+         "15-23"
+        ],
+        [
+         "RR",
+         "Ruby Red",
+         "15-20"
+        ],
+        [
+         "UX",
+         "Ingot Silver",
+         "15-19"
+        ],
+        [
+         "J7",
+         "Magnetic",
+         "15-20"
+        ],
+        [
+         "H3",
+         "Triple Yellow",
+         "15-18"
+        ],
+        [
+         "CY",
+         "Competition Orange",
+         "15-16"
+        ],
+        [
+         "HN",
+         "Guard",
+         "15-16"
+        ],
+        [
+         "J4",
+         "Deep Impact Blue",
+         "15-16"
+        ],
+        [
+         "L6",
+         "Kona Blue",
+         "15 (50th Anniversary), 18-19"
+        ],
+        [
+         "N4",
+         "Wimbledon White",
+         "15 (50th Anniversary)"
+        ],
+        [
+         "DR",
+         "Avalanche",
+         "16-17, GT350"
+        ],
+        [
+         "CI",
+         "Grabber Blue",
+         "17"
+        ],
+        [
+         "N6",
+         "Lightning Blue",
+         "17-19"
+        ],
+        [
+         "UG",
+         "White Platinum",
+         "17"
+        ],
+        [
+         "R3",
+         "Royal Crimson",
+         "18"
+        ],
+        [
+         "JX",
+         "Lead Foot",
+         "18, GT350"
+        ],
+        [
+         "NL",
+         "Orange Fury",
+         "18-19"
+        ],
+        [
+         "E7",
+         "Velocity Blue",
+         "19-21"
+        ],
+        [
+         "FM",
+         "Ford Performance Blue",
+         "19-21, Shelby"
+        ],
+        [
+         "B5",
+         "Dark Highland Green",
+         "19-20, Bullitt"
+        ],
+        [
+         "AJ",
+         "Need For Green",
+         "19"
+        ],
+        [
+         "F9",
+         "Grabber Lime",
+         "20"
+        ],
+        [
+         "CA",
+         "Twister Orange",
+         "20-21"
+        ],
+        [
+         "JS",
+         "Iconic Silver",
+         "20-23"
+        ],
+        [
+         "HX",
+         "Antimatter Blue",
+         "21"
+        ],
+        [
+         "M7",
+         "Carbonized Gray",
+         "21-23"
+        ],
+        [
+         "NE",
+         "Fighter Jet Gray",
+         "21-23"
+        ],
+        [
+         "D4",
+         "Rapid Red",
+         "21-23"
+        ],
+        [
+         "CB",
+         "Grabber Yellow",
+         "21"
+        ],
+        [
+         "AE",
+         "Grabber Blue",
+         "22-23"
+        ],
+        [
+         "B3",
+         "Atlas Blue",
+         "22-23"
+        ],
+        [
+         "FA",
+         "Eruption Green",
+         "22"
+        ],
+        [
+         "HY",
+         "Dark Matter Gray",
+         "22-23"
+        ],
+        [
+         "P2",
+         "Mischievous Purple",
+         "22"
+        ],
+        [
+         "SB",
+         "Cyber Orange Tri-Coat",
+         "22"
+        ],
+        [
+         "CN",
+         "Code Orange",
+         "22"
+        ],
+        [
+         "EB",
+         "Brittany Blue",
+         "22-23"
+        ]
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "vin",
+    "title": "VIN and option codes",
+    "short": "VIN digits, transmission codes",
+    "blocks": [
+     {
+      "title": "VIN positions",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Ford 2016 Part 565 VIN filing (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/c7e812c4-d5eb-4c22-b6ec-5f3231b7febb"
+       },
+       {
+        "label": "Ford workshop manual 100-01 Identification Codes, 2020 Mustang (forum-hosted PDF)",
+        "url": "https://www.mustang6g.com/forums/attachments/vin-codes-pdf.474760/"
+       },
+       {
+        "label": "NHTSA vPIC VIN decoder API (partial VINs)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1ZVBP8JZ5D?format=json"
+       }
+      ],
+      "years": "S197 rows from NHTSA decoder output (manufacturer patterns); S550 from Ford's 2016 filing and 2020 workshop page",
+      "table": {
+       "columns": [
+        "Position",
+        "Meaning"
+       ],
+       "rows": [
+        [
+         "1-3",
+         "1ZV = S197 (2005-14, Flat Rock); 1FA = S550"
+        ],
+        [
+         "4 (restraints)",
+         "S550: 6 = coupe, T = convertible. S197: F (2005-06), H (2007), B (2010-14) seen; meaning unknown"
+        ],
+        [
+         "5-7 (body/series)",
+         "2005: T80 V6 coupe, T82 GT coupe, T84 V6 convertible, T85 GT convertible; T88 2007 GT500 coupe. 2010-16: P8A V6 coupe, P8C GT coupe, P8E V6 convertible, P8F GT convertible, P8J Shelby coupe (GT500 to 2014; GT350 2016). P8T/P8U EcoBoost coupe/convertible; P8K 2020 Bullitt; P8S 2020 GT500"
+        ],
+        [
+         "10",
+         "Model year (5 = 2005, A = 2010, G = 2016, L = 2020)"
+        ],
+        [
+         "11",
+         "Plant 5 = Flat Rock, MI"
+        ]
+       ]
+      }
+     },
+     {
+      "title": "Engine code (8th digit)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Ford 2016 Part 565 VIN filing (NHTSA vPIC)",
+        "url": "https://vpic.nhtsa.dot.gov/mid/home/displayfile/c7e812c4-d5eb-4c22-b6ec-5f3231b7febb"
+       },
+       {
+        "label": "Ford workshop manual 100-01 Identification Codes, 2020 Mustang (forum-hosted PDF)",
+        "url": "https://www.mustang6g.com/forums/attachments/vin-codes-pdf.474760/"
+       },
+       {
+        "label": "NHTSA vPIC VIN decoder API (partial VINs)",
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/1ZVBP8JZ5D?format=json"
+       }
+      ],
+      "years": "Years per row",
+      "table": {
+       "columns": [
+        "Code",
+        "Engine",
+        "Years"
+       ],
+       "rows": [
+        [
+         "N",
+         "4.0L V6",
+         "2005-10"
+        ],
+        [
+         "H",
+         "4.6L V8 (GT), S197",
+         "2005-10"
+        ],
+        [
+         "S",
+         "5.4L supercharged V8 (GT500)",
+         "2007, 2010, 2012"
+        ],
+        [
+         "M",
+         "3.7L V6",
+         "2011-17"
+        ],
+        [
+         "F",
+         "5.0L Coyote V8 (GT)",
+         "2011+"
+        ],
+        [
+         "U",
+         "5.0L Boss 302",
+         "2012"
+        ],
+        [
+         "Z",
+         "2013-14 GT500 (S197; 5.8L per the master guide, NHTSA decoder says 5.4L); 5.2L flat-plane GT350 (S550)",
+         "2013-14 / 2016+"
+        ],
+        [
+         "H",
+         "2.3L EcoBoost, S550",
+         "2015+"
+        ],
+        [
+         "D",
+         "2.3L High Performance EcoBoost",
+         "2020+"
+        ],
+        [
+         "J",
+         "5.2L supercharged cross-plane V8 (GT500)",
+         "2020"
+        ],
+        [
+         "0",
+         "5.0L Ti-VCT V8 (Bullitt decode)",
+         "2020"
+        ]
+       ],
+       "disputedRows": [
+        1,
+        6,
+        7
+       ],
+       "note": "Code H means a 4.6L V8 on the S197 but a 2.3L EcoBoost on the S550. Read it with the first three characters or the year."
+      }
+     },
+     {
+      "title": "Transmission codes (door label TR)",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "2010 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2010_ford_mustang.pdf"
+       },
+       {
+        "label": "2014 Mustang Owner's Guide (S197) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2014_ford_mustang.pdf"
+       },
+       {
+        "label": "2016 Mustang Owner's Guide (S550) (Ford PDF, carmanual.org copy)",
+        "url": "https://carmanual.org/OwnersManual/ford/2016_ford_mustang.pdf"
+       }
+      ],
+      "years": "Years per item",
+      "items": [
+       "2010: F = 5-speed manual T5; K = 5-speed manual TR3650; L = 5-speed automatic 5R55S.",
+       "2014: X = 6-speed manual MT82; 3 = 6-speed automatic 6R80.",
+       "2016: codes 3 and X (descriptions garbled in extraction; presumably as 2014, unconfirmed).",
+       "Paint, axle and transmission codes are on the door-jamb certification label. Axle code tables are not in the owner's guides (unknown)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "codes",
+    "title": "Trouble codes",
+    "short": "OBD codes and recalls",
+    "intro": "Codes named in Ford bulletins. Most Coyote misfire-code bulletins fix false detection when there is no real misfire; rule those out before replacing coils or plugs.",
+    "blocks": [
+     {
+      "title": "Codes with Ford bulletins",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "Ford TSB 13-1-11",
+        "url": "https://latemodel.cachefly.net/downloads/tsb05-14/tsb13-01-11.pdf"
+       },
+       {
+        "label": "Ford TSB 13-6-15",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2013/SB-10053469-3280.pdf"
+       },
+       {
+        "label": "Ford TSB 16-0121",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2016/MC-10109039-9999.pdf"
+       },
+       {
+        "label": "Ford TSB 18-2355",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10152461-9999.pdf"
+       },
+       {
+        "label": "Ford TSB 18-2370",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2018/MC-10153934-9999.pdf"
+       },
+       {
+        "label": "Ford TSB 22-2464",
+        "url": "https://static.nhtsa.gov/odi/tsbs/2023/MC-10230769-0001.pdf"
+       }
+      ],
+      "years": "Years and builds per row",
+      "table": {
+       "columns": [
+        "TSB",
+        "Applies to",
+        "Codes",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "13-1-11",
+         "2013 5.0L manual, built to 11/30/2012",
+         "P0300-P0308 in continuous memory only, no symptoms",
+         "Reprogram PCM if qualifying data present; otherwise Misfire Monitor Neutral Profile Correction"
+        ],
+        [
+         "13-6-15",
+         "2011-14 5.0L built to 5/1/2013",
+         "P0300-P0308 and/or P0316, no other codes or symptoms",
+         "Fit O-ring FOPZ-9229-A on the crank sensor, clear codes, run the Neutral Profile Correction. Not if codes show in KOER or there is a real misfire"
+        ],
+        [
+         "16-0121",
+         "2015-16 2.3L built to 1/1/2016",
+         "P0299 with lack of power",
+         "Wastegate actuator rod disconnected: reattach with a new clip (new upper turbo nuts)"
+        ],
+        [
+         "18-2355 (Nov 2018)",
+         "2018-19 2.3L built to 17-Oct-2018",
+         "P0420",
+         "Replace the catalytic converter and reprogram the PCM"
+        ],
+        [
+         "18-2370 (Dec 2018)",
+         "2018-19 2.3L built to 17-Oct-2018, driven at 3,500 ft or higher",
+         "P0068 only",
+         "Reprogram the PCM"
+        ],
+        [
+         "22-2464 (Jan 2023)",
+         "2021-22 5.0L",
+         "P0300-P0308 with MIL",
+         "Reprogram the PCM"
+        ]
+       ],
+       "rowSrc": [
+        "https://latemodel.cachefly.net/downloads/tsb05-14/tsb13-01-11.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2013/SB-10053469-3280.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2016/MC-10109039-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10152461-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2018/MC-10153934-9999.pdf",
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10230769-0001.pdf"
+       ]
+      }
+     },
+     {
+      "title": "Likely causes when no bulletin applies",
+      "conf": "unconfirmed",
+      "src": [
+       {
+        "label": "Mustang6G PP 19 in tire pressure thread",
+        "url": "https://www.mustang6g.com/forums/threads/performance-package-19-tire-pressure.83511/"
+       }
+      ],
+      "years": "Not from Ford",
+      "items": [
+       "P0299 / P0068 on the 2.3L: boost leaks (intercooler couplers, wastegate).",
+       "P0420: catalyst or O2 sensor."
+      ]
+     },
+     {
+      "title": "Recall tied to a warning",
+      "conf": "verified",
+      "src": [
+       {
+        "label": "NHTSA recalls API, 2020 Mustang",
+        "url": "https://api.nhtsa.gov/recalls/recallsByVehicle?make=ford&model=mustang&modelYear=2020"
+       }
+      ],
+      "years": "2019-2020",
+      "text": "20V-263: the Transmission Not In Park message and chime are shorter than intended. None of the 48 Mustang recall campaigns (2005-2023) names a specific code."
+     }
+    ]
+   }
+  ]
+ },
+ "resolved": [
+  "Maintenance from the 2010, 2014 and 2016 guides (Maintenance).",
+  "Bulbs, 2010 and 2016 fuses, towing (Quick reference).",
+  "VIN decoding and transmission codes (VIN and option codes).",
+  "2010-14 brake, starter, alternator, water pump and fuel pump torques (Guides).",
+  "Six Ford DTC bulletins and recall 20V-263 (Trouble codes).",
+  "TSB 06-19-8 (2005 4.6L 3V tick/rattle: cam phaser, VCT kit 3R2Z-6A257-DA, lash adjusters), verified.",
+  "TSB 06-9-11 (2006 3V built 1/11-2/14/2006 lash adjuster tick: check timing cover date code), verified.",
+  "TSB 08-26-7 (2005-09 front floor water leak: pressurize cabin and soap-test seams; do not remove the dash), verified.",
+  "TPMS start year partly resolved: present in 2007 (see Conflicts)."
+ ]
 };
