@@ -116,3 +116,26 @@ Torque tables use columns `["Fastener", "Spec"]` (or `["Fastener", "<variant A>"
 - **Video-reported**: YouTube, cited by title/channel only.
 - **Unconfirmed**: search snippets or syntheses, blocked pages.
 - A row backed by both a Verified and a Forum source carries both badges.
+
+## Repair catalog parts (`catalog`, added 2026-10-20)
+Large RockAuto catalogs are kept out of the main platform file so phones only download what they open.
+- Pipeline: `node scripts/build_app_<platform>.js` (main file), then `python3 scripts/expand/integrate.py [slug]`. The second step reads `data/expanded/<slug>-parts.json` and `scripts/gapfill/<slug>.json`, and is safe to re-run.
+- Hand-built parts stay in `parts` and gain `subcategory` (part type) and `tier` when the expanded file has them.
+- Catalog parts (`source: "rockauto-catalog"`) go to `app/data/parts/<slug>/<n>.js`, one file per category: `(window.FORGE_PARTS = ...)["<slug>/<n>"] = Part[]`. The app injects the script when a category, "All parts", a missing part id, or the platform search needs it, then appends the parts to `parts`.
+- Dedupe: brand + part number (non-alphanumerics dropped). A catalog pick that matches a hand-built part is skipped, so the hand-built part keeps its tips, notes and fitment.
+- Categories: catalog parts use the repair systems Engine, Ignition, Fuel System, Cooling, HVAC, Electrical, Brakes, Steering, Suspension, Drivetrain, Exhaust & Emissions, Body, Lighting, Interior, Filters & Fluids. If the platform already has a category for the same system (first word matches, e.g. "Suspension & Stance", "Exhaust & Headers"), that name is used.
+- Extra Part fields: `subcategory` (RockAuto part type, e.g. "Blower Motor"), `tier` (`economy` = cheapest listing, `oe` = cheapest OE brand, `premium` = cheapest premium brand, `premium-upper` = priciest premium brand when 40%+ above the cheapest premium), `fitment.checked_only: true`.
+- `fitment.checked_only`: `years`, `engines` and `models` list the representative vehicles that were crawled, not the full range. Outside them the app shows "Check fitment" (never "Doesn't fit").
+- Compaction in the part files (restored by the app on load): offers drop `shipping_note` when it is "Shipping calculated at checkout (not verified)" and `price_unit` when it is "listing"; `best_offer` is dropped when it equals the first lowest-priced verified offer.
+- Main file meta: `catalog = { note, vehicles: url[], generated, count, files: [{ file, category, count, types, from, bytes }] }`. Category counts and "from" prices on the Parts screen come from this meta, so no part file loads until a category opens.
+
+## Maintenance and reference (`reference`, optional, any platform)
+Shown as the "Maintenance and reference" section when present, and searched by the platform search.
+```json
+{ "caveat": "year-applicability note for the whole set",
+  "sections": [ { "id": "maintenance|quickref|vin|codes|...", "title": "...", "short": "menu subtitle", "intro"?: "...",
+    "blocks": [ { "title": "...", "conf": Conf, "src": Source[], "years"?: "Applies to ...", "text"?: "...", "items"?: string[], "table"?: Table, "caveat"?: "..." } ] } ] }
+```
+- Standard section ids: `maintenance` (schedule, fluids and capacities, filter/plug part numbers), `quickref` (bulbs, fuses, tire pressure, alignment and ride height, paint codes, towing/payload, hitch limits), `vin` (VIN by position, RPO/option codes), `codes` (trouble codes: code, meaning, likely causes, years; `table.rowSrc` links each row's source).
+- Every block needs `conf` and at least one `src`. Put year limits in `years` when the data comes from one model year's manual.
+- Gap-fill input lives in `scripts/gapfill/<slug>.py` (hand-entered from `/workspace/forge-research/gapfill/*.md`), which writes `<slug>.json` with `reference`, `guides` (new DIY guides with factory torque, ids start `gf-`), `conflicts` (appended by topic), `resolved` (what the research settled) and `unknowns` (replaces the platform list).

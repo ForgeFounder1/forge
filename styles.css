@@ -264,3 +264,14 @@ footer b{color:var(--muted)}
 .save-row{margin:4px 0 14px}
 .saved-note{color:var(--muted);margin:0 0 12px}
 .row-main{min-width:0;overflow-wrap:anywhere}
+/* catalog tiers, lazy lists, reference */
+.tier{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;border-radius:4px;padding:1px 6px;margin-right:6px;border:1px solid var(--line-2);color:var(--muted);vertical-align:1px}
+.tier.t-economy{color:#5a6b2e;border-color:#c9d3a8}
+.tier.t-oe{color:#2f5d8a;border-color:#b5cbe0}
+.tier.t-premium{color:#8a5a12;border-color:#e2c999}
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin:8px 0 4px}
+.tier-box{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line-2);border-radius:6px;padding:8px 10px;background:var(--surface)}
+.more-btn{width:100%;margin:10px 0}
+.ref-b{margin-bottom:8px}
+.ref-b .tbl-wrap{margin-top:6px}
+.tier.t-premium-upper{color:#7a3e8a;border-color:#d7b9e0}

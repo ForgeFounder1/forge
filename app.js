@@ -20,12 +20,12 @@
   // Sections of a platform. Ids are kept from the old tab routes so links still work.
   var SECTIONS = [
     ['parts', 'Parts'], ['problems', 'Problems and fixes'], ['guides', 'DIY and swap guides'],
-    ['wheels', 'Wheels and tires'], ['overview', 'Specs and years'], ['tips', 'Owner tips']
+    ['wheels', 'Wheels and tires'], ['overview', 'Specs and years'], ['ref', 'Maintenance and reference'], ['tips', 'Owner tips']
   ];
   var SNAME = {}; SECTIONS.forEach(function (s) { SNAME[s[0]] = s[1]; });
   var KEY = 'forge.builds.v2', OLDKEY = 'forge.build.v1';
   var app = document.getElementById('app');
-  var state = { q: '', gq: '', pq: '', sort: 'price-asc', stance: null, mineOnly: false };
+  var state = { q: '', gq: '', pq: '', sort: 'price-asc', stance: null, mineOnly: false, cq: '', brand: '', ckey: '' };
 
   // ---------- utils ----------
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -110,6 +110,39 @@
   function updateCount() { var n = P[store.current] ? build.items.reduce(function (a, i) { return a + (i.qty || 1); }, 0) : 0; Array.prototype.forEach.call(document.querySelectorAll('[data-count]'), function (e) { e.textContent = n ? n : ''; }); }
 
   // ---------- parts helpers ----------
+  // ---------- catalog parts, loaded on demand (one script per category, see DATA-FORMAT.md "catalog") ----------
+  var LOADED = {}, WAIT = {};
+  function catFiles(p, cat) { return ((p.catalog || {}).files || []).filter(function (f) { return cat == null || f.category === cat; }); }
+  function partsReady(pid, cat) { return catFiles(P[pid], cat).every(function (f) { return LOADED[f.file] === 1; }); }
+  function loadParts(pid, cat, cb) {
+    var p = P[pid], need = catFiles(p, cat).filter(function (f) { return LOADED[f.file] !== 1; }), left = need.length;
+    if (!left) { cb(true); return; }
+    need.forEach(function (f) {
+      var done = function (ok) { if (--left === 0) cb(ok); };
+      if (WAIT[f.file]) { WAIT[f.file].push(done); return; }
+      WAIT[f.file] = [done];
+      var sc = document.createElement('script'); sc.src = f.file; sc.async = true;
+      sc.onload = function () {
+        var k = pid + '/' + f.file.split('/').pop().replace('.js', ''), arr = (window.FORGE_PARTS || {})[k] || [];
+        arr.forEach(restorePart); Array.prototype.push.apply(p.parts, arr); delete window.FORGE_PARTS[k];
+        LOADED[f.file] = 1; p._idx = null; p._cu = null; var w = WAIT[f.file]; delete WAIT[f.file]; w.forEach(function (fn) { fn(true); });
+      };
+      sc.onerror = function () { var w = WAIT[f.file]; delete WAIT[f.file]; w.forEach(function (fn) { fn(false); }); };
+      document.head.appendChild(sc);
+    });
+  }
+  // Undo the size compaction done by scripts/expand/integrate.py.
+  function restorePart(x) {
+    x.offers.forEach(function (o) { if (!('shipping_note' in o)) o.shipping_note = 'Shipping calculated at checkout (not verified)'; if (!o.price_unit) o.price_unit = 'listing'; });
+    if (!('best_offer' in x)) { var v = x.offers.filter(function (o) { return o.status === 'verified' && o.price != null; }), b = null; v.forEach(function (o) { if (!b || o.price < b.price) b = o; }); x.best_offer = b ? { seller: b.seller, price: b.price, url: b.url, status: b.status } : null; }
+  }
+  function partTotal(p) { return p.parts.filter(function (x) { return x.source !== 'rockauto-catalog'; }).length + ((p.catalog || {}).count || 0); }
+  function loadingView(pid, cat, again) {
+    loadParts(pid, cat, function (ok) { if (ok) again(); else app.innerHTML = '<div class="wrap narrow"><p class="empty">Could not load the parts list. Check your connection and reload.</p></div>'; });
+    return '<p class="empty">Loading parts…</p>';
+  }
+  var TIER = { economy: 'Economy', oe: 'OE', premium: 'Premium', 'premium-upper': 'Premium+' };
+  function tierTag(x) { var t = x.tier && TIER[String(x.tier).toLowerCase()]; return t ? '<span class="tier t-' + esc(String(x.tier).toLowerCase()) + '">' + t + '</span>' : ''; }
   function partById(p, id) { for (var i = 0; i < p.parts.length; i++) if (p.parts[i].id === id) return p.parts[i]; return null; }
   function isBest(part, o) { var b = part.best_offer; return !!(b && b.price != null && o.price === b.price && o.seller === b.seller && o.url === b.url); }
   // Price used for the build total: the best verified offer; else the lowest listed (flagged unverified).
@@ -162,7 +195,7 @@
   }
   function partRow(pid, part, flag) {
     var f = part.fitment || {};
-    var sub = '<span class="mono">' + esc(part.brand) + (part.part_number ? ' ' + esc(part.part_number) : '') + '</span>' + (fitBadge(pid, part) ? ' · ' + fitBadge(pid, part) : (fitLabel(f) ? ' · ' + fitLabel(f) : '')) + (flag ? ' · <span class="accent">' + esc(flag) + '</span>' : '') + (inBuild(part.id, pid) ? ' · <span class="accent">In build</span>' : '');
+    var sub = tierTag(part) + '<span class="mono">' + esc(part.brand) + (part.part_number ? ' ' + esc(part.part_number) : '') + '</span>' + (fitBadge(pid, part) ? ' · ' + fitBadge(pid, part) : (fitLabel(f) ? ' · ' + fitLabel(f) : '')) + (f.position ? ' · ' + esc(f.position) : '') + (flag ? ' · <span class="accent">' + esc(flag) + '</span>' : '') + (inBuild(part.id, pid) ? ' · <span class="accent">In build</span>' : '');
     return row('#/p/' + pid + '/parts/' + encodeURIComponent(part.id), esc(part.name), sub, priceCell(part), 'part-row');
   }
   function miniParts(pid, p, ids) {
@@ -270,7 +303,11 @@
   }
   // Categories where drive, cab or bed usually change the part. Elsewhere a missing value is not a reason to check.
   var NEED = { drive: /suspension|steering|brake|drivetrain|axle|lift|exhaust|wheel|tire/i, cab: /suspension|exhaust|rust|bed|tonneau|liner|rocker|step/i, bed: /exhaust|bed|tonneau|liner/i };
-  function catUses(p, cat, key) { return NEED[key].test(cat || '') && p.parts.some(function (x) { return x.category === cat && x.fitment && x.fitment[key]; }); }
+  function catUses(p, cat, key) {
+    var c = p._cu || (p._cu = {}), k = cat + '|' + key;
+    if (!(k in c)) c[k] = NEED[key].test(cat || '') && p.parts.some(function (x) { return x.category === cat && x.fitment && x.fitment[key]; });
+    return c[k];
+  }
   // returns { r: 'fits' | 'no' | 'check' | '', why: [] }
   function fitFor(pid, part) {
     var v = store.veh[pid]; if (!isSaved(pid) || !v || !v.year) return { r: '', why: [] };
@@ -302,6 +339,8 @@
       var num = (v.engineShort.match(/\d\.\d/) || [''])[0], es = f.engines.join(' ');
       if (num && es.indexOf(num) < 0) { if (f.engines.every(function (x) { return /^\s*\d\.\d/.test(x); })) no.push('engine ' + es); else chk.push('engine: ' + es); }
     }
+    // Catalog picks list only the vehicles that were crawled; a mismatch there means "not checked", never "doesn't fit".
+    if (f.checked_only && no.length) { chk = no.map(function (w) { return 'listing checked for ' + w.replace(/^years /, ''); }).concat(chk); no = []; }
     return { r: no.length ? 'no' : chk.length ? 'check' : 'fits', why: no.length ? no : chk };
   }
   function fitBadge(pid, part) {
@@ -387,18 +426,19 @@
     var bp = '';
     (p.wheels.specs.rows || []).forEach(function (r) { if (!bp && /bolt/i.test(r[0])) bp = r[1]; });
     return {
-      parts: p.parts.length + ' parts in ' + cats.length + ' categories',
+      parts: partTotal(p) + ' parts in ' + partCats(p).length + ' categories',
       problems: p.problems.length + ' known problems, search by symptom',
       guides: diy + ' DIY, ' + (p.guides.length - diy) + ' swaps, with torque specs',
       wheels: (bp ? 'Bolt pattern ' + bp + ' · ' : '') + p.wheels.stances.length + ' stances',
       overview: 'Engines, axles, year changes' + (p.conflicts.length ? ', ' + p.conflicts.length + ' corrections' : ''),
+      ref: p.reference ? p.reference.sections.map(function (x) { return x.short || x.title; }).join(', ') : '',
       tips: p.tips.length + ' tips' + ((p.videos || []).length ? ', ' + p.videos.length + ' videos' : '')
     };
   }
   function tipsName(p) { return p.tipsTitle || SNAME.tips; }
   function sectionMenu(pid, p) {
     var c = counts(p);
-    return '<div class="rows menu">' + SECTIONS.map(function (s) { return row('#/p/' + pid + '/' + s[0], s[0] === 'tips' ? esc(tipsName(p)) : s[1], esc(c[s[0]])); }).join('') + '</div>';
+    return '<div class="rows menu">' + SECTIONS.filter(function (s) { return s[0] !== 'ref' || p.reference; }).map(function (s) { return row('#/p/' + pid + '/' + s[0], s[0] === 'tips' ? esc(tipsName(p)) : s[1], esc(c[s[0]])); }).join('') + '</div>';
   }
   function safetyBlock(p, home) {
     var a = p.safetyAlerts || [];
@@ -423,6 +463,28 @@
   }
   function secHead(pid, p, title, extra) {
     return crumb(pid, p, [[title]]) + '<header class="page-h sm"><h1>' + esc(title) + '</h1>' + (extra || '') + '</header>' + safetyBlock(p, false);
+  }
+  // ---------- Maintenance and reference (p.reference, see DATA-FORMAT.md) ----------
+  function refBlock(b) {
+    var h = '<section class="ref-b"><h2 class="h2">' + esc(b.title) + '</h2><p>' + badges(b) + (b.years ? ' <span class="small dim">Applies to: ' + esc(b.years) + '</span>' : '') + '</p>';
+    if (b.text) h += '<p>' + esc(b.text) + '</p>';
+    if (b.table) h += table(b.table);
+    if (b.items && b.items.length) h += '<ul class="plain">' + b.items.map(function (i) { return '<li>' + esc(i) + '</li>'; }).join('') + '</ul>';
+    if (b.caveat) h += '<p class="small c-warn">' + esc(b.caveat) + '</p>';
+    return h + srcs(b.src) + '</section>';
+  }
+  function tabRef(pid, p, focus) {
+    var R = p.reference;
+    if (!R) return secHead(pid, p, SNAME.ref) + '<p class="empty">Not researched for this platform yet.</p>';
+    var s = focus && R.sections.filter(function (x) { return x.id === focus; })[0];
+    if (s) {
+      var h = crumb(pid, p, [[SNAME.ref, '#/p/' + pid + '/ref'], [s.title]]) + '<header class="page-h sm"><h1>' + esc(s.title) + '</h1>' + (s.intro ? '<p class="lede">' + esc(s.intro) + '</p>' : '') + '</header>' + safetyBlock(p, false);
+      return h + s.blocks.map(refBlock).join('');
+    }
+    var h2 = secHead(pid, p, SNAME.ref, R.caveat ? '<p class="lede">' + esc(R.caveat) + '</p>' : '');
+    h2 += '<div class="rows menu">' + R.sections.map(function (x) { return row('#/p/' + pid + '/ref/' + encodeURIComponent(x.id), esc(x.title), esc(x.blocks.map(function (b) { return b.title; }).slice(0, 4).join(', ') + (x.blocks.length > 4 ? ', more' : ''))); }).join('') + '</div>';
+    if (p.resolved && p.resolved.length) h2 += fold('Settled by this research', '<ul class="plain">' + p.resolved.map(function (u) { return '<li>' + esc(u) + '</li>'; }).join('') + '</ul>', false, p.resolved.length + '');
+    return h2;
   }
   function tabOverview(pid, p) {
     var o = p.overview, h = secHead(pid, p, SNAME.overview);
@@ -462,54 +524,119 @@
     h += fold('TPMS', factList(w.tpms));
     return h;
   }
-  function partCats(p) { return p.partCategories.filter(function (c) { return p.parts.some(function (x) { return x.category === c; }); }); }
+  function partCats(p) { var fs = catFiles(p); return p.partCategories.filter(function (c) { return p.parts.some(function (x) { return x.category === c; }) || fs.some(function (f) { return f.category === c; }); }); }
+  function catCount(p, c) { return p.parts.filter(function (x) { return x.category === c && x.source !== 'rockauto-catalog'; }).length + catFiles(p, c).reduce(function (a, f) { return a + f.count; }, 0); }
+  function priceOf(x) { var l = listedPrice(x); return l ? l.price : null; }
   function sortParts(list) {
-    var pr = function (x) { var l = listedPrice(x); return l ? l.price : null; };
     return list.slice().sort(function (a, b) {
       if (state.sort === 'name') return a.name.localeCompare(b.name);
-      var A = pr(a), B = pr(b);
+      var A = priceOf(a), B = priceOf(b);
       if (A == null || B == null) return (A == null) - (B == null);
       return state.sort === 'price-desc' ? B - A : A - B;
     });
   }
   function hasMine(p) { return !!(p.myVehicle && p.parts.some(function (x) { return x.fitment && x.fitment.hunter_fit === true; })); }
-  function tabParts(pid, p, focus) {
-    if (focus && partById(p, focus)) return partDetail(pid, p, partById(p, focus));
+  var PAGE = 40;
+  // Long lists render PAGE rows at a time; "Show more" appends the next page (state.more holds the rest).
+  function lazyRows(pid, list) {
+    state.more = { pid: pid, list: list, n: Math.min(PAGE, list.length) };
+    return '<div class="rows" id="lazyRows">' + list.slice(0, PAGE).map(function (x) { return partRow(pid, x); }).join('') + '</div>' + moreBtn();
+  }
+  function moreBtn() { var m = state.more, left = m ? m.list.length - m.n : 0; return '<div id="moreWrap">' + (left > 0 ? '<button class="btn more-btn" data-more="1">Show ' + Math.min(PAGE, left) + ' more of ' + left + '</button>' : '') + '</div>'; }
+  function showMore() {
+    var m = state.more, box = document.getElementById('lazyRows'); if (!m || !box) return;
+    box.insertAdjacentHTML('beforeend', m.list.slice(m.n, m.n + PAGE).map(function (x) { return partRow(m.pid, x); }).join(''));
+    m.n = Math.min(m.list.length, m.n + PAGE); document.getElementById('moreWrap').outerHTML = moreBtn();
+  }
+  function typeOf(x) { return x.subcategory || (x.source === 'rockauto-catalog' ? 'Other' : 'Picked for this platform'); }
+  function tabParts(pid, p, focus, sub) {
+    if (focus && /^cat-\d+$|^all$/.test(focus) === false) {
+      var fp = partById(p, focus);
+      if (fp) return partDetail(pid, p, fp);
+      if (!partsReady(pid)) return loadingView(pid, null, rerender);
+    }
     var cats = partCats(p);
     var ci = focus && /^cat-\d+$/.test(focus) ? +focus.slice(4) : (focus === 'all' ? -1 : null);
     if (ci === null) {
-      var h = secHead(pid, p, 'Parts', '<p class="lede">' + p.parts.length + ' parts with checked prices. Prices checked ' + esc(p.pricesChecked) + '.</p>');
+      var tot = partTotal(p);
+      var h = secHead(pid, p, 'Parts', '<p class="lede">' + tot + ' parts with checked prices: performance picks plus repair parts by system. Prices checked ' + esc(p.pricesChecked) + (p.catalog && p.catalog.generated ? ' (repair catalog ' + esc(p.catalog.generated) + ')' : '') + '.</p>');
       var feat = (p.featuredParts || []).filter(function (f) { return f.tab !== 'wheels' && partById(p, f.id); });
       if (feat.length) h += '<h2 class="h2">Featured</h2><div class="rows">' + feat.map(function (f) { return partRow(pid, partById(p, f.id), f.label); }).join('') + '</div>';
       h += '<h2 class="h2">Categories</h2><div class="rows">' + cats.map(function (c, i) {
-        var items = p.parts.filter(function (x) { return x.category === c; });
-        var lows = items.map(function (x) { var l = listedPrice(x); return l ? l.price : null; }).filter(function (v) { return v != null; });
-        return row('#/p/' + pid + '/parts/cat-' + i, esc(c), items.length + ' part' + (items.length > 1 ? 's' : ''), lows.length ? '<span class="dim small">from</span> <span class="price">' + money(Math.min.apply(null, lows)) + '</span>' : '');
-      }).join('') + row('#/p/' + pid + '/parts/all', 'All parts', p.parts.length + ' parts') + '</div>';
+        var n = catCount(p, c);
+        var lows = p.parts.filter(function (x) { return x.category === c; }).map(priceOf).concat(catFiles(p, c).map(function (f) { return f.from; })).filter(function (v) { return v != null; });
+        return row('#/p/' + pid + '/parts/cat-' + i, esc(c), n + ' part' + (n > 1 ? 's' : ''), lows.length ? '<span class="dim small">from</span> <span class="price">' + money(Math.min.apply(null, lows)) + '</span>' : '');
+      }).join('') + row('#/p/' + pid + '/parts/all', 'All parts', tot + ' parts') + '</div>';
+      if (p.catalog) h += '<p class="small dim">' + esc(p.catalog.note) + ' ' + p.catalog.vehicles.map(function (u, i) { var m = u.match(/catalog\/([^,]+),(\d{4}),([^,]+),([^,]+)/); return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(m ? [m[2], m[1], m[3], m[4]].join(' ').replace(/\+/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); }) : 'Vehicle ' + (i + 1)) + '</a>'; }).join(' · ') + '</p>';
       if (p.sellers && p.sellers.length) h += fold('Seller notes', p.sellers.map(function (s) { return '<div class="item"><div class="item-t">' + esc(s.name) + '</div><div class="small">' + esc(s.notes) + '</div><div class="small dim">Returns: ' + esc(s.returns) + ' · Affiliate: ' + esc(s.affiliate) + '</div></div>'; }).join(''));
       return h;
     }
     var title = ci === -1 ? 'All parts' : cats[ci];
+    if (!title) return '<p class="empty">No such category.</p>';
+    var ckey = pid + '|' + focus;
+    if (state.ckey !== ckey) { state.ckey = ckey; state.cq = ''; state.brand = ''; }
+    var crumbs = [['Parts', '#/p/' + pid + '/parts'], [title, sub ? '#/p/' + pid + '/parts/' + focus : null]];
+    if (sub) crumbs.push([sub]);
+    var h2 = crumb(pid, p, crumbs) + '<header class="page-h sm"><h1>' + esc(sub || title) + '</h1>' + (sub ? '<p class="small dim">' + esc(title) + '</p>' : '') + '</header>' + safetyBlock(p, false);
+    if (!partsReady(pid, ci === -1 ? null : title)) return h2 + loadingView(pid, ci === -1 ? null : title, rerender);
     var useSel = !!vehLabel(pid);
-    var items = p.parts.filter(function (x) { return (ci === -1 || x.category === title) && (!state.mineOnly || (useSel ? fitFor(pid, x).r !== 'no' : (x.fitment && x.fitment.hunter_fit === true))); });
-    var fc = { fits: 0, check: 0, no: 0 }; if (useSel) p.parts.forEach(function (x) { if (ci === -1 || x.category === title) fc[fitFor(pid, x).r]++; });
-    var h2 = crumb(pid, p, [['Parts', '#/p/' + pid + '/parts'], [title]]) + '<header class="page-h sm"><h1>' + esc(title) + '</h1></header>' + safetyBlock(p, false);
-    h2 += '<div class="toolbar"><label class="sel"><span>Sort</span><select id="sortSel"><option value="price-asc"' + (state.sort === 'price-asc' ? ' selected' : '') + '>Price: low to high</option><option value="price-desc"' + (state.sort === 'price-desc' ? ' selected' : '') + '>Price: high to low</option><option value="name"' + (state.sort === 'name' ? ' selected' : '') + '>Name</option></select></label>' + (useSel || hasMine(p) ? '<button class="chip' + (state.mineOnly ? ' on' : '') + '" data-mine="1" aria-pressed="' + state.mineOnly + '">Fits my vehicle</button>' : '') + '<span class="dim small count">' + items.length + ' shown</span></div>';
+    var base = p.parts.filter(function (x) { return (ci === -1 || x.category === title) && (!sub || typeOf(x) === sub); });
+    var brands = uniq(base.map(function (x) { return x.brand; })).sort();
+    if (state.brand && brands.indexOf(state.brand) < 0) state.brand = '';
+    var terms = state.cq.toLowerCase().split(/\s+/).filter(Boolean);
+    var fc = { fits: 0, check: 0, no: 0 };
+    var items = base.filter(function (x) {
+      if (state.brand && x.brand !== state.brand) return false;
+      if (terms.length) { var hay = (x.name + ' ' + x.brand + ' ' + (x.part_number || '') + ' ' + (x.subcategory || '') + ' ' + ((x.fitment || {}).position || '')).toLowerCase(); if (!terms.every(function (t) { return hay.indexOf(t) > -1; })) return false; }
+      var r = useSel ? fitFor(pid, x).r : ''; if (r) fc[r]++;
+      return !state.mineOnly || (useSel ? r !== 'no' : (x.fitment && x.fitment.hunter_fit === true));
+    });
+    h2 += '<label class="search">' + SEARCH_ICON + '<input id="cq" type="search" placeholder="Search ' + esc(sub || title) + ': name, brand, part number" value="' + esc(state.cq) + '" autocomplete="off" aria-label="Search this list"></label>';
+    h2 += '<div class="toolbar"><label class="sel"><span>Sort</span><select id="sortSel"><option value="price-asc"' + (state.sort === 'price-asc' ? ' selected' : '') + '>Price: low to high</option><option value="price-desc"' + (state.sort === 'price-desc' ? ' selected' : '') + '>Price: high to low</option><option value="name"' + (state.sort === 'name' ? ' selected' : '') + '>Name</option></select></label>' +
+      (brands.length > 1 ? '<label class="sel"><span>Brand</span><select id="brandSel"><option value="">All brands</option>' + brands.map(function (b) { return '<option' + (b === state.brand ? ' selected' : '') + '>' + esc(b) + '</option>'; }).join('') + '</select></label>' : '') +
+      (useSel || hasMine(p) ? '<button class="chip' + (state.mineOnly ? ' on' : '') + '" data-mine="1" aria-pressed="' + state.mineOnly + '">Fits my vehicle</button>' : '') + '<span class="dim small count">' + items.length + ' shown</span></div>';
     if (useSel) h2 += '<p class="small fit-sum">For your ' + esc(vehLabel(pid)) + ': <span class="fit-yes">' + fc.fits + ' fit</span> · <span class="fit-check">' + fc.check + ' check fitment</span> · <span class="fit-x">' + fc.no + " don't fit</span>" + (state.mineOnly ? ' (hidden)' : '') + '</p>';
-    if (ci === -1 && state.sort === 'name') h2 += '<div class="rows">' + sortParts(items).map(function (x) { return partRow(pid, x); }).join('') + '</div>';
-    else if (ci === -1) cats.forEach(function (c) { var it = items.filter(function (x) { return x.category === c; }); if (it.length) h2 += '<div class="grp-h">' + esc(c) + '</div><div class="rows">' + sortParts(it).map(function (x) { return partRow(pid, x); }).join('') + '</div>'; });
-    else h2 += items.length ? '<div class="rows">' + sortParts(items).map(function (x) { return partRow(pid, x); }).join('') + '</div>' : '<p class="empty">No parts match. Turn off the filter to see all.</p>';
-    h2 += '<p class="small dim">Price shown is the lowest verified listed price on ' + esc(p.pricesChecked) + '. Shipping excluded unless the seller says free.</p>';
+    var types = {}, tord = [];
+    items.forEach(function (x) { var t = typeOf(x); if (!types[t]) { types[t] = []; tord.push(t); } types[t].push(x); });
+    var filtered = terms.length || state.brand;
+    if (!sub && !filtered && tord.length > 1 && items.length > 12) {
+      // Part-type list: one row per type, with the cheapest option per tier.
+      tord.sort(function (a, b) { return (b === 'Picked for this platform') - (a === 'Picked for this platform') || a.localeCompare(b); });
+      if (ci === -1) {
+        h2 += (state.sort === 'name' ? '' : '') + cats.map(function (c) {
+          var ts = tord.filter(function (t) { return types[t].some(function (x) { return x.category === c; }); });
+          return ts.length ? '<div class="grp-h">' + esc(c) + '</div><div class="rows">' + ts.map(function (t) { return typeRow(pid, cats.indexOf(c), t, types[t].filter(function (x) { return x.category === c; })); }).join('') + '</div>' : '';
+        }).join('');
+      } else h2 += '<h2 class="h2">Part types</h2><div class="rows">' + tord.map(function (t) { return typeRow(pid, ci, t, types[t]); }).join('') + '</div>';
+    } else if (!items.length) h2 += '<p class="empty">No parts match. Clear the search, brand or fit filter to see all.</p>';
+    else {
+      if (sub) h2 += tierCompare(items);
+      h2 += lazyRows(pid, sortParts(items));
+    }
+    h2 += '<p class="small dim">Price shown is the lowest verified listed price on the checked date. Shipping excluded unless the seller says free.</p>';
     return h2;
   }
+  function tierLows(list) {
+    var o = {}; list.forEach(function (x) { var t = String(x.tier || '').toLowerCase(), v = priceOf(x); if (TIER[t] && v != null && (o[t] == null || v < o[t])) o[t] = v; }); return o;
+  }
+  function typeRow(pid, ci, t, list) {
+    var lows = list.map(priceOf).filter(function (v) { return v != null; }), tl = tierLows(list);
+    var s = list.length + ' option' + (list.length > 1 ? 's' : '') + (Object.keys(tl).length ? ' · ' + ['economy', 'oe', 'premium', 'premium-upper'].filter(function (k) { return tl[k] != null; }).map(function (k) { return TIER[k] + ' ' + money(tl[k]); }).join(' · ') : ' · ' + esc(uniq(list.map(function (x) { return x.brand; })).slice(0, 3).join(', ')));
+    return row('#/p/' + pid + '/parts/cat-' + ci + '/' + encodeURIComponent(t), esc(t), s, lows.length ? '<span class="dim small">from</span> <span class="price">' + money(Math.min.apply(null, lows)) + '</span>' : '');
+  }
+  function tierCompare(list) {
+    var tl = tierLows(list), ks = ['economy', 'oe', 'premium', 'premium-upper'].filter(function (k) { return tl[k] != null; });
+    if (ks.length < 2) return '';
+    return '<div class="tiers">' + ks.map(function (k) { return '<div class="tier-box"><span class="tier t-' + k + '">' + TIER[k] + '</span><span class="price">' + money(tl[k]) + '</span></div>'; }).join('') + '</div><p class="small dim">Catalog tiers per part type: Economy is the cheapest listing, OE the cheapest original-equipment brand, Premium the cheapest premium brand, Premium+ the priciest premium brand. Positions and kits inside a type can differ, so open each listing.</p>';
+  }
   function partDetail(pid, p, part) {
-    var ci = partCats(p).indexOf(part.category);
+    var ci = partCats(p).indexOf(part.category), ty = typeOf(part);
     var lp = listedPrice(part), f = part.fitment || {};
     var used = p.problems.filter(function (x) { return (x.parts || []).indexOf(part.id) > -1; }).map(function (x) { return ['problems', x.id, x.title]; })
       .concat(p.guides.filter(function (g) { return (g.parts || []).indexOf(part.id) > -1; }).map(function (g) { return ['guides', g.id, g.title]; }));
     var feat = (p.featuredParts || []).filter(function (x) { return x.id === part.id; })[0];
-    var h = crumb(pid, p, [['Parts', '#/p/' + pid + '/parts'], [part.category, '#/p/' + pid + '/parts/cat-' + ci]]);
-    h += '<article class="detail" id="part-' + esc(part.id) + '"><div class="eyebrow mono">' + esc(part.brand) + (part.part_number ? ' · ' + esc(part.part_number) : '') + '</div><h1 class="d-title">' + esc(part.name) + '</h1>' + (feat ? '<p class="accent small">' + esc(feat.label) + '</p>' : '');
+    var h = crumb(pid, p, [['Parts', '#/p/' + pid + '/parts'], [part.category, '#/p/' + pid + '/parts/cat-' + ci]].concat(part.subcategory ? [[ty, '#/p/' + pid + '/parts/cat-' + ci + '/' + encodeURIComponent(ty)]] : []));
+    h += '<article class="detail" id="part-' + esc(part.id) + '"><div class="eyebrow mono">' + esc(part.brand) + (part.part_number ? ' · ' + esc(part.part_number) : '') + '</div><h1 class="d-title">' + esc(part.name) + '</h1>' + (part.tier ? '<p>' + tierTag(part) + '</p>' : '') + (feat ? '<p class="accent small">' + esc(feat.label) + '</p>' : '');
     h += '<div class="buybar"><div><div class="price-big">' + (lp ? money(lp.price) : 'n/a') + (lp && lp.unit && lp.unit !== 'listing' ? ' <small>per ' + esc(lp.unit) + '</small>' : '') + '</div><div class="small dim">' + (lp ? (lp.verified ? 'Best verified price' : 'Unverified price') + ' at ' + esc(lp.seller) : 'No verified price') + '</div></div>' + addBtn(pid, part.id, true) + '</div>';
     h += safetyBlock(p, false);
     h += '<h2 class="h2">Where to buy</h2><div class="offers">' + part.offers.slice().sort(function (a, b) { return (a.price == null) - (b.price == null) || a.price - b.price; }).map(function (o) {
@@ -523,7 +650,7 @@
     if (part.notes) h += '<h2 class="h2">Notes</h2><p>' + esc(part.notes) + '</p>';
     h += tipBlock('Owner tips', part.tips);
     if (used.length) h += '<h2 class="h2">Used in</h2><div class="rows">' + used.map(function (u) { return row('#/p/' + pid + '/' + u[0] + '/' + encodeURIComponent(u[1]), esc(u[2]), u[0] === 'problems' ? 'Problem' : 'Guide'); }).join('') + '</div>';
-    h += '<p class="small dim">' + esc(part.category) + ' · ' + (part.source === 'master-guide' ? 'From master guide' : 'From deals check') + '</p></article>';
+    h += '<p class="small dim">' + esc(part.category) + ' · ' + (part.source === 'master-guide' ? 'From master guide' : part.source === 'rockauto-catalog' ? 'From RockAuto catalog check (' + esc(((P[pid].catalog || {}).vehicles || []).length) + ' representative vehicle' + (((P[pid].catalog || {}).vehicles || []).length === 1 ? '' : 's') + ')' : 'From deals check') + '</p></article>';
     return h;
   }
   function tabProblems(pid, p, focus) {
@@ -598,6 +725,7 @@
     p.parts.forEach(function (x) { var lp = listedPrice(x); add('parts', x.id, x.brand + ' ' + (x.part_number || '') + ' · ' + x.name, x.category + ' · ' + (lp ? money(lp.price) + ' at ' + lp.seller : 'no verified price') + ' · ' + JSON.stringify(x.fitment || {}, function (k, v) { return k === 'fit_src' ? undefined : v; }).replace(/[{}"\[\]]/g, ' ') + ' ' + (x.notes || '') + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), null); });
     p.problems.forEach(function (x) { add('problems', x.id, x.title, x.symptoms + ' · ' + x.cause + ' · ' + x.fix + ' ' + (x.tips || []).map(function (t) { return t.text; }).join(' '), x); });
     p.guides.forEach(function (g) { add('guides', g.id, (g.type === 'swap' ? 'Swap: ' : 'DIY: ') + g.title, g.summary + ' ' + g.steps.map(function (s) { return s.text; }).join(' ') + ' ' + (g.torque ? g.torque.rows.map(function (r) { return r.join(' '); }).join(' ') : ''), g); });
+    ((p.reference || {}).sections || []).forEach(function (sx) { sx.blocks.forEach(function (b) { add('ref', sx.id, sx.title + ': ' + b.title, [b.text || '', (b.items || []).join(' '), b.table ? b.table.rows.map(function (r) { return r.join(' '); }).join(' · ') : ''].join(' '), b); }); });
     p.tips.forEach(function (t) { add('tips', '', 'Tip', t.text, { conf: t.confidence || t.conf }); });
     (p.videos || []).forEach(function (v) { add('tips', '', 'Video: ' + v.title, v.channel + ' · ' + v.note, { conf: 'video' }); });
     p._idx = I; return I;
@@ -624,15 +752,22 @@
   }
 
   // ---------- platform shell ----------
-  function renderPlatform(pid, tab, focus) {
+  function renderPlatform(pid, tab, focus, sub) {
     var p = P[pid];
     if (!p) { app.innerHTML = '<div class="wrap narrow"><header class="page-h"><h1>Not available yet</h1><p class="lede">This platform has no data file loaded yet.</p><p><a class="btn" href="#/">Back to garage</a></p></header></div>'; return; }
     if (tab === 'search') { state.q = state.q || ''; tab = ''; }
-    var fn = { overview: tabOverview, wheels: tabWheels, parts: tabParts, problems: tabProblems, guides: tabGuides, tips: tabTips }[tab];
-    app.innerHTML = '<div class="wrap narrow" id="pbody">' + (fn ? fn(pid, p, focus) : platformHome(pid, p)) + '</div>';
+    var fn = { overview: tabOverview, wheels: tabWheels, parts: tabParts, problems: tabProblems, guides: tabGuides, tips: tabTips, ref: tabRef }[tab];
+    app.innerHTML = '<div class="wrap narrow" id="pbody">' + (fn ? fn(pid, p, focus, sub) : platformHome(pid, p)) + '</div>';
+    var cq = document.getElementById('cq');
+    if (cq) cq.addEventListener('input', function () { clearTimeout(cq._t); cq._t = setTimeout(function () { state.cq = cq.value; var pos = cq.selectionStart; rerender(); var n = document.getElementById('cq'); if (n) { n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) { } } }, 200); });
+    var bs = document.getElementById('brandSel'); if (bs) bs.addEventListener('change', function () { state.brand = bs.value; rerender(); });
     if (!fn) {
       var q = document.getElementById('q'), pres = document.getElementById('pres'), menu = document.getElementById('pmenu');
-      var draw = function () { state.q = q.value; var on = !!q.value.trim(); pres.innerHTML = on ? renderSearch(pid, p) : ''; menu.style.display = on ? 'none' : ''; };
+      var draw = function () {
+        state.q = q.value; var on = !!q.value.trim(); menu.style.display = on ? 'none' : '';
+        if (on && !partsReady(pid)) { pres.innerHTML = '<p class="small dim">Loading the full parts catalog to search it…</p>'; loadParts(pid, null, function () { if (document.getElementById('q') === q) draw(); }); return; }
+        pres.innerHTML = on ? renderSearch(pid, p) : '';
+      };
       q.addEventListener('input', draw); if (state.q) draw();
     }
     if (tab === 'problems' && !focus) {
@@ -705,7 +840,7 @@
 
   // ---------- events + router ----------
   document.addEventListener('click', function (e) {
-    var t = e.target.closest ? e.target.closest('[data-save],[data-savesel],[data-add],[data-mine],[data-stance],[data-q],[data-rm],[data-gq],[data-unpark]') : null;
+    var t = e.target.closest ? e.target.closest('[data-save],[data-savesel],[data-add],[data-mine],[data-stance],[data-q],[data-rm],[data-gq],[data-unpark],[data-more]') : null;
     if (!t) return;
     if (t.hasAttribute('data-save')) { var sp = t.getAttribute('data-save'); saveVehicle(sp, store.veh[sp] || {}); toast('Saved to My Garage'); rerender(); return; }
     if (t.hasAttribute('data-savesel') && state.pendingVeh) { saveVehicle(state.pendingVeh.pid, state.pendingVeh.v); toast('Saved to My Garage'); location.hash = '#/p/' + state.pendingVeh.pid; return; }
@@ -716,6 +851,7 @@
       Array.prototype.forEach.call(document.querySelectorAll('[data-add="' + id + '"]'), function (b) { var a = inBuild(id, apid); b.className = 'btn ' + (b.classList.contains('btn-sm') ? 'btn-sm ' : '') + (a ? 'added' : 'btn-primary'); b.textContent = a ? 'In build' : 'Add to build'; });
       return;
     }
+    if (t.hasAttribute('data-more')) { showMore(); return; }
     if (t.hasAttribute('data-mine')) { state.mineOnly = !state.mineOnly; rerender(); return; }
     if (t.hasAttribute('data-stance')) { setStance(t.getAttribute('data-stance')); return; }
     if (t.hasAttribute('data-q')) { var it = build.items[+t.getAttribute('data-q')]; it.qty = Math.max(1, (it.qty || 1) + (+t.getAttribute('data-d'))); saveBuild(); updateCount(); renderBuild(); return; }
@@ -736,7 +872,7 @@
     if (location.hash !== lastHash && keep !== true) { if (!(parts[0] === 'p' && parts[2] === 'problems' && !parts[3] && (lastHash || '').indexOf('/problems/') > -1)) state.pq = ''; var samePid = (lastHash || '').split('/')[2] === parts[1]; if (parts[2] !== 'search' && !(parts[0] === 'p' && !parts[2] && samePid)) state.q = ''; }
     lastHash = location.hash;
     updateChrome(parts);
-    if (parts[0] === 'p' && parts[1]) renderPlatform(parts[1], parts[2] || '', parts[3]);
+    if (parts[0] === 'p' && parts[1]) renderPlatform(parts[1], parts[2] || '', parts[3], parts[4]);
     else if (parts[0] === 'build') renderBuild();
     else if (parts[0] === 'garage' && parts[1] === 'add') renderPicker(parts.slice(2));
     else if (parts[0] === 'browse') renderBrowse();
