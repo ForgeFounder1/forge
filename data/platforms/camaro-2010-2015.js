@@ -3648,6 +3648,7 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
   "HVAC",
   "Electrical",
   "Brakes",
+  "Steering",
   "Body",
   "Lighting",
   "Interior",
@@ -4716,119 +4717,136 @@ window.FORGE_PLATFORMS["camaro-2010-2015"] = {
  ],
  "catalog": {
   "index": "data/parts/camaro-2010-2015/index.js",
-  "indexBytes": 121551,
+  "indexBytes": 246255,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
-   "https://www.rockauto.com/en/catalog/chevrolet,2012,camaro,3.6l+v6,3015193"
+   "https://www.rockauto.com/en/catalog/chevrolet,2012,camaro,3.6l+v6,3015193",
+   "https://www.rockauto.com/en/catalog/chevrolet,2012,camaro,6.2l+v8,1501817"
   ],
   "generated": "2026-10-18",
   "files": [
    {
     "file": "data/parts/camaro-2010-2015/0.js",
     "category": "Engine",
-    "count": 142,
-    "types": 51,
+    "count": 283,
+    "types": 80,
     "from": null,
-    "bytes": 99802
+    "bytes": 205016
    },
    {
     "file": "data/parts/camaro-2010-2015/1.js",
     "category": "Ignition",
-    "count": 10,
-    "types": 3,
+    "count": 39,
+    "types": 11,
     "from": null,
-    "bytes": 7588
+    "bytes": 29298
    },
    {
     "file": "data/parts/camaro-2010-2015/2.js",
     "category": "Fuel System",
-    "count": 45,
-    "types": 19,
+    "count": 63,
+    "types": 22,
     "from": null,
-    "bytes": 31581
+    "bytes": 51708
    },
    {
     "file": "data/parts/camaro-2010-2015/3.js",
     "category": "Cooling",
-    "count": 39,
-    "types": 15,
+    "count": 72,
+    "types": 20,
     "from": null,
-    "bytes": 26784
+    "bytes": 53853
    },
    {
     "file": "data/parts/camaro-2010-2015/4.js",
     "category": "HVAC",
-    "count": 38,
+    "count": 48,
     "types": 17,
     "from": null,
-    "bytes": 27986
+    "bytes": 43125
    },
    {
     "file": "data/parts/camaro-2010-2015/5.js",
     "category": "Electrical",
-    "count": 90,
-    "types": 50,
+    "count": 139,
+    "types": 68,
     "from": null,
-    "bytes": 66976
+    "bytes": 135169
    },
    {
     "file": "data/parts/camaro-2010-2015/6.js",
     "category": "Brakes",
-    "count": 99,
-    "types": 24,
+    "count": 158,
+    "types": 27,
     "from": null,
-    "bytes": 73966
+    "bytes": 129153
    },
    {
     "file": "data/parts/camaro-2010-2015/7.js",
-    "category": "Drivetrain",
-    "count": 41,
-    "types": 17,
+    "category": "Steering",
+    "count": 37,
+    "types": 10,
     "from": null,
-    "bytes": 33902
+    "bytes": 29793
    },
    {
     "file": "data/parts/camaro-2010-2015/8.js",
-    "category": "Body",
-    "count": 63,
-    "types": 27,
+    "category": "Drivetrain",
+    "count": 186,
+    "types": 88,
     "from": null,
-    "bytes": 45403
+    "bytes": 166281
    },
    {
     "file": "data/parts/camaro-2010-2015/9.js",
+    "category": "Body",
+    "count": 87,
+    "types": 31,
+    "from": null,
+    "bytes": 85392
+   },
+   {
+    "file": "data/parts/camaro-2010-2015/10.js",
     "category": "Lighting",
     "count": 22,
     "types": 5,
     "from": null,
-    "bytes": 18353
-   },
-   {
-    "file": "data/parts/camaro-2010-2015/10.js",
-    "category": "Interior",
-    "count": 7,
-    "types": 2,
-    "from": null,
-    "bytes": 6135
+    "bytes": 25974
    },
    {
     "file": "data/parts/camaro-2010-2015/11.js",
-    "category": "Filters & Fluids",
-    "count": 32,
-    "types": 14,
+    "category": "Interior",
+    "count": 14,
+    "types": 8,
     "from": null,
-    "bytes": 23233
+    "bytes": 15449
    },
    {
     "file": "data/parts/camaro-2010-2015/12.js",
-    "category": "Exhaust & Intake",
-    "count": 58,
-    "types": 18,
+    "category": "Filters & Fluids",
+    "count": 71,
+    "types": 31,
     "from": null,
-    "bytes": 45973
+    "bytes": 61906
+   },
+   {
+    "file": "data/parts/camaro-2010-2015/13.js",
+    "category": "Exhaust & Intake",
+    "count": 96,
+    "types": 21,
+    "from": null,
+    "bytes": 78053
+   },
+   {
+    "file": "data/parts/camaro-2010-2015/14.js",
+    "category": "Suspension & Lowering",
+    "count": 74,
+    "types": 14,
+    "from": null,
+    "bytes": 69232
    }
   ],
-  "count": 686
+  "count": 1389
  },
  "reference": {
   "caveat": "From the 2010, 2012, 2013 and 2014 owner's manuals (carmanual.org copies of GM PDFs), GM SI on mirror sites, GM bulletins, NHTSA recalls and the NHTSA VIN decoder. Paint codes and some tire pressures are third-party. Values change by year; check your own manual and labels.",

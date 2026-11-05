@@ -5473,10 +5473,9 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
  ],
  "catalog": {
   "index": "data/parts/gmt900-2007-2014/index.js",
-  "indexBytes": 333431,
+  "indexBytes": 341371,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
-   "https://www.rockauto.com/en/catalog/chevrolet,2010,silverado+1500,5.3l+v8,1445445",
    "https://www.rockauto.com/en/catalog/chevrolet,2010,silverado+1500,5.3l+v8,1445445"
   ],
   "generated": "2026-10-18",
@@ -5484,26 +5483,26 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
    {
     "file": "data/parts/gmt900-2007-2014/0.js",
     "category": "Engine",
-    "count": 174,
-    "types": 69,
+    "count": 182,
+    "types": 70,
     "from": null,
-    "bytes": 133459
+    "bytes": 140648
    },
    {
     "file": "data/parts/gmt900-2007-2014/1.js",
     "category": "Ignition",
-    "count": 23,
-    "types": 9,
+    "count": 26,
+    "types": 10,
     "from": null,
-    "bytes": 17979
+    "bytes": 20370
    },
    {
     "file": "data/parts/gmt900-2007-2014/2.js",
     "category": "Fuel System",
-    "count": 60,
-    "types": 23,
+    "count": 57,
+    "types": 21,
     "from": null,
-    "bytes": 50686
+    "bytes": 48753
    },
    {
     "file": "data/parts/gmt900-2007-2014/3.js",
@@ -5511,98 +5510,98 @@ window.FORGE_PLATFORMS["gmt900-2007-2014"] = {
     "count": 62,
     "types": 23,
     "from": null,
-    "bytes": 47447
+    "bytes": 47448
    },
    {
     "file": "data/parts/gmt900-2007-2014/4.js",
     "category": "HVAC",
-    "count": 66,
-    "types": 16,
+    "count": 54,
+    "types": 14,
     "from": null,
-    "bytes": 60639
+    "bytes": 49993
    },
    {
     "file": "data/parts/gmt900-2007-2014/5.js",
     "category": "Electrical",
-    "count": 231,
-    "types": 94,
+    "count": 236,
+    "types": 102,
     "from": null,
-    "bytes": 188033
+    "bytes": 191854
    },
    {
     "file": "data/parts/gmt900-2007-2014/6.js",
     "category": "Brakes",
-    "count": 173,
-    "types": 40,
+    "count": 158,
+    "types": 39,
     "from": null,
-    "bytes": 143875
+    "bytes": 131928
    },
    {
     "file": "data/parts/gmt900-2007-2014/7.js",
     "category": "Steering",
-    "count": 43,
-    "types": 17,
+    "count": 58,
+    "types": 23,
     "from": null,
-    "bytes": 30707
+    "bytes": 43341
    },
    {
     "file": "data/parts/gmt900-2007-2014/8.js",
     "category": "Drivetrain",
-    "count": 389,
-    "types": 150,
+    "count": 412,
+    "types": 172,
     "from": null,
-    "bytes": 348025
+    "bytes": 362809
    },
    {
     "file": "data/parts/gmt900-2007-2014/9.js",
     "category": "Body",
-    "count": 216,
-    "types": 77,
+    "count": 207,
+    "types": 78,
     "from": null,
-    "bytes": 174201
+    "bytes": 167005
    },
    {
     "file": "data/parts/gmt900-2007-2014/10.js",
     "category": "Lighting",
-    "count": 26,
+    "count": 25,
     "types": 8,
     "from": null,
-    "bytes": 19792
+    "bytes": 18979
    },
    {
     "file": "data/parts/gmt900-2007-2014/11.js",
     "category": "Interior",
-    "count": 36,
-    "types": 18,
+    "count": 52,
+    "types": 21,
     "from": null,
-    "bytes": 28264
+    "bytes": 41812
    },
    {
     "file": "data/parts/gmt900-2007-2014/12.js",
     "category": "Filters & Fluids",
-    "count": 73,
-    "types": 26,
+    "count": 86,
+    "types": 36,
     "from": null,
-    "bytes": 60132
+    "bytes": 71312
    },
    {
     "file": "data/parts/gmt900-2007-2014/13.js",
     "category": "Exhaust & Headers",
-    "count": 90,
-    "types": 23,
+    "count": 85,
+    "types": 22,
     "from": null,
-    "bytes": 73952
+    "bytes": 69692
    },
    {
     "file": "data/parts/gmt900-2007-2014/14.js",
     "category": "Suspension & Stance",
-    "count": 107,
-    "types": 24,
+    "count": 118,
+    "types": 28,
     "from": null,
-    "bytes": 90627
+    "bytes": 99151
    }
   ],
-  "count": 1769
+  "count": 1818
  },
  "reference": {
   "caveat": "From the 2008 and 2012 Silverado owner manuals, the 2013 Chevrolet trailering guide and 2010 service manual pages on a secondary host. The 2014 Silverado manual on assets.gm.com is the next-gen K2 truck and is not used. Values change by year; check your own manual and labels.",

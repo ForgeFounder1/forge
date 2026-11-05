@@ -5268,7 +5268,7 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
  ],
  "catalog": {
   "index": "data/parts/wrangler-jk-jl/index.js",
-  "indexBytes": 307728,
+  "indexBytes": 394998,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
    "https://www.rockauto.com/en/catalog/jeep,2012,wrangler,3.6l+v6,1503367",
@@ -5279,125 +5279,125 @@ window.FORGE_PLATFORMS["wrangler-jk-jl"] = {
    {
     "file": "data/parts/wrangler-jk-jl/0.js",
     "category": "Engine",
-    "count": 221,
-    "types": 53,
+    "count": 249,
+    "types": 57,
     "from": null,
-    "bytes": 170273
+    "bytes": 195230
    },
    {
     "file": "data/parts/wrangler-jk-jl/1.js",
     "category": "Ignition",
-    "count": 37,
+    "count": 39,
     "types": 9,
     "from": null,
-    "bytes": 30036
+    "bytes": 31347
    },
    {
     "file": "data/parts/wrangler-jk-jl/2.js",
     "category": "Fuel System",
-    "count": 38,
-    "types": 19,
+    "count": 57,
+    "types": 23,
     "from": null,
-    "bytes": 31146
+    "bytes": 46207
    },
    {
     "file": "data/parts/wrangler-jk-jl/3.js",
     "category": "Cooling",
-    "count": 48,
-    "types": 16,
+    "count": 83,
+    "types": 20,
     "from": null,
-    "bytes": 36918
+    "bytes": 67196
    },
    {
     "file": "data/parts/wrangler-jk-jl/4.js",
     "category": "HVAC",
-    "count": 49,
-    "types": 14,
+    "count": 88,
+    "types": 19,
     "from": null,
-    "bytes": 38605
+    "bytes": 74046
    },
    {
     "file": "data/parts/wrangler-jk-jl/5.js",
     "category": "Electrical",
-    "count": 140,
-    "types": 60,
+    "count": 207,
+    "types": 76,
     "from": null,
-    "bytes": 115272
+    "bytes": 175708
    },
    {
     "file": "data/parts/wrangler-jk-jl/6.js",
     "category": "Brakes",
-    "count": 198,
+    "count": 227,
     "types": 38,
     "from": null,
-    "bytes": 172671
+    "bytes": 193573
    },
    {
     "file": "data/parts/wrangler-jk-jl/7.js",
     "category": "Steering",
-    "count": 77,
-    "types": 17,
+    "count": 124,
+    "types": 21,
     "from": null,
-    "bytes": 57724
+    "bytes": 94957
    },
    {
     "file": "data/parts/wrangler-jk-jl/8.js",
     "category": "Suspension",
-    "count": 102,
-    "types": 16,
+    "count": 169,
+    "types": 20,
     "from": null,
-    "bytes": 86116
+    "bytes": 134876
    },
    {
     "file": "data/parts/wrangler-jk-jl/9.js",
     "category": "Drivetrain",
-    "count": 242,
-    "types": 79,
+    "count": 282,
+    "types": 94,
     "from": null,
-    "bytes": 232655
+    "bytes": 271888
    },
    {
     "file": "data/parts/wrangler-jk-jl/10.js",
     "category": "Body",
-    "count": 277,
-    "types": 81,
+    "count": 313,
+    "types": 89,
     "from": null,
-    "bytes": 239495
+    "bytes": 268296
    },
    {
     "file": "data/parts/wrangler-jk-jl/11.js",
     "category": "Lighting",
-    "count": 68,
+    "count": 70,
     "types": 14,
     "from": null,
-    "bytes": 61398
+    "bytes": 63883
    },
    {
     "file": "data/parts/wrangler-jk-jl/12.js",
     "category": "Interior",
-    "count": 22,
-    "types": 11,
+    "count": 37,
+    "types": 17,
     "from": null,
-    "bytes": 19115
+    "bytes": 32591
    },
    {
     "file": "data/parts/wrangler-jk-jl/13.js",
     "category": "Filters & Fluids",
-    "count": 69,
-    "types": 25,
+    "count": 110,
+    "types": 29,
     "from": null,
-    "bytes": 55722
+    "bytes": 93883
    },
    {
     "file": "data/parts/wrangler-jk-jl/14.js",
     "category": "Exhaust & Intake",
-    "count": 86,
+    "count": 117,
     "types": 26,
     "from": null,
-    "bytes": 74863
+    "bytes": 101349
    }
   ],
-  "count": 1674
+  "count": 2172
  },
  "reference": {
   "caveat": "From the 2016 JK and 2020 JL owner's manuals (Mopar-hosted), the 2012 JK factory manual (mirror), FCA VIN guides filed with NHTSA, FCA bulletins and recalls. Paint codes are secondary sources. Values change by year; check your own manual and labels.",
