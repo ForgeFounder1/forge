@@ -3031,11 +3031,15 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
   "Mounts & Swaps",
   "Tuners",
   "Engine",
+  "Ignition",
   "Fuel System",
   "Cooling",
+  "HVAC",
   "Electrical",
+  "Brakes",
   "Steering",
   "Drivetrain",
+  "Exhaust & Emissions",
   "Body",
   "Lighting",
   "Interior",
@@ -5109,95 +5113,136 @@ window.FORGE_PLATFORMS["civic-2006-2021"] = {
  ],
  "catalog": {
   "index": "data/parts/civic-2006-2021/index.js",
-  "indexBytes": 29739,
+  "indexBytes": 227939,
   "note": "Repair parts are RockAuto catalog picks (Economy, OE, Premium options per part type) read on the catalog pages of the representative vehicles linked here. Fitment comes from the listing notes for those vehicles only, so other years, trims and cabs show Check fitment.",
   "vehicles": [
+   "https://www.rockauto.com/en/catalog/honda,2008,civic,1.8l+l4,1441749",
    "https://www.rockauto.com/en/catalog/honda,2017,civic,2.0l+l4,3436819"
   ],
-  "generated": "2026-10-18",
+  "generated": "2026-11-07",
   "files": [
    {
     "file": "data/parts/civic-2006-2021/0.js",
     "category": "Engine",
-    "count": 27,
-    "types": 17,
+    "count": 128,
+    "types": 44,
     "from": null,
-    "bytes": 18527
+    "bytes": 89266
    },
    {
     "file": "data/parts/civic-2006-2021/1.js",
-    "category": "Fuel System",
-    "count": 3,
-    "types": 2,
+    "category": "Ignition",
+    "count": 29,
+    "types": 6,
     "from": null,
-    "bytes": 2457
+    "bytes": 19888
    },
    {
     "file": "data/parts/civic-2006-2021/2.js",
-    "category": "Cooling",
-    "count": 12,
-    "types": 6,
+    "category": "Fuel System",
+    "count": 38,
+    "types": 14,
     "from": null,
-    "bytes": 8471
+    "bytes": 26779
    },
    {
     "file": "data/parts/civic-2006-2021/3.js",
-    "category": "Electrical",
-    "count": 43,
-    "types": 18,
+    "category": "Cooling",
+    "count": 68,
+    "types": 17,
     "from": null,
-    "bytes": 31742
+    "bytes": 48779
    },
    {
     "file": "data/parts/civic-2006-2021/4.js",
-    "category": "Steering",
-    "count": 5,
-    "types": 2,
+    "category": "HVAC",
+    "count": 72,
+    "types": 18,
     "from": null,
-    "bytes": 3598
+    "bytes": 53435
    },
    {
     "file": "data/parts/civic-2006-2021/5.js",
-    "category": "Drivetrain",
-    "count": 6,
-    "types": 4,
+    "category": "Electrical",
+    "count": 155,
+    "types": 51,
     "from": null,
-    "bytes": 4101
+    "bytes": 117939
    },
    {
     "file": "data/parts/civic-2006-2021/6.js",
-    "category": "Body",
-    "count": 46,
-    "types": 22,
+    "category": "Brakes",
+    "count": 213,
+    "types": 25,
     "from": null,
-    "bytes": 32649
+    "bytes": 171225
    },
    {
     "file": "data/parts/civic-2006-2021/7.js",
-    "category": "Lighting",
-    "count": 13,
-    "types": 3,
+    "category": "Steering",
+    "count": 49,
+    "types": 12,
     "from": null,
-    "bytes": 9694
+    "bytes": 33788
    },
    {
     "file": "data/parts/civic-2006-2021/8.js",
-    "category": "Interior",
-    "count": 10,
-    "types": 6,
+    "category": "Drivetrain",
+    "count": 67,
+    "types": 25,
     "from": null,
-    "bytes": 8126
+    "bytes": 51784
    },
    {
     "file": "data/parts/civic-2006-2021/9.js",
-    "category": "Filters & Fluids",
-    "count": 12,
-    "types": 5,
+    "category": "Exhaust & Emissions",
+    "count": 90,
+    "types": 19,
     "from": null,
-    "bytes": 9623
+    "bytes": 65714
+   },
+   {
+    "file": "data/parts/civic-2006-2021/10.js",
+    "category": "Body",
+    "count": 156,
+    "types": 40,
+    "from": null,
+    "bytes": 115750
+   },
+   {
+    "file": "data/parts/civic-2006-2021/11.js",
+    "category": "Lighting",
+    "count": 48,
+    "types": 7,
+    "from": null,
+    "bytes": 37988
+   },
+   {
+    "file": "data/parts/civic-2006-2021/12.js",
+    "category": "Interior",
+    "count": 25,
+    "types": 8,
+    "from": null,
+    "bytes": 19810
+   },
+   {
+    "file": "data/parts/civic-2006-2021/13.js",
+    "category": "Filters & Fluids",
+    "count": 50,
+    "types": 19,
+    "from": null,
+    "bytes": 39491
+   },
+   {
+    "file": "data/parts/civic-2006-2021/14.js",
+    "category": "Suspension & Chassis",
+    "count": 119,
+    "types": 13,
+    "from": null,
+    "bytes": 87966
    }
   ],
-  "count": 177
+  "count": 1307
  },
  "reference": {
   "caveat": "From the 2006, 2009, 2012, 2014, 2016, 2019 and 2021 owner's manuals (their links are now dead; read from copies saved earlier), the 2016-21 Honda service manual on a mirror, tighttorque (secondary), the NHTSA VIN decoder and Honda bulletins. Paint codes are third-party. Values change by year; check your own manual and labels.",
